@@ -1,0 +1,350 @@
+<sunSpecModels v="1">
+
+  <!-- 64110: OutBack AXS device -->
+  <model id="64110" len="282">
+    <block len="282">
+      <point id="MajorFWRev" offset="0" type="uint16" mandatory="true" />
+      <point id="MidFWRev" offset="1" type="uint16" mandatory="true" />
+      <point id="MinorFWRev" offset="2" type="uint16" mandatory="true" />
+      <point id="EncrypKey" offset="3" type="uint16" mandatory="true" />
+      <point id="MAC_Address" offset="4" type="string" len="7" mandatory="true" />
+      <point id="WritePassword" offset="11" type="string" len="8" mandatory="true" />
+      <point id="EnableDHCP" offset="19" type="enum16" mandatory="true" />
+      <point id="TCPIP_address" offset="20" type="ipaddr" mandatory="true" />
+      <point id="Gateway_address" offset="22" type="ipaddr" mandatory="true" />
+      <point id="TCPIP_Netmask" offset="24" type="ipaddr" mandatory="true" />
+      <point id="DNS1_address" offset="26" type="ipaddr" mandatory="true" />
+      <point id="DNS2_address" offset="28" type="ipaddr" mandatory="true" />
+      <point id="Modbus_port" offset="30" type="uint16" mandatory="true" />
+      <point id="SMTP_server_nm" offset="31" type="string" len="20" mandatory="true" />
+      <point id="SMTP_account_nm" offset="51" type="string" len="16" mandatory="true" />
+      <point id="SMTP_enable_SSL" offset="67" type="enum16" mandatory="true" >
+        <symbol id="ASX_DISABLED">0</symbol>
+        <symbol id="ASX_ENABLED">1</symbol>
+      </point>
+      <point id="SMTP_password" offset="68" type="string" len="8" mandatory="true" />
+      <point id="SMTP_user_nm" offset="76" type="string" len="20" mandatory="true" />
+      <point id="Stat_email_int" offset="96" type="uint16" mandatory="true" />
+      <point id="Stat_start_HR" offset="97" type="uint16" mandatory="true" />
+      <point id="Stat_email_sub" offset="98" type="string" len="25" mandatory="true" />
+      <point id="Stat_email_addr1" offset="123" type="string" len="20" mandatory="true" />
+      <point id="Stat_email_addr2" offset="143" type="string" len="20" mandatory="true" />
+      <point id="Alarm_email_en" offset="163" type="enum16" mandatory="true" >
+        <symbol id="ASX_DISABLED">0</symbol>
+        <symbol id="ASX_ENABLED">1</symbol>
+      </point>
+      <point id="Alarm_email_sub" offset="164" type="string" len="25" mandatory="true" />
+      <point id="Alarm_email_addr1" offset="189" type="string" len="20" mandatory="true" />
+      <point id="Alarm_email_addr2" offset="209" type="string" len="20" mandatory="true" />
+      <point id="FTP_password" offset="229" type="string" len="8" mandatory="true" />
+      <point id="TELNET_password" offset="237" type="string" len="8" mandatory="true" />
+      <point id="Log_write_int" offset="245" type="uint16" units="Tms" mandatory="true" />
+      <point id="Log_retain" offset="246" type="uint16" units="Tmd" mandatory="true" />
+      <point id="Log_mode" offset="247" type="enum16" mandatory="true" >
+        <symbol id="LOG_DISABLED">0</symbol>
+        <symbol id="LOG_EXCEL">1</symbol>
+        <symbol id="LOG_COMPACT">2</symbol>
+      </point>
+      <point id="NTP_server_nm" offset="248" type="string" len="20" mandatory="true" />
+      <point id="NTP_enable" offset="268" type="enum16" mandatory="true" >
+        <symbol id="ASX_DISABLED">0</symbol>
+        <symbol id="ASX_ENABLED">1</symbol>
+      </point>
+      <point id="TimeZone" offset="269" type="int16" units="Tmh" mandatory="true" />
+      <point id="Date_year" offset="270" type="uint16" mandatory="true" />
+      <point id="Date_month" offset="271" type="uint16" mandatory="true" />
+      <point id="Date_Day" offset="272" type="uint16" mandatory="true" />
+      <point id="Time_hour" offset="273" type="uint16" mandatory="true" />
+      <point id="Time_minute" offset="274" type="uint16" mandatory="true" />
+      <point id="Time_second" offset="275" type="uint16" mandatory="true" />
+      <point id="Battery_temp" offset="276" type="int16" sf="Temp_SF" units="C" mandatory="true" />
+      <point id="Ambient_temp" offset="277" type="int16" sf="Temp_SF" units="C" mandatory="true" />
+      <point id="Temp_SF" offset="278" type="sunssf" mandatory="true" />
+      <point id="AXS_Error" offset="279" type="bitfield16" mandatory="true" />
+      <point id="AXS_Status" offset="280" type="bitfield16" mandatory="true" />
+      <point id="AXS_Spare" offset="281" type="uint16" mandatory="true" />
+    </block>
+  </model>
+  <strings id="64110" locale="en">
+    <model>
+      <label>OutBack AXS device</label>
+      <description></description>
+      <notes></notes>
+    </model>
+    <point id="MajorFWRev">
+      <label>AXS Major Firmware Number</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="MidFWRev">
+      <label>AXS Mid Firmware Number</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="MinorFWRev">
+      <label>AXS Minor Firmware Number</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="EncrypKey">
+      <label>Encryption Key</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="MAC_Address">
+      <label>MAC Address</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="WritePassword">
+      <label>Write Password</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="EnableDHCP">
+      <label>Enable DHCP</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="TCPIP_address">
+      <label>TCPIP Address</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Gateway_address">
+      <label>TCPIP Gateway</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="TCPIP_Netmask">
+      <label>TCPIP Netmask</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="DNS1_address">
+      <label>TCPIP DNS1</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="DNS2_address">
+      <label>TCPIP DNS2</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Modbus_port">
+      <label>ModBus Port</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="SMTP_server_nm">
+      <label>SMTP Server Name</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="SMTP_account_nm">
+      <label>SMTP Account Name</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="SMTP_enable_SSL">
+      <label>Enable SMTP SSL</label>
+      <description></description>
+      <notes></notes>
+      <symbol id="ASX_DISABLED">
+        <label>Disabled</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ASX_ENABLED">
+        <label>Enabled</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="SMTP_password">
+      <label>SMTP Password</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="SMTP_user_nm">
+      <label>SMTP User Name</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Stat_email_int">
+      <label>Status Email Interval</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Stat_start_HR">
+      <label>Status Email Start Hour</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Stat_email_sub">
+      <label>Status Email Subject</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Stat_email_addr1">
+      <label>Status Email to Address 1</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Stat_email_addr2">
+      <label>Status Email to Address 2</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Alarm_email_en">
+      <label>Enable Alarm Email</label>
+      <description></description>
+      <notes></notes>
+      <symbol id="ASX_DISABLED">
+        <label>Disabled</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ASX_ENABLED">
+        <label>Enabled</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Alarm_email_sub">
+      <label>Alarm Email Subject</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Alarm_email_addr1">
+      <label>Alarm Email to Address 1</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Alarm_email_addr2">
+      <label>Alarm Email to Address 2</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="FTP_password">
+      <label>FTP Password</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="TELNET_password">
+      <label>Telnet Password</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Log_write_int">
+      <label>SD-Card Datalog Write Interval</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Log_retain">
+      <label>SD-Card Datalog Retain</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Log_mode">
+      <label>SD-Card Datalog Mode</label>
+      <description></description>
+      <notes></notes>
+      <symbol id="LOG_DISABLED">
+        <label>Disabled</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="LOG_EXCEL">
+        <label>Excel</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="LOG_COMPACT">
+        <label>Compact</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="NTP_server_nm">
+      <label>NTP Timer Server Name</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="NTP_enable">
+      <label>Enable Network Time</label>
+      <description></description>
+      <notes></notes>
+      <symbol id="ASX_DISABLED">
+        <label>Disabled</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ASX_ENABLED">
+        <label>Enabled</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="TimeZone">
+      <label>Time Zone</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Date_year">
+      <label>Year</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Date_month">
+      <label>Month</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Date_Day">
+      <label>Day</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Time_hour">
+      <label>Hour</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Time_minute">
+      <label>Minute</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Time_second">
+      <label>Second</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Battery_temp">
+      <label>Battery Temperature</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Ambient_temp">
+      <label>Ambient Temperature</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="AXS_Error">
+      <label>AXS Error</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="AXS_Status">
+      <label>AXS Status</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="AXS_Spare">
+      <label>Spare</label>
+      <description></description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

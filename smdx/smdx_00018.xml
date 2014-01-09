@@ -1,0 +1,44 @@
+<sunSpecModels v="1">
+  <!-- 18: Cellular Link -->
+  <model id="18" len="22">
+    <block len="22">
+      <point id="Nam" offset="0" type="string" len="4" access="rw" />
+      <point id="IMEI" offset="4" type="uint32" access="rw" />
+      <point id="APN" offset="6" type="string" len="4" access="rw" />
+      <point id="Num" offset="10" type="string" len="6" access="rw" />
+      <point id="Pin" offset="16" type="string" len="6" access="rw" />
+    </block>
+  </model>
+  <strings id="18" locale="en">
+    <model>
+      <label>Cellular Link</label>
+      <description>Include this model to support a cellular interface link</description>
+      <notes></notes>
+    </model>
+    <point id="Nam">
+      <label>Name</label>
+      <description>Interface name</description>
+      <notes></notes>
+    </point>
+    <point id="IMEI">
+      <label>IMEI</label>
+      <description>International Mobile Equipment Identifier for the interface</description>
+      <notes></notes>
+    </point>
+    <point id="APN">
+      <label>APN</label>
+      <description>Access Point Name for the interface</description>
+      <notes></notes>
+    </point>
+    <point id="Num">
+      <label>Number</label>
+      <description>Phone number for the interface</description>
+      <notes></notes>
+    </point>
+    <point id="Pin">
+      <label>PIN</label>
+      <description>Personal Identification Number for the interface</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

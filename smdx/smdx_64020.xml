@@ -1,0 +1,215 @@
+<sunSpecModels v="1">
+
+  <!-- 64020: Mersen GreenString -->
+  <model id="64020" len="46">
+    <block len="30">
+      <point id="Aux0Tmp" offset="0" type="int16" units="C" />
+      <point id="Aux1Tmp" offset="1" type="int16" units="C" />
+      <point id="Aux2Tmp" offset="2" type="int16" units="C" />
+      <point id="Aux3Tmp" offset="3" type="int16" units="C" />
+      <point id="Aux4Tmp" offset="4" type="int16" units="C" />
+      <point id="ProbeTmp" offset="6" type="int16" units="C" mandatory="true" />
+      <point id="MainTmp" offset="5" type="int16" units="C" mandatory="true" />
+      <point id="SensorV_SF" offset="7" type="sunssf" mandatory="true" />
+      <point id="SensorA_SF" offset="8" type="sunssf" mandatory="true" />
+      <point id="SensorHz_SF" offset="9" type="sunssf" mandatory="true" />
+      <point id="Sensor1Voltage" offset="10" type="int16" sf="SensorV_SF" units="V" />
+      <point id="Sensor2Voltage" offset="11" type="int16" sf="SensorV_SF" units="V" />
+      <point id="Sensor3Voltage" offset="12" type="int16" sf="SensorV_SF" units="V" />
+      <point id="Sensor4Voltage" offset="13" type="int16" sf="SensorV_SF" units="V" />
+      <point id="Sensor5Voltage" offset="14" type="int16" sf="SensorV_SF" units="V" />
+      <point id="Sensor6Voltage" offset="15" type="int16" sf="SensorV_SF" units="V" />
+      <point id="Sensor7Voltage" offset="16" type="int16" sf="SensorV_SF" units="V" />
+      <point id="Sensor1Current" offset="17" type="int16" sf="SensorA_SF" units="A" />
+      <point id="Sensor2Current" offset="18" type="int16" sf="SensorA_SF" units="A" />
+      <point id="Sensor3Current" offset="19" type="int16" sf="SensorA_SF" units="A" />
+      <point id="Sensor4Current" offset="20" type="int16" sf="SensorA_SF" units="A" />
+      <point id="Sensor5Current" offset="21" type="int16" sf="SensorA_SF" units="A" />
+      <point id="Sensor6Current" offset="22" type="int16" sf="SensorA_SF" units="A" />
+      <point id="Sensor7Current" offset="23" type="int16" sf="SensorA_SF" units="A" />
+      <point id="Sensor8" offset="24" type="uint16" sf="SensorHz_SF" units="Hz" />
+      <point id="Relay1" offset="25" type="uint16"  />
+      <point id="Relay2" offset="26" type="uint16"  />
+      <point id="Relay3" offset="27" type="uint16"  />	  
+      <point id="ResetAccumulators" offset="28" type="uint16"  />
+      <point id="Reset" offset="29" type="uint16"  />  
+    </block>
+    <block type="repeating" len="16">
+      <point id="SerialNumber" offset="0" type="string" len="9" mandatory="true" />
+      <point id="Firmware" offset="9" type="string" len="6" mandatory="true" />
+      <point id="Hardware" offset="15" type="uint16" mandatory="true" />
+    </block>	  
+  </model>
+  <strings id="64020" locale="en">
+    <model>
+      <label>Mersen GreenString</label>
+      <description></description>
+      <notes></notes>
+    </model>
+    <point id="Aux0Tmp">
+      <label>Aux 0 temperature</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Aux1Tmp">
+      <label>Aux 1 temperature</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Aux2Tmp">
+      <label>Aux 2 temperature</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Aux3Tmp">
+      <label>Aux 3 temperature</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Aux4Tmp">
+      <label>Aux 4 temperature</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="ProbeTmp">
+      <label>Probe Temperature</label>
+      <description></description>
+      <notes></notes>
+    </point>    
+    <point id="MainTmp">
+      <label>Main Temperature</label>
+      <description></description>
+      <notes></notes>
+    </point>    
+    <point id="SensorV_SF">
+      <label>Voltage scale factor for the sensors</label>
+      <description></description>
+      <notes></notes>
+    </point> 
+    <point id="SensorA_SF">
+      <label>Current scale factor for the sensors</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="SensorHz_SF">
+      <label>Frequency scale factor for the sensors</label>
+      <description></description>
+      <notes></notes>
+    </point>  
+    <point id="Sensor1Voltage">
+      <label>Sensor1 Voltage</label>
+      <description>scale of 0-10V</description>
+      <notes></notes>
+    </point> 
+	<point id="Sensor2Voltage">
+      <label>Sensor2 Voltage</label>
+      <description>scale of 0-10V</description>
+      <notes></notes>
+    </point> 
+    <point id="Sensor3Voltage">
+      <label>Sensor3 Voltage</label>
+      <description>scale of 0-10V</description>
+      <notes></notes>
+    </point> 
+    <point id="Sensor4Voltage">
+      <label>Sensor4 Voltage</label>
+      <description>scale of 0-10V</description>
+      <notes></notes>
+    </point> 
+    <point id="Sensor5Voltage">
+      <label>Sensor5 Voltage</label>
+      <description>scale of 0-10V</description>
+      <notes></notes>
+    </point> 
+    <point id="Sensor6Voltage">
+      <label>Sensor6 Voltage</label>
+      <description>scale of 0-10V</description>
+      <notes></notes>
+    </point> 
+    <point id="Sensor7Voltage">
+      <label>Sensor7 Voltage</label>
+      <description>scale of 0-10V</description>
+      <notes></notes>
+    </point>
+    <point id="Sensor1Current">
+      <label>Sensor1 Current</label>
+      <description>scale of 4-20mA</description>
+      <notes></notes>
+    </point> 
+    <point id="Sensor2Current">
+      <label>Sensor2 Current</label>
+      <description>in 4-20mA or 4-20mA</description>
+      <notes></notes>
+    </point> 
+    <point id="Sensor3Current">
+      <label>Sensor3 Current</label>
+      <description>in 4-20mA or 4-20mA</description>
+      <notes></notes>
+    </point> 
+    <point id="Sensor4Current">
+      <label>Sensor4 Current</label>
+      <description>in 4-20mA or 4-20mA</description>
+      <notes></notes>
+    </point> 
+    <point id="Sensor5Current">
+      <label>Sensor5 Current</label>
+      <description>in 4-20mA or 4-20mA</description>
+      <notes></notes>
+    </point> 
+    <point id="Sensor6Current">
+      <label>Sensor6 Current</label>
+      <description>in 4-20mA or 4-20mA</description>
+      <notes></notes>
+    </point> 
+    <point id="Sensor7Current">
+      <label>Sensor7 Current</label>
+      <description>in 4-20mA or 4-20mA</description>
+      <notes></notes>
+    </point>
+    <point id="Sensor8">
+      <label>Sensor8 frequency</label>
+      <description>frequency in Hz</description>
+      <notes></notes>
+    </point> 
+    <point id="Relay1">
+      <label>Relay 1 state</label>
+      <description></description>
+      <notes></notes>
+    </point> 
+	<point id="Relay2">
+      <label>Relay 2 state</label>
+      <description></description>
+      <notes></notes>
+    </point> 
+    <point id="Relay3">
+      <label>Relay 3 state</label>
+      <description></description>
+      <notes></notes>
+    </point> 
+    <point id="ResetAccumulators">
+      <label>Reset the accumulators</label>
+      <description>always 0 in reading, used the code 0xC0DA during the writting for resetting them</description>
+      <notes></notes>
+    </point> 
+    <point id="Reset">
+      <label>Reset the system</label>
+      <description>always 0 in reading, used the code 0xC0DA during the writting for resetting the system</description>
+      <notes></notes>
+    </point> 
+    <point id="SerialNumber">
+      <label>Serial number</label>
+      <description>strings of 16 caracters</description>
+      <notes></notes>
+    </point> 
+     <point id="Firmware">
+      <label>Firmware version</label>
+      <description>string of 11 caracters</description>
+      <notes></notes>
+    </point> 
+     <point id="Hardware">
+      <label>Hardware version</label>
+      <description></description>
+      <notes></notes>
+    </point> 
+  </strings>
+</sunSpecModels>

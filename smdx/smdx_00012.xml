@@ -1,0 +1,218 @@
+<sunSpecModels v="1">
+  <!-- 12: IPv4 protocol -->
+  <model id="12" len="98">
+    <block len="98">
+      <point id="Nam" offset="0" type="string" len="4" access="rw" />
+      <point id="CfgSt" offset="4" type="enum16" mandatory="true" >
+        <symbol id="NOT_CONFIGURED">0</symbol>
+        <symbol id="VALID_SETTING">1</symbol>
+        <symbol id="VALID_HW">2</symbol>
+      </point>
+      <point id="ChgSt" offset="5" type="bitfield16" mandatory="true" >
+        <symbol id="PENDING">0</symbol>
+      </point>
+      <point id="Cap" offset="6" type="bitfield16" mandatory="true" >
+        <symbol id="DHCP">0</symbol>
+        <symbol id="BOOTP">1</symbol>
+        <symbol id="ZEROCONF">2</symbol>
+        <symbol id="DNS">3</symbol>
+        <symbol id="CFG_SETTABLE">4</symbol>
+        <symbol id="HW_CONFIG">5</symbol>
+        <symbol id="NTP_CLIENT">6</symbol>
+        <symbol id="RESET_REQUIRED">7</symbol>
+      </point>
+      <point id="Cfg" offset="7" type="enum16" mandatory="true" access="rw" >
+        <symbol id="STATIC">0</symbol>
+        <symbol id="DHCP">1</symbol>
+        <symbol id="BOOTP">2</symbol>
+        <symbol id="ZEROCONF">3</symbol>
+      </point>
+      <point id="Ctl" offset="8" type="enum16" mandatory="true" access="rw" >
+        <symbol id="ENABLE_DNS">0</symbol>
+        <symbol id="ENABLE_NTP">1</symbol>
+      </point>
+      <point id="Addr" offset="9" type="string" len="8" mandatory="true" access="rw" />
+      <point id="Msk" offset="17" type="string" len="8" mandatory="true" access="rw" />
+      <point id="Gw" offset="25" type="string" len="8" access="rw" />
+      <point id="DNS1" offset="33" type="string" len="8" access="rw" />
+      <point id="DNS2" offset="41" type="string" len="8" access="rw" />
+      <point id="NTP1" offset="49" type="string" len="12" access="rw" />
+      <point id="NTP2" offset="61" type="string" len="12" access="rw" />
+      <point id="DomNam" offset="73" type="string" len="12" access="rw" />
+      <point id="HostNam" offset="85" type="string" len="12" access="rw" />
+      <point id="Pad" offset="97" type="pad" />
+    </block>
+  </model>
+  <strings id="12" locale="en">
+    <model>
+      <label>IPv4</label>
+      <description>Include to support an IPv4 protocol stack on this interface</description>
+      <notes></notes>
+    </model>
+    <point id="Nam">
+      <label>Name</label>
+      <description>Interface name</description>
+      <notes></notes>
+    </point>
+    <point id="CfgSt">
+      <label>Config Status</label>
+      <description>Enumerated value.  Configuration status</description>
+      <notes></notes>
+      <symbol id="NOT_CONFIGURED">
+        <label>not configured</label>
+        <description>the stack is not configured</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VALID_SETTING">
+        <label>valid setting</label>
+        <description>a valid configuration from BOOTP, DHCP, or NV mem</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VALID_HW">
+        <label>valid hardware</label>
+        <description>a valid configuration from hardware settings</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="ChgSt">
+      <label>Change Status</label>
+      <description>Bitmask value.  A configuration change is pending</description>
+      <notes></notes>
+      <symbol id="PENDING">
+        <label>pending</label>
+        <description>a configuration change is pending</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Cap">
+      <label>Config Capability</label>
+      <description>Bitmask value. Identify capable sources of configuration</description>
+      <notes></notes>
+      <symbol id="DHCP">
+        <label>DHCP</label>
+        <description>DHCP Client capable</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="BOOTP">
+        <label>BOOTP</label>
+        <description>BOOTP client capable</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ZEROCONF">
+        <label>zeroconf</label>
+        <description>Zeroconf capable</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DNS">
+        <label>DNS</label>
+        <description>DNS Client capable</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CFG_SETTABLE">
+        <label>configurable</label>
+        <description>Settable configuration capable</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="HW_CONFIG">
+        <label>hw</label>
+        <description>Hardware configuration capable</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="NTP_CLIENT">
+        <label>ntp</label>
+        <description>NTP Client capable</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="RESET_REQUIRED">
+        <label>reset required</label>
+        <description>configuration change requires reset</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Cfg">
+      <label>IPv4 Config</label>
+      <description>Enumerated value.  Configuration method used.</description>
+      <notes></notes>
+      <symbol id="STATIC">
+        <label>static</label>
+        <description>Use static IP</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DHCP">
+        <label>DHCP</label>
+        <description>Use DHCP</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="BOOTP">
+        <label>BOOTP</label>
+        <description>Use BOOTP</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ZEROCONF">
+        <label>zeroconf</label>
+        <description>Use Zeroconf</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Ctl">
+      <label>Control</label>
+      <description>Configure use of services</description>
+      <notes></notes>
+      <symbol id="ENABLE_DNS">
+        <label>DNS</label>
+        <description>Enable DNS</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLE_NTP">
+        <label>NTP</label>
+        <description>Enable NTP</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Addr">
+      <label>IP</label>
+      <description>IPv4 numeric address as a dotted string xxx.xxx.xxx.xxx</description>
+      <notes></notes>
+    </point>
+    <point id="Msk">
+      <label>Netmask</label>
+      <description>IPv4 numeric netmask as a dotted string xxx.xxx.xxx.xxx</description>
+      <notes></notes>
+    </point>
+    <point id="Gw">
+      <label>Gateway</label>
+      <description>IPv4 numeric gateway address as a dotted string xxx.xxx.xxx.xxx</description>
+      <notes></notes>
+    </point>
+    <point id="DNS1">
+      <label>DNS1</label>
+      <description>IPv4 numeric DNS address as a dotted string xxx.xxx.xxx.xxx</description>
+      <notes></notes>
+    </point>
+    <point id="DNS2">
+      <label>DNS2</label>
+      <description>IPv4 numeric DNS address as a dotted string xxx.xxx.xxx.xxx</description>
+      <notes></notes>
+    </point>
+    <point id="NTP1">
+      <label>NTP1</label>
+      <description>IPv4 numeric NTP address as a dotted string xxx.xxx.xxx.xxx</description>
+      <notes></notes>
+    </point>
+    <point id="NTP2">
+      <label>NTP2</label>
+      <description>IPv4 numeric NTP address as a dotted string xxx.xxx.xxx.xxx</description>
+      <notes></notes>
+    </point>
+    <point id="DomNam">
+      <label>Domain</label>
+      <description>Domain name (24 chars max)</description>
+      <notes></notes>
+    </point>
+    <point id="HostNam">
+      <label>Host Name</label>
+      <description>Host name (24 chars max)</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

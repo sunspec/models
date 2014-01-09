@@ -1,0 +1,87 @@
+<sunSpecModels v="1">
+  <!-- 15: Interface Counters -->
+  <model id="15" len="24">
+    <block len="24">
+      <point id="Clr" offset="0" type="uint16" access="rw" />
+      <point id="InCnt" offset="1" type="acc32" />
+      <point id="InUcCnt" offset="3" type="acc32" />
+      <point id="InNUcCnt" offset="5" type="acc32" />
+      <point id="InDscCnt" offset="7" type="acc32" />
+      <point id="InErrCnt" offset="9" type="acc32" />
+      <point id="InUnkCnt" offset="11" type="acc32" />
+      <point id="OutCnt" offset="13" type="acc32" />
+      <point id="OutUcCnt" offset="15" type="acc32" />
+      <point id="OutNUcCnt" offset="17" type="acc32" />
+      <point id="OutDscCnt" offset="19" type="acc32" />
+      <point id="OutErrCnt" offset="21" type="acc32" />
+      <point id="Pad" offset="23" type="pad" />
+    </block>
+  </model>
+  <strings id="15" locale="en">
+    <model>
+      <label>Interface Counters Model</label>
+      <description>Interface counters</description>
+      <notes></notes>
+    </model>
+    <point id="Clr">
+      <label>Clear</label>
+      <description>Write a "1" to clear all counters</description>
+      <notes></notes>
+    </point>
+    <point id="InCnt">
+      <label>Input Count</label>
+      <description>Number of bytes received</description>
+      <notes></notes>
+    </point>
+    <point id="InUcCnt">
+      <label>Input Unicast Count</label>
+      <description>Number of Unicast packets received</description>
+      <notes></notes>
+    </point>
+    <point id="InNUcCnt">
+      <label>Input Non-Unicast Count</label>
+      <description>Number of non-Unicast packets received</description>
+      <notes></notes>
+    </point>
+    <point id="InDscCnt">
+      <label>Input Discarded Count</label>
+      <description>Number of inbound packets received on the interface but discarded</description>
+      <notes></notes>
+    </point>
+    <point id="InErrCnt">
+      <label>Input Error Count</label>
+      <description>Number of inbound packets that contain errors (excluding discards)</description>
+      <notes></notes>
+    </point>
+    <point id="InUnkCnt">
+      <label>Input Unknown Count</label>
+      <description>Number of inbound packets with unknown protocol</description>
+      <notes></notes>
+    </point>
+    <point id="OutCnt">
+      <label>Output Count</label>
+      <description>Total number of bytes transmitted on this interface</description>
+      <notes></notes>
+    </point>
+    <point id="OutUcCnt">
+      <label>Output Unicast Count</label>
+      <description>Number of Unicast packets transmitted</description>
+      <notes></notes>
+    </point>
+    <point id="OutNUcCnt">
+      <label>Output Non-Unicast Count</label>
+      <description>Number of Non-Unicast packets transmitted</description>
+      <notes></notes>
+    </point>
+    <point id="OutDscCnt">
+      <label>Output Discarded Count</label>
+      <description>Number of Discarded output packets</description>
+      <notes></notes>
+    </point>
+    <point id="OutErrCnt">
+      <label>Output Error Count</label>
+      <description>Number of outbound error packets</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

@@ -1,0 +1,139 @@
+<sunSpecModels v="1">
+  <!-- 19: PPP Link -->
+  <model id="19" len="30">
+    <block len="30">
+      <point id="Nam" offset="0" type="string" len="4" access="rw" />
+      <point id="Rte" offset="4" type="uint32" mandatory="true" access="rw" units="bps" />
+      <point id="Bits" offset="6" type="uint16" mandatory="true" access="rw" />
+      <point id="Pty" offset="7" type="enum16" mandatory="true" access="rw" >
+        <symbol id="NONE">0</symbol>
+        <symbol id="ODD">1</symbol>
+        <symbol id="EVEN">2</symbol>
+      </point>
+      <point id="Dup" offset="8" type="enum16" access="rw" >
+        <symbol id="FULL">0</symbol>
+        <symbol id="HALF">1</symbol>
+      </point>
+      <point id="Flw" offset="9" type="enum16" access="rw" >
+        <symbol id="NONE">0</symbol>
+        <symbol id="HW">1</symbol>
+        <symbol id="XONXOFF">2</symbol>
+      </point>
+      <point id="Auth" offset="10" type="enum16" >
+        <symbol id="NONE">0</symbol>
+        <symbol id="PAP">1</symbol>
+        <symbol id="CHAP">2</symbol>
+      </point>
+      <point id="UsrNam" offset="11" type="string" len="12" />
+      <point id="Pw" offset="23" type="string" len="6" />
+      <point id="Pad" offset="29" type="pad" />
+    </block>
+  </model>
+  <strings id="19" locale="en">
+    <model>
+      <label>PPP Link</label>
+      <description>Include this model to configure a Point-to-Point Protocol link</description>
+      <notes></notes>
+    </model>
+    <point id="Nam">
+      <label>Name</label>
+      <description>Interface name</description>
+      <notes></notes>
+    </point>
+    <point id="Rte">
+      <label>Rate</label>
+      <description>Interface baud rate in bits per second</description>
+      <notes></notes>
+    </point>
+    <point id="Bits">
+      <label>Bits</label>
+      <description>Number of data bits per character</description>
+      <notes></notes>
+    </point>
+    <point id="Pty">
+      <label>Parity</label>
+      <description>Bitmask value.  Parity setting</description>
+      <notes></notes>
+      <symbol id="NONE">
+        <label>none</label>
+        <description>No Parity</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ODD">
+        <label>odd</label>
+        <description>Odd Parity</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="EVEN">
+        <label>even</label>
+        <description>Even Parity</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Dup">
+      <label>Duplex</label>
+      <description>Enumerated value.  Duplex mode</description>
+      <notes></notes>
+      <symbol id="FULL">
+        <label>full</label>
+        <description>Full Duplex</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="HALF">
+        <label>half</label>
+        <description>Half Duplex</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Flw">
+      <label>Flow Control</label>
+      <description>Flow Control Method</description>
+      <notes></notes>
+      <symbol id="NONE">
+        <label>none</label>
+        <description>No flow control</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="HW">
+        <label>hardware</label>
+        <description>Hardware flow control</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="XONXOFF">
+        <label>software</label>
+        <description>Soft (XON/XOFF) flow control</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Auth">
+      <label>Authentication</label>
+      <description>Enumerated value.  Authentication method</description>
+      <notes></notes>
+      <symbol id="NONE">
+        <label>none</label>
+        <description>No Authentication</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="PAP">
+        <label>PAP</label>
+        <description>Use PAP authentication</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CHAP">
+        <label>CHAP</label>
+        <description>Use CHAP authentication</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="UsrNam">
+      <label>Username</label>
+      <description>Username for authentication</description>
+      <notes></notes>
+    </point>
+    <point id="Pw">
+      <label>Password</label>
+      <description>Password for authentication</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>
