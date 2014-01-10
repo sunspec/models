@@ -1,7 +1,7 @@
 <sunSpecModels v="1">
 
   <!-- 308: Mini Met Model -->
-  <model id="308" len="4">
+  <model id="308" len="4" name="mini_met">
     <block len="4">
       <point id="GHI" offset="0" type="uint16" units="W/m2" mandatory="false"/>
       <point id="TmpBOM" offset="1" type="int16" sf="-1" units="C" mandatory="false"/>

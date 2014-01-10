@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 212: ac_meter_f -->
-  <model id="212" len="124">
+  <model id="212" len="124" name="ac_meter">
     <block len="124">
       <point id="A" offset="0" type="float32" units="A" mandatory="true" />
       <point id="AphA" offset="2" type="float32" units="A" mandatory="true" />

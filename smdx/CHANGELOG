@@ -41,3 +41,10 @@
 2013 April 29: John Nunneley, SunSpec.  Corrected offsets in models.  Models affected C 1, NC 16, M 305
 
 2013 April 29: John Nunneley, SunSpec.  Contributed DRAFT secure read and write models.  Models affected SEC 3-4.
+
+------------------------------------------
+Models moved to SunSpec models repository
+------------------------------------------
+
+2014 January 9: Bob Fox, Loggerware. Updates from the last SunSpec official release not previously checked in; correction of some model lengths; addition of model/repeating block name attributes; addition of test models 6300x.
+

@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 307: meteorological v1.1 -->
-  <model id="307" len="11">
+  <model id="307" len="11" name="base_met">
     <block len="11">
       <point id="TmpAmb" offset="0" type="int16" sf="-1" units="C" />
       <point id="RH" offset="1" type="int16" units="Pct" />

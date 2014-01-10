@@ -1,0 +1,105 @@
+<sunSpecModels v="1">
+  <!-- 601: Tracker Controller -->
+  <model id="601" len="48" name="tracker_controller">
+    <block len="26">
+      <point id="Nam" offset="0" type="string" len="8"  mandatory="false" />
+      <point id="Typ" offset="8" type="enum16" mandatory="true" >
+        <symbol id="Unknown">0</symbol>
+        <symbol id="Fixed">1</symbol>
+        <symbol id="Horizontal">2</symbol>
+        <symbol id="Tilted">3</symbol>
+        <symbol id="Azimuth">4</symbol>
+        <symbol id="Dual">5</symbol>
+        <symbol id="Other">99</symbol>
+      </point>
+      <point id="DtLoc" offset="9" type="string" len="5" units="YYYYMMDD" mandatory="false"/>
+      <point id="TmLoc" offset="14" type="string" len="3" units="hhmmss" mandatory="false" />
+      <point id="Day" offset="17" type="uint16" mandatory="false" />
+      <point id="GlblElCtl" offset="18" type="int32" units="Degrees" sf="Dgr_SF" access="rw" mandatory="false" />
+      <point id="GlblAzCtl" offset="20" type="int32" units="Degrees" sf="Dgr_SF" access="rw" mandatory="false" />
+      <point id="GlblCtl" offset="22" type="enum16" access="rw" mandatory="false" >
+        <symbol id="Automatic">0</symbol>
+        <symbol id="Manual">1</symbol>
+        <symbol id="Calibrate">2</symbol>
+      </point>
+      <point id="GlblAlm" offset="23" type="bitfield16"  mandatory="false">
+        <symbol id="SetPoint">0</symbol>
+        <symbol id="ObsEl">1</symbol>
+        <symbol id="ObsAz">2</symbol>
+      </point>
+      <point id="Dgr_SF" offset="24" type="sunssf"  mandatory="true" />
+      <point id="N" offset="25" type="uint16" mandatory="true" />
+    </block>
+    <block len="22" type="repeating" name="tracker">
+      <point id="Id" offset="0" type="string" len="8"  mandatory="false" />
+      <point id="ElTrgt" offset="8" type="int32" units="Degrees" sf="Dgr_SF" mandatory="false" />
+      <point id="AzTrgt" offset="10" type="int32" units="Degrees" sf="SF" mandatory="false" />
+      <point id="ElPos" offset="12" type="int32" units="Degrees" sf="Dgr_SF" mandatory="false" />
+      <point id="AzPos" offset="14" type="int32" units="Degrees" sf="Dgr_SF" mandatory="false" />
+      <point id="ElCtl" offset="16" type="int32" units="Degrees" sf="Dgr_SF" access="rw" mandatory="false" />
+      <point id="AzCtl" offset="18" type="int32" units="Degrees" sf="Dgr_SF" access="rw" mandatory="false" />
+      <point id="Ctl" offset="20" type="enum16" access="rw" mandatory="false" >
+        <symbol id="Automatic">0</symbol>
+        <symbol id="Manual">1</symbol>
+        <symbol id="Calibrate">2</symbol>
+      </point>
+      <point id="Alm" offset="21" type="bitfield16"  mandatory="false">
+        <symbol id="SetPoint">0</symbol>
+        <symbol id="ObsEl">1</symbol>
+        <symbol id="ObsAz">2</symbol>
+      </point>
+    </block>
+  </model>
+  <strings id="601" locale="en">
+    <model>
+      <label>Tracker Controller DRAFT 2</label>
+      <description>Monitors and controls multiple trackers</description>
+      <notes>Trackers may include GPS model 305 for location information</notes>
+    </model>
+    <point id="TmLoc"><label>Time</label><description>24 hour local time stamp to second</description></point>
+    <point id="DtLoc"><label>Date</label><description>Local date in YYYYMMDD format</description></point>
+    <point id="Day"><label>Day</label><description>Number of the day in the year (1-366)</description></point>
+    <point id="N"><label>Trackers</label><description>Number of trackers being controlled.  Size of repeating block.</description></point>
+    <point id="Typ">
+      <label>Type</label><description>Type of tracker</description>
+      <symbol id="Unknown"><label>Unknown</label><description>Not Set</description></symbol>
+      <symbol id="Fixed"><label>Fixed</label><description>Documented orientation information</description></symbol>
+      <symbol id="Horizontal"><label>Horizontal</label><description>Single Axis Horizontal</description></symbol>
+      <symbol id="Tilted"><label>Tilted</label><description>Single Axis Tilted Horizontal</description></symbol>
+      <symbol id="Azimuth"><label>Azimuth</label><description>Single Axis Azimuth</description></symbol>
+      <symbol id="Dual"><label>Dual</label><description>Dual Axis</description></symbol>
+      <symbol id="Other"><label>Other</label><description>Other type</description></symbol>
+    </point>
+    <point id="Nam"><label>Controller</label><description>Descriptive name for this control unit</description></point>
+    <point id="Id"><label>Tracker</label><description>Descriptive name for this tracker unit</description></point>
+    <point id="ElTrgt"><label>Target Elevation</label><description>Auto target elevation in degrees from horizontal.  Unimplemented for single axis azimuth tracker type</description><notes>Conformant implementations shall implement El or Az</notes></point>
+    <point id="AzTrgt"><label>Target Azimuth</label><description>Auto target azimuth  in degrees from true north towards east.  Unimplemented for single axis horizontal tracker type</description><notes>Conformant implementations shall implement El or Az</notes></point>
+    <point id="ElPos"><label>Elevation</label><description>Actual elevation position  in degrees from horizontal.  Unimplemented for single axis azimuth tracker type</description><notes>Conformant implementations shall implement El or Az</notes></point>
+    <point id="AzPos"><label>Azimuth</label><description>Actual azimuth position  in degrees from true north towards east.  Unimplemented for single axis horizontal tracker type</description><notes>Conformant implementations shall implement El or Az</notes></point>
+    <point id="Dgr_SF"><label>SF</label><description>Scale Factor for targets and position measurements in degrees</description></point>
+    <point id="Alm"><label>Alarm</label><description>Tracker alarm conditions</description>
+      <symbol id="SetPoint"><label>SetPoint</label><description>Tracker NOT at SetPoint</description></symbol>
+      <symbol id="ObsEl"><label>ObsEl</label><description>Tracker ELEVATION motor is obstructed</description></symbol>
+      <symbol id="ObsAz"><label>ObsAz</label><description>Tracker AZIMUTH motor is obstructed</description></symbol>
+    </point>
+    <point id="GlblAlm"><label>Alarm</label><description>Global tracker alarm conditions</description><note>Combined tracker alarm conditions.  See individual trackers for alarms</note>
+      <symbol id="SetPoint"><label>SetPoint</label><description>One or more trackers are NOT at SetPoint</description></symbol>
+      <symbol id="ObsEl"><label>ObsEl</label><description>One or more trackers ELEVATION motor is obstructed</description></symbol>
+      <symbol id="ObsAz"><label>ObsAz</label><description>One or more trackers AZIMUTH motor is obstructed</description></symbol>
+    </point>
+    <point id="GlblElCtl"><label>Manual Elevation</label><description>Global manual override target position of elevation in degreees from horizontal.  Unimplemented for single axis azimuth tracker type</description></point>
+    <point id="GlblAzCtl"><label>Manual Azimuth</label><description>Global manual override target position of azimuth in degrees from true north towards east.  Unimplemented for single axis azimuth tracker type</description></point>
+    <point id="GlblCtl"><label>Mode</label><description>Global Control register operates on all trackers. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.</description><note>The global controls all trackers</note>
+      <symbol id="Automatic"><label>Auto</label><description>Follow programmed path</description></symbol>
+      <symbol id="Manual"><label>Manual</label><description>Go to a fixed position</description></symbol>
+      <symbol id="Calibrate"><label>Calibrate</label><description>Execute test mode</description></symbol>
+    </point>
+    <point id="ElCtl"><label>Manual Elevation</label><description>Manual override target position of elevation in degreees from horizontal.  Unimplemented for single axis azimuth tracker type</description></point>
+    <point id="AzCtl"><label>Manual Azimuth</label><description>Manual override target position of azimuth in degrees from true north towards east.  Unimplemented for single axis azimuth tracker type</description></point>
+    <point id="Ctl"><label>Mode</label><description>Control register. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.</description>
+      <symbol id="Automatic"><label>Auto</label><description>Follow programmed path</description></symbol>
+      <symbol id="Manual"><label>Manual</label><description>Go to a fixed position</description></symbol>
+      <symbol id="Calibrate"><label>Calibrate</label><description>Execute test mode</description></symbol>
+    </point>
+  </strings>
+</sunSpecModels>

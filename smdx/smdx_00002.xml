@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 2: basic aggregator -->
-  <model id="2" len="14">
+  <model id="2" len="14" name="aggregator">
     <block len="14">
       <point id="AID" offset="0" type="uint16" mandatory="true" />
       <point id="N" offset="1" type="uint16" mandatory="true" />

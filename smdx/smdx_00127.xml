@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 127: Parameterized Frequency-Watt  -->
-  <model id="127" len="10">
+  <model id="127" len="10" name="freq_watt_param">
     <block len="10" type="fixed">
       <point id="WGra" offset="0" access="rw" type="uint16" len="1" mandatory="true" units="% PM/Hz" sf="WGra_SF"/>
       <point id="HzStr" offset="1" access="rw" type="int16" len="1" mandatory="true" units="Hz" sf="HzStrStop_SF"/>

@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 1: common -->
-  <model id="1" len="66">
+  <model id="1" len="66" name="common">
     <block len="66">
       <point id="Mn" offset="0" type="string" len="16" mandatory="true" />
       <point id="Md" offset="16" type="string" len="16" mandatory="true" />

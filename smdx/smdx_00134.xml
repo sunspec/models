@@ -1,27 +1,21 @@
 <sunSpecModels v="1">
   <!-- 134: Curve-Based Frequency-Watt  -->
-  <model id="134" len="70">
-    <block len="16" type="fixed">
+  <model id="134" len="68" name="freq_watt">
+    <block len="10" type="fixed">
       <point id="ActCrv" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
       <point id="ModEna" offset="1" access="rw" type="bitfield16" len="1" mandatory="true">
         <symbol id="ENABLED">0</symbol>
       </point>
-      <point id="SnptW" offset="2" access="rw" type="bitfield16" len="1" mandatory="true"  />
-      <point id="WRef" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="W" sf="WMax_SF"/>
-      <point id="WRefStrHz" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="HzStrStop_SF"/>
-      <point id="WRefStopHz" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="HzStrStop_SF"/>
-      <point id="RmpRsUp" offset="6" access="rw" type="uint16" len="1" mandatory="false" units="% WMax/min" sf="RmpIncDec_SF"/>
-      <point id="WinTms" offset="7" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="RvrtTms" offset="8" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="RmpTms" offset="9" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="NCrv" offset="10" access="r" type="uint16" len="1" mandatory="true"  />
-      <point id="NPt" offset="11" access="r" type="uint16" len="1" mandatory="true"  />
-      <point id="Hz_SF" offset="12" access="r" type="sunssf" len="1" mandatory="true" units="SF" />
-      <point id="W_SF" offset="13" access="r" type="sunssf" len="1" mandatory="true" units="SF" />
-      <point id="RmpIncDec_SF" offset="14" access="r" type="sunssf" len="1" mandatory="false" units="SF" />
-      <point id="Pad" offset="15" access="r" type="pad" len="1" mandatory="false" />
+      <point id="WinTms" offset="2" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="RvrtTms" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="RmpTms" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="NCrv" offset="5" access="r" type="uint16" len="1" mandatory="true"  />
+      <point id="NPt" offset="6" access="r" type="uint16" len="1" mandatory="true"  />
+      <point id="Hz_SF" offset="7" access="r" type="sunssf" len="1" mandatory="true" units="SF" />
+      <point id="W_SF" offset="8" access="r" type="sunssf" len="1" mandatory="true" units="SF" />
+      <point id="RmpIncDec_SF" offset="9" access="r" type="sunssf" len="1" mandatory="false" units="SF" />
     </block>
-    <block len="54" type="repeating">
+    <block len="58" type="repeating" name="curve">
       <point id="ActPt" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
       <point id="Hz1" offset="1" access="rw" type="uint16" len="1" mandatory="true" units="Hz" sf="Hz_SF"/>
       <point id="W1" offset="2" access="rw" type="int16" len="1" mandatory="true" units="% WRef" sf="W_SF"/>
@@ -67,11 +61,15 @@
       <point id="RmpPT1Tms" offset="49" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
       <point id="RmpDecTmm" offset="50" access="rw" type="uint16" len="1" mandatory="false" units="% WMax/min" sf="RmpIncDec_SF"/>
       <point id="RmpIncTmm" offset="51" access="rw" type="uint16" len="1" mandatory="false" units="% WMax/min" sf="RmpIncDec_SF"/>
-      <point id="ReadOnly" offset="52" access="r" type="enum16" len="1" mandatory="true" >
+      <point id="RmpRsUp" offset="52" access="rw" type="uint16" len="1" mandatory="false" units="% WMax/min" sf="RmpIncDec_SF"/>
+      <point id="SnptW" offset="53" access="rw" type="bitfield16" len="1" mandatory="true"  />
+      <point id="WRef" offset="54" access="rw" type="uint16" len="1" mandatory="false" units="W" sf="W_SF"/>
+      <point id="WRefStrHz" offset="55" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
+      <point id="WRefStopHz" offset="56" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
+      <point id="ReadOnly" offset="57" access="r" type="enum16" len="1" mandatory="true" >
         <symbol id="READWRITE">0</symbol>
         <symbol id="READONLY">1</symbol>
       </point>
-      <point id="Pad" offset="53" access="r" type="pad" len="1" mandatory="false" />
     </block>
   </model>
   <strings id="134" locale="en">
@@ -120,11 +118,6 @@
       <description>Frequency deviation from nominal frequency at which to release the power output.</description>
       <notes> </notes>
     </point>
-    <point id="RmpRsUp">
-      <label>RmpRsUp</label>
-      <description>The maximum rate at which the power may be increased after releasing the frozen value of snap shot function. </description>
-      <notes> </notes>
-    </point>
     <point id="WinTms">
       <label>WinTms</label>
       <description>Time window for freq-watt change.</description>
@@ -155,11 +148,6 @@
       <description>Scale factor for increment and decrement ramps.</description>
       <notes> </notes>
     </point>
-    <point id="Pad">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>
     <point id="CrvNam">
       <label>CrvNam</label>
       <description>Optional description for curve. (Max 16 chars)</description>
@@ -183,6 +171,11 @@
     <point id="RmpIncTmm">
       <label>RmpIncTmm</label>
       <description>The maximum rate at which the power value may be increased in response to changes in the frequency value.</description>
+      <notes> </notes>
+    </point>
+    <point id="RmpRsUp">
+      <label>RmpRsUp</label>
+      <description>The maximum rate at which the power may be increased after releasing the frozen value of snap shot function. </description>
       <notes> </notes>
     </point>
     <point id="Hz1">

@@ -1,8 +1,8 @@
 <sunSpecModels v="1">
   <!-- 121: Inverter Controls Basic Settings  -->
-  <model id="121" len="32">
-    <block len="32" type="fixed">
-      <point id="WMax" offset="0" access="rw" type="uint16" len="1" mandatory="true" units="W" sf="VAMax_SF"/>
+  <model id="121" len="30" name="settings">
+    <block len="30" type="fixed">
+      <point id="WMax" offset="0" access="rw" type="uint16" len="1" mandatory="true" units="W" sf="WMax_SF"/>
       <point id="VRef" offset="1" access="rw" type="uint16" len="1" mandatory="true" units="V" sf="VRef_SF"/>
       <point id="VRefOfs" offset="2" access="rw" type="int16" len="1" mandatory="true" units="V" sf="VRefOfs_SF"/>
       <point id="VMax" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="V" sf="VMinMax_SF"/>
@@ -13,40 +13,35 @@
       <point id="VArMaxQ3" offset="8" access="rw" type="int16" len="1" mandatory="false" units="var" sf="VArMax_SF"/>
       <point id="VArMaxQ4" offset="9" access="rw" type="int16" len="1" mandatory="false" units="var" sf="VArMax_SF"/>
       <point id="WGra" offset="10" access="rw" type="uint16" len="1" mandatory="false" units="% WMax/min" sf="WGra_SF"/>
-      <point id="PFSign" offset="11" access="rw" type="enum16" len="1" mandatory="false" >
-        <symbol id="IEC">1</symbol>
-        <symbol id="EEI">2</symbol>
-      </point>
-      <point id="PFMinQ1" offset="12" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
-      <point id="PFMinQ2" offset="13" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
-      <point id="PFMinQ3" offset="14" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
-      <point id="PFMinQ4" offset="15" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
-      <point id="VArAct" offset="16" access="rw" type="enum16" len="1" mandatory="false"  >
+      <point id="PFMinQ1" offset="11" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
+      <point id="PFMinQ2" offset="12" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
+      <point id="PFMinQ3" offset="13" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
+      <point id="PFMinQ4" offset="14" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
+      <point id="VArAct" offset="15" access="rw" type="enum16" len="1" mandatory="false"  >
         <symbol id="SWITCH">1</symbol>
         <symbol id="MAINTAIN">2</symbol>
       </point>
-      <point id="ClcTotVA" offset="17" access="rw" type="enum16" len="1" mandatory="false">
+      <point id="ClcTotVA" offset="16" access="rw" type="enum16" len="1" mandatory="false">
         <symbol id="VECTOR">1</symbol>
         <symbol id="ARITHMETIC">2</symbol>
       </point>
-      <point id="MaxRmpRte" offset="18" access="rw" type="uint16" len="1" mandatory="false" units="% WGra" sf="MaxRmpRte_SF"/>
-      <point id="ECPNomHz" offset="19" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="ECPNomHz_SF"/>
-      <point id="ConnPh" offset="20" access="rw" type="enum16" len="1" mandatory="false">
+      <point id="MaxRmpRte" offset="17" access="rw" type="uint16" len="1" mandatory="false" units="% WGra" sf="MaxRmpRte_SF"/>
+      <point id="ECPNomHz" offset="18" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="ECPNomHz_SF"/>
+      <point id="ConnPh" offset="19" access="rw" type="enum16" len="1" mandatory="false">
         <symbol id="A">1</symbol>
         <symbol id="B">2</symbol>
         <symbol id="C">3</symbol>
       </point>
-      <point id="WMax_SF" offset="21" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="VRef_SF" offset="22" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="VRefOfs_SF" offset="23" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="VMinMax_SF" offset="24" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="VAMax_SF" offset="25" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="VArMax_SF" offset="26" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="WGra_SF" offset="27" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="PFMin_SF" offset="28" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="MaxRmpRte_SF" offset="29" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="ECPNomHz_SF" offset="30" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="Pad" offset="31" access="r" type="pad" len="1" mandatory="false"  />
+      <point id="WMax_SF" offset="20" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="VRef_SF" offset="21" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="VRefOfs_SF" offset="22" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="VMinMax_SF" offset="23" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="VAMax_SF" offset="24" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="VArMax_SF" offset="25" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="WGra_SF" offset="26" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="PFMin_SF" offset="27" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="MaxRmpRte_SF" offset="28" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="ECPNomHz_SF" offset="29" access="r" type="sunssf" len="1" mandatory="false"  />
     </block>
   </model>
   <strings id="121" locale="en">
@@ -145,30 +140,25 @@
       <description>Scale factor for default ramp rate.</description>
       <notes> </notes>
     </point>
-    <point id="PFSign">
-      <label>PFSign</label>
-      <description>Sign convention for Power Factor settings: IEC=1 EEI=2.</description>
-      <notes> </notes>
-    </point>
     <point id="PFMinQ1">
       <label>PFMinQ1</label>
       <description>Setpoint for minimum power factor value in quadrant 1. Default to PFRtgQ1.</description>
-      <notes> </notes>
+      <notes>EEI sign convention.</notes>
     </point>
     <point id="PFMinQ2">
       <label>PFMinQ2</label>
       <description>Setpoint for minimum power factor value in quadrant 2. Default to PFRtgQ2.</description>
-      <notes> </notes>
+      <notes>EEI sign convention. </notes>
     </point>
     <point id="PFMinQ3">
       <label>PFMinQ3</label>
       <description>Setpoint for minimum power factor value in quadrant 3. Default to PFRtgQ3.</description>
-      <notes> </notes>
+      <notes>EEI sign convention. </notes>
     </point>
     <point id="PFMinQ4">
       <label>PFMinQ4</label>
       <description>Setpoint for minimum power factor value in quadrant 4. Default to PFRtgQ4.</description>
-      <notes> </notes>
+      <notes>EEI sign convention. </notes>
     </point>
     <point id="PFMin_SF">
       <label>PFMin_SF</label>
@@ -208,11 +198,6 @@
     <point id="ConnPh">
       <label>ConnPh</label>
       <description>Identity of connected phase for single phase inverters. A=1 B=2 C=3.</description>
-      <notes> </notes>
-    </point>
-    <point id="Pad">
-      <label>Pad</label>
-      <description>Pad register.</description>
       <notes> </notes>
     </point>
   </strings>

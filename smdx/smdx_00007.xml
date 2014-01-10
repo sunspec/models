@@ -1,0 +1,139 @@
+<sunSpecModels v="1">
+  <!-- 7: security write response model -->
+  <model id="7" len="11">
+    <block len="10">
+      <point id="RqSeq" offset="0" type="uint16" access="r" mandatory="true"/>
+      <point id="Sts" offset="1" type="enum16" access="r" mandatory="true">
+        <symbol id="SUCCESS">0</symbol>
+        <symbol id="DS">1</symbol>
+        <symbol id="ACL">2</symbol>
+        <symbol id="OFF">3</symbol>
+        <symbol id="VAL">4</symbol>
+      </point>
+      <point id="Ts"   offset="2" type="uint32" access="r" mandatory="true" />
+      <point id="Ms" offset="4" type="uint16" access="r" mandatory="true" />
+      <point id="Seq" offset="5" type="uint16" access="r" mandatory="true" />
+      <point id="Alm" offset="6" type="enum16" mandatory="true">
+        <symbol id="NONE">0</symbol>
+        <symbol id="ALM">1</symbol>
+      </point>
+      <point id="Rsrvd" offset="7" type="pad" access="r" mandatory="true" />
+      <point id="Alg"   offset="8" type="enum16" access="r" mandatory="true">
+        <symbol id="NONE">0</symbol>
+        <symbol id="AES-GMAC-64">1</symbol>
+        <symbol id="ECC-256">2</symbol>
+      </point>
+      <point id="N" offset="9" type="uint16" access="rw" mandatory="true" />
+    </block>
+    <block type="repeating" len="1">
+      <point id="DS" offset="0" type="uint16" access="rw" andatory="true" />
+    </block>
+  </model>
+  <strings id="7" locale="en">
+    <model>
+      <label>Secure Write Response Model (DRAFT 1)</label>
+      <description>Include a digital signature over the response</description>
+      <notes>Used in conjunction with a Secure Write Request</notes>
+    </model>
+    <point id="Alg">
+      <label>Algorithm</label>
+      <description>Algorithm used to compute the digital signature</description>
+      <notes>For future proof</notes>
+      <symbol id="NONE">
+        <label>NONE</label>
+        <description>No digital signature</description>
+        <notes>For test purposes only</notes>
+      </symbol>
+      <symbol id="AES-GMAC-64">
+        <label>AES-GMAC-64</label>
+        <description>64 bit AES signature algorithm is used</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ECC-256">
+        <label>ECC-256</label>
+        <description>256 bit ECC signature algorithm is used</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Sts" offset="0" type="enum16" access="w" mandatory="true">
+      <label>Status</label>
+      <description>Status of last write operation</description>
+      <notes></notes>
+      <symbol id="SUCCESS">
+        <label>SUCCESS</label>
+        <description>Operation succeeded</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DS">
+        <label>DS</label>
+        <description>Operation failed digital signature check</description>
+        <notes>The signature was not valid</notes>
+      </symbol>
+      <symbol id="ACL">
+        <label>ACL</label>
+        <description>Operation failed access control check</description>
+        <notes>One or more registers were not writable by this role</notes>
+      </symbol>
+      <symbol id="OFF">
+        <label>OFF</label>
+        <description>Operation failed offset check</description>
+        <notes>Offset out of range or missing from multi-register value</notes>
+      </symbol>
+      <symbol id="VAL">
+        <label>VAL</label>
+        <description>Operation failed valid value check</description>
+        <notes>Value is out of acceptable range</notes>
+      </symbol>
+    </point>
+    <point id="X">
+      <label>X</label>
+      <description>Number of (offset, value) pairs being written</description>
+      <notes>A max of 50 (offset, value) pairs are allocated</notes>
+    </point>
+    <point id="DS">
+      <label>DS</label>
+      <description>Digital Signature</description>
+      <notes>The DS covers all registers from X to N and is N registers in length</notes>
+    </point>
+    <point id="RqSeq">
+      <label>Request Sequence</label>
+      <description>Sequence number from the request</description>
+      <notes></notes>
+    </point>
+    <point id="Seq">
+      <label>Sequence</label>
+      <description>Sequence number of response</description>
+      <notes>Shall be advanced for each reponse</notes>
+    </point>
+    <point id="Ts">
+      <label>Timestamp</label>
+      <description>Timestamp value is the number of seconds since January 1, 2000</description>
+      <notes></notes>
+    </point>
+    <point id="Ms">
+      <label>Milliseconds</label>
+      <description>Millisecond counter 0-999</description>
+      <notes></notes>
+    </point>
+    <point id="Alm">
+      <label>Alarm</label>
+      <description>Bitmask alarm code</description>
+      <notes></notes>
+      <symbol id="NONE">
+        <label>NONE</label>
+        <description>No Alarms</description>
+        <note></note>
+      </symbol>
+      <symbol id="ALM">
+        <label>ALARM</label>
+        <description>Security Alarm</description>
+        <note>Tampered</note>
+      </symbol>
+    </point>
+    <point id="N">
+      <label>N</label>
+      <description>Number of registers comprising the digital signature.</description>
+      <notes>The value of N must be at least 4 (64 bits)</notes>
+    </point>
+  </strings>
+</sunSpecModels>

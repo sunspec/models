@@ -1,0 +1,319 @@
+<sunSpecModels v="1">
+  <!-- 220: secure ac_meter -->
+  <model id="220" len="43" name="ac_meter">
+    <block len="42">
+      <point id="A" offset="0" type="int16" sf="A_SF" units="A" mandatory="true" />
+      <point id="A_SF" offset="1" type="sunssf" mandatory="true"/>
+      <point id="PhV" offset="2" type="int16" sf="V_SF" units="V" mandatory="false" />
+      <point id="V_SF" offset="3" type="sunssf" mandatory="true" />
+      <point id="Hz" offset="4" type="int16" sf="Hz_SF" units="Hz" mandatory="true" />
+      <point id="Hz_SF" offset="5" type="sunssf" />
+      <point id="W" offset="6" type="int16" sf="W_SF" units="W" mandatory="true" />
+      <point id="W_SF" offset="7" type="sunssf" mandatory="true" />
+      <point id="VA" offset="8" type="int16" sf="VA_SF" units="VA" />
+      <point id="VA_SF" offset="9" type="sunssf" />
+      <point id="VAR" offset="10" type="int16" sf="VAR_SF" units="var" />
+      <point id="VAR_SF" offset="11" type="sunssf" />
+      <point id="PF" offset="12" type="int16" sf="PF_SF" units="Pct" />
+      <point id="PF_SF" offset="13" type="sunssf" />
+      <point id="TotWhExp" offset="14" type="acc32" sf="TotWh_SF" units="Wh" mandatory="true" />
+      <point id="TotWhImp" offset="16" type="acc32" sf="TotWh_SF" units="Wh" mandatory="true" />
+      <point id="TotWh_SF" offset="18" type="sunssf" mandatory="true" />
+      <point id="TotVAhExp" offset="19" type="acc32" sf="TotVAh_SF" units="VAh" />
+      <point id="TotVAhImp" offset="21" type="acc32" sf="TotVAh_SF" units="VAh" />
+      <point id="TotVAh_SF" offset="23" type="sunssf" />
+      <point id="TotVArhImpQ1" offset="24" type="acc32" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhImpQ2" offset="26" type="acc32" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhExpQ3" offset="28" type="acc32" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhExpQ4" offset="30" type="acc32" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArh_SF" offset="32" type="sunssf" />
+      <point id="Evt" offset="33" type="bitfield32" mandatory="true" >
+        <symbol id="Power_Failure">2</symbol>
+        <symbol id="Under_Voltage">3</symbol>
+        <symbol id="Low_PF">4</symbol>
+        <symbol id="Over_Current">5</symbol>
+        <symbol id="Over_Voltage">6</symbol>
+        <symbol id="Missing_Sensor">7</symbol>
+        <symbol id="OEM01">16</symbol>
+        <symbol id="OEM02">17</symbol>
+        <symbol id="OEM03">18</symbol>
+        <symbol id="OEM04">19</symbol>
+        <symbol id="OEM05">20</symbol>
+        <symbol id="OEM06">21</symbol>
+        <symbol id="OEM07">22</symbol>
+        <symbol id="OEM08">23</symbol>
+        <symbol id="OEM09">24</symbol>
+        <symbol id="OEM10">25</symbol>
+        <symbol id="OEM11">26</symbol>
+        <symbol id="OEM12">27</symbol>
+        <symbol id="OEM13">28</symbol>
+        <symbol id="OEM14">29</symbol>
+        <symbol id="OEM15">30</symbol>
+      </point>
+      <point id="Rsrvd"   offset="35" type="pad" access="r" mandatory="true" />
+      <point id="Ts"   offset="36" type="uint32" access="r" mandatory="true" />
+      <point id="Ms" offset="38" type="uint16" access="r" mandatory="true" />
+      <point id="Seq" offset="39" type="uint16" access="r" mandatory="true" />
+      <point id="Alg"   offset="40" type="enum16" access="r" mandatory="true">
+        <symbol id="NONE">0</symbol>
+        <symbol id="AES-GMAC-64">1</symbol>
+        <symbol id="ECC-256">2</symbol>
+      </point>
+      <point id="N" offset="41" type="uint16" access="r" mandatory="true" />
+    </block>
+    <block type="repeating" len="1">
+      <point id="DS" offset="0" type="uint16" access="r" mandatory="true" />
+    </block>
+  </model>
+  <strings id="220" locale="en">
+    <model>
+      <label>Secure AC Meter Selected Readings</label>
+      <description>Include this model for secure metering</description>
+      <notes></notes>
+    </model>
+    <point id="A">
+      <label>Amps</label>
+      <description>Total AC Current</description>
+      <notes></notes>
+    </point>
+    <point id="A_SF"><description>Current scale factor</description></point>
+    <point id="PhV">
+      <label>Voltage</label>
+      <description>Average phase or line voltage</description>
+    </point>
+    <point id="V_SF"><description>Voltage scale factor</description></point>
+    <point id="Hz">
+      <label>Hz</label>
+      <description>Frequency</description>
+      <notes></notes>
+    </point>
+    <point id="Hz_SF"><description>Frequency scale factor</description></point>
+    <point id="W">
+      <label>Watts</label>
+      <description>Total Real Power</description>
+      <notes></notes>
+    </point>
+    <point id="W_SF"><description>Real Power scale factor</description></point>
+    <point id="VA">
+      <label>VA</label>
+      <description>AC Apparent Power</description>
+      <notes></notes>
+    </point>
+    <point id="VA_SF"><description>Apparent Power scale factor</description></point>
+    <point id="VAR">
+      <label>VAR</label>
+      <description>Reactive Power</description>
+      <notes></notes>
+    </point>
+    <point id="VAR_SF"><description>Reactive Power scale factor</description></point>
+    <point id="PF">
+      <label>PF</label>
+      <description>Power Factor</description>
+      <notes></notes>
+    </point>
+    <point id="PF_SF"><description>Power Factor scale factor</description></point>
+    <point id="TotWhExp">
+      <label>Total Watt-hours Exported</label>
+      <description>Total Real Energy Exported</description>
+      <notes></notes>
+    </point>
+    <point id="TotWh_SF"><description>Real Energy scale factor</description></point>
+    <point id="TotWhImp">
+      <label>Total Watt-hours Imported</label>
+      <description>Total Real Energy Imported</description>
+      <notes></notes>
+    </point>
+    <point id="TotVAhExp">
+      <label>Total VA-hours Exported</label>
+      <description>Total Apparent Energy Exported</description>
+      <notes></notes>
+    </point> 
+    <point id="TotVAh_SF"><description>Apparent Energy scale factor</description></point>
+    <point id="TotVAhImp">
+      <label>Total VA-hours Imported</label>
+      <description>Total Apparent Energy Imported</description>
+      <notes></notes>
+    </point>
+    <point id="TotVArh_SF"><description>Reactive Energy scale factor</description></point>
+    <point id="TotVArhImpQ1">
+      <label>Total VAR-hours Imported Q1</label>
+      <description>Total Reactive Energy Imported Quadrant 1</description>
+      <notes></notes>
+    </point>
+    <point id="TotVArhImpQ2">
+      <label>Total VAr-hours Imported Q2</label>
+      <description>Total Reactive Power Imported Quadrant 2</description>
+      <notes></notes>
+    </point>
+    <point id="TotVArhExpQ3">
+      <label>Total VAr-hours Exported Q3</label>
+      <description>Total Reactive Power Exported Quadrant 3</description>
+      <notes></notes>
+    </point>
+    <point id="TotVArhExpQ4">
+      <label>Total VAr-hours Exported Q4</label>
+      <description>Total Reactive Power Exported Quadrant 4</description>
+      <notes></notes>
+    </point>
+    <point id="Evt">
+      <label>Events</label>
+      <description>Meter Event Flags</description>
+      <notes></notes>
+      <symbol id="Power_Failure">
+        <label>Power Failure</label>
+        <description>Loss of power or phase</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="Under_Voltage">
+        <label>Under Voltage</label>
+        <description>Voltage below threshold (Phase Loss)</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="Low_PF">
+        <label>Low PF</label>
+        <description>Power Factor below threshold</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="Over_Current">
+        <label>Over Current</label>
+        <description>Current Input over threshold</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="Over_Voltage">
+        <label>Over Voltage</label>
+        <description>Voltage Input over threshold</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="Missing_Sensor">
+        <label>Missing Sensor</label>
+        <description>Sensor not connected</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM01">
+        <label>OEM01</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM02">
+        <label>OEM02</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM03">
+        <label>OEM01</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM04">
+        <label>OEM04</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM05">
+        <label>OEM05</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM06">
+        <label>OEM06</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM07">
+        <label>OEM07</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM08">
+        <label>OEM08</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM09">
+        <label>OEM09</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM10">
+        <label>OEM10</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM11">
+        <label>OEM11</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM12">
+        <label>OEM12</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM13">
+        <label>OEM13</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM14">
+        <label>OEM14</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM15">
+        <label>OEM15</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OEM16">
+        <label>OEM16</label>
+        <description>Reserved for OEM use</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Ts">
+      <label>Timestamp</label>
+      <description>Timestamp value is the number of seconds since January 1, 2000</description>
+      <notes></notes>
+    </point>
+    <point id="Ms">
+      <label>Milliseconds</label>
+      <description>Millisecond counter 0-999</description>
+      <notes></notes>
+    </point>
+    <point id="Alg">
+      <label>Algorithm</label>
+      <description>Algorithm used to compute the digital signature</description>
+      <notes>For future proof</notes>
+      <symbol id="NONE">
+        <label>NONE</label>
+        <description>No digital signature</description>
+        <notes>For test purposes only</notes>
+      </symbol>
+      <symbol id="AES-GMAC-64">
+        <label>AES-GMAC-64</label>
+        <description>64 bit AES signature algorithm is used</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ECC-256">
+        <label>ECC-256</label>
+        <description>256 bit ECC signature algorithm is used</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="N">
+      <label>N</label>
+      <description>Number of registers comprising the digital signature.</description>
+      <notes>The value of N must be at least 4 (64 bits)</notes>
+    </point>
+    <point id="Seq">
+      <label>Sequence</label>
+      <description>Sequence number of request</description>
+      <notes>Shall be advanced for each request</notes>
+    </point>
+    <point id="Role">
+      <label>Role</label>
+      <description>Digital Signature ID</description>
+      <notes>User's role id 0-5</notes>
+    </point>
+  </strings>
+</sunSpecModels>

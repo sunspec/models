@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 305: Location Model -->
-  <model id="305" len="36">
+  <model id="305" len="36" name="location">
     <block len="36">
       <point id="Tm" offset="0" type="string" len="6" units="hhmmss.sssZ" mandatory="false"/>
       <point id="Date" offset="6" type="string" len="4" units="YYYYMMDD" mandatory="false"/>

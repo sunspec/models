@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 126: Static Volt-VAR Arrays  -->
-  <model id="126" len="66">
+  <model id="126" len="64" name="volt_var">
     <block len="10" type="fixed">
       <point id="ActCrv" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
       <point id="ModEna" offset="1" access="rw" type="bitfield16" len="1" mandatory="true">
@@ -15,7 +15,7 @@
       <point id="DeptRef_SF" offset="8" access="r" type="sunssf" len="1" mandatory="true" />
       <point id="RmpIncDec_SF" offset="9" access="r" type="sunssf" len="1" mandatory="false"  />
     </block>
-    <block len="54" type="repeating">
+    <block len="54" type="repeating" name="curve">
       <point id="ActPt" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
       <point id="DeptRef" offset="1" access="rw" type="enum16" len="1" mandatory="true" sf="DeptRef_SF" >
         <symbol id="WMax">1</symbol>

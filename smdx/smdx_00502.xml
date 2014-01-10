@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 502: panel module integer -->
-  <model id="502" len="28">
+  <model id="502" len="28" name="solar_module">
     <block len="28">
       <point id="A_SF" offset="0" type="sunssf" />
       <point id="V_SF" offset="1" type="sunssf" />

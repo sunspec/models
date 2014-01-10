@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 124: Basic Storage Controls  -->
-  <model id="124" len="24">
+  <model id="124" len="24" name="storage">
     <block len="24" type="fixed">
       <point id="WChaMax" offset="0" access="rw" type="uint16" len="1" mandatory="true" units="W" sf="WChaMax_SF"/>
       <point id="WChaGra" offset="1" access="rw" type="uint16" len="1" mandatory="true" units="% WChaMax/sec" sf="WChaDisChaGra_SF"/>

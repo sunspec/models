@@ -1,7 +1,7 @@
 <sunSpecModels v="1">
   <!-- 123: Immediate Inverter Controls  -->
-  <model id="123" len="26">
-    <block len="26" type="fixed">
+  <model id="123" len="24" name="controls">
+    <block len="24" type="fixed">
       <point id="Conn_WinTms" offset="0" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
       <point id="Conn_RvrtTms" offset="1" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
       <point id="Conn" offset="2" access="rw" type="enum16" len="1" mandatory="true">
@@ -17,37 +17,32 @@
         <symbol id="ENABLED">1</symbol>
       </point>
       <point id="OutPFSet" offset="8" access="rw" type="int16" len="1" mandatory="true" units="cos()" sf="OutPFSet_SF"/>
-      <point id="PFExt" offset="9" access="rw" type="enum16" len="1" mandatory="false">
-        <symbol id="OVER">0</symbol>
-        <symbol id="UNDER">1</symbol>
-      </point>
-      <point id="OutPFSet_WinTms" offset="10" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="OutPFSet_RvrtTms" offset="11" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="OutPFSet_RmpTms" offset="12" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="OutPFSet_Ena" offset="13" access="rw" type="enum16" len="1" mandatory="true">
+      <point id="OutPFSet_WinTms" offset="9" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="OutPFSet_RvrtTms" offset="10" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="OutPFSet_RmpTms" offset="11" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="OutPFSet_Ena" offset="12" access="rw" type="enum16" len="1" mandatory="true">
         <symbol id="DISABLED">0</symbol>
         <symbol id="ENABLED">1</symbol>
       </point>
-      <point id="VArWMaxPct" offset="14" access="rw" type="int16" len="1" mandatory="false" units="% WMax" sf="VArPct_SF"/>
-      <point id="VArMaxPct" offset="15" access="rw" type="int16" len="1" mandatory="false" units="% VArMax" sf="VArPct_SF"/>
-      <point id="VArAvalPct" offset="16" access="rw" type="int16" len="1" mandatory="false" units="% VArAval" sf="VArPct_SF"/>
-      <point id="VArPct_WinTms" offset="17" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="VArPct_RvrtTms" offset="18" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="VArPct_RmpTms" offset="19" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="VArPct_Mod" offset="20" access="rw" type="enum16" len="1" mandatory="false">
+      <point id="VArWMaxPct" offset="13" access="rw" type="int16" len="1" mandatory="false" units="% WMax" sf="VArPct_SF"/>
+      <point id="VArMaxPct" offset="14" access="rw" type="int16" len="1" mandatory="false" units="% VArMax" sf="VArPct_SF"/>
+      <point id="VArAvalPct" offset="15" access="rw" type="int16" len="1" mandatory="false" units="% VArAval" sf="VArPct_SF"/>
+      <point id="VArPct_WinTms" offset="16" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="VArPct_RvrtTms" offset="17" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="VArPct_RmpTms" offset="18" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="VArPct_Mod" offset="19" access="rw" type="enum16" len="1" mandatory="false">
         <symbol id="NONE">0</symbol>
         <symbol id="WMax">1</symbol>
         <symbol id="VArMax">2</symbol>
         <symbol id="VArAval">3</symbol>
       </point>
-      <point id="VArPct_Ena" offset="21" access="rw" type="enum16" len="1" mandatory="true">
+      <point id="VArPct_Ena" offset="20" access="rw" type="enum16" len="1" mandatory="true">
         <symbol id="DISABLED">0</symbol>
         <symbol id="ENABLED">1</symbol>
       </point>
-      <point id="WMaxLimPct_SF" offset="22" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="OutPFSet_SF" offset="23" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="VArPct_SF" offset="24" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="Pad" offset="25" access="r" type="pad" len="1" mandatory="false"  />
+      <point id="WMaxLimPct_SF" offset="21" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="OutPFSet_SF" offset="22" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="VArPct_SF" offset="23" access="r" type="sunssf" len="1" mandatory="false"  />
     </block>
   </model>
   <strings id="123" locale="en">
@@ -106,11 +101,6 @@
       <description>Set power factor to specific value - cosine of angle.</description>
       <notes> </notes>
     </point>
-    <point id="PFExt">
-      <label>PFExt</label>
-      <description>Enumerated value.  Power Factor excitation</description>
-      <notes> </notes>
-    </point>
     <point id="OutPFSet_SF">
       <label>OutPFSet_SF</label>
       <description>Scale factor for power factor.</description>
@@ -136,9 +126,9 @@
       <description>Enumerated valued.  Fixed power factor enable/disable control.</description>
       <notes> </notes>
     </point>
-    <point id="VArLim_Mod">
-      <label>VArLim_Mod</label>
-      <description>Enumerated value. VAR limit mode.</description>
+    <point id="VArPct_Mod">
+      <label>VArPct_Mod</label>
+      <description>Enumerated value. VAR percent limit mode.</description>
       <notes> </notes>
       <symbol id="NONE">
         <description>No VAR limit</description>
@@ -193,9 +183,9 @@
       <description>Ramp time for moving from current setpoint to new setpoint.</description>
       <notes> </notes>
     </point>
-    <point id="VArLim_Ena">
-      <label>VArLim_Ena</label>
-      <description>Enumerated valued.  Fixed VAr enable/disable control.</description>
+    <point id="VArPct_Ena">
+      <label>VArPct_Ena</label>
+      <description>Enumerated valued.  Percent limit VAr enable/disable control.</description>
       <notes> </notes>
     </point>
   </strings>

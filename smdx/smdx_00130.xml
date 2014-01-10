@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 130: HVRT Must Disconnect  -->
-  <model id="130" len="54">
+  <model id="130" len="60" name="hvrt">
     <block len="10" type="fixed">
       <point id="ActCrv" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
       <point id="ModEna" offset="1" access="rw" type="bitfield16" len="1" mandatory="true">
@@ -15,7 +15,7 @@
       <point id="V_SF" offset="8" access="r" type="sunssf" len="1" mandatory="true"  />
       <point id="Pad" offset="9" access="r" type="pad" len="1" mandatory="false" />
     </block>
-    <block len="50" type="repeating">
+    <block len="50" type="repeating" name="curve">
       <point id="ActPt" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
       <point id="Tms1" offset="1" access="rw" type="uint16" len="1" mandatory="true" units="Secs" sf="Tms_SF"/>
       <point id="V1" offset="2" access="rw" type="uint16" len="1" mandatory="true" units="% VRef" sf="V_SF"/>

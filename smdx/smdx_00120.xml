@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 120: Inverter Controls Nameplate Ratings  -->
-  <model id="120" len="26">
+  <model id="120" len="26" name="nameplate">
     <block len="26" type="fixed">
       <point id="DERTyp" offset="0" access="r" type="enum16" len="1" mandatory="true">
         <symbol id="PV">4</symbol>
@@ -22,18 +22,15 @@
       <point id="PFRtgQ3" offset="14" access="r" type="int16" len="1" mandatory="true" units="cos()" sf="PFRtg_SF"/>
       <point id="PFRtgQ4" offset="15" access="r" type="int16" len="1" mandatory="true" units="cos()" sf="PFRtg_SF"/>
       <point id="PFRtg_SF" offset="16" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="PFSignR" offset="17" access="r" type="enum16" len="1" mandatory="true" >
-        <symbol id="IEC">1</symbol>
-        <symbol id="EEI">2</symbol>
-      </point>
-      <point id="WHRtg" offset="18" access="r" type="uint16" len="1" mandatory="false" units="Wh" sf="WHRtg_SF"/>
-      <point id="WHRtg_SF" offset="19" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="AhrRtg" offset="20" access="r" type="uint16" len="1" mandatory="false" units="AH" sf="AhrRtg_SF"/>
-      <point id="AhrRtg_SF" offset="21" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="MaxChaRte" offset="22" access="r" type="uint16" len="1" mandatory="false" units="W" sf="MaxChaRte_SF"/>
-      <point id="MaxChaRte_SF" offset="23" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="MaxDisChaRte" offset="24" access="r" type="uint16" len="1" mandatory="false" units="W" sf="MaxDisChaRte_SF"/>
-      <point id="MaxDisChaRte_SF" offset="25" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="WHRtg" offset="17" access="r" type="uint16" len="1" mandatory="false" units="Wh" sf="WHRtg_SF"/>
+      <point id="WHRtg_SF" offset="18" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="AhrRtg" offset="19" access="r" type="uint16" len="1" mandatory="false" units="AH" sf="AhrRtg_SF"/>
+      <point id="AhrRtg_SF" offset="20" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="MaxChaRte" offset="21" access="r" type="uint16" len="1" mandatory="false" units="W" sf="MaxChaRte_SF"/>
+      <point id="MaxChaRte_SF" offset="22" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="MaxDisChaRte" offset="23" access="r" type="uint16" len="1" mandatory="false" units="W" sf="MaxDisChaRte_SF"/>
+      <point id="MaxDisChaRte_SF" offset="24" access="r" type="sunssf" len="1" mandatory="false"  />
+	  <point id="Pad" offset="25" access="r" type="pad" len="1" mandatory="false"  />
     </block>
   </model>
   <strings id="120" locale="en">
@@ -105,22 +102,22 @@
     <point id="PFRtgQ1">
       <label>PFRtgQ1</label>
       <description>Minimum power factor capability of the inverter in quadrant 1.</description>
-      <notes> </notes>
+      <notes>EEI sign convention.</notes>
     </point>
     <point id="PFRtgQ2">
       <label>PFRtgQ2</label>
       <description>Minimum power factor capability of the inverter in quadrant 2.</description>
-      <notes> </notes>
+      <notes>EEI sign convention.</notes>
     </point>
     <point id="PFRtgQ3">
       <label>PFRtgQ3</label>
       <description>Minimum power factor capability of the inverter in quadrant 3.</description>
-      <notes> </notes>
+      <notes>EEI sign convention.</notes>
     </point>
     <point id="PFRtgQ4">
       <label>PFRtgQ4</label>
       <description>Minimum power factor capability of the inverter in quadrant 4.</description>
-      <notes> </notes>
+      <notes>EEI sign convention.</notes>
     </point>
     <point id="PFRtg_SF">
       <label>PFRtg_SF</label>
@@ -167,9 +164,9 @@
       <description>Scale factor</description>
       <notes> </notes>
     </point>
-    <point id="PFSignR">
-      <label>PFSignR</label>
-      <description>Sign convention for Power Factor settings: IEC=1 EEI=2.</description>
+    <point id="Pad">
+      <label>Pad</label>
+      <description>Pad register.</description>
       <notes> </notes>
     </point>
   </strings>

@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 111: inverter (float) -->
-  <model id="111" len="60">
+  <model id="111" len="60" name="inverter">
     <block len="60">
       <point id="A" offset="0" type="float32" units="A" mandatory="true" />
       <point id="AphA" offset="2" type="float32" units="A" mandatory="true" />

@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 501: panel module float -->
-  <model id="501" len="31">
+  <model id="501" len="31" name="solar_module">
     <block len="31">
       <point id="Stat" offset="0" type="enum16" mandatory="true" >
         <symbol id="OFF">1</symbol>

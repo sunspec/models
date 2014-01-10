@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 128: Dynamic Reactive Current  -->
-  <model id="128" len="14">
+  <model id="128" len="14" name="reactive_current">
     <block len="14" type="fixed">
       <point id="ArGraMod" offset="0" access="rw" type="enum16" len="1" mandatory="true">
         <symbol id="EDGE">0</symbol>

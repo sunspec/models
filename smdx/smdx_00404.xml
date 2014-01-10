@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 404: advanced string combiner -->
-  <model id="404" len="39">
+  <model id="404" len="39" name="string_combiner">
     <block len="25">
       <point id="DCA_SF" offset="0" type="sunssf" mandatory="true" />
       <point id="DCAhr_SF" offset="1" type="sunssf" />
@@ -44,7 +44,7 @@
       <point id="InDCW_SF" offset="23" type="sunssf" />
       <point id="InDCWh_SF" offset="24" type="sunssf" />
     </block>
-    <block type="repeating" len="14">
+    <block type="repeating" len="14" name="string">
       <point id="InID" offset="0" type="uint16" mandatory="true" />
       <point id="InEvt" offset="1" type="bitfield32" mandatory="true">
         <symbol id="LOW_VOLTAGE">0</symbol>
