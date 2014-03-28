@@ -57,6 +57,7 @@ This document may be used, copied, and furnished to others, without restrictions
     <xs:attribute name="units" type="xs:string" />
     <xs:attribute name="access" type="PointAccessDefinition" default="r" />
     <xs:attribute name="mandatory" type="xs:boolean" default="false"/>
+    <xs:attribute name="category" type="CategoryDefinition" default="false"/>
   </xs:complexType>
 
   <xs:complexType name="SymbolDefinition">
@@ -107,6 +108,7 @@ This document may be used, copied, and furnished to others, without restrictions
     <xs:restriction base="xs:string">
       <xs:enumeration value="int16"/>
       <xs:enumeration value="uint16"/>
+      <xs:enumeration value="count"/>
       <xs:enumeration value="acc16"/>
       <xs:enumeration value="int32"/>
       <xs:enumeration value="uint32"/>
@@ -132,6 +134,18 @@ This document may be used, copied, and furnished to others, without restrictions
     <xs:restriction base="xs:string">
       <xs:enumeration value="r"/>
       <xs:enumeration value="rw"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CategoryDefinition">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="none"/>
+      <xs:enumeration value="measurement"/>
+      <xs:enumeration value="metered"/>
+      <xs:enumeration value="status"/>
+      <xs:enumeration value="event"/>
+      <xs:enumeration value="setting"/>
+      <xs:enumeration value="control"/>
     </xs:restriction>
   </xs:simpleType>
 
