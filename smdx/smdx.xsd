@@ -57,7 +57,7 @@ This document may be used, copied, and furnished to others, without restrictions
     <xs:attribute name="units" type="xs:string" />
     <xs:attribute name="access" type="PointAccessDefinition" default="r" />
     <xs:attribute name="mandatory" type="xs:boolean" default="false"/>
-    <xs:attribute name="category" type="CategoryDefinition" default="false"/>
+    <xs:attribute name="category" type="CategoryDefinition" default="measurement"/>
   </xs:complexType>
 
   <xs:complexType name="SymbolDefinition">

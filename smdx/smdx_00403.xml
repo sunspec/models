@@ -6,7 +6,7 @@
       <point id="DCAhr_SF" offset="1" type="sunssf" />
       <point id="DCV_SF" offset="2" type="sunssf" />
       <point id="DCAMax" offset="3" type="uint16" sf="DCA_SF" units="A" mandatory="true" />
-      <point id="N" offset="4" type="uint16" mandatory="true" />
+      <point id="N" offset="4" type="count" mandatory="true" />
       <point id="Evt" offset="5" type="bitfield32" mandatory="true">
         <symbol id="LOW_VOLTAGE">0</symbol>
         <symbol id="LOW_POWER">1</symbol>
