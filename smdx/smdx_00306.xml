@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 302: Reference Point Model -->
-  <model id="306" len="4" name+"ref_point">
+  <model id="306" len="4" name="ref_point">
     <block len="4">
       <point id="GHI" offset="0" type="uint16" units="W/m2" mandatory="false"/>
       <point id="A" offset="1" type="uint16" units="W/m2" mandatory="false"/>
