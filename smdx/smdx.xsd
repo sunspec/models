@@ -127,6 +127,7 @@ This document may be used, copied, and furnished to others, without restrictions
       <xs:enumeration value="pad"/>
       <xs:enumeration value="ipaddr"/>
       <xs:enumeration value="ipv6addr"/>
+      <xs:enumeration value="eui48"/>
     </xs:restriction>
   </xs:simpleType>
 

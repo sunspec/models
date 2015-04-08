@@ -1,0 +1,247 @@
+<sunSpecModels v="1">
+
+  <!-- 801: Energy Storage Base Model -->
+  <model id="801" len="22" name="storage">
+    <block len="22">
+      <point id="DERTyp" offset="0" type="enum16" mandatory="true" >
+        <symbol id="STORAGE">90</symbol>
+        <symbol id="BATTERY">91</symbol>
+        <symbol id="LITHIUM-ION BATTERY">92</symbol>
+        <symbol id="REDOX FLOW BATTERY">93</symbol>
+      </point>
+      <point id="WHRtg" offset="1" type="uint16" sf="WHRtg_SF" units="Wh" mandatory="true" />
+      <point id="WMaxChaRte" offset="2" type="uint16" sf="WMaxChaDisCha_SF" units="W" mandatory="true" />
+      <point id="WMaxDisChaRte" offset="3" type="uint16" sf="WMaxChaDisCha_SF" units="W" mandatory="true" />
+      <point id="DisChaRte" offset="4" type="uint16" sf="DisChaRte_SF" units="" mandatory="true" />
+      <point id="SoCNpMaxPct" offset="5" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
+      <point id="SoCNpMinPct" offset="6" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
+      <point id="MaxRsvPct" offset="7" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
+      <point id="MinRsvPct" offset="8" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
+      <point id="SoC" offset="9" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
+      <point id="ChaSt" offset="10" type="enum16" >
+        <symbol id="OFF">1</symbol>
+        <symbol id="EMPTY">2</symbol>
+        <symbol id="DISCHARGING">3</symbol>
+        <symbol id="CHARGING">4</symbol>
+        <symbol id="FULL">5</symbol>
+        <symbol id="HOLDING">6</symbol>
+        <symbol id="TESTING">7</symbol>
+      </point>
+      <point id="LocRemCtl" offset="11" type="enum16" mandatory="true" >
+        <symbol id="REMOTE">0</symbol>
+        <symbol id="LOCAL">1</symbol>
+      </point>
+      <point id="Evt" offset="12" type="bitfield32" mandatory="true" >
+        <symbol id="UNDER_SOC_MIN_WARNING">1</symbol>
+        <symbol id="UNDER_SOC_MIN_ALARM">2</symbol>
+        <symbol id="OVER_SOC_MAX_WARNING">3</symbol>
+        <symbol id="OVER_SOC_MAX_ALARM">4</symbol>
+      </point>
+      <point id="DERHb" offset="14" type="uint16" mandatory="true" />
+      <point id="ControllerHb" offset="15" type="uint16" />
+      <point id="DERAlarmReset" offset="16" type="uint16" />
+      <point id="WHRtg_SF" offset="17" type="sunssf" mandatory="true" />
+      <point id="WMaxChaDisCha_SF" offset="18" type="sunssf"  mandatory="true" />
+      <point id="DisChaRte_SF" offset="19" type="sunssf" />
+      <point id="SoC_SF" offset="20" type="sunssf" mandatory="true" />
+      <point id="Pad" offset="21" type="sunssf" mandatory="true" />
+    </block>
+  </model>
+  <strings id="801" locale="en">
+    <model>
+      <label>Energy Storage Base Model</label>
+      <description></description>
+      <notes></notes>
+    </model>
+    <point id="DERTyp">
+      <label>Distributed Energy Resource Type</label>
+      <description>Type of distributed energy resource device.</description>
+      <notes></notes>
+      <symbol id="STORAGE">
+        <label>Storage Device</label>
+        <description>A generic energy storage device.</description>
+        <notes>Not yet a part of IEC 61850 DERTyp. </notes>
+      </symbol>
+      <symbol id="BATTERY">
+        <label>Battery Device</label>
+        <description>A generic battery.</description>
+        <notes>Not yet a part of IEC 61850 DERTyp.</notes>
+      </symbol>
+      <symbol id="LITHIUM-ION BATTERY">
+        <label>Lithium-ion Battery Device</label>
+        <description>A lithium-ion battery.</description>
+        <notes>Not yet a part of IEC 61850 DERTyp.</notes>
+      </symbol>
+      <symbol id="REDOX FLOW BATTERY">
+        <label>Redox Flow Battery Device</label>
+        <description>A redox flow battery.</description>
+        <notes>Not yet a part of IEC 61850 DERTyp.</notes>
+      </symbol>
+    </point>
+    <point id="WHRtg">
+      <label>Nameplate Energy Capacity</label>
+      <description>Nameplate energy capacity in DC watt-hours.</description>
+      <notes></notes>
+    </point>
+    <point id="WMaxChaRte">
+      <label>Nameplate Max Charge Rate</label>
+      <description>Maximum rate of energy transfer into the storage device.</description>
+      <notes></notes>
+    </point>
+    <point id="WMaxDisChaRte">
+      <label>Namplate Max Discharge Rate</label>
+      <description>Maximum rate of energy transfer out of the storage device.</description>
+      <notes></notes>
+    </point>
+    <point id="DisChaRte">
+      <label>Self Discharge Rate</label>
+      <description>Self discharge rate.  Percentage of capacity (WHRtg) discharged per day.</description>
+      <notes></notes>
+    </point>
+    <point id="SoCNpMaxPct">
+      <label>Nameplate Max SoC</label>
+      <description>Manufacturer maximum state of charge, expressed as a percentage.</description>
+      <notes></notes>
+    </point>
+    <point id="SoCNpMinPct">
+      <label>Nameplate Min SoC</label>
+      <description>Manufacturer minimum state of charge, expressed as a percentage.</description>
+      <notes></notes>
+    </point>
+    <point id="MaxRsvPct">
+      <label>Maximum Reserve Percent</label>
+      <description>Setpoint for maximum reserve for storage as a percentage of the nominal maximum storage.</description>
+      <notes></notes>
+    </point>
+    <point id="MinRsvPct">
+      <label>Minimum Reserve Percent</label>
+      <description>Setpoint for maximum reserve for storage as a percentage of the nominal maximum storage.</description>
+      <notes></notes>
+    </point>
+    <point id="SoC">
+      <label>State of Charge</label>
+      <description>State of charge, expressed as a percentage.</description>
+      <notes>Measurement</notes>
+    </point>
+    <point id="ChaSt">
+      <label>ChaSt</label>
+      <description>Charge status of storage device. Enumerated value.</description>
+      <notes></notes>
+      <symbol id="OFF">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="EMPTY">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DISCHARGING">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CHARGING">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FULL">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="HOLDING">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="TESTING">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="LocRemCtl">
+      <label>Control Mode</label>
+      <description>DER control mode. Enumeration.</description>
+      <notes>Maps to DRCC.LocRemCtl in 61850.</notes>
+      <symbol id="REMOTE">
+        <label>Remote Control</label>
+        <description>Battery is controlled remotely (e.g. by the site controller).</description>
+        <notes>Value of 0 matches LocRemCtl in 61850.</notes>
+      </symbol>
+      <symbol id="LOCAL">
+        <label>Local Control</label>
+        <description>Battery is controlled by a local operator (e.g. through battery HMI).</description>
+        <notes>Value of 1 matches LocRemCtl in 61850.</notes>
+      </symbol>
+    </point>
+    <point id="Evt">
+      <label>Event Bitfield</label>
+      <description>Bitmask value.  Event fields.</description>
+      <notes></notes>
+      <symbol id="UNDER_SOC_MIN_WARNING">
+        <label>Under State of Charge Minimum Warning</label>
+        <description>Battery state of charge is approaching SoCNpMinPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_SOC_MIN_ALARM">
+        <label>Under State of Charge Minimum Alarm</label>
+        <description>Battery state of charge has reached or exceeded SoCNpMinPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_SOC_MAX_WARNING">
+        <label>Over State of Charge Maximum Warning</label>
+        <description>Battery state of charge is approaching SoCNpMaxPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_SOC_MAX_ALARM">
+        <label>Over State of Charge Maximum Warning</label>
+        <description>Battery state of charge has reached or exceeded SocNpMaxPct</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="DERHb">
+      <label>Distributed Energy Resource Heartbeat</label>
+      <description>Value is incremented every second with periodic resets to zero.</description>
+      <notes></notes>
+    </point>
+    <point id="ControllerHb">
+      <label>Controller Heartbeat</label>
+      <description>Value is incremented every second with periodic resets to zero.</description>
+      <notes></notes>
+    </point>
+    <point id="DERAlarmReset">
+      <label>Alarm Reset</label>
+      <description>Used to reset any latched alarms.  1 = Reset.</description>
+      <notes></notes>
+    </point>
+    <point id="WHRtg_SF">
+      <label></label>
+      <description>Scale factor for energy capacity.</description>
+      <notes></notes>
+    </point>
+    <point id="WMaxChaDisCha_SF">
+      <label></label>
+      <description>Scale factor for maximum charge and discharge rate.</description>
+      <notes></notes>
+    </point>
+    <point id="DisChaRte_SF">
+      <label></label>
+      <description>Scale factor for self discharge rate.</description>
+      <notes></notes>
+    </point>
+    <point id="SoC_SF">
+      <label></label>
+      <description>Scale factor for state of charge values.</description>
+      <notes></notes>
+    </point>
+    <point id="Pad">
+      <label></label>
+      <description>Padding</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

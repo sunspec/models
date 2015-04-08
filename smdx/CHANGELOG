@@ -48,3 +48,6 @@ Models moved to SunSpec models repository
 
 2014 January 9: Bob Fox, Loggerware. Updates from the last SunSpec official release not previously checked in; correction of some model lengths; addition of model/repeating block name attributes; addition of test models 6300x.
 
+2015 April 7: Bob Fox, SunSpec. Updated model 11 to correct MAC address point; added new point type of eui48. Added storage models 801, 802, and 803.
+
+

@@ -1,0 +1,386 @@
+<sunSpecModels v="1">
+
+  <!-- 802: Battery Base Model -->
+  <model id="802" len="20" name="battery">
+    <block len="20">
+      <point id="BatTyp" offset="0" type="enum16" mandatory="true" >
+        <symbol id="NOT APPLICABLE_UNKNOWN">0</symbol>
+        <symbol id="NICKEL_METAL_HYDRATE">2</symbol>
+        <symbol id="NICKEL_CADMIUM">3</symbol>
+        <symbol id="LITHIUM_ION">4</symbol>
+        <symbol id="CARBON_ZINC">5</symbol>
+        <symbol id="ZINC_CHLORIDE">6</symbol>
+        <symbol id="ALKALINE">7</symbol>
+        <symbol id="RECHARGEABLE_ALKALINE">8</symbol>
+        <symbol id="SODIUM_SULFUR">9</symbol>
+        <symbol id="FLOW">10</symbol>
+        <symbol id="OTHER">99</symbol>
+      </point>
+      <point id="BatSt" offset="1" type="enum16" mandatory="true" >
+        <symbol id="DISCONNECTED">1</symbol>
+        <symbol id="INITIALIZING">2</symbol>
+        <symbol id="CONNECTED">3</symbol>
+        <symbol id="STANDBY">4</symbol>
+        <symbol id="SOC PROTECTION">5</symbol>
+      </point>
+      <point id="CycleCt" offset="2" type="uint32" />
+      <point id="SoH" offset="4" type="uint16" sf="SoH_SF" units="%" />
+      <point id="Evt1" offset="5" type="bitfield32" mandatory="true" >
+        <symbol id="COMMUNICATION_ERROR">1</symbol>
+        <symbol id="OVER_TEMP_ALARM">2</symbol>
+        <symbol id="UNDER_TEMP_ALARM">3</symbol>
+        <symbol id="OVER_TEMP_WARNING">4</symbol>
+        <symbol id="UNDER_TEMP_WARNING">5</symbol>
+        <symbol id="OVER_CHARGE_CURRENT_ALARM">6</symbol>
+        <symbol id="OVER_DISCHARGE_CURRENT_ALARM">7</symbol>
+        <symbol id="OVER_CHARGE_CURRENT_WARNING">8</symbol>
+        <symbol id="OVER_DISCHARGE_CURRENT_WARNING">9</symbol>
+        <symbol id="VOLTAGE_IMBALANCE_WARNING">10</symbol>
+        <symbol id="CURRENT_IMBALANCE_WARNING">11</symbol>
+        <symbol id="OVER_VOLT_ALARM">12</symbol>
+        <symbol id="UNDER_VOLT_ALARM">13</symbol>
+        <symbol id="OVER_VOLT_WARNING">14</symbol>
+        <symbol id="UNDER_VOLT_WARNING">15</symbol>
+        <symbol id="CONTACTOR_ERROR">16</symbol>
+        <symbol id="FAN_ERROR">17</symbol>
+        <symbol id="OTHER_ALARM">18</symbol>
+        <symbol id="OTHER_WARNING">18</symbol>
+      </point>
+      <point id="Evt2" offset="7" type="bitfield32" mandatory="true" />
+      <point id="Vol" offset="9" type="uint16" sf="Vol_SF" units="V" mandatory="true" />
+      <point id="MaxBatACha" offset="10" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
+      <point id="MaxBatADischa" offset="11" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
+      <point id="BatReqPCSSt" offset="12" type="enum16" >
+        <symbol id="NO REQUEST">0</symbol>
+        <symbol id="START">1</symbol>
+        <symbol id="STOP">2</symbol>
+      </point>
+      <point id="BatReqW" offset="13" type="int16" sf="BatReqW_SF" units="W" />
+      <point id="BSetOperation" offset="14" type="enum16" mandatory="true" >
+        <symbol id="CONNECT">1</symbol>
+        <symbol id="DISCONNECT">2</symbol>
+      </point>
+      <point id="BSetPCSState" offset="15" type="enum16" mandatory="true" >
+        <symbol id="STOPPED">1</symbol>
+        <symbol id="STANDBY">2</symbol>
+        <symbol id="STARTED">3</symbol>
+      </point>
+      <point id="SoH_SF" offset="16" type="sunssf" />
+      <point id="Vol_SF" offset="17" type="sunssf" mandatory="true" />
+      <point id="MaxBatA_SF" offset="18" type="sunssf" mandatory="true" />
+      <point id="BatReqW_SF" offset="19" type="sunssf" />
+    </block>
+  </model>
+  <strings id="802" locale="en">
+    <model>
+      <label>Battery Base Model</label>
+      <description></description>
+      <notes></notes>
+    </model>
+    <point id="BatTyp">
+      <label>Battery Type</label>
+      <description>Type of battery. Enumeration.</description>
+      <notes>Maps to ZBAT in 61850.</notes>
+      <symbol id="NOT APPLICABLE_UNKNOWN">
+        <label>Not Applicable or Unknown</label>
+        <description>Battery type is not applicable or unknown.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="LEAD-ACID">
+        <label>Lead-Acid</label>
+        <description>Lead-acid battery type.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="NICKEL_METAL_HYDRATE">
+        <label>Nickel-Metal Hydrate</label>
+        <description>Nickel-metal hydrate battery type.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="NICKEL_CADMIUM">
+        <label>Nickel-Cadmium</label>
+        <description>Nickel-cadmium battery type.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="LITHIUM_ION">
+        <label>Lithium-Ion</label>
+        <description>Lithium-ion battery type.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CARBON_ZINC">
+        <label>Carbon-Zinc</label>
+        <description>Carbon-zinc battery type.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ZINC_CHLORIDE">
+        <label>Zinc Chloride</label>
+        <description>Zinc chloride battery type.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ALKALINE">
+        <label>Alkaline</label>
+        <description>Alkaline battery type.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="RECHARGEABLE_ALKALINE">
+        <label>Rechargeable Alkaline</label>
+        <description>Rechargeable alkaline battery type.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="SODIUM_SULFUR">
+        <label>Sodium-Sulfur</label>
+        <description>Sodium-sulfur battery type.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FLOW">
+        <label>Flow</label>
+        <description>Flow battery type.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OTHER">
+        <label>Other</label>
+        <description>Other battery type.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="BatSt">
+      <label>State of the Battery Bank</label>
+      <description>State of the battery bank.  Enumeration.</description>
+      <notes>Must be reconciled with BatSt in IEC 61850.</notes>
+      <symbol id="DISCONNECTED">
+        <label></label>
+        <description>Battery bank is disconnected. All contactors are open.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="INITIALIZING">
+        <label></label>
+        <description>Battery bank is initializing but not ready for operating. String balancing may occur.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONNECTED">
+        <label></label>
+        <description>Battery bank is ready for operation. All enabled contactors are closed.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="STANDBY">
+        <label></label>
+        <description>Battery bank is connected and in standby/power saving mode.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="SOC PROTECTION">
+        <label></label>
+        <description>Battery bank is connected but SOC is too low. Battery should be considered "offline".</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="CycleCt">
+      <label>Cycle Count</label>
+      <description>Number of cycles executed in the battery.</description>
+      <notes></notes>
+     </point>
+    <point id="SoH">
+      <label>State of Health</label>
+      <description>Percentage of battery life remaining.</description>
+      <notes></notes>
+     </point>
+    <point id="Evt1">
+      <label>Battery Event 1 Bitfield</label>
+      <description>Alarms and warnings.  Bit flags.</description>
+      <notes></notes>
+       <symbol id="COMMUNICATION_ERROR">
+        <label>Communication Error</label>
+        <description>Unable to communcate with BMS or BMS is unable to communicate with battery strings.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_TEMP_ALARM">
+        <label>Over Temperature Alarm</label>
+        <description>Battery has exceeded maximum operating temperature</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_TEMP_ALARM">
+        <label>Under Temperature Alarm</label>
+        <description>Battery has exceeded minimum operating temperature</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_TEMP_WARNING">
+        <label>Over Temperature  Warning</label>
+        <description>Battery is approaching maximum operating temperature.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_TEMP_WARNING">
+        <label>Under Temperature Warning</label>
+        <description>Battery is approaching minimum operating temperature.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_CHARGE_CURRENT_ALARM">
+        <label>Over Charge Current Alarm</label>
+        <description>Battery maximum charge current has been exceeded.</description>
+        <notes>See AMaxCha</notes>
+      </symbol>
+      <symbol id="OVER_DISCHARGE_CURRENT_ALARM">
+        <label>Over Discharge Current Alarm</label>
+        <description>Battery maximum discharge current has been exceeded.</description>
+        <notes>See AMaxDischa</notes>
+      </symbol>
+      <symbol id="OVER_CHARGE_CURRENT_WARNING">
+        <label>Over Charge Current Warning</label>
+        <description>Approaching battery maximum charge current.</description>
+        <notes>See AMaxCha</notes>
+      </symbol>
+      <symbol id="OVER_DISCHARGE_CURRENT_WARNING">
+        <label>Over Discharge Current Warning</label>
+        <description>Approaching battery maximum discharge current.</description>
+        <notes>See AMaxDischa</notes>
+      </symbol>
+      <symbol id="VOLTAGE_IMBALANCE_WARNING">
+        <label>Voltage Imbalance Warning</label>
+        <description>A voltage imbalance exists between the strings in the battery bank.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CURRENT_IMBALANCE_WARNING">
+        <label>Current Imbalance Warning</label>
+        <description>A current imbalance exists between the strings in the battery bank.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_VOLT_ALARM">
+        <label>Over Voltage Alarm</label>
+        <description>Battery voltage has exceeded maximum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_VOLT_ALARM">
+        <label>Under Voltage Alarm</label>
+        <description>Battery voltage has exceeded minimum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_VOLT_WARNING">
+        <label>Over Voltage Warning</label>
+        <description>Battery voltage is approaching maximum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_VOLT_WARNING">
+        <label>Under Voltage Warning</label>
+        <description>Battery voltage is approaching minimum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_ERROR">
+        <label>Contactor Error</label>
+        <description>A contactor failed to open or close as requested.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAN_ERROR">
+        <label>Fan Error</label>
+        <description>One or more battery fans has failed.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OTHER_ALARM">
+        <label>Other Battery Alarm</label>
+        <description>For manufacturer-specific alarms.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OTHER_WARNING">
+        <label>Other Battery Warning</label>
+        <description>For manufacturer-specific warnings.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Evt2">
+      <label>Battery Event 2 Bitfield</label>
+      <description>Alarms and warnings.  Bit flags.</description>
+      <notes>Reserved for future use.</notes>
+    </point>
+    <point id="Vol">
+      <label>External Battery Voltage</label>
+      <description>DC Bus Voltage</description>
+      <notes>Measurement. Maps to ZBAT.Vol.</notes>
+    </point>
+    <point id="MaxBatACha">
+      <label>Max Charge Current</label>
+      <description>Instantaneous maximum DC charge current.</description>
+      <notes>Calculation. Nearly maps to ZBAT.MaxBatA.</notes>
+    </point>
+    <point id="MaxBatADischa">
+      <label>Max Discharge Current</label>
+      <description>Instantaneous maximum DC discharge current.</description>
+      <notes>Calculation. Nearly maps to ZBAT.MaxBatA.</notes>
+    </point>
+    <point id="BatReqPCSSt">
+      <label>PCS State Request</label>
+      <description>Request from battery to start or stop the PCS.  Enumeration.</description>
+      <notes>Used in special states such as manual battery charging.</notes>
+      <symbol id="NO REQUEST">
+        <label>No Request</label>
+        <description>Battery has no requests of the PCS.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="START">
+        <label>Start PCS</label>
+        <description>Battery requests that the PCS be started.</description>
+        <notes>Battery is notified of PCS state change through BSetPcsState.</notes>
+      </symbol>
+      <symbol id="STOP">
+        <label>Stop PCS</label>
+        <description>Battery requests that the PCS be stopped.</description>
+        <notes>Battery is notified of PCS state change through BSetPcsState.</notes>
+      </symbol>
+    </point>
+    <point id="BatReqW">
+      <label>Battery Power Request</label>
+      <description>AC Power requested by battery.</description>
+      <notes>Used in special states such as string balancing.</notes>
+    </point>
+    <point id="BSetOperation">
+      <label>Set Operation</label>
+      <description>Instruct the battery bank to perform an operation such as connecting.  Enumeration.</description>
+      <notes></notes>
+      <symbol id="CONNECT">
+        <label>Connect the Battery Bank</label>
+        <description>Initialize the battery bank and close contactors for all enabled strings.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DISCONNECT">
+        <label>Disconnect the Battery Bank</label>
+        <description>Open contactors for all strings.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="BSetPCSState">
+      <label>PCS State</label>
+      <description>PCS State</description>
+      <notes>Information needed by battery for some operations.</notes>
+      <symbol id="STOPPED">
+        <label>PCS is Stopped</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="STANDBY">
+        <label>PCS is in Standby</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="STARTED">
+        <label>PCS is Started</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="SoH_SF">
+      <label></label>
+      <description>Scale factor for State of Health.</description>
+      <notes></notes>
+    </point>
+    <point id="Vol_SF">
+      <label></label>
+      <description>Scale factor for DC Bus Voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="MaxBatA_SF">
+      <label></label>
+      <description>Scale factor for instantationous DC charge/discharge current.</description>
+      <notes></notes>
+    </point>
+    <point id="BatReqW_SF">
+      <label></label>
+      <description>Scale factor for AC power request.</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>
