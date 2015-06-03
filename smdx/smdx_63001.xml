@@ -33,7 +33,7 @@
       <point id="uint32_1"      offset="34"   type="uint32"  sf="sunssf_5" />
       <point id="uint32_2"      offset="36"   type="uint32"  sf="sunssf_6" />
       <point id="uint32_3"      offset="38"   type="uint32"  sf="sunssf_7"  access="rw"/>
-      <point id="uint32_4"      offset="40"   type="uint32" />
+      <point id="uint32_4"      offset="40"   type="uint32"  sf="1" />
       <point id="uint32_5"      offset="42"   type="uint32" />
       <point id="uint32_u"      offset="44"   type="uint32" />
       <point id="acc32"         offset="46"   type="acc32" />
@@ -76,4 +76,9 @@
       <point id="pad_2"         offset="17"   type="pad" />
     </block>
   </model>
+  <strings id="63001" locale="en">
+    <model>
+      <label>SunSpec Test Model 1</label>
+    </model>
+  </strings>
 </sunSpecModels>
