@@ -8,4 +8,9 @@
       <point id="sunssf_2"      offset="3"    type="sunssf" />
     </block>
   </model>
+  <strings id="63002" locale="en">
+    <model>
+      <label>SunSpec Test Model 2</label>
+    </model>
+  </strings>
 </sunSpecModels>
