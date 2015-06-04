@@ -1,5 +1,5 @@
 <manifest>
-  <file md5="5dbc48c8f58ace77d1c9f304ff33a220" name="CHANGELOG" />
+  <file md5="1334fcdaa9a4e61e3938f2b1e298af2e" name="CHANGELOG" />
   <file md5="2dd805cf3108bbcfae774033b4bcbd5f" name="smdx.xsd" />
   <file md5="c295afc91da4480269caa0dde149c296" name="smdx_00001.xml" />
   <file md5="cee44d064c9d368d04606df29fcf0fe3" name="smdx_00002.xml" />
@@ -72,8 +72,8 @@
   <file md5="9bfabca3bef3adfe7f3bb37ab3ee4226" name="smdx_00801.xml" />
   <file md5="df1914e498b4eb8c910f0eca724a7fcf" name="smdx_00802.xml" />
   <file md5="836143980a6b4e4caedc02f0c6ea7a84" name="smdx_00803.xml" />
-  <file md5="0369298b9793a8becbeb744086ca1037" name="smdx_63001.xml" />
-  <file md5="858ae00e4d04c8b38317a22d225a8a82" name="smdx_63002.xml" />
+  <file md5="92f777bd774d731b8c6f9fbfef884f1c" name="smdx_63001.xml" />
+  <file md5="d18ac80b4106d05ae4499ba09e00a47f" name="smdx_63002.xml" />
   <file md5="584d6889c51d84163cd8a621e146590a" name="smdx_64001.xml" />
   <file md5="f8d554a132e3074e102f9c247c29fe6c" name="smdx_64020.xml" />
   <file md5="bb5434bb8c11214ed6febe47cd502867" name="smdx_64101.xml" />

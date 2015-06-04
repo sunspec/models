@@ -50,4 +50,7 @@ Models moved to SunSpec models repository
 
 2015 April 7: Bob Fox, SunSpec. Updated model 11 to correct MAC address point; added new point type of eui48. Added storage models 801, 802, and 803.
 
+2015 June 3: Bob Fox, SunSpec. Updated model 63001. Added a constant scale factor to point uint32_4. Added label information.
+
+2015 June 3: Bob Fox, SunSpec. Updated model 63002 to include label information.
 
