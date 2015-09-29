@@ -1,5 +1,4 @@
 <sunSpecModels v="1">
-
   <!-- 801: Energy Storage Base Model -->
   <model id="801" len="22" name="storage">
     <block len="22">
@@ -12,11 +11,11 @@
       <point id="WHRtg" offset="1" type="uint16" sf="WHRtg_SF" units="Wh" mandatory="true" />
       <point id="WMaxChaRte" offset="2" type="uint16" sf="WMaxChaDisCha_SF" units="W" mandatory="true" />
       <point id="WMaxDisChaRte" offset="3" type="uint16" sf="WMaxChaDisCha_SF" units="W" mandatory="true" />
-      <point id="DisChaRte" offset="4" type="uint16" sf="DisChaRte_SF" units="" mandatory="true" />
-      <point id="SoCNpMaxPct" offset="5" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
-      <point id="SoCNpMinPct" offset="6" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
-      <point id="MaxRsvPct" offset="7" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
-      <point id="MinRsvPct" offset="8" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
+      <point id="DisChaRte" offset="4" type="uint16" sf="DisChaRte_SF" units="%WHRtg" />
+      <point id="SoCNpMaxPct" offset="5" type="uint16" sf="SoC_SF" units="%WHRtg" />
+      <point id="SoCNpMinPct" offset="6" type="uint16" sf="SoC_SF" units="%WHRtg" />
+      <point id="MaxRsvPct" offset="7" access="rw" type="uint16" sf="SoC_SF" units="%WHRtg" />
+      <point id="MinRsvPct" offset="8" access="rw" type="uint16" sf="SoC_SF" units="%WHRtg" />
       <point id="SoC" offset="9" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
       <point id="ChaSt" offset="10" type="enum16" >
         <symbol id="OFF">1</symbol>
@@ -28,23 +27,23 @@
         <symbol id="TESTING">7</symbol>
       </point>
       <point id="LocRemCtl" offset="11" type="enum16" mandatory="true" >
-        <symbol id="REMOTE">0</symbol>
-        <symbol id="LOCAL">1</symbol>
+        <symbol id="REMOTE">1</symbol>
+        <symbol id="LOCAL">2</symbol>
       </point>
       <point id="Evt" offset="12" type="bitfield32" mandatory="true" >
-        <symbol id="UNDER_SOC_MIN_WARNING">1</symbol>
-        <symbol id="UNDER_SOC_MIN_ALARM">2</symbol>
-        <symbol id="OVER_SOC_MAX_WARNING">3</symbol>
-        <symbol id="OVER_SOC_MAX_ALARM">4</symbol>
+        <symbol id="UNDER_SOC_MIN_WARNING">0</symbol>
+        <symbol id="UNDER_SOC_MIN_ALARM">1</symbol>
+        <symbol id="OVER_SOC_MAX_WARNING">2</symbol>
+        <symbol id="OVER_SOC_MAX_ALARM">3</symbol>
       </point>
-      <point id="DERHb" offset="14" type="uint16" mandatory="true" />
-      <point id="ControllerHb" offset="15" type="uint16" />
+      <point id="DERHb" offset="14" access="rw" type="uint16" />
+      <point id="ControllerHb" offset="15" access="rw" type="uint16" />
       <point id="DERAlarmReset" offset="16" type="uint16" />
       <point id="WHRtg_SF" offset="17" type="sunssf" mandatory="true" />
       <point id="WMaxChaDisCha_SF" offset="18" type="sunssf"  mandatory="true" />
       <point id="DisChaRte_SF" offset="19" type="sunssf" />
       <point id="SoC_SF" offset="20" type="sunssf" mandatory="true" />
-      <point id="Pad" offset="21" type="sunssf" mandatory="true" />
+      <point id="Pad" offset="21" type="pad" mandatory="true" />
     </block>
   </model>
   <strings id="801" locale="en">

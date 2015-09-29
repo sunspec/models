@@ -1,10 +1,10 @@
 <sunSpecModels v="1">
-
   <!-- 802: Battery Base Model -->
   <model id="802" len="20" name="battery">
     <block len="20">
       <point id="BatTyp" offset="0" type="enum16" mandatory="true" >
         <symbol id="NOT APPLICABLE_UNKNOWN">0</symbol>
+        <symbol id="LEAD_ACID">1</symbol>
         <symbol id="NICKEL_METAL_HYDRATE">2</symbol>
         <symbol id="NICKEL_CADMIUM">3</symbol>
         <symbol id="LITHIUM_ION">4</symbol>
@@ -26,25 +26,28 @@
       <point id="CycleCt" offset="2" type="uint32" />
       <point id="SoH" offset="4" type="uint16" sf="SoH_SF" units="%" />
       <point id="Evt1" offset="5" type="bitfield32" mandatory="true" >
-        <symbol id="COMMUNICATION_ERROR">1</symbol>
-        <symbol id="OVER_TEMP_ALARM">2</symbol>
-        <symbol id="UNDER_TEMP_ALARM">3</symbol>
-        <symbol id="OVER_TEMP_WARNING">4</symbol>
-        <symbol id="UNDER_TEMP_WARNING">5</symbol>
-        <symbol id="OVER_CHARGE_CURRENT_ALARM">6</symbol>
-        <symbol id="OVER_DISCHARGE_CURRENT_ALARM">7</symbol>
-        <symbol id="OVER_CHARGE_CURRENT_WARNING">8</symbol>
-        <symbol id="OVER_DISCHARGE_CURRENT_WARNING">9</symbol>
-        <symbol id="VOLTAGE_IMBALANCE_WARNING">10</symbol>
-        <symbol id="CURRENT_IMBALANCE_WARNING">11</symbol>
-        <symbol id="OVER_VOLT_ALARM">12</symbol>
-        <symbol id="UNDER_VOLT_ALARM">13</symbol>
-        <symbol id="OVER_VOLT_WARNING">14</symbol>
-        <symbol id="UNDER_VOLT_WARNING">15</symbol>
-        <symbol id="CONTACTOR_ERROR">16</symbol>
-        <symbol id="FAN_ERROR">17</symbol>
-        <symbol id="OTHER_ALARM">18</symbol>
-        <symbol id="OTHER_WARNING">18</symbol>
+        <symbol id="COMMUNICATION_ERROR">0</symbol>
+        <symbol id="OVER_TEMP_ALARM">1</symbol>
+        <symbol id="UNDER_TEMP_ALARM">2</symbol>
+        <symbol id="OVER_TEMP_WARNING">3</symbol>
+        <symbol id="UNDER_TEMP_WARNING">4</symbol>
+        <symbol id="OVER_CHARGE_CURRENT_ALARM">5</symbol>
+        <symbol id="OVER_DISCHARGE_CURRENT_ALARM">6</symbol>
+        <symbol id="OVER_CHARGE_CURRENT_WARNING">7</symbol>
+        <symbol id="OVER_DISCHARGE_CURRENT_WARNING">8</symbol>
+        <symbol id="VOLTAGE_IMBALANCE_WARNING">9</symbol>
+        <symbol id="CURRENT_IMBALANCE_WARNING">10</symbol>
+        <symbol id="OVER_VOLT_ALARM">11</symbol>
+        <symbol id="UNDER_VOLT_ALARM">12</symbol>
+        <symbol id="OVER_VOLT_WARNING">13</symbol>
+        <symbol id="UNDER_VOLT_WARNING">14</symbol>
+        <symbol id="CONTACTOR_ERROR">15</symbol>
+        <symbol id="FAN_ERROR">16</symbol>
+        <symbol id="CONTACTOR_STATUS">17</symbol>
+        <symbol id="GROUND_FAULT">18</symbol>
+        <symbol id="OPEN_DOOR_ERROR">19</symbol>
+        <symbol id="OTHER_ALARM">20</symbol>
+        <symbol id="OTHER_WARNING">21</symbol>
       </point>
       <point id="Evt2" offset="7" type="bitfield32" mandatory="true" />
       <point id="Vol" offset="9" type="uint16" sf="Vol_SF" units="V" mandatory="true" />
@@ -56,14 +59,14 @@
         <symbol id="STOP">2</symbol>
       </point>
       <point id="BatReqW" offset="13" type="int16" sf="BatReqW_SF" units="W" />
-      <point id="BSetOperation" offset="14" type="enum16" mandatory="true" >
+      <point id="BSetOperation" offset="14" access="rw" type="enum16" mandatory="true" >
         <symbol id="CONNECT">1</symbol>
         <symbol id="DISCONNECT">2</symbol>
       </point>
-      <point id="BSetPCSState" offset="15" type="enum16" mandatory="true" >
-        <symbol id="STOPPED">1</symbol>
-        <symbol id="STANDBY">2</symbol>
-        <symbol id="STARTED">3</symbol>
+      <point id="BSetPCSState" offset="15" access="rw" type="enum16" mandatory="true" >
+        <symbol id="PCS_STOPPED">1</symbol>
+        <symbol id="PCS_STANDBY">2</symbol>
+        <symbol id="PCS_STARTED">3</symbol>
       </point>
       <point id="SoH_SF" offset="16" type="sunssf" />
       <point id="Vol_SF" offset="17" type="sunssf" mandatory="true" />
@@ -80,13 +83,13 @@
     <point id="BatTyp">
       <label>Battery Type</label>
       <description>Type of battery. Enumeration.</description>
-      <notes>Maps to ZBAT in 61850.</notes>
+      <notes>Maps to DBAT in 61850.</notes>
       <symbol id="NOT APPLICABLE_UNKNOWN">
         <label>Not Applicable or Unknown</label>
         <description>Battery type is not applicable or unknown.</description>
         <notes></notes>
       </symbol>
-      <symbol id="LEAD-ACID">
+      <symbol id="LEAD_ACID">
         <label>Lead-Acid</label>
         <description>Lead-acid battery type.</description>
         <notes></notes>
@@ -147,27 +150,27 @@
       <description>State of the battery bank.  Enumeration.</description>
       <notes>Must be reconciled with BatSt in IEC 61850.</notes>
       <symbol id="DISCONNECTED">
-        <label></label>
+        <label>Disconnected</label>
         <description>Battery bank is disconnected. All contactors are open.</description>
         <notes></notes>
       </symbol>
       <symbol id="INITIALIZING">
-        <label></label>
+        <label>Initializing</label>
         <description>Battery bank is initializing but not ready for operating. String balancing may occur.</description>
         <notes></notes>
       </symbol>
       <symbol id="CONNECTED">
-        <label></label>
+        <label>Connected</label>
         <description>Battery bank is ready for operation. All enabled contactors are closed.</description>
         <notes></notes>
       </symbol>
       <symbol id="STANDBY">
-        <label></label>
+        <label>Standby</label>
         <description>Battery bank is connected and in standby/power saving mode.</description>
         <notes></notes>
       </symbol>
       <symbol id="SOC PROTECTION">
-        <label></label>
+        <label>SOC Protection</label>
         <description>Battery bank is connected but SOC is too low. Battery should be considered "offline".</description>
         <notes></notes>
       </symbol>
@@ -271,6 +274,21 @@
         <description>One or more battery fans has failed.</description>
         <notes></notes>
       </symbol>
+      <symbol id="CONTACTOR_STATUS">
+        <label>Contactor Status</label>
+        <description>String contactor is closed.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="GROUND_FAULT">
+        <label>Ground Fault Error</label>
+        <description>Ground fault detected.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OPEN_DOOR_ERROR">
+        <label>Open Door Error</label>
+        <description>One or more door are open.</description>
+        <notes></notes>
+      </symbol>
       <symbol id="OTHER_ALARM">
         <label>Other Battery Alarm</label>
         <description>For manufacturer-specific alarms.</description>
@@ -346,17 +364,17 @@
       <label>PCS State</label>
       <description>PCS State</description>
       <notes>Information needed by battery for some operations.</notes>
-      <symbol id="STOPPED">
+      <symbol id="PCS_STOPPED">
         <label>PCS is Stopped</label>
         <description></description>
         <notes></notes>
       </symbol>
-      <symbol id="STANDBY">
+      <symbol id="PCS_STANDBY">
         <label>PCS is in Standby</label>
         <description></description>
         <notes></notes>
       </symbol>
-      <symbol id="STARTED">
+      <symbol id="PCS_STARTED">
         <label>PCS is Started</label>
         <description></description>
         <notes></notes>

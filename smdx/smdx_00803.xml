@@ -8,7 +8,7 @@
       <point id="BMaxCellVolLoc" offset="2" type="uint16" />
       <point id="BMinCellVol" offset="3" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
       <point id="BMinCellVolLoc" offset="4" type="uint16" />
-      <point id="BMaxModTmp" offset="5" type="uint16" sf="BModTmp_SF" units="" mandatory="true" />
+      <point id="BMaxModTmp" offset="5" type="int16" sf="BModTmp_SF" units="" mandatory="true" />
       <point id="BMaxModTmpLoc" offset="6" type="uint16" />
       <point id="BMinModTmp" offset="7" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
       <point id="BMinModTmpLoc" offset="8" type="uint16" />
@@ -32,34 +32,36 @@
       <point id="StrMinModTmp" offset="8" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
       <point id="StrModTmpLoc" offset="9" type="uint16" />
       <point id="StrEvt1" offset="10" type="bitfield32" mandatory="true" >
-        <symbol id="COMMUNICATION_ERROR">1</symbol>
-        <symbol id="OVER_TEMP_ALARM">2</symbol>
-        <symbol id="UNDER_TEMP_ALARM">3</symbol>
-        <symbol id="OVER_TEMP_WARNING">4</symbol>
-        <symbol id="UNDER_TEMP_WARNING">5</symbol>
-        <symbol id="OVER_CHARGE_CURRENT_ALARM">6</symbol>
-        <symbol id="OVER_DISCHARGE_CURRENT_ALARM">7</symbol>
-        <symbol id="OVER_CHARGE_CURRENT_WARNING">8</symbol>
-        <symbol id="OVER_DISCHARGE_CURRENT_WARNING">9</symbol>
-        <symbol id="OVER_VOLT_ALARM">10</symbol>
-        <symbol id="UNDER_VOLT_ALARM">11</symbol>
-        <symbol id="OVER_VOLT_WARNING">12</symbol>
-        <symbol id="UNDER_VOLT_WARNING">13</symbol>
-        <symbol id="CONTACTOR_ERROR">14</symbol>
-        <symbol id="FAN_ERROR">15</symbol>
-        <symbol id="CONTACTOR_STATUS">16</symbol>
-        <symbol id="STRING_ENABLED">17</symbol>
+        <symbol id="COMMUNICATION_ERROR">0</symbol>
+        <symbol id="OVER_TEMP_ALARM">1</symbol>
+        <symbol id="UNDER_TEMP_ALARM">2</symbol>
+        <symbol id="OVER_TEMP_WARNING">3</symbol>
+        <symbol id="UNDER_TEMP_WARNING">4</symbol>
+        <symbol id="OVER_CHARGE_CURRENT_ALARM">5</symbol>
+        <symbol id="OVER_DISCHARGE_CURRENT_ALARM">6</symbol>
+        <symbol id="OVER_CHARGE_CURRENT_WARNING">7</symbol>
+        <symbol id="OVER_DISCHARGE_CURRENT_WARNING">8</symbol>
+        <symbol id="OVER_VOLT_ALARM">9</symbol>
+        <symbol id="UNDER_VOLT_ALARM">10</symbol>
+        <symbol id="OVER_VOLT_WARNING">11</symbol>
+        <symbol id="UNDER_VOLT_WARNING">12</symbol>
+        <symbol id="CONTACTOR_ERROR">13</symbol>
+        <symbol id="FAN_ERROR">14</symbol>
+        <symbol id="CONTACTOR_STATUS">15</symbol>
+        <symbol id="GROUND_FAULT">16</symbol>
+        <symbol id="OPEN_DOOR_ERROR">17</symbol>
         <symbol id="OTHER_ALARM">18</symbol>
         <symbol id="OTHER_WARNING">19</symbol>
+        <symbol id="STRING_ENABLED">20</symbol>
       </point>
       <point id="StrEvt2" offset="12" type="bitfield32" />
       <point id="StrConFail" offset="14" type="enum16" >
         <symbol id="NO FAILURE">0</symbol>
         <symbol id="BUTTON_PUSHED">1</symbol>
-        <symbol id="GROUND_FAULT">2</symbol>
+        <symbol id="STR_GROUND_FAULT">2</symbol>
         <symbol id="OUTSIDE_VOLTAGE_RANGE">3</symbol>
       </point>
-      <point id="StrSetEna" offset="15" type="enum16" >
+      <point id="StrSetEna" offset="15" access="rw" type="enum16" >
         <symbol id="ENABLE">1</symbol>
         <symbol id="DISABLE">2</symbol>
       </point>
@@ -285,9 +287,14 @@
         <description>String contactor is closed.</description>
         <notes></notes>
       </symbol>
-      <symbol id="STRING_ENABLED">
-        <label>String Enabled</label>
-        <description>The string is currently enabled.</description>
+      <symbol id="GROUND_FAULT">
+        <label>Ground Fault Error</label>
+        <description>Ground fault detected.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OPEN_DOOR_ERROR">
+        <label>Open Door Error</label>
+        <description>One or more door are open.</description>
         <notes></notes>
       </symbol>
       <symbol id="OTHER_ALARM">
@@ -299,6 +306,11 @@
         <label>Other Warning</label>
         <description>A warning has been triggered which does not map to one of the alarms above.</description>
         <notes>Operator should view battery HMI and/or logs for more information.</notes>
+      </symbol>
+      <symbol id="STRING_ENABLED">
+        <label>String Enabled</label>
+        <description>The string is currently enabled.</description>
+        <notes></notes>
       </symbol>
     </point>
     <point id="StrEvt2">
@@ -320,7 +332,7 @@
         <description>A button was pushed which prevented connection.</description>
         <notes></notes>
       </symbol>
-      <symbol id="GROUND_FAULT">
+      <symbol id="STR_GROUND_FAULT">
         <label></label>
         <description>Ground fault during auto-connect.</description>
         <notes></notes>
