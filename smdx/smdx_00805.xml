@@ -1,0 +1,30 @@
+<sunSpecModels v="1">
+
+  <!-- 805: Lithium-Ion Module Model -->
+  <model id="805" len="2" name="module">
+    <block len="1">
+      <point id="ModuleTBD" offset="0" type="uint16" mandatory="true" />
+    </block>
+    <block type="repeating" len="1" name="cell">
+      <point id="CellTBD" offset="0" type="uint16" mandatory="true" />
+    </block>
+  </model>
+  <strings id="805" locale="en">
+    <model>
+      <label>Lithium-Ion Module Model</label>
+      <description></description>
+      <notes></notes>
+    </model>
+    <point id="ModuleTBD">
+      <label>Module Points To Be Determined</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="CellTBD">
+      <label>Cell Points To Be Determined</label>
+      <description></description>
+      <notes></notes>
+    </point>
+
+   </strings>
+</sunSpecModels>

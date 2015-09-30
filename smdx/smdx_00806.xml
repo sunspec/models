@@ -1,0 +1,30 @@
+<sunSpecModels v="1">
+
+  <!-- 806: Flow Battery Model -->
+  <model id="806" len="2" name="flow_battery">
+    <block len="1">
+      <point id="BatTBD" offset="0" type="uint16" mandatory="true" />
+    </block>
+    <block type="repeating" len="1" name="battery_string">
+      <point id="BatStTBD" offset="0" type="uint16" mandatory="true" />
+    </block>
+  </model>
+  <strings id="806" locale="en">
+    <model>
+      <label>Flow Battery Model</label>
+      <description></description>
+      <notes></notes>
+    </model>
+    <point id="BatTBD">
+      <label>Battery Points To Be Determined</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="BatStTBD">
+      <label>Battery String Points To Be Determined</label>
+      <description></description>
+      <notes></notes>
+    </point>
+
+   </strings>
+</sunSpecModels>

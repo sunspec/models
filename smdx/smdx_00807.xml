@@ -2,7 +2,7 @@
 
   <!-- 807: Flow Battery String Model -->
   <model id="807" len="14" name="flow_battery_string">
-    <block len="1">
+    <block len="17">
       <point id="BConDCBatCt" offset="0" type="uint16" mandatory="true" />
       <point id="BMaxCellVol" offset="1" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
       <point id="BMaxCellVolLoc" offset="2" type="uint16" />
