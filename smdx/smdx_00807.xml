@@ -1,0 +1,119 @@
+<sunSpecModels v="1">
+
+  <!-- 807: Flow Battery String Model -->
+  <model id="807" len="14" name="flow_battery_string">
+    <block len="1">
+      <point id="BConDCBatCt" offset="0" type="uint16" mandatory="true" />
+      <point id="BMaxCellVol" offset="1" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
+      <point id="BMaxCellVolLoc" offset="2" type="uint16" />
+      <point id="BMinCellVol" offset="3" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
+      <point id="BMinCellVolLoc" offset="4" type="uint16" />
+      <point id="BMaxModTmp" offset="5" type="int16" sf="BModTmp_SF" units="" mandatory="true" />
+      <point id="BMaxModTmpLoc" offset="6" type="uint16" />
+      <point id="BMinModTmp" offset="7" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
+      <point id="BMinModTmpLoc" offset="8" type="uint16" />
+      <point id="BTotDCCur" offset="9" type="int16" sf="BCurrent_SF" units="A" mandatory="true" />
+      <point id="BCellVol_SF" offset="10" type="sunssf" mandatory="true" />
+      <point id="BModTmp_SF" offset="11" type="sunssf" mandatory="true" />
+      <point id="BCurrent_SF" offset="12" type="sunssf" mandatory="true" />
+      <point id="DCBatSoH_SF" offset="13" type="sunssf" />
+    </block>
+    <block type="repeating" len="3" name="dc_battery">
+      <point id="DCBatStackCt" offset="0" type="uint16" mandatory="true" />
+      <point id="DCBatSoC" offset="1" type="uint16" units="%" mandatory="true" />
+      <point id="DCBatSoH" offset="2" type="uint16" sf="DCBatSoH_SF" units="%" />
+    </block>
+  </model>
+  <strings id="807" locale="en">
+    <model>
+      <label>Flow Battery String Model</label>
+      <description></description>
+      <notes></notes>
+    </model>
+    <point id="BConDCBatCt">
+      <label>Connected DC Battery Count</label>
+      <description>Number of DC batteries with contactor closed.</description>
+      <notes></notes>
+    </point>
+    <point id="BMaxCellVol">
+      <label>Max Cell Voltage</label>
+      <description>Maximum voltage for all cells in the bank.</description>
+      <notes>Measurement</notes>
+    </point>
+    <point id="BMaxCellVolLoc">
+      <label>Max Cell Voltage Location</label>
+      <description>Location of the cell with maximum voltage</description>
+      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
+    </point>
+    <point id="BMinCellVol">
+      <label>Min Cell Voltage</label>
+      <description>Minimum voltage for all cells in the bank.</description>
+      <notes>Measurement</notes>
+    </point>
+    <point id="BMinCellVolLoc">
+      <label>Min Cell Voltage Location</label>
+      <description>Location of the cell with minimum voltage</description>
+      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
+    </point>
+    <point id="BMaxModTmp">
+      <label>Max Module Temp</label>
+      <description>Maximum temperature for all modules in the bank.</description>
+      <notes>Measurement</notes>
+    </point>
+    <point id="BMaxModTmpLoc">
+      <label>Max Module Temp Location</label>
+      <description>Location of the module with max temperature.</description>
+      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
+    </point>
+    <point id="BMinModTmp">
+      <label>Min Module Temp</label>
+      <description>Minimum temperature for all modules in the bank.</description>
+      <notes>Measurement</notes>
+    </point>
+    <point id="BMinModTmpLoc">
+      <label>Min Module Temp Location</label>
+      <description>Location of the module with min temperature.</description>
+      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
+    </point>
+    <point id="BTotDCCur">
+      <label>Total DC Current</label>
+      <description>Total DC current flowing to/from the battery bank.</description>
+      <notes>Measurement</notes>
+    </point>
+    <point id="BCellVol_SF">
+      <label></label>
+      <description>Scale factor for cell voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="BModTmp_SF">
+      <label></label>
+      <description>Scale factor for module temperatures.</description>
+      <notes></notes>
+    </point>
+    <point id="BCurrent_SF">
+      <label></label>
+      <description>Scale factor for Total DC Current, Max String Current and Min String Current.</description>
+      <notes></notes>
+    </point>
+    <point id="DCBatSoH_SF">
+      <label></label>
+      <description>Scale factor for String State of Health.</description>
+      <notes></notes>
+    </point>
+    <point id="DCBatStackCount">
+      <label>DC Battery Stack Count</label>
+      <description>Count of stacks in the DC Battery.</description>
+      <notes></notes>
+    </point>
+    <point id="DCBatSoC">
+      <label>DC Battery SoC</label>
+      <description>DC Battery state of charge, expressed as a percentage.</description>
+      <notes>Measurement</notes>
+    </point>
+    <point id="DCBatSoH">
+      <label>DC Battery SoH</label>
+      <description>DC Battery state of health, expressed as a percentage.</description>
+      <notes>Measurement</notes>
+    </point>
+   </strings>
+</sunSpecModels>
