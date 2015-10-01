@@ -1,8 +1,33 @@
 <sunSpecModels v="1">
   <!-- 802: Battery Base Model -->
-  <model id="802" len="20" name="battery">
-    <block len="20">
-      <point id="BatTyp" offset="0" type="enum16" mandatory="true" >
+  <model id="802" len="43" name="battery">
+    <block len="43">
+      <point id="WHRtg" offset="0" type="uint16" sf="WHRtg_SF" units="Wh" mandatory="true" />
+      <point id="WMaxChaRte" offset="1" type="uint16" sf="WMaxChaDisCha_SF" units="W" mandatory="true" />
+      <point id="WMaxDisChaRte" offset="2" type="uint16" sf="WMaxChaDisCha_SF" units="W" mandatory="true" />
+      <point id="DisChaRte" offset="3" type="uint16" sf="DisChaRte_SF" units="%WHRtg" />
+      <point id="SoCNpMaxPct" offset="4" type="uint16" sf="SoC_SF" units="%WHRtg" />
+      <point id="SoCNpMinPct" offset="5" type="uint16" sf="SoC_SF" units="%WHRtg" />
+      <point id="MaxRsvPct" offset="6" access="rw" type="uint16" sf="SoC_SF" units="%WHRtg" />
+      <point id="MinRsvPct" offset="7" access="rw" type="uint16" sf="SoC_SF" units="%WHRtg" />
+      <point id="SoC" offset="8" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
+      <point id="ChaSt" offset="9" type="enum16" >
+        <symbol id="OFF">1</symbol>
+        <symbol id="EMPTY">2</symbol>
+        <symbol id="DISCHARGING">3</symbol>
+        <symbol id="CHARGING">4</symbol>
+        <symbol id="FULL">5</symbol>
+        <symbol id="HOLDING">6</symbol>
+        <symbol id="TESTING">7</symbol>
+      </point>
+      <point id="LocRemCtl" offset="10" type="enum16" mandatory="true" >
+        <symbol id="REMOTE">1</symbol>
+        <symbol id="LOCAL">2</symbol>
+      </point>
+      <point id="DERHb" offset="11" access="rw" type="uint16" />
+      <point id="ControllerHb" offset="12" access="rw" type="uint16" />
+      <point id="DERAlarmReset" offset="13" type="uint16" />
+      <point id="BatTyp" offset="14" type="enum16" mandatory="true" >
         <symbol id="NOT APPLICABLE_UNKNOWN">0</symbol>
         <symbol id="LEAD_ACID">1</symbol>
         <symbol id="NICKEL_METAL_HYDRATE">2</symbol>
@@ -16,16 +41,16 @@
         <symbol id="FLOW">10</symbol>
         <symbol id="OTHER">99</symbol>
       </point>
-      <point id="BatSt" offset="1" type="enum16" mandatory="true" >
+      <point id="BatSt" offset="15" type="enum16" mandatory="true" >
         <symbol id="DISCONNECTED">1</symbol>
         <symbol id="INITIALIZING">2</symbol>
         <symbol id="CONNECTED">3</symbol>
         <symbol id="STANDBY">4</symbol>
         <symbol id="SOC PROTECTION">5</symbol>
       </point>
-      <point id="CycleCt" offset="2" type="uint32" />
-      <point id="SoH" offset="4" type="uint16" sf="SoH_SF" units="%" />
-      <point id="Evt1" offset="5" type="bitfield32" mandatory="true" >
+      <point id="CycleCt" offset="16" type="uint32" />
+      <point id="SoH" offset="18" type="uint16" sf="SoH_SF" units="%" />
+      <point id="Evt1" offset="19" type="bitfield32" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="UNDER_TEMP_ALARM">2</symbol>
@@ -41,37 +66,50 @@
         <symbol id="UNDER_VOLT_ALARM">12</symbol>
         <symbol id="OVER_VOLT_WARNING">13</symbol>
         <symbol id="UNDER_VOLT_WARNING">14</symbol>
-        <symbol id="CONTACTOR_ERROR">15</symbol>
-        <symbol id="FAN_ERROR">16</symbol>
-        <symbol id="CONTACTOR_STATUS">17</symbol>
-        <symbol id="GROUND_FAULT">18</symbol>
-        <symbol id="OPEN_DOOR_ERROR">19</symbol>
-        <symbol id="OTHER_ALARM">20</symbol>
-        <symbol id="OTHER_WARNING">21</symbol>
+        <symbol id="UNDER_SOC_MIN_WARNING">15</symbol>
+        <symbol id="UNDER_SOC_MIN_ALARM">16</symbol>
+        <symbol id="OVER_SOC_MAX_WARNING">17</symbol>
+        <symbol id="OVER_SOC_MAX_ALARM">18</symbol>
+        <symbol id="CONTACTOR_ERROR">19</symbol>
+        <symbol id="FAN_ERROR">20</symbol>
+        <symbol id="CONTACTOR_STATUS">21</symbol>
+        <symbol id="GROUND_FAULT">22</symbol>
+        <symbol id="OPEN_DOOR_ERROR">23</symbol>
+        <symbol id="OTHER_ALARM">24</symbol>
+        <symbol id="OTHER_WARNING">25</symbol>
       </point>
-      <point id="Evt2" offset="7" type="bitfield32" mandatory="true" />
-      <point id="Vol" offset="9" type="uint16" sf="Vol_SF" units="V" mandatory="true" />
-      <point id="MaxBatACha" offset="10" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
-      <point id="MaxBatADischa" offset="11" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
-      <point id="BatReqPCSSt" offset="12" type="enum16" >
+      <point id="Evt2" offset="21" type="bitfield32" mandatory="true" />
+      <point id="Vol" offset="23" type="uint16" sf="Vol_SF" units="V" mandatory="true" />
+      <point id="MaxBatVol" offset="24" type="uint16" sf="Vol_SF" units="V" />
+      <point id="MinBatVol" offset="25" type="uint16" sf="Vol_SF" units="V" />
+      <point id="BTotDCCur" offset="26" type="int16" sf="BCurrent_SF" units="A" mandatory="true" />
+      <point id="MaxBatACha" offset="27" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
+      <point id="MaxBatADischa" offset="28" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
+      <point id="BTotWCur" offset="29" type="int16" sf="BatReqW_SF" mandatory="true" />
+      <point id="BatReqPCSSt" offset="30" type="enum16" >
         <symbol id="NO REQUEST">0</symbol>
         <symbol id="START">1</symbol>
         <symbol id="STOP">2</symbol>
       </point>
-      <point id="BatReqW" offset="13" type="int16" sf="BatReqW_SF" units="W" />
-      <point id="BSetOperation" offset="14" access="rw" type="enum16" mandatory="true" >
+      <point id="BatReqW" offset="31" type="int16" sf="BatReqW_SF" units="W" />
+      <point id="BSetOperation" offset="32" access="rw" type="enum16" mandatory="true" >
         <symbol id="CONNECT">1</symbol>
         <symbol id="DISCONNECT">2</symbol>
       </point>
-      <point id="BSetPCSState" offset="15" access="rw" type="enum16" mandatory="true" >
+      <point id="BSetPCSState" offset="33" access="rw" type="enum16" mandatory="true" >
         <symbol id="PCS_STOPPED">1</symbol>
         <symbol id="PCS_STANDBY">2</symbol>
         <symbol id="PCS_STARTED">3</symbol>
       </point>
-      <point id="SoH_SF" offset="16" type="sunssf" />
-      <point id="Vol_SF" offset="17" type="sunssf" mandatory="true" />
-      <point id="MaxBatA_SF" offset="18" type="sunssf" mandatory="true" />
-      <point id="BatReqW_SF" offset="19" type="sunssf" />
+      <point id="WHRtg_SF" offset="34" type="sunssf" mandatory="true" />
+      <point id="WMaxChaDisCha_SF" offset="35" type="sunssf"  mandatory="true" />
+      <point id="DisChaRte_SF" offset="36" type="sunssf" />
+      <point id="SoC_SF" offset="37" type="sunssf" mandatory="true" />
+      <point id="SoH_SF" offset="38" type="sunssf" />
+      <point id="Vol_SF" offset="39" type="sunssf" mandatory="true" />
+      <point id="BCurrent_SF" offset="40" type="sunssf" mandatory="true" />
+      <point id="MaxBatA_SF" offset="41" type="sunssf" mandatory="true" />
+      <point id="BatReqW_SF" offset="42" type="sunssf" />
     </block>
   </model>
   <strings id="802" locale="en">
@@ -80,6 +118,121 @@
       <description></description>
       <notes></notes>
     </model>
+    <point id="WHRtg">
+      <label>Nameplate Energy Capacity</label>
+      <description>Nameplate energy capacity in DC watt-hours.</description>
+      <notes></notes>
+    </point>
+    <point id="WMaxChaRte">
+      <label>Nameplate Max Charge Rate</label>
+      <description>Maximum rate of energy transfer into the storage device in DC watts.</description>
+      <notes></notes>
+    </point>
+    <point id="WMaxDisChaRte">
+      <label>Namplate Max Discharge Rate</label>
+      <description>Maximum rate of energy transfer out of the storage device in DC watts.</description>
+      <notes></notes>
+    </point>
+    <point id="DisChaRte">
+      <label>Self Discharge Rate</label>
+      <description>Self discharge rate.  Percentage of capacity (WHRtg) discharged per day.</description>
+      <notes></notes>
+    </point>
+    <point id="SoCNpMaxPct">
+      <label>Nameplate Max SoC</label>
+      <description>Manufacturer maximum state of charge, expressed as a percentage.</description>
+      <notes></notes>
+    </point>
+    <point id="SoCNpMinPct">
+      <label>Nameplate Min SoC</label>
+      <description>Manufacturer minimum state of charge, expressed as a percentage.</description>
+      <notes></notes>
+    </point>
+    <point id="MaxRsvPct">
+      <label>Maximum Reserve Percent</label>
+      <description>Setpoint for maximum reserve for storage as a percentage of the nominal maximum storage.</description>
+      <notes></notes>
+    </point>
+    <point id="MinRsvPct">
+      <label>Minimum Reserve Percent</label>
+      <description>Setpoint for maximum reserve for storage as a percentage of the nominal maximum storage.</description>
+      <notes></notes>
+    </point>
+    <point id="SoC">
+      <label>State of Charge</label>
+      <description>State of charge, expressed as a percentage.</description>
+      <notes>Measurement</notes>
+    </point>
+    <point id="ChaSt">
+      <label>ChaSt</label>
+      <description>Charge status of storage device. Enumerated value.</description>
+      <notes></notes>
+      <symbol id="OFF">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="EMPTY">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DISCHARGING">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CHARGING">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FULL">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="HOLDING">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="TESTING">
+        <label></label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="LocRemCtl">
+      <label>Control Mode</label>
+      <description>Battery control mode. Enumeration.</description>
+      <notes>Maps to DRCC.LocRemCtl in 61850.</notes>
+      <symbol id="REMOTE">
+        <label>Remote Control</label>
+        <description>Battery is controlled remotely (e.g. by the site controller).</description>
+        <notes>Value of 0 matches LocRemCtl in 61850.</notes>
+      </symbol>
+      <symbol id="LOCAL">
+        <label>Local Control</label>
+        <description>Battery is controlled by a local operator (e.g. through battery HMI).</description>
+        <notes>Value of 1 matches LocRemCtl in 61850.</notes>
+      </symbol>
+    </point>
+    <point id="DERHb">
+      <label>Distributed Energy Resource Heartbeat</label>
+      <description>Value is incremented every second with periodic resets to zero.</description>
+      <notes></notes>
+    </point>
+    <point id="ControllerHb">
+      <label>Controller Heartbeat</label>
+      <description>Value is incremented every second with periodic resets to zero.</description>
+      <notes></notes>
+    </point>
+    <point id="DERAlarmReset">
+      <label>Alarm Reset</label>
+      <description>Used to reset any latched alarms.  1 = Reset.</description>
+      <notes></notes>
+    </point>
     <point id="BatTyp">
       <label>Battery Type</label>
       <description>Type of battery. Enumeration.</description>
@@ -264,6 +417,26 @@
         <description>Battery voltage is approaching minimum limit.</description>
         <notes></notes>
       </symbol>
+      <symbol id="UNDER_SOC_MIN_WARNING">
+        <label>Under State of Charge Minimum Warning</label>
+        <description>Battery state of charge is approaching SoCNpMinPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_SOC_MIN_ALARM">
+        <label>Under State of Charge Minimum Alarm</label>
+        <description>Battery state of charge has reached or exceeded SoCNpMinPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_SOC_MAX_WARNING">
+        <label>Over State of Charge Maximum Warning</label>
+        <description>Battery state of charge is approaching SoCNpMaxPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_SOC_MAX_ALARM">
+        <label>Over State of Charge Maximum Warning</label>
+        <description>Battery state of charge has reached or exceeded SocNpMaxPct</description>
+        <notes></notes>
+      </symbol>
       <symbol id="CONTACTOR_ERROR">
         <label>Contactor Error</label>
         <description>A contactor failed to open or close as requested.</description>
@@ -310,6 +483,21 @@
       <description>DC Bus Voltage</description>
       <notes>Measurement. Maps to ZBAT.Vol.</notes>
     </point>
+    <point id="MaxBatVol">
+      <label>Max Battery Voltage</label>
+      <description>Instantaneous maximum battery voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="MinBatVol">
+      <label>Min Battery Voltage</label>
+      <description>Instantaneous minimum battery voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="BTotDCCur">
+      <label>Total DC Current</label>
+      <description>Total DC current flowing to/from the battery bank.</description>
+      <notes>Measurement</notes>
+    </point>
     <point id="MaxBatACha">
       <label>Max Charge Current</label>
       <description>Instantaneous maximum DC charge current.</description>
@@ -319,6 +507,11 @@
       <label>Max Discharge Current</label>
       <description>Instantaneous maximum DC discharge current.</description>
       <notes>Calculation. Nearly maps to ZBAT.MaxBatA.</notes>
+    </point>
+    <point id="BTotWCur">
+      <label>Total Power</label>
+      <description>Total power flowing to/from the battery bank.</description>
+      <notes>Measurement</notes>
     </point>
     <point id="BatReqPCSSt">
       <label>PCS State Request</label>
@@ -380,6 +573,31 @@
         <notes></notes>
       </symbol>
     </point>
+    <point id="WHRtg_SF">
+      <label></label>
+      <description>Scale factor for energy capacity.</description>
+      <notes></notes>
+    </point>
+    <point id="WMaxChaDisCha_SF">
+      <label></label>
+      <description>Scale factor for maximum charge and discharge rate.</description>
+      <notes></notes>
+    </point>
+    <point id="DisChaRte_SF">
+      <label></label>
+      <description>Scale factor for self discharge rate.</description>
+      <notes></notes>
+    </point>
+    <point id="SoC_SF">
+      <label></label>
+      <description>Scale factor for state of charge values.</description>
+      <notes></notes>
+    </point>
+    <point id="Pad">
+      <label></label>
+      <description>Padding</description>
+      <notes></notes>
+    </point>
     <point id="SoH_SF">
       <label></label>
       <description>Scale factor for State of Health.</description>
@@ -388,6 +606,11 @@
     <point id="Vol_SF">
       <label></label>
       <description>Scale factor for DC Bus Voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="BCurrent_SF">
+      <label></label>
+      <description>Scale factor for Total DC Current.</description>
       <notes></notes>
     </point>
     <point id="MaxBatA_SF">
