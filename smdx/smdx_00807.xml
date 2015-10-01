@@ -1,27 +1,78 @@
 <sunSpecModels v="1">
 
   <!-- 807: Flow Battery String Model -->
-  <model id="807" len="14" name="flow_battery_string">
-    <block len="17">
-      <point id="BConDCBatCt" offset="0" type="uint16" mandatory="true" />
-      <point id="BMaxCellVol" offset="1" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
-      <point id="BMaxCellVolLoc" offset="2" type="uint16" />
-      <point id="BMinCellVol" offset="3" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
-      <point id="BMinCellVolLoc" offset="4" type="uint16" />
-      <point id="BMaxModTmp" offset="5" type="int16" sf="BModTmp_SF" units="" mandatory="true" />
-      <point id="BMaxModTmpLoc" offset="6" type="uint16" />
-      <point id="BMinModTmp" offset="7" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
-      <point id="BMinModTmpLoc" offset="8" type="uint16" />
-      <point id="BTotDCCur" offset="9" type="int16" sf="BCurrent_SF" units="A" mandatory="true" />
-      <point id="BCellVol_SF" offset="10" type="sunssf" mandatory="true" />
-      <point id="BModTmp_SF" offset="11" type="sunssf" mandatory="true" />
-      <point id="BCurrent_SF" offset="12" type="sunssf" mandatory="true" />
-      <point id="DCBatSoH_SF" offset="13" type="sunssf" />
+  <model id="807" len="36" name="flow_battery_string">
+    <block len="19">
+      <point id="DCBatCt" offset="0" type="uint16" mandatory="true" />
+      <point id="ConDCBatCt" offset="1" type="uint16" mandatory="true" />
+      <point id="StrMaxDCBatVol" offset="2" type="uint16" sf="DCBatVol_SF" units="V" mandatory="true" />
+      <point id="StrMinDCBatVol" offset="3" type="uint16" sf="DCBatVol_SF" units="V" mandatory="true" />
+      <point id="StrDCBatVolLoc" offset="4" type="uint16" />
+      <point id="StrMaxCellVol" offset="5" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="StrMaxCellVolLoc" offset="6" type="uint16" />
+      <point id="StrMinCellVol" offset="7" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="StrMinCellVolLoc" offset="8" type="uint16" />
+      <point id="StrMaxTmp" offset="9" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
+      <point id="StrMinTmp" offset="10" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
+      <point id="StrTmpLoc" offset="11" type="uint16" />
+      <point id="StrEvt1" offset="12" type="bitfield32" mandatory="true" >
+        <symbol id="FIRE_ALARM">0</symbol>
+        <symbol id="LEAK_ALARM">1</symbol>
+      </point>
+      <point id="StrEvt2" offset="14" type="bitfield32" mandatory="true" >
+      </point>
+      <point id="DCBatVol_SF" offset="16" type="sunssf" mandatory="true" />
+      <point id="CellVol_SF" offset="17" type="sunssf" mandatory="true" />
+      <point id="Tmp_SF" offset="18" type="sunssf" mandatory="true" />
     </block>
-    <block type="repeating" len="3" name="dc_battery">
-      <point id="DCBatStackCt" offset="0" type="uint16" mandatory="true" />
-      <point id="DCBatSoC" offset="1" type="uint16" units="%" mandatory="true" />
-      <point id="DCBatSoH" offset="2" type="uint16" sf="DCBatSoH_SF" units="%" />
+    <block type="repeating" len="17" name="dc_battery">
+      <point id="DCBatID" offset="0" type="uint16" mandatory="true" />
+      <point id="StkCt" offset="1" type="uint16" units="" mandatory="true" />
+      <point id="DCBatSoC" offset="2" type="uint16" units="%" mandatory="true" />
+      <point id="DCBatOCV" offset="3" type="uint16" units="V" mandatory="true" />
+      <point id="DCBatVol" offset="4" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="DCBatMaxCellVol" offset="5" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="DCBatMinCellVol" offset="6" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="DCBatCellVolLoc" offset="7" type="uint16" units="" />
+      <point id="DCBatAnoTmp" offset="8" type="uint16" sf="Tmp_SF" units="C" />
+      <point id="DCBatCatTmp" offset="9" type="uint16" sf="Tmp_SF" units="C" />
+      <point id="DCBatContactorStatus" offset="10" type="uint16" units="" >
+        <symbol id="CONTACTOR_0">0</symbol>
+        <symbol id="CONTACTOR_1">1</symbol>
+        <symbol id="CONTACTOR_2">2</symbol>
+        <symbol id="CONTACTOR_3">3</symbol>
+        <symbol id="CONTACTOR_4">4</symbol>
+        <symbol id="CONTACTOR_5">5</symbol>
+        <symbol id="CONTACTOR_6">6</symbol>
+        <symbol id="CONTACTOR_7">7</symbol>
+        <symbol id="CONTACTOR_8">8</symbol>
+        <symbol id="CONTACTOR_9">9</symbol>
+        <symbol id="CONTACTOR_10">10</symbol>
+        <symbol id="CONTACTOR_11">11</symbol>
+        <symbol id="CONTACTOR_12">12</symbol>
+        <symbol id="CONTACTOR_13">13</symbol>
+        <symbol id="CONTACTOR_14">14</symbol>
+        <symbol id="CONTACTOR_15">15</symbol>
+      </point>
+      <point id="DCBatEvt1" offset="11" type="bitfield32" mandatory="true" >
+        <symbol id="FIRE_ALARM">0</symbol>
+        <symbol id="LEAK_ALARM">1</symbol>
+      </point>
+      <point id="DCBatEvt2" offset="13" type="bitfield32" mandatory="true" >
+      </point>
+      <point id="ConnectFailureReason" offset="15" type="enum16" mandatory="true" >
+        <symbol id="NO_FAILURE">0</symbol>
+        <symbol id="BUTTON_PUSHED">1</symbol>
+        <symbol id="GROUND_FAULT">2</symbol>
+        <symbol id="OUTSIDE_VOLTAGE_RANGE">3</symbol>
+        <symbol id="ENABLE">4</symbol>
+        <symbol id="DISABLE">5</symbol>
+      </point>
+      <point id="DCBatSetEna" offset="16" access="rw" type="enum16" mandatory="true" >
+        <symbol id="NO_COMMAND">0</symbol>
+        <symbol id="ENABLE_DC_BATTERY">1</symbol>
+        <symbol id="DISABLE_DC_BATTERY">2</symbol>
+      </point>
     </block>
   </model>
   <strings id="807" locale="en">
@@ -30,90 +81,170 @@
       <description></description>
       <notes></notes>
     </model>
-    <point id="BConDCBatCt">
+    <point id="DCBatCt">
+      <label>DC Battery Count</label>
+      <description>Number of DC batteries in this string.</description>
+      <notes></notes>
+    </point>      
+    <point id="ConDCBatCt">
       <label>Connected DC Battery Count</label>
-      <description>Number of DC batteries with contactor closed.</description>
+      <description>Number of electrically connected DC batteries in this string.</description>
+      <notes></notes>
+    </point>      
+    <point id="StrMaxDCBatVol">
+      <label>Maximum DC Battery Voltage</label>
+      <description>Maximum voltage for all DC batteries in the string.</description>
+      <notes></notes>
+    </point>      
+    <point id="StrMinDCBatVol">
+      <label>Minimum DC Battery Voltage</label>
+      <description>Minimum voltage for all DC batteries in the string.</description>
+      <notes></notes>
+    </point>      
+    <point id="StrDCBatVolLoc">
+      <label>Max/Min DC Battery Voltage Location</label>
+      <description>Location of the DC battery with the minimum and maximum voltage.</description>
+      <notes>Bit0:Bit7 = Max DC Battery Number  Bit8:Bit15 = Min DC Battery Number</notes>
+    </point>      
+    <point id="StrMaxCellVol">
+      <label>Maximum Cell Voltage</label>
+      <description>Maximum voltage for all cells in the string.</description>
+      <notes></notes>
+    </point>      
+    <point id="StrMaxCellVolLoc">
+      <label>Maximum Cell Voltage Location</label>
+      <description>Location of the cell with the maximum voltage.</description>
+      <notes>Bit0:Bit7 = DC Battery Number  Bit8:Bit15 = Stack Number</notes>
+    </point>      
+    <point id="StrMinCellVol">
+      <label>Minimum Cell Voltage</label>
+      <description>Minimum voltage for all cells in the string.</description>
+      <notes></notes>
+    </point>      
+    <point id="StrMinCellVolLoc">
+      <label>Minimum Cell Voltage Location</label>
+      <description>Location of the cell with the minimum voltage.</description>
+      <notes>Bit0:Bit7 = DC Battery Number  Bit8:Bit15 = Stack Number</notes>
+    </point>      
+    <point id="StrMaxTmp">
+      <label>Maximum Temperature</label>
+      <description>Maximum electrolyte temperature for all DC batteries in the string.</description>
+      <notes></notes>
+    </point>      
+    <point id="StrMinTmp">
+      <label>Minimum Temperature</label>
+      <description>Minimum electrolyte temperature for all DC batteries in the string.</description>
+      <notes></notes>
+    </point>      
+    <point id="StrTmpLoc">
+      <label>Max/Min Temperature Location</label>
+      <description>Location of the DC battery with the minimum and maximum temperature.</description>
+      <notes>Bit0:Bit7 = Max DC Battery Number  Bit8:Bit15 = Min DC Battery Number</notes>
+    </point>      
+    <point id="StrEvt1">
+      <label>String Event 1</label>
+      <description>Alarms, warnings and status values.  Bit flags.</description>
+      <notes></notes>
+      <symbol id="FIRE_ALARM">
+        <label>Fire Alarm</label>
+        <description>A fire has been detected.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="LEAK_ALARM">
+        <label>Leak Alarm</label>
+        <description>A leak has been detected.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="StrEvt2">
+      <label>String Event 2</label>
+      <description>Alarms, warnings and status values.  Bit flags.</description>
       <notes></notes>
     </point>
-    <point id="BMaxCellVol">
-      <label>Max Cell Voltage</label>
-      <description>Maximum voltage for all cells in the bank.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="BMaxCellVolLoc">
-      <label>Max Cell Voltage Location</label>
-      <description>Location of the cell with maximum voltage</description>
-      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
-    </point>
-    <point id="BMinCellVol">
-      <label>Min Cell Voltage</label>
-      <description>Minimum voltage for all cells in the bank.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="BMinCellVolLoc">
-      <label>Min Cell Voltage Location</label>
-      <description>Location of the cell with minimum voltage</description>
-      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
-    </point>
-    <point id="BMaxModTmp">
-      <label>Max Module Temp</label>
-      <description>Maximum temperature for all modules in the bank.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="BMaxModTmpLoc">
-      <label>Max Module Temp Location</label>
-      <description>Location of the module with max temperature.</description>
-      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
-    </point>
-    <point id="BMinModTmp">
-      <label>Min Module Temp</label>
-      <description>Minimum temperature for all modules in the bank.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="BMinModTmpLoc">
-      <label>Min Module Temp Location</label>
-      <description>Location of the module with min temperature.</description>
-      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
-    </point>
-    <point id="BTotDCCur">
-      <label>Total DC Current</label>
-      <description>Total DC current flowing to/from the battery bank.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="BCellVol_SF">
+    <point id="CellVol_SF">
       <label></label>
-      <description>Scale factor for cell voltage.</description>
+      <description>Scale factor for voltage.</description>
       <notes></notes>
     </point>
-    <point id="BModTmp_SF">
+    <point id="Tmp_SF">
       <label></label>
-      <description>Scale factor for module temperatures.</description>
+      <description>Scale factor for temperature.</description>
       <notes></notes>
     </point>
-    <point id="BCurrent_SF">
-      <label></label>
-      <description>Scale factor for Total DC Current, Max String Current and Min String Current.</description>
+    <point id="DCBatID">
+      <label>DC Battery ID</label>
+      <description>Unique ID of the DC battery.</description>
       <notes></notes>
-    </point>
-    <point id="DCBatSoH_SF">
-      <label></label>
-      <description>Scale factor for String State of Health.</description>
+    </point>      
+    <point id="StkCt">
+      <label>Stack Count</label>
+      <description>Number of stacks in this DC battery.</description>
       <notes></notes>
-    </point>
-    <point id="DCBatStackCount">
-      <label>DC Battery Stack Count</label>
-      <description>Count of stacks in the DC Battery.</description>
-      <notes></notes>
-    </point>
+    </point>      
     <point id="DCBatSoC">
-      <label>DC Battery SoC</label>
-      <description>DC Battery state of charge, expressed as a percentage.</description>
-      <notes>Measurement</notes>
+      <label>State of Charge</label>
+      <description>State of charge for this DC battery.</description>
+      <notes></notes>
+    </point>      
+    <point id="DCBatOCV">
+      <label>Open Circuit Voltage</label>
+      <description>Open circuit voltage for this DC battery.</description>
+      <notes></notes>
+    </point>      
+    <point id="DCBatVol">
+      <label>External Voltage</label>
+      <description>External voltage fo this DC battery.</description>
+      <notes></notes>
+    </point>      
+    <point id="DCBatMaxCellVol">
+      <label>Maximum Cell Voltage</label>
+      <description>Maximum voltage for all cells in this DC battery.</description>
+      <notes></notes>
+    </point>      
+    <point id="DCBatMinCellVol">
+      <label>Minimum Cell Voltage</label>
+      <description>Minimum voltage for all cells in this DC battery.</description>
+      <notes></notes>
+    </point>      
+    <point id="DCBatCellVolLoc">
+      <label>Max/Min Cell Voltage Location</label>
+      <description>Location of maximum and minimum cell voltages.</description>
+      <notes>Bit0:Bit7 = Max Stack Num  Bit8:Bit15 = Min Stack Num</notes>
     </point>
-    <point id="DCBatSoH">
-      <label>DC Battery SoH</label>
-      <description>DC Battery state of health, expressed as a percentage.</description>
-      <notes>Measurement</notes>
-    </point>
+    <point id="DCBatAnoTmp">
+      <label>Anolyte Temperature</label>
+      <description></description>
+      <notes></notes>
+    </point>      
+    <point id="DCBatCatTmp">
+      <label>Catholyte Temperature</label>
+      <description></description>
+      <notes></notes>
+    </point>      
+    <point id="DCBatContactorStatus">
+      <label>Contactor Status</label>
+      <description></description>
+      <notes></notes>
+    </point>      
+    <point id="DCBatEvt1">
+      <label>DC Battery Event 1</label>
+      <description>Alarms, warnings and status values.  Bit flags.</description>
+      <notes></notes>
+    </point>      
+    <point id="DCBatEvt2">
+      <label>DC Battery Event 2</label>
+      <description>Alarms, warnings and status values.  Bit flags.</description>
+      <notes></notes>
+    </point>      
+    <point id="ConnectFailureReason">
+      <label>Connect Failure Reason</label>
+      <description></description>
+      <notes></notes>
+    </point>      
+    <point id="DCBatSetEna">
+      <label>Enable/Disable DC Battery</label>
+      <description>Enables and disables the DC battery.  Should reset to 0 upon completion.</description>
+      <notes></notes>
+    </point>      
    </strings>
 </sunSpecModels>
