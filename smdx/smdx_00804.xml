@@ -1,0 +1,30 @@
+<sunSpecModels v="1">
+
+  <!-- 804: Lithium-ion String Model -->
+  <model id="804" len="2" name="string">
+    <block len="1">
+      <point id="StringTBD" offset="0" type="uint16" mandatory="true" />
+    </block>
+    <block type="repeating" len="1" name="module">
+      <point id="ModuleTBD" offset="0" type="uint16" mandatory="true" />
+    </block>
+  </model>
+  <strings id="804" locale="en">
+    <model>
+      <label>Lithium-Ion String Model</label>
+      <description></description>
+      <notes></notes>
+    </model>
+    <point id="StringTBD">
+      <label>String Points To Be Determined</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="ModuleTBD">
+      <label>Module Points To Be Determined</label>
+      <description></description>
+      <notes></notes>
+    </point>
+
+   </strings>
+</sunSpecModels>

@@ -1,8 +1,8 @@
 <sunSpecModels v="1">
 
   <!-- 803: Lithium-Ion Battery Model -->
-  <model id="803" len="16" name="lithium_ion">
-    <block len="16">
+  <model id="803" len="31" name="lithium_ion">
+    <block len="15">
       <point id="BConStrCt" offset="0" type="uint16" mandatory="true" />
       <point id="BMaxCellVol" offset="1" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
       <point id="BMaxCellVolLoc" offset="2" type="uint16" />
@@ -12,13 +12,12 @@
       <point id="BMaxModTmpLoc" offset="6" type="uint16" />
       <point id="BMinModTmp" offset="7" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
       <point id="BMinModTmpLoc" offset="8" type="uint16" />
-      <point id="BTotDCCur" offset="9" type="int16" sf="BCurrent_SF" units="A" mandatory="true" />
-      <point id="BMaxStrCur" offset="10" type="int16" sf="BCurrent_SF" units="A" />
-      <point id="BMinStrCur" offset="11" type="int16" sf="BCurrent_SF" units="A" />
-      <point id="BCellVol_SF" offset="12" type="sunssf" mandatory="true" />
-      <point id="BModTmp_SF" offset="13" type="sunssf" mandatory="true" />
-      <point id="BCurrent_SF" offset="14" type="sunssf" mandatory="true" />
-      <point id="StrSoH_SF" offset="15" type="sunssf" />
+      <point id="BMaxStrCur" offset="9" type="int16" sf="BCurrent_SF" units="A" />
+      <point id="BMinStrCur" offset="10" type="int16" sf="BCurrent_SF" units="A" />
+      <point id="BCellVol_SF" offset="11" type="sunssf" mandatory="true" />
+      <point id="BModTmp_SF" offset="12" type="sunssf" mandatory="true" />
+      <point id="BCurrent_SF" offset="13" type="sunssf" mandatory="true" />
+      <point id="StrSoH_SF" offset="14" type="sunssf" />
     </block>
     <block type="repeating" len="16" name="module">
       <point id="StrModCt" offset="0" type="uint16" mandatory="true" />
@@ -118,11 +117,6 @@
       <description>Location of the module with min temperature.</description>
       <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
     </point>
-    <point id="BTotDCCur">
-      <label>Total DC Current</label>
-      <description>Total DC current flowing to/from the battery bank.</description>
-      <notes>Measurement</notes>
-    </point>
     <point id="BMaxStrCur">
       <label>Max String Current</label>
       <description>Maximum current of any string in the bank.</description>
@@ -145,7 +139,7 @@
     </point>
     <point id="BCurrent_SF">
       <label></label>
-      <description>Scale factor for Total DC Current, Max String Current and Min String Current.</description>
+      <description>Scale factor for Max String Current and Min String Current.</description>
       <notes></notes>
     </point>
     <point id="StrSoH_SF">
