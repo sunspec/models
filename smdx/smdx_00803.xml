@@ -21,48 +21,56 @@
     </block>
     <block type="repeating" len="16" name="module">
       <point id="StrModCt" offset="0" type="uint16" mandatory="true" />
-      <point id="StrSoC" offset="1" type="uint16" units="%" mandatory="true" />
-      <point id="StrSoH" offset="2" type="uint16" sf="StrSoH_SF" units="%" />
-      <point id="StrCur" offset="3" type="int16" sf="BCurrent_SF" units="A" mandatory="true" />
-      <point id="StrMaxCellVol" offset="4" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
-      <point id="StrMinCellVol" offset="5" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
-      <point id="StrCellVolLoc" offset="6" type="uint16" />
-      <point id="StrMaxModTmp" offset="7" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
-      <point id="StrMinModTmp" offset="8" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
-      <point id="StrModTmpLoc" offset="9" type="uint16" />
-      <point id="StrEvt1" offset="10" type="bitfield32" mandatory="true" >
+      <point id="StrStatus" offset="1" type="bitfield32" mandatory="true">
+        <symbol id="STRING_ENABLED">0</symbol>
+        <symbol id="CONTACTOR_STATUS">1</symbol>
+      </point>
+      <point id="StrSoC" offset="2" type="uint16" units="%" mandatory="true" />
+      <point id="StrSoH" offset="3" type="uint16" sf="StrSoH_SF" units="%" />
+      <point id="StrCur" offset="4" type="int16" sf="BCurrent_SF" units="A" mandatory="true" />
+      <point id="StrMaxCellVol" offset="5" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
+      <point id="StrMinCellVol" offset="6" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
+      <point id="StrCellVolLoc" offset="7" type="uint16" />
+      <point id="StrMaxModTmp" offset="8" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
+      <point id="StrMinModTmp" offset="9" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
+      <point id="StrModTmpLoc" offset="10" type="uint16" />
+      <point id="StrEvt1" offset="11" type="bitfield32" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
-        <symbol id="UNDER_TEMP_ALARM">2</symbol>
-        <symbol id="OVER_TEMP_WARNING">3</symbol>
+        <symbol id="OVER_TEMP_WARNING">2</symbol>
+        <symbol id="UNDER_TEMP_ALARM">3</symbol>
         <symbol id="UNDER_TEMP_WARNING">4</symbol>
         <symbol id="OVER_CHARGE_CURRENT_ALARM">5</symbol>
-        <symbol id="OVER_DISCHARGE_CURRENT_ALARM">6</symbol>
-        <symbol id="OVER_CHARGE_CURRENT_WARNING">7</symbol>
+        <symbol id="OVER_CHARGE_CURRENT_WARNING">6</symbol>
+        <symbol id="OVER_DISCHARGE_CURRENT_ALARM">7</symbol>
         <symbol id="OVER_DISCHARGE_CURRENT_WARNING">8</symbol>
         <symbol id="OVER_VOLT_ALARM">9</symbol>
-        <symbol id="UNDER_VOLT_ALARM">10</symbol>
-        <symbol id="OVER_VOLT_WARNING">11</symbol>
+        <symbol id="OVER_VOLT_WARNING">10</symbol>
+        <symbol id="UNDER_VOLT_ALARM">11</symbol>
         <symbol id="UNDER_VOLT_WARNING">12</symbol>
-        <symbol id="CONTACTOR_ERROR">13</symbol>
-        <symbol id="FAN_ERROR">14</symbol>
-        <symbol id="CONTACTOR_STATUS">15</symbol>
-        <symbol id="GROUND_FAULT">16</symbol>
-        <symbol id="OPEN_DOOR_ERROR">17</symbol>
-        <symbol id="OTHER_ALARM">18</symbol>
-        <symbol id="OTHER_WARNING">19</symbol>
-        <symbol id="STRING_ENABLED">20</symbol>
+        <symbol id="UNDER_SOC_MIN_ALARM">13</symbol>
+        <symbol id="UNDER_SOC_MIN_WARNING">14</symbol>
+        <symbol id="OVER_SOC_MAX_ALARM">15</symbol>
+        <symbol id="OVER_SOC_MAX_WARNING">16</symbol>
+        <symbol id="VOLTAGE_IMBALANCE_WARNING">17</symbol>
+        <symbol id="CURRENT_IMBALANCE_WARNING">18</symbol>
+        <symbol id="CONTACTOR_ERROR">19</symbol>
+        <symbol id="FAN_ERROR">20</symbol>
+        <symbol id="GROUND_FAULT">21</symbol>
+        <symbol id="OPEN_DOOR_ERROR">22</symbol>
       </point>
-      <point id="StrEvt2" offset="12" type="bitfield32" />
-      <point id="StrConFail" offset="14" type="enum16" >
-        <symbol id="NO FAILURE">0</symbol>
+      <point id="StrEvt2" offset="13" type="bitfield32" />
+      <point id="StrEvtOtherAlarm" offset="15" type="bitfield32" />
+      <point id="StrEvtOtherWarning" offset="17" type="bitfield32" />
+      <point id="StrConFail" offset="19" type="enum16" >
+        <symbol id="NO_FAILURE">0</symbol>
         <symbol id="BUTTON_PUSHED">1</symbol>
         <symbol id="STR_GROUND_FAULT">2</symbol>
         <symbol id="OUTSIDE_VOLTAGE_RANGE">3</symbol>
       </point>
-      <point id="StrSetEna" offset="15" access="rw" type="enum16" >
-        <symbol id="ENABLE">1</symbol>
-        <symbol id="DISABLE">2</symbol>
+      <point id="StrSetEna" offset="20" access="rw" type="enum16" mandatory="true">
+        <symbol id="ENABLE_STRING">1</symbol>
+        <symbol id="DISABLE_STRING">2</symbol>
       </point>
     </block>
   </model>
@@ -152,6 +160,21 @@
       <description>Count of modules in the string.</description>
       <notes></notes>
     </point>
+    <point id="StrStatus">
+      <label>String Status</label>
+      <description>Current status of the string.</description>
+      <notes></notes>
+      <symbol id="STRING_ENABLED">
+        <label>String Is Enabled</label>
+        <description>String is enabled and will connect next time battery is asked to connect.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_STATUS">
+        <label>Contactor Status</label>
+        <description>String contactor is closed.</description>
+        <notes></notes>
+      </symbol>
+    </point>
     <point id="StrSoC">
       <label>String SoC</label>
       <description>Battery string state of charge, expressed as a percentage.</description>
@@ -203,22 +226,22 @@
       <notes></notes>
       <symbol id="COMMUNICATION_ERROR">
         <label>Communication Error</label>
-        <description>Unable to communcate with BMS.</description>
+        <description>String is unable to communicate with battery modules.</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_TEMP_ALARM">
         <label>Over Temperature Alarm</label>
-        <description>Battery string has exceeded maximum operating temperature.</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="UNDER_TEMP_ALARM">
-        <label>Under Temperature Alarm</label>
-        <description>Battery string has exceeded minimum operating temperature.</description>
+        <description>Battery string has exceeded maximum operating temperature</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_TEMP_WARNING">
         <label>Over Temperature  Warning</label>
         <description>Battery string is approaching maximum operating temperature.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_TEMP_ALARM">
+        <label>Under Temperature Alarm</label>
+        <description>Battery string has exceeded minimum operating temperature</description>
         <notes></notes>
       </symbol>
       <symbol id="UNDER_TEMP_WARNING">
@@ -231,15 +254,15 @@
         <description>Battery string maximum charge current has been exceeded.</description>
         <notes>See AMaxCha</notes>
       </symbol>
-      <symbol id="OVER_DISCHARGE_CURRENT_ALARM">
-        <label>Over Discharge Current Alarm</label>
-        <description>Battery string maximum discharge current has been exceeded.</description>
-        <notes>See AMaxDischa</notes>
-      </symbol>
       <symbol id="OVER_CHARGE_CURRENT_WARNING">
         <label>Over Charge Current Warning</label>
         <description>Approaching battery string maximum charge current.</description>
         <notes>See AMaxCha</notes>
+      </symbol>
+      <symbol id="OVER_DISCHARGE_CURRENT_ALARM">
+        <label>Over Discharge Current Alarm</label>
+        <description>Battery string maximum discharge current has been exceeded.</description>
+        <notes>See AMaxDischa</notes>
       </symbol>
       <symbol id="OVER_DISCHARGE_CURRENT_WARNING">
         <label>Over Discharge Current Warning</label>
@@ -251,14 +274,14 @@
         <description>Battery string voltage has exceeded maximum limit.</description>
         <notes></notes>
       </symbol>
-      <symbol id="UNDER_VOLT_ALARM">
-        <label>Under Voltage Alarm</label>
-        <description>Battery string voltage has exceeded minimum limit.</description>
-        <notes></notes>
-      </symbol>
       <symbol id="OVER_VOLT_WARNING">
         <label>Over Voltage Warning</label>
         <description>Battery string voltage is approaching maximum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_VOLT_ALARM">
+        <label>Under Voltage Alarm</label>
+        <description>Battery string voltage has exceeded minimum limit.</description>
         <notes></notes>
       </symbol>
       <symbol id="UNDER_VOLT_WARNING">
@@ -266,19 +289,44 @@
         <description>Battery string voltage is approaching minimum limit.</description>
         <notes></notes>
       </symbol>
+      <symbol id="UNDER_SOC_MIN_ALARM">
+        <label>Under State of Charge Minimum Alarm</label>
+        <description>Battery string state of charge has reached or exceeded SoCNpMinPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_SOC_MIN_WARNING">
+        <label>Under State of Charge Minimum Warning</label>
+        <description>Battery string state of charge is approaching SoCNpMinPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_SOC_MAX_ALARM">
+        <label>Over State of Charge Maximum Warning</label>
+        <description>Battery string state of charge has reached or exceeded SocNpMaxPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_SOC_MAX_WARNING">
+        <label>Over State of Charge Maximum Warning</label>
+        <description>Battery string state of charge is approaching SoCNpMaxPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VOLTAGE_IMBALANCE_WARNING">
+        <label>Voltage Imbalance Warning</label>
+        <description>A voltage imbalance exists between the modules in the battery string.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CURRENT_IMBALANCE_WARNING">
+        <label>Current Imbalance Warning</label>
+        <description>A current imbalance exists between the modules in the battery string.</description>
+        <notes></notes>
+      </symbol>
       <symbol id="CONTACTOR_ERROR">
         <label>Contactor Error</label>
-        <description>String contactor failed to open or close as requested.</description>
+        <description>A contactor failed to open or close as requested.</description>
         <notes></notes>
       </symbol>
       <symbol id="FAN_ERROR">
         <label>Fan Error</label>
-        <description>Battery string fan has failed.</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="CONTACTOR_STATUS">
-        <label>Contactor Status</label>
-        <description>String contactor is closed.</description>
+        <description>One or more battery fans has failed.</description>
         <notes></notes>
       </symbol>
       <symbol id="GROUND_FAULT">
@@ -288,22 +336,7 @@
       </symbol>
       <symbol id="OPEN_DOOR_ERROR">
         <label>Open Door Error</label>
-        <description>One or more door are open.</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="OTHER_ALARM">
-        <label>Other Alarm</label>
-        <description>An alarm has been triggered which does not map to one of the alarms above.</description>
-        <notes>Operator should view battery HMI and/or logs for more information.</notes>
-      </symbol>
-      <symbol id="OTHER_WARNING">
-        <label>Other Warning</label>
-        <description>A warning has been triggered which does not map to one of the alarms above.</description>
-        <notes>Operator should view battery HMI and/or logs for more information.</notes>
-      </symbol>
-      <symbol id="STRING_ENABLED">
-        <label>String Enabled</label>
-        <description>The string is currently enabled.</description>
+        <description>One or more doors are open.</description>
         <notes></notes>
       </symbol>
     </point>
@@ -312,27 +345,37 @@
       <description>Alarms, warnings and status values.  Bit flags.</description>
       <notes>Reserved for future use.</notes>
     </point>
+    <point id="StrEvtOtherAlarm">
+      <label>Other String Alarm Events</label>
+      <description>Other string alarms.  Bit flags.</description>
+      <notes>Bits are vendor specific and not defined by MESA.</notes>
+    </point>
+    <point id="StrEvtOtherWarning">
+      <label>Other String Warning Events</label>
+      <description>Other string warnings.  Bit flags.</description>
+      <notes>Bits are vendor specific and not defined here.</notes>
+    </point>
     <point id="StrConFail">
       <label>Connection Failure Reason</label>
       <description></description>
       <notes></notes>
-      <symbol id="NO FAILURE">
-        <label></label>
+      <symbol id="NO_FAILURE">
+        <label>No Failure</label>
         <description>Connect did not fail.</description>
         <notes></notes>
       </symbol>
       <symbol id="BUTTON_PUSHED">
-        <label></label>
+        <label>Button Pushed</label>
         <description>A button was pushed which prevented connection.</description>
         <notes></notes>
       </symbol>
       <symbol id="STR_GROUND_FAULT">
-        <label></label>
+        <label>Ground Fault</label>
         <description>Ground fault during auto-connect.</description>
         <notes></notes>
       </symbol>
       <symbol id="OUTSIDE_VOLTAGE_RANGE">
-        <label></label>
+        <label>Outside Voltage Range</label>
         <description>Outside voltage target window during auto-connect.</description>
         <notes></notes>
       </symbol>
@@ -341,13 +384,13 @@
       <label>Enable/Disable String</label>
       <description>Enables and disables the string.  Should reset to 0 upon completion.</description>
       <notes></notes>
-      <symbol id="ENABLE">
-        <label></label>
+      <symbol id="ENABLE_STRING">
+        <label>Enable String</label>
         <description>Enable the string.</description>
         <notes></notes>
       </symbol>
-      <symbol id="DISABLE">
-        <label></label>
+      <symbol id="DISABLE_STRING">
+        <label>Disable String</label>
         <description>Disable the string.</description>
         <notes></notes>
       </symbol>

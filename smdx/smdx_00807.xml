@@ -16,14 +16,43 @@
       <point id="StrMinTmp" offset="10" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
       <point id="StrTmpLoc" offset="11" type="uint16" />
       <point id="StrEvt1" offset="12" type="bitfield32" mandatory="true" >
-        <symbol id="FIRE_ALARM">0</symbol>
-        <symbol id="LEAK_ALARM">1</symbol>
+        <symbol id="COMMUNICATION_ERROR">0</symbol>
+        <symbol id="OVER_TEMP_ALARM">1</symbol>
+        <symbol id="OVER_TEMP_WARNING">2</symbol>
+        <symbol id="UNDER_TEMP_ALARM">3</symbol>
+        <symbol id="UNDER_TEMP_WARNING">4</symbol>
+        <symbol id="OVER_CHARGE_CURRENT_ALARM">5</symbol>
+        <symbol id="OVER_CHARGE_CURRENT_WARNING">6</symbol>
+        <symbol id="OVER_DISCHARGE_CURRENT_ALARM">7</symbol>
+        <symbol id="OVER_DISCHARGE_CURRENT_WARNING">8</symbol>
+        <symbol id="OVER_VOLT_ALARM">9</symbol>
+        <symbol id="OVER_VOLT_WARNING">10</symbol>
+        <symbol id="UNDER_VOLT_ALARM">11</symbol>
+        <symbol id="UNDER_VOLT_WARNING">12</symbol>
+        <symbol id="UNDER_SOC_MIN_ALARM">13</symbol>
+        <symbol id="UNDER_SOC_MIN_WARNING">14</symbol>
+        <symbol id="OVER_SOC_MAX_ALARM">15</symbol>
+        <symbol id="OVER_SOC_MAX_WARNING">16</symbol>
+        <symbol id="VOLTAGE_IMBALANCE_WARNING">17</symbol>
+        <symbol id="CURRENT_IMBALANCE_WARNING">18</symbol>
+        <symbol id="CONTACTOR_ERROR">19</symbol>
+        <symbol id="FAN_ERROR">20</symbol>
+        <symbol id="GROUND_FAULT">21</symbol>
+        <symbol id="OPEN_DOOR_ERROR">22</symbol>
+        <symbol id="FIRE_ALARM">23</symbol>
+        <symbol id="LEAK_ALARM">24</symbol>
+        <symbol id="PUMP_ALARM">25</symbol>
+        <symbol id="HIGH_PRESSURE_ALARM">26</symbol>
+        <symbol id="HIGH_PRESSURE_WARNING">27</symbol>
+        <symbol id="LOW_FLOW_ALARM">28</symbol>
+        <symbol id="LOW_FLOW_WARNING">29</symbol>
       </point>
-      <point id="StrEvt2" offset="14" type="bitfield32" mandatory="true" >
-      </point>
-      <point id="DCBatVol_SF" offset="16" type="sunssf" mandatory="true" />
-      <point id="CellVol_SF" offset="17" type="sunssf" mandatory="true" />
-      <point id="Tmp_SF" offset="18" type="sunssf" mandatory="true" />
+      <point id="StrEvt2" offset="14" type="bitfield32" mandatory="true" />
+      <point id="StrEvtOtherAlarm" offset="16" type="bitfield32" mandatory="true" />
+      <point id="StrEvtOtherWarning" offset="18" type="bitfield32" mandatory="true" />
+      <point id="DCBatVol_SF" offset="20" type="sunssf" mandatory="true" />
+      <point id="CellVol_SF" offset="21" type="sunssf" mandatory="true" />
+      <point id="Tmp_SF" offset="22" type="sunssf" mandatory="true" />
     </block>
     <block type="repeating" len="17" name="dc_battery">
       <point id="DCBatID" offset="0" type="uint16" mandatory="true" />
@@ -36,7 +65,7 @@
       <point id="DCBatCellVolLoc" offset="7" type="uint16" units="" />
       <point id="DCBatAnoTmp" offset="8" type="uint16" sf="Tmp_SF" units="C" />
       <point id="DCBatCatTmp" offset="9" type="uint16" sf="Tmp_SF" units="C" />
-      <point id="DCBatContactorStatus" offset="10" type="uint16" units="" >
+      <point id="DCBatConStatus" offset="10" type="uint16" units="" >
         <symbol id="CONTACTOR_0">0</symbol>
         <symbol id="CONTACTOR_1">1</symbol>
         <symbol id="CONTACTOR_2">2</symbol>
@@ -55,21 +84,46 @@
         <symbol id="CONTACTOR_15">15</symbol>
       </point>
       <point id="DCBatEvt1" offset="11" type="bitfield32" mandatory="true" >
-        <symbol id="FIRE_ALARM">0</symbol>
-        <symbol id="LEAK_ALARM">1</symbol>
+        <symbol id="COMMUNICATION_ERROR">0</symbol>
+        <symbol id="OVER_TEMP_ALARM">1</symbol>
+        <symbol id="OVER_TEMP_WARNING">2</symbol>
+        <symbol id="UNDER_TEMP_ALARM">3</symbol>
+        <symbol id="UNDER_TEMP_WARNING">4</symbol>
+        <symbol id="OVER_CHARGE_CURRENT_ALARM">5</symbol>
+        <symbol id="OVER_CHARGE_CURRENT_WARNING">6</symbol>
+        <symbol id="OVER_DISCHARGE_CURRENT_ALARM">7</symbol>
+        <symbol id="OVER_DISCHARGE_CURRENT_WARNING">8</symbol>
+        <symbol id="OVER_VOLT_ALARM">9</symbol>
+        <symbol id="OVER_VOLT_WARNING">10</symbol>
+        <symbol id="UNDER_VOLT_ALARM">11</symbol>
+        <symbol id="UNDER_VOLT_WARNING">12</symbol>
+        <symbol id="UNDER_SOC_MIN_ALARM">13</symbol>
+        <symbol id="UNDER_SOC_MIN_WARNING">14</symbol>
+        <symbol id="OVER_SOC_MAX_ALARM">15</symbol>
+        <symbol id="OVER_SOC_MAX_WARNING">16</symbol>
+        <symbol id="VOLTAGE_IMBALANCE_WARNING">17</symbol>
+        <symbol id="CURRENT_IMBALANCE_WARNING">18</symbol>
+        <symbol id="CONTACTOR_ERROR">19</symbol>
+        <symbol id="FAN_ERROR">20</symbol>
+        <symbol id="GROUND_FAULT">21</symbol>
+        <symbol id="OPEN_DOOR_ERROR">22</symbol>
+        <symbol id="FIRE_ALARM">23</symbol>
+        <symbol id="LEAK_ALARM">24</symbol>
+        <symbol id="PUMP_ALARM">25</symbol>
+        <symbol id="HIGH_PRESSURE_ALARM">26</symbol>
+        <symbol id="HIGH_PRESSURE_WARNING">27</symbol>
+        <symbol id="LOW_FLOW_ALARM">28</symbol>
+        <symbol id="LOW_FLOW_WARNING">29</symbol>
       </point>
       <point id="DCBatEvt2" offset="13" type="bitfield32" mandatory="true" >
       </point>
-      <point id="ConnectFailureReason" offset="15" type="enum16" mandatory="true" >
+      <point id="DCBatConFail" offset="15" type="enum16" mandatory="true" >
         <symbol id="NO_FAILURE">0</symbol>
         <symbol id="BUTTON_PUSHED">1</symbol>
-        <symbol id="GROUND_FAULT">2</symbol>
+        <symbol id="DCBAT_GROUND_FAULT">2</symbol>
         <symbol id="OUTSIDE_VOLTAGE_RANGE">3</symbol>
-        <symbol id="ENABLE">4</symbol>
-        <symbol id="DISABLE">5</symbol>
       </point>
       <point id="DCBatSetEna" offset="16" access="rw" type="enum16" mandatory="true" >
-        <symbol id="NO_COMMAND">0</symbol>
         <symbol id="ENABLE_DC_BATTERY">1</symbol>
         <symbol id="DISABLE_DC_BATTERY">2</symbol>
       </point>
@@ -145,6 +199,121 @@
       <label>String Event 1</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
       <notes></notes>
+      <symbol id="COMMUNICATION_ERROR">
+        <label>Communication Error</label>
+        <description>BMS is unable to communicate with DC batteries.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_TEMP_ALARM">
+        <label>Over Temperature Alarm</label>
+        <description>Battery string has exceeded maximum operating temperature</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_TEMP_WARNING">
+        <label>Over Temperature  Warning</label>
+        <description>Battery string is approaching maximum operating temperature.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_TEMP_ALARM">
+        <label>Under Temperature Alarm</label>
+        <description>Battery string has exceeded minimum operating temperature</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_TEMP_WARNING">
+        <label>Under Temperature Warning</label>
+        <description>Battery string is approaching minimum operating temperature.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_CHARGE_CURRENT_ALARM">
+        <label>Over Charge Current Alarm</label>
+        <description>Battery string maximum charge current has been exceeded.</description>
+        <notes>See AMaxCha</notes>
+      </symbol>
+      <symbol id="OVER_CHARGE_CURRENT_WARNING">
+        <label>Over Charge Current Warning</label>
+        <description>Approaching battery string maximum charge current.</description>
+        <notes>See AMaxCha</notes>
+      </symbol>
+      <symbol id="OVER_DISCHARGE_CURRENT_ALARM">
+        <label>Over Discharge Current Alarm</label>
+        <description>Battery string maximum discharge current has been exceeded.</description>
+        <notes>See AMaxDischa</notes>
+      </symbol>
+      <symbol id="OVER_DISCHARGE_CURRENT_WARNING">
+        <label>Over Discharge Current Warning</label>
+        <description>Approaching battery string maximum discharge current.</description>
+        <notes>See AMaxDischa</notes>
+      </symbol>
+      <symbol id="OVER_VOLT_ALARM">
+        <label>Over Voltage Alarm</label>
+        <description>Battery string voltage has exceeded maximum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_VOLT_WARNING">
+        <label>Over Voltage Warning</label>
+        <description>Battery string voltage is approaching maximum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_VOLT_ALARM">
+        <label>Under Voltage Alarm</label>
+        <description>Battery string voltage has exceeded minimum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_VOLT_WARNING">
+        <label>Under Voltage Warning</label>
+        <description>Battery string voltage is approaching minimum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_SOC_MIN_ALARM">
+        <label>Under State of Charge Minimum Alarm</label>
+        <description>Battery string state of charge has reached or exceeded SoCNpMinPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_SOC_MIN_WARNING">
+        <label>Under State of Charge Minimum Warning</label>
+        <description>Battery string state of charge is approaching SoCNpMinPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_SOC_MAX_ALARM">
+        <label>Over State of Charge Maximum Alarm</label>
+        <description>Battery string state of charge has reached or exceeded SocNpMaxPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_SOC_MAX_WARNING">
+        <label>Over State of Charge Maximum Warning</label>
+        <description>Battery string state of charge is approaching SoCNpMaxPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VOLTAGE_IMBALANCE_WARNING">
+        <label>Voltage Imbalance Warning</label>
+        <description>A voltage imbalance exists between the strings in the battery bank.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CURRENT_IMBALANCE_WARNING">
+        <label>Current Imbalance Warning</label>
+        <description>A current imbalance exists between the strings in the battery bank.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_ERROR">
+        <label>Contactor Error</label>
+        <description>A contactor failed to open or close as requested.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAN_ERROR">
+        <label>Fan Error</label>
+        <description>One or more battery string fans has failed.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="GROUND_FAULT">
+        <label>Ground Fault Error</label>
+        <description>Ground fault detected.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OPEN_DOOR_ERROR">
+        <label>Open Door Error</label>
+        <description>One or more doors are open.</description>
+        <notes></notes>
+      </symbol>
       <symbol id="FIRE_ALARM">
         <label>Fire Alarm</label>
         <description>A fire has been detected.</description>
@@ -155,11 +324,46 @@
         <description>A leak has been detected.</description>
         <notes></notes>
       </symbol>
+      <symbol id="PUMP_ALARM">
+        <label>Pump Alarm</label>
+        <description>A pump has experienced an alarm condition or some other error.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="HIGH_PRESSURE_ALARM">
+        <label>High Pressure Alarm</label>
+        <description>Pressure exceeds maximum value.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="HIGH_PRESSURE_WARNING">
+        <label>High Pressure Warning</label>
+        <description>Pressure approaching maximum value.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="LOW_FLOW_ALARM">
+        <label>Low Flow Alarm</label>
+        <description>Flow exceeds minimum value.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="LOW_FLOW_WARNING">
+        <label>Low Flow Warning</label>
+        <description>Flow approaching minimum value.</description>
+        <notes></notes>
+      </symbol>
     </point>
     <point id="StrEvt2">
       <label>String Event 2</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
       <notes></notes>
+    </point>
+    <point id="StrEvtOtherAlarm">
+      <label>Other String Alarm Events</label>
+      <description>Other string alarms.  Bit flags.</description>
+      <notes>Bits are vendor specific and not defined by MESA.</notes>
+    </point>
+    <point id="StrEvtOtherWarning">
+      <label>Other String Warning Events</label>
+      <description>Other string warnings.  Bit flags.</description>
+      <notes>Bits are vendor specific and not defined here.</notes>
     </point>
     <point id="CellVol_SF">
       <label></label>
@@ -221,30 +425,290 @@
       <description></description>
       <notes></notes>
     </point>      
-    <point id="DCBatContactorStatus">
+    <point id="DCBatConStatus">
       <label>Contactor Status</label>
       <description></description>
       <notes></notes>
+      <symbol id="CONTACTOR_0">
+        <label>Contactor 0 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_1">
+        <label>Contactor 1 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_2">
+        <label>Contactor 2 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_3">
+        <label>Contactor 3 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_4">
+        <label>Contactor 4 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_5">
+        <label>Contactor 5 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_6">
+        <label>Contactor 6 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_7">
+        <label>Contactor 7 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_8">
+        <label>Contactor 8 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_9">
+        <label>Contactor 9 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_10">
+        <label>Contactor 10 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_11">
+        <label>Contactor 11 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_12">
+        <label>Contactor 12 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_13">
+        <label>Contactor 13 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_14">
+        <label>Contactor 14 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_15">
+        <label>Contactor 15 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
     </point>      
     <point id="DCBatEvt1">
       <label>DC Battery Event 1</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
       <notes></notes>
+      <symbol id="COMMUNICATION_ERROR">
+        <label>Communication Error</label>
+        <description>DC battery is unable to communicate with the BMS or other components.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_TEMP_ALARM">
+        <label>Over Temperature Alarm</label>
+        <description>DC battery has exceeded maximum operating temperature</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_TEMP_WARNING">
+        <label>Over Temperature  Warning</label>
+        <description>Dc battery is approaching maximum operating temperature.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_TEMP_ALARM">
+        <label>Under Temperature Alarm</label>
+        <description>DC battery has exceeded minimum operating temperature</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_TEMP_WARNING">
+        <label>Under Temperature Warning</label>
+        <description>DC battery is approaching minimum operating temperature.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_CHARGE_CURRENT_ALARM">
+        <label>Over Charge Current Alarm</label>
+        <description>DC battery maximum charge current has been exceeded.</description>
+        <notes>See AMaxCha</notes>
+      </symbol>
+      <symbol id="OVER_CHARGE_CURRENT_WARNING">
+        <label>Over Charge Current Warning</label>
+        <description>Approaching dc battery maximum charge current.</description>
+        <notes>See AMaxCha</notes>
+      </symbol>
+      <symbol id="OVER_DISCHARGE_CURRENT_ALARM">
+        <label>Over Discharge Current Alarm</label>
+        <description>DC battery maximum discharge current has been exceeded.</description>
+        <notes>See AMaxDischa</notes>
+      </symbol>
+      <symbol id="OVER_DISCHARGE_CURRENT_WARNING">
+        <label>Over Discharge Current Warning</label>
+        <description>Approaching dc battery maximum discharge current.</description>
+        <notes>See AMaxDischa</notes>
+      </symbol>
+      <symbol id="OVER_VOLT_ALARM">
+        <label>Over Voltage Alarm</label>
+        <description>DC battery voltage has exceeded maximum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_VOLT_WARNING">
+        <label>Over Voltage Warning</label>
+        <description>DC battery voltage is approaching maximum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_VOLT_ALARM">
+        <label>Under Voltage Alarm</label>
+        <description>DC battery voltage has exceeded minimum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_VOLT_WARNING">
+        <label>Under Voltage Warning</label>
+        <description>DC battery voltage is approaching minimum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_SOC_MIN_ALARM">
+        <label>Under State of Charge Minimum Alarm</label>
+        <description>DC battery state of charge has reached or exceeded SoCNpMinPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_SOC_MIN_WARNING">
+        <label>Under State of Charge Minimum Warning</label>
+        <description>DC battery state of charge is approaching SoCNpMinPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_SOC_MAX_ALARM">
+        <label>Over State of Charge Maximum Alarm</label>
+        <description>DC battery state of charge has reached or exceeded SocNpMaxPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_SOC_MAX_WARNING">
+        <label>Over State of Charge Maximum Warning</label>
+        <description>DC battery state of charge is approaching SoCNpMaxPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VOLTAGE_IMBALANCE_WARNING">
+        <label>Voltage Imbalance Warning</label>
+        <description>A voltage imbalance exists between the stacks in the DC battery.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CURRENT_IMBALANCE_WARNING">
+        <label>Current Imbalance Warning</label>
+        <description>A current imbalance exists between the stacks in the DC battery.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_ERROR">
+        <label>Contactor Error</label>
+        <description>A contactor failed to open or close as requested.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAN_ERROR">
+        <label>Fan Error</label>
+        <description>One or more DC battery fans has failed.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="GROUND_FAULT">
+        <label>Ground Fault Error</label>
+        <description>Ground fault detected.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OPEN_DOOR_ERROR">
+        <label>Open Door Error</label>
+        <description>One or more doors are open.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FIRE_ALARM">
+        <label>Fire Alarm</label>
+        <description>A fire has been detected.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="LEAK_ALARM">
+        <label>Leak Alarm</label>
+        <description>A leak has been detected.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="PUMP_ALARM">
+        <label>Pump Alarm</label>
+        <description>A pump has experienced an alarm condition or some other error.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="HIGH_PRESSURE_ALARM">
+        <label>High Pressure Alarm</label>
+        <description>Pressure exceeds maximum value.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="HIGH_PRESSURE_WARNING">
+        <label>High Pressure Warning</label>
+        <description>Pressure approaching maximum value.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="LOW_FLOW_ALARM">
+        <label>Low Flow Alarm</label>
+        <description>Flow exceeds minimum value.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="LOW_FLOW_WARNING">
+        <label>Low Flow Warning</label>
+        <description>Flow approaching minimum value.</description>
+        <notes></notes>
+      </symbol>
     </point>      
     <point id="DCBatEvt2">
       <label>DC Battery Event 2</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
       <notes></notes>
     </point>      
-    <point id="ConnectFailureReason">
-      <label>Connect Failure Reason</label>
+    <point id="DCBatConFail">
+      <label>Connection Failure Reason</label>
       <description></description>
       <notes></notes>
-    </point>      
+      <symbol id="NO_FAILURE">
+        <label>No Failure</label>
+        <description>Connect did not fail.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="BUTTON_PUSHED">
+        <label>Button Pushed</label>
+        <description>A button was pushed which prevented connection.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DCBAT_GROUND_FAULT">
+        <label>Ground Fault</label>
+        <description>Ground fault during auto-connect.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OUTSIDE_VOLTAGE_RANGE">
+        <label>Outside Voltage Range</label>
+        <description>Outside voltage target window during auto-connect.</description>
+        <notes></notes>
+      </symbol>
+    </point>
     <point id="DCBatSetEna">
       <label>Enable/Disable DC Battery</label>
       <description>Enables and disables the DC battery.  Should reset to 0 upon completion.</description>
       <notes></notes>
-    </point>      
+      <symbol id="ENABLE_DC_BATTERY">
+        <label>Enable DC Battery</label>
+        <description>Enable the DC battery.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DISABLE_DC_BATTERY">
+        <label>Disable DC Battery</label>
+        <description>Disable the DC battery.</description>
+        <notes></notes>
+      </symbol>
+    </point>
    </strings>
 </sunSpecModels>
