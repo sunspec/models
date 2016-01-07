@@ -3,11 +3,11 @@
   <!-- 807: Flow Battery String Model -->
   <model id="807" len="36" name="flow_battery_string">
     <block len="19">
-      <point id="DCBatCt" offset="0" type="uint16" mandatory="true" />
-      <point id="ConDCBatCt" offset="1" type="uint16" mandatory="true" />
-      <point id="StrMaxDCBatVol" offset="2" type="uint16" sf="DCBatVol_SF" units="V" mandatory="true" />
-      <point id="StrMinDCBatVol" offset="3" type="uint16" sf="DCBatVol_SF" units="V" mandatory="true" />
-      <point id="StrDCBatVolLoc" offset="4" type="uint16" />
+      <point id="ModuleCt" offset="0" type="uint16" mandatory="true" />
+      <point id="ConModuleCt" offset="1" type="uint16" mandatory="true" />
+      <point id="StrMaxModVol" offset="2" type="uint16" sf="ModVol_SF" units="V" mandatory="true" />
+      <point id="StrMinModVol" offset="3" type="uint16" sf="ModVol_SF" units="V" mandatory="true" />
+      <point id="StrModVolLoc" offset="4" type="uint16" />
       <point id="StrMaxCellVol" offset="5" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
       <point id="StrMaxCellVolLoc" offset="6" type="uint16" />
       <point id="StrMinCellVol" offset="7" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
@@ -50,22 +50,22 @@
       <point id="StrEvt2" offset="14" type="bitfield32" mandatory="true" />
       <point id="StrEvtOtherAlarm" offset="16" type="bitfield32" mandatory="true" />
       <point id="StrEvtOtherWarning" offset="18" type="bitfield32" mandatory="true" />
-      <point id="DCBatVol_SF" offset="20" type="sunssf" mandatory="true" />
+      <point id="ModVol_SF" offset="20" type="sunssf" mandatory="true" />
       <point id="CellVol_SF" offset="21" type="sunssf" mandatory="true" />
       <point id="Tmp_SF" offset="22" type="sunssf" mandatory="true" />
     </block>
-    <block type="repeating" len="17" name="dc_battery">
-      <point id="DCBatID" offset="0" type="uint16" mandatory="true" />
-      <point id="StkCt" offset="1" type="uint16" units="" mandatory="true" />
-      <point id="DCBatSoC" offset="2" type="uint16" units="%" mandatory="true" />
-      <point id="DCBatOCV" offset="3" type="uint16" units="V" mandatory="true" />
-      <point id="DCBatVol" offset="4" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
-      <point id="DCBatMaxCellVol" offset="5" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
-      <point id="DCBatMinCellVol" offset="6" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
-      <point id="DCBatCellVolLoc" offset="7" type="uint16" units="" />
-      <point id="DCBatAnoTmp" offset="8" type="uint16" sf="Tmp_SF" units="C" />
-      <point id="DCBatCatTmp" offset="9" type="uint16" sf="Tmp_SF" units="C" />
-      <point id="DCBatConStatus" offset="10" type="uint16" units="" >
+    <block type="repeating" len="17" name="module">
+      <point id="ModID" offset="0" type="uint16" mandatory="true" />
+      <point id="ModStackCt" offset="1" type="uint16" units="" mandatory="true" />
+      <point id="ModSoC" offset="2" type="uint16" units="%" mandatory="true" />
+      <point id="ModOCV" offset="3" type="uint16" units="V" mandatory="true" />
+      <point id="ModVol" offset="4" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="ModMaxCellVol" offset="5" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="ModMinCellVol" offset="6" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="ModCelVolLoc" offset="7" type="uint16" units="" />
+      <point id="ModAnoTmp" offset="8" type="uint16" sf="Tmp_SF" units="C" />
+      <point id="ModCatTmp" offset="9" type="uint16" sf="Tmp_SF" units="C" />
+      <point id="ModConStatus" offset="10" type="uint16" units="" >
         <symbol id="CONTACTOR_0">0</symbol>
         <symbol id="CONTACTOR_1">1</symbol>
         <symbol id="CONTACTOR_2">2</symbol>
@@ -83,7 +83,7 @@
         <symbol id="CONTACTOR_14">14</symbol>
         <symbol id="CONTACTOR_15">15</symbol>
       </point>
-      <point id="DCBatEvt1" offset="11" type="bitfield32" mandatory="true" >
+      <point id="ModEvt1" offset="11" type="bitfield32" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="OVER_TEMP_WARNING">2</symbol>
@@ -115,17 +115,17 @@
         <symbol id="LOW_FLOW_ALARM">28</symbol>
         <symbol id="LOW_FLOW_WARNING">29</symbol>
       </point>
-      <point id="DCBatEvt2" offset="13" type="bitfield32" mandatory="true" >
+      <point id="ModEvt2" offset="13" type="bitfield32" mandatory="true" >
       </point>
-      <point id="DCBatConFail" offset="15" type="enum16" mandatory="true" >
+      <point id="ModConFail" offset="15" type="enum16" mandatory="true" >
         <symbol id="NO_FAILURE">0</symbol>
         <symbol id="BUTTON_PUSHED">1</symbol>
-        <symbol id="DCBAT_GROUND_FAULT">2</symbol>
+        <symbol id="Module_GROUND_FAULT">2</symbol>
         <symbol id="OUTSIDE_VOLTAGE_RANGE">3</symbol>
       </point>
-      <point id="DCBatSetEna" offset="16" access="rw" type="enum16" mandatory="true" >
-        <symbol id="ENABLE_DC_BATTERY">1</symbol>
-        <symbol id="DISABLE_DC_BATTERY">2</symbol>
+      <point id="ModSetEna" offset="16" access="rw" type="enum16" mandatory="true" >
+        <symbol id="ENABLE_MODULE">1</symbol>
+        <symbol id="DISABLE_MODULE">2</symbol>
       </point>
     </block>
   </model>
@@ -135,30 +135,30 @@
       <description></description>
       <notes></notes>
     </model>
-    <point id="DCBatCt">
-      <label>DC Battery Count</label>
-      <description>Number of DC batteries in this string.</description>
+    <point id="ModuleCt">
+      <label>Module Count</label>
+      <description>Number of modules in this string.</description>
       <notes></notes>
     </point>      
-    <point id="ConDCBatCt">
-      <label>Connected DC Battery Count</label>
-      <description>Number of electrically connected DC batteries in this string.</description>
+    <point id="ConModuleCt">
+      <label>Connected Module Count</label>
+      <description>Number of electrically connected modules in this string.</description>
       <notes></notes>
     </point>      
-    <point id="StrMaxDCBatVol">
-      <label>Maximum DC Battery Voltage</label>
-      <description>Maximum voltage for all DC batteries in the string.</description>
+    <point id="StrMaxModVol">
+      <label>Maximum Module Voltage</label>
+      <description>Maximum voltage for all modules in the string.</description>
       <notes></notes>
     </point>      
-    <point id="StrMinDCBatVol">
-      <label>Minimum DC Battery Voltage</label>
-      <description>Minimum voltage for all DC batteries in the string.</description>
+    <point id="StrMinModVol">
+      <label>Minimum Module Voltage</label>
+      <description>Minimum voltage for all modules in the string.</description>
       <notes></notes>
     </point>      
-    <point id="StrDCBatVolLoc">
-      <label>Max/Min DC Battery Voltage Location</label>
-      <description>Location of the DC battery with the minimum and maximum voltage.</description>
-      <notes>Bit0:Bit7 = Max DC Battery Number  Bit8:Bit15 = Min DC Battery Number</notes>
+    <point id="StrModVolLoc">
+      <label>Max/Min Module Voltage Location</label>
+      <description>Location of the Module with the minimum and maximum voltage.</description>
+      <notes>Bit0:Bit7 = Max Module Number  Bit8:Bit15 = Min Module Number</notes>
     </point>      
     <point id="StrMaxCellVol">
       <label>Maximum Cell Voltage</label>
@@ -168,7 +168,7 @@
     <point id="StrMaxCellVolLoc">
       <label>Maximum Cell Voltage Location</label>
       <description>Location of the cell with the maximum voltage.</description>
-      <notes>Bit0:Bit7 = DC Battery Number  Bit8:Bit15 = Stack Number</notes>
+      <notes>Bit0:Bit7 = Module Number  Bit8:Bit15 = Stack Number</notes>
     </point>      
     <point id="StrMinCellVol">
       <label>Minimum Cell Voltage</label>
@@ -178,22 +178,22 @@
     <point id="StrMinCellVolLoc">
       <label>Minimum Cell Voltage Location</label>
       <description>Location of the cell with the minimum voltage.</description>
-      <notes>Bit0:Bit7 = DC Battery Number  Bit8:Bit15 = Stack Number</notes>
+      <notes>Bit0:Bit7 = Module Number  Bit8:Bit15 = Stack Number</notes>
     </point>      
     <point id="StrMaxTmp">
       <label>Maximum Temperature</label>
-      <description>Maximum electrolyte temperature for all DC batteries in the string.</description>
+      <description>Maximum electrolyte temperature for all modules in the string.</description>
       <notes></notes>
     </point>      
     <point id="StrMinTmp">
       <label>Minimum Temperature</label>
-      <description>Minimum electrolyte temperature for all DC batteries in the string.</description>
+      <description>Minimum electrolyte temperature for all modules in the string.</description>
       <notes></notes>
     </point>      
     <point id="StrTmpLoc">
       <label>Max/Min Temperature Location</label>
-      <description>Location of the DC battery with the minimum and maximum temperature.</description>
-      <notes>Bit0:Bit7 = Max DC Battery Number  Bit8:Bit15 = Min DC Battery Number</notes>
+      <description>Location of the Module with the minimum and maximum temperature.</description>
+      <notes>Bit0:Bit7 = Max Module Number  Bit8:Bit15 = Min Module Number</notes>
     </point>      
     <point id="StrEvt1">
       <label>String Event 1</label>
@@ -201,7 +201,7 @@
       <notes></notes>
       <symbol id="COMMUNICATION_ERROR">
         <label>Communication Error</label>
-        <description>BMS is unable to communicate with DC batteries.</description>
+        <description>BMS is unable to communicate with modules.</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_TEMP_ALARM">
@@ -375,57 +375,57 @@
       <description>Scale factor for temperature.</description>
       <notes></notes>
     </point>
-    <point id="DCBatID">
-      <label>DC Battery ID</label>
-      <description>Unique ID of the DC battery.</description>
+    <point id="ModID">
+      <label>MOdUle ID</label>
+      <description>Unique ID of the module.</description>
       <notes></notes>
     </point>      
     <point id="StkCt">
       <label>Stack Count</label>
-      <description>Number of stacks in this DC battery.</description>
+      <description>Number of stacks in this module.</description>
       <notes></notes>
     </point>      
-    <point id="DCBatSoC">
+    <point id="ModSoC">
       <label>State of Charge</label>
-      <description>State of charge for this DC battery.</description>
+      <description>State of charge for this module.</description>
       <notes></notes>
     </point>      
-    <point id="DCBatOCV">
+    <point id="ModOCV">
       <label>Open Circuit Voltage</label>
-      <description>Open circuit voltage for this DC battery.</description>
+      <description>Open circuit voltage for this module.</description>
       <notes></notes>
     </point>      
-    <point id="DCBatVol">
+    <point id="ModVol">
       <label>External Voltage</label>
-      <description>External voltage fo this DC battery.</description>
+      <description>External voltage fo this module.</description>
       <notes></notes>
     </point>      
-    <point id="DCBatMaxCellVol">
+    <point id="ModMaxCellVol">
       <label>Maximum Cell Voltage</label>
-      <description>Maximum voltage for all cells in this DC battery.</description>
+      <description>Maximum voltage for all cells in this module.</description>
       <notes></notes>
     </point>      
-    <point id="DCBatMinCellVol">
+    <point id="ModMinCellVol">
       <label>Minimum Cell Voltage</label>
-      <description>Minimum voltage for all cells in this DC battery.</description>
+      <description>Minimum voltage for all cells in this module.</description>
       <notes></notes>
     </point>      
-    <point id="DCBatCellVolLoc">
+    <point id="ModCelVolLoc">
       <label>Max/Min Cell Voltage Location</label>
       <description>Location of maximum and minimum cell voltages.</description>
       <notes>Bit0:Bit7 = Max Stack Num  Bit8:Bit15 = Min Stack Num</notes>
     </point>
-    <point id="DCBatAnoTmp">
+    <point id="ModAnoTmp">
       <label>Anolyte Temperature</label>
       <description></description>
       <notes></notes>
     </point>      
-    <point id="DCBatCatTmp">
+    <point id="ModCatTmp">
       <label>Catholyte Temperature</label>
       <description></description>
       <notes></notes>
     </point>      
-    <point id="DCBatConStatus">
+    <point id="ModConStatus">
       <label>Contactor Status</label>
       <description></description>
       <notes></notes>
@@ -510,103 +510,103 @@
         <notes></notes>
       </symbol>
     </point>      
-    <point id="DCBatEvt1">
-      <label>DC Battery Event 1</label>
+    <point id="ModEvt1">
+      <label>MOdUle Event 1</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
       <notes></notes>
       <symbol id="COMMUNICATION_ERROR">
         <label>Communication Error</label>
-        <description>DC battery is unable to communicate with the BMS or other components.</description>
+        <description>Module is unable to communicate with the BMS or other components.</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_TEMP_ALARM">
         <label>Over Temperature Alarm</label>
-        <description>DC battery has exceeded maximum operating temperature</description>
+        <description>Module has exceeded maximum operating temperature</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_TEMP_WARNING">
         <label>Over Temperature  Warning</label>
-        <description>Dc battery is approaching maximum operating temperature.</description>
+        <description>Module is approaching maximum operating temperature.</description>
         <notes></notes>
       </symbol>
       <symbol id="UNDER_TEMP_ALARM">
         <label>Under Temperature Alarm</label>
-        <description>DC battery has exceeded minimum operating temperature</description>
+        <description>Module has exceeded minimum operating temperature</description>
         <notes></notes>
       </symbol>
       <symbol id="UNDER_TEMP_WARNING">
         <label>Under Temperature Warning</label>
-        <description>DC battery is approaching minimum operating temperature.</description>
+        <description>Module is approaching minimum operating temperature.</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_CHARGE_CURRENT_ALARM">
         <label>Over Charge Current Alarm</label>
-        <description>DC battery maximum charge current has been exceeded.</description>
+        <description>Module maximum charge current has been exceeded.</description>
         <notes>See AMaxCha</notes>
       </symbol>
       <symbol id="OVER_CHARGE_CURRENT_WARNING">
         <label>Over Charge Current Warning</label>
-        <description>Approaching dc battery maximum charge current.</description>
+        <description>Approaching module maximum charge current.</description>
         <notes>See AMaxCha</notes>
       </symbol>
       <symbol id="OVER_DISCHARGE_CURRENT_ALARM">
         <label>Over Discharge Current Alarm</label>
-        <description>DC battery maximum discharge current has been exceeded.</description>
+        <description>Module maximum discharge current has been exceeded.</description>
         <notes>See AMaxDischa</notes>
       </symbol>
       <symbol id="OVER_DISCHARGE_CURRENT_WARNING">
         <label>Over Discharge Current Warning</label>
-        <description>Approaching dc battery maximum discharge current.</description>
+        <description>Approaching module maximum discharge current.</description>
         <notes>See AMaxDischa</notes>
       </symbol>
       <symbol id="OVER_VOLT_ALARM">
         <label>Over Voltage Alarm</label>
-        <description>DC battery voltage has exceeded maximum limit.</description>
+        <description>Module voltage has exceeded maximum limit.</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_VOLT_WARNING">
         <label>Over Voltage Warning</label>
-        <description>DC battery voltage is approaching maximum limit.</description>
+        <description>Module voltage is approaching maximum limit.</description>
         <notes></notes>
       </symbol>
       <symbol id="UNDER_VOLT_ALARM">
         <label>Under Voltage Alarm</label>
-        <description>DC battery voltage has exceeded minimum limit.</description>
+        <description>Module voltage has exceeded minimum limit.</description>
         <notes></notes>
       </symbol>
       <symbol id="UNDER_VOLT_WARNING">
         <label>Under Voltage Warning</label>
-        <description>DC battery voltage is approaching minimum limit.</description>
+        <description>Module voltage is approaching minimum limit.</description>
         <notes></notes>
       </symbol>
       <symbol id="UNDER_SOC_MIN_ALARM">
         <label>Under State of Charge Minimum Alarm</label>
-        <description>DC battery state of charge has reached or exceeded SoCNpMinPct</description>
+        <description>Module state of charge has reached or exceeded SoCNpMinPct</description>
         <notes></notes>
       </symbol>
       <symbol id="UNDER_SOC_MIN_WARNING">
         <label>Under State of Charge Minimum Warning</label>
-        <description>DC battery state of charge is approaching SoCNpMinPct</description>
+        <description>Module state of charge is approaching SoCNpMinPct</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_SOC_MAX_ALARM">
         <label>Over State of Charge Maximum Alarm</label>
-        <description>DC battery state of charge has reached or exceeded SocNpMaxPct</description>
+        <description>Module state of charge has reached or exceeded SocNpMaxPct</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_SOC_MAX_WARNING">
         <label>Over State of Charge Maximum Warning</label>
-        <description>DC battery state of charge is approaching SoCNpMaxPct</description>
+        <description>Module state of charge is approaching SoCNpMaxPct</description>
         <notes></notes>
       </symbol>
       <symbol id="VOLTAGE_IMBALANCE_WARNING">
         <label>Voltage Imbalance Warning</label>
-        <description>A voltage imbalance exists between the stacks in the DC battery.</description>
+        <description>A voltage imbalance exists between the stacks in the module.</description>
         <notes></notes>
       </symbol>
       <symbol id="CURRENT_IMBALANCE_WARNING">
         <label>Current Imbalance Warning</label>
-        <description>A current imbalance exists between the stacks in the DC battery.</description>
+        <description>A current imbalance exists between the stacks in the module.</description>
         <notes></notes>
       </symbol>
       <symbol id="CONTACTOR_ERROR">
@@ -616,7 +616,7 @@
       </symbol>
       <symbol id="FAN_ERROR">
         <label>Fan Error</label>
-        <description>One or more DC battery fans has failed.</description>
+        <description>One or more module fans has failed.</description>
         <notes></notes>
       </symbol>
       <symbol id="GROUND_FAULT">
@@ -665,12 +665,12 @@
         <notes></notes>
       </symbol>
     </point>      
-    <point id="DCBatEvt2">
-      <label>DC Battery Event 2</label>
+    <point id="ModEvt2">
+      <label>MOdUle Event 2</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
       <notes></notes>
     </point>      
-    <point id="DCBatConFail">
+    <point id="ModConFail">
       <label>Connection Failure Reason</label>
       <description></description>
       <notes></notes>
@@ -684,7 +684,7 @@
         <description>A button was pushed which prevented connection.</description>
         <notes></notes>
       </symbol>
-      <symbol id="DCBAT_GROUND_FAULT">
+      <symbol id="Module_GROUND_FAULT">
         <label>Ground Fault</label>
         <description>Ground fault during auto-connect.</description>
         <notes></notes>
@@ -695,18 +695,18 @@
         <notes></notes>
       </symbol>
     </point>
-    <point id="DCBatSetEna">
-      <label>Enable/Disable DC Battery</label>
-      <description>Enables and disables the DC battery.  Should reset to 0 upon completion.</description>
+    <point id="ModSetEna">
+      <label>Enable/Disable MOdUle</label>
+      <description>Enables and disables the module.  Should reset to 0 upon completion.</description>
       <notes></notes>
-      <symbol id="ENABLE_DC_BATTERY">
-        <label>Enable DC Battery</label>
-        <description>Enable the DC battery.</description>
+      <symbol id="ENABLE_MODULE">
+        <label>Enable MOdUle</label>
+        <description>Enable the module.</description>
         <notes></notes>
       </symbol>
-      <symbol id="DISABLE_DC_BATTERY">
-        <label>Disable DC Battery</label>
-        <description>Disable the DC battery.</description>
+      <symbol id="DISABLE_MODULE">
+        <label>Disable MOdUle</label>
+        <description>Disable the module.</description>
         <notes></notes>
       </symbol>
     </point>

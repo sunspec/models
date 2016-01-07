@@ -1,9 +1,9 @@
 <sunSpecModels v="1">
 
-  <!-- 808: Flow Battery DC Battery Model -->
-  <model id="808" len="2" name="flow_battery_dc_battery">
+  <!-- 808: Flow Battery Module Model -->
+  <model id="808" len="2" name="flow_battery_module">
     <block len="1">
-      <point id="DCBatTBD" offset="0" type="uint16" mandatory="true" />
+      <point id="ModuleTBD" offset="0" type="uint16" mandatory="true" />
     </block>
     <block type="repeating" len="1" name="stack">
       <point id="StackTBD" offset="0" type="uint16" mandatory="true" />
@@ -11,12 +11,12 @@
   </model>
   <strings id="808" locale="en">
     <model>
-      <label>Flow Battery DC Battery Model</label>
+      <label>Flow Battery Module Model</label>
       <description></description>
       <notes></notes>
     </model>
-    <point id="DCBatTBD">
-      <label>DC Battery Points To Be Determined</label>
+    <point id="ModuleTBD">
+      <label>Module Points To Be Determined</label>
       <description></description>
       <notes></notes>
     </point>
