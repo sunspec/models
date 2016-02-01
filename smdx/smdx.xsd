@@ -35,6 +35,7 @@ This document may be used, copied, and furnished to others, without restrictions
     </xs:sequence>
     <xs:attribute name="id" type="xs:integer" />
     <xs:attribute name="len" type="xs:integer" />
+    <xs:attribute name="name" type="xs:string" />
   </xs:complexType>
 
   <xs:complexType name="BlockDefinition">
