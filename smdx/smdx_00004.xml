@@ -3,7 +3,7 @@
   <model id="4" len="61">
     <block len="60">
       <point id="RqSeq" offset="0" type="uint16" access="r" mandatory="true"/>
-      <point id="Sts" offset="1" type="uint16" access="r" mandatory="true">
+      <point id="Sts" offset="1" type="enum16" access="r" mandatory="true"> <!-- or bitfld16 -->
         <symbol id="SUCCESS">0</symbol>
         <symbol id="DS">1</symbol>
         <symbol id="ACL">2</symbol>
