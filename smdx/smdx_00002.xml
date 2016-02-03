@@ -11,7 +11,7 @@
         <symbol id="FULL">3</symbol>
         <symbol id="FAULT">4</symbol>
       </point>
-      <point id="StVnd" offset="4" type="enum16" />
+      <point id="StVnd" offset="4" type="enum16" /> <!-- this is an enum? It has no symbols -->
       <point id="Evt" offset="5" type="bitfield32" mandatory="true" >
         <symbol id="GROUND_FAULT">0</symbol>
         <symbol id="INPUT_OVER_VOLTAGE">1</symbol>
