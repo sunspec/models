@@ -17,7 +17,7 @@
     </block>
     <block len="54" type="repeating" name="curve">
       <point id="ActPt" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
-      <point id="DeptRef" offset="1" access="rw" type="enum16" len="1" mandatory="true" sf="DeptRef_SF" >
+      <point id="DeptRef" offset="1" access="rw" type="enum16" len="1" mandatory="true" />
         <symbol id="WMax">1</symbol>
         <symbol id="VArMax">2</symbol>
         <symbol id="VArAval">3</symbol>
