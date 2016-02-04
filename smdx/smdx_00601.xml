@@ -33,7 +33,7 @@
     <block len="22" type="repeating" name="tracker">
       <point id="Id" offset="0" type="string" len="8"  mandatory="false" />
       <point id="ElTrgt" offset="8" type="int32" units="Degrees" sf="Dgr_SF" mandatory="false" />
-      <point id="AzTrgt" offset="10" type="int32" units="Degrees" sf="SF" mandatory="false" />
+      <point id="AzTrgt" offset="10" type="int32" units="Degrees" sf="Dgr_SF" mandatory="false" />
       <point id="ElPos" offset="12" type="int32" units="Degrees" sf="Dgr_SF" mandatory="false" />
       <point id="AzPos" offset="14" type="int32" units="Degrees" sf="Dgr_SF" mandatory="false" />
       <point id="ElCtl" offset="16" type="int32" units="Degrees" sf="Dgr_SF" access="rw" mandatory="false" />
