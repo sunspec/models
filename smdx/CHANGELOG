@@ -54,3 +54,7 @@ Models moved to SunSpec models repository
 
 2015 June 3: Bob Fox, SunSpec. Updated model 63002 to include label information.
 
+2016 February 4: Bob Fox SunSpec. Corrected acc32 to float32 in models 211, 212, 213, 214.
+
+2016 February 4: Bob Fox SunSpec. Removed scale factor definition from DeptRef definition in model 126.
+
