@@ -1,5 +1,5 @@
 <manifest>
-  <file md5="1334fcdaa9a4e61e3938f2b1e298af2e" name="CHANGELOG" />
+  <file md5="23beb2673d1cf1e43ea98dbf4dd97ea8" name="CHANGELOG" />
   <file md5="2dd805cf3108bbcfae774033b4bcbd5f" name="smdx.xsd" />
   <file md5="c295afc91da4480269caa0dde149c296" name="smdx_00001.xml" />
   <file md5="cee44d064c9d368d04606df29fcf0fe3" name="smdx_00002.xml" />
@@ -32,7 +32,7 @@
   <file md5="50553a75f5f6fd318c8f999ac14a4da9" name="smdx_00123.xml" />
   <file md5="d5d5ef9fdf4b85ae9e7b0a2500ee368f" name="smdx_00124.xml" />
   <file md5="d0dfef846611038c74dbd4b04cff458e" name="smdx_00125.xml" />
-  <file md5="554188010009d32e5b0af67fe650160e" name="smdx_00126.xml" />
+  <file md5="01bfb37fa114436e5f58928fb25212c0" name="smdx_00126.xml" />
   <file md5="106559b38ae2bbe3cde2bd2c0f3be690" name="smdx_00127.xml" />
   <file md5="64a4fdbabc5e4ad4fa09fef9c17a5873" name="smdx_00128.xml" />
   <file md5="5a12c3f4571aa7e2c5d711de7956b543" name="smdx_00129.xml" />
@@ -50,10 +50,10 @@
   <file md5="1077b7d012a35be20680f85d7e17ca5c" name="smdx_00202.xml" />
   <file md5="4a2168fdbf941760fd2df8ee1ace621f" name="smdx_00203.xml" />
   <file md5="efba3df6916d38c8de5128f969c31a21" name="smdx_00204.xml" />
-  <file md5="d7f078009ddeefacc310e96dec0a05f3" name="smdx_00211.xml" />
-  <file md5="7b0c156fad2d0738dcf1570179df912e" name="smdx_00212.xml" />
-  <file md5="c3f00776f7eb0e65179e5ff6a115f4b1" name="smdx_00213.xml" />
-  <file md5="baa3ebcb93cc68bf030727ecace74035" name="smdx_00214.xml" />
+  <file md5="1b41ff1ca791a292af1c2a525d159ea6" name="smdx_00211.xml" />
+  <file md5="c7f126e5cae81570b7f49d2ef50b9851" name="smdx_00212.xml" />
+  <file md5="8f8f3d6c0e939f6d2e3887fc09f29f25" name="smdx_00213.xml" />
+  <file md5="b85ecf011ff42604cf2a53e3e831f109" name="smdx_00214.xml" />
   <file md5="e63cf71e122324373cd22e337ad2b232" name="smdx_00220.xml" />
   <file md5="4d662053e0e9f148b33b273e4fa011c7" name="smdx_00302.xml" />
   <file md5="5bad0d3ea94f33287607508b1bda8df4" name="smdx_00303.xml" />
@@ -69,9 +69,9 @@
   <file md5="b6d2ab5cdd55d4e438b457f9782f0ea9" name="smdx_00501.xml" />
   <file md5="0e74345cf0ff3b5d0bc80117ee834b27" name="smdx_00502.xml" />
   <file md5="113719af4addee538689fd31e0afc3d9" name="smdx_00601.xml" />
-  <file md5="9bfabca3bef3adfe7f3bb37ab3ee4226" name="smdx_00801.xml" />
-  <file md5="df1914e498b4eb8c910f0eca724a7fcf" name="smdx_00802.xml" />
-  <file md5="836143980a6b4e4caedc02f0c6ea7a84" name="smdx_00803.xml" />
+  <file md5="b710a0fb6c852f591fcb10c6b758d846" name="smdx_00801.xml" />
+  <file md5="d67b7e6bd660902ec14a0b7862ff71e5" name="smdx_00802.xml" />
+  <file md5="44d3785ea968cb67c83e012a84709f2d" name="smdx_00803.xml" />
   <file md5="92f777bd774d731b8c6f9fbfef884f1c" name="smdx_63001.xml" />
   <file md5="d18ac80b4106d05ae4499ba09e00a47f" name="smdx_63002.xml" />
   <file md5="584d6889c51d84163cd8a621e146590a" name="smdx_64001.xml" />
