@@ -1,7 +1,7 @@
 <sunSpecModels v="1">
   <!-- 802: Battery Base Model -->
-  <model id="802" len="43" name="battery">
-    <block len="43">
+  <model id="802" len="52" name="battery">
+    <block len="52">
       <point id="WHRtg" offset="0" type="uint16" sf="WHRtg_SF" units="Wh" mandatory="true" />
       <point id="WMaxChaRte" offset="1" type="uint16" sf="WMaxChaDisCha_SF" units="W" mandatory="true" />
       <point id="WMaxDisChaRte" offset="2" type="uint16" sf="WMaxChaDisCha_SF" units="W" mandatory="true" />
@@ -81,34 +81,39 @@
       <point id="Vol" offset="27" type="uint16" sf="Vol_SF" units="V" mandatory="true" />
       <point id="MaxBatVol" offset="28" type="uint16" sf="Vol_SF" units="V" />
       <point id="MinBatVol" offset="29" type="uint16" sf="Vol_SF" units="V" />
-      <point id="BTotDCCur" offset="30" type="int16" sf="BCurrent_SF" units="A" mandatory="true" />
-      <point id="MaxBatACha" offset="31" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
-      <point id="MaxBatADischa" offset="32" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
-      <point id="BTotWCur" offset="33" type="int16" sf="BatReqW_SF" mandatory="true" />
-      <point id="BatReqPCSSt" offset="34" type="enum16" >
+      <point id="BMaxCellVol" offset="30" type="uint16" sf="BCellVol_SF" units="V" />
+      <point id="BMaxCellVolLoc" offset="31" type="uint16" />
+      <point id="BMinCellVol" offset="32" type="uint16" sf="BCellVol_SF" units="V" />
+      <point id="BMinCellVolLoc" offset="33" type="uint16" />
+      <point id="BTotDCCur" offset="34" type="int16" sf="BCurrent_SF" units="A" mandatory="true" />
+      <point id="MaxBatACha" offset="35" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
+      <point id="MaxBatADischa" offset="36" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
+      <point id="BTotWCur" offset="37" type="int16" sf="BatReqW_SF" mandatory="true" />
+      <point id="BatReqPCSSt" offset="38" type="enum16" >
         <symbol id="NO REQUEST">0</symbol>
         <symbol id="START">1</symbol>
         <symbol id="STOP">2</symbol>
       </point>
-      <point id="BatReqW" offset="35" type="int16" sf="BatReqW_SF" units="W" />
-      <point id="BSetOperation" offset="36" access="rw" type="enum16" mandatory="true" >
+      <point id="BatReqW" offset="39" type="int16" sf="BatReqW_SF" units="W" />
+      <point id="BSetOperation" offset="40" access="rw" type="enum16" mandatory="true" >
         <symbol id="CONNECT">1</symbol>
         <symbol id="DISCONNECT">2</symbol>
       </point>
-      <point id="BSetPCSState" offset="37" access="rw" type="enum16" mandatory="true" >
+      <point id="BSetPCSState" offset="41" access="rw" type="enum16" mandatory="true" >
         <symbol id="PCS_STOPPED">1</symbol>
         <symbol id="PCS_STANDBY">2</symbol>
         <symbol id="PCS_STARTED">3</symbol>
       </point>
-      <point id="WHRtg_SF" offset="38" type="sunssf" mandatory="true" />
-      <point id="WMaxChaDisCha_SF" offset="39" type="sunssf"  mandatory="true" />
-      <point id="DisChaRte_SF" offset="40" type="sunssf" />
-      <point id="SoC_SF" offset="41" type="sunssf" mandatory="true" />
-      <point id="SoH_SF" offset="42" type="sunssf" />
-      <point id="Vol_SF" offset="43" type="sunssf" mandatory="true" />
-      <point id="BCurrent_SF" offset="44" type="sunssf" mandatory="true" />
-      <point id="MaxBatA_SF" offset="45" type="sunssf" mandatory="true" />
-      <point id="BatReqW_SF" offset="46" type="sunssf" />
+      <point id="WHRtg_SF" offset="42" type="sunssf" mandatory="true" />
+      <point id="WMaxChaDisCha_SF" offset="43" type="sunssf"  mandatory="true" />
+      <point id="DisChaRte_SF" offset="44" type="sunssf" />
+      <point id="SoC_SF" offset="45" type="sunssf" mandatory="true" />
+      <point id="SoH_SF" offset="46" type="sunssf" />
+      <point id="Vol_SF" offset="47" type="sunssf" mandatory="true" />
+      <point id="BCellVol_SF" offset="48" type="sunssf" mandatory="true" />
+      <point id="BCurrent_SF" offset="49" type="sunssf" mandatory="true" />
+      <point id="MaxBatA_SF" offset="50" type="sunssf" mandatory="true" />
+      <point id="BatReqW_SF" offset="51" type="sunssf" />
     </block>
   </model>
   <strings id="802" locale="en">
@@ -487,6 +492,26 @@
       <description>Instantaneous minimum battery voltage.</description>
       <notes></notes>
     </point>
+    <point id="BMaxCellVol">
+      <label>Max Cell Voltage</label>
+      <description>Maximum voltage for all cells in the bank.</description>
+      <notes>Measurement</notes>
+    </point>
+    <point id="BMaxCellVolLoc">
+      <label>Max Cell Voltage Location</label>
+      <description>Location of the cell with maximum voltage</description>
+      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
+    </point>
+    <point id="BMinCellVol">
+      <label>Min Cell Voltage</label>
+      <description>Minimum voltage for all cells in the bank.</description>
+      <notes>Measurement</notes>
+    </point>
+    <point id="BMinCellVolLoc">
+      <label>Min Cell Voltage Location</label>
+      <description>Location of the cell with minimum voltage</description>
+      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
+    </point>
     <point id="BTotDCCur">
       <label>Total DC Current</label>
       <description>Total DC current flowing to/from the battery bank.</description>
@@ -600,6 +625,11 @@
     <point id="Vol_SF">
       <label></label>
       <description>Scale factor for DC Bus Voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="BCellVol_SF">
+      <label></label>
+      <description>Scale factor for cell voltage.</description>
       <notes></notes>
     </point>
     <point id="BCurrent_SF">

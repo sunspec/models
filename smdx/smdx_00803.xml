@@ -1,25 +1,21 @@
 <sunSpecModels v="1">
 
   <!-- 803: Lithium-Ion Battery Model -->
-  <model id="803" len="31" name="lithium_ion">
-    <block len="15">
+  <model id="803" len="32" name="lithium_ion">
+    <block len="11">
       <point id="BConStrCt" offset="0" type="uint16" mandatory="true" />
-      <point id="BMaxCellVol" offset="1" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
-      <point id="BMaxCellVolLoc" offset="2" type="uint16" />
-      <point id="BMinCellVol" offset="3" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
-      <point id="BMinCellVolLoc" offset="4" type="uint16" />
-      <point id="BMaxModTmp" offset="5" type="int16" sf="BModTmp_SF" units="" mandatory="true" />
-      <point id="BMaxModTmpLoc" offset="6" type="uint16" />
-      <point id="BMinModTmp" offset="7" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
-      <point id="BMinModTmpLoc" offset="8" type="uint16" />
-      <point id="BMaxStrCur" offset="9" type="int16" sf="BCurrent_SF" units="A" />
-      <point id="BMinStrCur" offset="10" type="int16" sf="BCurrent_SF" units="A" />
-      <point id="BCellVol_SF" offset="11" type="sunssf" mandatory="true" />
-      <point id="BModTmp_SF" offset="12" type="sunssf" mandatory="true" />
-      <point id="BCurrent_SF" offset="13" type="sunssf" mandatory="true" />
-      <point id="StrSoH_SF" offset="14" type="sunssf" />
+      <point id="BMaxModTmp" offset="1" type="int16" sf="BModTmp_SF" units="" mandatory="true" />
+      <point id="BMaxModTmpLoc" offset="2" type="uint16" />
+      <point id="BMinModTmp" offset="3" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
+      <point id="BMinModTmpLoc" offset="4" type="uint16" />
+      <point id="BMaxStrCur" offset="5" type="int16" sf="BCurrent_SF" units="A" />
+      <point id="BMinStrCur" offset="6" type="int16" sf="BCurrent_SF" units="A" />
+      <point id="BCellVol_SF" offset="7" type="sunssf" mandatory="true" />
+      <point id="BModTmp_SF" offset="8" type="sunssf" mandatory="true" />
+      <point id="BCurrent_SF" offset="9" type="sunssf" mandatory="true" />
+      <point id="StrSoH_SF" offset="10" type="sunssf" />
     </block>
-    <block type="repeating" len="16" name="module">
+    <block type="repeating" len="21" name="module">
       <point id="StrModCt" offset="0" type="uint16" mandatory="true" />
       <point id="StrStatus" offset="1" type="bitfield32" mandatory="true">
         <symbol id="STRING_ENABLED">0</symbol>
@@ -84,26 +80,6 @@
       <label>Connected String Count</label>
       <description>Number of strings with contactor closed.</description>
       <notes></notes>
-    </point>
-    <point id="BMaxCellVol">
-      <label>Max Cell Voltage</label>
-      <description>Maximum voltage for all cells in the bank.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="BMaxCellVolLoc">
-      <label>Max Cell Voltage Location</label>
-      <description>Location of the cell with maximum voltage</description>
-      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
-    </point>
-    <point id="BMinCellVol">
-      <label>Min Cell Voltage</label>
-      <description>Minimum voltage for all cells in the bank.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="BMinCellVolLoc">
-      <label>Min Cell Voltage Location</label>
-      <description>Location of the cell with minimum voltage</description>
-      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
     </point>
     <point id="BMaxModTmp">
       <label>Max Module Temp</label>
