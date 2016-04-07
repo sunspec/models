@@ -17,9 +17,9 @@
       <point id="ModMaxCellSoH" offset="11" sf="CellSoH_SF" units="%" type="uint16" mandatory="false" />
       <point id="ModMinCellSoH" offset="12" sf="CellSoH_SF" units="%" type="uint16" mandatory="false" />
       <point id="ModCellSoHLoc" offset="13" type="uint16" mandatory="false" />
-      <point id="ModSN" offset="14" type="string" mandatory="false" />
-      <point id="ModCellBalCt" offset="15" type="string" mandatory="false" />
-      <point id="ModCycCt" offset="16" type="string" mandatory="false" />
+      <point id="ModSN" offset="14" len="32" type="string" mandatory="false" />
+      <point id="ModCellBalCt" offset="15" type="uint16" mandatory="false" />
+      <point id="ModCycCt" offset="16" type="uint16" mandatory="false" />
       <point id="CellVol_SF" offset="17" type="sunssf" mandatory="true" />
       <point id="ModTmp_SF" offset="18" type="sunssf" mandatory="true" />
       <point id="CellSoC_SF" offset="19" type="sunssf" mandatory="false" />
@@ -113,6 +113,18 @@
       <label>Max/Min Cell SOH Loc</label>
       <description>Location of cells with minimum and maximum state of charge.</description>
       <notes>Bit0:Bit7 = Maximum cell number.  Bit8:Bit15 = Minimum cell number.</notes>
+    </point>
+    <point id="ModSN">
+      <label>Serial Number</label>
+      <description>Serial number for the module.</description>
+    </point>
+    <point id="ModCellBalCt">
+      <label>Balanced Cell Count</label>
+      <description>Count of balanced cells in the module.</description>
+    </point>
+    <point id="ModCycCt">
+      <label>Cycle Count</label>
+      <description>Count of cycles executed.</description>
     </point>
     <point id="CellVol_SF">
       <label></label>

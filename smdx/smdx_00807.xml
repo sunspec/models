@@ -65,7 +65,7 @@
       <point id="ModCelVolLoc" offset="7" type="uint16" units="" />
       <point id="ModAnoTmp" offset="8" type="uint16" sf="Tmp_SF" units="C" />
       <point id="ModCatTmp" offset="9" type="uint16" sf="Tmp_SF" units="C" />
-      <point id="ModConStatus" offset="10" type="uint16" units="" >
+      <point id="ModConStatus" offset="10" type="bitfield16" units="" mandatory="false" >
         <symbol id="CONTACTOR_0">0</symbol>
         <symbol id="CONTACTOR_1">1</symbol>
         <symbol id="CONTACTOR_2">2</symbol>
@@ -123,7 +123,7 @@
         <symbol id="Module_GROUND_FAULT">2</symbol>
         <symbol id="OUTSIDE_VOLTAGE_RANGE">3</symbol>
       </point>
-      <point id="ModSetEna" offset="16" access="rw" type="enum16" mandatory="true" >
+      <point id="ModSetEna" offset="16" access="rw" type="enum16" mandatory="false" >
         <symbol id="ENABLE_MODULE">1</symbol>
         <symbol id="DISABLE_MODULE">2</symbol>
       </point>
@@ -286,12 +286,12 @@
       </symbol>
       <symbol id="VOLTAGE_IMBALANCE_WARNING">
         <label>Voltage Imbalance Warning</label>
-        <description>A voltage imbalance exists between the strings in the battery bank.</description>
+        <description>A voltage imbalance exists between the modules in the string.</description>
         <notes></notes>
       </symbol>
       <symbol id="CURRENT_IMBALANCE_WARNING">
         <label>Current Imbalance Warning</label>
-        <description>A current imbalance exists between the strings in the battery bank.</description>
+        <description>A current imbalance exists in the string.</description>
         <notes></notes>
       </symbol>
       <symbol id="CONTACTOR_ERROR">
@@ -606,7 +606,7 @@
       </symbol>
       <symbol id="CURRENT_IMBALANCE_WARNING">
         <label>Current Imbalance Warning</label>
-        <description>A current imbalance exists between the stacks in the module.</description>
+        <description>A current imbalance in the module.</description>
         <notes></notes>
       </symbol>
       <symbol id="CONTACTOR_ERROR">

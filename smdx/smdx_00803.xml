@@ -1,8 +1,8 @@
 <sunSpecModels v="1">
 
   <!-- 803: Lithium-Ion Battery Model -->
-  <model id="803" len="32" name="lithium_ion">
-    <block len="11">
+  <model id="803" len="33" name="lithium_ion_bank">
+    <block len="12">
       <point id="BConStrCt" offset="0" type="uint16" mandatory="true" />
       <point id="BMaxModTmp" offset="1" type="int16" sf="BModTmp_SF" units="" mandatory="true" />
       <point id="BMaxModTmpLoc" offset="2" type="uint16" />
@@ -10,10 +10,11 @@
       <point id="BMinModTmpLoc" offset="4" type="uint16" />
       <point id="BMaxStrCur" offset="5" type="int16" sf="BCurrent_SF" units="A" />
       <point id="BMinStrCur" offset="6" type="int16" sf="BCurrent_SF" units="A" />
-      <point id="BCellVol_SF" offset="7" type="sunssf" mandatory="true" />
-      <point id="BModTmp_SF" offset="8" type="sunssf" mandatory="true" />
-      <point id="BCurrent_SF" offset="9" type="sunssf" mandatory="true" />
-      <point id="StrSoH_SF" offset="10" type="sunssf" />
+      <point id="BCellBalCt" offset="7" type="uint16" mandatory="false" />
+      <point id="BCellVol_SF" offset="8" type="sunssf" mandatory="true" />
+      <point id="BModTmp_SF" offset="9" type="sunssf" mandatory="true" />
+      <point id="BCurrent_SF" offset="10" type="sunssf" mandatory="true" />
+      <point id="StrSoH_SF" offset="11" type="sunssf" />
     </block>
     <block type="repeating" len="21" name="module">
       <point id="StrModCt" offset="0" type="uint16" mandatory="true" />
@@ -64,7 +65,7 @@
         <symbol id="STR_GROUND_FAULT">2</symbol>
         <symbol id="OUTSIDE_VOLTAGE_RANGE">3</symbol>
       </point>
-      <point id="StrSetEna" offset="20" access="rw" type="enum16" mandatory="true">
+      <point id="StrSetEna" offset="20" access="rw" type="enum16" mandatory="false">
         <symbol id="ENABLE_STRING">1</symbol>
         <symbol id="DISABLE_STRING">2</symbol>
       </point>
@@ -72,7 +73,7 @@
   </model>
   <strings id="803" locale="en">
     <model>
-      <label>Lithium-Ion Battery Model</label>
+      <label>Lithium-Ion Battery Bank Model</label>
       <description></description>
       <notes></notes>
     </model>
@@ -110,6 +111,11 @@
       <label>Min String Current</label>
       <description>Minimm current of any string in the bank.</description>
       <notes>Measurement</notes>
+    </point>
+    <point id="BCellBalCt">
+      <label>Battery Cell Balancing Count</label>
+      <description>Total count of cells that are currently being balanced.</description>
+      <notes></notes>
     </point>
     <point id="BCellVol_SF">
       <label></label>
@@ -292,7 +298,7 @@
       </symbol>
       <symbol id="CURRENT_IMBALANCE_WARNING">
         <label>Current Imbalance Warning</label>
-        <description>A current imbalance exists between the modules in the battery string.</description>
+        <description>A current imbalance exists in the battery string.</description>
         <notes></notes>
       </symbol>
       <symbol id="CONTACTOR_ERROR">
