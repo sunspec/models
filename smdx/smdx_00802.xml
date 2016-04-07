@@ -1,7 +1,7 @@
 <sunSpecModels v="1">
   <!-- 802: Battery Base Model -->
-  <model id="802" len="43" name="battery">
-    <block len="43">
+  <model id="802" len="52" name="battery">
+    <block len="52">
       <point id="WHRtg" offset="0" type="uint16" sf="WHRtg_SF" units="Wh" mandatory="true" />
       <point id="WMaxChaRte" offset="1" type="uint16" sf="WMaxChaDisCha_SF" units="W" mandatory="true" />
       <point id="WMaxDisChaRte" offset="2" type="uint16" sf="WMaxChaDisCha_SF" units="W" mandatory="true" />
@@ -21,8 +21,8 @@
         <symbol id="TESTING">7</symbol>
       </point>
       <point id="LocRemCtl" offset="10" type="enum16" mandatory="true" >
-        <symbol id="REMOTE">1</symbol>
-        <symbol id="LOCAL">2</symbol>
+        <symbol id="REMOTE">0</symbol>
+        <symbol id="LOCAL">1</symbol>
       </point>
       <point id="DERHb" offset="11" access="rw" type="uint16" />
       <point id="ControllerHb" offset="12" access="rw" type="uint16" />
@@ -53,63 +53,67 @@
       <point id="Evt1" offset="19" type="bitfield32" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
-        <symbol id="UNDER_TEMP_ALARM">2</symbol>
-        <symbol id="OVER_TEMP_WARNING">3</symbol>
+        <symbol id="OVER_TEMP_WARNING">2</symbol>
+        <symbol id="UNDER_TEMP_ALARM">3</symbol>
         <symbol id="UNDER_TEMP_WARNING">4</symbol>
         <symbol id="OVER_CHARGE_CURRENT_ALARM">5</symbol>
-        <symbol id="OVER_DISCHARGE_CURRENT_ALARM">6</symbol>
-        <symbol id="OVER_CHARGE_CURRENT_WARNING">7</symbol>
+        <symbol id="OVER_CHARGE_CURRENT_WARNING">6</symbol>
+        <symbol id="OVER_DISCHARGE_CURRENT_ALARM">7</symbol>
         <symbol id="OVER_DISCHARGE_CURRENT_WARNING">8</symbol>
-        <symbol id="VOLTAGE_IMBALANCE_WARNING">9</symbol>
-        <symbol id="CURRENT_IMBALANCE_WARNING">10</symbol>
-        <symbol id="OVER_VOLT_ALARM">11</symbol>
-        <symbol id="UNDER_VOLT_ALARM">12</symbol>
-        <symbol id="OVER_VOLT_WARNING">13</symbol>
-        <symbol id="UNDER_VOLT_WARNING">14</symbol>
-        <symbol id="UNDER_SOC_MIN_WARNING">15</symbol>
-        <symbol id="UNDER_SOC_MIN_ALARM">16</symbol>
-        <symbol id="OVER_SOC_MAX_WARNING">17</symbol>
-        <symbol id="OVER_SOC_MAX_ALARM">18</symbol>
+        <symbol id="OVER_VOLT_ALARM">9</symbol>
+        <symbol id="OVER_VOLT_WARNING">10</symbol>
+        <symbol id="UNDER_VOLT_ALARM">11</symbol>
+        <symbol id="UNDER_VOLT_WARNING">12</symbol>
+        <symbol id="UNDER_SOC_MIN_ALARM">13</symbol>
+        <symbol id="UNDER_SOC_MIN_WARNING">14</symbol>
+        <symbol id="OVER_SOC_MAX_ALARM">15</symbol>
+        <symbol id="OVER_SOC_MAX_WARNING">16</symbol>
+        <symbol id="VOLTAGE_IMBALANCE_WARNING">17</symbol>
+        <symbol id="CURRENT_IMBALANCE_WARNING">18</symbol>
         <symbol id="CONTACTOR_ERROR">19</symbol>
         <symbol id="FAN_ERROR">20</symbol>
-        <symbol id="CONTACTOR_STATUS">21</symbol>
-        <symbol id="GROUND_FAULT">22</symbol>
-        <symbol id="OPEN_DOOR_ERROR">23</symbol>
-        <symbol id="OTHER_ALARM">24</symbol>
-        <symbol id="OTHER_WARNING">25</symbol>
+        <symbol id="GROUND_FAULT">21</symbol>
+        <symbol id="OPEN_DOOR_ERROR">22</symbol>
       </point>
       <point id="Evt2" offset="21" type="bitfield32" mandatory="true" />
-      <point id="Vol" offset="23" type="uint16" sf="Vol_SF" units="V" mandatory="true" />
-      <point id="MaxBatVol" offset="24" type="uint16" sf="Vol_SF" units="V" />
-      <point id="MinBatVol" offset="25" type="uint16" sf="Vol_SF" units="V" />
-      <point id="BTotDCCur" offset="26" type="int16" sf="BCurrent_SF" units="A" mandatory="true" />
-      <point id="MaxBatACha" offset="27" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
-      <point id="MaxBatADischa" offset="28" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
-      <point id="BTotWCur" offset="29" type="int16" sf="BatReqW_SF" mandatory="true" />
-      <point id="BatReqPCSSt" offset="30" type="enum16" >
+      <point id="EvtOtherAlarm" offset="23" type="bitfield32" mandatory="true" />
+      <point id="EvtOtherWarning" offset="25" type="bitfield32" mandatory="true" />
+      <point id="Vol" offset="27" type="uint16" sf="Vol_SF" units="V" mandatory="true" />
+      <point id="MaxBatVol" offset="28" type="uint16" sf="Vol_SF" units="V" />
+      <point id="MinBatVol" offset="29" type="uint16" sf="Vol_SF" units="V" />
+      <point id="BMaxCellVol" offset="30" type="uint16" sf="BCellVol_SF" units="V" />
+      <point id="BMaxCellVolLoc" offset="31" type="uint16" />
+      <point id="BMinCellVol" offset="32" type="uint16" sf="BCellVol_SF" units="V" />
+      <point id="BMinCellVolLoc" offset="33" type="uint16" />
+      <point id="BTotDCCur" offset="34" type="int16" sf="BCurrent_SF" units="A" mandatory="true" />
+      <point id="MaxBatACha" offset="35" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
+      <point id="MaxBatADischa" offset="36" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
+      <point id="BTotWCur" offset="37" type="int16" sf="BatReqW_SF" mandatory="true" />
+      <point id="BatReqPCSSt" offset="38" type="enum16" >
         <symbol id="NO REQUEST">0</symbol>
         <symbol id="START">1</symbol>
         <symbol id="STOP">2</symbol>
       </point>
-      <point id="BatReqW" offset="31" type="int16" sf="BatReqW_SF" units="W" />
-      <point id="BSetOperation" offset="32" access="rw" type="enum16" mandatory="true" >
+      <point id="BatReqW" offset="39" type="int16" sf="BatReqW_SF" units="W" />
+      <point id="BSetOperation" offset="40" access="rw" type="enum16" mandatory="true" >
         <symbol id="CONNECT">1</symbol>
         <symbol id="DISCONNECT">2</symbol>
       </point>
-      <point id="BSetPCSState" offset="33" access="rw" type="enum16" mandatory="true" >
+      <point id="BSetPCSState" offset="41" access="rw" type="enum16" mandatory="true" >
         <symbol id="PCS_STOPPED">1</symbol>
         <symbol id="PCS_STANDBY">2</symbol>
         <symbol id="PCS_STARTED">3</symbol>
       </point>
-      <point id="WHRtg_SF" offset="34" type="sunssf" mandatory="true" />
-      <point id="WMaxChaDisCha_SF" offset="35" type="sunssf"  mandatory="true" />
-      <point id="DisChaRte_SF" offset="36" type="sunssf" />
-      <point id="SoC_SF" offset="37" type="sunssf" mandatory="true" />
-      <point id="SoH_SF" offset="38" type="sunssf" />
-      <point id="Vol_SF" offset="39" type="sunssf" mandatory="true" />
-      <point id="BCurrent_SF" offset="40" type="sunssf" mandatory="true" />
-      <point id="MaxBatA_SF" offset="41" type="sunssf" mandatory="true" />
-      <point id="BatReqW_SF" offset="42" type="sunssf" />
+      <point id="WHRtg_SF" offset="42" type="sunssf" mandatory="true" />
+      <point id="WMaxChaDisCha_SF" offset="43" type="sunssf"  mandatory="true" />
+      <point id="DisChaRte_SF" offset="44" type="sunssf" />
+      <point id="SoC_SF" offset="45" type="sunssf" mandatory="true" />
+      <point id="SoH_SF" offset="46" type="sunssf" />
+      <point id="Vol_SF" offset="47" type="sunssf" mandatory="true" />
+      <point id="BCellVol_SF" offset="48" type="sunssf" mandatory="true" />
+      <point id="BCurrent_SF" offset="49" type="sunssf" mandatory="true" />
+      <point id="MaxBatA_SF" offset="50" type="sunssf" mandatory="true" />
+      <point id="BatReqW_SF" offset="51" type="sunssf" />
     </block>
   </model>
   <strings id="802" locale="en">
@@ -342,7 +346,7 @@
       <label>Battery Event 1 Bitfield</label>
       <description>Alarms and warnings.  Bit flags.</description>
       <notes></notes>
-       <symbol id="COMMUNICATION_ERROR">
+      <symbol id="COMMUNICATION_ERROR">
         <label>Communication Error</label>
         <description>Unable to communcate with BMS or BMS is unable to communicate with battery strings.</description>
         <notes></notes>
@@ -352,14 +356,14 @@
         <description>Battery has exceeded maximum operating temperature</description>
         <notes></notes>
       </symbol>
-      <symbol id="UNDER_TEMP_ALARM">
-        <label>Under Temperature Alarm</label>
-        <description>Battery has exceeded minimum operating temperature</description>
-        <notes></notes>
-      </symbol>
       <symbol id="OVER_TEMP_WARNING">
         <label>Over Temperature  Warning</label>
         <description>Battery is approaching maximum operating temperature.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_TEMP_ALARM">
+        <label>Under Temperature Alarm</label>
+        <description>Battery has exceeded minimum operating temperature</description>
         <notes></notes>
       </symbol>
       <symbol id="UNDER_TEMP_WARNING">
@@ -372,20 +376,60 @@
         <description>Battery maximum charge current has been exceeded.</description>
         <notes>See AMaxCha</notes>
       </symbol>
-      <symbol id="OVER_DISCHARGE_CURRENT_ALARM">
-        <label>Over Discharge Current Alarm</label>
-        <description>Battery maximum discharge current has been exceeded.</description>
-        <notes>See AMaxDischa</notes>
-      </symbol>
       <symbol id="OVER_CHARGE_CURRENT_WARNING">
         <label>Over Charge Current Warning</label>
         <description>Approaching battery maximum charge current.</description>
         <notes>See AMaxCha</notes>
       </symbol>
+      <symbol id="OVER_DISCHARGE_CURRENT_ALARM">
+        <label>Over Discharge Current Alarm</label>
+        <description>Battery maximum discharge current has been exceeded.</description>
+        <notes>See AMaxDischa</notes>
+      </symbol>
       <symbol id="OVER_DISCHARGE_CURRENT_WARNING">
         <label>Over Discharge Current Warning</label>
         <description>Approaching battery maximum discharge current.</description>
         <notes>See AMaxDischa</notes>
+      </symbol>
+      <symbol id="OVER_VOLT_ALARM">
+        <label>Over Voltage Alarm</label>
+        <description>Battery voltage has exceeded maximum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_VOLT_WARNING">
+        <label>Over Voltage Warning</label>
+        <description>Battery voltage is approaching maximum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_VOLT_ALARM">
+        <label>Under Voltage Alarm</label>
+        <description>Battery voltage has exceeded minimum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_VOLT_WARNING">
+        <label>Under Voltage Warning</label>
+        <description>Battery voltage is approaching minimum limit.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_SOC_MIN_ALARM">
+        <label>Under State of Charge Minimum Alarm</label>
+        <description>Battery state of charge has reached or exceeded SoCNpMinPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_SOC_MIN_WARNING">
+        <label>Under State of Charge Minimum Warning</label>
+        <description>Battery state of charge is approaching SoCNpMinPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_SOC_MAX_ALARM">
+        <label>Over State of Charge Maximum Warning</label>
+        <description>Battery state of charge has reached or exceeded SocNpMaxPct</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_SOC_MAX_WARNING">
+        <label>Over State of Charge Maximum Warning</label>
+        <description>Battery state of charge is approaching SoCNpMaxPct</description>
+        <notes></notes>
       </symbol>
       <symbol id="VOLTAGE_IMBALANCE_WARNING">
         <label>Voltage Imbalance Warning</label>
@@ -395,46 +439,6 @@
       <symbol id="CURRENT_IMBALANCE_WARNING">
         <label>Current Imbalance Warning</label>
         <description>A current imbalance exists between the strings in the battery bank.</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="OVER_VOLT_ALARM">
-        <label>Over Voltage Alarm</label>
-        <description>Battery voltage has exceeded maximum limit.</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="UNDER_VOLT_ALARM">
-        <label>Under Voltage Alarm</label>
-        <description>Battery voltage has exceeded minimum limit.</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="OVER_VOLT_WARNING">
-        <label>Over Voltage Warning</label>
-        <description>Battery voltage is approaching maximum limit.</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="UNDER_VOLT_WARNING">
-        <label>Under Voltage Warning</label>
-        <description>Battery voltage is approaching minimum limit.</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="UNDER_SOC_MIN_WARNING">
-        <label>Under State of Charge Minimum Warning</label>
-        <description>Battery state of charge is approaching SoCNpMinPct</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="UNDER_SOC_MIN_ALARM">
-        <label>Under State of Charge Minimum Alarm</label>
-        <description>Battery state of charge has reached or exceeded SoCNpMinPct</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="OVER_SOC_MAX_WARNING">
-        <label>Over State of Charge Maximum Warning</label>
-        <description>Battery state of charge is approaching SoCNpMaxPct</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="OVER_SOC_MAX_ALARM">
-        <label>Over State of Charge Maximum Warning</label>
-        <description>Battery state of charge has reached or exceeded SocNpMaxPct</description>
         <notes></notes>
       </symbol>
       <symbol id="CONTACTOR_ERROR">
@@ -447,11 +451,6 @@
         <description>One or more battery fans has failed.</description>
         <notes></notes>
       </symbol>
-      <symbol id="CONTACTOR_STATUS">
-        <label>Contactor Status</label>
-        <description>String contactor is closed.</description>
-        <notes></notes>
-      </symbol>
       <symbol id="GROUND_FAULT">
         <label>Ground Fault Error</label>
         <description>Ground fault detected.</description>
@@ -459,17 +458,7 @@
       </symbol>
       <symbol id="OPEN_DOOR_ERROR">
         <label>Open Door Error</label>
-        <description>One or more door are open.</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="OTHER_ALARM">
-        <label>Other Battery Alarm</label>
-        <description>For manufacturer-specific alarms.</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="OTHER_WARNING">
-        <label>Other Battery Warning</label>
-        <description>For manufacturer-specific warnings.</description>
+        <description>One or more doors are open.</description>
         <notes></notes>
       </symbol>
     </point>
@@ -477,6 +466,16 @@
       <label>Battery Event 2 Bitfield</label>
       <description>Alarms and warnings.  Bit flags.</description>
       <notes>Reserved for future use.</notes>
+    </point>
+    <point id="EvtOtherAlarm">
+      <label>Other Alarm Events</label>
+      <description>Other alarms.  Bit flags.</description>
+      <notes>Bits are vendor specific and not defined by MESA.</notes>
+    </point>
+    <point id="EvtOtherWarning">
+      <label>Other Warning Events</label>
+      <description>Other warnings.  Bit flags.</description>
+      <notes>Bits are vendor specific and not defined here.</notes>
     </point>
     <point id="Vol">
       <label>External Battery Voltage</label>
@@ -492,6 +491,26 @@
       <label>Min Battery Voltage</label>
       <description>Instantaneous minimum battery voltage.</description>
       <notes></notes>
+    </point>
+    <point id="BMaxCellVol">
+      <label>Max Cell Voltage</label>
+      <description>Maximum voltage for all cells in the bank.</description>
+      <notes>Measurement</notes>
+    </point>
+    <point id="BMaxCellVolLoc">
+      <label>Max Cell Voltage Location</label>
+      <description>Location of the cell with maximum voltage</description>
+      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
+    </point>
+    <point id="BMinCellVol">
+      <label>Min Cell Voltage</label>
+      <description>Minimum voltage for all cells in the bank.</description>
+      <notes>Measurement</notes>
+    </point>
+    <point id="BMinCellVolLoc">
+      <label>Min Cell Voltage Location</label>
+      <description>Location of the cell with minimum voltage</description>
+      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
     </point>
     <point id="BTotDCCur">
       <label>Total DC Current</label>
@@ -606,6 +625,11 @@
     <point id="Vol_SF">
       <label></label>
       <description>Scale factor for DC Bus Voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="BCellVol_SF">
+      <label></label>
+      <description>Scale factor for cell voltage.</description>
       <notes></notes>
     </point>
     <point id="BCurrent_SF">
