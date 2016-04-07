@@ -1,7 +1,7 @@
 <sunSpecModels v="1">
   <!-- 802: Battery Base Model -->
-  <model id="802" len="52" name="battery">
-    <block len="52">
+  <model id="802" len="54" name="battery">
+    <block len="54">
       <point id="WHRtg" offset="0" type="uint16" sf="WHRtg_SF" units="Wh" mandatory="true" />
       <point id="WMaxChaRte" offset="1" type="uint16" sf="WMaxChaDisCha_SF" units="W" mandatory="true" />
       <point id="WMaxDisChaRte" offset="2" type="uint16" sf="WMaxChaDisCha_SF" units="W" mandatory="true" />
@@ -21,12 +21,12 @@
         <symbol id="TESTING">7</symbol>
       </point>
       <point id="LocRemCtl" offset="10" type="enum16" mandatory="true" >
-        <symbol id="REMOTE">0</symbol>
-        <symbol id="LOCAL">1</symbol>
+        <symbol id="REMOTE">1</symbol>
+        <symbol id="LOCAL">2</symbol>
       </point>
-      <point id="DERHb" offset="11" access="rw" type="uint16" />
+      <point id="Hb" offset="11" access="rw" type="uint16" />
       <point id="ControllerHb" offset="12" access="rw" type="uint16" />
-      <point id="DERAlarmReset" offset="13" type="uint16" />
+      <point id="AlarmReset" offset="13" type="uint16" />
       <point id="BatTyp" offset="14" type="enum16" mandatory="true" >
         <symbol id="NOT APPLICABLE_UNKNOWN">0</symbol>
         <symbol id="LEAD_ACID">1</symbol>
@@ -50,7 +50,8 @@
       </point>
       <point id="CycleCt" offset="16" type="uint32" />
       <point id="SoH" offset="18" type="uint16" sf="SoH_SF" units="%" />
-      <point id="Evt1" offset="19" type="bitfield32" mandatory="true" >
+      <point id="WarrantyDate" offset="19" type="uint32" mandatory="false" />
+      <point id="Evt1" offset="21" type="bitfield32" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="OVER_TEMP_WARNING">2</symbol>
@@ -75,45 +76,45 @@
         <symbol id="GROUND_FAULT">21</symbol>
         <symbol id="OPEN_DOOR_ERROR">22</symbol>
       </point>
-      <point id="Evt2" offset="21" type="bitfield32" mandatory="true" />
-      <point id="EvtOtherAlarm" offset="23" type="bitfield32" mandatory="true" />
-      <point id="EvtOtherWarning" offset="25" type="bitfield32" mandatory="true" />
-      <point id="Vol" offset="27" type="uint16" sf="Vol_SF" units="V" mandatory="true" />
-      <point id="MaxBatVol" offset="28" type="uint16" sf="Vol_SF" units="V" />
-      <point id="MinBatVol" offset="29" type="uint16" sf="Vol_SF" units="V" />
-      <point id="BMaxCellVol" offset="30" type="uint16" sf="BCellVol_SF" units="V" />
-      <point id="BMaxCellVolLoc" offset="31" type="uint16" />
-      <point id="BMinCellVol" offset="32" type="uint16" sf="BCellVol_SF" units="V" />
-      <point id="BMinCellVolLoc" offset="33" type="uint16" />
-      <point id="BTotDCCur" offset="34" type="int16" sf="BCurrent_SF" units="A" mandatory="true" />
-      <point id="MaxBatACha" offset="35" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
-      <point id="MaxBatADischa" offset="36" type="uint16" sf="MaxBatA_SF" units="A" mandatory="true" />
-      <point id="BTotWCur" offset="37" type="int16" sf="BatReqW_SF" mandatory="true" />
-      <point id="BatReqPCSSt" offset="38" type="enum16" >
+      <point id="Evt2" offset="23" type="bitfield32" mandatory="true" />
+      <point id="EvtOtherAlarm" offset="25" type="bitfield32" mandatory="true" />
+      <point id="EvtOtherWarning" offset="27" type="bitfield32" mandatory="true" />
+      <point id="Vol" offset="29" type="uint16" sf="Vol_SF" units="V" mandatory="true" />
+      <point id="MaxBatVol" offset="30" type="uint16" sf="Vol_SF" units="V" />
+      <point id="MinBatVol" offset="31" type="uint16" sf="Vol_SF" units="V" />
+      <point id="BMaxCellVol" offset="32" type="uint16" sf="BCellVol_SF" units="V" />
+      <point id="BMaxCellVolLoc" offset="33" type="uint16" />
+      <point id="BMinCellVol" offset="34" type="uint16" sf="BCellVol_SF" units="V" />
+      <point id="BMinCellVolLoc" offset="35" type="uint16" />
+      <point id="BTotDCCur" offset="36" type="int16" sf="BCurrent_SF" units="A" mandatory="true" />
+      <point id="MaxBatACha" offset="37" type="uint16" sf="MaxBatA_SF" units="A" mandatory="false" />
+      <point id="MaxBatADischa" offset="38" type="uint16" sf="MaxBatA_SF" units="A" mandatory="false" />
+      <point id="BTotWCur" offset="39" type="int16" sf="W_SF" mandatory="true" />
+      <point id="BatReqPCSSt" offset="40" type="enum16" >
         <symbol id="NO REQUEST">0</symbol>
         <symbol id="START">1</symbol>
         <symbol id="STOP">2</symbol>
       </point>
-      <point id="BatReqW" offset="39" type="int16" sf="BatReqW_SF" units="W" />
-      <point id="BSetOperation" offset="40" access="rw" type="enum16" mandatory="true" >
+      <point id="BatReqW" offset="41" type="int16" sf="W_SF" units="W" />
+      <point id="BSetOperation" offset="42" access="rw" type="enum16" mandatory="true" >
         <symbol id="CONNECT">1</symbol>
         <symbol id="DISCONNECT">2</symbol>
       </point>
-      <point id="BSetPCSState" offset="41" access="rw" type="enum16" mandatory="true" >
+      <point id="BSetPCSState" offset="43" access="rw" type="enum16" mandatory="true" >
         <symbol id="PCS_STOPPED">1</symbol>
         <symbol id="PCS_STANDBY">2</symbol>
         <symbol id="PCS_STARTED">3</symbol>
       </point>
-      <point id="WHRtg_SF" offset="42" type="sunssf" mandatory="true" />
-      <point id="WMaxChaDisCha_SF" offset="43" type="sunssf"  mandatory="true" />
-      <point id="DisChaRte_SF" offset="44" type="sunssf" />
-      <point id="SoC_SF" offset="45" type="sunssf" mandatory="true" />
-      <point id="SoH_SF" offset="46" type="sunssf" />
-      <point id="Vol_SF" offset="47" type="sunssf" mandatory="true" />
-      <point id="BCellVol_SF" offset="48" type="sunssf" mandatory="true" />
-      <point id="BCurrent_SF" offset="49" type="sunssf" mandatory="true" />
-      <point id="MaxBatA_SF" offset="50" type="sunssf" mandatory="true" />
-      <point id="BatReqW_SF" offset="51" type="sunssf" />
+      <point id="WHRtg_SF" offset="44" type="sunssf" mandatory="true" />
+      <point id="WMaxChaDisCha_SF" offset="45" type="sunssf"  mandatory="true" />
+      <point id="DisChaRte_SF" offset="46" type="sunssf" />
+      <point id="SoC_SF" offset="47" type="sunssf" mandatory="true" />
+      <point id="SoH_SF" offset="48" type="sunssf" />
+      <point id="Vol_SF" offset="49" type="sunssf" mandatory="true" />
+      <point id="BCellVol_SF" offset="50" type="sunssf" mandatory="true" />
+      <point id="BCurrent_SF" offset="51" type="sunssf" mandatory="true" />
+      <point id="MaxBatA_SF" offset="52" type="sunssf" mandatory="true" />
+      <point id="W_SF" offset="53" type="sunssf" />
     </block>
   </model>
   <strings id="802" locale="en">
@@ -222,8 +223,8 @@
         <notes>Value of 1 matches LocRemCtl in 61850.</notes>
       </symbol>
     </point>
-    <point id="DERHb">
-      <label>Distributed Energy Resource Heartbeat</label>
+    <point id="Hb">
+      <label>Battery Heartbeat</label>
       <description>Value is incremented every second with periodic resets to zero.</description>
       <notes></notes>
     </point>
@@ -232,10 +233,10 @@
       <description>Value is incremented every second with periodic resets to zero.</description>
       <notes></notes>
     </point>
-    <point id="DERAlarmReset">
+    <point id="AlarmReset">
       <label>Alarm Reset</label>
       <description>Used to reset any latched alarms.  1 = Reset.</description>
-      <notes></notes>
+      <notes>Battery should reset to 0 when reset is complete.</notes>
     </point>
     <point id="BatTyp">
       <label>Battery Type</label>
@@ -341,6 +342,11 @@
       <label>State of Health</label>
       <description>Percentage of battery life remaining.</description>
       <notes></notes>
+     </point>
+    <point id="WarrantyDate">
+      <label>Warranty Date</label>
+      <description>Date the device warranty expires.</description>
+      <notes>Number of days since 1/1/2000.</notes>
      </point>
     <point id="Evt1">
       <label>Battery Event 1 Bitfield</label>
@@ -485,12 +491,12 @@
     <point id="MaxBatVol">
       <label>Max Battery Voltage</label>
       <description>Instantaneous maximum battery voltage.</description>
-      <notes></notes>
+      <notes>If not implemented, must implement MaxBatACha and MaxBatADischa.</notes>
     </point>
     <point id="MinBatVol">
       <label>Min Battery Voltage</label>
       <description>Instantaneous minimum battery voltage.</description>
-      <notes></notes>
+      <notes>If not implemented, must implement MaxBatACha and MaxBatADischa.</notes>
     </point>
     <point id="BMaxCellVol">
       <label>Max Cell Voltage</label>
@@ -520,12 +526,12 @@
     <point id="MaxBatACha">
       <label>Max Charge Current</label>
       <description>Instantaneous maximum DC charge current.</description>
-      <notes>Calculation. Nearly maps to ZBAT.MaxBatA.</notes>
+      <notes>Calculation. If not implemented, must implement MaxBatVol and MinBatVol.</notes>
     </point>
     <point id="MaxBatADischa">
       <label>Max Discharge Current</label>
       <description>Instantaneous maximum DC discharge current.</description>
-      <notes>Calculation. Nearly maps to ZBAT.MaxBatA.</notes>
+      <notes>Calculation. If not implemented, must implement MaxBatVol and MinBatVol.</notes>
     </point>
     <point id="BTotWCur">
       <label>Total Power</label>
@@ -642,7 +648,7 @@
       <description>Scale factor for instantationous DC charge/discharge current.</description>
       <notes></notes>
     </point>
-    <point id="BatReqW_SF">
+    <point id="W_SF">
       <label></label>
       <description>Scale factor for AC power request.</description>
       <notes></notes>
