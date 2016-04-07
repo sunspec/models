@@ -21,8 +21,8 @@
         <symbol id="TESTING">7</symbol>
       </point>
       <point id="LocRemCtl" offset="10" type="enum16" mandatory="true" >
-        <symbol id="REMOTE">1</symbol>
-        <symbol id="LOCAL">2</symbol>
+        <symbol id="REMOTE">0</symbol>
+        <symbol id="LOCAL">1</symbol>
       </point>
       <point id="DERHb" offset="11" access="rw" type="uint16" />
       <point id="ControllerHb" offset="12" access="rw" type="uint16" />
