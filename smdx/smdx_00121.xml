@@ -12,7 +12,7 @@
       <point id="VArMaxQ2" offset="7" access="rw" type="int16" len="1" mandatory="false" units="var" sf="VArMax_SF"/>
       <point id="VArMaxQ3" offset="8" access="rw" type="int16" len="1" mandatory="false" units="var" sf="VArMax_SF"/>
       <point id="VArMaxQ4" offset="9" access="rw" type="int16" len="1" mandatory="false" units="var" sf="VArMax_SF"/>
-      <point id="WGra" offset="10" access="rw" type="uint16" len="1" mandatory="false" units="% WMax/min" sf="WGra_SF"/>
+      <point id="WGra" offset="10" access="rw" type="uint16" len="1" mandatory="false" units="% WMax/sec" sf="WGra_SF"/>
       <point id="PFMinQ1" offset="11" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
       <point id="PFMinQ2" offset="12" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
       <point id="PFMinQ3" offset="13" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
