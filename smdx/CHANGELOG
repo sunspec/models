@@ -58,3 +58,6 @@ Models moved to SunSpec models repository
 
 2016 February 4: Bob Fox SunSpec. Removed scale factor definition from DeptRef definition in model 126.
 
+2016 April 20: Bob Fox, SunSpec. Corrected model length to the convention of fixed block + one repeating block.
+
+2016 April 20: Bob Fox SunSpec. Corrected units for model 121 WGra to be per second rather per minute to be consistent with previous correction to IEC 61850-7-420.
