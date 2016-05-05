@@ -64,10 +64,17 @@
         <symbol id="BUTTON_PUSHED">1</symbol>
         <symbol id="STR_GROUND_FAULT">2</symbol>
         <symbol id="OUTSIDE_VOLTAGE_RANGE">3</symbol>
+        <symbol id="STRING_NOT_ENABLED">4</symbol>
+        <symbol id="FUSE_OPEN">5</symbol>
+        <symbol id="CONTACTOR_FAILURE">6</symbol>
       </point>
       <point id="StrSetEna" offset="20" access="rw" type="enum16" mandatory="false">
         <symbol id="ENABLE_STRING">1</symbol>
         <symbol id="DISABLE_STRING">2</symbol>
+      </point>
+      <point id="StrSetCon" offset="21" access="rw" type="enum16" mandatory="false">
+        <symbol id="CONNECT_STRING">1</symbol>
+        <symbol id="DISCONNECT_STRING">2</symbol>
       </point>
     </block>
   </model>
@@ -361,6 +368,21 @@
         <description>Outside voltage target window during auto-connect.</description>
         <notes></notes>
       </symbol>
+      <symbol id="STRING_NOT_ENABLED">
+        <label>String Not Enabled</label>
+        <description>The string is not enabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FUSE_OPEN">
+        <label>Fuse Open</label>
+        <description>A fuse is open which prevents connection.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_FAILURE">
+        <label>Contactor Failure</label>
+        <description>A contactor failed to operate.</description>
+        <notes></notes>
+      </symbol>
     </point>
     <point id="StrSetEna">
       <label>Enable/Disable String</label>
@@ -374,6 +396,21 @@
       <symbol id="DISABLE_STRING">
         <label>Disable String</label>
         <description>Disable the string.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="StrSetCon">
+      <label>Connect/Disconnect String</label>
+      <description>Connects and disconnects the string.  Should reset to 0 upon completion.</description>
+      <notes></notes>
+      <symbol id="CONNECT_STRING">
+        <label>Connect String</label>
+        <description>Connect the string.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DISCONNECT_STRING">
+        <label>Disconnect String</label>
+        <description>Disconnect the string.</description>
         <notes></notes>
       </symbol>
     </point>

@@ -54,7 +54,7 @@
       <point id="CellVol_SF" offset="21" type="sunssf" mandatory="true" />
       <point id="Tmp_SF" offset="22" type="sunssf" mandatory="true" />
     </block>
-    <block type="repeating" len="17" name="module">
+    <block type="repeating" len="18" name="module">
       <point id="ModID" offset="0" type="uint16" mandatory="true" />
       <point id="ModStackCt" offset="1" type="uint16" units="" mandatory="true" />
       <point id="ModSoC" offset="2" type="uint16" units="%" mandatory="true" />
@@ -120,12 +120,19 @@
       <point id="ModConFail" offset="15" type="enum16" mandatory="true" >
         <symbol id="NO_FAILURE">0</symbol>
         <symbol id="BUTTON_PUSHED">1</symbol>
-        <symbol id="Module_GROUND_FAULT">2</symbol>
+        <symbol id="MODULE_GROUND_FAULT">2</symbol>
         <symbol id="OUTSIDE_VOLTAGE_RANGE">3</symbol>
+        <symbol id="MODULE_NOT_ENABLED">4</symbol>
+        <symbol id="FUSE_OPEN">5</symbol>
+        <symbol id="CONTACTOR_FAILURE">6</symbol>
       </point>
       <point id="ModSetEna" offset="16" access="rw" type="enum16" mandatory="false" >
         <symbol id="ENABLE_MODULE">1</symbol>
         <symbol id="DISABLE_MODULE">2</symbol>
+      </point>
+      <point id="ModSetCon" offset="17" access="rw" type="enum16" mandatory="false">
+        <symbol id="CONNECT_MODULE">1</symbol>
+        <symbol id="DISCONNECT_MODULE">2</symbol>
       </point>
     </block>
   </model>
@@ -684,7 +691,7 @@
         <description>A button was pushed which prevented connection.</description>
         <notes></notes>
       </symbol>
-      <symbol id="Module_GROUND_FAULT">
+      <symbol id="MODULE_GROUND_FAULT">
         <label>Ground Fault</label>
         <description>Ground fault during auto-connect.</description>
         <notes></notes>
@@ -694,19 +701,49 @@
         <description>Outside voltage target window during auto-connect.</description>
         <notes></notes>
       </symbol>
+      <symbol id="MODULE_NOT_ENABLED">
+        <label>Module  Not Enabled</label>
+        <description>The module is not enabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FUSE_OPEN">
+        <label>Fuse Open</label>
+        <description>A fuse is open which prevents connection.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_FAILURE">
+        <label>Contactor Failure</label>
+        <description>A contactor failed to operate.</description>
+        <notes></notes>
+      </symbol>
     </point>
     <point id="ModSetEna">
-      <label>Enable/Disable MOdUle</label>
+      <label>Enable/Disable Module</label>
       <description>Enables and disables the module.  Should reset to 0 upon completion.</description>
       <notes></notes>
       <symbol id="ENABLE_MODULE">
-        <label>Enable MOdUle</label>
+        <label>Enable Module</label>
         <description>Enable the module.</description>
         <notes></notes>
       </symbol>
       <symbol id="DISABLE_MODULE">
-        <label>Disable MOdUle</label>
+        <label>Disable Module</label>
         <description>Disable the module.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="ModSetCon">
+      <label>Connect/Disconnect Module </label>
+      <description>Connects and disconnects the module.  Should reset to 0 upon completion.</description>
+      <notes></notes>
+      <symbol id="CONNECT_MODULE">
+        <label>Connect Module</label>
+        <description>Connect the module.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DISCONNECT_MODULE">
+        <label>Disconnect Module</label>
+        <description>Disconnect the module.</description>
         <notes></notes>
       </symbol>
     </point>

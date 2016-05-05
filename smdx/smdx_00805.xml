@@ -28,7 +28,7 @@
     </block>
     <block type="repeating" len="4" name="lithium-ion-module-cell">
       <point id="CellVol" offset="0" sf="CellVol_SF" units="V" type="uint16" mandatory="true" />
-      <point id="CellSoC" offset="1" sf="CellSoC_SF" units="%" type="uint16" mandatory="true" />
+      <point id="CellSoC" offset="1" sf="CellSoC_SF" units="%" type="uint16" mandatory="false" />
       <point id="CellSoH" offset="2" sf="CellSoH_SF" units="%" type="uint16" mandatory="false" />
       <point id="CellTmp" offset="3" sf="ModTmp_SF" units="C" type="int16" mandatory="true" />
     </block>
