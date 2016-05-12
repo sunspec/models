@@ -54,18 +54,22 @@
       <point id="CellVol_SF" offset="21" type="sunssf" mandatory="true" />
       <point id="Tmp_SF" offset="22" type="sunssf" mandatory="true" />
     </block>
-    <block type="repeating" len="18" name="module">
+    <block type="repeating" len="20" name="module">
       <point id="ModID" offset="0" type="uint16" mandatory="true" />
       <point id="ModStackCt" offset="1" type="uint16" units="" mandatory="true" />
-      <point id="ModSoC" offset="2" type="uint16" units="%" mandatory="true" />
-      <point id="ModOCV" offset="3" type="uint16" units="V" mandatory="true" />
-      <point id="ModVol" offset="4" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
-      <point id="ModMaxCellVol" offset="5" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
-      <point id="ModMinCellVol" offset="6" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
-      <point id="ModCelVolLoc" offset="7" type="uint16" units="" />
-      <point id="ModAnoTmp" offset="8" type="uint16" sf="Tmp_SF" units="C" />
-      <point id="ModCatTmp" offset="9" type="uint16" sf="Tmp_SF" units="C" />
-      <point id="ModConStatus" offset="10" type="bitfield16" units="" mandatory="false" >
+      <point id="ModStatus" offset="2" type="bitfield32" mandatory="true">
+        <symbol id="MODULE_ENABLED">0</symbol>
+        <symbol id="CONTACTOR_STATUS">1</symbol>
+      </point>
+      <point id="ModSoC" offset="3" type="uint16" units="%" mandatory="true" />
+      <point id="ModOCV" offset="4" type="uint16" units="V" mandatory="true" />
+      <point id="ModVol" offset="5" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="ModMaxCellVol" offset="6" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="ModMinCellVol" offset="7" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="ModCelVolLoc" offset="8" type="uint16" units="" />
+      <point id="ModAnoTmp" offset="9" type="uint16" sf="Tmp_SF" units="C" />
+      <point id="ModCatTmp" offset="10" type="uint16" sf="Tmp_SF" units="C" />
+      <point id="ModConStatus" offset="11" type="bitfield32" units="" mandatory="false" >
         <symbol id="CONTACTOR_0">0</symbol>
         <symbol id="CONTACTOR_1">1</symbol>
         <symbol id="CONTACTOR_2">2</symbol>
@@ -82,8 +86,23 @@
         <symbol id="CONTACTOR_13">13</symbol>
         <symbol id="CONTACTOR_14">14</symbol>
         <symbol id="CONTACTOR_15">15</symbol>
+        <symbol id="CONTACTOR_16">16</symbol>
+        <symbol id="CONTACTOR_17">17</symbol>
+        <symbol id="CONTACTOR_18">18</symbol>
+        <symbol id="CONTACTOR_19">19</symbol>
+        <symbol id="CONTACTOR_20">20</symbol>
+        <symbol id="CONTACTOR_21">21</symbol>
+        <symbol id="CONTACTOR_22">22</symbol>
+        <symbol id="CONTACTOR_23">23</symbol>
+        <symbol id="CONTACTOR_24">24</symbol>
+        <symbol id="CONTACTOR_25">25</symbol>
+        <symbol id="CONTACTOR_26">26</symbol>
+        <symbol id="CONTACTOR_27">27</symbol>
+        <symbol id="CONTACTOR_28">28</symbol>
+        <symbol id="CONTACTOR_29">29</symbol>
+        <symbol id="CONTACTOR_30">30</symbol>
       </point>
-      <point id="ModEvt1" offset="11" type="bitfield32" mandatory="true" >
+      <point id="ModEvt1" offset="13" type="bitfield32" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="OVER_TEMP_WARNING">2</symbol>
@@ -115,9 +134,9 @@
         <symbol id="LOW_FLOW_ALARM">28</symbol>
         <symbol id="LOW_FLOW_WARNING">29</symbol>
       </point>
-      <point id="ModEvt2" offset="13" type="bitfield32" mandatory="true" >
+      <point id="ModEvt2" offset="15" type="bitfield32" mandatory="true" >
       </point>
-      <point id="ModConFail" offset="15" type="enum16" mandatory="true" >
+      <point id="ModConFail" offset="17" type="enum16" mandatory="true" >
         <symbol id="NO_FAILURE">0</symbol>
         <symbol id="BUTTON_PUSHED">1</symbol>
         <symbol id="MODULE_GROUND_FAULT">2</symbol>
@@ -126,11 +145,11 @@
         <symbol id="FUSE_OPEN">5</symbol>
         <symbol id="CONTACTOR_FAILURE">6</symbol>
       </point>
-      <point id="ModSetEna" offset="16" access="rw" type="enum16" mandatory="false" >
+      <point id="ModSetEna" offset="19" access="rw" type="enum16" mandatory="false" >
         <symbol id="ENABLE_MODULE">1</symbol>
         <symbol id="DISABLE_MODULE">2</symbol>
       </point>
-      <point id="ModSetCon" offset="17" access="rw" type="enum16" mandatory="false">
+      <point id="ModSetCon" offset="20" access="rw" type="enum16" mandatory="false">
         <symbol id="CONNECT_MODULE">1</symbol>
         <symbol id="DISCONNECT_MODULE">2</symbol>
       </point>
@@ -387,11 +406,26 @@
       <description>Unique ID of the module.</description>
       <notes></notes>
     </point>      
-    <point id="StkCt">
+    <point id="ModStackCt">
       <label>Stack Count</label>
       <description>Number of stacks in this module.</description>
       <notes></notes>
     </point>      
+    <point id="ModStatus">
+      <label>Module Status</label>
+      <description>Current status of the module.</description>
+      <notes></notes>
+      <symbol id="MODULE_ENABLED">
+        <label>Module Is Enabled</label>
+        <description>Module is enabled and will connect next time battery is asked to connect.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_STATUS">
+        <label>Contactor Status</label>
+        <description>Module contactor is closed.</description>
+        <notes></notes>
+      </symbol>
+    </point>
     <point id="ModSoC">
       <label>State of Charge</label>
       <description>State of charge for this module.</description>
@@ -513,6 +547,81 @@
       </symbol>
       <symbol id="CONTACTOR_15">
         <label>Contactor 15 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_16">
+        <label>Contactor 16 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_17">
+        <label>Contactor 17 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_18">
+        <label>Contactor 18 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_19">
+        <label>Contactor 19 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_20">
+        <label>Contactor 20 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_21">
+        <label>Contactor 21 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_22">
+        <label>Contactor 22 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_23">
+        <label>Contactor 23 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_24">
+        <label>Contactor 24 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_25">
+        <label>Contactor 25 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_26">
+        <label>Contactor 26 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_27">
+        <label>Contactor 27 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_28">
+        <label>Contactor 28 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_29">
+        <label>Contactor 29 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_30">
+        <label>Contactor 30 Closed</label>
         <description></description>
         <notes></notes>
       </symbol>
