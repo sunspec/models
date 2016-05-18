@@ -34,11 +34,11 @@
         <symbol id="OVER_SOC_MAX_ALARM">15</symbol>
         <symbol id="OVER_SOC_MAX_WARNING">16</symbol>
         <symbol id="VOLTAGE_IMBALANCE_WARNING">17</symbol>
-        <symbol id="CURRENT_IMBALANCE_WARNING">18</symbol>
-        <symbol id="CONTACTOR_ERROR">19</symbol>
-        <symbol id="FAN_ERROR">20</symbol>
-        <symbol id="GROUND_FAULT">21</symbol>
-        <symbol id="OPEN_DOOR_ERROR">22</symbol>
+        <symbol id="CONTACTOR_ERROR">18</symbol>
+        <symbol id="FAN_ERROR">19</symbol>
+        <symbol id="GROUND_FAULT">20</symbol>
+        <symbol id="OPEN_DOOR_ERROR">21</symbol>
+        <!-- Purposefully ommitted: Avoids conflict with CURRENT_IMBALANCE_WARNING in 802 -->?
         <symbol id="FIRE_ALARM">23</symbol>
         <symbol id="LEAK_ALARM">24</symbol>
         <symbol id="PUMP_ALARM">25</symbol>
@@ -121,11 +121,11 @@
         <symbol id="OVER_SOC_MAX_ALARM">15</symbol>
         <symbol id="OVER_SOC_MAX_WARNING">16</symbol>
         <symbol id="VOLTAGE_IMBALANCE_WARNING">17</symbol>
-        <symbol id="CURRENT_IMBALANCE_WARNING">18</symbol>
-        <symbol id="CONTACTOR_ERROR">19</symbol>
-        <symbol id="FAN_ERROR">20</symbol>
-        <symbol id="GROUND_FAULT">21</symbol>
-        <symbol id="OPEN_DOOR_ERROR">22</symbol>
+        <symbol id="CONTACTOR_ERROR">18</symbol>
+        <symbol id="FAN_ERROR">19</symbol>
+        <symbol id="GROUND_FAULT">20</symbol>
+        <symbol id="OPEN_DOOR_ERROR">21</symbol>
+        <!-- Purposefully ommitted: Avoids conflict with CURRENT_IMBALANCE_WARNING in 802 -->?
         <symbol id="FIRE_ALARM">23</symbol>
         <symbol id="LEAK_ALARM">24</symbol>
         <symbol id="PUMP_ALARM">25</symbol>
@@ -313,11 +313,6 @@
       <symbol id="VOLTAGE_IMBALANCE_WARNING">
         <label>Voltage Imbalance Warning</label>
         <description>A voltage imbalance exists between the modules in the string.</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="CURRENT_IMBALANCE_WARNING">
-        <label>Current Imbalance Warning</label>
-        <description>A current imbalance exists in the string.</description>
         <notes></notes>
       </symbol>
       <symbol id="CONTACTOR_ERROR">
@@ -718,11 +713,6 @@
       <symbol id="VOLTAGE_IMBALANCE_WARNING">
         <label>Voltage Imbalance Warning</label>
         <description>A voltage imbalance exists between the stacks in the module.</description>
-        <notes></notes>
-      </symbol>
-      <symbol id="CURRENT_IMBALANCE_WARNING">
-        <label>Current Imbalance Warning</label>
-        <description>A current imbalance in the module.</description>
         <notes></notes>
       </symbol>
       <symbol id="CONTACTOR_ERROR">

@@ -70,11 +70,11 @@
         <symbol id="OVER_SOC_MAX_ALARM">15</symbol>
         <symbol id="OVER_SOC_MAX_WARNING">16</symbol>
         <symbol id="VOLTAGE_IMBALANCE_WARNING">17</symbol>
-        <symbol id="CURRENT_IMBALANCE_WARNING">18</symbol>
-        <symbol id="CONTACTOR_ERROR">19</symbol>
-        <symbol id="FAN_ERROR">20</symbol>
-        <symbol id="GROUND_FAULT">21</symbol>
-        <symbol id="OPEN_DOOR_ERROR">22</symbol>
+        <symbol id="CONTACTOR_ERROR">18</symbol>
+        <symbol id="FAN_ERROR">19</symbol>
+        <symbol id="GROUND_FAULT">20</symbol>
+        <symbol id="OPEN_DOOR_ERROR">21</symbol>
+        <symbol id="CURRENT_IMBALANCE_WARNING">22</symbol>
       </point>
       <point id="Evt2" offset="23" type="bitfield32" mandatory="true" />
       <point id="EvtOtherAlarm" offset="25" type="bitfield32" mandatory="true" />
@@ -442,11 +442,6 @@
         <description>A voltage imbalance exists between the strings in the battery bank.</description>
         <notes></notes>
       </symbol>
-      <symbol id="CURRENT_IMBALANCE_WARNING">
-        <label>Current Imbalance Warning</label>
-        <description>A current imbalance exists between the strings in the battery bank.</description>
-        <notes></notes>
-      </symbol>
       <symbol id="CONTACTOR_ERROR">
         <label>Contactor Error</label>
         <description>A contactor failed to open or close as requested.</description>
@@ -465,6 +460,11 @@
       <symbol id="OPEN_DOOR_ERROR">
         <label>Open Door Error</label>
         <description>One or more doors are open.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CURRENT_IMBALANCE_WARNING">
+        <label>Current Imbalance Warning</label>
+        <description>A current imbalance exists between the strings in the battery bank.</description>
         <notes></notes>
       </symbol>
     </point>
