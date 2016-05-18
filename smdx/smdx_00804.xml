@@ -2,60 +2,50 @@
 
   <!-- 804: Lithium-ion String Model -->
   <model id="804" len="56" name="lithium_ion_string">
-    <block len="42">
+    <block len="36">
       <point id="StrIdx" offset="0" type="uint16" mandatory="true" />
       <point id="StrModCt" offset="1" type="uint16" mandatory="true" />
       <point id="StrStatus" offset="2" type="bitfield32" mandatory="true" />
       <point id="StrSoC" offset="4" type="uint16" sf="StrSoC_SF" units="%" mandatory="true" />
       <point id="StrSoH" offset="5" type="uint16" sf="StrSoH_SF" units="%" mandatory="false" />
-      <point id="StrCur" offset="6" type="int16" sf="StrCur_SF" units="A" mandatory="true" />
-      <point id="StrMaxCellVol" offset="7" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
-      <point id="StrMinCellVol" offset="8" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
-      <point id="StrCellVolLoc" offset="9" type="uint16" mandatory="false" />
-      <point id="StrMaxModTmp" offset="10" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
-      <point id="StrMinModTmp" offset="11" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
-      <point id="StrModTmpLoc" offset="12" type="uint16" mandatory="true" />
-      <point id="Pad1" offset="13" type="pad" mandatory="true" />
-      <point id="StrEvt1" offset="14" type="bitfield32" mandatory="true" />
-      <point id="StrEvt2" offset="16" type="bitfield32" mandatory="false" />
-      <point id="StrEvtOtherAlarm" offset="18" type="bitfield32" mandatory="false" />
-      <point id="StrEvtOtherWarning" offset="20" type="bitfield32" mandatory="false" />
-      <point id="StrConFail" offset="22" type="enum16" mandatory="false" />
-      <point id="StrSetEna" offset="23" access="rw" type="enum16" mandatory="true" />
-      <point id="StrCellBalCt" offset="24" type="uint16" mandatory="false" />
-      <point id="StrCycleCt" offset="25" type="uint16" mandatory="false" />
-      <point id="StrMaxCellSoC" offset="26" type="uint16" sf="CellSoC_SF" units="%" mandatory="false" />
-      <point id="StrMaxCellSoCLoc" offset="27" type="uint16" mandatory="false" />
-      <point id="StrMinCellSoC" offset="28" type="uint16" sf="CellSoC_SF" units="%" mandatory="false" />
-      <point id="StrMinCellSoCLoc" offset="29" type="uint16" mandatory="false" />
-      <point id="StrMaxCellSoH" offset="30" type="uint16" sf="CellSoH_SF" units="%" mandatory="false" />
-      <point id="StrMaxCellSoHLoc" offset="31" type="uint16" mandatory="false" />
-      <point id="StrMinCellSoH" offset="32" type="uint16" sf="CellSoH_SF" units="%" mandatory="false" />
-      <point id="StrMinCellSoHLoc" offset="33" type="uint16" mandatory="false" />
-      <point id="StrSoC_SF" offset="34" type="sunssf" mandatory="true" />
-      <point id="StrSoH_SF" offset="35" type="sunssf" mandatory="false" />
-      <point id="StrCur_SF" offset="36" type="sunssf" mandatory="true" />
-      <point id="CellVol_SF" offset="37" type="sunssf" mandatory="true" />
-      <point id="ModTmp_SF" offset="38" type="sunssf" mandatory="true" />
-      <point id="CellSoC_SF" offset="39" type="sunssf" mandatory="false" />
-      <point id="CellSoH_SF" offset="40" type="sunssf" mandatory="false" />
-      <point id="Pad2" offset="41" type="pad" mandatory="true" />
+      <point id="StrDoD" offset="6" type="uint16" sf="StrDoC_SF" units="%" mandatory="false" />
+      <point id="StrCur" offset="7" type="int16" sf="StrCur_SF" units="A" mandatory="true" />
+      <point id="StrVol" offset="8" type="uint16" sf="StrVol_SF" units="V" mandatory="false" />
+      <point id="StrMaxCellVol" offset="9" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="StrMinCellVol" offset="10" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="StrCellVolLoc" offset="11" type="uint16" mandatory="false" />
+      <point id="StrMaxModTmp" offset="12" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
+      <point id="StrMinModTmp" offset="13" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
+      <point id="StrModTmpLoc" offset="14" type="uint16" mandatory="true" />
+      <point id="Pad1" offset="15" type="pad" mandatory="true" />
+      <point id="StrEvt1" offset="16" type="bitfield32" mandatory="true" />
+      <point id="StrEvt2" offset="18" type="bitfield32" mandatory="false" />
+      <point id="StrEvtOtherAlarm" offset="20" type="bitfield32" mandatory="false" />
+      <point id="StrEvtOtherWarning" offset="22" type="bitfield32" mandatory="false" />
+      <point id="StrConFail" offset="24" type="enum16" mandatory="false" />
+      <point id="StrSetEna" offset="25" access="rw" type="enum16" mandatory="true" />
+      <point id="StrCellBalCt" offset="26" type="uint16" mandatory="false" />
+      <point id="StrCycleCt" offset="27" type="uint16" mandatory="false" />
+      <point id="StrSoC_SF" offset="28" type="sunssf" mandatory="true" />
+      <point id="StrSoH_SF" offset="29" type="sunssf" mandatory="false" />
+      <point id="StrDoD_SF" offset="30" type="sunssf" mandatory="false" />
+      <point id="StrCur_SF" offset="31" type="sunssf" mandatory="true" />
+      <point id="StrVol_SF" offset="32" type="sunssf" mandatory="false" />
+      <point id="CellVol_SF" offset="33" type="sunssf" mandatory="true" />
+      <point id="ModTmp_SF" offset="34" type="sunssf" mandatory="true" />
+      <point id="Pad2" offset="35" type="pad" mandatory="true" />
     </block>
-    <block type="repeating" len="14" name="lithium_ion_string_module">
+    <block type="repeating" len="10" name="lithium_ion_string_module">
       <point id="ModCellCt" offset="0" type="uint16" mandatory="true" />
-      <point id="ModMaxCellVol" offset="1" sf="CellVol_SF" units="V" type="uint16" mandatory="true" />
-      <point id="ModMinCellVol" offset="2" sf="CellVol_SF" units="V" type="uint16" mandatory="true" />
-      <point id="ModCellVolLoc" offset="3" type="uint16" mandatory="false" />
-      <point id="ModMaxCellTmp" offset="4" sf="ModTmp_SF" units="C" type="int16" mandatory="true" />
-      <point id="ModMinCellTmp" offset="5" sf="ModTmp_SF" units="C" type="int16" mandatory="true" />
-      <point id="ModCellTmpLoc" offset="6" type="uint16" mandatory="false" />
-      <point id="ModMaxCellSoC" offset="7" sf="CellSoC_SF" units="%" type="uint16" mandatory="true" />
-      <point id="ModMinCellSoC" offset="8" sf="CellSoC_SF" units="%" type="uint16" mandatory="true" />
-      <point id="ModCellSoCLoc" offset="9" type="uint16" mandatory="false" />
-      <point id="ModMaxCellSoH" offset="10" sf="CellSoH_SF" units="%" type="uint16" mandatory="false" />
-      <point id="ModMinCellSoH" offset="11" sf="CellSoH_SF" units="%" type="uint16" mandatory="false" />
-      <point id="ModCellSoHLoc" offset="12" type="uint16" mandatory="false" />
-      <point id="Pad2" offset="13" type="pad" mandatory="true" />
+      <point id="ModSoC" offset="1" type="uint16" sf="StrSoC_SF" units="%" mandatory="false" />
+      <point id="ModSoH" offset="2" type="uint16" sf="StrSoH_SF" units="%" mandatory="false" />
+      <point id="ModMaxCellVol" offset="3" sf="CellVol_SF" units="V" type="uint16" mandatory="true" />
+      <point id="ModMinCellVol" offset="4" sf="CellVol_SF" units="V" type="uint16" mandatory="true" />
+      <point id="ModCellVolLoc" offset="5" type="uint16" mandatory="false" />
+      <point id="ModMaxCellTmp" offset="6" sf="ModTmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="ModMinCellTmp" offset="7" sf="ModTmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="ModCellTmpLoc" offset="8" type="uint16" mandatory="false" />
+      <point id="Pad2" offset="9" type="pad" mandatory="true" />
     </block>
   </model>
 
@@ -72,7 +62,7 @@
     <point id="StrIdx">
       <label>String Index</label>
       <description>Index of the string within the bank.</description>
-      <notes></notes>
+      <notes>Indices are one-based.</notes>
     </point>
     <point id="StrModCt">
       <label>Module Count</label>
@@ -94,9 +84,19 @@
       <description>Battery string state of health, expressed as a percentage.</description>
       <notes>Measurement</notes>
     </point>
+    <point id="StrDoD">
+      <label>String Depth of Discharge</label>
+      <description>Depth of discharge for the string, expressed as a percentage.</description>
+      <notes>Measurement</notes>
+    </point>
     <point id="StrCur">
       <label>String Current</label>
       <description>String current measurement.</description>
+      <notes>Measurement</notes>
+    </point>
+    <point id="StrVol">
+      <label>String Voltage</label>
+      <description>String voltage measurement.</description>
       <notes>Measurement</notes>
     </point>
     <point id="StrMaxCellVol">
@@ -169,46 +169,6 @@
       <description>Total number of discharge cycles executed upon the string.</description>
       <notes>Count</notes>
     </point>
-    <point id="StrMaxCellSoC">
-      <label>Max Cell SOC</label>
-      <description>Maximum state of charge for all cells in the string.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="StrMaxCellSoCLoc">
-      <label>Max Cell SOC Location</label>
-      <description>Location of the cell with the maximum state of charge.</description>
-      <notes>Bit0:Bit7 = Module number.  Bit8:Bit15 = Cell number.</notes>
-    </point>
-    <point id="StrMinCellSoC">
-      <label>Min Cell SOC</label>
-      <description>Minimum state of charge for all cells in the string.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="StrMinCellSoCLoc">
-      <label>Min Cell SOC Location</label>
-      <description>Location of the cell with the minimum state of charge.</description>
-      <notes>Bit0:Bit7 = Module number.  Bit8:Bit15 = Cell number.</notes>
-    </point>
-    <point id="StrMaxCellSoH">
-      <label>Max Cell SOH</label>
-      <description>Maximum state of health for all cells in the string.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="StrMaxCellSoHLoc">
-      <label>Max Cell SOH Location</label>
-      <description>Location of the cell with the maximum state of health.</description>
-      <notes>Bit0:Bit7 = Module number.  Bit8:Bit15 = Cell number.</notes>
-    </point>
-    <point id="StrMinCellSoH">
-      <label>Min Cell SOH</label>
-      <description>Minimum state of health for all cells in the string.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="StrMinCellSoHLoc">
-      <label>Min Cell SOH Location</label>
-      <description>Location of the cell with the minimum state of health.</description>
-      <notes>Bit0:Bit7 = Module number.  Bit8:Bit15 = Cell number.</notes>
-    </point>
     <point id="StrSoC_SF">
       <label></label>
       <description>Scale factor for string state of charge.</description>
@@ -219,9 +179,19 @@
       <description>Scale factor for string state of health.</description>
       <notes></notes>
     </point>
+    <point id="StrDoD_SF">
+      <label></label>
+      <description>Scale factor for string depth of discharge.</description>
+      <notes></notes>
+    </point>
     <point id="StrCur_SF">
       <label></label>
       <description>Scale factor for string current.</description>
+      <notes></notes>
+    </point>
+    <point id="StrVol_SF">
+      <label></label>
+      <description>Scale factor for string voltage.</description>
       <notes></notes>
     </point>
     <point id="CellVol_SF">
@@ -234,22 +204,22 @@
       <description>Scale factor for module temperature.</description>
       <notes></notes>
     </point>
-    <point id="CellSoC_SF">
-      <label></label>
-      <description>Scale factor for cell state of charge.</description>
-      <notes></notes>
-    </point>
-    <point id="CellSoH_SF">
-      <label></label>
-      <description>Scale factor for cell state of health.</description>
-      <notes></notes>
-    </point>
 
     <!-- Repeating Block Strings -->
 
     <point id="ModCellCt">
       <label>Module Cell Count</label>
       <description>Count of all cells in the module.</description>
+      <notes>Count</notes>
+    </point>
+    <point id="ModSoC">
+      <label>Module SoC</label>
+      <description>Module state of charge, expressed as a percentage.</description>
+      <notes>Count</notes>
+    </point>
+    <point id="ModSoH">
+      <label>Module SoH</label>
+      <description>Module state of health, expressed as a percentage.</description>
       <notes>Count</notes>
     </point>
     <point id="ModMaxCellVol">
@@ -281,36 +251,6 @@
       <label>Max/Min Cell Temp Loc</label>
       <description>Location of maximum and minimum cell temperatures.</description>
       <notes>Bit0:Bit7 = Index of maximum temperature reading.  Bit 8:Bit15: Index of minimum temperature reading.</notes>
-    </point>
-    <point id="ModMaxCellSoC">
-      <label>Max Cell SOC</label>
-      <description>Maximum state of charge for all cells in the module.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="ModMinCellSoC">
-      <label>Max Cell SOC</label>
-      <description>Minimum state of charge for all cells in the module.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="ModCellSoCLoc">
-      <label>Max/Min Cell SOC Loc</label>
-      <description>Location of cells with minimum and maximum state of charge.</description>
-      <notes>Bit0:Bit7 = Maximum cell number.  Bit8:Bit15 = Minimum cell number.</notes>
-    </point>
-    <point id="ModMaxCellSoH">
-      <label>Max Cell SOH</label>
-      <description>Maximum state of health for all cells in the module.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="ModMinCellSoH">
-      <label>Max Cell SOH</label>
-      <description>Minimum state of health for all cells in the module.</description>
-      <notes>Measurement</notes>
-    </point>
-    <point id="ModCellSoHLoc">
-      <label>Max/Min Cell SOH Loc</label>
-      <description>Location of cells with minimum and maximum state of charge.</description>
-      <notes>Bit0:Bit7 = Maximum cell number.  Bit8:Bit15 = Minimum cell number.</notes>
     </point>
 
    </strings>

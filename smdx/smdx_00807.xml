@@ -55,7 +55,7 @@
       <point id="Tmp_SF" offset="22" type="sunssf" mandatory="true" />
     </block>
     <block type="repeating" len="20" name="module">
-      <point id="ModID" offset="0" type="uint16" mandatory="true" />
+      <point id="ModIdx" offset="0" type="uint16" mandatory="true" />
       <point id="ModStackCt" offset="1" type="uint16" units="" mandatory="true" />
       <point id="ModStatus" offset="2" type="bitfield32" mandatory="true">
         <symbol id="MODULE_ENABLED">0</symbol>
@@ -401,11 +401,11 @@
       <description>Scale factor for temperature.</description>
       <notes></notes>
     </point>
-    <point id="ModID">
-      <label>MOdUle ID</label>
-      <description>Unique ID of the module.</description>
-      <notes></notes>
-    </point>      
+    <point id="ModIdx">
+      <label>Module Index</label>
+      <description>Index of the module within the string.</description>
+      <notes>Indices are one-based.</notes>
+    </point>
     <point id="ModStackCt">
       <label>Stack Count</label>
       <description>Number of stacks in this module.</description>
