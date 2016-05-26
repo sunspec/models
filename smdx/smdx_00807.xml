@@ -2,20 +2,21 @@
 
   <!-- 807: Flow Battery String Model -->
   <model id="807" len="36" name="flow_battery_string">
-    <block len="19">
-      <point id="ModuleCt" offset="0" type="uint16" mandatory="true" />
-      <point id="ConModuleCt" offset="1" type="uint16" mandatory="true" />
-      <point id="StrMaxModVol" offset="2" type="uint16" sf="ModVol_SF" units="V" mandatory="true" />
-      <point id="StrMinModVol" offset="3" type="uint16" sf="ModVol_SF" units="V" mandatory="true" />
-      <point id="StrModVolLoc" offset="4" type="uint16" />
-      <point id="StrMaxCellVol" offset="5" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
-      <point id="StrMaxCellVolLoc" offset="6" type="uint16" />
-      <point id="StrMinCellVol" offset="7" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
-      <point id="StrMinCellVolLoc" offset="8" type="uint16" />
-      <point id="StrMaxTmp" offset="9" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
-      <point id="StrMinTmp" offset="10" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
-      <point id="StrTmpLoc" offset="11" type="uint16" />
-      <point id="StrEvt1" offset="12" type="bitfield32" mandatory="true" >
+    <block len="24">
+      <point id="StrIdx" offset="0" type="uint16" mandatory="true" />
+      <point id="ModuleCt" offset="1" type="uint16" mandatory="true" />
+      <point id="ConModuleCt" offset="2" type="uint16" mandatory="true" />
+      <point id="StrMaxModVol" offset="3" type="uint16" sf="ModVol_SF" units="V" mandatory="true" />
+      <point id="StrMinModVol" offset="4" type="uint16" sf="ModVol_SF" units="V" mandatory="true" />
+      <point id="StrModVolLoc" offset="5" type="uint16" />
+      <point id="StrMaxCellVol" offset="6" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="StrMaxCellVolLoc" offset="7" type="uint16" />
+      <point id="StrMinCellVol" offset="8" type="uint16" sf="CellVol_SF" units="V" mandatory="true" />
+      <point id="StrMinCellVolLoc" offset="9" type="uint16" />
+      <point id="StrMaxTmp" offset="10" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
+      <point id="StrMinTmp" offset="11" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
+      <point id="StrTmpLoc" offset="12" type="uint16" />
+      <point id="StrEvt1" offset="13" type="bitfield32" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="OVER_TEMP_WARNING">2</symbol>
@@ -49,12 +50,12 @@
         <symbol id="LOW_FLOW_ALARM">30</symbol>
         <symbol id="LOW_FLOW_WARNING">31</symbol>
       </point>
-      <point id="StrEvt2" offset="14" type="bitfield32" mandatory="true" />
-      <point id="StrEvtOtherAlarm" offset="16" type="bitfield32" mandatory="true" />
-      <point id="StrEvtOtherWarning" offset="18" type="bitfield32" mandatory="true" />
-      <point id="ModVol_SF" offset="20" type="sunssf" mandatory="true" />
-      <point id="CellVol_SF" offset="21" type="sunssf" mandatory="true" />
-      <point id="Tmp_SF" offset="22" type="sunssf" mandatory="true" />
+      <point id="StrEvt2" offset="15" type="bitfield32" mandatory="true" />
+      <point id="StrEvtOtherAlarm" offset="17" type="bitfield32" mandatory="true" />
+      <point id="StrEvtOtherWarning" offset="19" type="bitfield32" mandatory="true" />
+      <point id="ModVol_SF" offset="21" type="sunssf" mandatory="true" />
+      <point id="CellVol_SF" offset="22" type="sunssf" mandatory="true" />
+      <point id="Tmp_SF" offset="23" type="sunssf" mandatory="true" />
     </block>
     <block type="repeating" len="20" name="module">
       <point id="ModIdx" offset="0" type="uint16" mandatory="true" />
@@ -165,6 +166,11 @@
       <description></description>
       <notes></notes>
     </model>
+    <point id="StrIdx">
+      <label>String Index</label>
+      <description>Index of the string within the bank.</description>
+      <notes>Indices are one-based.</notes>
+    </point>
     <point id="ModuleCt">
       <label>Module Count</label>
       <description>Number of modules in this string.</description>

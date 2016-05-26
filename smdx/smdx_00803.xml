@@ -2,19 +2,21 @@
 
   <!-- 803: Lithium-Ion Battery Model -->
   <model id="803" len="33" name="lithium_ion_bank">
-    <block len="12">
-      <point id="BConStrCt" offset="0" type="uint16" mandatory="true" />
-      <point id="BMaxModTmp" offset="1" type="int16" sf="BModTmp_SF" units="" mandatory="true" />
-      <point id="BMaxModTmpLoc" offset="2" type="uint16" />
-      <point id="BMinModTmp" offset="3" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
-      <point id="BMinModTmpLoc" offset="4" type="uint16" />
-      <point id="BMaxStrCur" offset="5" type="int16" sf="BCurrent_SF" units="A" />
-      <point id="BMinStrCur" offset="6" type="int16" sf="BCurrent_SF" units="A" />
-      <point id="BCellBalCt" offset="7" type="uint16" mandatory="false" />
-      <point id="BCellVol_SF" offset="8" type="sunssf" mandatory="true" />
-      <point id="BModTmp_SF" offset="9" type="sunssf" mandatory="true" />
-      <point id="BCurrent_SF" offset="10" type="sunssf" mandatory="true" />
-      <point id="StrSoH_SF" offset="11" type="sunssf" />
+    <block len="14">
+      <point id="BStrCt" offset="0" type="uint16" mandatory="true" />
+      <point id="BConStrCt" offset="1" type="uint16" mandatory="true" />
+      <point id="BMaxModTmp" offset="2" type="int16" sf="BModTmp_SF" units="" mandatory="true" />
+      <point id="BMaxModTmpLoc" offset="3" type="uint16" />
+      <point id="BMinModTmp" offset="4" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
+      <point id="BMinModTmpLoc" offset="5" type="uint16" />
+      <point id="BMaxStrCur" offset="6" type="int16" sf="BCurrent_SF" units="A" />
+      <point id="BMinStrCur" offset="7" type="int16" sf="BCurrent_SF" units="A" />
+      <point id="BCellBalCt" offset="8" type="uint16" mandatory="false" />
+      <point id="BCellVol_SF" offset="9" type="sunssf" mandatory="true" />
+      <point id="BModTmp_SF" offset="10" type="sunssf" mandatory="true" />
+      <point id="BCurrent_SF" offset="11" type="sunssf" mandatory="true" />
+      <point id="StrSoH_SF" offset="12" type="sunssf" />
+      <point id="Pad" offset="13" type="pad" mandatory="true" />
     </block>
     <block type="repeating" len="23" name="string">
       <point id="StrModCt" offset="0" type="uint16" mandatory="true" />
@@ -119,6 +121,11 @@
       <description></description>
       <notes></notes>
     </model>
+    <point id="BStrCt">
+      <label>String Count</label>
+      <description>Number of strings in the bank.</description>
+      <notes></notes>
+    </point>
     <point id="BConStrCt">
       <label>Connected String Count</label>
       <description>Number of strings with contactor closed.</description>
@@ -179,6 +186,11 @@
       <description>Scale factor for String State of Health.</description>
       <notes></notes>
     </point>
+    <point id="Pad">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes> </notes>
+      </point>    
     <point id="StrModCt">
       <label>Module Count</label>
       <description>Count of modules in the string.</description>
