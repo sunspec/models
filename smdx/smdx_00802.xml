@@ -48,6 +48,7 @@
         <symbol id="CONNECTED">3</symbol>
         <symbol id="STANDBY">4</symbol>
         <symbol id="SOC PROTECTION">5</symbol>
+        <symbol id="FAULT">99</symbol>
       </point>
       <point id="CycleCt" offset="17" type="uint32" />
       <point id="SoH" offset="19" type="uint16" sf="SoH_SF" units="%" />
@@ -71,11 +72,13 @@
         <symbol id="OVER_SOC_MAX_ALARM">15</symbol>
         <symbol id="OVER_SOC_MAX_WARNING">16</symbol>
         <symbol id="VOLTAGE_IMBALANCE_WARNING">17</symbol>
-        <symbol id="CONTACTOR_ERROR">18</symbol>
-        <symbol id="FAN_ERROR">19</symbol>
-        <symbol id="GROUND_FAULT">20</symbol>
-        <symbol id="OPEN_DOOR_ERROR">21</symbol>
-        <symbol id="CURRENT_IMBALANCE_WARNING">22</symbol>
+        <symbol id="TEMPERATURE_IMBALANCE_ALARM">18</symbol>
+        <symbol id="TEMPERATURE_IMBALANCE_WARNING">19</symbol>
+        <symbol id="CONTACTOR_ERROR">20</symbol>
+        <symbol id="FAN_ERROR">21</symbol>
+        <symbol id="GROUND_FAULT">22</symbol>
+        <symbol id="OPEN_DOOR_ERROR">23</symbol>
+        <symbol id="CURRENT_IMBALANCE_WARNING">24</symbol>
       </point>
       <point id="Evt2" offset="24" type="bitfield32" mandatory="true" />
       <point id="EvtOtherAlarm" offset="26" type="bitfield32" mandatory="true" />
@@ -339,6 +342,11 @@
         <description>Battery bank is connected but SOC is too low. Battery should be considered "offline".</description>
         <notes></notes>
       </symbol>
+      <symbol id="FAULT">
+        <label>Fault</label>
+        <description>The battery has experienced a critical failure and may not be operated.</description>
+        <notes></notes>
+      </symbol>
     </point>
     <point id="CycleCt">
       <label>Cycle Count</label>
@@ -447,6 +455,16 @@
       <symbol id="VOLTAGE_IMBALANCE_WARNING">
         <label>Voltage Imbalance Warning</label>
         <description>A voltage imbalance exists between the strings in the battery bank.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="TEMPERATURE_IMBALANCE_ALARM">
+        <label>Temperature Imbalance Alarm</label>
+        <description>A temperature imbalance exists between the strings in the battery bank.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="TEMPERATURE_IMBALANCE_WARNING">
+        <label>Temperature Imbalance Warning</label>
+        <description>A temperature imbalance is developing between the strings in the battery bank.</description>
         <notes></notes>
       </symbol>
       <symbol id="CONTACTOR_ERROR">

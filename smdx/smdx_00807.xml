@@ -34,18 +34,20 @@
         <symbol id="OVER_SOC_MAX_ALARM">15</symbol>
         <symbol id="OVER_SOC_MAX_WARNING">16</symbol>
         <symbol id="VOLTAGE_IMBALANCE_WARNING">17</symbol>
-        <symbol id="CONTACTOR_ERROR">18</symbol>
-        <symbol id="FAN_ERROR">19</symbol>
-        <symbol id="GROUND_FAULT">20</symbol>
-        <symbol id="OPEN_DOOR_ERROR">21</symbol>
-        <symbol id="RESERVED_1">22</symbol>
-        <symbol id="FIRE_ALARM">23</symbol>
-        <symbol id="LEAK_ALARM">24</symbol>
-        <symbol id="PUMP_ALARM">25</symbol>
-        <symbol id="HIGH_PRESSURE_ALARM">26</symbol>
-        <symbol id="HIGH_PRESSURE_WARNING">27</symbol>
-        <symbol id="LOW_FLOW_ALARM">28</symbol>
-        <symbol id="LOW_FLOW_WARNING">29</symbol>
+        <symbol id="TEMPERATURE_IMBALANCE_ALARM">18</symbol>
+        <symbol id="TEMPERATURE_IMBALANCE_WARNING">19</symbol>
+        <symbol id="CONTACTOR_ERROR">20</symbol>
+        <symbol id="FAN_ERROR">21</symbol>
+        <symbol id="GROUND_FAULT">22</symbol>
+        <symbol id="OPEN_DOOR_ERROR">23</symbol>
+        <symbol id="RESERVED_1">24</symbol>
+        <symbol id="FIRE_ALARM">25</symbol>
+        <symbol id="LEAK_ALARM">26</symbol>
+        <symbol id="PUMP_ALARM">27</symbol>
+        <symbol id="HIGH_PRESSURE_ALARM">28</symbol>
+        <symbol id="HIGH_PRESSURE_WARNING">29</symbol>
+        <symbol id="LOW_FLOW_ALARM">30</symbol>
+        <symbol id="LOW_FLOW_WARNING">31</symbol>
       </point>
       <point id="StrEvt2" offset="14" type="bitfield32" mandatory="true" />
       <point id="StrEvtOtherAlarm" offset="16" type="bitfield32" mandatory="true" />
@@ -121,18 +123,20 @@
         <symbol id="OVER_SOC_MAX_ALARM">15</symbol>
         <symbol id="OVER_SOC_MAX_WARNING">16</symbol>
         <symbol id="VOLTAGE_IMBALANCE_WARNING">17</symbol>
-        <symbol id="CONTACTOR_ERROR">18</symbol>
-        <symbol id="FAN_ERROR">19</symbol>
-        <symbol id="GROUND_FAULT">20</symbol>
-        <symbol id="OPEN_DOOR_ERROR">21</symbol>
-        <!-- Purposefully ommitted: Avoids conflict with CURRENT_IMBALANCE_WARNING in 802 -->?
-        <symbol id="FIRE_ALARM">23</symbol>
-        <symbol id="LEAK_ALARM">24</symbol>
-        <symbol id="PUMP_ALARM">25</symbol>
-        <symbol id="HIGH_PRESSURE_ALARM">26</symbol>
-        <symbol id="HIGH_PRESSURE_WARNING">27</symbol>
-        <symbol id="LOW_FLOW_ALARM">28</symbol>
-        <symbol id="LOW_FLOW_WARNING">29</symbol>
+        <symbol id="TEMPERATURE_IMBALANCE_ALARM">18</symbol>
+        <symbol id="TEMPERATURE_IMBALANCE_WARNING">19</symbol>
+        <symbol id="CONTACTOR_ERROR">20</symbol>
+        <symbol id="FAN_ERROR">21</symbol>
+        <symbol id="GROUND_FAULT">22</symbol>
+        <symbol id="OPEN_DOOR_ERROR">23</symbol>
+        <symbol id="RESERVED_1">24</symbol>
+        <symbol id="FIRE_ALARM">25</symbol>
+        <symbol id="LEAK_ALARM">26</symbol>
+        <symbol id="PUMP_ALARM">27</symbol>
+        <symbol id="HIGH_PRESSURE_ALARM">28</symbol>
+        <symbol id="HIGH_PRESSURE_WARNING">29</symbol>
+        <symbol id="LOW_FLOW_ALARM">30</symbol>
+        <symbol id="LOW_FLOW_WARNING">31</symbol>
       </point>
       <point id="ModEvt2" offset="15" type="bitfield32" mandatory="true" >
       </point>
@@ -313,6 +317,16 @@
       <symbol id="VOLTAGE_IMBALANCE_WARNING">
         <label>Voltage Imbalance Warning</label>
         <description>A voltage imbalance exists between the modules in the string.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="TEMPERATURE_IMBALANCE_ALARM">
+        <label>Temperature Imbalance Alarm</label>
+        <description>A temperature imbalance exists between the modules in the battery string.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="TEMPERATURE_IMBALANCE_WARNING">
+        <label>Temperature Imbalance Warning</label>
+        <description>A temperature imbalance is developing between the modules in the battery string.</description>
         <notes></notes>
       </symbol>
       <symbol id="CONTACTOR_ERROR">
@@ -720,6 +734,16 @@
         <description>A voltage imbalance exists between the stacks in the module.</description>
         <notes></notes>
       </symbol>
+      <symbol id="TEMPERATURE_IMBALANCE_ALARM">
+        <label>Temperature Imbalance Alarm</label>
+        <description>A temperature imbalance exists between the stacks in the module.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="TEMPERATURE_IMBALANCE_WARNING">
+        <label>Temperature Imbalance Warning</label>
+        <description>A temperature imbalance is developing between the stacks in the module.</description>
+        <notes></notes>
+      </symbol>
       <symbol id="CONTACTOR_ERROR">
         <label>Contactor Error</label>
         <description>A contactor failed to open or close as requested.</description>
@@ -738,6 +762,11 @@
       <symbol id="OPEN_DOOR_ERROR">
         <label>Open Door Error</label>
         <description>One or more doors are open.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="RESERVED_1">
+        <label>Reserved</label>
+        <description>Reserved bit--do not implement.</description>
         <notes></notes>
       </symbol>
       <symbol id="FIRE_ALARM">
