@@ -87,6 +87,7 @@
         <symbol id="FAN_ERROR">19</symbol>
         <symbol id="GROUND_FAULT">20</symbol>
         <symbol id="OPEN_DOOR_ERROR">21</symbol>
+        <symbol id="RESERVED_1">22</symbol>
       </point>
       <point id="StrEvt2" offset="15" type="bitfield32" />
       <point id="StrEvtOtherAlarm" offset="17" type="bitfield32" />
@@ -513,6 +514,11 @@
       <symbol id="OPEN_DOOR_ERROR">
         <label>Open Door Error</label>
         <description>One or more doors are open.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="RESERVED_1">
+        <label>Reserved</label>
+        <description>Reserved bit--do not implement.</description>
         <notes></notes>
       </symbol>
     </point>
