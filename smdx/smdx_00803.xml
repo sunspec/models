@@ -3,37 +3,37 @@
   <!-- 803: Lithium-Ion Battery Model -->
   <model id="803" len="33" name="lithium_ion_bank">
     <block len="14">
-      <point id="BStrCt" offset="0" type="uint16" mandatory="true" />
-      <point id="BConStrCt" offset="1" type="uint16" mandatory="true" />
-      <point id="BMaxModTmp" offset="2" type="int16" sf="BModTmp_SF" units="" mandatory="true" />
-      <point id="BMaxModTmpLoc" offset="3" type="uint16" />
-      <point id="BMinModTmp" offset="4" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
-      <point id="BMinModTmpLoc" offset="5" type="uint16" />
-      <point id="BMaxStrCur" offset="6" type="int16" sf="BCurrent_SF" units="A" />
-      <point id="BMinStrCur" offset="7" type="int16" sf="BCurrent_SF" units="A" />
-      <point id="BCellBalCt" offset="8" type="uint16" mandatory="false" />
-      <point id="BCellVol_SF" offset="9" type="sunssf" mandatory="true" />
-      <point id="BModTmp_SF" offset="10" type="sunssf" mandatory="true" />
-      <point id="BCurrent_SF" offset="11" type="sunssf" mandatory="true" />
-      <point id="StrSoH_SF" offset="12" type="sunssf" />
+      <point id="NStr" offset="0" type="uint16" mandatory="true" />
+      <point id="NStrCon" offset="1" type="uint16" mandatory="true" />
+      <point id="ModTmpMax" offset="2" type="int16" sf="ModTmp_SF" units="" mandatory="true" />
+      <point id="ModTmpMaxLoc" offset="3" type="uint16" />
+      <point id="ModTmpMin" offset="4" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
+      <point id="ModTmpMinLoc" offset="5" type="uint16" />
+      <point id="StrAMax" offset="6" type="int16" sf="A_SF" units="A" />
+      <point id="StrAMin" offset="7" type="int16" sf="A_SF" units="A" />
+      <point id="NCellBal" offset="8" type="uint16" mandatory="false" />
+      <point id="CellV_SF" offset="9" type="sunssf" mandatory="true" />
+      <point id="ModTmp_SF" offset="10" type="sunssf" mandatory="true" />
+      <point id="A_SF" offset="11" type="sunssf" mandatory="true" />
+      <point id="SoH_SF" offset="12" type="sunssf" />
       <point id="Pad" offset="13" type="pad" mandatory="true" />
     </block>
     <block type="repeating" len="23" name="string">
-      <point id="StrModCt" offset="0" type="uint16" mandatory="true" />
-      <point id="StrStatus" offset="1" type="bitfield32" mandatory="true">
+      <point id="StrNMod" offset="0" type="uint16" mandatory="true" />
+      <point id="StrSt" offset="1" type="bitfield32" mandatory="true">
         <symbol id="STRING_ENABLED">0</symbol>
         <symbol id="CONTACTOR_STATUS">1</symbol>
       </point>
       <point id="StrSoC" offset="2" type="uint16" units="%" mandatory="true" />
-      <point id="StrSoH" offset="3" type="uint16" sf="StrSoH_SF" units="%" />
-      <point id="StrCur" offset="4" type="int16" sf="BCurrent_SF" units="A" mandatory="true" />
-      <point id="StrMaxCellVol" offset="5" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
-      <point id="StrMinCellVol" offset="6" type="uint16" sf="BCellVol_SF" units="V" mandatory="true" />
-      <point id="StrCellVolLoc" offset="7" type="uint16" />
-      <point id="StrMaxModTmp" offset="8" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
-      <point id="StrMinModTmp" offset="9" type="int16" sf="BModTmp_SF" units="C" mandatory="true" />
+      <point id="StrSoH" offset="3" type="uint16" sf="SoH_SF" units="%" />
+      <point id="StrA" offset="4" type="int16" sf="A_SF" units="A" mandatory="true" />
+      <point id="StrCellVMax" offset="5" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="StrCellVMin" offset="6" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="StrCellVLoc" offset="7" type="uint16" />
+      <point id="StrModTmpMax" offset="8" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
+      <point id="StrModTmpMin" offset="9" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
       <point id="StrModTmpLoc" offset="10" type="uint16" />
-      <point id="StrConStatus" offset="11" type="bitfield32" units="" mandatory="false" >
+      <point id="StrConSt" offset="11" type="bitfield32" units="" mandatory="false" >
         <symbol id="CONTACTOR_0">0</symbol>
         <symbol id="CONTACTOR_1">1</symbol>
         <symbol id="CONTACTOR_2">2</symbol>
@@ -94,8 +94,8 @@
         <symbol id="RESERVED_1">24</symbol>
       </point>
       <point id="StrEvt2" offset="15" type="bitfield32" />
-      <point id="StrEvtOtherAlarm" offset="17" type="bitfield32" />
-      <point id="StrEvtOtherWarning" offset="19" type="bitfield32" />
+      <point id="StrEvtVndAlm" offset="17" type="bitfield32" />
+      <point id="StrEvtVndWrn" offset="19" type="bitfield32" />
       <point id="StrConFail" offset="21" type="enum16" >
         <symbol id="NO_FAILURE">0</symbol>
         <symbol id="BUTTON_PUSHED">1</symbol>
@@ -121,67 +121,67 @@
       <description></description>
       <notes></notes>
     </model>
-    <point id="BStrCt">
+    <point id="NStr">
       <label>String Count</label>
       <description>Number of strings in the bank.</description>
       <notes></notes>
     </point>
-    <point id="BConStrCt">
+    <point id="NStrCon">
       <label>Connected String Count</label>
       <description>Number of strings with contactor closed.</description>
       <notes></notes>
     </point>
-    <point id="BMaxModTmp">
+    <point id="ModTmpMax">
       <label>Max Module Temp</label>
       <description>Maximum temperature for all modules in the bank.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="BMaxModTmpLoc">
+    <point id="ModTmpMaxLoc">
       <label>Max Module Temp Location</label>
       <description>Location of the module with max temperature.</description>
       <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
     </point>
-    <point id="BMinModTmp">
+    <point id="ModTmpMin">
       <label>Min Module Temp</label>
       <description>Minimum temperature for all modules in the bank.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="BMinModTmpLoc">
+    <point id="ModTmpMinLoc">
       <label>Min Module Temp Location</label>
       <description>Location of the module with min temperature.</description>
       <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
     </point>
-    <point id="BMaxStrCur">
+    <point id="StrAMax">
       <label>Max String Current</label>
       <description>Maximum current of any string in the bank.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="BMinStrCur">
+    <point id="StrAMin">
       <label>Min String Current</label>
       <description>Minimm current of any string in the bank.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="BCellBalCt">
+    <point id="NCellBal">
       <label>Battery Cell Balancing Count</label>
       <description>Total count of cells that are currently being balanced.</description>
       <notes></notes>
     </point>
-    <point id="BCellVol_SF">
+    <point id="CellV_SF">
       <label></label>
       <description>Scale factor for cell voltage.</description>
       <notes></notes>
     </point>
-    <point id="BModTmp_SF">
+    <point id="ModTmp_SF">
       <label></label>
       <description>Scale factor for module temperatures.</description>
       <notes></notes>
     </point>
-    <point id="BCurrent_SF">
+    <point id="A_SF">
       <label></label>
       <description>Scale factor for Max String Current and Min String Current.</description>
       <notes></notes>
     </point>
-    <point id="StrSoH_SF">
+    <point id="SoH_SF">
       <label></label>
       <description>Scale factor for String State of Health.</description>
       <notes></notes>
@@ -191,12 +191,12 @@
       <description>Pad register.</description>
       <notes> </notes>
       </point>    
-    <point id="StrModCt">
+    <point id="StrNMod">
       <label>Module Count</label>
       <description>Count of modules in the string.</description>
       <notes></notes>
     </point>
-    <point id="StrStatus">
+    <point id="StrSt">
       <label>String Status</label>
       <description>Current status of the string.</description>
       <notes></notes>
@@ -214,49 +214,49 @@
     <point id="StrSoC">
       <label>String SoC</label>
       <description>Battery string state of charge, expressed as a percentage.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
     <point id="StrSoH">
       <label>String SoH</label>
       <description>Battery string state of health, expressed as a percentage.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="StrCur">
+    <point id="StrA">
       <label>String Current</label>
       <description>String current measurement.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="StrMaxCellVol">
+    <point id="StrCellVMax">
       <label>Max Cell Voltage</label>
       <description>Maximum voltage for all cells in the string.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="StrMinCellVol">
+    <point id="StrCellVMin">
       <label>Min Cell Voltage</label>
       <description>Minimum voltage for all cells in the string.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="StrCellVolLoc">
+    <point id="StrCellVLoc">
       <label>Max/Min Cell Voltage Loc</label>
       <description>Location of maximum and minimum cell voltages.</description>
       <notes>Bit0:Bit7 = Max Module Num  Bit8:Bit15 = Min Module Num</notes>
     </point>
-    <point id="StrMaxModTmp">
+    <point id="StrModTmpMax">
       <label>Max Module Temp</label>
       <description>Maximum temperature for all modules in the bank.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="StrMinModTmp">
+    <point id="StrModTmpMin">
       <label>Min Module Temp</label>
       <description>Minimum temperature for all modules in the bank.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
     <point id="StrModTmpLoc">
       <label>Max/Min Mod Temp Loc</label>
       <description>Location of maximum and minimum module temperatures.</description>
       <notes>Bit0:Bit7 = Max Module Num  Bit8:Bit15 = Min Module Num</notes>
     </point>
-    <point id="StrConStatus">
+    <point id="StrConSt">
       <label>Contactor Status</label>
       <description></description>
       <notes></notes>
@@ -448,22 +448,22 @@
       <symbol id="OVER_CHARGE_CURRENT_ALARM">
         <label>Over Charge Current Alarm</label>
         <description>Battery string maximum charge current has been exceeded.</description>
-        <notes>See AMaxCha</notes>
+        <notes>See AChaMax in model S 802.</notes>
       </symbol>
       <symbol id="OVER_CHARGE_CURRENT_WARNING">
         <label>Over Charge Current Warning</label>
         <description>Approaching battery string maximum charge current.</description>
-        <notes>See AMaxCha</notes>
+        <notes>See AChaMax in model S 802.</notes>
       </symbol>
       <symbol id="OVER_DISCHARGE_CURRENT_ALARM">
         <label>Over Discharge Current Alarm</label>
         <description>Battery string maximum discharge current has been exceeded.</description>
-        <notes>See AMaxDischa</notes>
+        <notes>See ADisChaMax in model S 802.</notes>
       </symbol>
       <symbol id="OVER_DISCHARGE_CURRENT_WARNING">
         <label>Over Discharge Current Warning</label>
         <description>Approaching battery string maximum discharge current.</description>
-        <notes>See AMaxDischa</notes>
+        <notes>See ADisChaMax in model S 802.</notes>
       </symbol>
       <symbol id="OVER_VOLT_ALARM">
         <label>Over Voltage Alarm</label>
@@ -542,8 +542,8 @@
       </symbol>
       <symbol id="RESERVED_1">
         <label>Reserved</label>
-        <description>Reserved bit--do not implement.</description>
-        <notes></notes>
+        <description>Reserved bit.</description>
+        <notes>Do not implement.</notes>
       </symbol>
     </point>
     <point id="StrEvt2">
@@ -551,14 +551,14 @@
       <description>Alarms, warnings and status values.  Bit flags.</description>
       <notes>Reserved for future use.</notes>
     </point>
-    <point id="StrEvtOtherAlarm">
-      <label>Other String Alarm Events</label>
-      <description>Other string alarms.  Bit flags.</description>
-      <notes>Bits are vendor specific and not defined by MESA.</notes>
+    <point id="StrEvtVndAlm">
+      <label>Vendor Specific String Alarms</label>
+      <description>Vendor specific string alarms.  Bit flags.</description>
+      <notes>Bits are vendor specific and not defined here.</notes>
     </point>
-    <point id="StrEvtOtherWarning">
-      <label>Other String Warning Events</label>
-      <description>Other string warnings.  Bit flags.</description>
+    <point id="StrEvtVndWrn">
+      <label>Vendor Specific String Warnings</label>
+      <description>Vendor specific string warnings.  Bit flags.</description>
       <notes>Bits are vendor specific and not defined here.</notes>
     </point>
     <point id="StrConFail">
@@ -603,8 +603,8 @@
     </point>
     <point id="StrSetEna">
       <label>Enable/Disable String</label>
-      <description>Enables and disables the string.  Should reset to 0 upon completion.</description>
-      <notes></notes>
+      <description>Enables and disables the string.</description>
+      <notes>Should reset to 0 upon completion.</notes>
       <symbol id="ENABLE_STRING">
         <label>Enable String</label>
         <description>Enable the string.</description>
@@ -618,8 +618,8 @@
     </point>
     <point id="StrSetCon">
       <label>Connect/Disconnect String</label>
-      <description>Connects and disconnects the string.  Should reset to 0 upon completion.</description>
-      <notes></notes>
+      <description>Connects and disconnects the string.</description>
+      <notes>Should reset to 0 upon completion.</notes>
       <symbol id="CONNECT_STRING">
         <label>Connect String</label>
         <description>Connect the string.</description>

@@ -3,33 +3,33 @@
   <!-- 805: Lithium-Ion Module Model -->
   <model id="805" len="2" name="lithium-ion-module">
     <block len="22">
-      <point id="ModIdx" offset="0" type="uint16" mandatory="true" />
-      <point id="ModCellCt" offset="1" type="uint16" mandatory="true" />
-      <point id="ModSoC" offset="2" type="uint16" sf="ModSoC_SF" units="%" mandatory="false" />
-      <point id="ModSoH" offset="3" type="uint16" sf="ModSoH_SF" units="%" mandatory="false" />
-      <point id="ModDoD" offset="4" type="uint16" sf="ModDoD_SF" units="%" mandatory="false" />
-      <point id="ModVol" offset="5" sf="ModVol_SF" units="V" type="uint16" mandatory="true" />
-      <point id="ModMaxCellVol" offset="6" sf="CellVol_SF" units="V" type="uint16" mandatory="true" />
-      <point id="ModMinCellVol" offset="7" sf="CellVol_SF" units="V" type="uint16" mandatory="true" />
-      <point id="ModCellVolLoc" offset="8" type="uint16" mandatory="false" />
-      <point id="ModMaxCellTmp" offset="9" sf="ModTmp_SF" units="C" type="int16" mandatory="true" />
-      <point id="ModMinCellTmp" offset="10" sf="ModTmp_SF" units="C" type="int16" mandatory="true" />
-      <point id="ModCellTmpLoc" offset="11" type="uint16" mandatory="false" />
-      <point id="ModSN" offset="12" len="32" type="string" mandatory="false" />
-      <point id="ModCellBalCt" offset="13" type="uint16" mandatory="false" />
-      <point id="ModCycCt" offset="14" type="uint16" mandatory="false" />
-      <point id="ModSoC_SF" offset="25" type="sunssf" mandatory="false" />
-      <point id="ModSoH_SF" offset="16" type="sunssf" mandatory="false" />
-      <point id="ModDoD_SF" offset="17" type="sunssf" mandatory="false" />
-      <point id="ModVol_SF" offset="18" type="sunssf" mandatory="true" />
-      <point id="CellVol_SF" offset="19" type="sunssf" mandatory="true" />
-      <point id="ModTmp_SF" offset="20" type="sunssf" mandatory="true" />
+      <point id="Idx" offset="0" type="uint16" mandatory="true" />
+      <point id="NCell" offset="1" type="uint16" mandatory="true" />
+      <point id="SoC" offset="2" type="uint16" sf="SoC_SF" units="%" mandatory="false" />
+      <point id="SoH" offset="3" type="uint16" sf="SoH_SF" units="%" mandatory="false" />
+      <point id="DoD" offset="4" type="uint16" sf="DoD_SF" units="%" mandatory="false" />
+      <point id="V" offset="5" sf="V_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellVMax" offset="6" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellVMin" offset="7" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellVLoc" offset="8" type="uint16" mandatory="false" />
+      <point id="CellTmpMax" offset="9" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="CellTmpMin" offset="10" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="CellTmpLoc" offset="11" type="uint16" mandatory="false" />
+      <point id="SN" offset="12" len="32" type="string" mandatory="false" />
+      <point id="NCellBal" offset="13" type="uint16" mandatory="false" />
+      <point id="NCyc" offset="14" type="uint16" mandatory="false" />
+      <point id="SoC_SF" offset="25" type="sunssf" mandatory="false" />
+      <point id="SoH_SF" offset="16" type="sunssf" mandatory="false" />
+      <point id="DoD_SF" offset="17" type="sunssf" mandatory="false" />
+      <point id="V_SF" offset="18" type="sunssf" mandatory="true" />
+      <point id="CellV_SF" offset="19" type="sunssf" mandatory="true" />
+      <point id="Tmp_SF" offset="20" type="sunssf" mandatory="true" />
       <point id="Pad" offset="21" type="pad" mandatory="true" />
     </block>
     <block type="repeating" len="4" name="lithium-ion-module-cell">
-      <point id="CellVol" offset="0" sf="CellVol_SF" units="V" type="uint16" mandatory="true" />
-      <point id="CellTmp" offset="1" sf="ModTmp_SF" units="C" type="int16" mandatory="true" />
-      <point id="CellStatus" offset="2" type="bitfield32" mandatory="false">
+      <point id="CellV" offset="0" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellTmp" offset="1" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="CellSt" offset="2" type="bitfield32" mandatory="false">
         <symbol id="CELL_IS_BALANCING">0</symbol>
       </point>        
     </block>
@@ -45,104 +45,104 @@
 
     <!-- Fixed Block Strings -->
 
-    <point id="ModIdx">
+    <point id="Idx">
       <label>Module Index</label>
       <description>Index of the module within the string.</description>
       <notes>Indices are one-based.</notes>
     </point>
-    <point id="ModCellCt">
+    <point id="NCell">
       <label>Module Cell Count</label>
       <description>Count of all cells in the module.</description>
-      <notes>Count</notes>
+      <notes></notes>
     </point>
-    <point id="ModSoC">
+    <point id="SoC">
       <label>Module SoC</label>
       <description>Module state of charge, expressed as a percentage.</description>
-      <notes>Count</notes>
+      <notes></notes>
     </point>
-    <point id="ModSoH">
+    <point id="SoH">
       <label>Module SoH</label>
       <description>Module state of health, expressed as a percentage.</description>
-      <notes>Count</notes>
+      <notes></notes>
     </point>
-    <point id="ModVol">
+    <point id="V">
       <label>Module Voltage</label>
       <description>Voltage of the module.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="ModDoD">
+    <point id="DoD">
       <label>Depth of Discharge</label>
       <description>Depth ofdischarge for the module.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="ModMaxCellVol">
+    <point id="CellVMax">
       <label>Max Cell Voltage</label>
       <description>Maximum voltage for all cells in the module.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="ModMinCellVol">
+    <point id="CellVMin">
       <label>Min Cell Voltage</label>
       <description>Minimum voltage for all cells in the module.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="ModCellVolLoc">
+    <point id="CellVLoc">
       <label>Max/Min Cell Voltage Loc</label>
       <description>Location of maximum and minimum cell voltages.</description>
       <notes>Bit0:Bit7 = Maximum cell number.  Bit8:Bit15 = Minimum cell number.</notes>
     </point>
-    <point id="ModMaxCellTmp">
+    <point id="CellTmpMax">
       <label>Max Cell Temp</label>
       <description>Maximum temperature for all cells in the module.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="ModMinCellTmp">
+    <point id="CellTmpMin">
       <label>Min Cell Temp</label>
       <description>Minimum temperature for all cells in the module.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="ModCellTmpLoc">
+    <point id="CellTmpLoc">
       <label>Max/Min Cell Temp Loc</label>
       <description>Location of maximum and minimum cell temperatures.</description>
       <notes>Bit0:Bit7 = Index of maximum temperature reading.  Bit 8:Bit15: Index of minimum temperature reading.</notes>
     </point>
-    <point id="ModSN">
+    <point id="SN">
       <label>Serial Number</label>
       <description>Serial number for the module.</description>
     </point>
-    <point id="ModCellBalCt">
+    <point id="NCellBal">
       <label>Balanced Cell Count</label>
       <description>Count of balanced cells in the module.</description>
     </point>
-    <point id="ModCycCt">
+    <point id="NCyc">
       <label>Cycle Count</label>
       <description>Count of cycles executed.</description>
     </point>
-    <point id="ModVol_SF">
+    <point id="V_SF">
       <label></label>
       <description>Scale factor for module voltage.</description>
       <notes></notes>
     </point>
-    <point id="ModSoC_SF">
+    <point id="SoC_SF">
       <label></label>
       <description>Scale factor for module state of charge.</description>
       <notes></notes>
     </point>
-    <point id="ModSoH_SF">
+    <point id="SoH_SF">
       <label></label>
       <description>Scale factor for module state of health.</description>
       <notes></notes>
     </point>
-    <point id="ModDoD_SF">
+    <point id="DoD_SF">
       <label></label>
       <description>Scale factor for module depth of discharge.</description>
       <notes></notes>
     </point>
-    <point id="CellVol_SF">
+    <point id="CellV_SF">
       <label></label>
       <description>Scale factor for cell voltage.</description>
       <notes></notes>
     </point>
-    <point id="ModTmp_SF">
+    <point id="Tmp_SF">
       <label></label>
       <description>Scale factor for module temperature.</description>
       <notes></notes>
@@ -150,17 +150,17 @@
 
     <!-- Repeating Block Strings -->
 
-    <point id="CellVol">
+    <point id="CellV">
       <label>Cell Voltage</label>
       <description>Cell terminal voltage.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
     <point id="CellTmp">
       <label>Cell Temperature</label>
       <description>Cell temperature.</description>
-      <notes>Measurement</notes>
+      <notes>Measurement.</notes>
     </point>
-    <point id="CellStatus">
+    <point id="CellSt">
       <label>Cell Status</label>
       <description>Status of the cell.</description>
       <notes></notes>
