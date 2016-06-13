@@ -1,7 +1,7 @@
 <sunSpecModels v="1">
   <!-- 802: Battery Base Model -->
   <model id="802" len="54" name="battery">
-    <block len="56">
+    <block len="62">
       <point id="WHRtg" offset="0" type="uint16" sf="WHRtg_SF" units="Wh" mandatory="true" />
       <point id="WChaRteMax" offset="1" type="uint16" sf="WChaDisChaMax_SF" units="W" mandatory="true" />
       <point id="WDisChaRteMax" offset="2" type="uint16" sf="WChaDisChaMax_SF" units="W" mandatory="true" />
@@ -11,8 +11,10 @@
       <point id="SocRsvMax" offset="6" access="rw" type="uint16" sf="SoC_SF" units="%WHRtg" />
       <point id="SoCRsvMin" offset="7" access="rw" type="uint16" sf="SoC_SF" units="%WHRtg" />
       <point id="SoC" offset="8" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
-      <point id="DoD" offset="9" type="uint16" sf="DoD_SF" units="%" mandatory="false" />
-      <point id="ChaSt" offset="10" type="enum16" >
+      <point id="DoD" offset="9" type="uint16" sf="DoD_SF" units="%" />
+      <point id="NCyc" offset="10" type="uint32" />
+      <point id="SoH" offset="12" type="uint16" sf="SoH_SF" units="%" />
+      <point id="ChaSt" offset="13" type="enum16" >
         <symbol id="OFF">1</symbol>
         <symbol id="EMPTY">2</symbol>
         <symbol id="DISCHARGING">3</symbol>
@@ -21,14 +23,14 @@
         <symbol id="HOLDING">6</symbol>
         <symbol id="TESTING">7</symbol>
       </point>
-      <point id="LocRemCtl" offset="11" type="enum16" mandatory="true" >
+      <point id="LocRemCtl" offset="14" type="enum16" mandatory="true" >
         <symbol id="REMOTE">0</symbol>
         <symbol id="LOCAL">1</symbol>
       </point>
-      <point id="Hb" offset="12" access="rw" type="uint16" />
-      <point id="CtrlHb" offset="13" access="rw" type="uint16" />
-      <point id="AlmRst" offset="14" type="uint16" />
-      <point id="Typ" offset="15" type="enum16" mandatory="true" >
+      <point id="Hb" offset="15" access="rw" type="uint16" />
+      <point id="CtrlHb" offset="16" access="rw" type="uint16" />
+      <point id="AlmRst" offset="17" type="uint16" />
+      <point id="Typ" offset="18" type="enum16" mandatory="true" >
         <symbol id="NOT APPLICABLE_UNKNOWN">0</symbol>
         <symbol id="LEAD_ACID">1</symbol>
         <symbol id="NICKEL_METAL_HYDRATE">2</symbol>
@@ -42,7 +44,7 @@
         <symbol id="FLOW">10</symbol>
         <symbol id="OTHER">99</symbol>
       </point>
-      <point id="State" offset="16" type="enum16" mandatory="true" >
+      <point id="State" offset="19" type="enum16" mandatory="true" >
         <symbol id="DISCONNECTED">1</symbol>
         <symbol id="INITIALIZING">2</symbol>
         <symbol id="CONNECTED">3</symbol>
@@ -50,9 +52,7 @@
         <symbol id="SOC PROTECTION">5</symbol>
         <symbol id="FAULT">99</symbol>
       </point>
-      <point id="NCyc" offset="17" type="uint32" />
-      <point id="SoH" offset="19" type="uint16" sf="SoH_SF" units="%" />
-      <point id="WarrDt" offset="21" type="uint32" mandatory="false" />
+      <point id="WarrDt" offset="20" type="uint32" />
       <point id="Evt1" offset="22" type="bitfield32" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
@@ -86,40 +86,47 @@
       <point id="V" offset="30" type="uint16" sf="V_SF" units="V" mandatory="true" />
       <point id="VMax" offset="31" type="uint16" sf="V_SF" units="V" />
       <point id="VMin" offset="32" type="uint16" sf="V_SF" units="V" />
+
       <point id="CellVMax" offset="33" type="uint16" sf="CellV_SF" units="V" />
-      <point id="CellVMaxLoc" offset="34" type="uint16" />
-      <point id="CellVMin" offset="35" type="uint16" sf="CellV_SF" units="V" />
-      <point id="CellVMinLoc" offset="36" type="uint16" />
-      <point id="A" offset="37" type="int16" sf="A_SF" units="A" mandatory="true" />
-      <point id="AChaMax" offset="38" type="uint16" sf="AMax_SF" units="A" mandatory="false" />
-      <point id="ADisChaMax" offset="39" type="uint16" sf="AMax_SF" units="A" mandatory="false" />
-      <point id="W" offset="40" type="int16" sf="W_SF" mandatory="true" />
-      <point id="ReqInvState" offset="41" type="enum16" >
+      <point id="CellVMaxStr" offset="34" type="uint16" />
+      <point id="CellVMaxMod" offset="35" type="uint16" />
+      <point id="CellVMin" offset="36" type="uint16" sf="CellV_SF" units="V" />
+      <point id="CellVMinStr" offset="37" type="uint16" />
+      <point id="CellVMinMod" offset="38" type="uint16" />
+      <point id="CellVAvg" offset="39" type="uint16" sf="V_SF" units="V" />
+      <point id="A" offset="40" type="int16" sf="A_SF" units="A" mandatory="true" />
+      <point id="AChaMax" offset="41" type="uint16" sf="AMax_SF" units="A" />
+      <point id="ADisChaMax" offset="42" type="uint16" sf="AMax_SF" units="A" />
+      <point id="W" offset="43" type="int16" sf="W_SF" mandatory="true" />
+      <point id="ReqInvState" offset="44" type="enum16" >
         <symbol id="NO REQUEST">0</symbol>
         <symbol id="START">1</symbol>
         <symbol id="STOP">2</symbol>
       </point>
-      <point id="ReqW" offset="42" type="int16" sf="W_SF" units="W" />
-      <point id="SetOp" offset="43" access="rw" type="enum16" mandatory="true" >
+      <point id="ReqW" offset="45" type="int16" sf="W_SF" units="W" />
+      <point id="SetOp" offset="46" access="rw" type="enum16" mandatory="true" >
         <symbol id="CONNECT">1</symbol>
         <symbol id="DISCONNECT">2</symbol>
       </point>
-      <point id="SetInvState" offset="44" access="rw" type="enum16" mandatory="true" >
+      <point id="SetInvState" offset="47" access="rw" type="enum16" mandatory="true" >
         <symbol id="INVERTER_STOPPED">1</symbol>
         <symbol id="INVERTER_STANDBY">2</symbol>
         <symbol id="INVERTER_STARTED">3</symbol>
       </point>
-      <point id="WHRtg_SF" offset="45" type="sunssf" mandatory="true" />
-      <point id="WChaDisChaMax_SF" offset="46" type="sunssf"  mandatory="true" />
-      <point id="DisChaRte_SF" offset="47" type="sunssf" />
-      <point id="SoC_SF" offset="48" type="sunssf" mandatory="true" />
-      <point id="DoD_SF" offset="49" type="sunssf" />
-      <point id="SoH_SF" offset="50" type="sunssf" />
-      <point id="V_SF" offset="51" type="sunssf" mandatory="true" />
-      <point id="CellV_SF" offset="52" type="sunssf" mandatory="true" />
-      <point id="A_SF" offset="53" type="sunssf" mandatory="true" />
-      <point id="AMax_SF" offset="54" type="sunssf" mandatory="true" />
-      <point id="W_SF" offset="55" type="sunssf" />
+      <point id="WHRtg_SF" offset="48" type="sunssf" mandatory="true" />
+      <point id="WChaDisChaMax_SF" offset="49" type="sunssf"  mandatory="true" />
+      <point id="DisChaRte_SF" offset="50" type="sunssf" />
+      <point id="SoC_SF" offset="51" type="sunssf" mandatory="true" />
+      <point id="DoD_SF" offset="52" type="sunssf" />
+      <point id="SoH_SF" offset="53" type="sunssf" />
+      <point id="V_SF" offset="54" type="sunssf" mandatory="true" />
+      <point id="CellV_SF" offset="55" type="sunssf" mandatory="true" />
+      <point id="A_SF" offset="56" type="sunssf" mandatory="true" />
+      <point id="AMax_SF" offset="57" type="sunssf" mandatory="true" />
+      <point id="W_SF" offset="58" type="sunssf" />
+      <point id="Pad1" offset="59" type="pad" mandatory="true" />
+      <point id="Pad2" offset="60" type="pad" mandatory="true" />
+      <point id="Pad3" offset="61" type="pad" mandatory="true" />
     </block>
   </model>
   <strings id="802" locale="en">
@@ -528,20 +535,35 @@
       <description>Maximum voltage for all cells in the bank.</description>
       <notes>Measurement.</notes>
     </point>
-    <point id="CellVMaxLoc">
-      <label>Max Cell Voltage Location</label>
-      <description>Location of the cell with maximum voltage</description>
-      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
+    <point id="CellVMaxStr">
+      <label>Max Cell Voltage String</label>
+      <description>String containing the cell with maximum voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="CellVMaxMod">
+      <label>Max Cell Voltage Module</label>
+      <description>Module containing the cell with maximum voltage.</description>
+      <notes></notes>
     </point>
     <point id="CellVMin">
       <label>Min Cell Voltage</label>
       <description>Minimum voltage for all cells in the bank.</description>
       <notes>Measurement.</notes>
     </point>
-    <point id="CellVMinLoc">
-      <label>Min Cell Voltage Location</label>
-      <description>Location of the cell with minimum voltage</description>
-      <notes>Bit0:Bit7 = String Number  Bit8:Bit15 = Module Number</notes>
+    <point id="CellVMinStr">
+      <label>Min Cell Voltage String</label>
+      <description>String containing the cell with minimum voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="CellVMinMod">
+      <label>Min Cell Voltage Module</label>
+      <description>Module containing the cell with minimum voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="CellVAvg">
+      <label>Average Cell Voltage</label>
+      <description>Average cell voltage for all cells in the bank.</description>
+      <notes>Calculation based on measurements.</notes>
     </point>
     <point id="A">
       <label>Total DC Current</label>
@@ -648,9 +670,19 @@
       <description>Scale factor for depth of discharge.</description>
       <notes></notes>
     </point>
-    <point id="Pad">
-      <label></label>
-      <description>Padding</description>
+    <point id="Pad1">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes></notes>
+    </point>
+    <point id="Pad2">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes></notes>
+    </point>
+    <point id="Pad3">
+      <label>Pad</label>
+      <description>Pad register.</description>
       <notes></notes>
     </point>
     <point id="SoH_SF">
@@ -683,5 +715,11 @@
       <description>Scale factor for AC power request.</description>
       <notes></notes>
     </point>
+    <point id="Pad">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes> </notes>
+    </point>    
+
   </strings>
 </sunSpecModels>

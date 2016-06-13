@@ -2,21 +2,28 @@
 
   <!-- 807: Flow Battery String Model -->
   <model id="807" len="36" name="flow_battery_string">
-    <block len="24">
+    <block len="34">
       <point id="Idx" offset="0" type="uint16" mandatory="true" />
       <point id="NMod" offset="1" type="uint16" mandatory="true" />
       <point id="NModCon" offset="2" type="uint16" mandatory="true" />
       <point id="ModVMax" offset="3" type="uint16" sf="ModV_SF" units="V" mandatory="true" />
-      <point id="ModVMin" offset="4" type="uint16" sf="ModV_SF" units="V" mandatory="true" />
-      <point id="ModVLoc" offset="5" type="uint16" />
-      <point id="CellVMax" offset="6" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
-      <point id="CellVMaxLoc" offset="7" type="uint16" />
-      <point id="CellVMin" offset="8" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
-      <point id="CellVMinLoc" offset="9" type="uint16" />
-      <point id="TmpMax" offset="10" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
-      <point id="TmpMin" offset="11" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
-      <point id="TmpLoc" offset="12" type="uint16" />
-      <point id="Evt1" offset="13" type="bitfield32" mandatory="true" >
+      <point id="ModVMaxMod" offset="4" type="uint16" />
+      <point id="ModVMin" offset="5" type="uint16" sf="ModV_SF" units="V" mandatory="true" />
+      <point id="ModVMinMod" offset="6" type="uint16" />
+      <point id="ModVAvg" offset="7" type="uint16" sf="ModV_SF" units="V" mandatory="true" />
+      <point id="CellVMax" offset="8" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="CellVMaxMod" offset="9" type="uint16" />
+      <point id="CellVMaxStk" offset="10" type="uint16" />
+      <point id="CellVMin" offset="11" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="CellVMinMod" offset="12" type="uint16" />
+      <point id="CellVMinStk" offset="13" type="uint16" />
+      <point id="CellVAvg" offset="14" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="TmpMax" offset="15" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
+      <point id="TmpMaxMod" offset="16" type="uint16" />
+      <point id="TmpMin" offset="17" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
+      <point id="TmpMinMod" offset="18" type="uint16" />
+      <point id="TmpAvg" offset="19" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
+      <point id="Evt1" offset="20" type="bitfield32" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="OVER_TEMP_WARNING">2</symbol>
@@ -35,13 +42,13 @@
         <symbol id="OVER_SOC_MAX_ALARM">15</symbol>
         <symbol id="OVER_SOC_MAX_WARNING">16</symbol>
         <symbol id="VOLTAGE_IMBALANCE_WARNING">17</symbol>
-        <symbol id="TEMPERATURE_IMBALANCE_ALARM">18</symbol>
-        <symbol id="TEMPERATURE_IMBALANCE_WARNING">19</symbol>
+        <symbol id="RESERVED_1">18</symbol>
+        <symbol id="RESERVED_2">19</symbol>
         <symbol id="CONTACTOR_ERROR">20</symbol>
         <symbol id="FAN_ERROR">21</symbol>
         <symbol id="GROUND_FAULT">22</symbol>
         <symbol id="OPEN_DOOR_ERROR">23</symbol>
-        <symbol id="RESERVED_1">24</symbol>
+        <symbol id="RESERVED_3">24</symbol>
         <symbol id="FIRE_ALARM">25</symbol>
         <symbol id="LEAK_ALARM">26</symbol>
         <symbol id="PUMP_ALARM">27</symbol>
@@ -50,29 +57,36 @@
         <symbol id="LOW_FLOW_ALARM">30</symbol>
         <symbol id="LOW_FLOW_WARNING">31</symbol>
       </point>
-      <point id="Evt2" offset="15" type="bitfield32" mandatory="true" />
-      <point id="EvtVndAlm" offset="17" type="bitfield32" mandatory="true" />
-      <point id="EvtVndWrn" offset="19" type="bitfield32" mandatory="true" />
-      <point id="ModV_SF" offset="21" type="sunssf" mandatory="true" />
-      <point id="CellV_SF" offset="22" type="sunssf" mandatory="true" />
-      <point id="Tmp_SF" offset="23" type="sunssf" mandatory="true" />
+      <point id="Evt2" offset="22" type="bitfield32" mandatory="true" />
+      <point id="EvtVndAlm" offset="24" type="bitfield32" mandatory="true" />
+      <point id="EvtVndWrn" offset="26" type="bitfield32" mandatory="true" />
+      <point id="ModV_SF" offset="28" type="sunssf" mandatory="true" />
+      <point id="CellV_SF" offset="29" type="sunssf" mandatory="true" />
+      <point id="Tmp_SF" offset="30" type="sunssf" mandatory="true" />
+      <point id="Pad1" offset="31" type="pad" mandatory="true" />
+      <point id="Pad2" offset="32" type="pad" mandatory="true" />
+      <point id="Pad3" offset="33" type="pad" mandatory="true" />
     </block>
-    <block type="repeating" len="20" name="module">
+    <block type="repeating" len="24" name="module">
       <point id="ModIdx" offset="0" type="uint16" mandatory="true" />
       <point id="ModNStk" offset="1" type="uint16" units="" mandatory="true" />
       <point id="ModSt" offset="2" type="bitfield32" mandatory="true">
         <symbol id="MODULE_ENABLED">0</symbol>
         <symbol id="CONTACTOR_STATUS">1</symbol>
       </point>
-      <point id="ModSoC" offset="3" type="uint16" units="%" mandatory="true" />
-      <point id="ModOCV" offset="4" type="uint16" units="V" mandatory="true" />
-      <point id="ModV" offset="5" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
-      <point id="ModCellVMax" offset="6" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
-      <point id="ModCellVMin" offset="7" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
-      <point id="ModCellVLoc" offset="8" type="uint16" units="" />
-      <point id="ModAnoTmp" offset="9" type="uint16" sf="Tmp_SF" units="C" />
-      <point id="ModCatTmp" offset="10" type="uint16" sf="Tmp_SF" units="C" />
-      <point id="ModConSt" offset="11" type="bitfield32" units="" mandatory="false" >
+      <point id="ModSoC" offset="4" type="uint16" units="%" mandatory="true" />
+      <point id="ModOCV" offset="5" type="uint16" units="V" mandatory="true" />
+      <point id="ModV" offset="6" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="ModCellVMax" offset="7" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="ModCellVMaxCell" offset="8" type="uint16" units="" />
+      <point id="ModCellVMin" offset="9" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="ModCellVMinCell" offset="10" type="uint16" units="" />
+
+      <point id="ModCellVAvg" offset="11" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+
+      <point id="ModAnoTmp" offset="12" type="uint16" sf="Tmp_SF" units="C" />
+      <point id="ModCatTmp" offset="13" type="uint16" sf="Tmp_SF" units="C" />
+      <point id="ModConSt" offset="14" type="bitfield32" units="" >
         <symbol id="CONTACTOR_0">0</symbol>
         <symbol id="CONTACTOR_1">1</symbol>
         <symbol id="CONTACTOR_2">2</symbol>
@@ -105,7 +119,7 @@
         <symbol id="CONTACTOR_29">29</symbol>
         <symbol id="CONTACTOR_30">30</symbol>
       </point>
-      <point id="ModEvt1" offset="13" type="bitfield32" mandatory="true" >
+      <point id="ModEvt1" offset="16" type="bitfield32" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="OVER_TEMP_WARNING">2</symbol>
@@ -124,13 +138,13 @@
         <symbol id="OVER_SOC_MAX_ALARM">15</symbol>
         <symbol id="OVER_SOC_MAX_WARNING">16</symbol>
         <symbol id="VOLTAGE_IMBALANCE_WARNING">17</symbol>
-        <symbol id="TEMPERATURE_IMBALANCE_ALARM">18</symbol>
-        <symbol id="TEMPERATURE_IMBALANCE_WARNING">19</symbol>
+        <symbol id="RESERVED_1">18</symbol>
+        <symbol id="RESERVED_2">19</symbol>
         <symbol id="CONTACTOR_ERROR">20</symbol>
         <symbol id="FAN_ERROR">21</symbol>
         <symbol id="GROUND_FAULT">22</symbol>
         <symbol id="OPEN_DOOR_ERROR">23</symbol>
-        <symbol id="RESERVED_1">24</symbol>
+        <symbol id="RESERVED_3">24</symbol>
         <symbol id="FIRE_ALARM">25</symbol>
         <symbol id="LEAK_ALARM">26</symbol>
         <symbol id="PUMP_ALARM">27</symbol>
@@ -139,9 +153,9 @@
         <symbol id="LOW_FLOW_ALARM">30</symbol>
         <symbol id="LOW_FLOW_WARNING">31</symbol>
       </point>
-      <point id="ModEvt2" offset="15" type="bitfield32" mandatory="true" >
+      <point id="ModEvt2" offset="18" type="bitfield32" mandatory="true" >
       </point>
-      <point id="ModConFail" offset="17" type="enum16" mandatory="true" >
+      <point id="ModConFail" offset="19" type="enum16" mandatory="true" >
         <symbol id="NO_FAILURE">0</symbol>
         <symbol id="BUTTON_PUSHED">1</symbol>
         <symbol id="MODULE_GROUND_FAULT">2</symbol>
@@ -150,14 +164,16 @@
         <symbol id="FUSE_OPEN">5</symbol>
         <symbol id="CONTACTOR_FAILURE">6</symbol>
       </point>
-      <point id="ModSetEna" offset="19" access="rw" type="enum16" mandatory="false" >
+      <point id="ModSetEna" offset="20" access="rw" type="enum16" >
         <symbol id="ENABLE_MODULE">1</symbol>
         <symbol id="DISABLE_MODULE">2</symbol>
       </point>
-      <point id="ModSetCon" offset="20" access="rw" type="enum16" mandatory="false">
+      <point id="ModSetCon" offset="21" access="rw" type="enum16">
         <symbol id="CONNECT_MODULE">1</symbol>
         <symbol id="DISCONNECT_MODULE">2</symbol>
       </point>
+      <point id="Pad4" offset="22" type="pad" mandatory="true" />
+      <point id="Pad5" offset="23" type="pad" mandatory="true" />
     </block>
   </model>
   <strings id="807" locale="en">
@@ -184,52 +200,87 @@
     <point id="ModVMax">
       <label>Maximum Module Voltage</label>
       <description>Maximum voltage for all modules in the string.</description>
+      <notes>Measurement.</notes>
+    </point>      
+    <point id="ModVMaxMod">
+      <label>Max Module Voltage Module</label>
+      <description>Module with the maximum voltage.</description>
       <notes></notes>
     </point>      
     <point id="ModVMin">
       <label>Minimum Module Voltage</label>
       <description>Minimum voltage for all modules in the string.</description>
+      <notes>Measurement.</notes>
+    </point>      
+    <point id="ModVMinMod">
+      <label>Min Module Voltage Module</label>
+      <description>Module with the minimum voltage.</description>
       <notes></notes>
     </point>      
-    <point id="ModVLoc">
-      <label>Max/Min Module Voltage Location</label>
-      <description>Location of the Module with the minimum and maximum voltage.</description>
-      <notes>Bit0:Bit7 = Max Module Number  Bit8:Bit15 = Min Module Number</notes>
+    <point id="ModVAvg">
+      <label>Average Module Voltage</label>
+      <description>Average voltage for all modules in the string.</description>
+      <notes>Calculation based on measurements.</notes>
     </point>      
     <point id="CellVMax">
       <label>Maximum Cell Voltage</label>
       <description>Maximum voltage for all cells in the string.</description>
+      <notes>Measurement.</notes>
+    </point>      
+    <point id="CellVMaxMod">
+      <label>Maximum Cell Voltage Module</label>
+      <description>Module containing the cell with the maximum voltage.</description>
       <notes></notes>
     </point>      
-    <point id="CellVMaxLoc">
-      <label>Maximum Cell Voltage Location</label>
-      <description>Location of the cell with the maximum voltage.</description>
-      <notes>Bit0:Bit7 = Module Number  Bit8:Bit15 = Stack Number</notes>
+    <point id="CellVMaxStk">
+      <label>Maximum Cell Voltage Stack</label>
+      <description>Stack containing the cell with the maximum voltage.</description>
+      <notes></notes>
     </point>      
     <point id="CellVMin">
       <label>Minimum Cell Voltage</label>
       <description>Minimum voltage for all cells in the string.</description>
+      <notes>Measurement.</notes>
+    </point>      
+    <point id="CellVMinMod">
+      <label>Minimum Cell Voltage Module</label>
+      <description>Module containing the cell with the minimum voltage.</description>
       <notes></notes>
     </point>      
-    <point id="CellVMinLoc">
-      <label>Minimum Cell Voltage Location</label>
-      <description>Location of the cell with the minimum voltage.</description>
-      <notes>Bit0:Bit7 = Module Number  Bit8:Bit15 = Stack Number</notes>
+    <point id="CellVMinStk">
+      <label>Minimum Cell Voltage Stack</label>
+      <description>Stack containing the cell with the minimum voltage.</description>
+      <notes></notes>
+    </point>      
+    <point id="CellVAvg">
+      <label>Average Cell Voltage</label>
+      <description>Average voltage for all cells in the string.</description>
+      <notes>Calculation based on measurements.</notes>
     </point>      
     <point id="TmpMax">
       <label>Maximum Temperature</label>
       <description>Maximum electrolyte temperature for all modules in the string.</description>
+      <notes>Measurement.</notes>
+    </point>      
+    <point id="TmpMaxMod">
+      <label>Max Temperature Module</label>
+      <description>Module with the maximum temperature.</description>
       <notes></notes>
     </point>      
     <point id="TmpMin">
       <label>Minimum Temperature</label>
       <description>Minimum electrolyte temperature for all modules in the string.</description>
+      <notes>Measurement.</notes>
+    </point>      
+    <point id="TmpMinMod">
+      <label>Min Temperature Module</label>
+      <description>Module with the minimum temperature.</description>
       <notes></notes>
     </point>      
-    <point id="TmpLoc">
-      <label>Max/Min Temperature Location</label>
-      <description>Location of the Module with the minimum and maximum temperature.</description>
-      <notes>Bit0:Bit7 = Max Module Number  Bit8:Bit15 = Min Module Number</notes>
+    <point id="TmpAvg">
+      <label>Average Temperature</label>
+      <description>Average electrolyte temperature for all modules in the string.</description>
+      <notes>Calculation based on measurements.</notes>
     </point>      
     <point id="Evt1">
       <label>String Event 1</label>
@@ -325,15 +376,15 @@
         <description>A voltage imbalance exists between the modules in the string.</description>
         <notes></notes>
       </symbol>
-      <symbol id="TEMPERATURE_IMBALANCE_ALARM">
-        <label>Temperature Imbalance Alarm</label>
-        <description>A temperature imbalance exists between the modules in the battery string.</description>
-        <notes></notes>
+      <symbol id="RESERVED_1">
+        <label>Reserved</label>
+        <description>Reserved bit.</description>
+        <notes>Do not implement.</notes>
       </symbol>
-      <symbol id="TEMPERATURE_IMBALANCE_WARNING">
-        <label>Temperature Imbalance Warning</label>
-        <description>A temperature imbalance is developing between the modules in the battery string.</description>
-        <notes></notes>
+      <symbol id="RESERVED_2">
+        <label>Reserved</label>
+        <description>Reserved bit.</description>
+        <notes>Do not implement.</notes>
       </symbol>
       <symbol id="CONTACTOR_ERROR">
         <label>Contactor Error</label>
@@ -355,7 +406,7 @@
         <description>One or more doors are open.</description>
         <notes></notes>
       </symbol>
-      <symbol id="RESERVED_1">
+      <symbol id="RESERVED_3">
         <label>Reserved</label>
         <description>Reserved bit.</description>
         <notes>Do not implement.</notes>
@@ -421,6 +472,24 @@
       <description>Scale factor for temperature.</description>
       <notes></notes>
     </point>
+    <point id="Pad1">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes> </notes>
+    </point>    
+    <point id="Pad2">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes> </notes>
+    </point>    
+    <point id="Pad3">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes> </notes>
+    </point>    
+
+    <!-- Repeating Block Strings -->
+
     <point id="ModIdx">
       <label>Module Index</label>
       <description>Index of the module within the string.</description>
@@ -464,18 +533,28 @@
     <point id="ModCellVMax">
       <label>Maximum Cell Voltage</label>
       <description>Maximum voltage for all cells in this module.</description>
-      <notes></notes>
+      <notes>Measurement.</notes>
     </point>      
+    <point id="ModCellVMaxCell">
+      <label>Max Cell Voltage Cell</label>
+      <description>Cell with the maximum cell voltage.</description>
+      <notes></notes>
+    </point>
     <point id="ModCellVMin">
       <label>Minimum Cell Voltage</label>
       <description>Minimum voltage for all cells in this module.</description>
-      <notes></notes>
+      <notes>Measurement.</notes>
     </point>      
-    <point id="ModCellVLoc">
-      <label>Max/Min Cell Voltage Location</label>
-      <description>Location of maximum and minimum cell voltages.</description>
-      <notes>Bit0:Bit7 = Max Stack Num  Bit8:Bit15 = Min Stack Num</notes>
+    <point id="ModCellVMinCell">
+      <label>Min Cell Voltage Cell</label>
+      <description>Cell with the minimum cell voltage.</description>
+      <notes></notes>
     </point>
+    <point id="ModCellVAvg">
+      <label>Average Cell Voltage</label>
+      <description>Average voltage for all cells in this module.</description>
+      <notes>Calculation based on measurements.</notes>
+    </point>      
     <point id="ModAnoTmp">
       <label>Anolyte Temperature</label>
       <description></description>
@@ -740,15 +819,15 @@
         <description>A voltage imbalance exists between the stacks in the module.</description>
         <notes></notes>
       </symbol>
-      <symbol id="TEMPERATURE_IMBALANCE_ALARM">
-        <label>Temperature Imbalance Alarm</label>
-        <description>A temperature imbalance exists between the stacks in the module.</description>
-        <notes></notes>
+      <symbol id="RESERVED_1">
+        <label>Reserved</label>
+        <description>Reserved bit.</description>
+        <notes>Do not implement.</notes>
       </symbol>
-      <symbol id="TEMPERATURE_IMBALANCE_WARNING">
-        <label>Temperature Imbalance Warning</label>
-        <description>A temperature imbalance is developing between the stacks in the module.</description>
-        <notes></notes>
+      <symbol id="RESERVED_1">
+        <label>Reserved</label>
+        <description>Reserved bit.</description>
+        <notes>Do not implement.</notes>
       </symbol>
       <symbol id="CONTACTOR_ERROR">
         <label>Contactor Error</label>
@@ -770,7 +849,7 @@
         <description>One or more doors are open.</description>
         <notes></notes>
       </symbol>
-      <symbol id="RESERVED_1">
+      <symbol id="RESERVED_3">
         <label>Reserved</label>
         <description>Reserved bit.</description>
         <notes>Do not implement.</notes>
@@ -886,5 +965,16 @@
         <notes></notes>
       </symbol>
     </point>
+    <point id="Pad4">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes> </notes>
+    </point>    
+    <point id="Pad5">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes> </notes>
+    </point>    
+
    </strings>
 </sunSpecModels>

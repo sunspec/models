@@ -2,34 +2,38 @@
 
   <!-- 805: Lithium-Ion Module Model -->
   <model id="805" len="2" name="lithium-ion-module">
-    <block len="22">
+    <block len="58">
       <point id="Idx" offset="0" type="uint16" mandatory="true" />
       <point id="NCell" offset="1" type="uint16" mandatory="true" />
-      <point id="SoC" offset="2" type="uint16" sf="SoC_SF" units="%" mandatory="false" />
-      <point id="SoH" offset="3" type="uint16" sf="SoH_SF" units="%" mandatory="false" />
-      <point id="DoD" offset="4" type="uint16" sf="DoD_SF" units="%" mandatory="false" />
-      <point id="V" offset="5" sf="V_SF" units="V" type="uint16" mandatory="true" />
-      <point id="CellVMax" offset="6" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
-      <point id="CellVMin" offset="7" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
-      <point id="CellVLoc" offset="8" type="uint16" mandatory="false" />
-      <point id="CellTmpMax" offset="9" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
-      <point id="CellTmpMin" offset="10" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
-      <point id="CellTmpLoc" offset="11" type="uint16" mandatory="false" />
-      <point id="SN" offset="12" len="32" type="string" mandatory="false" />
-      <point id="NCellBal" offset="13" type="uint16" mandatory="false" />
-      <point id="NCyc" offset="14" type="uint16" mandatory="false" />
-      <point id="SoC_SF" offset="25" type="sunssf" mandatory="false" />
-      <point id="SoH_SF" offset="16" type="sunssf" mandatory="false" />
-      <point id="DoD_SF" offset="17" type="sunssf" mandatory="false" />
-      <point id="V_SF" offset="18" type="sunssf" mandatory="true" />
-      <point id="CellV_SF" offset="19" type="sunssf" mandatory="true" />
-      <point id="Tmp_SF" offset="20" type="sunssf" mandatory="true" />
-      <point id="Pad" offset="21" type="pad" mandatory="true" />
+      <point id="SoC" offset="2" type="uint16" sf="SoC_SF" units="%" />
+      <point id="DoD" offset="3" type="uint16" sf="DoD_SF" units="%" />
+      <point id="NCyc" offset="4" type="uint16" />
+      <point id="SoH" offset="6" type="uint16" sf="SoH_SF" units="%" />
+      <point id="V" offset="7" sf="V_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellVMax" offset="8" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellVMaxCell" offset="9" type="uint16" />
+      <point id="CellVMin" offset="10" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellVMinCell" offset="11" type="uint16" />
+      <point id="CellVAvg" offset="12" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellTmpMax" offset="13" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="CellTmpMaxCell" offset="14" type="uint16" />
+      <point id="CellTmpMin" offset="15" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="CellTmpMinCell" offset="16" type="uint16" />
+      <point id="CellTmpAvg" offset="17" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="SN" offset="18" len="32" type="string" />
+      <point id="NCellBal" offset="50" type="uint16" />
+      <point id="SoC_SF" offset="51" type="sunssf" />
+      <point id="SoH_SF" offset="52" type="sunssf" />
+      <point id="DoD_SF" offset="53" type="sunssf" />
+      <point id="V_SF" offset="54" type="sunssf" mandatory="true" />
+      <point id="CellV_SF" offset="55" type="sunssf" mandatory="true" />
+      <point id="Tmp_SF" offset="56" type="sunssf" mandatory="true" />
+      <point id="Pad" offset="57" type="pad" mandatory="true" />
     </block>
     <block type="repeating" len="4" name="lithium-ion-module-cell">
       <point id="CellV" offset="0" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
       <point id="CellTmp" offset="1" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
-      <point id="CellSt" offset="2" type="bitfield32" mandatory="false">
+      <point id="CellSt" offset="2" type="bitfield32">
         <symbol id="CELL_IS_BALANCING">0</symbol>
       </point>        
     </block>
@@ -80,30 +84,50 @@
       <description>Maximum voltage for all cells in the module.</description>
       <notes>Measurement.</notes>
     </point>
+    <point id="CellVMaxCell">
+      <label>Max Cell Voltage Cell</label>
+      <description>Cell with the maximum voltage.</description>
+      <notes></notes>
+    </point>
     <point id="CellVMin">
       <label>Min Cell Voltage</label>
       <description>Minimum voltage for all cells in the module.</description>
       <notes>Measurement.</notes>
     </point>
-    <point id="CellVLoc">
-      <label>Max/Min Cell Voltage Loc</label>
-      <description>Location of maximum and minimum cell voltages.</description>
-      <notes>Bit0:Bit7 = Maximum cell number.  Bit8:Bit15 = Minimum cell number.</notes>
+    <point id="CellVMinCell">
+      <label>Min Cell Voltage Cell</label>
+      <description>Cell with the minimum voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="CellVAvg">
+      <label>Average Cell Voltage</label>
+      <description>Average voltage for all cells in the module.</description>
+      <notes>Calculation based on measurements.</notes>
     </point>
     <point id="CellTmpMax">
-      <label>Max Cell Temp</label>
+      <label>Max Cell Temperature</label>
       <description>Maximum temperature for all cells in the module.</description>
       <notes>Measurement.</notes>
     </point>
+    <point id="CellTmpMaxCell">
+      <label>Max Cell Temperature Cell</label>
+      <description>Cell with the maximum cell temperature.</description>
+      <notes></notes>
+    </point>
     <point id="CellTmpMin">
-      <label>Min Cell Temp</label>
+      <label>Min Cell Temperature</label>
       <description>Minimum temperature for all cells in the module.</description>
       <notes>Measurement.</notes>
     </point>
-    <point id="CellTmpLoc">
-      <label>Max/Min Cell Temp Loc</label>
-      <description>Location of maximum and minimum cell temperatures.</description>
-      <notes>Bit0:Bit7 = Index of maximum temperature reading.  Bit 8:Bit15: Index of minimum temperature reading.</notes>
+    <point id="CellTmpMinCell">
+      <label>Max Cell Temperature Cell</label>
+      <description>Cell with the maximum cell temperature.</description>
+      <notes></notes>
+    </point>
+    <point id="CellTmpAvg">
+      <label>Average Cell Temperature</label>
+      <description>Average temperature for all cells in the module.</description>
+      <notes>Calculation based on measurements.</notes>
     </point>
     <point id="SN">
       <label>Serial Number</label>
@@ -147,6 +171,11 @@
       <description>Scale factor for module temperature.</description>
       <notes></notes>
     </point>
+    <point id="Pad">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes> </notes>
+    </point>    
 
     <!-- Repeating Block Strings -->
 
