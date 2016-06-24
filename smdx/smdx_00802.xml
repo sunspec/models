@@ -166,12 +166,12 @@
       <notes></notes>
     </point>
     <point id="SocRsvMax">
-      <label>Maximum Reserve Percent</label>
+      <label>Max Reserve Percent</label>
       <description>Setpoint for maximum reserve for storage as a percentage of the nominal maximum storage.</description>
       <notes></notes>
     </point>
     <point id="SoCRsvMin">
-      <label>Minimum Reserve Percent</label>
+      <label>Min Reserve Percent</label>
       <description>Setpoint for maximum reserve for storage as a percentage of the nominal maximum storage.</description>
       <notes></notes>
     </point>
@@ -345,8 +345,8 @@
         <notes></notes>
       </symbol>
       <symbol id="SOC PROTECTION">
-        <label>SOC Protection</label>
-        <description>Battery bank is connected but SOC is too low. Battery should be considered "offline".</description>
+        <label>SoC Protection</label>
+        <description>Battery bank is connected but SoC is too low. Battery should be considered "offline".</description>
         <notes></notes>
       </symbol>
       <symbol id="FAULT">
@@ -440,22 +440,22 @@
         <notes></notes>
       </symbol>
       <symbol id="UNDER_SOC_MIN_ALARM">
-        <label>Under State of Charge Minimum Alarm</label>
+        <label>Under State of Charge Min Alarm</label>
         <description>Battery state of charge has reached or exceeded SoCMin</description>
         <notes></notes>
       </symbol>
       <symbol id="UNDER_SOC_MIN_WARNING">
-        <label>Under State of Charge Minimum Warning</label>
+        <label>Under State of Charge Min Warning</label>
         <description>Battery state of charge is approaching SoCMin</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_SOC_MAX_ALARM">
-        <label>Over State of Charge Maximum Warning</label>
+        <label>Over State of Charge Max Warning</label>
         <description>Battery state of charge has reached or exceeded SoCMax</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_SOC_MAX_WARNING">
-        <label>Over State of Charge Maximum Warning</label>
+        <label>Over State of Charge Max Warning</label>
         <description>Battery state of charge is approaching SoCMax</description>
         <notes></notes>
       </symbol>

@@ -198,7 +198,7 @@
       <notes></notes>
     </point>      
     <point id="ModVMax">
-      <label>Maximum Module Voltage</label>
+      <label>Max Module Voltage</label>
       <description>Maximum voltage for all modules in the string.</description>
       <notes>Measurement.</notes>
     </point>      
@@ -208,7 +208,7 @@
       <notes></notes>
     </point>      
     <point id="ModVMin">
-      <label>Minimum Module Voltage</label>
+      <label>Min Module Voltage</label>
       <description>Minimum voltage for all modules in the string.</description>
       <notes>Measurement.</notes>
     </point>      
@@ -223,32 +223,32 @@
       <notes>Calculation based on measurements.</notes>
     </point>      
     <point id="CellVMax">
-      <label>Maximum Cell Voltage</label>
+      <label>Max Cell Voltage</label>
       <description>Maximum voltage for all cells in the string.</description>
       <notes>Measurement.</notes>
     </point>      
     <point id="CellVMaxMod">
-      <label>Maximum Cell Voltage Module</label>
+      <label>Max Cell Voltage Module</label>
       <description>Module containing the cell with the maximum voltage.</description>
       <notes></notes>
     </point>      
     <point id="CellVMaxStk">
-      <label>Maximum Cell Voltage Stack</label>
+      <label>Max Cell Voltage Stack</label>
       <description>Stack containing the cell with the maximum voltage.</description>
       <notes></notes>
     </point>      
     <point id="CellVMin">
-      <label>Minimum Cell Voltage</label>
+      <label>Min Cell Voltage</label>
       <description>Minimum voltage for all cells in the string.</description>
       <notes>Measurement.</notes>
     </point>      
     <point id="CellVMinMod">
-      <label>Minimum Cell Voltage Module</label>
+      <label>Min Cell Voltage Module</label>
       <description>Module containing the cell with the minimum voltage.</description>
       <notes></notes>
     </point>      
     <point id="CellVMinStk">
-      <label>Minimum Cell Voltage Stack</label>
+      <label>Min Cell Voltage Stack</label>
       <description>Stack containing the cell with the minimum voltage.</description>
       <notes></notes>
     </point>      
@@ -258,7 +258,7 @@
       <notes>Calculation based on measurements.</notes>
     </point>      
     <point id="TmpMax">
-      <label>Maximum Temperature</label>
+      <label>Max Temperature</label>
       <description>Maximum electrolyte temperature for all modules in the string.</description>
       <notes>Measurement.</notes>
     </point>      
@@ -268,7 +268,7 @@
       <notes></notes>
     </point>      
     <point id="TmpMin">
-      <label>Minimum Temperature</label>
+      <label>Min Temperature</label>
       <description>Minimum electrolyte temperature for all modules in the string.</description>
       <notes>Measurement.</notes>
     </point>      
@@ -353,22 +353,22 @@
       </symbol>
       <symbol id="UNDER_SOC_MIN_ALARM">
         <label>Under State of Charge Minimum Alarm</label>
-        <description>Battery string state of charge has reached or exceeded SoCNpMinPct</description>
+        <description>Battery string state of charge has reached or exceeded SoCMin.</description>
         <notes></notes>
       </symbol>
       <symbol id="UNDER_SOC_MIN_WARNING">
         <label>Under State of Charge Minimum Warning</label>
-        <description>Battery string state of charge is approaching SoCNpMinPct</description>
+        <description>Battery string state of charge is approaching SoCMin.</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_SOC_MAX_ALARM">
         <label>Over State of Charge Maximum Alarm</label>
-        <description>Battery string state of charge has reached or exceeded SocNpMaxPct</description>
+        <description>Battery string state of charge has reached or exceeded SoCMax.</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_SOC_MAX_WARNING">
         <label>Over State of Charge Maximum Warning</label>
-        <description>Battery string state of charge is approaching SoCNpMaxPct</description>
+        <description>Battery string state of charge is approaching SoCMax</description>
         <notes></notes>
       </symbol>
       <symbol id="VOLTAGE_IMBALANCE_WARNING">
@@ -516,7 +516,7 @@
       </symbol>
     </point>
     <point id="ModSoC">
-      <label>State of Charge</label>
+      <label>Module State of Charge</label>
       <description>State of charge for this module.</description>
       <notes></notes>
     </point>      
@@ -796,22 +796,22 @@
       </symbol>
       <symbol id="UNDER_SOC_MIN_ALARM">
         <label>Under State of Charge Minimum Alarm</label>
-        <description>Module state of charge has reached or exceeded SoCNpMinPct</description>
+        <description>Module state of charge has reached or exceeded SoCMin.</description>
         <notes></notes>
       </symbol>
       <symbol id="UNDER_SOC_MIN_WARNING">
         <label>Under State of Charge Minimum Warning</label>
-        <description>Module state of charge is approaching SoCNpMinPct</description>
+        <description>Module state of charge is approaching SoCMin.</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_SOC_MAX_ALARM">
         <label>Over State of Charge Maximum Alarm</label>
-        <description>Module state of charge has reached or exceeded SocNpMaxPct</description>
+        <description>Module state of charge has reached or exceeded SoCMax.</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_SOC_MAX_WARNING">
         <label>Over State of Charge Maximum Warning</label>
-        <description>Module state of charge is approaching SoCNpMaxPct</description>
+        <description>Module state of charge is approaching SoCMax.</description>
         <notes></notes>
       </symbol>
       <symbol id="VOLTAGE_IMBALANCE_WARNING">

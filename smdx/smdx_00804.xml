@@ -123,12 +123,12 @@
       </symbol>
     </point>
     <point id="SoC">
-      <label>String SOC</label>
+      <label>String State of Charge</label>
       <description>Battery string state of charge, expressed as a percentage.</description>
       <notes>Measurement.</notes>
     </point>
     <point id="SoH">
-      <label>String SOH</label>
+      <label>String State of Health</label>
       <description>Battery string state of health, expressed as a percentage.</description>
       <notes>Measurement.</notes>
     </point>
@@ -267,23 +267,23 @@
         <notes></notes>
       </symbol>
       <symbol id="UNDER_SOC_MIN_ALARM">
-        <label>Under State of Charge Minimum Alarm</label>
-        <description>Battery string state of charge has reached or exceeded SoCNpMinPct</description>
+        <label>Under State of Charge Min Alarm</label>
+        <description>Battery string state of charge has reached or exceeded SoCMin.</description>
         <notes></notes>
       </symbol>
       <symbol id="UNDER_SOC_MIN_WARNING">
-        <label>Under State of Charge Minimum Warning</label>
-        <description>Battery string state of charge is approaching SoCNpMinPct</description>
+        <label>Under State of Charge Min Warning</label>
+        <description>Battery string state of charge is approaching SoCMin.</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_SOC_MAX_ALARM">
-        <label>Over State of Charge Maximum Warning</label>
-        <description>Battery string state of charge has reached or exceeded SocNpMaxPct</description>
+        <label>Over State of Charge Max Warning</label>
+        <description>Battery string state of charge has reached or exceeded SoCMax.</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_SOC_MAX_WARNING">
-        <label>Over State of Charge Maximum Warning</label>
-        <description>Battery string state of charge is approaching SoCNpMaxPct</description>
+        <label>Over State of Charge Max Warning</label>
+        <description>Battery string state of charge is approaching SoCMax.</description>
         <notes></notes>
       </symbol>
       <symbol id="VOLTAGE_IMBALANCE_WARNING">
