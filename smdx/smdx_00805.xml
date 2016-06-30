@@ -2,7 +2,7 @@
 
   <!-- 805: Lithium-Ion Module Model -->
   <model id="805" len="2" name="lithium-ion-module">
-    <block len="58">
+    <block len="26">
       <point id="Idx" offset="0" type="uint16" mandatory="true" />
       <point id="NCell" offset="1" type="uint16" mandatory="true" />
       <point id="SoC" offset="2" type="uint16" sf="SoC_SF" units="%" />
@@ -21,14 +21,13 @@
       <point id="CellTmpMinCell" offset="16" type="uint16" />
       <point id="CellTmpAvg" offset="17" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
       <point id="SN" offset="18" len="32" type="string" />
-      <point id="NCellBal" offset="50" type="uint16" />
-      <point id="SoC_SF" offset="51" type="sunssf" />
-      <point id="SoH_SF" offset="52" type="sunssf" />
-      <point id="DoD_SF" offset="53" type="sunssf" />
-      <point id="V_SF" offset="54" type="sunssf" mandatory="true" />
-      <point id="CellV_SF" offset="55" type="sunssf" mandatory="true" />
-      <point id="Tmp_SF" offset="56" type="sunssf" mandatory="true" />
-      <point id="Pad" offset="57" type="pad" mandatory="true" />
+      <point id="NCellBal" offset="19" type="uint16" />
+      <point id="SoC_SF" offset="20" type="sunssf" />
+      <point id="SoH_SF" offset="21" type="sunssf" />
+      <point id="DoD_SF" offset="22" type="sunssf" />
+      <point id="V_SF" offset="23" type="sunssf" mandatory="true" />
+      <point id="CellV_SF" offset="24" type="sunssf" mandatory="true" />
+      <point id="Tmp_SF" offset="25" type="sunssf" mandatory="true" />
     </block>
     <block type="repeating" len="4" name="lithium-ion-module-cell">
       <point id="CellV" offset="0" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
@@ -171,11 +170,6 @@
       <description>Scale factor for module temperature.</description>
       <notes></notes>
     </point>
-    <point id="Pad">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>    
 
     <!-- Repeating Block Strings -->
 
