@@ -135,7 +135,7 @@
     </point>
     <point id="NCellBal">
       <label>Balanced Cell Count</label>
-      <description>Count of balanced cells in the module.</description>
+      <description>Number of cells currently being balanced in the module.</description>
     </point>
     <point id="NCyc">
       <label>Cycle Count</label>

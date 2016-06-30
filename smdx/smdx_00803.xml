@@ -117,10 +117,12 @@
         <symbol id="GROUND_FAULT">22</symbol>
         <symbol id="OPEN_DOOR_ERROR">23</symbol>
         <symbol id="RESERVED_1">24</symbol>
+        <symbol id="OTHER_ALARM">25</symbol>
+        <symbol id="OTHER_WARNING">26</symbol>
       </point>
       <point id="StrEvt2" offset="20" type="bitfield32" />
-      <point id="StrEvtVndAlm" offset="22" type="bitfield32" />
-      <point id="StrEvtVndWrn" offset="24" type="bitfield32" />
+      <point id="StrEvtVnd1" offset="22" type="bitfield32" />
+      <point id="StrEvtVnd2" offset="24" type="bitfield32" />
       <point id="StrSetEna" offset="26" access="rw" type="enum16">
         <symbol id="ENABLE_STRING">1</symbol>
         <symbol id="DISABLE_STRING">2</symbol>
@@ -229,7 +231,7 @@
     </point>
     <point id="NCellBal">
       <label>Battery Cell Balancing Count</label>
-      <description>Total count of cells that are currently being balanced.</description>
+      <description>Total number of cells that are currently being balanced.</description>
       <notes></notes>
     </point>
     <point id="CellV_SF">
@@ -284,7 +286,7 @@
       <symbol id="CONTACTOR_STATUS">
         <label>Contactor Status</label>
         <description>String contactor is closed.</description>
-        <notes></notes>
+        <notes>If string has multiple contactors, indicates that all contactors are closed.</notes>
       </symbol>
     </point>
     <point id="StrSoC">
@@ -641,21 +643,31 @@
         <description>Reserved bit.</description>
         <notes>Do not implement.</notes>
       </symbol>
+      <symbol id="OTHER_ALARM">
+        <label>Other String Alarm</label>
+        <description>A vendor specific alarm has occurred.</description>
+        <notes>See EvtVnd1 and EvtVnd2 for more information.</notes>
+      </symbol>
+      <symbol id="OTHER_WARNING">
+        <label>Other String Warning</label>
+        <description>A vendor specific warning has occurred.</description>
+        <notes>See EvtVnd1 and EvtVnd2 for more information.</notes>
+      </symbol>
     </point>
     <point id="StrEvt2">
       <label>String Event 2</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
       <notes>Reserved for future use.</notes>
     </point>
-    <point id="StrEvtVndAlm">
-      <label>Vendor Specific String Alarms</label>
-      <description>Vendor specific string alarms.  Bit flags.</description>
-      <notes>Bits are vendor specific and not defined here.</notes>
+    <point id="StrEvtVnd1">
+      <label>Vendor String Event Bitfield 1</label>
+      <description>Vendor defined events.</description>
+      <notes></notes>
     </point>
-    <point id="StrEvtVndWrn">
-      <label>Vendor Specific String Warnings</label>
-      <description>Vendor specific string warnings.  Bit flags.</description>
-      <notes>Bits are vendor specific and not defined here.</notes>
+    <point id="StrEvtVnd2">
+      <label>Vendor String Event Bitfield 2</label>
+      <description>Vendor defined events.</description>
+      <notes></notes>
     </point>
     <point id="StrConFail">
       <label>Connection Failure Reason</label>

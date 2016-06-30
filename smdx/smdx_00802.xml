@@ -27,9 +27,9 @@
         <symbol id="REMOTE">0</symbol>
         <symbol id="LOCAL">1</symbol>
       </point>
-      <point id="Hb" offset="15" access="rw" type="uint16" />
+      <point id="Hb" offset="15" type="uint16" />
       <point id="CtrlHb" offset="16" access="rw" type="uint16" />
-      <point id="AlmRst" offset="17" type="uint16" />
+      <point id="AlmRst" offset="17" access="rw" type="uint16" mandatory="true" />
       <point id="Typ" offset="18" type="enum16" mandatory="true" >
         <symbol id="NOT APPLICABLE_UNKNOWN">0</symbol>
         <symbol id="LEAD_ACID">1</symbol>
@@ -79,10 +79,12 @@
         <symbol id="GROUND_FAULT">22</symbol>
         <symbol id="OPEN_DOOR_ERROR">23</symbol>
         <symbol id="CURRENT_IMBALANCE_WARNING">24</symbol>
+        <symbol id="OTHER_ALARM">25</symbol>
+        <symbol id="OTHER_WARNING">26</symbol>
       </point>
       <point id="Evt2" offset="24" type="bitfield32" mandatory="true" />
-      <point id="EvtVndAlm" offset="26" type="bitfield32" mandatory="true" />
-      <point id="EvtVndWrn" offset="28" type="bitfield32" mandatory="true" />
+      <point id="EvtVnd1" offset="26" type="bitfield32" mandatory="true" />
+      <point id="EvtVnd2" offset="28" type="bitfield32" mandatory="true" />
       <point id="V" offset="30" type="uint16" sf="V_SF" units="V" mandatory="true" />
       <point id="VMax" offset="31" type="uint16" sf="V_SF" units="V" />
       <point id="VMin" offset="32" type="uint16" sf="V_SF" units="V" />
@@ -499,21 +501,31 @@
         <description>A current imbalance exists between the strings in the battery bank.</description>
         <notes></notes>
       </symbol>
+      <symbol id="OTHER_ALARM">
+        <label>Other Battery Alarm</label>
+        <description>A vendor specific alarm has occurred.</description>
+        <notes>See EvtVnd1 and EvtVnd2 for more information.</notes>
+      </symbol>
+      <symbol id="OTHER_WARNING">
+        <label>Other Battery Warning</label>
+        <description>A vendor specific warning has occurred.</description>
+        <notes>See EvtVnd1 and EvtVnd2 for more information.</notes>
+      </symbol>
     </point>
     <point id="Evt2">
       <label>Battery Event 2 Bitfield</label>
       <description>Alarms and warnings.  Bit flags.</description>
       <notes>Reserved for future use.</notes>
     </point>
-    <point id="EvtVndAlm">
-      <label>Vendor Specific Alarms</label>
-      <description>Vendor specific alarms.  Bit flags.</description>
-      <notes>Bits are vendor specific and not defined here.</notes>
+    <point id="EvtVnd1">
+      <label>Vendor Event Bitfield 1</label>
+      <description>Vendor defined events.</description>
+      <notes></notes>
     </point>
-    <point id="EvtVndWrn">
-      <label>Vendor Specific Warnings</label>
-      <description>Vendor specific warnings.  Bit flags.</description>
-      <notes>Bits are vendor specific and not defined here.</notes>
+    <point id="EvtVnd2">
+      <label>Vendor Event Bitfield 2</label>
+      <description>Vendor defined events.</description>
+      <notes></notes>
     </point>
     <point id="V">
       <label>External Battery Voltage</label>
