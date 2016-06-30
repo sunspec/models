@@ -21,14 +21,14 @@
       <point id="StrAMaxStr" offset="15" type="uint16" />
       <point id="StrAMin" offset="16" type="int16" sf="A_SF" units="A" />
       <point id="StrAMinStr" offset="17" type="uint16" />
-      <point id="NCellBal" offset="18" type="uint16" />
-      <point id="CellV_SF" offset="19" type="sunssf" mandatory="true" />
-      <point id="ModTmp_SF" offset="20" type="sunssf" mandatory="true" />
-      <point id="A_SF" offset="21" type="sunssf" mandatory="true" />
-      <point id="SoH_SF" offset="22" type="sunssf" />
-      <point id="Pad1" offset="23" type="pad" mandatory="true" />
-      <point id="Pad2" offset="24" type="pad" mandatory="true" />
-      <point id="Pad3" offset="25" type="pad" mandatory="true" />
+      <point id="StrAAvg" offset="18" type="int16" sf="A_SF" units="A" />
+      <point id="NCellBal" offset="19" type="uint16" />
+      <point id="CellV_SF" offset="20" type="sunssf" mandatory="true" />
+      <point id="ModTmp_SF" offset="21" type="sunssf" mandatory="true" />
+      <point id="A_SF" offset="22" type="sunssf" mandatory="true" />
+      <point id="SoH_SF" offset="23" type="sunssf" />
+      <point id="Pad1" offset="24" type="pad" mandatory="true" />
+      <point id="Pad2" offset="25" type="pad" mandatory="true" />
     </block>
     <block type="repeating" len="28" name="string">
       <point id="StrNMod" offset="0" type="uint16" mandatory="true" />
@@ -229,6 +229,11 @@
       <description>String with the minimum current.</description>
       <notes></notes>
     </point>
+    <point id="StrAAvg">
+      <label>Average String Current</label>
+      <description>Average string current for all strings in the bank.</description>
+      <notes>Calculation based on measurements.</notes>
+    </point>
     <point id="NCellBal">
       <label>Battery Cell Balancing Count</label>
       <description>Total number of cells that are currently being balanced.</description>
@@ -260,11 +265,6 @@
       <notes> </notes>
     </point>    
     <point id="Pad2">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>    
-    <point id="Pad3">
       <label>Pad</label>
       <description>Pad register.</description>
       <notes> </notes>

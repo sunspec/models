@@ -60,14 +60,17 @@
       <point id="EvtVnd1" offset="26" type="bitfield32" />
       <point id="EvtVnd2" offset="28" type="bitfield32" />
       <point id="SetEna" offset="29" access="rw" type="enum16" mandatory="true" />
-      <point id="SoC_SF" offset="30" type="sunssf" mandatory="true" />
-      <point id="SoH_SF" offset="31" type="sunssf" />
-      <point id="DoD_SF" offset="32" type="sunssf" />
-      <point id="A_SF" offset="33" type="sunssf" mandatory="true" />
-      <point id="V_SF" offset="34" type="sunssf" />
-      <point id="CellV_SF" offset="35" type="sunssf" mandatory="true" />
-      <point id="ModTmp_SF" offset="36" type="sunssf" mandatory="true" />
-      <point id="Pad1" offset="37" type="pad" mandatory="true" />
+      <point id="SetCon" offset="30" access="rw" type="enum16" mandatory="true">
+        <symbol id="CONNECT_STRING">1</symbol>
+        <symbol id="DISCONNECT_STRING">2</symbol>
+      </point>
+      <point id="SoC_SF" offset="31" type="sunssf" mandatory="true" />
+      <point id="SoH_SF" offset="32" type="sunssf" />
+      <point id="DoD_SF" offset="33" type="sunssf" />
+      <point id="A_SF" offset="34" type="sunssf" mandatory="true" />
+      <point id="V_SF" offset="35" type="sunssf" />
+      <point id="CellV_SF" offset="36" type="sunssf" mandatory="true" />
+      <point id="ModTmp_SF" offset="37" type="sunssf" mandatory="true" />
     </block>
     <block type="repeating" len="16" name="lithium_ion_string_module">
       <point id="ModNCell" offset="0" type="uint16" mandatory="true" />
@@ -364,6 +367,21 @@
       <description>Enables and disables the string.  Should reset to 0 upon completion.</description>
       <notes></notes>
     </point>
+    <point id="SetCon">
+      <label>Connect/Disconnect String</label>
+      <description>Connects and disconnects the string.</description>
+      <notes>Should reset to 0 upon completion.</notes>
+      <symbol id="CONNECT_STRING">
+        <label>Connect String</label>
+        <description>Connect the string.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DISCONNECT_STRING">
+        <label>Disconnect String</label>
+        <description>Disconnect the string.</description>
+        <notes></notes>
+      </symbol>
+    </point>
     <point id="NCellBal">
       <label>String Cell Balancing Count</label>
       <description>Number of cells currently being balanced in the string.</description>
@@ -409,11 +427,6 @@
       <description>Scale factor for module temperature.</description>
       <notes></notes>
     </point>
-    <point id="Pad1">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>    
 
     <!-- Repeating Block Strings -->
 
