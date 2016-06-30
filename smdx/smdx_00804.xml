@@ -59,8 +59,8 @@
       <point id="Evt2" offset="24" type="bitfield32" />
       <point id="EvtVnd1" offset="26" type="bitfield32" />
       <point id="EvtVnd2" offset="28" type="bitfield32" />
-      <point id="SetEna" offset="29" access="rw" type="enum16" mandatory="true" />
-      <point id="SetCon" offset="30" access="rw" type="enum16" mandatory="true">
+      <point id="SetEna" offset="29" access="rw" type="enum16" />
+      <point id="SetCon" offset="30" access="rw" type="enum16">
         <symbol id="CONNECT_STRING">1</symbol>
         <symbol id="DISCONNECT_STRING">2</symbol>
       </point>
