@@ -159,7 +159,7 @@
       </point>
       <point id="ModEvt2" offset="18" type="bitfield32" mandatory="true" >
       </point>
-      <point id="ModConFail" offset="19" type="enum16" mandatory="false" >
+      <point id="ModConFail" offset="20" type="enum16" mandatory="false" >
         <symbol id="NO_FAILURE">0</symbol>
         <symbol id="BUTTON_PUSHED">1</symbol>
         <symbol id="MODULE_GROUND_FAULT">2</symbol>
@@ -168,16 +168,15 @@
         <symbol id="FUSE_OPEN">5</symbol>
         <symbol id="CONTACTOR_FAILURE">6</symbol>
       </point>
-      <point id="ModSetEna" offset="20" access="rw" type="enum16" >
+      <point id="ModSetEna" offset="21" access="rw" type="enum16" >
         <symbol id="ENABLE_MODULE">1</symbol>
         <symbol id="DISABLE_MODULE">2</symbol>
       </point>
-      <point id="ModSetCon" offset="21" access="rw" type="enum16">
+      <point id="ModSetCon" offset="22" access="rw" type="enum16">
         <symbol id="CONNECT_MODULE">1</symbol>
         <symbol id="DISCONNECT_MODULE">2</symbol>
       </point>
-      <point id="Pad4" offset="22" type="pad" mandatory="true" />
-      <point id="Pad5" offset="23" type="pad" mandatory="true" />
+      <point id="Pad4" offset="23" type="pad" mandatory="true" />
     </block>
   </model>
   <strings id="807" locale="en">
@@ -990,11 +989,6 @@
       </symbol>
     </point>
     <point id="Pad4">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>    
-    <point id="Pad5">
       <label>Pad</label>
       <description>Pad register.</description>
       <notes> </notes>

@@ -95,11 +95,11 @@
       <point id="CellVMin" offset="36" type="uint16" sf="CellV_SF" units="V" />
       <point id="CellVMinStr" offset="37" type="uint16" />
       <point id="CellVMinMod" offset="38" type="uint16" />
-      <point id="CellVAvg" offset="39" type="uint16" sf="V_SF" units="V" />
+      <point id="CellVAvg" offset="39" type="uint16" sf="CellV_SF" units="V" />
       <point id="A" offset="40" type="int16" sf="A_SF" units="A" mandatory="true" />
       <point id="AChaMax" offset="41" type="uint16" sf="AMax_SF" units="A" />
       <point id="ADisChaMax" offset="42" type="uint16" sf="AMax_SF" units="A" />
-      <point id="W" offset="43" type="int16" sf="W_SF" mandatory="true" />
+      <point id="W" offset="43" type="int16" sf="W_SF" units="W" mandatory="true" />
       <point id="ReqInvState" offset="44" type="enum16" >
         <symbol id="NO REQUEST">0</symbol>
         <symbol id="START">1</symbol>
@@ -452,7 +452,7 @@
         <notes></notes>
       </symbol>
       <symbol id="OVER_SOC_MAX_ALARM">
-        <label>Over State of Charge Max Warning</label>
+        <label>Over State of Charge Max Alarm</label>
         <description>Battery state of charge has reached or exceeded SoCMax</description>
         <notes></notes>
       </symbol>
