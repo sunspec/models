@@ -138,12 +138,12 @@
       <notes></notes>
     </model>
     <point id="AHRtg">
-      <label>Nameplate Energy Capacity in Amp-hours</label>
-      <description>Nameplate energy capacity in amp-hours.</description>
+      <label>Nameplate Charge Capacity</label>
+      <description>Nameplate charge capacity in amp-hours.</description>
       <notes></notes>
     </point>
     <point id="WHRtg">
-      <label>Nameplate Energy Capacity in Watt-hours</label>
+      <label>Nameplate Energy Capacity</label>
       <description>Nameplate energy capacity in DC watt-hours.</description>
       <notes></notes>
     </point>
@@ -669,12 +669,12 @@
     </point>
     <point id="AHRtg_SF">
       <label></label>
-      <description>Scale factor for energy capacity in amp-hours.</description>
+      <description>Scale factor for charge capacity.</description>
       <notes></notes>
     </point>
     <point id="WHRtg_SF">
       <label></label>
-      <description>Scale factor for energy capacity in watt-hours.</description>
+      <description>Scale factor for energy capacity.</description>
       <notes></notes>
     </point>
     <point id="WChaDisChaMax_SF">
