@@ -1,0 +1,336 @@
+<sunSpecModels v="1">
+  <!-- 140: HVRT Extended Curve  -->
+  <model id="140" len="60" name="hvrtx" status="test">
+    <block len="10" type="fixed">
+      <point id="ActCrv" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
+      <point id="ModEna" offset="1" access="rw" type="bitfield16" len="1" mandatory="true">
+        <symbol id="ENABLED">0</symbol>
+      </point>
+      <point id="WinTms" offset="2" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="RvrtTms" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="RmpTms" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="NCrv" offset="5" access="r" type="uint16" len="1" mandatory="true"  />
+      <point id="NPt" offset="6" access="r" type="uint16" len="1" mandatory="true"  />
+      <point id="Tms_SF" offset="7" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="V_SF" offset="8" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="CrvType" offset="9" access="r" type="enum16" len="1" mandatory="true" >
+        <symbol id="CEASE_TO_ENERGIZE">1</symbol>
+      </point>
+    </block>
+    <block len="50" type="repeating" name="curve">
+      <point id="ActPt" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
+      <point id="Tms1" offset="1" access="rw" type="uint16" len="1" mandatory="true" units="Secs" sf="Tms_SF"/>
+      <point id="V1" offset="2" access="rw" type="uint16" len="1" mandatory="true" units="% VRef" sf="V_SF"/>
+      <point id="Tms2" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V2" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms3" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V3" offset="6" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms4" offset="7" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V4" offset="8" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms5" offset="9" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V5" offset="10" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms6" offset="11" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V6" offset="12" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms7" offset="13" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V7" offset="14" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms8" offset="15" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V8" offset="16" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms9" offset="17" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V9" offset="18" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms10" offset="19" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V10" offset="20" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms11" offset="21" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V11" offset="22" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms12" offset="23" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V12" offset="24" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms13" offset="25" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V13" offset="26" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms14" offset="27" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V14" offset="28" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms15" offset="29" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V15" offset="30" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms16" offset="31" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V16" offset="32" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms17" offset="33" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V17" offset="34" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms18" offset="35" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V18" offset="36" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms19" offset="37" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V19" offset="38" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="Tms20" offset="39" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
+      <point id="V20" offset="40" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
+      <point id="CrvNam" offset="41" access="rw" type="string" len="8" mandatory="false"  />
+      <point id="ReadOnly" offset="49" access="r" type="enum16" len="1" mandatory="true" >
+        <symbol id="READWRITE">0</symbol>
+        <symbol id="READONLY">1</symbol>
+      </point>
+    </block>
+  </model>
+  <strings id="140" locale="en">
+    <model>
+      <label>HVRTX</label>
+      <description>HVRT extended curve</description>
+      <notes>Ref 4: 11</notes>
+    </model>
+    <point id="NCrv">
+      <label>NCrv</label>
+      <description>Number of curves supported (recommend 4).</description>
+      <notes> </notes>
+    </point>
+    <point id="NPt">
+      <label>NPt</label>
+      <description>Number of curve points supported (maximumn of 20).</description>
+      <notes> </notes>
+    </point>
+    <point id="ModEna">
+      <label>ModEna</label>
+      <description>LVRT control mode. Enable active curve.  Bitfield value.</description>
+      <notes> </notes>
+    </point>
+    <point id="ActCrv">
+      <label>ActCrv</label>
+      <description>Index of active curve. 0=no active curve.</description>
+      <notes> </notes>
+    </point>
+    <point id="WinTms">
+      <label>WinTms</label>
+      <description>Time window for LVRT change.</description>
+      <notes>Setting is ignored for LVRT controls.</notes>
+    </point>
+    <point id="RvrtTms">
+      <label>RvrtTms</label>
+      <description>Timeout period for LVRT curve selection.</description>
+      <notes>Setting is ignored for LVRT controls.</notes>
+    </point>
+    <point id="RmpTms">
+      <label>RmpTms</label>
+      <description>Ramp time for moving from current mode to new mode.</description>
+      <notes>Setting is ignored for LVRT controls.</notes>
+    </point>
+    <point id="Tms_SF">
+      <label>Tms_SF</label>
+      <description>Scale factor for duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V_SF">
+      <label>V_SF</label>
+      <description>Scale factor for percent VRef.</description>
+      <notes> </notes>
+    </point>
+    <point id="CrvNam">
+      <label>CrvNam</label>
+      <description>Optional description for curve.</description>
+      <notes> </notes>
+    </point>
+    <point id="ActPt">
+      <label>ActPt</label>
+      <description>Number of active points in array.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms1">
+      <label>Tms1</label>
+      <description>Point 1 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V1">
+      <label>V1</label>
+      <description>Point 1 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms2">
+      <label>Tms2</label>
+      <description>Point 2 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V2">
+      <label>V2</label>
+      <description>Point 2 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms3">
+      <label>Tms3</label>
+      <description>Point 3 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V3">
+      <label>V3</label>
+      <description>Point 3 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms4">
+      <label>Tms4</label>
+      <description>Point 4 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V4">
+      <label>V4</label>
+      <description>Point 4 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms5">
+      <label>Tms5</label>
+      <description>Point 5 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V5">
+      <label>V5</label>
+      <description>Point 5 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms6">
+      <label>Tms6</label>
+      <description>Point 6 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V6">
+      <label>V6</label>
+      <description>Point 6 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms7">
+      <label>Tms7</label>
+      <description>Point 7 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V7">
+      <label>V7</label>
+      <description>Point 7 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms8">
+      <label>Tms8</label>
+      <description>Point 8 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V8">
+      <label>V8</label>
+      <description>Point 8 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms9">
+      <label>Tms9</label>
+      <description>Point 9 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V9">
+      <label>V9</label>
+      <description>Point 9 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms10">
+      <label>Tms10</label>
+      <description>Point 10 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V10">
+      <label>V10</label>
+      <description>Point 10 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms11">
+      <label>Tms11</label>
+      <description>Point 11 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V11">
+      <label>V11</label>
+      <description>Point 11 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms12">
+      <label>Tms12</label>
+      <description>Point 12 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V12">
+      <label>V12</label>
+      <description>Point 12 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms13">
+      <label>Tms13</label>
+      <description>Point 13 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V13">
+      <label>V13</label>
+      <description>Point 13 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms14">
+      <label>Tms14</label>
+      <description>Point 14 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V14">
+      <label>V14</label>
+      <description>Point 14 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms15">
+      <label>Tms15</label>
+      <description>Point 15 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V15">
+      <label>V15</label>
+      <description>Point 15 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms16">
+      <label>Tms16</label>
+      <description>Point 16 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V16">
+      <label>V16</label>
+      <description>Point 16 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms17">
+      <label>Tms17</label>
+      <description>Point 17 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V17">
+      <label>V17</label>
+      <description>Point 17 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms18">
+      <label>Tms18</label>
+      <description>Point 18 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V18">
+      <label>V18</label>
+      <description>Point 18 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms19">
+      <label>Tms19</label>
+      <description>Point 19 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V19">
+      <label>V19</label>
+      <description>Point 19 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms20">
+      <label>Tms20</label>
+      <description>Point 20 duration.</description>
+      <notes> </notes>
+    </point>
+    <point id="V20">
+      <label>V20</label>
+      <description>Point 20 voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="ReadOnly">
+      <label>ReadOnly</label>
+      <description>Enumerated value indicates if curve is read-only or can be modified.</description>
+      <notes> </notes>
+    </point>
+  </strings>
+</sunSpecModels>

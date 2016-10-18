@@ -1,5 +1,5 @@
 <manifest>
-  <file md5="41083c769129eef6235394f8d280ffa3" name="CHANGELOG" />
+  <file md5="1cea00e3fc273e627d5db8de4d7f538b" name="CHANGELOG" />
   <file md5="2dd805cf3108bbcfae774033b4bcbd5f" name="smdx.xsd" />
   <file md5="c295afc91da4480269caa0dde149c296" name="smdx_00001.xml" />
   <file md5="cee44d064c9d368d04606df29fcf0fe3" name="smdx_00002.xml" />
@@ -45,6 +45,13 @@
   <file md5="0dfbc584e11c0b0eb530ac60f97edd0a" name="smdx_00136.xml" />
   <file md5="937aa8906c697bf85fec0450c5dc5bf4" name="smdx_00137.xml" />
   <file md5="923f134a515697257c2045d6eef0cc9a" name="smdx_00138.xml" />
+  <file md5="4a6a620eeb0066903c5140a09d5f4ffb" name="smdx_00139.xml" />
+  <file md5="f772909988da46eff8d313c57d7e948e" name="smdx_00140.xml" />
+  <file md5="a2f25463d18c738a94c77a6eeb7cf123" name="smdx_00141.xml" />
+  <file md5="fc78f94580a28d1daf567a66194d1e48" name="smdx_00142.xml" />
+  <file md5="0fd5058b441f54b4dac042420bff7aa1" name="smdx_00143.xml" />
+  <file md5="2b43346596b816afce9a7a749f24e0aa" name="smdx_00144.xml" />
+  <file md5="33abcdae066dec6dd0a60e7df7bccef4" name="smdx_00145.xml" />
   <file md5="d4bb82e2e45c344ded30ecfdaca598b8" name="smdx_00160.xml" />
   <file md5="944e88f80d217ebfe06a6347e040127e" name="smdx_00201.xml" />
   <file md5="1077b7d012a35be20680f85d7e17ca5c" name="smdx_00202.xml" />
@@ -71,11 +78,11 @@
   <file md5="113719af4addee538689fd31e0afc3d9" name="smdx_00601.xml" />
   <file md5="e7bf421aaf6a86ef7e995219db7a9265" name="smdx_00801.xml" />
   <file md5="a8329811015b1aa490ee9da9fa212795" name="smdx_00802.xml" />
-  <file md5="575a9417b5852b53269d1901978180ef" name="smdx_00803.xml" />
+  <file md5="44aab1d96157cbab02a5c93cb9d9a7af" name="smdx_00803.xml" />
   <file md5="52e9c4014e88264640a1d3d5aabdcf45" name="smdx_00804.xml" />
   <file md5="0d191ba6efefe63cd82329aa2ca8de6f" name="smdx_00805.xml" />
   <file md5="4ed4a12acf8c7fca5288872314951d02" name="smdx_00806.xml" />
-  <file md5="667133a72f0b110c6a247d3449747b4a" name="smdx_00807.xml" />
+  <file md5="b64da8a3c5d0530dc463e6f623368442" name="smdx_00807.xml" />
   <file md5="18749956780dc33c1d2050d6c0064456" name="smdx_00808.xml" />
   <file md5="20d3cc8ee07c2f2178de3d40a521356f" name="smdx_00809.xml" />
   <file md5="92f777bd774d731b8c6f9fbfef884f1c" name="smdx_63001.xml" />
