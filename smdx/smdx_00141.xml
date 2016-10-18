@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 141: LFRTC -->
-  <model id="141" len="60" name="lfrtc" status="draft" status="test">
+  <model id="141" len="60" name="lfrtc" status="test">
     <block len="10" type="fixed">
       <point id="ActCrv" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
       <point id="ModEna" offset="1" access="rw" type="bitfield16" len="1" mandatory="true">
