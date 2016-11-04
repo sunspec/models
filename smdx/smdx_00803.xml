@@ -30,7 +30,7 @@
       <point id="Pad1" offset="24" type="pad" mandatory="true" />
       <point id="Pad2" offset="25" type="pad" mandatory="true" />
     </block>
-    <block type="repeating" len="28" name="string">
+    <block type="repeating" len="32" name="string">
       <point id="StrNMod" offset="0" type="uint16" mandatory="true" />
       <point id="StrSt" offset="1" type="bitfield32" mandatory="true">
         <symbol id="STRING_ENABLED">0</symbol>
