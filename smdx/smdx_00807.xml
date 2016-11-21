@@ -52,22 +52,23 @@
         <symbol id="OTHER_ALARM">25</symbol>
         <symbol id="OTHER_WARNING">26</symbol>
         <symbol id="FIRE_ALARM">27</symbol>
-        <symbol id="LEAK_ALARM">28</symbol>
-        <symbol id="PUMP_ALARM">29</symbol>
-        <symbol id="HIGH_PRESSURE_ALARM">30</symbol>
-        <symbol id="HIGH_PRESSURE_WARNING">31</symbol>
-        <symbol id="LOW_FLOW_ALARM">32</symbol>
-        <symbol id="LOW_FLOW_WARNING">33</symbol>
       </point>
-      <point id="Evt2" offset="22" type="bitfield32" mandatory="true" />
+      <point id="Evt2" offset="22" type="bitfield32" mandatory="true">
+        <symbol id="LEAK_ALARM">0</symbol>
+        <symbol id="PUMP_ALARM">1</symbol>
+        <symbol id="HIGH_PRESSURE_ALARM">2</symbol>
+        <symbol id="HIGH_PRESSURE_WARNING">3</symbol>
+        <symbol id="LOW_FLOW_ALARM">4</symbol>
+        <symbol id="LOW_FLOW_WARNING">5</symbol>
+      </point>
       <point id="EvtVnd1" offset="24" type="bitfield32" mandatory="true" />
       <point id="EvtVnd2" offset="26" type="bitfield32" mandatory="true" />
       <point id="ModV_SF" offset="28" type="sunssf" mandatory="true" />
       <point id="CellV_SF" offset="29" type="sunssf" mandatory="true" />
       <point id="Tmp_SF" offset="30" type="sunssf" mandatory="true" />
-      <point id="Pad1" offset="31" type="pad" mandatory="true" />
-      <point id="Pad2" offset="32" type="pad" mandatory="true" />
-      <point id="Pad3" offset="33" type="pad" mandatory="true" />
+      <point id="SoC_SF" offset="31" type="sunssf" mandatory="true" />
+      <point id="OCV_SF" offset="32" type="sunssf" mandatory="true" />
+      <point id="Pad1" offset="33" type="pad" mandatory="true" />
     </block>
     <block type="repeating" len="24" name="module">
       <point id="ModIdx" offset="0" type="uint16" mandatory="true" />
@@ -76,9 +77,9 @@
         <symbol id="MODULE_ENABLED">0</symbol>
         <symbol id="CONTACTOR_STATUS">1</symbol>
       </point>
-      <point id="ModSoC" offset="4" type="uint16" units="%" mandatory="true" />
-      <point id="ModOCV" offset="5" type="uint16" units="V" mandatory="true" />
-      <point id="ModV" offset="6" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="ModSoC" offset="4" type="uint16" sf="SoC_SF" units="%" mandatory="true" />
+      <point id="ModOCV" offset="5" type="uint16" sf="OCV_SF" units="V" mandatory="true" />
+      <point id="ModV" offset="6" type="uint16" sf="ModV_SF" units="V" mandatory="true" />
       <point id="ModCellVMax" offset="7" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
       <point id="ModCellVMaxCell" offset="8" type="uint16" units="" />
       <point id="ModCellVMin" offset="9" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
@@ -150,14 +151,14 @@
         <symbol id="RESERVED_4">25</symbol>
         <symbol id="RESERVED_5">26</symbol>
         <symbol id="FIRE_ALARM">27</symbol>
-        <symbol id="LEAK_ALARM">28</symbol>
-        <symbol id="PUMP_ALARM">29</symbol>
-        <symbol id="HIGH_PRESSURE_ALARM">30</symbol>
-        <symbol id="HIGH_PRESSURE_WARNING">31</symbol>
-        <symbol id="LOW_FLOW_ALARM">32</symbol>
-        <symbol id="LOW_FLOW_WARNING">33</symbol>
       </point>
       <point id="ModEvt2" offset="18" type="bitfield32" mandatory="true" >
+        <symbol id="LEAK_ALARM">0</symbol>
+        <symbol id="PUMP_ALARM">1</symbol>
+        <symbol id="HIGH_PRESSURE_ALARM">2</symbol>
+        <symbol id="HIGH_PRESSURE_WARNING">3</symbol>
+        <symbol id="LOW_FLOW_ALARM">4</symbol>
+        <symbol id="LOW_FLOW_WARNING">5</symbol>
       </point>
       <point id="ModConFail" offset="20" type="enum16" mandatory="false" >
         <symbol id="NO_FAILURE">0</symbol>
@@ -429,6 +430,11 @@
         <description>A fire has been detected.</description>
         <notes></notes>
       </symbol>
+    </point>
+    <point id="Evt2">
+      <label>String Event 2</label>
+      <description>Alarms, warnings and status values.  Bit flags.</description>
+      <notes></notes>
       <symbol id="LEAK_ALARM">
         <label>Leak Alarm</label>
         <description>A leak has been detected.</description>
@@ -460,11 +466,6 @@
         <notes></notes>
       </symbol>
     </point>
-    <point id="Evt2">
-      <label>String Event 2</label>
-      <description>Alarms, warnings and status values.  Bit flags.</description>
-      <notes></notes>
-    </point>
     <point id="EvtVnd1">
       <label>Vendor Event Bitfield 1</label>
       <description>Vendor defined events.</description>
@@ -485,17 +486,17 @@
       <description>Scale factor for temperature.</description>
       <notes></notes>
     </point>
+    <point id="SoC_SF">
+      <label></label>
+      <description>Scale factor for state of charge.</description>
+      <notes></notes>
+    </point>
+    <point id="OCV_SF">
+      <label></label>
+      <description>Scale factor for open circuit voltage.</description>
+      <notes></notes>
+    </point>
     <point id="Pad1">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>    
-    <point id="Pad2">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>    
-    <point id="Pad3">
       <label>Pad</label>
       <description>Pad register.</description>
       <notes> </notes>
@@ -887,6 +888,11 @@
         <description>A leak has been detected.</description>
         <notes></notes>
       </symbol>
+    </point>      
+    <point id="ModEvt2">
+      <label>Module Event 2</label>
+      <description>Alarms, warnings and status values.  Bit flags.</description>
+      <notes></notes>
       <symbol id="PUMP_ALARM">
         <label>Pump Alarm</label>
         <description>A pump has experienced an alarm condition or some other error.</description>
@@ -912,11 +918,6 @@
         <description>Flow approaching minimum value.</description>
         <notes></notes>
       </symbol>
-    </point>      
-    <point id="ModEvt2">
-      <label>Module Event 2</label>
-      <description>Alarms, warnings and status values.  Bit flags.</description>
-      <notes></notes>
     </point>      
     <point id="ModConFail">
       <label>Connection Failure Reason</label>

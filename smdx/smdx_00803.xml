@@ -30,13 +30,13 @@
       <point id="Pad1" offset="24" type="pad" mandatory="true" />
       <point id="Pad2" offset="25" type="pad" mandatory="true" />
     </block>
-    <block type="repeating" len="28" name="string">
+    <block type="repeating" len="32" name="string">
       <point id="StrNMod" offset="0" type="uint16" mandatory="true" />
       <point id="StrSt" offset="1" type="bitfield32" mandatory="true">
         <symbol id="STRING_ENABLED">0</symbol>
         <symbol id="CONTACTOR_STATUS">1</symbol>
       </point>
-      <point id="StrConFail" offset="2" type="enum16" >
+      <point id="StrConFail" offset="3" type="enum16" >
         <symbol id="NO_FAILURE">0</symbol>
         <symbol id="BUTTON_PUSHED">1</symbol>
         <symbol id="STR_GROUND_FAULT">2</symbol>
@@ -45,20 +45,21 @@
         <symbol id="FUSE_OPEN">5</symbol>
         <symbol id="CONTACTOR_FAILURE">6</symbol>
       </point>
-      <point id="StrSoC" offset="3" type="uint16" units="%" mandatory="true" />
-      <point id="StrSoH" offset="4" type="uint16" sf="SoH_SF" units="%" />
-      <point id="StrA" offset="5" type="int16" sf="A_SF" units="A" mandatory="true" />
-      <point id="StrCellVMax" offset="6" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
-      <point id="StrCellVMaxMod" offset="7" type="uint16" />
-      <point id="StrCellVMin" offset="8" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
-      <point id="StrCellVMinMod" offset="9" type="uint16" />
-      <point id="StrCellVAvg" offset="10" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
-      <point id="StrModTmpMax" offset="11" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
-      <point id="StrModTmpMaxMod" offset="12" type="uint16" />
-      <point id="StrModTmpMin" offset="13" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
-      <point id="StrModTmpMinMod" offset="14" type="uint16" />
-      <point id="StrModTmpAvg" offset="15" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
-      <point id="StrConSt" offset="16" type="bitfield32" units="" >
+      <point id="StrSoC" offset="4" type="uint16" units="%" mandatory="true" />
+      <point id="StrSoH" offset="5" type="uint16" sf="SoH_SF" units="%" />
+      <point id="StrA" offset="6" type="int16" sf="A_SF" units="A" mandatory="true" />
+      <point id="StrCellVMax" offset="7" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="StrCellVMaxMod" offset="8" type="uint16" />
+      <point id="StrCellVMin" offset="9" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="StrCellVMinMod" offset="10" type="uint16" />
+      <point id="StrCellVAvg" offset="11" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="StrModTmpMax" offset="12" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
+      <point id="StrModTmpMaxMod" offset="13" type="uint16" />
+      <point id="StrModTmpMin" offset="14" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
+      <point id="StrModTmpMinMod" offset="15" type="uint16" />
+      <point id="StrModTmpAvg" offset="16" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
+      <point id="Pad3" offset="17" type="pad" mandatory="true" />
+      <point id="StrConSt" offset="18" type="bitfield32" units="" >
         <symbol id="CONTACTOR_0">0</symbol>
         <symbol id="CONTACTOR_1">1</symbol>
         <symbol id="CONTACTOR_2">2</symbol>
@@ -91,7 +92,7 @@
         <symbol id="CONTACTOR_29">29</symbol>
         <symbol id="CONTACTOR_30">30</symbol>
       </point>
-      <point id="StrEvt1" offset="18" type="bitfield32" mandatory="true" >
+      <point id="StrEvt1" offset="20" type="bitfield32" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="OVER_TEMP_WARNING">2</symbol>
@@ -120,17 +121,19 @@
         <symbol id="OTHER_ALARM">25</symbol>
         <symbol id="OTHER_WARNING">26</symbol>
       </point>
-      <point id="StrEvt2" offset="20" type="bitfield32" />
-      <point id="StrEvtVnd1" offset="22" type="bitfield32" />
-      <point id="StrEvtVnd2" offset="24" type="bitfield32" />
-      <point id="StrSetEna" offset="26" access="rw" type="enum16">
+      <point id="StrEvt2" offset="22" type="bitfield32" />
+      <point id="StrEvtVnd1" offset="24" type="bitfield32" />
+      <point id="StrEvtVnd2" offset="26" type="bitfield32" />
+      <point id="StrSetEna" offset="28" access="rw" type="enum16">
         <symbol id="ENABLE_STRING">1</symbol>
         <symbol id="DISABLE_STRING">2</symbol>
       </point>
-      <point id="StrSetCon" offset="27" access="rw" type="enum16">
+      <point id="StrSetCon" offset="29" access="rw" type="enum16">
         <symbol id="CONNECT_STRING">1</symbol>
         <symbol id="DISCONNECT_STRING">2</symbol>
       </point>
+      <point id="Pad4" offset="30" type="pad" mandatory="true" />
+      <point id="Pad5" offset="31" type="pad" mandatory="true" />
     </block>
   </model>
   <strings id="803" locale="en">
@@ -354,6 +357,11 @@
       <description>Average temperature for all modules in the bank.</description>
       <notes>Calculation based on measurements.</notes>
     </point>
+    <point id="Pad3">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes> </notes>
+    </point>    
     <point id="StrConSt">
       <label>Contactor Status</label>
       <description></description>
@@ -739,5 +747,15 @@
         <notes></notes>
       </symbol>
     </point>
+    <point id="Pad4">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes> </notes>
+    </point>    
+    <point id="Pad5">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes> </notes>
+    </point>    
    </strings>
 </sunSpecModels>
