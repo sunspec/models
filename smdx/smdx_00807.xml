@@ -430,16 +430,16 @@
         <description>A fire has been detected.</description>
         <notes></notes>
       </symbol>
-      <symbol id="LEAK_ALARM">
-        <label>Leak Alarm</label>
-        <description>A leak has been detected.</description>
-        <notes></notes>
-      </symbol>
     </point>
     <point id="Evt2">
       <label>String Event 2</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
       <notes></notes>
+      <symbol id="LEAK_ALARM">
+        <label>Leak Alarm</label>
+        <description>A leak has been detected.</description>
+        <notes></notes>
+      </symbol>
       <symbol id="PUMP_ALARM">
         <label>Pump Alarm</label>
         <description>A pump has experienced an alarm condition or some other error.</description>
