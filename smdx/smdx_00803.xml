@@ -1,7 +1,7 @@
 <sunSpecModels v="1">
 
   <!-- 803: Lithium-Ion Battery Model -->
-  <model id="803" len="33" name="lithium_ion_bank">
+  <model id="803" len="58" name="lithium_ion_bank">
     <block len="26">
       <point id="NStr" offset="0" type="uint16" mandatory="true" />
       <point id="NStrCon" offset="1" type="uint16" mandatory="true" />
