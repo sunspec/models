@@ -44,6 +44,8 @@
         <symbol id="STRING_NOT_ENABLED">4</symbol>
         <symbol id="FUSE_OPEN">5</symbol>
         <symbol id="CONTACTOR_FAILURE">6</symbol>
+        <symbol id="PRECHARGE_FAILURE">7</symbol>
+        <symbol id="STRING_FAULT">8</symbol>
       </point>
       <point id="StrSoC" offset="4" type="uint16" units="%" mandatory="true" />
       <point id="StrSoH" offset="5" type="uint16" sf="SoH_SF" units="%" />
@@ -58,7 +60,13 @@
       <point id="StrModTmpMin" offset="14" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
       <point id="StrModTmpMinMod" offset="15" type="uint16" />
       <point id="StrModTmpAvg" offset="16" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
-      <point id="Pad3" offset="17" type="pad" mandatory="true" />
+      <point id="StrDisRsn" offset="17" type="enum16" mandatory="false">
+        <symbol id="NONE">0</symbol>
+        <symbol id="FAULT">1</symbol>
+        <symbol id="MAINTENANCE">2</symbol>
+        <symbol id="EXTERNAL">3</symbol>
+        <symbol id="OTHER">4</symbol>
+      </point>
       <point id="StrConSt" offset="18" type="bitfield32" units="" >
         <symbol id="CONTACTOR_0">0</symbol>
         <symbol id="CONTACTOR_1">1</symbol>
@@ -120,6 +128,9 @@
         <symbol id="RESERVED_1">24</symbol>
         <symbol id="OTHER_ALARM">25</symbol>
         <symbol id="OTHER_WARNING">26</symbol>
+        <symbol id="RESERVED_2">27</symbol>
+        <symbol id="CONFIGURATION_ALARM">28</symbol>
+        <symbol id="CONFIGURATION_WARNING">29</symbol>
       </point>
       <point id="StrEvt2" offset="22" type="bitfield32" />
       <point id="StrEvtVnd1" offset="24" type="bitfield32" />
@@ -357,10 +368,35 @@
       <description>Average temperature for all modules in the bank.</description>
       <notes>Calculation based on measurements.</notes>
     </point>
-    <point id="Pad3">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
+    <point id="StrDisRsn">
+      <label>Disabled Reason</label>
+      <description>Reason why the string is currently disabled.</description>
+      <notes></notes>
+      <symbol id="NONE">
+        <label>No Reason</label>
+        <description>No reason provided.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAULT">
+        <label>Fault</label>
+        <description>A fault has occurred which caused the string to be disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="MAINTENANCE">
+        <label>Maintenance</label>
+        <description>The string has been disabled for maintenance reasons.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="EXTERNAL">
+        <label>External</label>
+        <description>The string has been disabled by an external user or controller.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OTHER">
+        <label>Other</label>
+        <description>The string has been disabled for some other reason.</description>
+        <notes></notes>
+      </symbol>
     </point>    
     <point id="StrConSt">
       <label>Contactor Status</label>
@@ -661,6 +697,21 @@
         <description>A vendor specific warning has occurred.</description>
         <notes>See EvtVnd1 and EvtVnd2 for more information.</notes>
       </symbol>
+      <symbol id="RESERVED_2">
+        <label>Reserved</label>
+        <description>Reserved bit.</description>
+        <notes>Do not implement.</notes>
+      </symbol>
+      <symbol id="CONFIGURATION_ALARM">
+        <label>Configuation Alarm</label>
+        <description>The battery string has been configured incorrectly and will not operate.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONFIGURATION_WARNING">
+        <label>Configuation Warning</label>
+        <description>The battery string has been configured incorrectly and may not operate as expected.</description>
+        <notes></notes>
+      </symbol>
     </point>
     <point id="StrEvt2">
       <label>String Event 2</label>
@@ -715,6 +766,16 @@
         <label>Contactor Failure</label>
         <description>A contactor failed to operate.</description>
         <notes></notes>
+      </symbol>
+      <symbol id="PRECHARGE_FAILURE">
+        <label>Precharge Failure</label>
+        <description>A failure during precharge occurred.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="STRING_FAULT">
+        <label>String Fault</label>
+        <description>A string fault has occurred.</description>
+        <notes>See StrEvt1 for more information.</notes>
       </symbol>
     </point>
     <point id="StrSetEna">
