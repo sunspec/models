@@ -9,25 +9,36 @@
         <symbol id="STRING_ENABLED">0</symbol>
         <symbol id="CONTACTOR_STATUS">1</symbol>
       </point>
-      <point id="ConFail" offset="4" type="enum16" />
+      <point id="ConFail" offset="4" type="enum16">
+        <symbol id="NO_FAILURE">0</symbol>
+        <symbol id="BUTTON_PUSHED">1</symbol>
+        <symbol id="STR_GROUND_FAULT">2</symbol>
+        <symbol id="OUTSIDE_VOLTAGE_RANGE">3</symbol>
+        <symbol id="STRING_NOT_ENABLED">4</symbol>
+        <symbol id="FUSE_OPEN">5</symbol>
+        <symbol id="CONTACTOR_FAILURE">6</symbol>
+        <symbol id="PRECHARGE_FAILURE">7</symbol>
+        <symbol id="STRING_FAULT">8</symbol>
+      </point>
       <point id="NCellBal" offset="5" type="uint16" />
       <point id="SoC" offset="6" type="uint16" sf="SoC_SF" units="%" mandatory="true" />
       <point id="DoD" offset="7" type="uint16" sf="StrDoC_SF" units="%" />
       <point id="NCyc" offset="8" type="uint32" />
-      <point id="SoH" offset="9" type="uint16" sf="SoH_SF" units="%" />
-      <point id="A" offset="10" type="int16" sf="A_SF" units="A" mandatory="true" />
-      <point id="V" offset="11" type="uint16" sf="V_SF" units="V" />
-      <point id="CellVMax" offset="12" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
-      <point id="CellVMaxMod" offset="13" type="uint16" />
-      <point id="CellVMin" offset="14" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
-      <point id="CellVMinMod" offset="15" type="uint16" />
-      <point id="CellVAvg" offset="16" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
-      <point id="ModTmpMax" offset="17" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
-      <point id="ModTmpMaxMod" offset="18" type="uint16" mandatory="true" />
-      <point id="ModTmpMin" offset="19" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
-      <point id="ModTmpMinMod" offset="20" type="uint16" mandatory="true" />
-      <point id="ModTmpAvg" offset="21" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
-      <point id="Evt1" offset="22" type="bitfield32" mandatory="true">
+      <point id="SoH" offset="10" type="uint16" sf="SoH_SF" units="%" />
+      <point id="A" offset="11" type="int16" sf="A_SF" units="A" mandatory="true" />
+      <point id="V" offset="12" type="uint16" sf="V_SF" units="V" />
+      <point id="CellVMax" offset="13" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="CellVMaxMod" offset="14" type="uint16" />
+      <point id="CellVMin" offset="15" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="CellVMinMod" offset="16" type="uint16" />
+      <point id="CellVAvg" offset="17" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="ModTmpMax" offset="18" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
+      <point id="ModTmpMaxMod" offset="19" type="uint16" mandatory="true" />
+      <point id="ModTmpMin" offset="20" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
+      <point id="ModTmpMinMod" offset="21" type="uint16" mandatory="true" />
+      <point id="ModTmpAvg" offset="22" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
+      <point id="Pad1" offset="23" type="pad" mandatory="true" />
+      <point id="Evt1" offset="24" type="bitfield32" mandatory="true">
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="OVER_TEMP_WARNING">2</symbol>
@@ -55,22 +66,26 @@
         <symbol id="RESERVED_1">24</symbol>
         <symbol id="OTHER_ALARM">25</symbol>
         <symbol id="OTHER_WARNING">26</symbol>
+        <symbol id="RESERVED_2">27</symbol>
+        <symbol id="CONFIGURATION_ALARM">28</symbol>
+        <symbol id="CONFIGURATION_WARNING">29</symbol>
       </point>
-      <point id="Evt2" offset="24" type="bitfield32" />
-      <point id="EvtVnd1" offset="26" type="bitfield32" />
-      <point id="EvtVnd2" offset="28" type="bitfield32" />
-      <point id="SetEna" offset="29" access="rw" type="enum16" />
-      <point id="SetCon" offset="30" access="rw" type="enum16">
+      <point id="Evt2" offset="26" type="bitfield32" />
+      <point id="EvtVnd1" offset="28" type="bitfield32" />
+      <point id="EvtVnd2" offset="30" type="bitfield32" />
+      <point id="SetEna" offset="32" access="rw" type="enum16" />
+      <point id="SetCon" offset="33" access="rw" type="enum16">
         <symbol id="CONNECT_STRING">1</symbol>
         <symbol id="DISCONNECT_STRING">2</symbol>
       </point>
-      <point id="SoC_SF" offset="31" type="sunssf" mandatory="true" />
-      <point id="SoH_SF" offset="32" type="sunssf" />
-      <point id="DoD_SF" offset="33" type="sunssf" />
-      <point id="A_SF" offset="34" type="sunssf" mandatory="true" />
-      <point id="V_SF" offset="35" type="sunssf" />
-      <point id="CellV_SF" offset="36" type="sunssf" mandatory="true" />
-      <point id="ModTmp_SF" offset="37" type="sunssf" mandatory="true" />
+      <point id="SoC_SF" offset="34" type="sunssf" mandatory="true" />
+      <point id="SoH_SF" offset="35" type="sunssf" />
+      <point id="DoD_SF" offset="36" type="sunssf" />
+      <point id="A_SF" offset="37" type="sunssf" mandatory="true" />
+      <point id="V_SF" offset="38" type="sunssf" />
+      <point id="CellV_SF" offset="39" type="sunssf" mandatory="true" />
+      <point id="ModTmp_SF" offset="40" type="sunssf" mandatory="true" />
+      <point id="Pad2" offset="41" type="pad" mandatory="true" />
     </block>
     <block type="repeating" len="16" name="lithium_ion_string_module">
       <point id="ModNCell" offset="0" type="uint16" mandatory="true" />
@@ -86,9 +101,9 @@
       <point id="ModCellTmpMin" offset="10" sf="ModTmp_SF" units="C" type="int16" mandatory="true" />
       <point id="ModCellTmpMinCell" offset="11" type="uint16" />
       <point id="ModCellTmpAvg" offset="12" sf="ModTmp_SF" units="C" type="int16" mandatory="true" />
-      <point id="Pad2" offset="13" type="pad" mandatory="true" />
-      <point id="Pad3" offset="14" type="pad" mandatory="true" />
-      <point id="Pad4" offset="15" type="pad" mandatory="true" />
+      <point id="Pad3" offset="13" type="pad" mandatory="true" />
+      <point id="Pad4" offset="14" type="pad" mandatory="true" />
+      <point id="Pad5" offset="15" type="pad" mandatory="true" />
     </block>
   </model>
 
@@ -202,6 +217,11 @@
       <description>Average temperature for all modules in the bank.</description>
       <notes>Calculation based on measurements.</notes>
     </point>
+    <point id="Pad1">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes></notes>
+    </point>    
     <point id="Evt1">
       <label>String Event 1</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
@@ -334,12 +354,27 @@
       <symbol id="OTHER_ALARM">
         <label>Other String Alarm</label>
         <description>A vendor specific alarm has occurred.</description>
-        <notes>See StrEvtVnd1 and StrEvtVnd2 for more information.</notes>
+        <notes>See EvtVnd1 and EvtVnd2 for more information.</notes>
       </symbol>
       <symbol id="OTHER_WARNING">
         <label>Other String Warning</label>
         <description>A vendor specific warning has occurred.</description>
-        <notes>See StrEvtVnd1 and StrEvtVnd2 for more information.</notes>
+        <notes>See EvtVnd1 and EvtVnd2 for more information.</notes>
+      </symbol>
+      <symbol id="RESERVED_2">
+        <label>Reserved</label>
+        <description>Reserved bit.</description>
+        <notes>Do not implement.</notes>
+      </symbol>      
+      <symbol id="CONFIGURATION_ALARM">
+        <label>Configuation Alarm</label>
+        <description>The battery string has been configured incorrectly and will not operate as expected.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONFIGURATION_WARNING">
+        <label>Configuation Warning</label>
+        <description>The battery string has been configured incorrectly and may not operate as expected.</description>
+        <notes></notes>
       </symbol>
     </point>
     <point id="Evt2">
@@ -361,6 +396,51 @@
       <label>Connection Failure Reason</label>
       <description></description>
       <notes></notes>
+      <symbol id="NO_FAILURE">
+        <label>No Failure</label>
+        <description>Connect did not fail.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="BUTTON_PUSHED">
+        <label>Button Pushed</label>
+        <description>A button was pushed which prevented connection.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="STR_GROUND_FAULT">
+        <label>Ground Fault</label>
+        <description>Ground fault during auto-connect.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OUTSIDE_VOLTAGE_RANGE">
+        <label>Outside Voltage Range</label>
+        <description>Outside voltage target window during auto-connect.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="STRING_NOT_ENABLED">
+        <label>String Not Enabled</label>
+        <description>The string is not enabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FUSE_OPEN">
+        <label>Fuse Open</label>
+        <description>A fuse is open which prevents connection.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_FAILURE">
+        <label>Contactor Failure</label>
+        <description>A contactor failed to operate.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="PRECHARGE_FAILURE">
+        <label>Precharge Failure</label>
+        <description>A precharge failure occurred.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="STRING_FAULT">
+        <label>String Fault</label>
+        <description>A string fault has occurred.</description>
+        <notes>See Evt1 for more information.</notes>
+      </symbol>
     </point>
     <point id="SetEna">
       <label>Enable/Disable String</label>
@@ -427,6 +507,11 @@
       <description>Scale factor for module temperature.</description>
       <notes></notes>
     </point>
+    <point id="Pad2">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes></notes>
+    </point>    
 
     <!-- Repeating Block Strings -->
 
@@ -495,20 +580,20 @@
       <description>Average temperature for all cells in the module.</description>
       <notes>Calculation based on measurements.</notes>
     </point>
-    <point id="Pad2">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>    
     <point id="Pad3">
       <label>Pad</label>
       <description>Pad register.</description>
-      <notes> </notes>
+      <notes></notes>
     </point>    
     <point id="Pad4">
       <label>Pad</label>
       <description>Pad register.</description>
-      <notes> </notes>
+      <notes></notes>
+    </point>    
+    <point id="Pad5">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes></notes>
     </point>    
 
    </strings>
