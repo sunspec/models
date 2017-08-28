@@ -1,8 +1,8 @@
 <sunSpecModels v="1">
 
   <!-- 804: Lithium-ion String Model -->
-  <model id="804" len="56" name="lithium_ion_string">
-    <block len="38">
+  <model id="804" len="62" name="lithium_ion_string">
+    <block len="46">
       <point id="Idx" offset="0" type="uint16" mandatory="true" />
       <point id="NMod" offset="1" type="uint16" mandatory="true" />
       <point id="St" offset="2" type="bitfield32" mandatory="true">
@@ -38,7 +38,40 @@
       <point id="ModTmpMinMod" offset="21" type="uint16" mandatory="true" />
       <point id="ModTmpAvg" offset="22" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
       <point id="Pad1" offset="23" type="pad" mandatory="true" />
-      <point id="Evt1" offset="24" type="bitfield32" mandatory="true">
+      <point id="ConSt" offset="24" type="bitfield32" units="" >
+        <symbol id="CONTACTOR_0">0</symbol>
+        <symbol id="CONTACTOR_1">1</symbol>
+        <symbol id="CONTACTOR_2">2</symbol>
+        <symbol id="CONTACTOR_3">3</symbol>
+        <symbol id="CONTACTOR_4">4</symbol>
+        <symbol id="CONTACTOR_5">5</symbol>
+        <symbol id="CONTACTOR_6">6</symbol>
+        <symbol id="CONTACTOR_7">7</symbol>
+        <symbol id="CONTACTOR_8">8</symbol>
+        <symbol id="CONTACTOR_9">9</symbol>
+        <symbol id="CONTACTOR_10">10</symbol>
+        <symbol id="CONTACTOR_11">11</symbol>
+        <symbol id="CONTACTOR_12">12</symbol>
+        <symbol id="CONTACTOR_13">13</symbol>
+        <symbol id="CONTACTOR_14">14</symbol>
+        <symbol id="CONTACTOR_15">15</symbol>
+        <symbol id="CONTACTOR_16">16</symbol>
+        <symbol id="CONTACTOR_17">17</symbol>
+        <symbol id="CONTACTOR_18">18</symbol>
+        <symbol id="CONTACTOR_19">19</symbol>
+        <symbol id="CONTACTOR_20">20</symbol>
+        <symbol id="CONTACTOR_21">21</symbol>
+        <symbol id="CONTACTOR_22">22</symbol>
+        <symbol id="CONTACTOR_23">23</symbol>
+        <symbol id="CONTACTOR_24">24</symbol>
+        <symbol id="CONTACTOR_25">25</symbol>
+        <symbol id="CONTACTOR_26">26</symbol>
+        <symbol id="CONTACTOR_27">27</symbol>
+        <symbol id="CONTACTOR_28">28</symbol>
+        <symbol id="CONTACTOR_29">29</symbol>
+        <symbol id="CONTACTOR_30">30</symbol>
+      </point>
+      <point id="Evt1" offset="26" type="bitfield32" mandatory="true">
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="OVER_TEMP_WARNING">2</symbol>
@@ -70,22 +103,24 @@
         <symbol id="CONFIGURATION_ALARM">28</symbol>
         <symbol id="CONFIGURATION_WARNING">29</symbol>
       </point>
-      <point id="Evt2" offset="26" type="bitfield32" />
-      <point id="EvtVnd1" offset="28" type="bitfield32" />
-      <point id="EvtVnd2" offset="30" type="bitfield32" />
-      <point id="SetEna" offset="32" access="rw" type="enum16" />
-      <point id="SetCon" offset="33" access="rw" type="enum16">
+      <point id="Evt2" offset="28" type="bitfield32" />
+      <point id="EvtVnd1" offset="30" type="bitfield32" />
+      <point id="EvtVnd2" offset="32" type="bitfield32" />
+      <point id="SetEna" offset="34" access="rw" type="enum16" />
+      <point id="SetCon" offset="35" access="rw" type="enum16">
         <symbol id="CONNECT_STRING">1</symbol>
         <symbol id="DISCONNECT_STRING">2</symbol>
       </point>
-      <point id="SoC_SF" offset="34" type="sunssf" mandatory="true" />
-      <point id="SoH_SF" offset="35" type="sunssf" />
-      <point id="DoD_SF" offset="36" type="sunssf" />
-      <point id="A_SF" offset="37" type="sunssf" mandatory="true" />
-      <point id="V_SF" offset="38" type="sunssf" />
-      <point id="CellV_SF" offset="39" type="sunssf" mandatory="true" />
-      <point id="ModTmp_SF" offset="40" type="sunssf" mandatory="true" />
-      <point id="Pad2" offset="41" type="pad" mandatory="true" />
+      <point id="SoC_SF" offset="36" type="sunssf" mandatory="true" />
+      <point id="SoH_SF" offset="37" type="sunssf" />
+      <point id="DoD_SF" offset="38" type="sunssf" />
+      <point id="A_SF" offset="39" type="sunssf" mandatory="true" />
+      <point id="V_SF" offset="40" type="sunssf" />
+      <point id="CellV_SF" offset="41" type="sunssf" mandatory="true" />
+      <point id="ModTmp_SF" offset="42" type="sunssf" mandatory="true" />
+      <point id="Pad2" offset="43" type="pad" mandatory="true" />
+      <point id="Pad3" offset="44" type="pad" mandatory="true" />
+      <point id="Pad4" offset="45" type="pad" mandatory="true" />
     </block>
     <block type="repeating" len="16" name="lithium_ion_string_module">
       <point id="ModNCell" offset="0" type="uint16" mandatory="true" />
@@ -101,9 +136,9 @@
       <point id="ModCellTmpMin" offset="10" sf="ModTmp_SF" units="C" type="int16" mandatory="true" />
       <point id="ModCellTmpMinCell" offset="11" type="uint16" />
       <point id="ModCellTmpAvg" offset="12" sf="ModTmp_SF" units="C" type="int16" mandatory="true" />
-      <point id="Pad3" offset="13" type="pad" mandatory="true" />
-      <point id="Pad4" offset="14" type="pad" mandatory="true" />
-      <point id="Pad5" offset="15" type="pad" mandatory="true" />
+      <point id="Pad5" offset="13" type="pad" mandatory="true" />
+      <point id="Pad6" offset="14" type="pad" mandatory="true" />
+      <point id="Pad7" offset="15" type="pad" mandatory="true" />
     </block>
   </model>
 
@@ -208,7 +243,7 @@
       <notes>Measurement.</notes>
     </point>
     <point id="ModTmpMinMod">
-      <label>Min Module Temperature</label>
+      <label>Min Module Temperature Module</label>
       <description>Module with the minimum temperature.</description>
       <notes></notes>
     </point>
@@ -222,6 +257,166 @@
       <description>Pad register.</description>
       <notes></notes>
     </point>    
+    <point id="ConSt">
+      <label>Contactor Status</label>
+      <description></description>
+      <notes></notes>
+      <symbol id="CONTACTOR_0">
+        <label>Contactor 0 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_1">
+        <label>Contactor 1 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_2">
+        <label>Contactor 2 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_3">
+        <label>Contactor 3 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_4">
+        <label>Contactor 4 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_5">
+        <label>Contactor 5 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_6">
+        <label>Contactor 6 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_7">
+        <label>Contactor 7 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_8">
+        <label>Contactor 8 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_9">
+        <label>Contactor 9 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_10">
+        <label>Contactor 10 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_11">
+        <label>Contactor 11 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_12">
+        <label>Contactor 12 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_13">
+        <label>Contactor 13 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_14">
+        <label>Contactor 14 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_15">
+        <label>Contactor 15 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_16">
+        <label>Contactor 16 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_17">
+        <label>Contactor 17 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_18">
+        <label>Contactor 18 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_19">
+        <label>Contactor 19 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_20">
+        <label>Contactor 20 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_21">
+        <label>Contactor 21 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_22">
+        <label>Contactor 22 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_23">
+        <label>Contactor 23 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_24">
+        <label>Contactor 24 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_25">
+        <label>Contactor 25 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_26">
+        <label>Contactor 26 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_27">
+        <label>Contactor 27 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_28">
+        <label>Contactor 28 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_29">
+        <label>Contactor 29 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONTACTOR_30">
+        <label>Contactor 30 Closed</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+    </point>  
     <point id="Evt1">
       <label>String Event 1</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
@@ -512,6 +707,16 @@
       <description>Pad register.</description>
       <notes></notes>
     </point>    
+    <point id="Pad3">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes></notes>
+    </point>    
+    <point id="Pad4">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes></notes>
+    </point>    
 
     <!-- Repeating Block Strings -->
 
@@ -580,17 +785,17 @@
       <description>Average temperature for all cells in the module.</description>
       <notes>Calculation based on measurements.</notes>
     </point>
-    <point id="Pad3">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes></notes>
-    </point>    
-    <point id="Pad4">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes></notes>
-    </point>    
     <point id="Pad5">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes></notes>
+    </point>    
+    <point id="Pad6">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes></notes>
+    </point>    
+    <point id="Pad7">
       <label>Pad</label>
       <description>Pad register.</description>
       <notes></notes>

@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 802: Battery Base Model -->
-  <model id="802" len="54" name="battery">
+  <model id="802" len="62" name="battery">
     <block len="62">
       <point id="AHRtg" offset="0" type="uint16" sf="AHRtg_SF" units="Ah" mandatory="true" />
       <point id="WHRtg" offset="1" type="uint16" sf="WHRtg_SF" units="Wh" mandatory="true" />
@@ -624,12 +624,12 @@
     <point id="AChaMax">
       <label>Max Charge Current</label>
       <description>Instantaneous maximum DC charge current.</description>
-      <notes>Calculation. If not implemented, must implement VMax and VMin.</notes>
+      <notes>Calculation which is always unsigned (i.e. magnitude only). If not implemented, must implement VMax and VMin.</notes>
     </point>
     <point id="ADisChaMax">
       <label>Max Discharge Current</label>
       <description>Instantaneous maximum DC discharge current.</description>
-      <notes>Calculation. If not implemented, must implement VMax and VMin.</notes>
+      <notes>Calculation which is always unsigned (i.e. magnitude only). If not implemented, must implement VMax and VMin.</notes>
     </point>
     <point id="W">
       <label>Total Power</label>
