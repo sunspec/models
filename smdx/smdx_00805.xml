@@ -1,34 +1,34 @@
 <sunSpecModels v="1">
 
   <!-- 805: Lithium-Ion Module Model -->
-  <model id="805" len="2" name="lithium-ion-module">
+  <model id="805" len="46" name="lithium-ion-module">
     <block len="42">
-      <point id="Idx" offset="0" type="uint16" mandatory="true" />
-      <point id="NCell" offset="1" type="uint16" mandatory="true" />
-      <point id="SoC" offset="2" type="uint16" sf="SoC_SF" units="%" />
-      <point id="DoD" offset="3" type="uint16" sf="DoD_SF" units="%" />
-      <point id="NCyc" offset="4" type="uint32" />
-      <point id="SoH" offset="6" type="uint16" sf="SoH_SF" units="%" />
-      <point id="V" offset="7" sf="V_SF" units="V" type="uint16" mandatory="true" />
-      <point id="CellVMax" offset="8" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
-      <point id="CellVMaxCell" offset="9" type="uint16" />
-      <point id="CellVMin" offset="10" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
-      <point id="CellVMinCell" offset="11" type="uint16" />
-      <point id="CellVAvg" offset="12" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
-      <point id="CellTmpMax" offset="13" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
-      <point id="CellTmpMaxCell" offset="14" type="uint16" />
-      <point id="CellTmpMin" offset="15" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
-      <point id="CellTmpMinCell" offset="16" type="uint16" />
-      <point id="CellTmpAvg" offset="17" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
-      <point id="SN" offset="18" len="16" type="string" />
-      <point id="NCellBal" offset="34" type="uint16" />
-      <point id="SoC_SF" offset="35" type="sunssf" />
-      <point id="SoH_SF" offset="36" type="sunssf" />
-      <point id="DoD_SF" offset="37" type="sunssf" />
-      <point id="V_SF" offset="38" type="sunssf" mandatory="true" />
-      <point id="CellV_SF" offset="39" type="sunssf" mandatory="true" />
-      <point id="Tmp_SF" offset="40" type="sunssf" mandatory="true" />
-      <point id="Pad1" offset="41" type="pad" mandatory="true" />
+      <point id="StrIdx" offset="0" type="uint16" mandatory="true" />
+      <point id="ModIdx" offset="1" type="uint16" mandatory="true" />
+      <point id="NCell" offset="2" type="uint16" mandatory="true" />
+      <point id="SoC" offset="3" type="uint16" sf="SoC_SF" units="%" />
+      <point id="DoD" offset="4" type="uint16" sf="DoD_SF" units="%" />
+      <point id="SoH" offset="5" type="uint16" sf="SoH_SF" units="%" />
+      <point id="NCyc" offset="6" type="uint32" />
+      <point id="V" offset="8" sf="V_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellVMax" offset="9" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellVMaxCell" offset="10" type="uint16" />
+      <point id="CellVMin" offset="11" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellVMinCell" offset="12" type="uint16" />
+      <point id="CellVAvg" offset="13" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellTmpMax" offset="14" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="CellTmpMaxCell" offset="15" type="uint16" />
+      <point id="CellTmpMin" offset="16" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="CellTmpMinCell" offset="17" type="uint16" />
+      <point id="CellTmpAvg" offset="18" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="NCellBal" offset="19" type="uint16" />
+      <point id="SN" offset="20" len="16" type="string" />
+      <point id="SoC_SF" offset="36" type="sunssf" />
+      <point id="SoH_SF" offset="37" type="sunssf" />
+      <point id="DoD_SF" offset="38" type="sunssf" />
+      <point id="V_SF" offset="39" type="sunssf" mandatory="true" />
+      <point id="CellV_SF" offset="40" type="sunssf" mandatory="true" />
+      <point id="Tmp_SF" offset="41" type="sunssf" mandatory="true" />
     </block>
     <block type="repeating" len="4" name="lithium-ion-module-cell">
       <point id="CellV" offset="0" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
@@ -49,7 +49,12 @@
 
     <!-- Fixed Block Strings -->
 
-    <point id="Idx">
+    <point id="StrIdx">
+      <label>String Index</label>
+      <description>Index of the string containing the module.</description>
+      <notes>Indices are one-based.</notes>
+    </point>
+    <point id="ModIdx">
       <label>Module Index</label>
       <description>Index of the module within the string.</description>
       <notes>Indices are one-based.</notes>

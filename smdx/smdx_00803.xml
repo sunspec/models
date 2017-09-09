@@ -1,7 +1,7 @@
 <sunSpecModels v="1">
 
   <!-- 803: Lithium-Ion Battery Model -->
-  <model id="803" len="33" name="lithium_ion_bank">
+  <model id="803" len="58" name="lithium_ion_bank">
     <block len="26">
       <point id="NStr" offset="0" type="uint16" mandatory="true" />
       <point id="NStrCon" offset="1" type="uint16" mandatory="true" />
@@ -27,8 +27,8 @@
       <point id="ModTmp_SF" offset="21" type="sunssf" mandatory="true" />
       <point id="A_SF" offset="22" type="sunssf" mandatory="true" />
       <point id="SoH_SF" offset="23" type="sunssf" />
-      <point id="Pad1" offset="24" type="pad" mandatory="true" />
-      <point id="Pad2" offset="25" type="pad" mandatory="true" />
+      <point id="SoC_SF" offset="24" type="sunssf" mandatory="true" />
+      <point id="V_SF" offset="25" type="sunssf" mandatory="false" />
     </block>
     <block type="repeating" len="32" name="string">
       <point id="StrNMod" offset="0" type="uint16" mandatory="true" />
@@ -47,7 +47,7 @@
         <symbol id="PRECHARGE_FAILURE">7</symbol>
         <symbol id="STRING_FAULT">8</symbol>
       </point>
-      <point id="StrSoC" offset="4" type="uint16" units="%" mandatory="true" />
+      <point id="StrSoC" offset="4" type="uint16" sf="SoC_SF" units="%" mandatory="true" />
       <point id="StrSoH" offset="5" type="uint16" sf="SoH_SF" units="%" />
       <point id="StrA" offset="6" type="int16" sf="A_SF" units="A" mandatory="true" />
       <point id="StrCellVMax" offset="7" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
@@ -143,8 +143,8 @@
         <symbol id="CONNECT_STRING">1</symbol>
         <symbol id="DISCONNECT_STRING">2</symbol>
       </point>
-      <point id="Pad4" offset="30" type="pad" mandatory="true" />
-      <point id="Pad5" offset="31" type="pad" mandatory="true" />
+      <point id="Pad1" offset="30" type="pad" mandatory="true" />
+      <point id="Pad2" offset="31" type="pad" mandatory="true" />
     </block>
   </model>
   <strings id="803" locale="en">
@@ -265,24 +265,24 @@
     </point>
     <point id="A_SF">
       <label></label>
-      <description>Scale factor for Max String Current and Min String Current.</description>
+      <description>Scale factor for string currents.</description>
       <notes></notes>
     </point>
     <point id="SoH_SF">
       <label></label>
-      <description>Scale factor for String State of Health.</description>
+      <description>Scale factor for string state of health.</description>
       <notes></notes>
     </point>
-    <point id="Pad1">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>    
-    <point id="Pad2">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>    
+    <point id="SoC_SF">
+      <label></label>
+      <description>Scale factor for string state of charge.</description>
+      <notes></notes>
+    </point>
+    <point id="V_SF">
+      <label></label>
+      <description>Scale factor for string voltage.</description>
+      <notes></notes>
+    </point>
     <point id="StrNMod">
       <label>Module Count</label>
       <description>Count of modules in the string.</description>
@@ -400,7 +400,7 @@
     </point>    
     <point id="StrConSt">
       <label>Contactor Status</label>
-      <description></description>
+      <description>Status of the contactor(s) for the string.</description>
       <notes></notes>
       <symbol id="CONTACTOR_0">
         <label>Contactor 0 Closed</label>
@@ -808,12 +808,12 @@
         <notes></notes>
       </symbol>
     </point>
-    <point id="Pad4">
+    <point id="Pad1">
       <label>Pad</label>
       <description>Pad register.</description>
       <notes> </notes>
     </point>    
-    <point id="Pad5">
+    <point id="Pad2">
       <label>Pad</label>
       <description>Pad register.</description>
       <notes> </notes>
