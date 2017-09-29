@@ -129,7 +129,7 @@
       <point id="ModCellVMax" offset="3" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
       <point id="ModCellVMaxCell" offset="4" type="uint16" />
       <point id="ModCellVMin" offset="5" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
-      <point id="ModCellVMinCell" offset="6" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="ModCellVMinCell" offset="6" sf="CellV_SF" units="V" type="uint16" />
       <point id="ModCellVAvg" offset="7" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
       <point id="ModCellTmpMax" offset="8" sf="ModTmp_SF" units="C" type="int16" mandatory="true" />
       <point id="ModCellTmpMaxCell" offset="9" type="uint16" />
@@ -229,7 +229,7 @@
     </point>
     <point id="ModTmpMax">
       <label>Max Module Temperature</label>
-      <description>Maximum temperature for all modules in the bank.</description>
+      <description>Maximum temperature for all modules in the string.</description>
       <notes>Measurement.</notes>
     </point>
     <point id="ModTmpMaxMod">
@@ -239,7 +239,7 @@
     </point>
     <point id="ModTmpMin">
       <label>Min Module Temperature</label>
-      <description>Minimum temperature for all modules in the bank.</description>
+      <description>Minimum temperature for all modules in the string.</description>
       <notes>Measurement.</notes>
     </point>
     <point id="ModTmpMinMod">
@@ -249,7 +249,7 @@
     </point>
     <point id="ModTmpAvg">
       <label>Average Module Temperature</label>
-      <description>Average temperature for all modules in the bank.</description>
+      <description>Average temperature for all modules in the string.</description>
       <notes>Calculation based on measurements.</notes>
     </point>
     <point id="Pad1">
@@ -259,7 +259,7 @@
     </point>    
     <point id="ConSt">
       <label>Contactor Status</label>
-      <description></description>
+      <description>Status of the contactor(s) for the string.</description>
       <notes></notes>
       <symbol id="CONTACTOR_0">
         <label>Contactor 0 Closed</label>
