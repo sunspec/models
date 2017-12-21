@@ -1,0 +1,62 @@
+<sunSpecModels v="1">
+  <!-- 145: Extended Inverter Controls Basic Settings  -->
+  <model id="145" len="8" name="ext_settings" status="test">
+    <block len="8" type="fixed">
+      <point id="NomRmpUpRte" offset="0" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
+      <point id="NomRmpDnRte" offset="1" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
+      <point id="EmgRmpUpRte" offset="2" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
+      <point id="EmgRmpDnRte" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
+      <point id="ConnRmpUpRte" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
+      <point id="ConnRmpDnRte" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
+      <point id="AGra" offset="6" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
+      <point id="Rmp_SF" offset="7" access="r" type="sunssf" len="1" mandatory="false" />
+    </block>
+  </model>
+  <strings id="145" locale="en">
+    <model>
+      <label>Extended Settings</label>
+      <description>Inverter controls extended settings </description>
+      <notes></notes>
+    </model>
+    <point id="NomRmpUpRte">
+      <label>Ramp Up Rate</label>
+      <description>Ramp up rate as a percentage of max current.</description>
+      <notes></notes>
+    </point>
+    <point id="NomRmpDnRte">
+      <label>NomRmpDnRte</label>
+      <description>Ramp down rate as a percentage of max current.</description>
+      <notes></notes>
+    </point>
+    <point id="EmgRmpUpRte">
+      <label>Emergency Ramp Up Rate</label>
+      <description>Emergency ramp up rate as a percentage of max current.</description>
+      <notes></notes>
+    </point>
+    <point id="EmgRmpDnRte">
+      <label>Emergency Ramp Down Rate</label>
+      <description>Emergency ramp down rate as a percentage of max current.</description>
+      <notes></notes>
+    </point>
+    <point id="ConnRmpUpRte">
+      <label>Connect Ramp Up Rate</label>
+      <description>Connect ramp up rate as a percentage of max current.</description>
+      <notes></notes>
+    </point>
+    <point id="ConnRmpDnRte">
+      <label>Connect Ramp Down Rate</label>
+      <description>Connect ramp down rate as a percentage of max current.</description>
+      <notes></notes>
+    </point>
+    <point id="AGra">
+      <label>Default Ramp Rate</label>
+      <description>Ramp rate specified in percent of max current.</description>
+      <notes></notes>
+    </point>
+    <point id="Rmp_SF">
+      <label>Ramp Rate Scale Factor</label>
+      <description>Ramp Rate Scale Factor</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

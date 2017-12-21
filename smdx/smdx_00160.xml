@@ -1,7 +1,7 @@
 <sunSpecModels v="1">
 
   <!-- 160: Multiple MPPT Inverter Extension Model -->
-  <model id="160" len="30" name="mppt">
+  <model id="160" len="28" name="mppt">
     <block len="8">
       <point id="DCA_SF" offset="0" type="sunssf" />
       <point id="DCV_SF" offset="1" type="sunssf" />

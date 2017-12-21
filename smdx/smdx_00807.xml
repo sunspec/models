@@ -11,13 +11,13 @@
       <point id="ModVMin" offset="5" type="uint16" sf="ModV_SF" units="V" mandatory="true" />
       <point id="ModVMinMod" offset="6" type="uint16" />
       <point id="ModVAvg" offset="7" type="uint16" sf="ModV_SF" units="V" mandatory="true" />
-      <point id="CellVMax" offset="8" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="CellVMax" offset="8" type="uint16" sf="CellV_SF" units="V" mandatory="false" />
       <point id="CellVMaxMod" offset="9" type="uint16" />
       <point id="CellVMaxStk" offset="10" type="uint16" />
-      <point id="CellVMin" offset="11" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="CellVMin" offset="11" type="uint16" sf="CellV_SF" units="V" mandatory="false" />
       <point id="CellVMinMod" offset="12" type="uint16" />
       <point id="CellVMinStk" offset="13" type="uint16" />
-      <point id="CellVAvg" offset="14" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="CellVAvg" offset="14" type="uint16" sf="CellV_SF" units="V" mandatory="false" />
       <point id="TmpMax" offset="15" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
       <point id="TmpMaxMod" offset="16" type="uint16" />
       <point id="TmpMin" offset="17" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
@@ -52,6 +52,8 @@
         <symbol id="OTHER_ALARM">25</symbol>
         <symbol id="OTHER_WARNING">26</symbol>
         <symbol id="FIRE_ALARM">27</symbol>
+        <symbol id="CONFIGURATION_ALARM">28</symbol>
+        <symbol id="CONFIGURATION_WARNING">29</symbol>
       </point>
       <point id="Evt2" offset="22" type="bitfield32" mandatory="true">
         <symbol id="LEAK_ALARM">0</symbol>
@@ -80,13 +82,11 @@
       <point id="ModSoC" offset="4" type="uint16" sf="SoC_SF" units="%" mandatory="true" />
       <point id="ModOCV" offset="5" type="uint16" sf="OCV_SF" units="V" mandatory="true" />
       <point id="ModV" offset="6" type="uint16" sf="ModV_SF" units="V" mandatory="true" />
-      <point id="ModCellVMax" offset="7" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="ModCellVMax" offset="7" type="uint16" sf="CellV_SF" units="V" mandatory="false" />
       <point id="ModCellVMaxCell" offset="8" type="uint16" units="" />
-      <point id="ModCellVMin" offset="9" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
+      <point id="ModCellVMin" offset="9" type="uint16" sf="CellV_SF" units="V" mandatory="false" />
       <point id="ModCellVMinCell" offset="10" type="uint16" units="" />
-
-      <point id="ModCellVAvg" offset="11" type="uint16" sf="CellV_SF" units="V" mandatory="true" />
-
+      <point id="ModCellVAvg" offset="11" type="uint16" sf="CellV_SF" units="V" mandatory="false" />
       <point id="ModAnoTmp" offset="12" type="uint16" sf="Tmp_SF" units="C" />
       <point id="ModCatTmp" offset="13" type="uint16" sf="Tmp_SF" units="C" />
       <point id="ModConSt" offset="14" type="bitfield32" units="" >
@@ -151,6 +151,8 @@
         <symbol id="RESERVED_4">25</symbol>
         <symbol id="RESERVED_5">26</symbol>
         <symbol id="FIRE_ALARM">27</symbol>
+        <symbol id="MODULE_CONFIGURATION_ALARM">28</symbol>
+        <symbol id="MODULE_CONFIGURATION_WARNING">29</symbol>
       </point>
       <point id="ModEvt2" offset="18" type="bitfield32" mandatory="true" >
         <symbol id="LEAK_ALARM">0</symbol>
@@ -168,6 +170,8 @@
         <symbol id="MODULE_NOT_ENABLED">4</symbol>
         <symbol id="FUSE_OPEN">5</symbol>
         <symbol id="CONTACTOR_FAILURE">6</symbol>
+        <symbol id="PRECHARGE_FAILURE">7</symbol>
+        <symbol id="MODULE_FAULT">8</symbol>
       </point>
       <point id="ModSetEna" offset="21" access="rw" type="enum16" >
         <symbol id="ENABLE_MODULE">1</symbol>
@@ -177,7 +181,13 @@
         <symbol id="CONNECT_MODULE">1</symbol>
         <symbol id="DISCONNECT_MODULE">2</symbol>
       </point>
-      <point id="Pad4" offset="23" type="pad" mandatory="true" />
+      <point id="ModDisRsn" offset="23" type="enum16" mandatory="false">
+        <symbol id="NONE">0</symbol>
+        <symbol id="FAULT">1</symbol>
+        <symbol id="MAINTENANCE">2</symbol>
+        <symbol id="EXTERNAL">3</symbol>
+        <symbol id="OTHER">4</symbol>
+      </point>
     </block>
   </model>
   <strings id="807" locale="en">
@@ -428,6 +438,16 @@
       <symbol id="FIRE_ALARM">
         <label>Fire Alarm</label>
         <description>A fire has been detected.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONFIGURATION_ALARM">
+        <label>Configuation Alarm</label>
+        <description>The battery string has been configured incorrectly and will not operate.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONFIGURATION_WARNING">
+        <label>Configuation Warning</label>
+        <description>The battery string has been configured incorrectly and may not operate as expected.</description>
         <notes></notes>
       </symbol>
     </point>
@@ -883,9 +903,14 @@
         <description>A fire has been detected.</description>
         <notes></notes>
       </symbol>
-      <symbol id="LEAK_ALARM">
-        <label>Leak Alarm</label>
-        <description>A leak has been detected.</description>
+      <symbol id="MODULE_CONFIGURATION_ALARM">
+        <label>Configuation Alarm</label>
+        <description>The battery module has been configured incorrectly and will not operate.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="MODULE_CONFIGURATION_WARNING">
+        <label>Configuation Warning</label>
+        <description>The battery module has been configured incorrectly and may not operate as expected.</description>
         <notes></notes>
       </symbol>
     </point>      
@@ -893,6 +918,11 @@
       <label>Module Event 2</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
       <notes></notes>
+      <symbol id="LEAK_ALARM">
+        <label>Leak Alarm</label>
+        <description>A leak has been detected.</description>
+        <notes></notes>
+      </symbol>
       <symbol id="PUMP_ALARM">
         <label>Pump Alarm</label>
         <description>A pump has experienced an alarm condition or some other error.</description>
@@ -958,6 +988,16 @@
         <description>A contactor failed to operate.</description>
         <notes></notes>
       </symbol>
+      <symbol id="PRECHARGE_FAILURE">
+        <label>Precharge Failure</label>
+        <description>A failure during precharge occurred.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="MODULE_FAULT">
+        <label>Module Fault</label>
+        <description>A module fault has occurred.</description>
+        <notes>See ModEvt1 and ModEvt2 for more information.</notes>
+      </symbol>
     </point>
     <point id="ModSetEna">
       <label>Enable/Disable Module</label>
@@ -989,10 +1029,35 @@
         <notes></notes>
       </symbol>
     </point>
-    <point id="Pad4">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
+    <point id="ModDisRsn">
+      <label>Disabled Reason</label>
+      <description>Reason why the module is currently disabled.</description>
+      <notes></notes>
+      <symbol id="NONE">
+        <label>No Reason</label>
+        <description>No reason provided.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAULT">
+        <label>Fault</label>
+        <description>A fault has occurred which caused the module to be disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="MAINTENANCE">
+        <label>Maintenance</label>
+        <description>The module has been disabled for maintenance reasons.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="EXTERNAL">
+        <label>External</label>
+        <description>The module has been disabled by an external user or controller.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OTHER">
+        <label>Other</label>
+        <description>The module has been disabled for some other reason.</description>
+        <notes></notes>
+      </symbol>
     </point>    
 
    </strings>
