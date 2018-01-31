@@ -82,14 +82,14 @@
       <symbol id="ObsEl"><label>ObsEl</label><description>Tracker ELEVATION motor is obstructed</description></symbol>
       <symbol id="ObsAz"><label>ObsAz</label><description>Tracker AZIMUTH motor is obstructed</description></symbol>
     </point>
-    <point id="GlblAlm"><label>Alarm</label><description>Global tracker alarm conditions</description><note>Combined tracker alarm conditions.  See individual trackers for alarms</note>
+    <point id="GlblAlm"><label>Alarm</label><description>Global tracker alarm conditions</description><notes>Combined tracker alarm conditions.  See individual trackers for alarms</notes>
       <symbol id="SetPoint"><label>SetPoint</label><description>One or more trackers are NOT at SetPoint</description></symbol>
       <symbol id="ObsEl"><label>ObsEl</label><description>One or more trackers ELEVATION motor is obstructed</description></symbol>
       <symbol id="ObsAz"><label>ObsAz</label><description>One or more trackers AZIMUTH motor is obstructed</description></symbol>
     </point>
     <point id="GlblElCtl"><label>Manual Elevation</label><description>Global manual override target position of elevation in degreees from horizontal.  Unimplemented for single axis azimuth tracker type</description></point>
     <point id="GlblAzCtl"><label>Manual Azimuth</label><description>Global manual override target position of azimuth in degrees from true north towards east.  Unimplemented for single axis azimuth tracker type</description></point>
-    <point id="GlblCtl"><label>Mode</label><description>Global Control register operates on all trackers. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.</description><note>The global controls all trackers</note>
+    <point id="GlblCtl"><label>Mode</label><description>Global Control register operates on all trackers. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.</description><notes>The global controls all trackers</notes>
       <symbol id="Automatic"><label>Auto</label><description>Follow programmed path</description></symbol>
       <symbol id="Manual"><label>Manual</label><description>Go to a fixed position</description></symbol>
       <symbol id="Calibrate"><label>Calibrate</label><description>Execute test mode</description></symbol>

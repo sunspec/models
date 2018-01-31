@@ -95,7 +95,7 @@
       <point id="N" offset="87" type="uint16" access="rw" mandatory="true" />
     </block>
     <block type="repeating" len="1">
-      <point id="DS" offset="0" type="uint16" access="rw" andatory="true" />
+      <point id="DS" offset="0" type="uint16" access="rw" mandatory="true" />
     </block>
   </model>
   <strings id="5" locale="en">

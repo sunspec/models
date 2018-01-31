@@ -91,12 +91,12 @@
       <symbol id="NONE">
         <label>NONE</label>
         <description>No Alarms</description>
-        <note></note>
+        <notes></notes>
       </symbol>
       <symbol id="ALM">
         <label>ALARM</label>
         <description>Security Alarm</description>
-        <note>Tampered</note>
+        <notes>Tampered</notes>
       </symbol>
     </point>
     <point id="Ts">
@@ -129,7 +129,7 @@
         <notes></notes>
       </symbol>
     </point>
-    <point id="Sts" offset="0" type="enum16" access="w" mandatory="true">
+    <point id="Sts">
       <label>Status</label>
       <description>Status of last read operation</description>
       <notes></notes>

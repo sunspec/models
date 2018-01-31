@@ -26,7 +26,7 @@
       <point id="N" offset="9" type="uint16" access="rw" mandatory="true" />
     </block>
     <block type="repeating" len="1">
-      <point id="DS" offset="0" type="uint16" access="rw" andatory="true" />
+      <point id="DS" offset="0" type="uint16" access="rw" mandatory="true" />
     </block>
   </model>
   <strings id="7" locale="en">
@@ -55,7 +55,7 @@
         <notes></notes>
       </symbol>
     </point>
-    <point id="Sts" offset="0" type="enum16" access="w" mandatory="true">
+    <point id="Sts">
       <label>Status</label>
       <description>Status of last write operation</description>
       <notes></notes>
@@ -122,12 +122,12 @@
       <symbol id="NONE">
         <label>NONE</label>
         <description>No Alarms</description>
-        <note></note>
+        <notes></notes>
       </symbol>
       <symbol id="ALM">
         <label>ALARM</label>
         <description>Security Alarm</description>
-        <note>Tampered</note>
+        <notes>Tampered</notes>
       </symbol>
     </point>
     <point id="N">

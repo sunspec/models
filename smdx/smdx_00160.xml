@@ -38,7 +38,7 @@
     <block type="repeating" len="20" name="module">
       <point id="ID" offset="0" type="uint16" />
       <point id="IDStr" offset="1" type="string" len="8" />
-      <point id="DCA" offset="9" type="uint16" sf="DCA_SF" units="A"/>
+      <point id="DCA" offset="9" type="int16" sf="DCA_SF" units="A"/>
       <point id="DCV" offset="10" type="uint16" sf="DCV_SF" units="V"/>
       <point id="DCW" offset="11" type="uint16" sf="DCW_SF" units="W"/>
       <point id="DCWH" offset="12" type="acc32" sf="DCWH_SF" units="Wh"/>
