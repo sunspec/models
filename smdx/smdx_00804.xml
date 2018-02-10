@@ -22,7 +22,7 @@
       </point>
       <point id="NCellBal" offset="5" type="uint16" />
       <point id="SoC" offset="6" type="uint16" sf="SoC_SF" units="%" mandatory="true" />
-      <point id="DoD" offset="7" type="uint16" sf="StrDoC_SF" units="%" />
+      <point id="DoD" offset="7" type="uint16" sf="DoD_SF" units="%" />
       <point id="NCyc" offset="8" type="uint32" />
       <point id="SoH" offset="10" type="uint16" sf="SoH_SF" units="%" />
       <point id="A" offset="11" type="int16" sf="A_SF" units="A" mandatory="true" />
