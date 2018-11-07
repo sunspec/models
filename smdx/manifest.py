@@ -86,7 +86,7 @@ class Manifest(object):
                     content = content.replace('\r\n', '\n')
                     md5 = hashlib.md5(content).hexdigest()
                     self.files[f] = md5
-        except Exception, e:
+        except Exception as e:
             raise ManifestError('Error scanning directory %s: %s' % (self.path, str(e)))
 
     def scan_strip(self):
@@ -104,7 +104,7 @@ class Manifest(object):
                         fc.close()
                     md5 = hashlib.md5(content).hexdigest()
                     self.files[f] = md5
-        except Exception, e:
+        except Exception as e:
             raise ManifestError('Error scanning directory %s: %s' % (self.path, str(e)))
 
     def to_xml(self, parent=None, filename=None):
@@ -137,7 +137,7 @@ class Manifest(object):
             f.write(xml)
             f.close()
         else:
-            print xml
+            print(xml)
 
     def from_xml(self, element=None, filename=None):
         if element is None and filename is not None:
