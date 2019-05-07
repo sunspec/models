@@ -5,7 +5,7 @@
       <point id="ModEna" offset="0" access="rw" type="bitfield16" len="1" mandatory="true">
         <symbol id="ENABLE">0</symbol>
       </point>
-      <point id="SigType" offset="1" access="rw" type="enum16" len="1" mandatory="false"  sf=" ">
+      <point id="SigType" offset="1" access="rw" type="enum16" len="1" mandatory="false">
         <symbol id="UNKNOWN">0</symbol>
         <symbol id="ABSOLUTE">1</symbol>
         <symbol id="RELATIVE">2</symbol>
@@ -16,7 +16,7 @@
       <point id="WinTms" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
       <point id="RvtTms" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
       <point id="RmpTms" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="Sig_SF" offset="6" access="r" type="sunssf" len="1" mandatory="true"  sf=" "/>
+      <point id="Sig_SF" offset="6" access="r" type="sunssf" len="1" mandatory="true" />
       <point id="Pad" offset="7" access="r" type="pad" len="1" mandatory="false"  />
     </block>
   </model>
