@@ -35,6 +35,8 @@ This document may be used, copied, and furnished to others, without restrictions
     </xs:sequence>
     <xs:attribute name="id" type="xs:integer" />
     <xs:attribute name="len" type="xs:integer" />
+    <xs:attribute name="name" type="xs:string" />
+    <xs:attribute name="status" type="LifecycleStatusDefinition" default="approved" />
   </xs:complexType>
 
   <xs:complexType name="BlockDefinition">
@@ -43,6 +45,7 @@ This document may be used, copied, and furnished to others, without restrictions
     </xs:sequence>
     <xs:attribute name="len" type="xs:integer" />
     <xs:attribute name="type" type="BlockTypeDefinition" default="fixed" />
+    <xs:attribute name="name" type="xs:string" />
   </xs:complexType>
 
   <xs:complexType name="PointDefinition">
@@ -154,6 +157,15 @@ This document may be used, copied, and furnished to others, without restrictions
     <xs:restriction base="xs:string">
       <xs:enumeration value="fixed"/>
       <xs:enumeration value="repeating"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="LifecycleStatusDefinition">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="draft"/>
+      <xs:enumeration value="test"/>
+      <xs:enumeration value="approved"/>
+      <xs:enumeration value="superseded"/>
     </xs:restriction>
   </xs:simpleType>
 
