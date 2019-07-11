@@ -1,7 +1,11 @@
+from __future__ import print_function
 
 import os
 import hashlib
+import sys
 import xml.etree.ElementTree as ET
+
+PY2 = (2,) <= sys.version_info < (3,)
 
 MANIFEST_ROOT = 'manifest'
 MANIFEST_FILE = 'file'
@@ -58,17 +62,17 @@ class Manifest(object):
         f.close()
 
     def md5(self):
-        return hashlib.md5(self.to_xml_str()).hexdigest()
+        return hashlib.md5(self.to_xml_bytes()).hexdigest()
 
     def diff(self, m):
         diff_str = ''
-        for f, md5 in self.files.iteritems():
+        for f, md5 in self.files.items():
             m_md5 = m.files.get(f)
             if md5 != m_md5:
                 diff_str += '%s: %s  %s\n' % (f, md5, m_md5)
 
         if len(self.files) != len(m.files):
-            for f, md5 in m.files.iteritems():
+            for f, md5 in m.files.items():
                 if self.files.get(f) is None:
                     diff_str += '%s: "None"  %s\n' % (f, md5)
         return diff_str
@@ -81,12 +85,12 @@ class Manifest(object):
                 if f in manifest_files or (ext == '.xml' and f.startswith('smdx_')):
                     filename = os.path.join(self.path, f)
                     content = open(filename, 'rb').read()
-                    # if content.find('\r\n') >= 0:
-                    #     print 'windows file ', self.path
-                    content = content.replace('\r\n', '\n')
+                    # if content.find(b'\r\n') >= 0:
+                    #     print('windows file ', self.path)
+                    content = content.replace(b'\r\n', b'\n')
                     md5 = hashlib.md5(content).hexdigest()
                     self.files[f] = md5
-        except Exception, e:
+        except Exception as e:
             raise ManifestError('Error scanning directory %s: %s' % (self.path, str(e)))
 
     def scan_strip(self):
@@ -97,14 +101,14 @@ class Manifest(object):
                 if f in manifest_files or (ext == '.xml' and f.startswith('smdx_')):
                     filename = os.path.join(self.path, f)
                     content = open(filename, 'rb').read()
-                    if content.find('\r\n') >= 0:
-                        content = content.replace('\r\n', '\n')
+                    if content.find(b'\r\n') >= 0:
+                        content = content.replace(b'\r\n', b'\n')
                         fc = open(filename, 'w')
                         fc.write(content)
                         fc.close()
                     md5 = hashlib.md5(content).hexdigest()
                     self.files[f] = md5
-        except Exception, e:
+        except Exception as e:
             raise ManifestError('Error scanning directory %s: %s' % (self.path, str(e)))
 
     def to_xml(self, parent=None, filename=None):
@@ -119,7 +123,7 @@ class Manifest(object):
 
         return e
 
-    def to_xml_str(self, pretty_print=True):
+    def to_xml_bytes(self, pretty_print=True):
         e = self.to_xml()
 
         if pretty_print:
@@ -128,16 +132,19 @@ class Manifest(object):
         return ET.tostring(e)
 
     def to_xml_file(self, filename=None, pretty_print=True, replace_existing=True):
-        xml = self.to_xml_str(pretty_print)
+        xml = self.to_xml_bytes(pretty_print)
 
         if filename is not None:
             if replace_existing is False and os.path.exists(filename):
                 raise ManifestError('File %s already exists' % (filename))
-            f = open(filename, 'w')
+            f = open(filename, 'wb')
             f.write(xml)
             f.close()
         else:
-            print xml
+            if PY2:
+                print(xml)
+            else:
+                print(xml.decode())
 
     def from_xml(self, element=None, filename=None):
         if element is None and filename is not None:
