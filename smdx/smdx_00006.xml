@@ -103,7 +103,7 @@
   <strings id="6" locale="en">
     <model>
       <label>Secure Write Sequential Request</label>
-      <description>Include a digial signature along with the control data</description>
+      <description>Include a digital signature along with the control data</description>
       <notes></notes>
     </model>
     <point id="Alg">

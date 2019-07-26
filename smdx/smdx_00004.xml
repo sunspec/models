@@ -81,7 +81,7 @@
   <strings id="4" locale="en">
     <model>
       <label>Secure Dataset Read Response</label>
-      <description>Compute a digial signature over a specifed set of data registers</description>
+      <description>Compute a digital signature over a specifed set of data registers</description>
       <notes></notes>
     </model>
     <point id="Alm">
