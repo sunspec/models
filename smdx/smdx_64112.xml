@@ -453,12 +453,12 @@
       <notes></notes>
     </point>
     <point id="CC_Config_AUX_Nlite_On_hist">
-      <label>AUX Night Light On Hysterisis</label>
+      <label>AUX Night Light On Hysteresis</label>
       <description></description>
       <notes></notes>
     </point>
     <point id="CC_Config_AUX_Nlite_Off_hist">
-      <label>AUX Night Light Off Hysterisis</label>
+      <label>AUX Night Light Off Hysteresis</label>
       <description></description>
       <notes></notes>
     </point>
@@ -483,7 +483,7 @@
       <notes></notes>
     </point>
     <point id="CC_Config_AUX_Divert_Hyst_V">
-      <label>AUX Divert Hysterisis</label>
+      <label>AUX Divert Hysteresis</label>
       <description></description>
       <notes></notes>
     </point>

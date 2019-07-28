@@ -157,7 +157,7 @@
       <notes></notes>
     </point>
     <point id="WDisChaRteMax">
-      <label>Namplate Max Discharge Rate</label>
+      <label>Nameplate Max Discharge Rate</label>
       <description>Maximum rate of energy transfer out of the storage device in DC watts.</description>
       <notes></notes>
     </point>
@@ -402,7 +402,7 @@
       <notes></notes>
       <symbol id="COMMUNICATION_ERROR">
         <label>Communication Error</label>
-        <description>Unable to communcate with BMS or BMS is unable to communicate with battery strings.</description>
+        <description>Unable to communicate with BMS or BMS is unable to communicate with battery strings.</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_TEMP_ALARM">
@@ -541,12 +541,12 @@
         <notes>Do not implement.</notes>
       </symbol>
       <symbol id="CONFIGURATION_ALARM">
-        <label>Configuation Alarm</label>
+        <label>Configuration Alarm</label>
         <description>The battery bank has been configured incorrectly and will not operate.</description>
         <notes></notes>
       </symbol>
       <symbol id="CONFIGURATION_WARNING">
-        <label>Configuation Warning</label>
+        <label>Configuration Warning</label>
         <description>The battery bank has been configured incorrectly and may not operated as expected.</description>
         <notes></notes>
       </symbol>
@@ -748,7 +748,7 @@
     </point>
     <point id="AMax_SF">
       <label></label>
-      <description>Scale factor for instantationous DC charge/discharge current.</description>
+      <description>Scale factor for instantaneous DC charge/discharge current.</description>
       <notes></notes>
     </point>
     <point id="W_SF">

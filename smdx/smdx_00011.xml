@@ -54,7 +54,7 @@
       </symbol>
       <symbol id="AUTO_NEG1">
         <label>auto negotiation 1</label>
-        <description>Auto-negotiation bits are encoded as: 000 - inprogress.  001 - speed detection has failed.  010 - negotiation has failed.  011 - negotiated speed and duplex.  100 - negotiation not attempted.</description>
+        <description>Auto-negotiation bits are encoded as: 000 - in progress.  001 - speed detection has failed.  010 - negotiation has failed.  011 - negotiated speed and duplex.  100 - negotiation not attempted.</description>
         <notes></notes>
       </symbol>
       <symbol id="AUTO_NEG2">
@@ -119,7 +119,7 @@
       <notes></notes>
       <symbol id="AUTO">
         <label>auto</label>
-        <description>Enable auto-negotiatition</description>
+        <description>Enable auto-negotiation</description>
         <notes></notes>
       </symbol>
       <symbol id="FULL_DUPLEX">

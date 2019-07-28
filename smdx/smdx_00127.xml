@@ -56,7 +56,7 @@
     </point>
     <point id="HysEna">
       <label>HysEna</label>
-      <description>Enable hysterisis</description>
+      <description>Enable hysteresis</description>
       <notes> </notes>
     </point>
     <point id="HzStopWGra">

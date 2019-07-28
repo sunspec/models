@@ -70,7 +70,7 @@
     </point>
     <point id="Addr">
       <label>Address</label>
-      <description>IP addreess</description>
+      <description>IP address</description>
       <notes></notes>
     </point>
     <point id="Msk">

@@ -103,7 +103,7 @@
     <point id="Seq">
       <label>Sequence</label>
       <description>Sequence number of response</description>
-      <notes>Shall be advanced for each reponse</notes>
+      <notes>Shall be advanced for each response</notes>
     </point>
     <point id="Ts">
       <label>Timestamp</label>

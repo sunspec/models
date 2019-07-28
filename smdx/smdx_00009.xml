@@ -163,7 +163,7 @@
     </point>
     <point id="FrgSeq">
       <label>Fragment Sequence</label>
-      <description>Fragmenet sequence number</description>
+      <description>Fragment sequence number</description>
       <notes>Starts with 1</notes>
     </point>
     <point id="FrgLn">

@@ -28,7 +28,7 @@
     </model>
     <point id="ModEna">
       <label>ModEna</label>
-      <description>Is price-based charge/dischage mode active?</description>
+      <description>Is price-based charge/discharge mode active?</description>
       <notes> </notes>
     </point>
     <point id="SigType">

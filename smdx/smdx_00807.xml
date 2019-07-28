@@ -441,12 +441,12 @@
         <notes></notes>
       </symbol>
       <symbol id="CONFIGURATION_ALARM">
-        <label>Configuation Alarm</label>
+        <label>Configuration Alarm</label>
         <description>The battery string has been configured incorrectly and will not operate.</description>
         <notes></notes>
       </symbol>
       <symbol id="CONFIGURATION_WARNING">
-        <label>Configuation Warning</label>
+        <label>Configuration Warning</label>
         <description>The battery string has been configured incorrectly and may not operate as expected.</description>
         <notes></notes>
       </symbol>
@@ -904,12 +904,12 @@
         <notes></notes>
       </symbol>
       <symbol id="MODULE_CONFIGURATION_ALARM">
-        <label>Configuation Alarm</label>
+        <label>Configuration Alarm</label>
         <description>The battery module has been configured incorrectly and will not operate.</description>
         <notes></notes>
       </symbol>
       <symbol id="MODULE_CONFIGURATION_WARNING">
-        <label>Configuation Warning</label>
+        <label>Configuration Warning</label>
         <description>The battery module has been configured incorrectly and may not operate as expected.</description>
         <notes></notes>
       </symbol>

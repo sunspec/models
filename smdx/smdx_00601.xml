@@ -87,14 +87,14 @@
       <symbol id="ObsEl"><label>ObsEl</label><description>One or more trackers ELEVATION motor is obstructed</description></symbol>
       <symbol id="ObsAz"><label>ObsAz</label><description>One or more trackers AZIMUTH motor is obstructed</description></symbol>
     </point>
-    <point id="GlblElCtl"><label>Manual Elevation</label><description>Global manual override target position of elevation in degreees from horizontal.  Unimplemented for single axis azimuth tracker type</description></point>
+    <point id="GlblElCtl"><label>Manual Elevation</label><description>Global manual override target position of elevation in degrees from horizontal.  Unimplemented for single axis azimuth tracker type</description></point>
     <point id="GlblAzCtl"><label>Manual Azimuth</label><description>Global manual override target position of azimuth in degrees from true north towards east.  Unimplemented for single axis azimuth tracker type</description></point>
     <point id="GlblCtl"><label>Mode</label><description>Global Control register operates on all trackers. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.</description><notes>The global controls all trackers</notes>
       <symbol id="Automatic"><label>Auto</label><description>Follow programmed path</description></symbol>
       <symbol id="Manual"><label>Manual</label><description>Go to a fixed position</description></symbol>
       <symbol id="Calibrate"><label>Calibrate</label><description>Execute test mode</description></symbol>
     </point>
-    <point id="ElCtl"><label>Manual Elevation</label><description>Manual override target position of elevation in degreees from horizontal.  Unimplemented for single axis azimuth tracker type</description></point>
+    <point id="ElCtl"><label>Manual Elevation</label><description>Manual override target position of elevation in degrees from horizontal.  Unimplemented for single axis azimuth tracker type</description></point>
     <point id="AzCtl"><label>Manual Azimuth</label><description>Manual override target position of azimuth in degrees from true north towards east.  Unimplemented for single axis azimuth tracker type</description></point>
     <point id="Ctl"><label>Mode</label><description>Control register. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.</description>
       <symbol id="Automatic"><label>Auto</label><description>Follow programmed path</description></symbol>

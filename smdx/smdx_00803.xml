@@ -235,7 +235,7 @@
     </point>
     <point id="StrAMin">
       <label>Min String Current</label>
-      <description>Minimm current of any string in the bank.</description>
+      <description>Minimum current of any string in the bank.</description>
       <notes>Measurement.</notes>
     </point>
     <point id="StrAMinStr">
@@ -360,7 +360,7 @@
     </point>
     <point id="StrModTmpMinMod">
       <label>Min Module Temperature Module</label>
-      <description>Module with the miniumum temperature.</description>
+      <description>Module with the minimum temperature.</description>
       <notes></notes>
     </point>
     <point id="StrModTmpAvg">
@@ -703,12 +703,12 @@
         <notes>Do not implement.</notes>
       </symbol>
       <symbol id="CONFIGURATION_ALARM">
-        <label>Configuation Alarm</label>
+        <label>Configuration Alarm</label>
         <description>The battery string has been configured incorrectly and will not operate.</description>
         <notes></notes>
       </symbol>
       <symbol id="CONFIGURATION_WARNING">
-        <label>Configuation Warning</label>
+        <label>Configuration Warning</label>
         <description>The battery string has been configured incorrectly and may not operate as expected.</description>
         <notes></notes>
       </symbol>

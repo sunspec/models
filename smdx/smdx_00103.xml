@@ -205,7 +205,7 @@
       </symbol>
       <symbol id="SLEEPING">
         <label>Sleeping</label>
-        <description>Device is sleeping / auto-shudown</description>
+        <description>Device is sleeping / auto-shutdown</description>
         <notes></notes>
       </symbol>
       <symbol id="STARTING">
