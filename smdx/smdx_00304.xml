@@ -10,7 +10,7 @@
   <strings id="304" locale="en">
     <model>
       <label>Inclinometer Model</label>
-      <description>Include to support orienation measurements</description>
+      <description>Include to support orientation measurements</description>
       <notes></notes>
     </model>
     <point id="Inclx">

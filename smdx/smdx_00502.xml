@@ -61,7 +61,7 @@
   <strings id="502" locale="en">
     <model>
       <label>Solar Module</label>
-      <description>A solar module model supporing DC-DC converter</description>
+      <description>A solar module model supporting DC-DC converter</description>
       <notes>Integer</notes>
     </model>
     <point id="Stat">
@@ -80,7 +80,7 @@
       </symbol>
       <symbol id="STARTING">
         <label>STARTING</label>
-        <description>Starting up or ON but not producting power; panel might have high voltage but is not producing power</description>
+        <description>Starting up or ON but not producing power; panel might have high voltage but is not producing power</description>
         <notes></notes>
       </symbol>
       <symbol id="MPPT">

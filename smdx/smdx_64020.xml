@@ -188,22 +188,22 @@
     </point> 
     <point id="ResetAccumulators">
       <label>Reset the accumulators</label>
-      <description>always 0 in reading, used the code 0xC0DA during the writting for resetting them</description>
+      <description>always 0 in reading, used the code 0xC0DA during the writing for resetting them</description>
       <notes></notes>
     </point> 
     <point id="Reset">
       <label>Reset the system</label>
-      <description>always 0 in reading, used the code 0xC0DA during the writting for resetting the system</description>
+      <description>always 0 in reading, used the code 0xC0DA during the writing for resetting the system</description>
       <notes></notes>
     </point> 
     <point id="SerialNumber">
       <label>Serial number</label>
-      <description>strings of 16 caracters</description>
+      <description>strings of 16 characters</description>
       <notes></notes>
     </point> 
      <point id="Firmware">
       <label>Firmware version</label>
-      <description>string of 11 caracters</description>
+      <description>string of 11 characters</description>
       <notes></notes>
     </point> 
      <point id="Hardware">

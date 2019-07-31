@@ -81,7 +81,7 @@
     </point>
     <point id="DoD">
       <label>Depth of Discharge</label>
-      <description>Depth ofdischarge for the module.</description>
+      <description>Depth of discharge for the module.</description>
       <notes>Measurement.</notes>
     </point>
     <point id="CellVMax">

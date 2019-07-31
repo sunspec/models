@@ -110,7 +110,7 @@
     </point>
     <point id="EvtVnd">
       <label>Vendor Event</label>
-      <description>Bitmask value.  Vendor defnied events</description>
+      <description>Bitmask value.  Vendor defined events</description>
       <notes></notes>
     </point>
     <point id="DCA">

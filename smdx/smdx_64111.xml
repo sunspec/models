@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
 
-  <!-- 64111: Charge Contoller -->
+  <!-- 64111: Charge Controller -->
   <model id="64111" len="23">
     <block len="23">
       <point id="Port" offset="0" type="uint16" mandatory="true" />
@@ -90,7 +90,7 @@
         <notes></notes>
       </symbol>
       <symbol id="EQ">
-        <label>Equilize Charging</label>
+        <label>Equalize Charging</label>
         <description></description>
         <notes></notes>
       </symbol>
@@ -101,12 +101,12 @@
       <notes></notes>
     </point>
     <point id="TodayMinBatV">
-      <label>Todays Minimum Battery Voltage</label>
+      <label>Today's Minimum Battery Voltage</label>
       <description></description>
       <notes></notes>
     </point>
     <point id="TodayMaxBatV">
-      <label>Todays Maximum Battery Voltage</label>
+      <label>Today's Maximum Battery Voltage</label>
       <description></description>
       <notes></notes>
     </point>
@@ -116,17 +116,17 @@
       <notes></notes>
     </point>
     <point id="TodayMaxVOC">
-      <label>Todays Maximum VOC</label>
+      <label>Today's Maximum VOC</label>
       <description></description>
       <notes></notes>
     </point>
     <point id="TodaykWhOutput">
-      <label>Todays kWh</label>
+      <label>Today's kWh</label>
       <description></description>
       <notes></notes>
     </point>
     <point id="TodayAHOutput">
-      <label>Todays AH</label>
+      <label>Today's AH</label>
       <description></description>
       <notes></notes>
     </point>

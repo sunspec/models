@@ -18,7 +18,7 @@
   <strings id="307" locale="en">
     <model>
       <label>Base Met</label>
-      <description>Base Meteorolgical Model</description>
+      <description>Base Meteorological Model</description>
       <notes>This model supersedes model 301</notes>
     </model>
     <point id="TmpAmb">
