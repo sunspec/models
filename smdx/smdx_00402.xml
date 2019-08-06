@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 402: (SUPERSEDED by 404) String Combiner (Advanced) -->
-  <model id="402" len="33" name="string_combiner">
+  <model id="402" len="34" name="string_combiner">
     <block len="20">
       <point id="DCA_SF" offset="0" type="sunssf" mandatory="true" />
       <point id="DCAhr_SF" offset="1" type="sunssf" />

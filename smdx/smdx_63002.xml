@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 1: common -->
-  <model id="63002" len="8">
+  <model id="63002" len="4">
     <block type="repeating" len="4">
       <point id="sunssf_1"      offset="0"    type="sunssf" />
       <point id="int16_1"       offset="1"    type="int16"   sf="sunssf_1"  access="rw"/>
