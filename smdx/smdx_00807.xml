@@ -1,7 +1,7 @@
 <sunSpecModels v="1">
 
   <!-- 807: Flow Battery String Model -->
-  <model id="807" len="36" name="flow_battery_string">
+  <model id="807" len="58" name="flow_battery_string">
     <block len="34">
       <point id="Idx" offset="0" type="uint16" mandatory="true" />
       <point id="NMod" offset="1" type="uint16" mandatory="true" />
