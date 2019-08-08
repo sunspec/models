@@ -138,17 +138,17 @@
       <description>Line to Neutral AC Voltage (average of active phases)</description>
       <notes></notes>
     </point>
-    <point id="PPVphAB">
+    <point id="PhVphAB">
       <label>Phase Voltage AB</label>
       <description>Phase Voltage AB</description>
       <notes></notes>
     </point>
-    <point id="PPVphBC">
+    <point id="PhVphBC">
       <label>Phase Voltage BC</label>
       <description>Phase Voltage BC</description>
       <notes></notes>
     </point>
-    <point id="PPVphCA">
+    <point id="PhVphCA">
       <label>Phase Voltage CA</label>
       <description>Phase Voltage CA</description>
       <notes></notes>
@@ -417,7 +417,7 @@
       <description></description>
       <notes></notes>
     </point>
-    <point id="TotVArhExpQ4Ph">
+    <point id="TotVArhExpQ4PhB">
       <label>Total VAr-hours Exported Q4 Imported phase B</label>
       <description></description>
       <notes></notes>
