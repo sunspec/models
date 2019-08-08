@@ -139,12 +139,12 @@
       <notes></notes>
     </point>
     <point id="InEvt">
-      <label>Event</label>
+      <label>Input Event</label>
       <description>String Input Event Flags</description>
       <notes></notes>
     </point>
     <point id="InEvtVnd">
-      <label>Vendor Event</label>
+      <label>Input Event Vendor</label>
       <description>String Input Vendor Event Flags</description>
       <notes></notes>
     </point>
