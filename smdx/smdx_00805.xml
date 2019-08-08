@@ -125,8 +125,8 @@
       <notes>Measurement.</notes>
     </point>
     <point id="CellTmpMinCell">
-      <label>Max Cell Temperature Cell</label>
-      <description>Cell with the maximum cell temperature.</description>
+      <label>Min Cell Temperature Cell</label>
+      <description>Cell with the minimum cell temperature.</description>
       <notes></notes>
     </point>
     <point id="CellTmpAvg">

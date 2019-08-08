@@ -513,22 +513,22 @@
       <notes></notes>
     </point>
     <point id="CC_Config_DataLog_Daily_AH">
-      <label>Data Log Daily</label>
+      <label>Data Log Daily (Ah)</label>
       <description></description>
       <notes></notes>
     </point>
     <point id="CC_Config_DataLog_Daily_KWH">
-      <label>Data Log Daily</label>
+      <label>Data Log Daily (kWh)</label>
       <description></description>
       <notes></notes>
     </point>
     <point id="CC_Config_DataLog_Max_Out_A">
-      <label>Data Log Daily Maximum Output</label>
+      <label>Data Log Daily Maximum Output (A)</label>
       <description></description>
       <notes></notes>
     </point>
     <point id="CC_Config_DataLog_Max_Out_W">
-      <label>Data Log Daily Maximum Output</label>
+      <label>Data Log Daily Maximum Output (W)</label>
       <description></description>
       <notes></notes>
     </point>
