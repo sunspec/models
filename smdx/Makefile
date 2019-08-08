@@ -35,7 +35,13 @@ SMDXFILES=$(shell (ls smdx*.xml))
 
 SCHEMA=smdx.xsd
 
-all: check
+all:: manifest.xml
+
+manifest.xml: $(SMDXFILES)
+	@echo Generating manifest.xml
+	python ./manifest.py
+
+all:: check
 
 check: $(SMDXFILES)
 	@# dump stdout to /dev/null to avoid cluttering the output
