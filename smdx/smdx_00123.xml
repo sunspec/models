@@ -148,11 +148,6 @@
       <description>Reactive power in percent of WMax.</description>
       <notes> </notes>
     </point>
-    <point id="VArWMaxPct_SF">
-      <label>VArWMaxPct_SF</label>
-      <description>Scale factor for reactive power as percent of WMax.</description>
-      <notes> </notes>
-    </point>
     <point id="VArMaxPct">
       <label>VArMaxPct</label>
       <description>Reactive power in percent of VArMax.</description>

@@ -235,26 +235,6 @@
       <description>Vendor specific flags</description>
       <notes></notes>
     </point>
-    <point id="A_SF">
-      <label></label>
-      <description>Current scale factor</description>
-      <notes></notes>
-    </point>
-    <point id="V_SF">
-      <label></label>
-      <description>Voltage scale factor</description>
-      <notes></notes>
-    </point>
-    <point id="W_SF">
-      <label></label>
-      <description>Power scale factor</description>
-      <notes></notes>
-    </point>
-    <point id="Wh_SF">
-      <label></label>
-      <description>Energy scale factor</description>
-      <notes></notes>
-    </point>
     <point id="Ctl">
       <label>Control</label>
       <description>Module Control</description>

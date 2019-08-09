@@ -175,12 +175,7 @@
       <label></label>
       <description>Scale factor for module temperature.</description>
       <notes></notes>
-    </point>
-    <point id="Pad1">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>    
+    </point>  
 
     <!-- Repeating Block Strings -->
 

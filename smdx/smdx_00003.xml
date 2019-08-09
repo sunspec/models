@@ -119,11 +119,6 @@
       <description>Number of registers being requested</description>
       <notes>A max of 50 registers are allowed</notes>
     </point>
-    <point id="Val1">
-      <label>Value1</label>
-      <description>Copy of value from register Off1.</description>
-      <notes>Unused values shall return 0xFFFF (unimplemented)</notes>
-    </point>
     <point id="Seq">
       <label>Sequence</label>
       <description>Sequence number of request</description>
