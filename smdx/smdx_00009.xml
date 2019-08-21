@@ -161,11 +161,6 @@
       <description>Total Length of the Certificate</description>
       <notes>In registers, zero padded.</notes>
     </point>
-    <point id="FrgSeq">
-      <label>Fragment Sequence</label>
-      <description>Fragment sequence number</description>
-      <notes>Starts with 1</notes>
-    </point>
     <point id="FrgLn">
       <label>Fragment length</label>
       <description>Length of this fragment</description>

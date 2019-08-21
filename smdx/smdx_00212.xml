@@ -122,7 +122,6 @@
       <description>Phase C Current</description>
       <notes></notes>
     </point>
-    <point id="A_SF"><description>Current scale factor</description></point>
     <point id="PhV">
       <label>Voltage LN</label>
       <description>Line to Neutral AC Voltage (average of active phases)</description>
@@ -163,19 +162,16 @@
       <description>Phase Voltage CN</description>
       <notes></notes>
     </point>
-    <point id="V_SF"><description>Voltage scale factor</description></point>
     <point id="Hz">
       <label>Hz</label>
       <description>Frequency</description>
       <notes></notes>
     </point>
-    <point id="Hz_SF"><description>Frequency scale factor</description></point>
     <point id="W">
       <label>Watts</label>
       <description>Total Real Power</description>
       <notes></notes>
     </point>
-    <point id="W_SF"><description>Real Power scale factor</description></point>
     <point id="WphA">
       <label>Watts phase A</label>
       <description></description>
@@ -196,7 +192,6 @@
       <description>AC Apparent Power</description>
       <notes></notes>
     </point>
-    <point id="VA_SF"><description>Apparent Power scale factor</description></point>
     <point id="VAphA">
       <label>VA phase A</label>
       <description></description>
@@ -217,7 +212,6 @@
       <description>Reactive Power</description>
       <notes></notes>
     </point>
-    <point id="VAR_SF"><description>Reactive Power scale factor</description></point>
     <point id="VARphA">
       <label>VAR phase A</label>
       <description></description>
@@ -238,7 +232,6 @@
       <description>Power Factor</description>
       <notes></notes>
     </point>
-    <point id="PF_SF"><description>Power Factor scale factor</description></point>
     <point id="PFphA">
       <label>PF phase A</label>
       <description></description>
@@ -259,7 +252,6 @@
       <description>Total Real Energy Exported</description>
       <notes></notes>
     </point>
-    <point id="TotWh_SF"><description>Real Energy scale factor</description></point>
     <point id="TotWhExpPhA">
       <label>Total Watt-hours Exported phase A</label>
       <description></description>
@@ -300,7 +292,6 @@
       <description>Total Apparent Energy Exported</description>
       <notes></notes>
     </point> 
-    <point id="TotVAh_SF"><description>Apparent Energy scale factor</description></point>
     <point id="TotVAhExpPhA">
       <label>Total VA-hours Exported phase A</label>
       <description></description>
@@ -336,23 +327,22 @@
       <description></description>
       <notes></notes>
     </point>
-    <point id="TotVArh_SF"><description>Reactive Energy scale factor</description></point>
     <point id="TotVArhImpQ1">
       <label>Total VAR-hours Imported Q1</label>
       <description>Total Reactive Energy Imported Quadrant 1</description>
       <notes></notes>
     </point>
-    <point id="TotVArhImpQ1PhA">
+    <point id="TotVArhImpQ1phA">
       <label>Total VAr-hours Imported Q1 phase A</label>
       <description></description>
       <notes></notes>
     </point>
-    <point id="TotVArhImpQ1PhB">
+    <point id="TotVArhImpQ1phB">
       <label>Total VAr-hours Imported Q1 phase B</label>
       <description></description>
       <notes></notes>
     </point>
-    <point id="TotVArhImpQ1PhC">
+    <point id="TotVArhImpQ1phC">
       <label>Total VAr-hours Imported Q1 phase C</label>
       <description></description>
       <notes></notes>
@@ -362,17 +352,17 @@
       <description>Total Reactive Power Imported Quadrant 2</description>
       <notes></notes>
     </point>
-    <point id="TotVArhImpQ2PhA">
+    <point id="TotVArhImpQ2phA">
       <label>Total VAr-hours Imported Q2 phase A</label>
       <description></description>
       <notes></notes>
     </point>
-    <point id="TotVArhImpQ2PhB">
+    <point id="TotVArhImpQ2phB">
       <label>Total VAr-hours Imported Q2 phase B</label>
       <description></description>
       <notes></notes>
     </point>
-    <point id="TotVArhImpQ2PhC">
+    <point id="TotVArhImpQ2phC">
       <label>Total VAr-hours Imported Q2 phase C</label>
       <description></description>
       <notes></notes>
@@ -382,17 +372,17 @@
       <description>Total Reactive Power Exported Quadrant 3</description>
       <notes></notes>
     </point>
-    <point id="TotVArhExpQ3PhA">
+    <point id="TotVArhExpQ3phA">
       <label>Total VAr-hours Exported Q3 phase A</label>
       <description></description>
       <notes></notes>
     </point>
-    <point id="TotVArhExpQ3PhB">
+    <point id="TotVArhExpQ3phB">
       <label>Total VAr-hours Exported Q3 phase B</label>
       <description></description>
       <notes></notes>
     </point>
-    <point id="TotVArhExpQ3PhC">
+    <point id="TotVArhExpQ3phC">
       <label>Total VAr-hours Exported Q3 phase C</label>
       <description></description>
       <notes></notes>
@@ -402,17 +392,17 @@
       <description>Total Reactive Power Exported Quadrant 4</description>
       <notes></notes>
     </point>
-    <point id="TotVArhExpQ4PhA">
+    <point id="TotVArhExpQ4phA">
       <label>Total VAr-hours Exported Q4 Imported phase A</label>
       <description></description>
       <notes></notes>
     </point>
-    <point id="TotVArhExpQ4Ph">
+    <point id="TotVArhExpQ4phB">
       <label>Total VAr-hours Exported Q4 Imported phase B</label>
       <description></description>
       <notes></notes>
     </point>
-    <point id="TotVArhExpQ4PhC">
+    <point id="TotVArhExpQ4phC">
       <label>Total VAr-hours Exported Q4 Imported phase C</label>
       <description></description>
       <notes></notes>

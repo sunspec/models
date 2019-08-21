@@ -79,15 +79,10 @@
       <notes>This model is SUPERSEDED by model 404</notes>
     </model>
     <point id="DCA_SF"><description>Current scale factor</description></point>
-    <point id="InDCA_SF"><description>Current scale factor for inputs</description></point>
     <point id="DCAhr_SF"><description>Amp-hour scale factor</description></point>
-    <point id="InDCAhr_SF"><description>Amp-hour scale factor for inputs</description></point>
     <point id="DCV_SF"><description>Voltage scale factor</description></point>
-    <point id="InDCV_SF"><description>Voltage scale factor for inputs</description></point>
     <point id="DCW_SF"><description>Power scale factor</description></point>
-    <point id="InDCW_SF"><description>Power scale factor for inputs</description></point>
     <point id="DCWh_SF"><description>Energy scale factor</description></point>
-    <point id="InDCWh_SF"><description>Energy scale factor for inputs</description></point>
     <point id="DCAMax">
       <label>Rating</label>
       <description>Maximum DC Current Rating</description>
@@ -151,11 +146,6 @@
     <point id="InEvt">
       <label>Input Event</label>
       <description>String Input Event Flags</description>
-      <notes></notes>
-    </point>
-    <point id="InEvtVnd">
-      <label>Input Event Vendor</label>
-      <description>String Input Vendor Event Flags</description>
       <notes></notes>
     </point>
     <point id="InDCA">

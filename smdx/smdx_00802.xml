@@ -386,11 +386,6 @@
       <description>Percentage of battery life remaining.</description>
       <notes></notes>
      </point>
-    <point id="Pad1">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes></notes>
-    </point>
     <point id="WarrDt">
       <label>Warranty Date</label>
       <description>Date the device warranty expires.</description>
@@ -756,11 +751,5 @@
       <description>Scale factor for AC power request.</description>
       <notes></notes>
     </point>
-    <point id="Pad">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>    
-
   </strings>
 </sunSpecModels>

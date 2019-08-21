@@ -310,10 +310,6 @@
       <description>Sequence number of request</description>
       <notes>Shall be advanced for each request</notes>
     </point>
-    <point id="Role">
-      <label>Role</label>
-      <description>Digital Signature ID</description>
-      <notes>User's role id 0-5</notes>
-    </point>
+
   </strings>
 </sunSpecModels>

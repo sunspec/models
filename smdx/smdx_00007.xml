@@ -85,11 +85,6 @@
         <notes>Value is out of acceptable range</notes>
       </symbol>
     </point>
-    <point id="X">
-      <label>X</label>
-      <description>Number of (offset, value) pairs being written</description>
-      <notes>A max of 50 (offset, value) pairs are allocated</notes>
-    </point>
     <point id="DS">
       <label>DS</label>
       <description>Digital Signature</description>

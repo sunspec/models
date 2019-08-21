@@ -294,7 +294,7 @@
       <description>Output Energy</description>
       <notes></notes>
     </point>
-    <point id="OutW">
+    <point id="OutPw">
       <label>Output Power</label>
       <description>Output Power</description>
       <notes></notes>

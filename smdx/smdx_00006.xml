@@ -161,11 +161,6 @@
       <description>Number of (offset, value) pairs being written</description>
       <notes>A max of 50 (offset, value) pairs are allocated</notes>
     </point>
-    <point id="Off1">
-      <label>Offset1</label>
-      <description>Offset of control register to write value to</description>
-      <notes></notes>
-    </point>
     <point id="Val1">
       <label>Value1</label>
       <description>Value to write to control register at offset</description>

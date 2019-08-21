@@ -118,26 +118,6 @@
       <description>Scale factor for percent VRef.</description>
       <notes> </notes>
     </point>
-    <point id="WPct_SF">
-      <label>WPct_SF</label>
-      <description>Scale factor for power output percent.</description>
-      <notes> </notes>
-    </point>
-    <point id="VArPct_SF">
-      <label>VArPct_SF</label>
-      <description>Scale factor for reactive power percent.</description>
-      <notes> </notes>
-    </point>
-    <point id="RmpIncDec_SF">
-      <label>RmpIncDec_SF</label>
-      <description>Scale factor for increment and decrement ramps.</description>
-      <notes> </notes>
-    </point>
-    <point id="Pad">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>
     <point id="CrvNam">
       <label>CrvNam</label>
       <description>Optional description for curve. (Max 16 chars)</description>
