@@ -1,0 +1,395 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "A solar module model supporting DC-DC converter",
+        "detail": "Float",
+        "groups": [],
+        "id": "solar_module",
+        "label": "Solar Module",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "solar_module model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 501
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "solar_module model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Stat",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "OFF",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "SLEEPING",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "STARTING",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "MPPT",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "THROTTLED",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "SHUTTING_DOWN",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "FAULT",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "STANDBY",
+                        "value": 8
+                    },
+                    {
+                        "comments": [],
+                        "id": "TEST",
+                        "value": 9
+                    },
+                    {
+                        "comments": [],
+                        "id": "OTHER",
+                        "value": 10
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "StatVend",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Evt",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "GROUND_FAULT",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "INPUT_OVER_VOLTAGE",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "DC_DISCONNECT",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "MANUAL_SHUTDOWN",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_TEMPERATURE",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 8
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 9
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 10
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 11
+                    },
+                    {
+                        "comments": [],
+                        "id": "BLOWN_FUSE",
+                        "value": 12
+                    },
+                    {
+                        "comments": [],
+                        "id": "UNDER_TEMPERATURE",
+                        "value": 13
+                    },
+                    {
+                        "comments": [],
+                        "id": "MEMORY_LOSS",
+                        "value": 14
+                    },
+                    {
+                        "comments": [],
+                        "id": "ARC_DETECTION",
+                        "value": 15
+                    },
+                    {
+                        "comments": [],
+                        "id": "THEFT_DETECTION",
+                        "value": 16
+                    },
+                    {
+                        "comments": [],
+                        "id": "OUTPUT_OVER_CURRENT",
+                        "value": 17
+                    },
+                    {
+                        "comments": [],
+                        "id": "OUTPUT_OVER_VOLTAGE",
+                        "value": 18
+                    },
+                    {
+                        "comments": [],
+                        "id": "OUTPUT_UNDER_VOLTAGE",
+                        "value": 19
+                    },
+                    {
+                        "comments": [],
+                        "id": "TEST_FAILED",
+                        "value": 20
+                    }
+                ],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "EvtVend",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Ctl",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "CtlVend",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "enum32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "CtlVal",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "int32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Tms",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint32",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "OutA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "OutV",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "OutWh",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Wh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "OutW",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "W",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Tmp",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "InA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "InV",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "InWh",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Wh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "InW",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "W",
+                "value": null
+            }
+        ]
+    },
+    "id": 501
+}

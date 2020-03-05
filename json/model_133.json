@@ -1,0 +1,787 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Basic Scheduling ",
+        "detail": "Ref 2: 2.2.8",
+        "groups": [
+            {
+                "comments": [],
+                "count": 0,
+                "groups": [],
+                "id": "repeating",
+                "points": [
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "ActPts",
+                        "len": 1,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "StrTms",
+                        "len": 2,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint32",
+                        "units": "Secs",
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "RepPer",
+                        "len": 1,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "IntvTyp",
+                        "len": 1,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [
+                            {
+                                "comments": [],
+                                "id": "ONETIME",
+                                "value": 0
+                            },
+                            {
+                                "comments": [],
+                                "id": "DAILY",
+                                "value": 1
+                            },
+                            {
+                                "comments": [],
+                                "id": "WEEKLY",
+                                "value": 2
+                            },
+                            {
+                                "comments": [],
+                                "id": "MONTHLY",
+                                "value": 3
+                            },
+                            {
+                                "comments": [],
+                                "id": "WEEKDAY",
+                                "value": 4
+                            },
+                            {
+                                "comments": [],
+                                "id": "HOLIDAY",
+                                "value": 5
+                            },
+                            {
+                                "comments": [],
+                                "id": "WEEKEND",
+                                "value": 6
+                            },
+                            {
+                                "comments": [],
+                                "id": "YEARLY",
+                                "value": 7
+                            }
+                        ],
+                        "type": "enum16",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "XTyp",
+                        "len": 1,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [
+                            {
+                                "comments": [],
+                                "id": "UNSET",
+                                "value": 0
+                            },
+                            {
+                                "comments": [],
+                                "id": "TIME",
+                                "value": 1
+                            },
+                            {
+                                "comments": [],
+                                "id": "TEMP",
+                                "value": 2
+                            },
+                            {
+                                "comments": [],
+                                "id": "PRICE",
+                                "value": 3
+                            },
+                            {
+                                "comments": [],
+                                "id": "OTHER",
+                                "value": 99
+                            }
+                        ],
+                        "type": "enum16",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "X_SF",
+                        "len": 1,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "sunssf",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "YTyp",
+                        "len": 1,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [
+                            {
+                                "comments": [],
+                                "id": "UNSET",
+                                "value": 0
+                            },
+                            {
+                                "comments": [],
+                                "id": "WMax",
+                                "value": 1
+                            },
+                            {
+                                "comments": [],
+                                "id": "RSRVD2",
+                                "value": 2
+                            },
+                            {
+                                "comments": [],
+                                "id": "PF",
+                                "value": 3
+                            },
+                            {
+                                "comments": [],
+                                "id": "RSRVD4",
+                                "value": 4
+                            },
+                            {
+                                "comments": [],
+                                "id": "WATT_PRICE",
+                                "value": 5
+                            },
+                            {
+                                "comments": [],
+                                "id": "VAR_PRICE",
+                                "value": 6
+                            },
+                            {
+                                "comments": [],
+                                "id": "RSRVD7",
+                                "value": 7
+                            },
+                            {
+                                "comments": [],
+                                "id": "VOLT_VAR_ARRAY",
+                                "value": 8
+                            },
+                            {
+                                "comments": [],
+                                "id": "WChaGra",
+                                "value": 9
+                            },
+                            {
+                                "comments": [],
+                                "id": "WDisChaGra",
+                                "value": 10
+                            },
+                            {
+                                "comments": [],
+                                "id": "VArAval",
+                                "value": 11
+                            },
+                            {
+                                "comments": [],
+                                "id": "Schedule",
+                                "value": 12
+                            },
+                            {
+                                "comments": [],
+                                "id": "OTHER",
+                                "value": 99
+                            }
+                        ],
+                        "type": "enum16",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "Y_SF",
+                        "len": 1,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "sunssf",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "X1",
+                        "len": 2,
+                        "mandatory": "true",
+                        "sf": "X_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "Y1",
+                        "len": 2,
+                        "mandatory": "true",
+                        "sf": "Y_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "X2",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "X_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "Y2",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "Y_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "X3",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "X_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "Y3",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "Y_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "X4",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "X_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "Y4",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "Y_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "X5",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "X_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "Y5",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "Y_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "X6",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "X_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "Y6",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "Y_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "X7",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "X_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "Y7",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "Y_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "X8",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "X_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "Y8",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "Y_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "X9",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "X_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "Y9",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "Y_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "X10",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "X_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "Y10",
+                        "len": 2,
+                        "mandatory": "false",
+                        "sf": "Y_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "Nam",
+                        "len": 8,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "string",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "WinTms",
+                        "len": 1,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "Secs",
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "RmpTms",
+                        "len": 1,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "Secs",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ActIndx",
+                        "len": 1,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null,
+                        "value": null
+                    }
+                ]
+            }
+        ],
+        "id": "schedule",
+        "label": "Basic Scheduling",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "schedule model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 133
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "schedule model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ActSchd",
+                "len": 2,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "SCHED1",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED2",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED3",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED4",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED5",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED6",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED7",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED8",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED9",
+                        "value": 8
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED10",
+                        "value": 9
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED12",
+                        "value": 10
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED13",
+                        "value": 11
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED14",
+                        "value": 12
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED15",
+                        "value": 13
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED16",
+                        "value": 14
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED17",
+                        "value": 15
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED18",
+                        "value": 16
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED19",
+                        "value": 17
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED20",
+                        "value": 18
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED21",
+                        "value": 19
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED22",
+                        "value": 21
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED23",
+                        "value": 22
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED24",
+                        "value": 23
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED25",
+                        "value": 24
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED26",
+                        "value": 25
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED27",
+                        "value": 26
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED28",
+                        "value": 27
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED29",
+                        "value": 28
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED30",
+                        "value": 29
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED31",
+                        "value": 30
+                    },
+                    {
+                        "comments": [],
+                        "id": "SCHED32",
+                        "value": 31
+                    }
+                ],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ModEna",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "ENABLED",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "NSchd",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "NPts",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Pad",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "pad",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 133
+}

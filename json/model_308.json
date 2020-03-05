@@ -1,0 +1,82 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include to support a few basic measurements",
+        "detail": null,
+        "groups": [],
+        "id": "mini_met",
+        "label": "Mini Met Model",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "mini_met model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 308
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "mini_met model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "GHI",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "W/m2",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TmpBOM",
+                "len": null,
+                "mandatory": "false",
+                "sf": "-1",
+                "symbols": [],
+                "type": "int16",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TmpAmb",
+                "len": null,
+                "mandatory": "false",
+                "sf": "-1",
+                "symbols": [],
+                "type": "int16",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WndSpd",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "m/s",
+                "value": null
+            }
+        ]
+    },
+    "id": 308
+}

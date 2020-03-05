@@ -1,0 +1,46 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "This model has been deprecated.",
+        "detail": null,
+        "groups": [],
+        "id": "storage",
+        "label": "Energy Storage Base Model (DEPRECATED)",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "storage model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 801
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "storage model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DEPRECATED",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 801
+}

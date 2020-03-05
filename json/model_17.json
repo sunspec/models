@@ -1,0 +1,205 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include this model for serial interface configuration support",
+        "detail": null,
+        "groups": [],
+        "id": "model_17",
+        "label": "Serial Interface",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_17 model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 17
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_17 model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Nam",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Rte",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint32",
+                "units": "bps",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Bits",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Pty",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "NONE",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "ODD",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "EVEN",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Dup",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "FULL",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "HALF",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Flw",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "NONE",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "HW",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "XONXOFF",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Typ",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "UNKNOWN",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "RS232",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "RS485",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Pcol",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "UNKNOWN",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "MODBUS",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "VENDOR",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 17
+}

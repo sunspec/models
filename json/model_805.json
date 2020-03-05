@@ -1,0 +1,397 @@
+{
+    "group": {
+        "comments": [],
+        "desc": null,
+        "detail": null,
+        "groups": [
+            {
+                "comments": [],
+                "count": 0,
+                "groups": [],
+                "id": "lithium-ion-module-cell",
+                "points": [
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "CellV",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": "CellV_SF",
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "V",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "CellTmp",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": "Tmp_SF",
+                        "symbols": [],
+                        "type": "int16",
+                        "units": "C",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "CellSt",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [
+                            {
+                                "comments": [],
+                                "id": "CELL_IS_BALANCING",
+                                "value": 0
+                            }
+                        ],
+                        "type": "bitfield32",
+                        "units": null,
+                        "value": null
+                    }
+                ]
+            }
+        ],
+        "id": "lithium-ion-module",
+        "label": "Lithium-Ion Module Model",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "lithium-ion-module model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 805
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "lithium-ion-module model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "StrIdx",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ModIdx",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "NCell",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "SoC",
+                "len": null,
+                "mandatory": "false",
+                "sf": "SoC_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "%",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DoD",
+                "len": null,
+                "mandatory": "false",
+                "sf": "DoD_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "%",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "SoH",
+                "len": null,
+                "mandatory": "false",
+                "sf": "SoH_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "%",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "NCyc",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "V",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellVMax",
+                "len": null,
+                "mandatory": "true",
+                "sf": "CellV_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellVMaxCell",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellVMin",
+                "len": null,
+                "mandatory": "true",
+                "sf": "CellV_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellVMinCell",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellVAvg",
+                "len": null,
+                "mandatory": "true",
+                "sf": "CellV_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellTmpMax",
+                "len": null,
+                "mandatory": "true",
+                "sf": "Tmp_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellTmpMaxCell",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellTmpMin",
+                "len": null,
+                "mandatory": "true",
+                "sf": "Tmp_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellTmpMinCell",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellTmpAvg",
+                "len": null,
+                "mandatory": "true",
+                "sf": "Tmp_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "NCellBal",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "SN",
+                "len": 16,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "SoC_SF",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "SoH_SF",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DoD_SF",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "V_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellV_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Tmp_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 805
+}

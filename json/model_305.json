@@ -1,0 +1,106 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include to support location measurements",
+        "detail": null,
+        "groups": [],
+        "id": "location",
+        "label": "GPS",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "location model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 305
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "location model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Tm",
+                "len": 6,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": "hhmmss.sssZ",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Date",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": "YYYYMMDD",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Loc",
+                "len": 20,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": "text",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Lat",
+                "len": null,
+                "mandatory": "false",
+                "sf": "-7",
+                "symbols": [],
+                "type": "int32",
+                "units": "Degrees",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Long",
+                "len": null,
+                "mandatory": "false",
+                "sf": "-7",
+                "symbols": [],
+                "type": "int32",
+                "units": "Degrees",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Alt",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "int32",
+                "units": "meters",
+                "value": null
+            }
+        ]
+    },
+    "id": 305
+}

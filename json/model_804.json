@@ -1,0 +1,1078 @@
+{
+    "group": {
+        "comments": [],
+        "desc": null,
+        "detail": null,
+        "groups": [
+            {
+                "comments": [],
+                "count": 0,
+                "groups": [],
+                "id": "lithium_ion_string_module",
+                "points": [
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ModNCell",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ModSoC",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "SoC_SF",
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "%",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ModSoH",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "SoH_SF",
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "%",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ModCellVMax",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": "CellV_SF",
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "V",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ModCellVMaxCell",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ModCellVMin",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": "CellV_SF",
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "V",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ModCellVMinCell",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "CellV_SF",
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "V",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ModCellVAvg",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": "CellV_SF",
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "V",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ModCellTmpMax",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": "ModTmp_SF",
+                        "symbols": [],
+                        "type": "int16",
+                        "units": "C",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ModCellTmpMaxCell",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ModCellTmpMin",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": "ModTmp_SF",
+                        "symbols": [],
+                        "type": "int16",
+                        "units": "C",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ModCellTmpMinCell",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ModCellTmpAvg",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": "ModTmp_SF",
+                        "symbols": [],
+                        "type": "int16",
+                        "units": "C",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "Pad5",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "pad",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "Pad6",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "pad",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "Pad7",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "pad",
+                        "units": null,
+                        "value": null
+                    }
+                ]
+            }
+        ],
+        "id": "lithium_ion_string",
+        "label": "Lithium-Ion String Model",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "lithium_ion_string model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 804
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "lithium_ion_string model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Idx",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "NMod",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "St",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "STRING_ENABLED",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_STATUS",
+                        "value": 1
+                    }
+                ],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ConFail",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "NO_FAILURE",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "BUTTON_PUSHED",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "STR_GROUND_FAULT",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "OUTSIDE_VOLTAGE_RANGE",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "STRING_NOT_ENABLED",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "FUSE_OPEN",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_FAILURE",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "PRECHARGE_FAILURE",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "STRING_FAULT",
+                        "value": 8
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "NCellBal",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "SoC",
+                "len": null,
+                "mandatory": "true",
+                "sf": "SoC_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "%",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DoD",
+                "len": null,
+                "mandatory": "false",
+                "sf": "DoD_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "%",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "NCyc",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "SoH",
+                "len": null,
+                "mandatory": "false",
+                "sf": "SoH_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "%",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "A",
+                "len": null,
+                "mandatory": "true",
+                "sf": "A_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "V",
+                "len": null,
+                "mandatory": "false",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellVMax",
+                "len": null,
+                "mandatory": "true",
+                "sf": "CellV_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellVMaxMod",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellVMin",
+                "len": null,
+                "mandatory": "true",
+                "sf": "CellV_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellVMinMod",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellVAvg",
+                "len": null,
+                "mandatory": "true",
+                "sf": "CellV_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ModTmpMax",
+                "len": null,
+                "mandatory": "true",
+                "sf": "ModTmp_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ModTmpMaxMod",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ModTmpMin",
+                "len": null,
+                "mandatory": "true",
+                "sf": "ModTmp_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ModTmpMinMod",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ModTmpAvg",
+                "len": null,
+                "mandatory": "true",
+                "sf": "ModTmp_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Pad1",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "pad",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ConSt",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_0",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_1",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_2",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_3",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_4",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_5",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_6",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_7",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_8",
+                        "value": 8
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_9",
+                        "value": 9
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_10",
+                        "value": 10
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_11",
+                        "value": 11
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_12",
+                        "value": 12
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_13",
+                        "value": 13
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_14",
+                        "value": 14
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_15",
+                        "value": 15
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_16",
+                        "value": 16
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_17",
+                        "value": 17
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_18",
+                        "value": 18
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_19",
+                        "value": 19
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_20",
+                        "value": 20
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_21",
+                        "value": 21
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_22",
+                        "value": 22
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_23",
+                        "value": 23
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_24",
+                        "value": 24
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_25",
+                        "value": 25
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_26",
+                        "value": 26
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_27",
+                        "value": 27
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_28",
+                        "value": 28
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_29",
+                        "value": 29
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_30",
+                        "value": 30
+                    }
+                ],
+                "type": "bitfield32",
+                "units": "",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Evt1",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "COMMUNICATION_ERROR",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_TEMP_ALARM",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_TEMP_WARNING",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "UNDER_TEMP_ALARM",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "UNDER_TEMP_WARNING",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_CHARGE_CURRENT_ALARM",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_CHARGE_CURRENT_WARNING",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_DISCHARGE_CURRENT_ALARM",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_DISCHARGE_CURRENT_WARNING",
+                        "value": 8
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_VOLT_ALARM",
+                        "value": 9
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_VOLT_WARNING",
+                        "value": 10
+                    },
+                    {
+                        "comments": [],
+                        "id": "UNDER_VOLT_ALARM",
+                        "value": 11
+                    },
+                    {
+                        "comments": [],
+                        "id": "UNDER_VOLT_WARNING",
+                        "value": 12
+                    },
+                    {
+                        "comments": [],
+                        "id": "UNDER_SOC_MIN_ALARM",
+                        "value": 13
+                    },
+                    {
+                        "comments": [],
+                        "id": "UNDER_SOC_MIN_WARNING",
+                        "value": 14
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_SOC_MAX_ALARM",
+                        "value": 15
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_SOC_MAX_WARNING",
+                        "value": 16
+                    },
+                    {
+                        "comments": [],
+                        "id": "VOLTAGE_IMBALANCE_WARNING",
+                        "value": 17
+                    },
+                    {
+                        "comments": [],
+                        "id": "TEMPERATURE_IMBALANCE_ALARM",
+                        "value": 18
+                    },
+                    {
+                        "comments": [],
+                        "id": "TEMPERATURE_IMBALANCE_WARNING",
+                        "value": 19
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONTACTOR_ERROR",
+                        "value": 20
+                    },
+                    {
+                        "comments": [],
+                        "id": "FAN_ERROR",
+                        "value": 21
+                    },
+                    {
+                        "comments": [],
+                        "id": "GROUND_FAULT",
+                        "value": 22
+                    },
+                    {
+                        "comments": [],
+                        "id": "OPEN_DOOR_ERROR",
+                        "value": 23
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED_1",
+                        "value": 24
+                    },
+                    {
+                        "comments": [],
+                        "id": "OTHER_ALARM",
+                        "value": 25
+                    },
+                    {
+                        "comments": [],
+                        "id": "OTHER_WARNING",
+                        "value": 26
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED_2",
+                        "value": 27
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONFIGURATION_ALARM",
+                        "value": 28
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONFIGURATION_WARNING",
+                        "value": 29
+                    }
+                ],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Evt2",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "EvtVnd1",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "EvtVnd2",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "SetEna",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "SetCon",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "CONNECT_STRING",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "DISCONNECT_STRING",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "SoC_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "SoH_SF",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DoD_SF",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "A_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "V_SF",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CellV_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ModTmp_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Pad2",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "pad",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Pad3",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "pad",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Pad4",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "pad",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 804
+}

@@ -1,0 +1,427 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "A basic string combiner",
+        "detail": "This model is SUPERSEDED by model 403",
+        "groups": [
+            {
+                "comments": [],
+                "count": 0,
+                "groups": [],
+                "id": "string",
+                "points": [
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "InID",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "InEvt",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [
+                            {
+                                "comments": [],
+                                "id": "LOW_VOLTAGE",
+                                "value": 0
+                            },
+                            {
+                                "comments": [],
+                                "id": "LOW_POWER",
+                                "value": 1
+                            },
+                            {
+                                "comments": [],
+                                "id": "LOW_EFFICIENCY",
+                                "value": 2
+                            },
+                            {
+                                "comments": [],
+                                "id": "CURRENT",
+                                "value": 3
+                            },
+                            {
+                                "comments": [],
+                                "id": "VOLTAGE",
+                                "value": 4
+                            },
+                            {
+                                "comments": [],
+                                "id": "POWER",
+                                "value": 5
+                            },
+                            {
+                                "comments": [],
+                                "id": "PR",
+                                "value": 6
+                            },
+                            {
+                                "comments": [],
+                                "id": "DISCONNECTED",
+                                "value": 7
+                            },
+                            {
+                                "comments": [],
+                                "id": "FUSE_FAULT",
+                                "value": 8
+                            },
+                            {
+                                "comments": [],
+                                "id": "COMBINER_FUSE_FAULT",
+                                "value": 9
+                            },
+                            {
+                                "comments": [],
+                                "id": "COMBINER_CABINET_OPEN",
+                                "value": 10
+                            },
+                            {
+                                "comments": [],
+                                "id": "TEMP",
+                                "value": 11
+                            },
+                            {
+                                "comments": [],
+                                "id": "GROUNDFAULT",
+                                "value": 12
+                            },
+                            {
+                                "comments": [],
+                                "id": "REVERSED_POLARITY",
+                                "value": 13
+                            },
+                            {
+                                "comments": [],
+                                "id": "INCOMPATIBLE",
+                                "value": 14
+                            },
+                            {
+                                "comments": [],
+                                "id": "COMM_ERROR",
+                                "value": 15
+                            },
+                            {
+                                "comments": [],
+                                "id": "INTERNAL_ERROR",
+                                "value": 16
+                            },
+                            {
+                                "comments": [],
+                                "id": "THEFT",
+                                "value": 17
+                            },
+                            {
+                                "comments": [],
+                                "id": "ARC_DETECTED",
+                                "value": 18
+                            }
+                        ],
+                        "type": "bitfield32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "InEvtVnd",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "bitfield32",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "InDCA",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": "DCA_SF",
+                        "symbols": [],
+                        "type": "int16",
+                        "units": "A",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "InDCAhr",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "DCAhr_SF",
+                        "symbols": [],
+                        "type": "uint32",
+                        "units": "Ah",
+                        "value": null
+                    }
+                ]
+            }
+        ],
+        "id": "string_combiner",
+        "label": "String Combiner (Current)",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "string_combiner model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 401
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "string_combiner model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DCA_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DCAhr_SF",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DCV_SF",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DCAMax",
+                "len": null,
+                "mandatory": "true",
+                "sf": "DCA_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "N",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "count",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Evt",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "LOW_VOLTAGE",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "LOW_POWER",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "LOW_EFFICIENCY",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "CURRENT",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "VOLTAGE",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "POWER",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "PR",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "DISCONNECTED",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "FUSE_FAULT",
+                        "value": 8
+                    },
+                    {
+                        "comments": [],
+                        "id": "COMBINER_FUSE_FAULT",
+                        "value": 9
+                    },
+                    {
+                        "comments": [],
+                        "id": "COMBINER_CABINET_OPEN",
+                        "value": 10
+                    },
+                    {
+                        "comments": [],
+                        "id": "TEMP",
+                        "value": 11
+                    },
+                    {
+                        "comments": [],
+                        "id": "GROUNDFAULT",
+                        "value": 12
+                    },
+                    {
+                        "comments": [],
+                        "id": "REVERSED_POLARITY",
+                        "value": 13
+                    },
+                    {
+                        "comments": [],
+                        "id": "INCOMPATIBLE",
+                        "value": 14
+                    },
+                    {
+                        "comments": [],
+                        "id": "COMM_ERROR",
+                        "value": 15
+                    },
+                    {
+                        "comments": [],
+                        "id": "INTERNAL_ERROR",
+                        "value": 16
+                    },
+                    {
+                        "comments": [],
+                        "id": "THEFT",
+                        "value": 17
+                    },
+                    {
+                        "comments": [],
+                        "id": "ARC_DETECTED",
+                        "value": 18
+                    }
+                ],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "EvtVnd",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DCA",
+                "len": null,
+                "mandatory": "true",
+                "sf": "DCA_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DCAhr",
+                "len": null,
+                "mandatory": "false",
+                "sf": "DCAhr_SF",
+                "symbols": [],
+                "type": "uint32",
+                "units": "Ah",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DCV",
+                "len": null,
+                "mandatory": "false",
+                "sf": "DCV_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Tmp",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "int16",
+                "units": "C",
+                "value": null
+            }
+        ]
+    },
+    "id": 401
+}

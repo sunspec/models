@@ -1,0 +1,219 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Dynamic Reactive Current ",
+        "detail": "Ref 3: 8.10.1.2; Ref 4: 12",
+        "groups": [],
+        "id": "reactive_current",
+        "label": "Dynamic Reactive Current",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "reactive_current model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 128
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "reactive_current model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ArGraMod",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "EDGE",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "CENTER",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ArGraSag",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "ArGra_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "%ARtg/%dV",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ArGraSwell",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "ArGra_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "%ARtg/%dV",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ModEna",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "ENABLED",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "FilTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "DbVMin",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VRefPct_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "% VRef",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "DbVMax",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VRefPct_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "% VRef",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "BlkZnV",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VRefPct_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "% VRef",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "HysBlkZnV",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VRefPct_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "% VRef",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "BlkZnTmms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "mSecs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "HoldTmms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "mSecs",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ArGra_SF",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VRefPct_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Pad",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "pad",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 128
+}

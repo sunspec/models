@@ -1,0 +1,166 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Parameterized Frequency-Watt ",
+        "detail": "Ref 3: 8.9.1.2, 8.9.4.2",
+        "groups": [],
+        "id": "freq_watt_param",
+        "label": "Freq-Watt Param",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "freq_watt_param model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 127
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "freq_watt_param model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "WGra",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "WGra_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "% PM/Hz",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "HzStr",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "HzStrStop_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "Hz",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "HzStop",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "HzStrStop_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "Hz",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "HysEna",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "ENABLED",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ModEna",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "ENABLED",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "HzStopWGra",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "RmpIncDec_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "% WMax/min",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WGra_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "HzStrStop_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "RmpIncDec_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Pad",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "pad",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 127
+}

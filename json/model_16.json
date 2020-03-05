@@ -1,0 +1,214 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include this model for a simple IPv4 network stack",
+        "detail": null,
+        "groups": [],
+        "id": "model_16",
+        "label": "Simple IP Network",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_16 model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 16
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_16 model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Nam",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Cfg",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "STATIC",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "DHCP",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Ctl",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "ENABLE_DNS",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "ENABLE_NTP",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Addr",
+                "len": 8,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Msk",
+                "len": 8,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Gw",
+                "len": 8,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "DNS1",
+                "len": 8,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "DNS2",
+                "len": 8,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "MAC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "eui48",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "LnkCtl",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "AUTONEGOTIATE",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "FULL_DUPLEX",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "FORCE_10MB",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "FORCE_100MB",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "FORCE_1GB",
+                        "value": 4
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Pad",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "pad",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 16
+}

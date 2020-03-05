@@ -1,0 +1,146 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include this block to allow for a proxy server",
+        "detail": null,
+        "groups": [],
+        "id": "model_14",
+        "label": "Proxy Server",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_14 model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 14
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_14 model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Nam",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Cap",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "NO_PROXY",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "IPV4_PROXY",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "IPV6_PROXY",
+                        "value": 2
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Cfg",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Typ",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Addr",
+                "len": 20,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Port",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "User",
+                "len": 12,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Pw",
+                "len": 12,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 14
+}

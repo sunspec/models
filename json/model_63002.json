@@ -1,0 +1,89 @@
+{
+    "group": {
+        "comments": [],
+        "groups": [
+            {
+                "comments": [],
+                "count": 0,
+                "groups": [],
+                "id": "repeating",
+                "points": [
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "sunssf_1",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "sunssf",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "int16_1",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "sunssf_1",
+                        "symbols": [],
+                        "type": "int16",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "int16_2",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "sunssf_2",
+                        "symbols": [],
+                        "type": "int16",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "sunssf_2",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "sunssf",
+                        "units": null,
+                        "value": null
+                    }
+                ]
+            }
+        ],
+        "id": "model_63002",
+        "label": "SunSpec Test Model 2",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_63002 model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 63002
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_63002 model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            }
+        ]
+    },
+    "id": 63002
+}

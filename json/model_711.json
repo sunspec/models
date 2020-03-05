@@ -1,0 +1,174 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "DER Frequency Droop model.",
+        "detail": null,
+        "groups": [],
+        "id": "DERFreqDroop",
+        "label": "DER Frequency Droop",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "DER Frequency Droop model id.",
+                "detail": null,
+                "id": "ID",
+                "label": "DER Frequency Droop ID",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": 711
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "DER Frequency Droop  model length.",
+                "detail": null,
+                "id": "L",
+                "label": "DER Frequency Droop Length",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Is DER Frequency-Watt (Frequency-Droop) control active.",
+                "detail": null,
+                "id": "ModEna",
+                "label": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "desc": null,
+                        "detail": null,
+                        "id": "DISABLED",
+                        "label": null,
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "desc": null,
+                        "detail": null,
+                        "id": "ENABLED",
+                        "label": null,
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "The deadband value for over-frequency conditions in Hz.",
+                "detail": null,
+                "id": "DbOf",
+                "label": "Over-frequency Deadband",
+                "mandatory": "true",
+                "sf": "Db_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Hz"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "The deadband value for under-frequency conditions in Hz.",
+                "detail": null,
+                "id": "DbUf",
+                "label": "Under-frequency Deadband",
+                "mandatory": "true",
+                "sf": "Db_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Hz"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Frequency droop per-unit frequency change for over-frequency conditions corresponding to 1 per-unit power output change.",
+                "detail": null,
+                "id": "KOf",
+                "label": "Over-frequency Change Ratio",
+                "mandatory": "true",
+                "sf": "K_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Frequency droop per-unit frequency change for under-frequency conditions corresponding to 1 per-unit power output change.",
+                "detail": null,
+                "id": "KUf",
+                "label": "Under-frequency Change Ratio",
+                "mandatory": "true",
+                "sf": "K_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "The open-loop response time in seconds.",
+                "detail": "The duration from a step change in control signal input until the output changes by 90% of its final change, before any overshoot.",
+                "id": "RspTms",
+                "label": "Open-Loop Response Time",
+                "mandatory": "true",
+                "sf": "RspTms_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Deadband scale factor.",
+                "detail": null,
+                "id": "Db_SF",
+                "label": "Deadband Scale Factor",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Frequency change scale factor.",
+                "detail": null,
+                "id": "K_SF",
+                "label": "Frequency Change Scale Factor",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Open loop response time scale factor.",
+                "detail": null,
+                "id": "RspTms_SF",
+                "label": "Open-Loop Scale Factor",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null
+            }
+        ]
+    },
+    "id": 711
+}

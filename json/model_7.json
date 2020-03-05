@@ -1,0 +1,216 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include a digital signature over the response",
+        "detail": "Used in conjunction with a Secure Write Request",
+        "groups": [
+            {
+                "comments": [],
+                "count": 0,
+                "groups": [],
+                "id": "repeating",
+                "points": [
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "DS",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null,
+                        "value": null
+                    }
+                ]
+            }
+        ],
+        "id": "model_7",
+        "label": "Secure Write Response Model (DRAFT 1)",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_7 model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 7
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_7 model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "RqSeq",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Sts",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "SUCCESS",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "DS",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "ACL",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "OFF",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "VAL",
+                        "value": 4
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Ts",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Ms",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Seq",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Alm",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "NONE",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "ALM",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Rsrvd",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "pad",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Alg",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "NONE",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "AES-GMAC-64",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "ECC-256",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "N",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 7
+}

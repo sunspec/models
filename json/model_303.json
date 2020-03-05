@@ -1,0 +1,55 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include to support variable number of  back of module temperature measurements",
+        "detail": null,
+        "groups": [
+            {
+                "comments": [],
+                "count": 0,
+                "groups": [],
+                "id": "temp",
+                "points": [
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "TmpBOM",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": "-1",
+                        "symbols": [],
+                        "type": "int16",
+                        "units": "C",
+                        "value": null
+                    }
+                ]
+            }
+        ],
+        "id": "bom_temp",
+        "label": "Back of Module Temperature Model",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "bom_temp model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 303
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "bom_temp model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            }
+        ]
+    },
+    "id": 303
+}

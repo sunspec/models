@@ -1,0 +1,124 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "To be included first for a complete interface description",
+        "detail": null,
+        "groups": [],
+        "id": "model_10",
+        "label": "Communication Interface Header",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_10 model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 10
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_10 model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "St",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "DOWN",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "UP",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "FAULT",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Ctl",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Typ",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "UNKNOWN",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "INTERNAL",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "TWISTED_PAIR",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "FIBER",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "WIRELESS",
+                        "value": 4
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Pad",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "pad",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 10
+}

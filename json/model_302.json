@@ -1,0 +1,103 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include to support various irradiance measurements",
+        "detail": null,
+        "groups": [
+            {
+                "comments": [],
+                "count": 0,
+                "groups": [],
+                "id": "repeating",
+                "points": [
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "GHI",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "W/m2",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "POAI",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "W/m2",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "DFI",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "W/m2",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "DNI",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "W/m2",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "OTI",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": "W/m2",
+                        "value": null
+                    }
+                ]
+            }
+        ],
+        "id": "irradiance",
+        "label": "Irradiance Model",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "irradiance model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 302
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "irradiance model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            }
+        ]
+    },
+    "id": 302
+}

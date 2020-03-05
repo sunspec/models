@@ -1,0 +1,380 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Basic Storage Controls ",
+        "detail": "Ref 3: 8.7.4.2",
+        "groups": [],
+        "id": "storage",
+        "label": "Storage",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "storage model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 124
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "storage model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "WChaMax",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "WChaMax_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "W",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "WChaGra",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "WChaDisChaGra_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "% WChaMax/sec",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "WDisChaGra",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "WChaDisChaGra_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "% WChaMax/sec",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "StorCtl_Mod",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "CHARGE",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "DiSCHARGE",
+                        "value": 1
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VAChaMax",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VAChaMax_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "VA",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "MinRsvPct",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "MinRsvPct_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "% WChaMax",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ChaState",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "ChaState_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "% AhrRtg",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "StorAval",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "StorAval_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "AH",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "InBatV",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "InBatV_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ChaSt",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "OFF",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "EMPTY",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "DISCHARGING",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "CHARGING",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "FULL",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "HOLDING",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "TESTING",
+                        "value": 7
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "OutWRte",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "InOutWRte_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "% WDisChaMax",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "InWRte",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "InOutWRte_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": " % WChaMax",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "InOutWRte_WinTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "InOutWRte_RvrtTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "InOutWRte_RmpTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ChaGriSet",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "PV",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "GRID",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WChaMax_SF",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WChaDisChaGra_SF",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VAChaMax_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "MinRsvPct_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ChaState_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "StorAval_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "InBatV_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "InOutWRte_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 124
+}

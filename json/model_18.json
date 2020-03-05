@@ -1,0 +1,94 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include this model to support a cellular interface link",
+        "detail": null,
+        "groups": [],
+        "id": "model_18",
+        "label": "Cellular Link",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_18 model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 18
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_18 model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Nam",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "IMEI",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "APN",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Num",
+                "len": 6,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Pin",
+                "len": 6,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 18
+}

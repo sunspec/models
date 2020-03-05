@@ -1,0 +1,924 @@
+{
+    "group": {
+        "comments": [],
+        "desc": null,
+        "detail": "Float",
+        "groups": [],
+        "id": "ac_meter",
+        "label": "split single phase (ABN) meter",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "ac_meter model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 212
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "ac_meter model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "A",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "AphA",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "AphB",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "AphC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PhV",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PhVphA",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PhVphB",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PhVphC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PPV",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PPVphAB",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PPVphBC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PPVphCA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Hz",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Hz",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "W",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "W",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WphA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "W",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WphB",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "W",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WphC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "W",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "VA",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VAphA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "VA",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VAphB",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "VA",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VAphC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "VA",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VAR",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "var",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VARphA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "var",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VARphB",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "var",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VARphC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "var",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PF",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "PF",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PFphA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "PF",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PFphB",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "PF",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PFphC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "PF",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotWhExp",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Wh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotWhExpPhA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Wh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotWhExpPhB",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Wh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotWhExpPhC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Wh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotWhImp",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Wh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotWhImpPhA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Wh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotWhImpPhB",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Wh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotWhImpPhC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Wh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVAhExp",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "VAh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVAhExpPhA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "VAh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVAhExpPhB",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "VAh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVAhExpPhC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "VAh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVAhImp",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "VAh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVAhImpPhA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "VAh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVAhImpPhB",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "VAh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVAhImpPhC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "VAh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhImpQ1",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhImpQ1phA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhImpQ1phB",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhImpQ1phC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhImpQ2",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhImpQ2phA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhImpQ2phB",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhImpQ2phC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhExpQ3",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhExpQ3phA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhExpQ3phB",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhExpQ3phC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhExpQ4",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhExpQ4phA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhExpQ4phB",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TotVArhExpQ4phC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Evt",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Power_Failure",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Under_Voltage",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Low_PF",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Over_Current",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Over_Voltage",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Missing_Sensor",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Reserved1",
+                        "value": 8
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Reserved2",
+                        "value": 9
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Reserved3",
+                        "value": 10
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Reserved4",
+                        "value": 11
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Reserved5",
+                        "value": 12
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Reserved6",
+                        "value": 13
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Reserved7",
+                        "value": 14
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_Reserved8",
+                        "value": 15
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM01",
+                        "value": 16
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM02",
+                        "value": 17
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM03",
+                        "value": 18
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM04",
+                        "value": 19
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM05",
+                        "value": 20
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM06",
+                        "value": 21
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM07",
+                        "value": 22
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM08",
+                        "value": 23
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM09",
+                        "value": 24
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM10",
+                        "value": 25
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM11",
+                        "value": 26
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM12",
+                        "value": 27
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM13",
+                        "value": 28
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM14",
+                        "value": 29
+                    },
+                    {
+                        "comments": [],
+                        "id": "M_EVENT_OEM15",
+                        "value": 30
+                    }
+                ],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 212
+}

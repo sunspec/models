@@ -1,0 +1,82 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include to support a standard reference point",
+        "detail": null,
+        "groups": [],
+        "id": "ref_point",
+        "label": "Reference Point Model",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "ref_point model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 306
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "ref_point model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "GHI",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "W/m2",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "A",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "W/m2",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "V",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "W/m2",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Tmp",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "W/m2",
+                "value": null
+            }
+        ]
+    },
+    "id": 306
+}

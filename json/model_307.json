@@ -1,0 +1,166 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Base Meteorological Model",
+        "detail": "This model supersedes model 301",
+        "groups": [],
+        "id": "base_met",
+        "label": "Base Met",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "base_met model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 307
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "base_met model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TmpAmb",
+                "len": null,
+                "mandatory": "false",
+                "sf": "-1",
+                "symbols": [],
+                "type": "int16",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "RH",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "int16",
+                "units": "Pct",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Pres",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "int16",
+                "units": "HPa",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WndSpd",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "int16",
+                "units": "mps",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WndDir",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "int16",
+                "units": "deg",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Rain",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "int16",
+                "units": "mm",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Snw",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "int16",
+                "units": "mm",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PPT",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "int16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ElecFld",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "int16",
+                "units": "Vm",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "SurWet",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "int16",
+                "units": "kO",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "SoilWet",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "int16",
+                "units": "Pct",
+                "value": null
+            }
+        ]
+    },
+    "id": 307
+}

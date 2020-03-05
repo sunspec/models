@@ -1,0 +1,432 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Inverter Controls Basic Settings ",
+        "detail": "Ref 3: 8.4.2.1, Ref 4: 17",
+        "groups": [],
+        "id": "settings",
+        "label": "Basic Settings",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "settings model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 121
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "settings model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "WMax",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "WMax_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "W",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VRef",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "VRef_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VRefOfs",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "VRefOfs_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VMax",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VMinMax_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VMin",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VMinMax_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VAMax",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VAMax_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "VA",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VArMaxQ1",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VArMax_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "var",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VArMaxQ2",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VArMax_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "var",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VArMaxQ3",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VArMax_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "var",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VArMaxQ4",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VArMax_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "var",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "WGra",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "WGra_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "% WMax/sec",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "PFMinQ1",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "PFMin_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "cos()",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "PFMinQ2",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "PFMin_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "cos()",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "PFMinQ3",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "PFMin_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "cos()",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "PFMinQ4",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "PFMin_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "cos()",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VArAct",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "SWITCH",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "MAINTAIN",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ClcTotVA",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "VECTOR",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "ARITHMETIC",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "MaxRmpRte",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "MaxRmpRte_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "% WGra",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ECPNomHz",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "ECPNomHz_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Hz",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ConnPh",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "A",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "B",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "C",
+                        "value": 3
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WMax_SF",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VRef_SF",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VRefOfs_SF",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VMinMax_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VAMax_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VArMax_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WGra_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PFMin_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "MaxRmpRte_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ECPNomHz_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 121
+}

@@ -1,0 +1,321 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include to support an IPv4 protocol stack on this interface",
+        "detail": null,
+        "groups": [],
+        "id": "model_12",
+        "label": "IPv4",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_12 model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 12
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_12 model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Nam",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CfgSt",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "NOT_CONFIGURED",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "VALID_SETTING",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "VALID_HW",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ChgSt",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "PENDING",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Cap",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "DHCP",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "BOOTP",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "ZEROCONF",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "DNS",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "CFG_SETTABLE",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "HW_CONFIG",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "NTP_CLIENT",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESET_REQUIRED",
+                        "value": 7
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Cfg",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "STATIC",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "DHCP",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "BOOTP",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "ZEROCONF",
+                        "value": 3
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Ctl",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "ENABLE_DNS",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "ENABLE_NTP",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Addr",
+                "len": 8,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Msk",
+                "len": 8,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Gw",
+                "len": 8,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "DNS1",
+                "len": 8,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "DNS2",
+                "len": 8,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "NTP1",
+                "len": 12,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "NTP2",
+                "len": 12,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "DomNam",
+                "len": 12,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "HostNam",
+                "len": 12,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Pad",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "pad",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 12
+}

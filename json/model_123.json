@@ -1,0 +1,387 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Immediate Inverter Controls ",
+        "detail": "Ref 3: 8.7.1.2, 8.7.2.2, 8.7.3.2",
+        "groups": [],
+        "id": "controls",
+        "label": "Immediate Controls",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "controls model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 123
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "controls model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Conn_WinTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Conn_RvrtTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Conn",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "DISCONNECT",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "CONNECT",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "WMaxLimPct",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "WMaxLimPct_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "% WMax",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "WMaxLimPct_WinTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "WMaxLimPct_RvrtTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "WMaxLimPct_RmpTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "WMaxLim_Ena",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "DISABLED",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "ENABLED",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "OutPFSet",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "OutPFSet_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "cos()",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "OutPFSet_WinTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "OutPFSet_RvrtTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "OutPFSet_RmpTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "OutPFSet_Ena",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "DISABLED",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "ENABLED",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VArWMaxPct",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VArPct_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "% WMax",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VArMaxPct",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VArPct_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "% VArMax",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VArAvalPct",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VArPct_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "% VArAval",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VArPct_WinTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VArPct_RvrtTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VArPct_RmpTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VArPct_Mod",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "NONE",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "WMax",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "VArMax",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "VArAval",
+                        "value": 3
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "VArPct_Ena",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "DISABLED",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "ENABLED",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WMaxLimPct_SF",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "OutPFSet_SF",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VArPct_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 123
+}

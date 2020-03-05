@@ -1,0 +1,972 @@
+{
+    "group": {
+        "comments": [],
+        "desc": null,
+        "detail": null,
+        "groups": [],
+        "id": "model_64112",
+        "label": "OutBack FM Charge Controller",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_64112 model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 64112
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_64112 model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Port",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "V_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "C_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "H_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "P_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "AH_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "KWH_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_fault",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_absorb_V",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_absorb_Hr",
+                "len": null,
+                "mandatory": "true",
+                "sf": "H_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tmh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_absorb_End_A",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_rebulk_V",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_float_V",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_max_Chg_A",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_equalize_V",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_equalize_Hr",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tmh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_auto_equalize",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tmd",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_MPPT_mode",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "Auto",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "U_Pick",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "Wind",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_sweep_width",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "Half",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "Full",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_sweep_max",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "Eighty_Percent",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "Eighty_Five_Percent",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "Ninty_Percent",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "Ninty_Nine_Percent",
+                        "value": 3
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_U_Pick_Duty_cyc",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Pct",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_grid_tie",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "Disabled",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "Enabled",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_temp_comp",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "Wide",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "Limited",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_temp_comp_llimt",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_temp_comp_hlimt",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_auto_restart",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "Off",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "Every_90_Minutes",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "Every_90_Minutes_if_Absorb_or_Float",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_wakeup_VOC",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_snooze_mode_A",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_wakeup_interval",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tms",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_mode",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "Float",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "Diversion_Relay",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "Diversion_Solid_St",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "Low_Batt_Disconnect",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "Remote",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "Vent_Fan",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "PV_Trigger",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "Error_Output",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "Night_Light",
+                        "value": 8
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_control",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "Off",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "Auto",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "On",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_state",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "Disabled",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "Enabled",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_polarity",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "Low",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "High",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_L_Batt_disc",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_L_Batt_rcon",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_L_Batt_dly",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tms",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_Vent_fan_V",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_PV_triggerV",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_PV_trg_h_tm",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tms",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_Nlite_ThrsV",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_Nlite_On_tm",
+                "len": null,
+                "mandatory": "true",
+                "sf": "H_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tmh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_Nlite_On_hist",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tms",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_Nlite_Off_hist",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tms",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_Error_batt_V",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_Divert_h_time",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tms",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_Divert_dly_time",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tms",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_Divert_Rel_V",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_AUX_Divert_Hyst_V",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_MajorFWRev",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_MidFWRev",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_MinorFWRev",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_DataLog_Day_offset",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tmd",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_DataLog_Cur_Day_off",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tmd",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_DataLog_Daily_AH",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Ah",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_DataLog_Daily_KWH",
+                "len": null,
+                "mandatory": "true",
+                "sf": "KWH_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "kWh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_DataLog_Max_Out_A",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_DataLog_Max_Out_W",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "W",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_DataLog_Absorb_T",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tms",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_DataLog_Float_T",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Tms",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_DataLog_Min_Batt_V",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_DataLog_Max_Batt_V",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_DataLog_Max_Input_V",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_DataLog_Clear",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CC_Config_DataLog_Clr_Comp",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 64112
+}

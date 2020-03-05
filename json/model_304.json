@@ -1,0 +1,79 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include to support orientation measurements",
+        "detail": null,
+        "groups": [
+            {
+                "comments": [],
+                "count": 0,
+                "groups": [],
+                "id": "incl",
+                "points": [
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "Inclx",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": "-2",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": "Degrees",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "Incly",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "-2",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": "Degrees",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "Inclz",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "-2",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": "Degrees",
+                        "value": null
+                    }
+                ]
+            }
+        ],
+        "id": "inclinometer",
+        "label": "Inclinometer Model",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "inclinometer model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 304
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "inclinometer model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            }
+        ]
+    },
+    "id": 304
+}

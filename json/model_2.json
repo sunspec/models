@@ -1,0 +1,307 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Aggregates a collection of models for a given model id",
+        "detail": null,
+        "groups": [],
+        "id": "aggregator",
+        "label": "Basic Aggregator",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "aggregator model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 2
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "aggregator model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "AID",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "N",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "UN",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "St",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "OFF",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "ON",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "FULL",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "FAULT",
+                        "value": 4
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "StVnd",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Evt",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "GROUND_FAULT",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "INPUT_OVER_VOLTAGE",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "DC_DISCONNECT",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "MANUAL_SHUTDOWN",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_TEMPERATURE",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 8
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 9
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 10
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESERVED",
+                        "value": 11
+                    },
+                    {
+                        "comments": [],
+                        "id": "BLOWN_FUSE",
+                        "value": 12
+                    },
+                    {
+                        "comments": [],
+                        "id": "UNDER_TEMPERATURE",
+                        "value": 13
+                    },
+                    {
+                        "comments": [],
+                        "id": "MEMORY_LOSS",
+                        "value": 14
+                    },
+                    {
+                        "comments": [],
+                        "id": "ARC_DETECTION",
+                        "value": 15
+                    },
+                    {
+                        "comments": [],
+                        "id": "THEFT_DETECTION",
+                        "value": 16
+                    },
+                    {
+                        "comments": [],
+                        "id": "OUTPUT_OVER_CURRENT",
+                        "value": 17
+                    },
+                    {
+                        "comments": [],
+                        "id": "OUTPUT_OVER_VOLTAGE",
+                        "value": 18
+                    },
+                    {
+                        "comments": [],
+                        "id": "OUTPUT_UNDER_VOLTAGE",
+                        "value": 19
+                    },
+                    {
+                        "comments": [],
+                        "id": "TEST_FAILED",
+                        "value": 20
+                    }
+                ],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "EvtVnd",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Ctl",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "NONE",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "AUTOMATIC",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "FORCE_OFF",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "TEST",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "THROTTLE",
+                        "value": 4
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CtlVnd",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "enum32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CtlVl",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "enum32",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 2
+}

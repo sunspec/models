@@ -1,0 +1,336 @@
+{
+    "group": {
+        "comments": [],
+        "desc": null,
+        "detail": null,
+        "groups": [],
+        "id": "model_64111",
+        "label": "Basic Charge Controller",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_64111 model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 64111
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_64111 model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Port",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "V_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "A_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "P_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "AH_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "KWH_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "BattV",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ArrayV",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "OutputA",
+                "len": null,
+                "mandatory": "true",
+                "sf": "A_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "InputA",
+                "len": null,
+                "mandatory": "true",
+                "sf": "P_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ChargerSt",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "Off",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "Float",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "Bulk",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "Absorb",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "EQ",
+                        "value": 4
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "OutputW",
+                "len": null,
+                "mandatory": "true",
+                "sf": "P_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "W",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TodayMinBatV",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TodayMaxBatV",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VOCV",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TodayMaxVOC",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TodaykWhOutput",
+                "len": null,
+                "mandatory": "true",
+                "sf": "KWH_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "kWh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TodayAHOutput",
+                "len": null,
+                "mandatory": "true",
+                "sf": "AH_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "AH",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "LifeTimeKWHOut",
+                "len": null,
+                "mandatory": "true",
+                "sf": "P_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "kWh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "LifeTimeAHOut",
+                "len": null,
+                "mandatory": "true",
+                "sf": "KWH_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "kAH",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "LifeTimeMaxOut",
+                "len": null,
+                "mandatory": "true",
+                "sf": "P_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "W",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "LifeTimeMaxBatt",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "LifeTimeMaxVOC",
+                "len": null,
+                "mandatory": "true",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "V",
+                "value": null
+            }
+        ]
+    },
+    "id": 64111
+}

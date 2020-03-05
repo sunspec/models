@@ -1,0 +1,528 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include this model for split phase inverter monitoring using float values",
+        "detail": null,
+        "groups": [],
+        "id": "inverter",
+        "label": "Inverter (Split Phase) FLOAT",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "inverter model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 112
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "inverter model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "A",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "AphA",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "AphB",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "AphC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PPVphAB",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PPVphBC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PPVphCA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PhVphA",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PhVphB",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PhVphC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "W",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "W",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Hz",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Hz",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "VA",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VAr",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "var",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PF",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Pct",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WH",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "Wh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DCA",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "A",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DCV",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "V",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DCW",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "W",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TmpCab",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TmpSnk",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TmpTrns",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TmpOt",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "float32",
+                "units": "C",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "St",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "OFF",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "SLEEPING",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "STARTING",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "MPPT",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "THROTTLED",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "SHUTTING_DOWN",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "FAULT",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "STANDBY",
+                        "value": 8
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "StVnd",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Evt1",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "GROUND_FAULT",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "DC_OVER_VOLT",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "AC_DISCONNECT",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "DC_DISCONNECT",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "GRID_DISCONNECT",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "CABINET_OPEN",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "MANUAL_SHUTDOWN",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_TEMP",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "OVER_FREQUENCY",
+                        "value": 8
+                    },
+                    {
+                        "comments": [],
+                        "id": "UNDER_FREQUENCY",
+                        "value": 9
+                    },
+                    {
+                        "comments": [],
+                        "id": "AC_OVER_VOLT",
+                        "value": 10
+                    },
+                    {
+                        "comments": [],
+                        "id": "AC_UNDER_VOLT",
+                        "value": 11
+                    },
+                    {
+                        "comments": [],
+                        "id": "BLOWN_STRING_FUSE",
+                        "value": 12
+                    },
+                    {
+                        "comments": [],
+                        "id": "UNDER_TEMP",
+                        "value": 13
+                    },
+                    {
+                        "comments": [],
+                        "id": "MEMORY_LOSS",
+                        "value": 14
+                    },
+                    {
+                        "comments": [],
+                        "id": "HW_TEST_FAILURE",
+                        "value": 15
+                    }
+                ],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Evt2",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "EvtVnd1",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "EvtVnd2",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "EvtVnd3",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "EvtVnd4",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 112
+}

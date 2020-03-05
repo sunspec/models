@@ -1,0 +1,67 @@
+{
+    "group": {
+        "comments": [],
+        "desc": null,
+        "detail": null,
+        "groups": [
+            {
+                "comments": [],
+                "count": 0,
+                "groups": [],
+                "id": "stack",
+                "points": [
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "StackTBD",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null,
+                        "value": null
+                    }
+                ]
+            }
+        ],
+        "id": "flow_battery_module",
+        "label": "Flow Battery Module Model",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "flow_battery_module model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 808
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "flow_battery_module model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ModuleTBD",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 808
+}

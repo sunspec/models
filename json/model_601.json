@@ -1,0 +1,383 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Monitors and controls multiple trackers",
+        "detail": "Trackers may include GPS model 305 for location information",
+        "groups": [
+            {
+                "comments": [],
+                "count": 0,
+                "groups": [],
+                "id": "tracker",
+                "points": [
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "Id",
+                        "len": 8,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "string",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ElTrgt",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "Dgr_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": "Degrees",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "AzTrgt",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "Dgr_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": "Degrees",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "ElPos",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "Dgr_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": "Degrees",
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "AzPos",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "Dgr_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": "Degrees",
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "ElCtl",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "Dgr_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": "Degrees",
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "AzCtl",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": "Dgr_SF",
+                        "symbols": [],
+                        "type": "int32",
+                        "units": "Degrees",
+                        "value": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "id": "Ctl",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [
+                            {
+                                "comments": [],
+                                "id": "Automatic",
+                                "value": 0
+                            },
+                            {
+                                "comments": [],
+                                "id": "Manual",
+                                "value": 1
+                            },
+                            {
+                                "comments": [],
+                                "id": "Calibrate",
+                                "value": 2
+                            }
+                        ],
+                        "type": "enum16",
+                        "units": null,
+                        "value": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "Alm",
+                        "len": null,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [
+                            {
+                                "comments": [],
+                                "id": "SetPoint",
+                                "value": 0
+                            },
+                            {
+                                "comments": [],
+                                "id": "ObsEl",
+                                "value": 1
+                            },
+                            {
+                                "comments": [],
+                                "id": "ObsAz",
+                                "value": 2
+                            }
+                        ],
+                        "type": "bitfield16",
+                        "units": null,
+                        "value": null
+                    }
+                ]
+            }
+        ],
+        "id": "tracker_controller",
+        "label": "Tracker Controller DRAFT 2",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "tracker_controller model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 601
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "tracker_controller model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Nam",
+                "len": 8,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Typ",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "Unknown",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "Fixed",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "Horizontal",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "Tilted",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "Azimuth",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "Dual",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "Other",
+                        "value": 99
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "DtLoc",
+                "len": 5,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": "YYYYMMDD",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TmLoc",
+                "len": 3,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": "hhmmss",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Day",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "GlblElCtl",
+                "len": null,
+                "mandatory": "false",
+                "sf": "Dgr_SF",
+                "symbols": [],
+                "type": "int32",
+                "units": "Degrees",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "GlblAzCtl",
+                "len": null,
+                "mandatory": "false",
+                "sf": "Dgr_SF",
+                "symbols": [],
+                "type": "int32",
+                "units": "Degrees",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "GlblCtl",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "Automatic",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "Manual",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "Calibrate",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "GlblAlm",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "SetPoint",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "ObsEl",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "ObsAz",
+                        "value": 2
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Dgr_SF",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "N",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 601
+}

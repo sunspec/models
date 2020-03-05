@@ -1,0 +1,130 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Inverter controls extended settings ",
+        "detail": null,
+        "groups": [],
+        "id": "ext_settings",
+        "label": "Extended Settings",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "ext_settings model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 145
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "ext_settings model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "NomRmpUpRte",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "Rmp_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Pct",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "NomRmpDnRte",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "Rmp_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Pct",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "EmgRmpUpRte",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "Rmp_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Pct",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "EmgRmpDnRte",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "Rmp_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Pct",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ConnRmpUpRte",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "Rmp_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Pct",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ConnRmpDnRte",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "Rmp_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Pct",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "AGra",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "Rmp_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Pct",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Rmp_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 145
+}

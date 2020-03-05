@@ -1,0 +1,470 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Inverter Controls Extended Measurements and Status ",
+        "detail": "Ref 3: 8.14.3.2, Ref 4: 17",
+        "groups": [],
+        "id": "status",
+        "label": "Measurements_Status",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "status model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 122
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "status model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "PVConn",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "CONNECTED",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "AVAILABLE",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "OPERATING",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "TEST",
+                        "value": 3
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "StorConn",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "CONNECTED",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "AVAILABLE",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "OPERATING",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "TEST",
+                        "value": 3
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ECPConn",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "CONNECTED",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ActWh",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "acc64",
+                "units": "Wh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ActVAh",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "acc64",
+                "units": "VAh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ActVArhQ1",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "acc64",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ActVArhQ2",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "acc64",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ActVArhQ3",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "acc64",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "ActVArhQ4",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "acc64",
+                "units": "varh",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VArAval",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "VArAval_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": "var",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "VArAval_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WAval",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "WAval_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "var",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "WAval_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "StSetLimMsk",
+                "len": 2,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "WMax",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "VAMax",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "VArAval",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "VArMaxQ1",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "VArMaxQ2",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "VArMaxQ3",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "VArMaxQ4",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "PFMinQ1",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "PFMinQ2",
+                        "value": 8
+                    },
+                    {
+                        "comments": [],
+                        "id": "PFMinQ3",
+                        "value": 9
+                    },
+                    {
+                        "comments": [],
+                        "id": "PFMinQ4",
+                        "value": 10
+                    }
+                ],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "StActCtl",
+                "len": 2,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "FixedW",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "FixedVAR",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "FixedPF",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "Volt-VAr",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "Freq-Watt-Param",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "Freq-Watt-Curve",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "Dyn-Reactive-Current",
+                        "value": 6
+                    },
+                    {
+                        "comments": [],
+                        "id": "LVRT",
+                        "value": 7
+                    },
+                    {
+                        "comments": [],
+                        "id": "HVRT",
+                        "value": 8
+                    },
+                    {
+                        "comments": [],
+                        "id": "Watt-PF",
+                        "value": 9
+                    },
+                    {
+                        "comments": [],
+                        "id": "Volt-Watt",
+                        "value": 10
+                    },
+                    {
+                        "comments": [],
+                        "id": "Scheduled",
+                        "value": 12
+                    },
+                    {
+                        "comments": [],
+                        "id": "LFRT",
+                        "value": 13
+                    },
+                    {
+                        "comments": [],
+                        "id": "HFRT",
+                        "value": 14
+                    }
+                ],
+                "type": "bitfield32",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "TmSrc",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Tms",
+                "len": 2,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint32",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "RtSt",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "LVRT_ACTIVE",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "HVRT_ACTIVE",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "LFRT_ACTIVE",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "HFRT_ACTIVE",
+                        "value": 3
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Ris",
+                "len": 1,
+                "mandatory": "false",
+                "sf": "Ris_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "ohms",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Ris_SF",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 122
+}

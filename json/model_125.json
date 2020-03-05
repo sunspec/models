@@ -1,0 +1,162 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Pricing Signal  ",
+        "detail": "Ref 3: 8.7.5.1; Ref 4: 6",
+        "groups": [],
+        "id": "pricing",
+        "label": "Pricing",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "pricing model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 125
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "pricing model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "ModEna",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "ENABLE",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "SigType",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "UNKNOWN",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "ABSOLUTE",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "RELATIVE",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "MULTIPLIER",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "LEVEL",
+                        "value": 4
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Sig",
+                "len": 1,
+                "mandatory": "true",
+                "sf": "Sig_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "WinTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "RvtTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "RmpTms",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Sig_SF",
+                "len": 1,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Pad",
+                "len": 1,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "pad",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 125
+}

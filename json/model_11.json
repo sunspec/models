@@ -1,0 +1,186 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Include to support a wired ethernet port",
+        "detail": null,
+        "groups": [],
+        "id": "model_11",
+        "label": "Ethernet Link Layer",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_11 model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 11
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_11 model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Spd",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Mbps",
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "CfgSt",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "LINK",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "FULL_DUPLEX",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "AUTO_NEG1",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "AUTO_NEG2",
+                        "value": 3
+                    },
+                    {
+                        "comments": [],
+                        "id": "AUTO_NEG3",
+                        "value": 4
+                    },
+                    {
+                        "comments": [],
+                        "id": "RESET_REQUIRED",
+                        "value": 5
+                    },
+                    {
+                        "comments": [],
+                        "id": "HW_FAULT",
+                        "value": 6
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "St",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "UNKNOWN",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "ENABLED",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "DISABLED",
+                        "value": 2
+                    },
+                    {
+                        "comments": [],
+                        "id": "TESTING",
+                        "value": 3
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "MAC",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "eui48",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Nam",
+                "len": 4,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "string",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "Ctl",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "AUTO",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "FULL_DUPLEX",
+                        "value": 1
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "id": "FrcSpd",
+                "len": null,
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Mbps",
+                "value": null
+            }
+        ]
+    },
+    "id": 11
+}

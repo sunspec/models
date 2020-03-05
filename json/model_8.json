@@ -1,0 +1,94 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Security model for PKI",
+        "groups": [
+            {
+                "comments": [],
+                "count": 0,
+                "groups": [],
+                "id": "repeating",
+                "points": [
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "id": "Cert",
+                        "len": null,
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null,
+                        "value": null
+                    }
+                ]
+            }
+        ],
+        "id": "model_8",
+        "label": "Get Device Security Certificate",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_8 model ID.",
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16",
+                "value": 8
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "model_8 model length.",
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "symbols": [],
+                "type": "uint16"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "Fmt",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "id": "NONE",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "id": "X509_PEM",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "id": "X509_DER",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null,
+                "value": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "id": "N",
+                "len": null,
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": null
+            }
+        ]
+    },
+    "id": 8
+}
