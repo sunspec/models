@@ -16,22 +16,22 @@
     </model>
     <point id="GHI">
       <label>GHI</label>
-      <description>Global Horizontal Irrandiance</description>
+      <description>Global Horizontal Irradiance</description>
       <notes></notes>
     </point>
     <point id="A">
       <label>Amps</label>
-      <description>Current measurment at reference point</description>
+      <description>Current measurement at reference point</description>
       <notes></notes>
     </point>
     <point id="V">
       <label>Voltage</label>
-      <description>Voltage  measurment at reference point</description>
+      <description>Voltage  measurement at reference point</description>
       <notes></notes>
     </point>
     <point id="Tmp">
       <label>Temperature</label>
-      <description>Temperature measurment at reference point</description>
+      <description>Temperature measurement at reference point</description>
       <notes></notes>
     </point>
   </strings>

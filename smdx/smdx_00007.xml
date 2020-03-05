@@ -26,7 +26,7 @@
       <point id="N" offset="9" type="uint16" access="rw" mandatory="true" />
     </block>
     <block type="repeating" len="1">
-      <point id="DS" offset="0" type="uint16" access="rw" andatory="true" />
+      <point id="DS" offset="0" type="uint16" access="rw" mandatory="true" />
     </block>
   </model>
   <strings id="7" locale="en">
@@ -55,7 +55,7 @@
         <notes></notes>
       </symbol>
     </point>
-    <point id="Sts" offset="0" type="enum16" access="w" mandatory="true">
+    <point id="Sts">
       <label>Status</label>
       <description>Status of last write operation</description>
       <notes></notes>
@@ -85,11 +85,6 @@
         <notes>Value is out of acceptable range</notes>
       </symbol>
     </point>
-    <point id="X">
-      <label>X</label>
-      <description>Number of (offset, value) pairs being written</description>
-      <notes>A max of 50 (offset, value) pairs are allocated</notes>
-    </point>
     <point id="DS">
       <label>DS</label>
       <description>Digital Signature</description>
@@ -103,7 +98,7 @@
     <point id="Seq">
       <label>Sequence</label>
       <description>Sequence number of response</description>
-      <notes>Shall be advanced for each reponse</notes>
+      <notes>Shall be advanced for each response</notes>
     </point>
     <point id="Ts">
       <label>Timestamp</label>
@@ -122,12 +117,12 @@
       <symbol id="NONE">
         <label>NONE</label>
         <description>No Alarms</description>
-        <note></note>
+        <notes></notes>
       </symbol>
       <symbol id="ALM">
         <label>ALARM</label>
         <description>Security Alarm</description>
-        <note>Tampered</note>
+        <notes>Tampered</notes>
       </symbol>
     </point>
     <point id="N">

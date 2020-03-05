@@ -71,8 +71,8 @@
   <strings id="3" locale="en">
     <model>
       <label>Secure Dataset Read Request</label>
-      <description>Request a digial signature over a specifed set of data registers</description>
-      <notes>Used in conjunction witgh Secure Dataset Read Response Model</notes>
+      <description>Request a digital signature over a specified set of data registers</description>
+      <notes>Used in conjunction with Secure Dataset Read Response Model</notes>
     </model>
     <point id="Off1">
       <label>Offset1</label>
@@ -118,11 +118,6 @@
       <label>X</label>
       <description>Number of registers being requested</description>
       <notes>A max of 50 registers are allowed</notes>
-    </point>
-    <point id="Val1">
-      <label>Value1</label>
-      <description>Copy of value from register Off1.</description>
-      <notes>Unused values shall return 0xFFFF (unimplemented)</notes>
     </point>
     <point id="Seq">
       <label>Sequence</label>

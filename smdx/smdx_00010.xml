@@ -55,12 +55,12 @@
       <notes></notes>
       <symbol id="UNKNOWN">
         <label>unknown</label>
-        <description>Unkown media</description>
+        <description>Unknown media</description>
         <notes></notes>
       </symbol>
       <symbol id="INTERNAL">
         <label>internal</label>
-        <description>Internal e.g. embbedded switch</description>
+        <description>Internal e.g. embedded switch</description>
         <notes></notes>
       </symbol>
       <symbol id="TWISTED_PAIR">

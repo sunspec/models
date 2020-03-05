@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 402: (SUPERSEDED by 404) String Combiner (Advanced) -->
-  <model id="402" len="33" name="string_combiner">
+  <model id="402" len="34" name="string_combiner">
     <block len="20">
       <point id="DCA_SF" offset="0" type="sunssf" mandatory="true" />
       <point id="DCAhr_SF" offset="1" type="sunssf" />
@@ -79,15 +79,10 @@
       <notes>This model is SUPERSEDED by model 404</notes>
     </model>
     <point id="DCA_SF"><description>Current scale factor</description></point>
-    <point id="InDCA_SF"><description>Current scale factor for inputs</description></point>
     <point id="DCAhr_SF"><description>Amp-hour scale factor</description></point>
-    <point id="InDCAhr_SF"><description>Amp-hour scale factor for inputs</description></point>
     <point id="DCV_SF"><description>Voltage scale factor</description></point>
-    <point id="InDCV_SF"><description>Voltage scale factor for inputs</description></point>
     <point id="DCW_SF"><description>Power scale factor</description></point>
-    <point id="InDCW_SF"><description>Power scale factor for inputs</description></point>
     <point id="DCWh_SF"><description>Energy scale factor</description></point>
-    <point id="InDCWh_SF"><description>Energy scale factor for inputs</description></point>
     <point id="DCAMax">
       <label>Rating</label>
       <description>Maximum DC Current Rating</description>
@@ -105,7 +100,7 @@
     </point>
     <point id="EvtVnd">
       <label>Vendor Event</label>
-      <description>Bitmask value.  Vendor defnied events</description>
+      <description>Bitmask value.  Vendor defined events</description>
       <notes></notes>
     </point>
     <point id="DCA">
@@ -149,13 +144,8 @@
       <notes></notes>
     </point>
     <point id="InEvt">
-      <label>Event</label>
+      <label>Input Event</label>
       <description>String Input Event Flags</description>
-      <notes></notes>
-    </point>
-    <point id="InEvtVnd">
-      <label>Vendor Event</label>
-      <description>String Input Vendor Event Flags</description>
       <notes></notes>
     </point>
     <point id="InDCA">

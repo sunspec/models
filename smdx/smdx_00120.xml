@@ -136,7 +136,7 @@
     </point>
     <point id="AhrRtg">
       <label>AhrRtg</label>
-      <description>The useable capacity of the battery.  Maximum charge minus minimum charge from a technology capability perspective (Amp-hour capacity rating).</description>
+      <description>The usable capacity of the battery.  Maximum charge minus minimum charge from a technology capability perspective (Amp-hour capacity rating).</description>
       <notes> </notes>
     </point>
     <point id="AhrRtg_SF">

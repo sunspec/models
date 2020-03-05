@@ -54,3 +54,18 @@ Models moved to SunSpec models repository
 
 2015 June 3: Bob Fox, SunSpec. Updated model 63002 to include label information.
 
+2016 February 4: Bob Fox SunSpec. Corrected acc32 to float32 in models 211, 212, 213, 214.
+
+2016 February 4: Bob Fox SunSpec. Removed scale factor definition from DeptRef definition in model 126.
+
+2016 April 20: Bob Fox, SunSpec. Corrected model length to the convention of fixed block + one repeating block.
+
+2016 April 20: Bob Fox SunSpec. Corrected units for model 121 WGra to be per second rather per minute to be consistent with previous correction to IEC 61850-7-420.
+
+2016 July 14: Andrew Miller, Doosan GridTech. Updated models 801, 802, 803, 804, 805, 806, 807, 808, 809 reflecting changes for the draft 4 revision of the SunSpec storage models.
+
+2016 Oct 16: Andrew Miller, Doosan GridTech. Updated model 803 correcting miscellaneous issues found in first publication of Draft 4
+
+2016 Oct 16: Bob Fox SunSpec. Added proposed models 139-145 in test status.
+
+

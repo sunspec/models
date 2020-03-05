@@ -97,13 +97,13 @@
       <point id="N" offset="89" type="uint16" access="rw" mandatory="true" />
     </block>
     <block type="repeating" len="1">
-      <point id="DS" offset="0" type="uint16" access="rw" andatory="true" />
+      <point id="DS" offset="0" type="uint16" access="rw" mandatory="true" />
     </block>
   </model>
   <strings id="6" locale="en">
     <model>
       <label>Secure Write Sequential Request</label>
-      <description>Include a digial signature along with the control data</description>
+      <description>Include a digital signature along with the control data</description>
       <notes></notes>
     </model>
     <point id="Alg">
@@ -160,11 +160,6 @@
       <label>X</label>
       <description>Number of (offset, value) pairs being written</description>
       <notes>A max of 50 (offset, value) pairs are allocated</notes>
-    </point>
-    <point id="Off1">
-      <label>Offset1</label>
-      <description>Offset of control register to write value to</description>
-      <notes></notes>
     </point>
     <point id="Val1">
       <label>Value1</label>

@@ -1,0 +1,13 @@
+language: generic
+
+os:
+  - linux
+
+addons:
+  apt:
+    packages:
+      # Needed for `xmllint`.
+      - libxml2-utils
+
+script:
+  - make -C smdx

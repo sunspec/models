@@ -75,11 +75,6 @@
     <point id="DCAhr_SF"><description>Amp-hour scale factor</description></point>
     <point id="InDCAhr_SF"><description>Amp-hour scale factor for inputs</description></point>
     <point id="DCV_SF"><description>Voltage scale factor</description></point>
-    <point id="InDCV_SF"><description>Voltage scale factor for inputs</description></point>
-    <point id="DCW_SF"><description>Power scale factor</description></point>
-    <point id="InDCW_SF"><description>Power scale factor for inputs</description></point>
-    <point id="DCWh_SF"><description>Energy scale factor</description></point>
-    <point id="InDCWh_SF"><description>Energy scale factor for inputs</description></point>
     <point id="DCAMax">
       <label>Rating</label>
       <description>Maximum DC Current Rating</description>
@@ -97,7 +92,7 @@
     </point>
     <point id="EvtVnd">
       <label>Vendor Event</label>
-      <description>Bitmask value.  Vendor defnied events</description>
+      <description>Bitmask value.  Vendor defined events</description>
       <notes></notes>
     </point>
     <point id="DCA">
@@ -120,33 +115,18 @@
       <description>Internal operating temperature</description>
       <notes></notes>
     </point>
-    <point id="DCW">
-      <label>Watts</label>
-      <description>Output power</description>
-      <notes></notes>
-    </point>
-    <point id="DCWh">
-      <label>Watt-hours</label>
-      <description>Output energy</description>
-      <notes></notes>
-    </point>
-    <point id="DCPR">
-      <label>PR</label>
-      <description>DC Performance ratio value</description>
-      <notes></notes>
-    </point>
     <point id="InID">
       <label>ID</label>
       <description>Uniquely identifies this input set</description>
       <notes></notes>
     </point>
     <point id="InEvt">
-      <label>Event</label>
+      <label>Input Event</label>
       <description>String Input Event Flags</description>
       <notes></notes>
     </point>
     <point id="InEvtVnd">
-      <label>Vendor Event</label>
+      <label>Input Event Vendor</label>
       <description>String Input Vendor Event Flags</description>
       <notes></notes>
     </point>
@@ -159,31 +139,6 @@
       <label>Amp-hours</label>
       <description>String Input Amp-Hours</description>
       <notes></notes>
-    </point>
-    <point id="InDCV">
-      <label>Voltage</label>
-      <description>String Input Voltage</description>
-      <notes></notes>
-    </point>
-    <point id="InDCW">
-      <label>Watts</label>
-      <description>String Input Power</description>
-      <notes></notes>
-    </point>
-    <point id="InDCWh">
-      <label>Watt-hours</label>
-      <description>String Input Energy</description>
-      <notes></notes>
-    </point>
-    <point id="InDCPR">
-      <label>PR</label>
-      <description>String Performance Ratio</description>
-      <notes></notes>
-    </point>
-    <point id="InN">
-      <label>N</label>
-      <description>Number of modules in this input string</description>
-      <notes>Configured value</notes>
     </point>
   </strings>
 </sunSpecModels>

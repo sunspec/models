@@ -117,11 +117,6 @@
       <description>Scale factor for percent VRef.</description>
       <notes> </notes>
     </point>
-    <point id="W_SF">
-      <label>W_SF</label>
-      <description>Scale factor for percent WMax.</description>
-      <notes> </notes>
-    </point>
     <point id="DeptRef_SF">
       <label>DeptRef_SF</label>
       <description>Scale factor for % DeptRef.</description>
@@ -130,11 +125,6 @@
     <point id="RmpIncDec_SF">
       <label>RmpIncDec_SF</label>
       <description>Scale factor for increment and decrement ramps.</description>
-      <notes> </notes>
-    </point>
-    <point id="null">
-      <label>null</label>
-      <description>null</description>
       <notes> </notes>
     </point>
     <point id="CrvNam">

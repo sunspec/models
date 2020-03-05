@@ -120,7 +120,7 @@
     </point>
     <point id="NPts">
       <label>NPts</label>
-      <description>Number of schedule entries supuported (maximum of 10).</description>
+      <description>Number of schedule entries supported (maximum of 10).</description>
       <notes> </notes>
     </point>
     <point id="ModEna">

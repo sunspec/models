@@ -1,7 +1,7 @@
 <sunSpecModels v="1">
 
   <!-- 303: Back of Module Temperature Model -->
-  <model id="303" len="2" name="bom_temp">
+  <model id="303" len="1" name="bom_temp">
     <block type="repeating" len="1" name="temp">
       <point id="TmpBOM" offset="0" type="int16" units="C" sf="-1"  mandatory="true"/>
     </block>

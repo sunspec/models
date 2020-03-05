@@ -29,7 +29,7 @@
     </point>
     <point id="Cap">
       <label>Capabilities</label>
-      <description>Bitmask value.  Proxy configuration capabilites</description>
+      <description>Bitmask value.  Proxy configuration capabilities</description>
       <notes></notes>
       <symbol id="NO_PROXY">
         <label>No Proxy</label>
@@ -59,7 +59,7 @@
     </point>
     <point id="Addr">
       <label>Address</label>
-      <description>IPv4 or IPv6 proxy hostname or dotteed address (40 chars)</description>
+      <description>IPv4 or IPv6 proxy hostname or dotted address (40 chars)</description>
       <notes></notes>
     </point>
     <point id="Port">

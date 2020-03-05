@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
   <!-- 802: Battery Base Model -->
-  <model id="802" len="54" name="battery">
+  <model id="802" len="62" name="battery">
     <block len="62">
       <point id="AHRtg" offset="0" type="uint16" sf="AHRtg_SF" units="Ah" mandatory="true" />
       <point id="WHRtg" offset="1" type="uint16" sf="WHRtg_SF" units="Wh" mandatory="true" />
@@ -51,9 +51,10 @@
         <symbol id="CONNECTED">3</symbol>
         <symbol id="STANDBY">4</symbol>
         <symbol id="SOC PROTECTION">5</symbol>
+        <symbol id="SUSPENDING">6</symbol>
         <symbol id="FAULT">99</symbol>
       </point>
-      <point id="Pad1" offset="21" type="pad" mandatory="true" />
+      <point id="StateVnd" offset="21" type="enum16" mandatory="false" />
       <point id="WarrDt" offset="22" type="uint32" />
       <point id="Evt1" offset="24" type="bitfield32" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
@@ -83,6 +84,9 @@
         <symbol id="CURRENT_IMBALANCE_WARNING">24</symbol>
         <symbol id="OTHER_ALARM">25</symbol>
         <symbol id="OTHER_WARNING">26</symbol>
+        <symbol id="RESERVED_1">27</symbol>
+        <symbol id="CONFIGURATION_ALARM">28</symbol>
+        <symbol id="CONFIGURATION_WARNING">29</symbol>
       </point>
       <point id="Evt2" offset="26" type="bitfield32" mandatory="true" />
       <point id="EvtVnd1" offset="28" type="bitfield32" mandatory="true" />
@@ -153,7 +157,7 @@
       <notes></notes>
     </point>
     <point id="WDisChaRteMax">
-      <label>Namplate Max Discharge Rate</label>
+      <label>Nameplate Max Discharge Rate</label>
       <description>Maximum rate of energy transfer out of the storage device in DC watts.</description>
       <notes></notes>
     </point>
@@ -356,11 +360,21 @@
         <description>Battery bank is connected but SoC is too low. Battery should be considered "offline".</description>
         <notes></notes>
       </symbol>
+      <symbol id="SUSPENDING">
+        <label>Suspending</label>
+        <description>Battery bank is suspending operation and will disconnect.</description>
+        <notes></notes>
+      </symbol>
       <symbol id="FAULT">
         <label>Fault</label>
         <description>The battery has experienced a critical failure and may not be operated.</description>
         <notes></notes>
       </symbol>
+    </point>
+    <point id="StateVnd">
+      <label>Vendor Battery Bank State</label>
+      <description>Vendor specific battery bank state.  Enumeration.</description>
+      <notes></notes>
     </point>
     <point id="NCyc">
       <label>Cycle Count</label>
@@ -372,11 +386,6 @@
       <description>Percentage of battery life remaining.</description>
       <notes></notes>
      </point>
-    <point id="Pad1">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes></notes>
-    </point>
     <point id="WarrDt">
       <label>Warranty Date</label>
       <description>Date the device warranty expires.</description>
@@ -388,7 +397,7 @@
       <notes></notes>
       <symbol id="COMMUNICATION_ERROR">
         <label>Communication Error</label>
-        <description>Unable to communcate with BMS or BMS is unable to communicate with battery strings.</description>
+        <description>Unable to communicate with BMS or BMS is unable to communicate with battery strings.</description>
         <notes></notes>
       </symbol>
       <symbol id="OVER_TEMP_ALARM">
@@ -521,6 +530,21 @@
         <description>A vendor specific warning has occurred.</description>
         <notes>See EvtVnd1 and EvtVnd2 for more information.</notes>
       </symbol>
+      <symbol id="RESERVED_1">
+        <label>Reserved</label>
+        <description>Reserved bit.</description>
+        <notes>Do not implement.</notes>
+      </symbol>
+      <symbol id="CONFIGURATION_ALARM">
+        <label>Configuration Alarm</label>
+        <description>The battery bank has been configured incorrectly and will not operate.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CONFIGURATION_WARNING">
+        <label>Configuration Warning</label>
+        <description>The battery bank has been configured incorrectly and may not operated as expected.</description>
+        <notes></notes>
+      </symbol>
     </point>
     <point id="Evt2">
       <label>Battery Event 2 Bitfield</label>
@@ -595,12 +619,12 @@
     <point id="AChaMax">
       <label>Max Charge Current</label>
       <description>Instantaneous maximum DC charge current.</description>
-      <notes>Calculation. If not implemented, must implement VMax and VMin.</notes>
+      <notes>Calculation which is always unsigned (i.e. magnitude only). If not implemented, must implement VMax and VMin.</notes>
     </point>
     <point id="ADisChaMax">
       <label>Max Discharge Current</label>
       <description>Instantaneous maximum DC discharge current.</description>
-      <notes>Calculation. If not implemented, must implement VMax and VMin.</notes>
+      <notes>Calculation which is always unsigned (i.e. magnitude only). If not implemented, must implement VMax and VMin.</notes>
     </point>
     <point id="W">
       <label>Total Power</label>
@@ -719,7 +743,7 @@
     </point>
     <point id="AMax_SF">
       <label></label>
-      <description>Scale factor for instantationous DC charge/discharge current.</description>
+      <description>Scale factor for instantaneous DC charge/discharge current.</description>
       <notes></notes>
     </point>
     <point id="W_SF">
@@ -727,11 +751,5 @@
       <description>Scale factor for AC power request.</description>
       <notes></notes>
     </point>
-    <point id="Pad">
-      <label>Pad</label>
-      <description>Pad register.</description>
-      <notes> </notes>
-    </point>    
-
   </strings>
 </sunSpecModels>

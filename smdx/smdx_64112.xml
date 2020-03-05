@@ -453,12 +453,12 @@
       <notes></notes>
     </point>
     <point id="CC_Config_AUX_Nlite_On_hist">
-      <label>AUX Night Light On Hysterisis</label>
+      <label>AUX Night Light On Hysteresis</label>
       <description></description>
       <notes></notes>
     </point>
     <point id="CC_Config_AUX_Nlite_Off_hist">
-      <label>AUX Night Light Off Hysterisis</label>
+      <label>AUX Night Light Off Hysteresis</label>
       <description></description>
       <notes></notes>
     </point>
@@ -483,7 +483,7 @@
       <notes></notes>
     </point>
     <point id="CC_Config_AUX_Divert_Hyst_V">
-      <label>AUX Divert Hysterisis</label>
+      <label>AUX Divert Hysteresis</label>
       <description></description>
       <notes></notes>
     </point>
@@ -513,22 +513,22 @@
       <notes></notes>
     </point>
     <point id="CC_Config_DataLog_Daily_AH">
-      <label>Data Log Daily</label>
+      <label>Data Log Daily (Ah)</label>
       <description></description>
       <notes></notes>
     </point>
     <point id="CC_Config_DataLog_Daily_KWH">
-      <label>Data Log Daily</label>
+      <label>Data Log Daily (kWh)</label>
       <description></description>
       <notes></notes>
     </point>
     <point id="CC_Config_DataLog_Max_Out_A">
-      <label>Data Log Daily Maximum Output</label>
+      <label>Data Log Daily Maximum Output (A)</label>
       <description></description>
       <notes></notes>
     </point>
     <point id="CC_Config_DataLog_Max_Out_W">
-      <label>Data Log Daily Maximum Output</label>
+      <label>Data Log Daily Maximum Output (W)</label>
       <description></description>
       <notes></notes>
     </point>

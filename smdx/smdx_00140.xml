@@ -1,6 +1,6 @@
 <sunSpecModels v="1">
-  <!-- 130: HVRT Must Disconnect  -->
-  <model id="130" len="60" name="hvrt">
+  <!-- 140: HVRT Extended Curve  -->
+  <model id="140" len="60" name="hvrtx" status="test">
     <block len="10" type="fixed">
       <point id="ActCrv" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
       <point id="ModEna" offset="1" access="rw" type="bitfield16" len="1" mandatory="true">
@@ -13,7 +13,9 @@
       <point id="NPt" offset="6" access="r" type="uint16" len="1" mandatory="true"  />
       <point id="Tms_SF" offset="7" access="r" type="sunssf" len="1" mandatory="true"  />
       <point id="V_SF" offset="8" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="Pad" offset="9" access="r" type="pad" len="1" mandatory="false" />
+      <point id="CrvType" offset="9" access="r" type="enum16" len="1" mandatory="true" >
+        <symbol id="CEASE_TO_ENERGIZE">1</symbol>
+      </point>
     </block>
     <block len="50" type="repeating" name="curve">
       <point id="ActPt" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
@@ -64,10 +66,10 @@
       </point>
     </block>
   </model>
-  <strings id="130" locale="en">
+  <strings id="140" locale="en">
     <model>
-      <label>HVRTD</label>
-      <description>HVRT Must Disconnect</description>
+      <label>HVRTX</label>
+      <description>HVRT extended curve</description>
       <notes>Ref 4: 11</notes>
     </model>
     <point id="NCrv">
@@ -82,7 +84,7 @@
     </point>
     <point id="ModEna">
       <label>ModEna</label>
-      <description>HVRT control mode. Enable active curve.  Bitfield value.</description>
+      <description>LVRT control mode. Enable active curve.  Bitfield value.</description>
       <notes> </notes>
     </point>
     <point id="ActCrv">
@@ -92,18 +94,18 @@
     </point>
     <point id="WinTms">
       <label>WinTms</label>
-      <description>Time window for HVRT change.</description>
-      <notes>Setting is ignored for HVRT controls.</notes>
+      <description>Time window for LVRT change.</description>
+      <notes>Setting is ignored for LVRT controls.</notes>
     </point>
     <point id="RvrtTms">
       <label>RvrtTms</label>
-      <description>Timeout period for HVRT curve selection.</description>
-      <notes>Setting is ignored for HVRT controls.</notes>
+      <description>Timeout period for LVRT curve selection.</description>
+      <notes>Setting is ignored for LVRT controls.</notes>
     </point>
     <point id="RmpTms">
       <label>RmpTms</label>
       <description>Ramp time for moving from current mode to new mode.</description>
-      <notes>Setting is ignored for HVRT controls.</notes>
+      <notes>Setting is ignored for LVRT controls.</notes>
     </point>
     <point id="Tms_SF">
       <label>Tms_SF</label>
@@ -127,202 +129,202 @@
     </point>
     <point id="Tms1">
       <label>Tms1</label>
-      <description>Point 1 must disconnect duration.</description>
+      <description>Point 1 duration.</description>
       <notes> </notes>
     </point>
     <point id="V1">
       <label>V1</label>
-      <description>Point 1 must disconnect voltage.</description>
+      <description>Point 1 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms2">
       <label>Tms2</label>
-      <description>Point 2 must disconnect duration.</description>
+      <description>Point 2 duration.</description>
       <notes> </notes>
     </point>
     <point id="V2">
       <label>V2</label>
-      <description>Point 2 must disconnect voltage.</description>
+      <description>Point 2 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms3">
       <label>Tms3</label>
-      <description>Point 3 must disconnect duration.</description>
+      <description>Point 3 duration.</description>
       <notes> </notes>
     </point>
     <point id="V3">
       <label>V3</label>
-      <description>Point 3 must disconnect voltage.</description>
+      <description>Point 3 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms4">
       <label>Tms4</label>
-      <description>Point 4 must disconnect duration.</description>
+      <description>Point 4 duration.</description>
       <notes> </notes>
     </point>
     <point id="V4">
       <label>V4</label>
-      <description>Point 4 must disconnect voltage.</description>
+      <description>Point 4 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms5">
       <label>Tms5</label>
-      <description>Point 5 must disconnect duration.</description>
+      <description>Point 5 duration.</description>
       <notes> </notes>
     </point>
     <point id="V5">
       <label>V5</label>
-      <description>Point 5 must disconnect voltage.</description>
+      <description>Point 5 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms6">
       <label>Tms6</label>
-      <description>Point 6 must disconnect duration.</description>
+      <description>Point 6 duration.</description>
       <notes> </notes>
     </point>
     <point id="V6">
       <label>V6</label>
-      <description>Point 6 must disconnect voltage.</description>
+      <description>Point 6 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms7">
       <label>Tms7</label>
-      <description>Point 7 must disconnect duration.</description>
+      <description>Point 7 duration.</description>
       <notes> </notes>
     </point>
     <point id="V7">
       <label>V7</label>
-      <description>Point 7 must disconnect voltage.</description>
+      <description>Point 7 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms8">
       <label>Tms8</label>
-      <description>Point 8 must disconnect duration.</description>
+      <description>Point 8 duration.</description>
       <notes> </notes>
     </point>
     <point id="V8">
       <label>V8</label>
-      <description>Point 8 must disconnect voltage.</description>
+      <description>Point 8 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms9">
       <label>Tms9</label>
-      <description>Point 9 must disconnect duration.</description>
+      <description>Point 9 duration.</description>
       <notes> </notes>
     </point>
     <point id="V9">
       <label>V9</label>
-      <description>Point 9 must disconnect voltage.</description>
+      <description>Point 9 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms10">
       <label>Tms10</label>
-      <description>Point 10 must disconnect duration.</description>
+      <description>Point 10 duration.</description>
       <notes> </notes>
     </point>
     <point id="V10">
       <label>V10</label>
-      <description>Point 10 must disconnect voltage.</description>
+      <description>Point 10 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms11">
       <label>Tms11</label>
-      <description>Point 11 must disconnect duration.</description>
+      <description>Point 11 duration.</description>
       <notes> </notes>
     </point>
     <point id="V11">
       <label>V11</label>
-      <description>Point 11 must disconnect voltage.</description>
+      <description>Point 11 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms12">
       <label>Tms12</label>
-      <description>Point 12 must disconnect duration.</description>
+      <description>Point 12 duration.</description>
       <notes> </notes>
     </point>
     <point id="V12">
       <label>V12</label>
-      <description>Point 12 must disconnect voltage.</description>
+      <description>Point 12 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms13">
       <label>Tms13</label>
-      <description>Point 13 must disconnect duration.</description>
+      <description>Point 13 duration.</description>
       <notes> </notes>
     </point>
     <point id="V13">
       <label>V13</label>
-      <description>Point 13 must disconnect voltage.</description>
+      <description>Point 13 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms14">
       <label>Tms14</label>
-      <description>Point 14 must disconnect duration.</description>
+      <description>Point 14 duration.</description>
       <notes> </notes>
     </point>
     <point id="V14">
       <label>V14</label>
-      <description>Point 14 must disconnect voltage.</description>
+      <description>Point 14 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms15">
       <label>Tms15</label>
-      <description>Point 15 must disconnect duration.</description>
+      <description>Point 15 duration.</description>
       <notes> </notes>
     </point>
     <point id="V15">
       <label>V15</label>
-      <description>Point 15 must disconnect voltage.</description>
+      <description>Point 15 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms16">
       <label>Tms16</label>
-      <description>Point 16 must disconnect duration.</description>
+      <description>Point 16 duration.</description>
       <notes> </notes>
     </point>
     <point id="V16">
       <label>V16</label>
-      <description>Point 16 must disconnect voltage.</description>
+      <description>Point 16 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms17">
       <label>Tms17</label>
-      <description>Point 17 must disconnect duration.</description>
+      <description>Point 17 duration.</description>
       <notes> </notes>
     </point>
     <point id="V17">
       <label>V17</label>
-      <description>Point 17 must disconnect voltage.</description>
+      <description>Point 17 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms18">
       <label>Tms18</label>
-      <description>Point 18 must disconnect duration.</description>
+      <description>Point 18 duration.</description>
       <notes> </notes>
     </point>
     <point id="V18">
       <label>V18</label>
-      <description>Point 18 must disconnect voltage.</description>
+      <description>Point 18 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms19">
       <label>Tms19</label>
-      <description>Point 19 must disconnect duration.</description>
+      <description>Point 19 duration.</description>
       <notes> </notes>
     </point>
     <point id="V19">
       <label>V19</label>
-      <description>Point 19 must disconnect voltage.</description>
+      <description>Point 19 voltage.</description>
       <notes> </notes>
     </point>
     <point id="Tms20">
       <label>Tms20</label>
-      <description>Point 20 must disconnect duration.</description>
+      <description>Point 20 duration.</description>
       <notes> </notes>
     </point>
     <point id="V20">
       <label>V20</label>
-      <description>Point 20 must disconnect voltage.</description>
+      <description>Point 20 voltage.</description>
       <notes> </notes>
     </point>
     <point id="ReadOnly">

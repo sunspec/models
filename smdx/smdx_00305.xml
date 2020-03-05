@@ -33,7 +33,7 @@
     </point>
     <point id="Lat">
       <label>Lat</label>
-      <description>Lattitude with seven degrees of precision</description>
+      <description>Latitude with seven degrees of precision</description>
       <notes></notes>
     </point>
     <point id="Long">

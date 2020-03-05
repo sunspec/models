@@ -57,7 +57,7 @@
   <strings id="501" locale="en">
     <model>
       <label>Solar Module</label>
-      <description>A solar module model supporing DC-DC converter</description>
+      <description>A solar module model supporting DC-DC converter</description>
       <notes>Float</notes>
     </model>
     <point id="Stat">
@@ -76,7 +76,7 @@
       </symbol>
       <symbol id="STARTING">
         <label>STARTING</label>
-        <description>Starting up or ON but not producting power; panel might have high voltage but is not producing power</description>
+        <description>Starting up or ON but not producing power; panel might have high voltage but is not producing power</description>
         <notes></notes>
       </symbol>
       <symbol id="MPPT">
@@ -233,26 +233,6 @@
     <point id="EvtVend">
       <label>Vendor Module Event Flags</label>
       <description>Vendor specific flags</description>
-      <notes></notes>
-    </point>
-    <point id="A_SF">
-      <label></label>
-      <description>Current scale factor</description>
-      <notes></notes>
-    </point>
-    <point id="V_SF">
-      <label></label>
-      <description>Voltage scale factor</description>
-      <notes></notes>
-    </point>
-    <point id="W_SF">
-      <label></label>
-      <description>Power scale factor</description>
-      <notes></notes>
-    </point>
-    <point id="Wh_SF">
-      <label></label>
-      <description>Energy scale factor</description>
       <notes></notes>
     </point>
     <point id="Ctl">
