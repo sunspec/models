@@ -1,0 +1,362 @@
+{
+    "group": {
+        "groups": [
+            {
+                "count": 0,
+                "name": "module",
+                "points": [
+                    {
+                        "label": "Input ID",
+                        "name": "ID",
+                        "type": "uint16"
+                    },
+                    {
+                        "label": "Input ID Sting",
+                        "name": "IDStr",
+                        "size": 8,
+                        "type": "string"
+                    },
+                    {
+                        "label": "DC Current",
+                        "name": "DCA",
+                        "sf": "DCA_SF",
+                        "type": "uint16",
+                        "units": "A"
+                    },
+                    {
+                        "label": "DC Voltage",
+                        "name": "DCV",
+                        "sf": "DCV_SF",
+                        "type": "uint16",
+                        "units": "V"
+                    },
+                    {
+                        "label": "DC Power",
+                        "name": "DCW",
+                        "sf": "DCW_SF",
+                        "type": "uint16",
+                        "units": "W"
+                    },
+                    {
+                        "label": "Lifetime Energy",
+                        "name": "DCWH",
+                        "sf": "DCWH_SF",
+                        "type": "acc32",
+                        "units": "Wh"
+                    },
+                    {
+                        "label": "Timestamp",
+                        "name": "Tms",
+                        "type": "uint32",
+                        "units": "Secs"
+                    },
+                    {
+                        "label": "Temperature",
+                        "name": "Tmp",
+                        "type": "int16",
+                        "units": "C"
+                    },
+                    {
+                        "label": "Operating State",
+                        "name": "DCSt",
+                        "symbols": [
+                            {
+                                "name": "OFF",
+                                "value": 1
+                            },
+                            {
+                                "name": "SLEEPING",
+                                "value": 2
+                            },
+                            {
+                                "name": "STARTING",
+                                "value": 3
+                            },
+                            {
+                                "name": "MPPT",
+                                "value": 4
+                            },
+                            {
+                                "name": "THROTTLED",
+                                "value": 5
+                            },
+                            {
+                                "name": "SHUTTING_DOWN",
+                                "value": 6
+                            },
+                            {
+                                "name": "FAULT",
+                                "value": 7
+                            },
+                            {
+                                "name": "STANDBY",
+                                "value": 8
+                            },
+                            {
+                                "name": "TEST",
+                                "value": 9
+                            },
+                            {
+                                "name": "RESERVED_10",
+                                "value": 10
+                            }
+                        ],
+                        "type": "enum16"
+                    },
+                    {
+                        "label": "Module Events",
+                        "name": "DCEvt",
+                        "symbols": [
+                            {
+                                "name": "GROUND_FAULT",
+                                "value": 0
+                            },
+                            {
+                                "name": "INPUT_OVER_VOLTAGE",
+                                "value": 1
+                            },
+                            {
+                                "name": "RESERVED_2",
+                                "value": 2
+                            },
+                            {
+                                "name": "DC_DISCONNECT",
+                                "value": 3
+                            },
+                            {
+                                "name": "RESERVED_4",
+                                "value": 4
+                            },
+                            {
+                                "name": "CABINET_OPEN",
+                                "value": 5
+                            },
+                            {
+                                "name": "MANUAL_SHUTDOWN",
+                                "value": 6
+                            },
+                            {
+                                "name": "OVER_TEMP",
+                                "value": 7
+                            },
+                            {
+                                "name": "RESERVED_8",
+                                "value": 8
+                            },
+                            {
+                                "name": "RESERVED_9",
+                                "value": 9
+                            },
+                            {
+                                "name": "RESERVED_10",
+                                "value": 10
+                            },
+                            {
+                                "name": "RESERVED_11",
+                                "value": 11
+                            },
+                            {
+                                "name": "BLOWN_FUSE",
+                                "value": 12
+                            },
+                            {
+                                "name": "UNDER_TEMP",
+                                "value": 13
+                            },
+                            {
+                                "name": "MEMORY_LOSS",
+                                "value": 14
+                            },
+                            {
+                                "name": "ARC_DETECTION",
+                                "value": 15
+                            },
+                            {
+                                "name": "RESERVED_16",
+                                "value": 16
+                            },
+                            {
+                                "name": "RESERVED_17",
+                                "value": 17
+                            },
+                            {
+                                "name": "RESERVED_18",
+                                "value": 18
+                            },
+                            {
+                                "name": "RESERVED_19",
+                                "value": 19
+                            },
+                            {
+                                "name": "TEST_FAILED",
+                                "value": 20
+                            },
+                            {
+                                "name": "INPUT_UNDER_VOLTAGE",
+                                "value": 21
+                            },
+                            {
+                                "name": "INPUT_OVER_CURRENT",
+                                "value": 22
+                            }
+                        ],
+                        "type": "bitfield32"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "Multiple MPPT Inverter Extension Model",
+        "name": "mppt",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 160
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "label": "Current Scale Factor",
+                "name": "DCA_SF",
+                "type": "sunssf"
+            },
+            {
+                "label": "Voltage Scale Factor",
+                "name": "DCV_SF",
+                "type": "sunssf"
+            },
+            {
+                "label": "Power Scale Factor",
+                "name": "DCW_SF",
+                "type": "sunssf"
+            },
+            {
+                "label": "Energy Scale Factor",
+                "name": "DCWH_SF",
+                "type": "sunssf"
+            },
+            {
+                "label": "Global Events",
+                "name": "Evt",
+                "symbols": [
+                    {
+                        "name": "GROUND_FAULT",
+                        "value": 0
+                    },
+                    {
+                        "name": "INPUT_OVER_VOLTAGE",
+                        "value": 1
+                    },
+                    {
+                        "name": "RESERVED_2",
+                        "value": 2
+                    },
+                    {
+                        "name": "DC_DISCONNECT",
+                        "value": 3
+                    },
+                    {
+                        "name": "RESERVED_4",
+                        "value": 4
+                    },
+                    {
+                        "name": "CABINET_OPEN",
+                        "value": 5
+                    },
+                    {
+                        "name": "MANUAL_SHUTDOWN",
+                        "value": 6
+                    },
+                    {
+                        "name": "OVER_TEMP",
+                        "value": 7
+                    },
+                    {
+                        "name": "RESERVED_8",
+                        "value": 8
+                    },
+                    {
+                        "name": "RESERVED_9",
+                        "value": 9
+                    },
+                    {
+                        "name": "RESERVED_10",
+                        "value": 10
+                    },
+                    {
+                        "name": "RESERVED_11",
+                        "value": 11
+                    },
+                    {
+                        "name": "BLOWN_FUSE",
+                        "value": 12
+                    },
+                    {
+                        "name": "UNDER_TEMP",
+                        "value": 13
+                    },
+                    {
+                        "name": "MEMORY_LOSS",
+                        "value": 14
+                    },
+                    {
+                        "name": "ARC_DETECTION",
+                        "value": 15
+                    },
+                    {
+                        "name": "RESERVED_16",
+                        "value": 16
+                    },
+                    {
+                        "name": "RESERVED_17",
+                        "value": 17
+                    },
+                    {
+                        "name": "RESERVED_18",
+                        "value": 18
+                    },
+                    {
+                        "name": "RESERVED_19",
+                        "value": 19
+                    },
+                    {
+                        "name": "TEST_FAILED",
+                        "value": 20
+                    },
+                    {
+                        "name": "INPUT_UNDER_VOLTAGE",
+                        "value": 21
+                    },
+                    {
+                        "name": "INPUT_OVER_CURRENT",
+                        "value": 22
+                    }
+                ],
+                "type": "bitfield32"
+            },
+            {
+                "label": "Number of Modules",
+                "name": "N",
+                "type": "count"
+            },
+            {
+                "label": "Timestamp Period",
+                "name": "TmsPer",
+                "type": "uint16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 160
+}

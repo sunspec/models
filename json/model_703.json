@@ -1,0 +1,188 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "Enter service.",
+        "detail": null,
+        "groups": [],
+        "id": "DEREnterService",
+        "label": "Enter Service",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Enter service model id.",
+                "detail": null,
+                "id": "ID",
+                "label": "Enter Service ID",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": 703
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Enter service  model length.",
+                "detail": null,
+                "id": "L",
+                "label": "Enter Service Length",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": 12
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Permit enter service.",
+                "detail": null,
+                "id": "ES",
+                "label": "Permit Enter Service",
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "desc": null,
+                        "detail": null,
+                        "id": "DISABLED",
+                        "label": null,
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "desc": null,
+                        "detail": null,
+                        "id": "ENABLED",
+                        "label": null,
+                        "value": 1
+                    }
+                ],
+                "type": "enum16",
+                "units": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Enter service voltage high threshold as percent of normal voltage.",
+                "detail": null,
+                "id": "ESVHi",
+                "label": "Enter Service Voltage High",
+                "mandatory": "false",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Enter service voltage low threshold as percent of normal voltage.",
+                "detail": null,
+                "id": "ESVLo",
+                "label": "Enter Service Voltage Low",
+                "mandatory": "false",
+                "sf": "V_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Enter service frequency high threshold.",
+                "detail": null,
+                "id": "ESHzHi",
+                "label": "Enter Service Frequency High",
+                "mandatory": "false",
+                "sf": "Hz_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Hz"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Enter service frequency low threshold.",
+                "detail": null,
+                "id": "ESHzLo",
+                "label": "Enter Service Frequency Low",
+                "mandatory": "false",
+                "sf": "Hz_SF",
+                "symbols": [],
+                "type": "uint16",
+                "units": "Hz"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Enter service delay time in seconds.",
+                "detail": null,
+                "id": "ESDlyTms",
+                "label": "Enter Service Delay Time",
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Enter service random delay in seconds.",
+                "detail": null,
+                "id": "ESRndTms",
+                "label": "Enter Service Random Delay",
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Enter service ramp time in seconds.",
+                "detail": null,
+                "id": "ESRmpTms",
+                "label": "Enter Service Ramp Time",
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Voltage scale factor.",
+                "detail": null,
+                "id": "V_SF",
+                "label": "Voltage Scale Factor",
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Frequency scale factor.",
+                "detail": null,
+                "id": "Hz_SF",
+                "label": "Frequency Scale Factor",
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null
+            }
+        ]
+    },
+    "id": 703
+}

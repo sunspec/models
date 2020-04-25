@@ -1,0 +1,72 @@
+{
+    "group": {
+        "desc": "Security model for PKI",
+        "groups": [
+            {
+                "count": 0,
+                "name": "repeating",
+                "points": [
+                    {
+                        "desc": "X.509 Certificate of the device",
+                        "label": "Cert",
+                        "mandatory": "M",
+                        "name": "Cert",
+                        "type": "uint16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "Get Device Security Certificate",
+        "name": "model_8",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 8
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "X.509 format of the certificate. DER or PEM.",
+                "label": "Format",
+                "mandatory": "M",
+                "name": "Fmt",
+                "symbols": [
+                    {
+                        "name": "NONE",
+                        "value": 0
+                    },
+                    {
+                        "name": "X509_PEM",
+                        "value": 1
+                    },
+                    {
+                        "name": "X509_DER",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Number of registers to follow for the certificate",
+                "label": "N",
+                "mandatory": "M",
+                "name": "N",
+                "type": "uint16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 8
+}

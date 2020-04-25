@@ -1,0 +1,505 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "DER DC measurement.",
+        "detail": null,
+        "groups": [
+            {
+                "comments": [
+                    "DC Port"
+                ],
+                "count": "NPrt",
+                "desc": null,
+                "detail": null,
+                "groups": [],
+                "id": "Prt",
+                "label": null,
+                "points": [
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "desc": "Port type.",
+                        "detail": null,
+                        "id": "PrtTyp",
+                        "label": "Port Type",
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "PV",
+                                "label": "Photovoltaic",
+                                "value": 1
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "ESS",
+                                "label": "Energy Storage System",
+                                "value": 2
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "EV",
+                                "label": "Electric Vehicle",
+                                "value": 3
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "INJ",
+                                "label": "Generic Injecting",
+                                "value": 4
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "ABS",
+                                "label": "Generic Absorbing",
+                                "value": 5
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "BIDIR",
+                                "label": "Generic Bidirectional",
+                                "value": 6
+                            }
+                        ],
+                        "type": "enum16",
+                        "units": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "desc": "Port ID.",
+                        "detail": null,
+                        "id": "ID",
+                        "label": "Port ID",
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "desc": "Port ID string.",
+                        "detail": null,
+                        "id": "IDStr",
+                        "label": "Port ID String",
+                        "len": 8,
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "string",
+                        "units": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "desc": "DC current for the port.",
+                        "detail": null,
+                        "id": "DCA",
+                        "label": "DC Current",
+                        "mandatory": "false",
+                        "sf": "DCA_SF",
+                        "symbols": [],
+                        "type": "int16",
+                        "units": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "desc": "DC voltage for the port.",
+                        "detail": null,
+                        "id": "DCV",
+                        "label": "DC Voltage",
+                        "mandatory": "false",
+                        "sf": "DCV_SF",
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "desc": "DC power for the port.",
+                        "detail": null,
+                        "id": "DCW",
+                        "label": "DC Power",
+                        "mandatory": "false",
+                        "sf": "DCW_SF",
+                        "symbols": [],
+                        "type": "int16",
+                        "units": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "desc": "Total cumulative DC energy injected for the port.",
+                        "detail": null,
+                        "id": "DCWhInj",
+                        "label": "DC Energy Injected",
+                        "mandatory": "false",
+                        "sf": "DCWH_SF",
+                        "symbols": [],
+                        "type": "acc64",
+                        "units": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "desc": "Total cumulative DC energy absorbed for the port.",
+                        "detail": null,
+                        "id": "DCWhAbs",
+                        "label": "DC Energy Absorbed",
+                        "mandatory": "false",
+                        "sf": "DCWH_SF",
+                        "symbols": [],
+                        "type": "acc64",
+                        "units": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "desc": "DC port timer.",
+                        "detail": null,
+                        "id": "Tms",
+                        "label": "DC Port Timer",
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint32",
+                        "units": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "desc": "DC port temerature.",
+                        "detail": null,
+                        "id": "Tmp",
+                        "label": "DC Port Temperature",
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "int16",
+                        "units": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "desc": "DC port status.",
+                        "detail": null,
+                        "id": "DCSt",
+                        "label": "DC Port Status",
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "enum16",
+                        "units": null
+                    },
+                    {
+                        "access": "r",
+                        "comments": [],
+                        "desc": "DC port alarm.",
+                        "detail": null,
+                        "id": "DCAlrm",
+                        "label": "DC Port Alarm",
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "GROUND_FAULT",
+                                "label": "Ground Fault",
+                                "value": 0
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "INPUT_OVER_VOLTAGE",
+                                "label": "Input Over Voltage",
+                                "value": 1
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "RESERVED",
+                                "label": "Reserved",
+                                "value": 19
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "DC_DISCONNECT",
+                                "label": "DC Disconnect",
+                                "value": 3
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "CABINET_OPEN",
+                                "label": "Cabinet Open",
+                                "value": 5
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "MANUAL_SHUTDOWN",
+                                "label": "Manual Shutdown",
+                                "value": 6
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "OVER_TEMP",
+                                "label": "Over Temperature",
+                                "value": 7
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "BLOWN_FUSE",
+                                "label": "Blown Fuse",
+                                "value": 12
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "UNDER_TEMP",
+                                "label": "Under Temperature",
+                                "value": 13
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "MEMORY_LOSS",
+                                "label": "Memory Loss",
+                                "value": 14
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "ARC_DETECTION",
+                                "label": "Arc Detection",
+                                "value": 15
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "TEST_FAILED",
+                                "label": "Test Failed",
+                                "value": 20
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "INPUT_UNDER_VOLTAGE",
+                                "label": "Under Voltage",
+                                "value": 21
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "INPUT_OVER_CURRENT",
+                                "label": "Over Current",
+                                "value": 22
+                            }
+                        ],
+                        "type": "bitfield32",
+                        "units": null
+                    }
+                ]
+            }
+        ],
+        "id": "DERMeasureDC",
+        "label": "DER DC Measurement",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "DER DC measurement model id.",
+                "detail": null,
+                "id": "ID",
+                "label": "DER DC Measure Model ID",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": 713
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "DER DC measurement model length.",
+                "detail": null,
+                "id": "L",
+                "label": "DER DC MeasureModel Length",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [
+                    "DC General"
+                ],
+                "desc": "Bitfield of ports with active alarms. Bit is 1 if port has an active alarm. Bit 0 is first port.",
+                "detail": null,
+                "id": "Alrm",
+                "label": "Port Alarms",
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "bitfield32",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Number of DC ports.",
+                "detail": null,
+                "id": "NPrt",
+                "label": "Number of Ports",
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Total DC current for all ports.",
+                "detail": null,
+                "id": "DCA",
+                "label": "DC Current",
+                "mandatory": "false",
+                "sf": "DCA_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Total DC power for all ports.",
+                "detail": null,
+                "id": "DCW",
+                "label": "DC Power",
+                "mandatory": "false",
+                "sf": "DCW_SF",
+                "symbols": [],
+                "type": "int16",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Total cumulative DC energy injected for all ports.",
+                "detail": null,
+                "id": "DCWhInj",
+                "label": "DC Energy Injected",
+                "mandatory": "false",
+                "sf": "DCWH_SF",
+                "symbols": [],
+                "type": "acc64",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Total cumulative DC energy absorbed for all ports.",
+                "detail": null,
+                "id": "DCWhAbs",
+                "label": "DC Energy Absorbed",
+                "mandatory": "false",
+                "sf": "DCWH_SF",
+                "symbols": [],
+                "type": "acc64",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "DC current scale factor.",
+                "detail": null,
+                "id": "DCA_SF",
+                "label": "DC Current Scale Factor",
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "DC voltage scale factor.",
+                "detail": null,
+                "id": "DCV_SF",
+                "label": "DC Voltage Scale Factor",
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "DC power scale factor.",
+                "detail": null,
+                "id": "DCW_SF",
+                "label": "DC Power Scale Factor",
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "DC energy scale factor.",
+                "detail": null,
+                "id": "DCWH_SF",
+                "label": "DC Energy Scale Factor",
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null
+            }
+        ]
+    },
+    "id": 713
+}

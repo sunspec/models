@@ -1,0 +1,232 @@
+{
+    "group": {
+        "desc": "Include to support an IPv6 protocol stack on this interface",
+        "label": "IPv6",
+        "name": "model_13",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 13
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Interface name",
+                "label": "Name",
+                "name": "Nam",
+                "size": 4,
+                "type": "string"
+            },
+            {
+                "desc": "Enumerated value.  Configuration status",
+                "label": "Config Status",
+                "mandatory": "M",
+                "name": "CfgSt",
+                "symbols": [
+                    {
+                        "name": "NOT_CONFIGURED",
+                        "value": 0
+                    },
+                    {
+                        "name": "VALID_SETTING",
+                        "value": 1
+                    },
+                    {
+                        "name": "VALID_HW",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Bitmask value.  A configuration change is pending",
+                "label": "Change Status",
+                "mandatory": "M",
+                "name": "ChgSt",
+                "symbols": [
+                    {
+                        "name": "PENDING",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "desc": "Bitmask value. Identify capable sources of configuration",
+                "label": "Config Capability",
+                "mandatory": "M",
+                "name": "Cap",
+                "symbols": [
+                    {
+                        "name": "DHCP",
+                        "value": 0
+                    },
+                    {
+                        "name": "BOOTP",
+                        "value": 1
+                    },
+                    {
+                        "name": "ZEROCONF",
+                        "value": 2
+                    },
+                    {
+                        "name": "DNS",
+                        "value": 3
+                    },
+                    {
+                        "name": "CFG_SETTABLE",
+                        "value": 4
+                    },
+                    {
+                        "name": "HW_CONFIG",
+                        "value": 5
+                    },
+                    {
+                        "name": "NTP_CLIENT",
+                        "value": 6
+                    },
+                    {
+                        "name": "RESET_REQUIRED",
+                        "value": 7
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "access": "RW",
+                "desc": "Enumerated value.  Configuration method used.",
+                "label": "IPv6 Config",
+                "mandatory": "M",
+                "name": "Cfg",
+                "symbols": [
+                    {
+                        "name": "STATIC",
+                        "value": 0
+                    },
+                    {
+                        "name": "DHCP",
+                        "value": 1
+                    },
+                    {
+                        "name": "BOOTP",
+                        "value": 2
+                    },
+                    {
+                        "name": "ZEROCONF",
+                        "value": 3
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Bitmask value.  Configure use of services",
+                "label": "Control",
+                "mandatory": "M",
+                "name": "Ctl",
+                "symbols": [
+                    {
+                        "name": "ENABLE_DNS",
+                        "value": 0
+                    },
+                    {
+                        "name": "ENABLE_NTP",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "IPv6 numeric address as a dotted string xxxx.xxxx.xxxx.xxxx",
+                "label": "IP",
+                "mandatory": "M",
+                "name": "Addr",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "access": "RW",
+                "desc": "Classless Inter-Domain Routing Number",
+                "label": "CIDR",
+                "name": "CIDR",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "access": "RW",
+                "desc": "IPv6 numeric address as a dotted string xxxx.xxxx.xxxx.xxxx",
+                "label": "Gateway",
+                "name": "Gw",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "access": "RW",
+                "desc": "IPv6 numeric DNS address as a dotted string xxxx.xxxx.xxxx.xxxx",
+                "label": "DNS1",
+                "name": "DNS1",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "access": "RW",
+                "desc": "IPv6 numeric DNS address as a dotted string xxxx.xxxx.xxxx.xxxx",
+                "label": "DNS2",
+                "name": "DNS2",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "access": "RW",
+                "desc": "IPv6 numeric NTP address as a name or dotted string xxxx.xxxx.xxxx.xxxx",
+                "label": "NTP1",
+                "name": "NTP1",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "access": "RW",
+                "desc": "IPv6 numeric NTP address as a name or dotted string xxxx.xxxx.xxxx.xxxx",
+                "label": "NTP2",
+                "name": "NTP2",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "access": "RW",
+                "desc": "Domain name (24 chars max)",
+                "label": "Domain",
+                "name": "DomNam",
+                "size": 12,
+                "type": "string"
+            },
+            {
+                "access": "RW",
+                "desc": "Host name (24 chars max)",
+                "label": "Host Name",
+                "name": "HostNam",
+                "size": 12,
+                "type": "string"
+            },
+            {
+                "name": "Pad",
+                "type": "pad"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 13
+}

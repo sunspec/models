@@ -1,0 +1,55 @@
+{
+    "group": {
+        "groups": [
+            {
+                "count": 0,
+                "name": "repeating",
+                "points": [
+                    {
+                        "name": "sunssf_1",
+                        "type": "sunssf"
+                    },
+                    {
+                        "access": "RW",
+                        "name": "int16_1",
+                        "sf": "sunssf_1",
+                        "type": "int16"
+                    },
+                    {
+                        "name": "int16_2",
+                        "sf": "sunssf_2",
+                        "type": "int16"
+                    },
+                    {
+                        "name": "sunssf_2",
+                        "type": "sunssf"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "SunSpec Test Model 2",
+        "name": "model_63002",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 63002
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 63002
+}

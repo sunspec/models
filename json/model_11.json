@@ -1,0 +1,137 @@
+{
+    "group": {
+        "desc": "Include to support a wired ethernet port",
+        "label": "Ethernet Link Layer",
+        "name": "model_11",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 11
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Interface speed in Mb/s",
+                "label": "Ethernet Link Speed",
+                "mandatory": "M",
+                "name": "Spd",
+                "type": "uint16",
+                "units": "Mbps"
+            },
+            {
+                "desc": "Bitmask values Interface flags.",
+                "label": "Interface Status Flags",
+                "mandatory": "M",
+                "name": "CfgSt",
+                "symbols": [
+                    {
+                        "name": "LINK",
+                        "value": 0
+                    },
+                    {
+                        "name": "FULL_DUPLEX",
+                        "value": 1
+                    },
+                    {
+                        "name": "AUTO_NEG1",
+                        "value": 2
+                    },
+                    {
+                        "name": "AUTO_NEG2",
+                        "value": 3
+                    },
+                    {
+                        "name": "AUTO_NEG3",
+                        "value": 4
+                    },
+                    {
+                        "name": "RESET_REQUIRED",
+                        "value": 5
+                    },
+                    {
+                        "name": "HW_FAULT",
+                        "value": 6
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "desc": "Enumerated value. State information for this interface",
+                "label": "Link State",
+                "mandatory": "M",
+                "name": "St",
+                "symbols": [
+                    {
+                        "name": "UNKNOWN",
+                        "value": 0
+                    },
+                    {
+                        "name": "ENABLED",
+                        "value": 1
+                    },
+                    {
+                        "name": "DISABLED",
+                        "value": 2
+                    },
+                    {
+                        "name": "TESTING",
+                        "value": 3
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "IEEE MAC address of this interface",
+                "label": "MAC",
+                "name": "MAC",
+                "type": "eui48"
+            },
+            {
+                "access": "RW",
+                "desc": "Interface name (8 chars)",
+                "label": "Name",
+                "name": "Nam",
+                "size": 4,
+                "type": "string"
+            },
+            {
+                "access": "RW",
+                "desc": "Control flags",
+                "label": "Control",
+                "name": "Ctl",
+                "symbols": [
+                    {
+                        "name": "AUTO",
+                        "value": 0
+                    },
+                    {
+                        "name": "FULL_DUPLEX",
+                        "value": 1
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "access": "RW",
+                "desc": "Forced interface speed in Mb/s when AUTO is disabled",
+                "label": "Forced Speed",
+                "name": "FrcSpd",
+                "type": "uint16",
+                "units": "Mbps"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 11
+}

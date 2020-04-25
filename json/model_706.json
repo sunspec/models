@@ -1,0 +1,318 @@
+{
+    "group": {
+        "comments": [],
+        "desc": "DER Volt-Watt model.",
+        "detail": null,
+        "groups": [
+            {
+                "comments": [
+                    "Stored curve sets - Number of curve sets contained in NCrv"
+                ],
+                "count": "NCrv",
+                "desc": "Stored curve sets.",
+                "detail": null,
+                "groups": [
+                    {
+                        "comments": [
+                            "Stored curve sets - curve points for each stored curve - Number of curve points contained in NPt"
+                        ],
+                        "count": "NPt",
+                        "desc": "Stored curve points.",
+                        "detail": null,
+                        "groups": [],
+                        "id": "Pt",
+                        "label": "Stored Curve Points",
+                        "points": [
+                            {
+                                "access": "rw",
+                                "comments": [],
+                                "desc": "Curve voltage point as percentage.",
+                                "detail": null,
+                                "id": "V",
+                                "label": "Voltage Point",
+                                "mandatory": "true",
+                                "sf": "V_SF",
+                                "symbols": [],
+                                "type": "uint16",
+                                "units": "VRefPct"
+                            },
+                            {
+                                "access": "rw",
+                                "comments": [],
+                                "desc": "Curve time point in seconds.",
+                                "detail": null,
+                                "id": "W",
+                                "label": "Dependent Reference",
+                                "mandatory": "true",
+                                "sf": "DeptRef_SF",
+                                "symbols": [],
+                                "type": "int16",
+                                "units": "DeptRef"
+                            }
+                        ]
+                    }
+                ],
+                "id": "Crv",
+                "label": "Stored Curves",
+                "points": [
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "desc": "Number of active points.",
+                        "detail": null,
+                        "id": "ActPt",
+                        "label": "Active Points",
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "desc": "Curve dependent reference.",
+                        "detail": null,
+                        "id": "DeptRef",
+                        "label": "Dependent Reference",
+                        "mandatory": "true",
+                        "sf": null,
+                        "symbols": [
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "W_MAX_PCT",
+                                "label": null,
+                                "value": 1
+                            },
+                            {
+                                "comments": [],
+                                "desc": null,
+                                "detail": null,
+                                "id": "W_AVAL_PCT",
+                                "label": null,
+                                "value": 2
+                            }
+                        ],
+                        "type": "enum16",
+                        "units": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "desc": "Open loop response time.",
+                        "detail": null,
+                        "id": "RspTms",
+                        "label": "Open Loop Response Time",
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [],
+                        "type": "uint16",
+                        "units": null
+                    },
+                    {
+                        "access": "rw",
+                        "comments": [],
+                        "desc": "Curve read-write access.",
+                        "detail": null,
+                        "id": "ReadOnly",
+                        "label": "Curve Access",
+                        "mandatory": "false",
+                        "sf": null,
+                        "symbols": [
+                            {
+                                "comments": [],
+                                "desc": "Curve has read-write access.",
+                                "detail": null,
+                                "id": "RW",
+                                "label": "Read-Write Access",
+                                "value": 0
+                            },
+                            {
+                                "comments": [],
+                                "desc": "Curve has read-only access.",
+                                "detail": null,
+                                "id": "R",
+                                "label": "Read-Only Access",
+                                "value": 1
+                            }
+                        ],
+                        "type": "enum16",
+                        "units": null
+                    }
+                ]
+            }
+        ],
+        "id": "DERVoltWatt",
+        "label": "DERVolt-Watt",
+        "points": [
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "DER Volt-Watt model id.",
+                "detail": null,
+                "id": "ID",
+                "label": "Model ID",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null,
+                "value": 706
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "DER Volt-Watt model length.",
+                "detail": null,
+                "id": "L",
+                "label": "Model Length",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Is Volt-Watt control active.",
+                "detail": " ",
+                "id": "Ena",
+                "label": "Module Enable",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "desc": "Enabled flag (Disabled = 0, Enabled = 1).",
+                        "detail": null,
+                        "id": "ENABLED",
+                        "label": "Enabled Flag",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16",
+                "units": null
+            },
+            {
+                "access": "rw",
+                "comments": [],
+                "desc": "Index of  curve points to adopt. First curve index is 1.",
+                "detail": " ",
+                "id": "AdoptCrv",
+                "label": "Adopt Curve",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Result of last adopt curve operation.",
+                "detail": null,
+                "id": "AdoptCrvRslt",
+                "label": "Adopt Curve Result",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [
+                    {
+                        "comments": [],
+                        "desc": "Curve update in progress.",
+                        "detail": null,
+                        "id": "IN_PROGRESS",
+                        "label": "Update In Progress",
+                        "value": 0
+                    },
+                    {
+                        "comments": [],
+                        "desc": "Curve update completed successfully.",
+                        "detail": null,
+                        "id": "COMPLETED",
+                        "label": "Update Complete",
+                        "value": 1
+                    },
+                    {
+                        "comments": [],
+                        "desc": "Curve update failed.",
+                        "detail": null,
+                        "id": "FAILED",
+                        "label": "Update Failed",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Number of curve points supported.",
+                "detail": " ",
+                "id": "NPt",
+                "label": "Number of Points",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Number of stored curves supported.",
+                "detail": null,
+                "id": "NCrv",
+                "label": "Stored Curve Count",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "uint16",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Pad field for alignment.",
+                "detail": null,
+                "id": "Pad",
+                "label": "Allignment Pad",
+                "mandatory": "false",
+                "sf": null,
+                "symbols": [],
+                "type": "pad",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Scale factor for curve voltage points.",
+                "detail": null,
+                "id": "V_SF",
+                "label": "Voltage Scale Factor",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null
+            },
+            {
+                "access": "r",
+                "comments": [],
+                "desc": "Scale factor for curve watt points.",
+                "detail": null,
+                "id": "DeptRef_SF",
+                "label": "Watt  Scale Factor",
+                "mandatory": "true",
+                "sf": null,
+                "symbols": [],
+                "type": "sunssf",
+                "units": null
+            }
+        ]
+    },
+    "id": 706
+}

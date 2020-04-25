@@ -1,0 +1,97 @@
+{
+    "group": {
+        "desc": "Inverter controls extended settings ",
+        "label": "Extended Settings",
+        "name": "ext_settings",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 145
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Ramp up rate as a percentage of max current.",
+                "label": "Ramp Up Rate",
+                "name": "NomRmpUpRte",
+                "sf": "Rmp_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Ramp down rate as a percentage of max current.",
+                "label": "NomRmpDnRte",
+                "name": "NomRmpDnRte",
+                "sf": "Rmp_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Emergency ramp up rate as a percentage of max current.",
+                "label": "Emergency Ramp Up Rate",
+                "name": "EmgRmpUpRte",
+                "sf": "Rmp_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Emergency ramp down rate as a percentage of max current.",
+                "label": "Emergency Ramp Down Rate",
+                "name": "EmgRmpDnRte",
+                "sf": "Rmp_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Connect ramp up rate as a percentage of max current.",
+                "label": "Connect Ramp Up Rate",
+                "name": "ConnRmpUpRte",
+                "sf": "Rmp_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Connect ramp down rate as a percentage of max current.",
+                "label": "Connect Ramp Down Rate",
+                "name": "ConnRmpDnRte",
+                "sf": "Rmp_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Ramp rate specified in percent of max current.",
+                "label": "Default Ramp Rate",
+                "name": "AGra",
+                "sf": "Rmp_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "desc": "Ramp Rate Scale Factor",
+                "label": "Ramp Rate Scale Factor",
+                "name": "Rmp_SF",
+                "type": "sunssf"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 145
+}

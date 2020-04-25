@@ -1,0 +1,214 @@
+{
+    "group": {
+        "label": "Veris Status and Configuration",
+        "name": "model_64001",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 64001
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "label": "Command Code",
+                "name": "Cmd",
+                "type": "enum16"
+            },
+            {
+                "label": "Hardware Revision",
+                "name": "HWRev",
+                "type": "uint16"
+            },
+            {
+                "label": "RS FW Revision",
+                "name": "RSFWRev",
+                "type": "uint16"
+            },
+            {
+                "label": "OS FW Revision",
+                "name": "OSFWRev",
+                "type": "uint16"
+            },
+            {
+                "label": "Product Revision",
+                "name": "ProdRev",
+                "size": 2,
+                "type": "string"
+            },
+            {
+                "label": "Boot Count",
+                "name": "Boots",
+                "type": "uint16"
+            },
+            {
+                "label": "DIP Switches",
+                "name": "Switch",
+                "type": "bitfield16"
+            },
+            {
+                "label": "Num Detected Sensors",
+                "name": "Sensors",
+                "type": "uint16"
+            },
+            {
+                "label": "Num Communicating Sensors",
+                "name": "Talking",
+                "type": "uint16"
+            },
+            {
+                "label": "System Status",
+                "name": "Status",
+                "type": "bitfield16"
+            },
+            {
+                "label": "System Configuration",
+                "name": "Config",
+                "type": "bitfield16"
+            },
+            {
+                "label": "LED Blink Threshold",
+                "name": "LEDblink",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "label": "LED On Threshold",
+                "name": "LEDon",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "name": "Reserved",
+                "type": "uint16"
+            },
+            {
+                "label": "Location String",
+                "name": "Loc",
+                "size": 16,
+                "type": "string"
+            },
+            {
+                "label": "Sensor 1 Unit ID",
+                "name": "S1ID",
+                "type": "enum16"
+            },
+            {
+                "label": "Sensor 1 Address",
+                "name": "S1Addr",
+                "type": "uint16"
+            },
+            {
+                "label": "Sensor 1 OS Version",
+                "name": "S1OSVer",
+                "type": "uint16"
+            },
+            {
+                "label": "Sensor 1 Product Version",
+                "name": "S1Ver",
+                "size": 2,
+                "type": "string"
+            },
+            {
+                "label": "Sensor 1 Serial Num",
+                "name": "S1Serial",
+                "size": 5,
+                "type": "string"
+            },
+            {
+                "label": "Sensor 2 Unit ID",
+                "name": "S2ID",
+                "type": "enum16"
+            },
+            {
+                "label": "Sensor 2 Address",
+                "name": "S2Addr",
+                "type": "uint16"
+            },
+            {
+                "label": "Sensor 2 OS Version",
+                "name": "S2OSVer",
+                "type": "uint16"
+            },
+            {
+                "label": "Sensor 2 Product Version",
+                "name": "S2Ver",
+                "size": 2,
+                "type": "string"
+            },
+            {
+                "label": "Sensor 2 Serial Num",
+                "name": "S2Serial",
+                "size": 5,
+                "type": "string"
+            },
+            {
+                "label": "Sensor 3 Unit ID",
+                "name": "S3ID",
+                "type": "enum16"
+            },
+            {
+                "label": "Sensor 3 Address",
+                "name": "S3Addr",
+                "type": "uint16"
+            },
+            {
+                "label": "Sensor 3 OS Version",
+                "name": "S3OSVer",
+                "type": "uint16"
+            },
+            {
+                "label": "Sensor 3 Product Version",
+                "name": "S3Ver",
+                "size": 2,
+                "type": "string"
+            },
+            {
+                "label": "Sensor 3 Serial Num",
+                "name": "S3Serial",
+                "size": 5,
+                "type": "string"
+            },
+            {
+                "label": "Sensor 4 Unit ID",
+                "name": "S4ID",
+                "type": "enum16"
+            },
+            {
+                "label": "Sensor 4 Address",
+                "name": "S4Addr",
+                "type": "uint16"
+            },
+            {
+                "label": "Sensor 4 OS Version",
+                "name": "S4OSVer",
+                "type": "uint16"
+            },
+            {
+                "label": "Sensor 4 Product Version",
+                "name": "S4Ver",
+                "size": 2,
+                "type": "string"
+            },
+            {
+                "label": "Sensor 4 Serial Num",
+                "name": "S4Serial",
+                "size": 5,
+                "type": "string"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 64001
+}

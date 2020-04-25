@@ -1,0 +1,105 @@
+{
+    "group": {
+        "desc": "Interface counters",
+        "label": "Interface Counters Model",
+        "name": "model_15",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 15
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Write a \"1\" to clear all counters",
+                "label": "Clear",
+                "name": "Clr",
+                "type": "uint16"
+            },
+            {
+                "desc": "Number of bytes received",
+                "label": "Input Count",
+                "name": "InCnt",
+                "type": "acc32"
+            },
+            {
+                "desc": "Number of Unicast packets received",
+                "label": "Input Unicast Count",
+                "name": "InUcCnt",
+                "type": "acc32"
+            },
+            {
+                "desc": "Number of non-Unicast packets received",
+                "label": "Input Non-Unicast Count",
+                "name": "InNUcCnt",
+                "type": "acc32"
+            },
+            {
+                "desc": "Number of inbound packets received on the interface but discarded",
+                "label": "Input Discarded Count",
+                "name": "InDscCnt",
+                "type": "acc32"
+            },
+            {
+                "desc": "Number of inbound packets that contain errors (excluding discards)",
+                "label": "Input Error Count",
+                "name": "InErrCnt",
+                "type": "acc32"
+            },
+            {
+                "desc": "Number of inbound packets with unknown protocol",
+                "label": "Input Unknown Count",
+                "name": "InUnkCnt",
+                "type": "acc32"
+            },
+            {
+                "desc": "Total number of bytes transmitted on this interface",
+                "label": "Output Count",
+                "name": "OutCnt",
+                "type": "acc32"
+            },
+            {
+                "desc": "Number of Unicast packets transmitted",
+                "label": "Output Unicast Count",
+                "name": "OutUcCnt",
+                "type": "acc32"
+            },
+            {
+                "desc": "Number of Non-Unicast packets transmitted",
+                "label": "Output Non-Unicast Count",
+                "name": "OutNUcCnt",
+                "type": "acc32"
+            },
+            {
+                "desc": "Number of Discarded output packets",
+                "label": "Output Discarded Count",
+                "name": "OutDscCnt",
+                "type": "acc32"
+            },
+            {
+                "desc": "Number of outbound error packets",
+                "label": "Output Error Count",
+                "name": "OutErrCnt",
+                "type": "acc32"
+            },
+            {
+                "name": "Pad",
+                "type": "pad"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 15
+}

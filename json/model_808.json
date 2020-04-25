@@ -1,0 +1,48 @@
+{
+    "group": {
+        "groups": [
+            {
+                "count": 0,
+                "name": "stack",
+                "points": [
+                    {
+                        "label": "Stack Points To Be Determined",
+                        "mandatory": "M",
+                        "name": "StackTBD",
+                        "type": "uint16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "Flow Battery Module Model",
+        "name": "flow_battery_module",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 808
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "label": "Module Points To Be Determined",
+                "mandatory": "M",
+                "name": "ModuleTBD",
+                "type": "uint16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 808
+}
