@@ -1,216 +1,158 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include a digital signature over the response",
         "detail": "Used in conjunction with a Secure Write Request",
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "repeating",
+                "name": "repeating",
                 "points": [
                     {
-                        "access": "rw",
-                        "comments": [],
-                        "id": "DS",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "access": "RW",
+                        "desc": "Digital Signature",
+                        "detail": "The DS covers all registers from X to N and is N registers in length",
+                        "label": "DS",
+                        "mandatory": "M",
+                        "name": "DS",
+                        "type": "uint16"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "model_7",
         "label": "Secure Write Response Model (DRAFT 1)",
+        "name": "model_7",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_7 model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 7
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_7 model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "RqSeq",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Sequence number from the request",
+                "label": "Request Sequence",
+                "mandatory": "M",
+                "name": "RqSeq",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sts",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Status of last write operation",
+                "label": "Status",
+                "mandatory": "M",
+                "name": "Sts",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "SUCCESS",
+                        "name": "SUCCESS",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "DS",
+                        "name": "DS",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "ACL",
+                        "name": "ACL",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "OFF",
+                        "name": "OFF",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "VAL",
+                        "name": "VAL",
                         "value": 4
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Ts",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint32",
-                "units": null,
-                "value": null
+                "desc": "Timestamp value is the number of seconds since January 1, 2000",
+                "label": "Timestamp",
+                "mandatory": "M",
+                "name": "Ts",
+                "type": "uint32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Ms",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Millisecond counter 0-999",
+                "label": "Milliseconds",
+                "mandatory": "M",
+                "name": "Ms",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Seq",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Sequence number of response",
+                "detail": "Shall be advanced for each response",
+                "label": "Sequence",
+                "mandatory": "M",
+                "name": "Seq",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Alm",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Bitmask alarm code",
+                "label": "Alarm",
+                "mandatory": "M",
+                "name": "Alm",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NONE",
+                        "name": "NONE",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "ALM",
+                        "name": "ALM",
                         "value": 1
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Rsrvd",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "pad",
-                "units": null,
-                "value": null
+                "mandatory": "M",
+                "name": "Rsrvd",
+                "type": "pad"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Alg",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Algorithm used to compute the digital signature",
+                "detail": "For future proof",
+                "label": "Algorithm",
+                "mandatory": "M",
+                "name": "Alg",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NONE",
+                        "name": "NONE",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "AES-GMAC-64",
+                        "name": "AES-GMAC-64",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "ECC-256",
+                        "name": "ECC-256",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "N",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Number of registers comprising the digital signature.",
+                "detail": "The value of N must be at least 4 (64 bits)",
+                "label": "N",
+                "mandatory": "M",
+                "name": "N",
+                "type": "uint16"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 7
 }

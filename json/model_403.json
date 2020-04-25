@@ -1,451 +1,318 @@
 {
     "group": {
-        "comments": [],
         "desc": "A basic string combiner model",
         "detail": "This model supersedes model 401",
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "string",
+                "name": "string",
                 "points": [
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "InID",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "desc": "Uniquely identifies this input set",
+                        "label": "ID",
+                        "mandatory": "M",
+                        "name": "InID",
+                        "type": "uint16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "InEvt",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": null,
+                        "desc": "String Input Event Flags",
+                        "label": "Input Event",
+                        "mandatory": "M",
+                        "name": "InEvt",
                         "symbols": [
                             {
-                                "comments": [],
-                                "id": "LOW_VOLTAGE",
+                                "name": "LOW_VOLTAGE",
                                 "value": 0
                             },
                             {
-                                "comments": [],
-                                "id": "LOW_POWER",
+                                "name": "LOW_POWER",
                                 "value": 1
                             },
                             {
-                                "comments": [],
-                                "id": "LOW_EFFICIENCY",
+                                "name": "LOW_EFFICIENCY",
                                 "value": 2
                             },
                             {
-                                "comments": [],
-                                "id": "CURRENT",
+                                "name": "CURRENT",
                                 "value": 3
                             },
                             {
-                                "comments": [],
-                                "id": "VOLTAGE",
+                                "name": "VOLTAGE",
                                 "value": 4
                             },
                             {
-                                "comments": [],
-                                "id": "POWER",
+                                "name": "POWER",
                                 "value": 5
                             },
                             {
-                                "comments": [],
-                                "id": "PR",
+                                "name": "PR",
                                 "value": 6
                             },
                             {
-                                "comments": [],
-                                "id": "DISCONNECTED",
+                                "name": "DISCONNECTED",
                                 "value": 7
                             },
                             {
-                                "comments": [],
-                                "id": "FUSE_FAULT",
+                                "name": "FUSE_FAULT",
                                 "value": 8
                             },
                             {
-                                "comments": [],
-                                "id": "COMBINER_FUSE_FAULT",
+                                "name": "COMBINER_FUSE_FAULT",
                                 "value": 9
                             },
                             {
-                                "comments": [],
-                                "id": "COMBINER_CABINET_OPEN",
+                                "name": "COMBINER_CABINET_OPEN",
                                 "value": 10
                             },
                             {
-                                "comments": [],
-                                "id": "TEMP",
+                                "name": "TEMP",
                                 "value": 11
                             },
                             {
-                                "comments": [],
-                                "id": "GROUNDFAULT",
+                                "name": "GROUNDFAULT",
                                 "value": 12
                             },
                             {
-                                "comments": [],
-                                "id": "REVERSED_POLARITY",
+                                "name": "REVERSED_POLARITY",
                                 "value": 13
                             },
                             {
-                                "comments": [],
-                                "id": "INCOMPATIBLE",
+                                "name": "INCOMPATIBLE",
                                 "value": 14
                             },
                             {
-                                "comments": [],
-                                "id": "COMM_ERROR",
+                                "name": "COMM_ERROR",
                                 "value": 15
                             },
                             {
-                                "comments": [],
-                                "id": "INTERNAL_ERROR",
+                                "name": "INTERNAL_ERROR",
                                 "value": 16
                             },
                             {
-                                "comments": [],
-                                "id": "THEFT",
+                                "name": "THEFT",
                                 "value": 17
                             },
                             {
-                                "comments": [],
-                                "id": "ARC_DETECTED",
+                                "name": "ARC_DETECTED",
                                 "value": 18
                             }
                         ],
-                        "type": "bitfield32",
-                        "units": null,
-                        "value": null
+                        "type": "bitfield32"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "InEvtVnd",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "bitfield32",
-                        "units": null,
-                        "value": null
+                        "desc": "String Input Vendor Event Flags",
+                        "label": "Input Event Vendor",
+                        "name": "InEvtVnd",
+                        "type": "bitfield32"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "InDCA",
-                        "len": null,
-                        "mandatory": "true",
+                        "desc": "String Input Current",
+                        "label": "Amps",
+                        "mandatory": "M",
+                        "name": "InDCA",
                         "sf": "InDCA_SF",
-                        "symbols": [],
                         "type": "int16",
-                        "units": "A",
-                        "value": null
+                        "units": "A"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "InDCAhr",
-                        "len": null,
-                        "mandatory": "false",
+                        "desc": "String Input Amp-Hours",
+                        "label": "Amp-hours",
+                        "name": "InDCAhr",
                         "sf": "InDCAhr_SF",
-                        "symbols": [],
                         "type": "acc32",
-                        "units": "Ah",
-                        "value": null
+                        "units": "Ah"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "string_combiner",
         "label": "String Combiner (Current)",
+        "name": "string_combiner",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "string_combiner model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 403
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "string_combiner model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCA_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Current scale factor",
+                "mandatory": "M",
+                "name": "DCA_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCAhr_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Amp-hour scale factor",
+                "name": "DCAhr_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCV_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Voltage scale factor",
+                "name": "DCV_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCAMax",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Maximum DC Current Rating",
+                "label": "Rating",
+                "mandatory": "M",
+                "name": "DCAMax",
                 "sf": "DCA_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "N",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "count",
-                "units": null,
-                "value": null
+                "desc": "Number of Inputs",
+                "label": "N",
+                "mandatory": "M",
+                "name": "N",
+                "type": "count"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Evt",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Bitmask value.  Events",
+                "label": "Event",
+                "mandatory": "M",
+                "name": "Evt",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "LOW_VOLTAGE",
+                        "name": "LOW_VOLTAGE",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "LOW_POWER",
+                        "name": "LOW_POWER",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "LOW_EFFICIENCY",
+                        "name": "LOW_EFFICIENCY",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "CURRENT",
+                        "name": "CURRENT",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "VOLTAGE",
+                        "name": "VOLTAGE",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "POWER",
+                        "name": "POWER",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "PR",
+                        "name": "PR",
                         "value": 6
                     },
                     {
-                        "comments": [],
-                        "id": "DISCONNECTED",
+                        "name": "DISCONNECTED",
                         "value": 7
                     },
                     {
-                        "comments": [],
-                        "id": "FUSE_FAULT",
+                        "name": "FUSE_FAULT",
                         "value": 8
                     },
                     {
-                        "comments": [],
-                        "id": "COMBINER_FUSE_FAULT",
+                        "name": "COMBINER_FUSE_FAULT",
                         "value": 9
                     },
                     {
-                        "comments": [],
-                        "id": "COMBINER_CABINET_OPEN",
+                        "name": "COMBINER_CABINET_OPEN",
                         "value": 10
                     },
                     {
-                        "comments": [],
-                        "id": "TEMP",
+                        "name": "TEMP",
                         "value": 11
                     },
                     {
-                        "comments": [],
-                        "id": "GROUNDFAULT",
+                        "name": "GROUNDFAULT",
                         "value": 12
                     },
                     {
-                        "comments": [],
-                        "id": "REVERSED_POLARITY",
+                        "name": "REVERSED_POLARITY",
                         "value": 13
                     },
                     {
-                        "comments": [],
-                        "id": "INCOMPATIBLE",
+                        "name": "INCOMPATIBLE",
                         "value": 14
                     },
                     {
-                        "comments": [],
-                        "id": "COMM_ERROR",
+                        "name": "COMM_ERROR",
                         "value": 15
                     },
                     {
-                        "comments": [],
-                        "id": "INTERNAL_ERROR",
+                        "name": "INTERNAL_ERROR",
                         "value": 16
                     },
                     {
-                        "comments": [],
-                        "id": "THEFT",
+                        "name": "THEFT",
                         "value": 17
                     },
                     {
-                        "comments": [],
-                        "id": "ARC_DETECTED",
+                        "name": "ARC_DETECTED",
                         "value": 18
                     }
                 ],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "EvtVnd",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "desc": "Bitmask value.  Vendor defined events",
+                "label": "Vendor Event",
+                "name": "EvtVnd",
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCA",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Total measured current",
+                "label": "Amps",
+                "mandatory": "M",
+                "name": "DCA",
                 "sf": "DCA_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCAhr",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Total metered Amp-hours",
+                "label": "Amp-hours",
+                "name": "DCAhr",
                 "sf": "DCAhr_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "Ah",
-                "value": null
+                "units": "Ah"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCV",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Output Voltage",
+                "label": "Voltage",
+                "name": "DCV",
                 "sf": "DCV_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Tmp",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "desc": "Internal operating temperature",
+                "label": "Temp",
+                "name": "Tmp",
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "InDCA_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Current scale factor for inputs",
+                "name": "InDCA_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "InDCAhr_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Amp-hour scale factor for inputs",
+                "name": "InDCAhr_SF",
+                "type": "sunssf"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 403
 }

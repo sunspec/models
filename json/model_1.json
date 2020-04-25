@@ -1,118 +1,78 @@
 {
     "group": {
-        "comments": [],
         "desc": "All SunSpec compliant devices must include this as the first model",
-        "detail": null,
-        "groups": [],
-        "id": "common",
         "label": "Common",
+        "name": "common",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "common model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 1
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "common model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Mn",
-                "len": 16,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "desc": "Well known value registered with SunSpec for compliance",
+                "label": "Manufacturer",
+                "mandatory": "M",
+                "name": "Mn",
+                "size": 16,
+                "type": "string"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Md",
-                "len": 16,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "desc": "Manufacturer specific value (32 chars)",
+                "label": "Model",
+                "mandatory": "M",
+                "name": "Md",
+                "size": 16,
+                "type": "string"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Opt",
-                "len": 8,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "desc": "Manufacturer specific value (16 chars)",
+                "label": "Options",
+                "name": "Opt",
+                "size": 8,
+                "type": "string"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Vr",
-                "len": 8,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "desc": "Manufacturer specific value (16 chars)",
+                "label": "Version",
+                "name": "Vr",
+                "size": 8,
+                "type": "string"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SN",
-                "len": 16,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "desc": "Manufacturer specific value (32 chars)",
+                "label": "Serial Number",
+                "mandatory": "M",
+                "name": "SN",
+                "size": 16,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "DA",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Modbus device address",
+                "label": "Device Address",
+                "name": "DA",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Pad",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "pad",
-                "units": null,
-                "value": null
+                "desc": "Force even alignment",
+                "name": "Pad",
+                "type": "pad"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 1
 }

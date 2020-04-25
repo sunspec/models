@@ -1,162 +1,123 @@
 {
     "group": {
-        "comments": [],
         "desc": "Pricing Signal  ",
         "detail": "Ref 3: 8.7.5.1; Ref 4: 6",
-        "groups": [],
-        "id": "pricing",
         "label": "Pricing",
+        "name": "pricing",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "pricing model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 125
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "pricing model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "ModEna",
-                "len": 1,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "Is price-based charge/discharge mode active?",
+                "detail": " ",
+                "label": "ModEna",
+                "mandatory": "M",
+                "name": "ModEna",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "ENABLE",
+                        "name": "ENABLE",
                         "value": 0
                     }
                 ],
-                "type": "bitfield16",
-                "units": null,
-                "value": null
+                "type": "bitfield16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "SigType",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
+                "access": "RW",
+                "desc": "Meaning of the pricing signal. When a Price schedule is used, type must match the schedule range variable description.",
+                "detail": " ",
+                "label": "SigType",
+                "name": "SigType",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "UNKNOWN",
+                        "name": "UNKNOWN",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "ABSOLUTE",
+                        "name": "ABSOLUTE",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "RELATIVE",
+                        "name": "RELATIVE",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "MULTIPLIER",
+                        "name": "MULTIPLIER",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "LEVEL",
+                        "name": "LEVEL",
                         "value": 4
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Sig",
-                "len": 1,
-                "mandatory": "true",
+                "access": "RW",
+                "desc": "Utility/ESP specific pricing signal. Content depends on pricing signal type. When H/M/L type is specified. Low=0; Med=1; High=2.",
+                "detail": " ",
+                "label": "Sig",
+                "mandatory": "M",
+                "name": "Sig",
                 "sf": "Sig_SF",
-                "symbols": [],
-                "type": "int16",
-                "units": null,
-                "value": null
+                "type": "int16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "WinTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Time window for charge/discharge pricing change.",
+                "detail": " ",
+                "label": "WinTms",
+                "name": "WinTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "RvtTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Timeout period for charge/discharge pricing change.",
+                "detail": " ",
+                "label": "RvtTms",
+                "name": "RvtTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "RmpTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Ramp time for moving from current charge or discharge level to new level.",
+                "detail": " ",
+                "label": "RmpTms",
+                "name": "RmpTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sig_SF",
-                "len": 1,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Pricing signal scale factor.",
+                "detail": " ",
+                "label": "Sig_SF",
+                "mandatory": "M",
+                "name": "Sig_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Pad",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "pad",
-                "units": null,
-                "value": null
+                "name": "Pad",
+                "type": "pad"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 125
 }

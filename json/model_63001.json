@@ -1,881 +1,351 @@
 {
     "group": {
-        "comments": [],
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "repeating",
+                "name": "repeating",
                 "points": [
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "sunssf_8",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "sunssf",
-                        "units": null,
-                        "value": null
+                        "name": "sunssf_8",
+                        "type": "sunssf"
                     },
                     {
-                        "access": "rw",
-                        "comments": [],
-                        "id": "int16_11",
-                        "len": null,
-                        "mandatory": "false",
+                        "access": "RW",
+                        "name": "int16_11",
                         "sf": "sunssf_8",
-                        "symbols": [],
-                        "type": "int16",
-                        "units": null,
-                        "value": null
+                        "type": "int16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "int16_12",
-                        "len": null,
-                        "mandatory": "false",
+                        "name": "int16_12",
                         "sf": "sunssf_9",
-                        "symbols": [],
-                        "type": "int16",
-                        "units": null,
-                        "value": null
+                        "type": "int16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "int16_u",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "int16",
-                        "units": null,
-                        "value": null
+                        "name": "int16_u",
+                        "type": "int16"
                     },
                     {
-                        "access": "rw",
-                        "comments": [],
-                        "id": "uint16_11",
-                        "len": null,
-                        "mandatory": "false",
+                        "access": "RW",
+                        "name": "uint16_11",
                         "sf": "sunssf_8",
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "type": "uint16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "uint16_12",
-                        "len": null,
-                        "mandatory": "false",
+                        "name": "uint16_12",
                         "sf": "sunssf_9",
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "type": "uint16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "uint16_13",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "name": "uint16_13",
+                        "type": "uint16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "uint16_u",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "name": "uint16_u",
+                        "type": "uint16"
                     },
                     {
-                        "access": "rw",
-                        "comments": [],
-                        "id": "int32",
-                        "len": null,
-                        "mandatory": "false",
+                        "access": "RW",
+                        "name": "int32",
                         "sf": "sunssf_1",
-                        "symbols": [],
-                        "type": "int32",
-                        "units": null,
-                        "value": null
+                        "type": "int32"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "int32_u",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "int32",
-                        "units": null,
-                        "value": null
+                        "name": "int32_u",
+                        "type": "int32"
                     },
                     {
-                        "access": "rw",
-                        "comments": [],
-                        "id": "uint32",
-                        "len": null,
-                        "mandatory": "false",
+                        "access": "RW",
+                        "name": "uint32",
                         "sf": "sunssf_9",
-                        "symbols": [],
-                        "type": "uint32",
-                        "units": null,
-                        "value": null
+                        "type": "uint32"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "uint32_u",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint32",
-                        "units": null,
-                        "value": null
+                        "name": "uint32_u",
+                        "type": "uint32"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "sunssf_9",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "sunssf",
-                        "units": null,
-                        "value": null
+                        "name": "sunssf_9",
+                        "type": "sunssf"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "pad_2",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "pad",
-                        "units": null,
-                        "value": null
+                        "name": "pad_2",
+                        "type": "pad"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "model_63001",
         "label": "SunSpec Test Model 1",
+        "name": "model_63001",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_63001 model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 63001
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_63001 model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "sunssf_1",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "name": "sunssf_1",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "sunssf_2",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "name": "sunssf_2",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "sunssf_3",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "name": "sunssf_3",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "sunssf_4",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "name": "sunssf_4",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "int16_1",
-                "len": null,
-                "mandatory": "false",
+                "name": "int16_1",
                 "sf": "sunssf_1",
-                "symbols": [],
-                "type": "int16",
-                "units": null,
-                "value": null
+                "type": "int16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "int16_2",
-                "len": null,
-                "mandatory": "false",
+                "name": "int16_2",
                 "sf": "sunssf_2",
-                "symbols": [],
-                "type": "int16",
-                "units": null,
-                "value": null
+                "type": "int16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "int16_3",
-                "len": null,
-                "mandatory": "false",
+                "name": "int16_3",
                 "sf": "sunssf_3",
-                "symbols": [],
-                "type": "int16",
-                "units": null,
-                "value": null
+                "type": "int16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "int16_4",
-                "len": null,
-                "mandatory": "false",
+                "access": "RW",
+                "name": "int16_4",
                 "sf": "sunssf_4",
-                "symbols": [],
-                "type": "int16",
-                "units": null,
-                "value": null
+                "type": "int16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "int16_5",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "int16",
-                "units": null,
-                "value": null
+                "name": "int16_5",
+                "type": "int16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "int16_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "int16",
-                "units": null,
-                "value": null
+                "name": "int16_u",
+                "type": "int16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "uint16_1",
-                "len": null,
-                "mandatory": "false",
+                "name": "uint16_1",
                 "sf": "sunssf_1",
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "uint16_2",
-                "len": null,
-                "mandatory": "false",
+                "name": "uint16_2",
                 "sf": "sunssf_2",
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "uint16_3",
-                "len": null,
-                "mandatory": "false",
+                "name": "uint16_3",
                 "sf": "sunssf_3",
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "uint16_4",
-                "len": null,
-                "mandatory": "false",
+                "access": "RW",
+                "name": "uint16_4",
                 "sf": "sunssf_4",
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "uint16_5",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "name": "uint16_5",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "uint16_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "name": "uint16_u",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "acc16",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "acc16",
-                "units": null,
-                "value": null
+                "name": "acc16",
+                "type": "acc16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "acc16_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "acc16",
-                "units": null,
-                "value": null
+                "name": "acc16_u",
+                "type": "acc16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "enum16",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "name": "enum16",
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "enum16_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "name": "enum16_u",
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "bitfield16",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield16",
-                "units": null,
-                "value": null
+                "name": "bitfield16",
+                "type": "bitfield16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "bitfield16_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield16",
-                "units": null,
-                "value": null
+                "name": "bitfield16_u",
+                "type": "bitfield16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "int32_1",
-                "len": null,
-                "mandatory": "false",
+                "name": "int32_1",
                 "sf": "sunssf_5",
-                "symbols": [],
-                "type": "int32",
-                "units": null,
-                "value": null
+                "type": "int32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "int32_2",
-                "len": null,
-                "mandatory": "false",
+                "name": "int32_2",
                 "sf": "sunssf_6",
-                "symbols": [],
-                "type": "int32",
-                "units": null,
-                "value": null
+                "type": "int32"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "int32_3",
-                "len": null,
-                "mandatory": "false",
+                "access": "RW",
+                "name": "int32_3",
                 "sf": "sunssf_7",
-                "symbols": [],
-                "type": "int32",
-                "units": null,
-                "value": null
+                "type": "int32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "int32_4",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "int32",
-                "units": null,
-                "value": null
+                "name": "int32_4",
+                "type": "int32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "int32_5",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "int32",
-                "units": null,
-                "value": null
+                "name": "int32_5",
+                "type": "int32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "int32_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "int32",
-                "units": null,
-                "value": null
+                "name": "int32_u",
+                "type": "int32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "uint32_1",
-                "len": null,
-                "mandatory": "false",
+                "name": "uint32_1",
                 "sf": "sunssf_5",
-                "symbols": [],
-                "type": "uint32",
-                "units": null,
-                "value": null
+                "type": "uint32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "uint32_2",
-                "len": null,
-                "mandatory": "false",
+                "name": "uint32_2",
                 "sf": "sunssf_6",
-                "symbols": [],
-                "type": "uint32",
-                "units": null,
-                "value": null
+                "type": "uint32"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "uint32_3",
-                "len": null,
-                "mandatory": "false",
+                "access": "RW",
+                "name": "uint32_3",
                 "sf": "sunssf_7",
-                "symbols": [],
-                "type": "uint32",
-                "units": null,
-                "value": null
+                "type": "uint32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "uint32_4",
-                "len": null,
-                "mandatory": "false",
-                "sf": "1",
-                "symbols": [],
-                "type": "uint32",
-                "units": null,
-                "value": null
+                "name": "uint32_4",
+                "sf": 1,
+                "type": "uint32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "uint32_5",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint32",
-                "units": null,
-                "value": null
+                "name": "uint32_5",
+                "type": "uint32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "uint32_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint32",
-                "units": null,
-                "value": null
+                "name": "uint32_u",
+                "type": "uint32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "acc32",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "acc32",
-                "units": null,
-                "value": null
+                "name": "acc32",
+                "type": "acc32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "acc32_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "acc32",
-                "units": null,
-                "value": null
+                "name": "acc32_u",
+                "type": "acc32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "enum32",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "enum32",
-                "units": null,
-                "value": null
+                "name": "enum32",
+                "type": "enum32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "enum32_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "enum32",
-                "units": null,
-                "value": null
+                "name": "enum32_u",
+                "type": "enum32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "bitfield32",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "name": "bitfield32",
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "bitfield32_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "name": "bitfield32_u",
+                "type": "bitfield32"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "ipaddr",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "ipaddr",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "name": "ipaddr",
+                "type": "ipaddr"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ipaddr_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "ipaddr",
-                "units": null,
-                "value": null
+                "name": "ipaddr_u",
+                "type": "ipaddr"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "int64",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "int64",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "name": "int64",
+                "type": "int64"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "int64_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "int64",
-                "units": null,
-                "value": null
+                "name": "int64_u",
+                "type": "int64"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "acc64",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "acc64",
-                "units": null,
-                "value": null
+                "name": "acc64",
+                "type": "acc64"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "acc64_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "acc64",
-                "units": null,
-                "value": null
+                "name": "acc64_u",
+                "type": "acc64"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ipv6addr",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "ipv6addr",
-                "units": null,
-                "value": null
+                "name": "ipv6addr",
+                "type": "ipv6addr"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ipv6addr_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "ipv6addr",
-                "units": null,
-                "value": null
+                "name": "ipv6addr_u",
+                "type": "ipv6addr"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "float32",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "float32",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "name": "float32",
+                "type": "float32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "float32_u",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "float32",
-                "units": null,
-                "value": null
+                "name": "float32_u",
+                "type": "float32"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "string",
-                "len": 16,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "name": "string",
+                "size": 16,
+                "type": "string"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "string_u",
-                "len": 16,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "name": "string_u",
+                "size": 16,
+                "type": "string"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "sunssf_5",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "name": "sunssf_5",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "sunssf_6",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "name": "sunssf_6",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "sunssf_7",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "name": "sunssf_7",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "pad_1",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "pad",
-                "units": null,
-                "value": null
+                "name": "pad_1",
+                "type": "pad"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 63001
 }

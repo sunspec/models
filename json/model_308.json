@@ -1,82 +1,56 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include to support a few basic measurements",
-        "detail": null,
-        "groups": [],
-        "id": "mini_met",
         "label": "Mini Met Model",
+        "name": "mini_met",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "mini_met model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 308
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "mini_met model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "GHI",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "desc": "Global Horizontal Irradiance",
+                "label": "GHI",
+                "name": "GHI",
                 "type": "uint16",
-                "units": "W/m2",
-                "value": null
+                "units": "W/m2"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TmpBOM",
-                "len": null,
-                "mandatory": "false",
-                "sf": "-1",
-                "symbols": [],
+                "desc": "Back of module temperature measurement",
+                "label": "Temp",
+                "name": "TmpBOM",
+                "sf": -1,
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TmpAmb",
-                "len": null,
-                "mandatory": "false",
-                "sf": "-1",
-                "symbols": [],
+                "label": "Ambient Temperature",
+                "name": "TmpAmb",
+                "sf": -1,
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WndSpd",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Wind Speed",
+                "name": "WndSpd",
                 "type": "uint16",
-                "units": "m/s",
-                "value": null
+                "units": "m/s"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 308
 }

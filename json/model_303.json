@@ -1,55 +1,46 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include to support variable number of  back of module temperature measurements",
-        "detail": null,
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "temp",
+                "name": "temp",
                 "points": [
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "TmpBOM",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": "-1",
-                        "symbols": [],
+                        "desc": "Back of module temperature measurement",
+                        "label": "Temp",
+                        "mandatory": "M",
+                        "name": "TmpBOM",
+                        "sf": -1,
                         "type": "int16",
-                        "units": "C",
-                        "value": null
+                        "units": "C"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "bom_temp",
         "label": "Back of Module Temperature Model",
+        "name": "bom_temp",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "bom_temp model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 303
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "bom_temp model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 303
 }

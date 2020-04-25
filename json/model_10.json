@@ -1,124 +1,88 @@
 {
     "group": {
-        "comments": [],
         "desc": "To be included first for a complete interface description",
-        "detail": null,
-        "groups": [],
-        "id": "model_10",
         "label": "Communication Interface Header",
+        "name": "model_10",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_10 model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 10
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_10 model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "St",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Overall interface status",
+                "label": "Interface Status",
+                "mandatory": "M",
+                "name": "St",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "DOWN",
+                        "name": "DOWN",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "UP",
+                        "name": "UP",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "FAULT",
+                        "name": "FAULT",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Ctl",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Overall interface control (TBD)",
+                "label": "Interface Control",
+                "name": "Ctl",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Typ",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "desc": "Enumerated value.  Type of physical media",
+                "label": "Physical Access Type",
+                "name": "Typ",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "UNKNOWN",
+                        "name": "UNKNOWN",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "INTERNAL",
+                        "name": "INTERNAL",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "TWISTED_PAIR",
+                        "name": "TWISTED_PAIR",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "FIBER",
+                        "name": "FIBER",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "WIRELESS",
+                        "name": "WIRELESS",
                         "value": 4
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Pad",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "pad",
-                "units": null,
-                "value": null
+                "name": "Pad",
+                "type": "pad"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 10
 }
