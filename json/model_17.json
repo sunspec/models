@@ -1,205 +1,153 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include this model for serial interface configuration support",
-        "detail": null,
-        "groups": [],
-        "id": "model_17",
         "label": "Serial Interface",
+        "name": "model_17",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_17 model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 17
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_17 model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Nam",
-                "len": 4,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Interface name (8 chars)",
+                "label": "Name",
+                "name": "Nam",
+                "size": 4,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Rte",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Interface baud rate in bits per second",
+                "label": "Rate",
+                "mandatory": "M",
+                "name": "Rte",
                 "type": "uint32",
-                "units": "bps",
-                "value": null
+                "units": "bps"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Bits",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Number of data bits per character",
+                "label": "Bits",
+                "mandatory": "M",
+                "name": "Bits",
+                "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Pty",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "Bitmask value.  Parity setting",
+                "label": "Parity",
+                "mandatory": "M",
+                "name": "Pty",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NONE",
+                        "name": "NONE",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "ODD",
+                        "name": "ODD",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "EVEN",
+                        "name": "EVEN",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Dup",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "access": "RW",
+                "desc": "Enumerated value.  Duplex mode",
+                "label": "Duplex",
+                "name": "Dup",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "FULL",
+                        "name": "FULL",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "HALF",
+                        "name": "HALF",
                         "value": 1
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Flw",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "access": "RW",
+                "desc": "Flow Control Method",
+                "label": "Flow Control",
+                "name": "Flw",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NONE",
+                        "name": "NONE",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "HW",
+                        "name": "HW",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "XONXOFF",
+                        "name": "XONXOFF",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Typ",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "desc": "Enumerated value.  Interface type",
+                "label": "Interface Type",
+                "name": "Typ",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "UNKNOWN",
+                        "name": "UNKNOWN",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "RS232",
+                        "name": "RS232",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "RS485",
+                        "name": "RS485",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Pcol",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "desc": "Enumerated value. Serial protocol selection",
+                "label": "Protocol",
+                "name": "Pcol",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "UNKNOWN",
+                        "name": "UNKNOWN",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "MODBUS",
+                        "name": "MODBUS",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "VENDOR",
+                        "name": "VENDOR",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 17
 }

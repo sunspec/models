@@ -1,321 +1,232 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include to support an IPv6 protocol stack on this interface",
-        "detail": null,
-        "groups": [],
-        "id": "model_13",
         "label": "IPv6",
+        "name": "model_13",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_13 model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 13
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_13 model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Nam",
-                "len": 4,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Interface name",
+                "label": "Name",
+                "name": "Nam",
+                "size": 4,
+                "type": "string"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CfgSt",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Enumerated value.  Configuration status",
+                "label": "Config Status",
+                "mandatory": "M",
+                "name": "CfgSt",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NOT_CONFIGURED",
+                        "name": "NOT_CONFIGURED",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "VALID_SETTING",
+                        "name": "VALID_SETTING",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "VALID_HW",
+                        "name": "VALID_HW",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ChgSt",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Bitmask value.  A configuration change is pending",
+                "label": "Change Status",
+                "mandatory": "M",
+                "name": "ChgSt",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "PENDING",
+                        "name": "PENDING",
                         "value": 0
                     }
                 ],
-                "type": "bitfield16",
-                "units": null,
-                "value": null
+                "type": "bitfield16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Cap",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Bitmask value. Identify capable sources of configuration",
+                "label": "Config Capability",
+                "mandatory": "M",
+                "name": "Cap",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "DHCP",
+                        "name": "DHCP",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "BOOTP",
+                        "name": "BOOTP",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "ZEROCONF",
+                        "name": "ZEROCONF",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "DNS",
+                        "name": "DNS",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "CFG_SETTABLE",
+                        "name": "CFG_SETTABLE",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "HW_CONFIG",
+                        "name": "HW_CONFIG",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "NTP_CLIENT",
+                        "name": "NTP_CLIENT",
                         "value": 6
                     },
                     {
-                        "comments": [],
-                        "id": "RESET_REQUIRED",
+                        "name": "RESET_REQUIRED",
                         "value": 7
                     }
                 ],
-                "type": "bitfield16",
-                "units": null,
-                "value": null
+                "type": "bitfield16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Cfg",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "Enumerated value.  Configuration method used.",
+                "label": "IPv6 Config",
+                "mandatory": "M",
+                "name": "Cfg",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "STATIC",
+                        "name": "STATIC",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "DHCP",
+                        "name": "DHCP",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "BOOTP",
+                        "name": "BOOTP",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "ZEROCONF",
+                        "name": "ZEROCONF",
                         "value": 3
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Ctl",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "Bitmask value.  Configure use of services",
+                "label": "Control",
+                "mandatory": "M",
+                "name": "Ctl",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "ENABLE_DNS",
+                        "name": "ENABLE_DNS",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "ENABLE_NTP",
+                        "name": "ENABLE_NTP",
                         "value": 1
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Addr",
-                "len": 20,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "IPv6 numeric address as a dotted string xxxx.xxxx.xxxx.xxxx",
+                "label": "IP",
+                "mandatory": "M",
+                "name": "Addr",
+                "size": 20,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "CIDR",
-                "len": 20,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Classless Inter-Domain Routing Number",
+                "label": "CIDR",
+                "name": "CIDR",
+                "size": 20,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Gw",
-                "len": 20,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "IPv6 numeric address as a dotted string xxxx.xxxx.xxxx.xxxx",
+                "label": "Gateway",
+                "name": "Gw",
+                "size": 20,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "DNS1",
-                "len": 20,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "IPv6 numeric DNS address as a dotted string xxxx.xxxx.xxxx.xxxx",
+                "label": "DNS1",
+                "name": "DNS1",
+                "size": 20,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "DNS2",
-                "len": 20,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "IPv6 numeric DNS address as a dotted string xxxx.xxxx.xxxx.xxxx",
+                "label": "DNS2",
+                "name": "DNS2",
+                "size": 20,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "NTP1",
-                "len": 20,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "IPv6 numeric NTP address as a name or dotted string xxxx.xxxx.xxxx.xxxx",
+                "label": "NTP1",
+                "name": "NTP1",
+                "size": 20,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "NTP2",
-                "len": 20,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "IPv6 numeric NTP address as a name or dotted string xxxx.xxxx.xxxx.xxxx",
+                "label": "NTP2",
+                "name": "NTP2",
+                "size": 20,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "DomNam",
-                "len": 12,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Domain name (24 chars max)",
+                "label": "Domain",
+                "name": "DomNam",
+                "size": 12,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "HostNam",
-                "len": 12,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Host name (24 chars max)",
+                "label": "Host Name",
+                "name": "HostNam",
+                "size": 12,
+                "type": "string"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Pad",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "pad",
-                "units": null,
-                "value": null
+                "name": "Pad",
+                "type": "pad"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 13
 }

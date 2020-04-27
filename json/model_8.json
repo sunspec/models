@@ -1,94 +1,72 @@
 {
     "group": {
-        "comments": [],
         "desc": "Security model for PKI",
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "repeating",
+                "name": "repeating",
                 "points": [
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "Cert",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "desc": "X.509 Certificate of the device",
+                        "label": "Cert",
+                        "mandatory": "M",
+                        "name": "Cert",
+                        "type": "uint16"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "model_8",
         "label": "Get Device Security Certificate",
+        "name": "model_8",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_8 model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 8
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_8 model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Fmt",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "X.509 format of the certificate. DER or PEM.",
+                "label": "Format",
+                "mandatory": "M",
+                "name": "Fmt",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NONE",
+                        "name": "NONE",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "X509_PEM",
+                        "name": "X509_PEM",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "X509_DER",
+                        "name": "X509_DER",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "N",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Number of registers to follow for the certificate",
+                "label": "N",
+                "mandatory": "M",
+                "name": "N",
+                "type": "uint16"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 8
 }

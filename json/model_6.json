@@ -1,1139 +1,618 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include a digital signature along with the control data",
-        "detail": null,
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "repeating",
+                "name": "repeating",
                 "points": [
                     {
-                        "access": "rw",
-                        "comments": [],
-                        "id": "DS",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "access": "RW",
+                        "desc": "Digital Signature",
+                        "detail": "The DS covers all registers from X to N and is N registers in length",
+                        "label": "DS",
+                        "mandatory": "M",
+                        "name": "DS",
+                        "type": "uint16"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "model_6",
         "label": "Secure Write Sequential Request",
+        "name": "model_6",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_6 model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 6
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_6 model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "X",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Off",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val1",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val2",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val3",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val4",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val5",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val6",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val7",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val8",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val9",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val10",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val11",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val12",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val13",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val14",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val15",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val16",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val17",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val18",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val19",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val20",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val21",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val22",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val23",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val24",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val25",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val26",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val27",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val28",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val29",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val30",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val31",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val32",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val33",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val34",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val35",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val36",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val37",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val38",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val39",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val40",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val41",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val42",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val43",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val44",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val45",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val46",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val47",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val48",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val49",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val50",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val51",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val52",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val53",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val54",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val55",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val56",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val57",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val58",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val59",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val60",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val61",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val62",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val63",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val64",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val65",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val66",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val67",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val68",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val69",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val70",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val71",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val72",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val73",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val74",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val75",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val76",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val77",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val78",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val79",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Val80",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Ts",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint32",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Ms",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Seq",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Role",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Rsrvd",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "pad",
-                "units": null,
-                "value": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "id": "Alg",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "Number of (offset, value) pairs being written",
+                "detail": "A max of 50 (offset, value) pairs are allocated",
+                "label": "X",
+                "mandatory": "M",
+                "name": "X",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Starting offset for write operation",
+                "detail": "X values to follow ",
+                "label": "Offset",
+                "mandatory": "M",
+                "name": "Off",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Value to write to control register at offset",
+                "label": "Value1",
+                "mandatory": "M",
+                "name": "Val1",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val2",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val3",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val4",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val5",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val6",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val7",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val8",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val9",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val10",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val11",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val12",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val13",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val14",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val15",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val16",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val17",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val18",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val19",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val20",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val21",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val22",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val23",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val24",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val25",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val26",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val27",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val28",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val29",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val30",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val31",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val32",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val33",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val34",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val35",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val36",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val37",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val38",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val39",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val40",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val41",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val42",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val43",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val44",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val45",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val46",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val47",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val48",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val49",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val50",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val51",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val52",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val53",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val54",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val55",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val56",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val57",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val58",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val59",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val60",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val61",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val62",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val63",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val64",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val65",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val66",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val67",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val68",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val69",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val70",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val71",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val72",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val73",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val74",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val75",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val76",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val77",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val78",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val79",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Val80",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Timestamp value is the number of seconds since January 1, 2000",
+                "label": "Timestamp",
+                "mandatory": "M",
+                "name": "Ts",
+                "type": "uint32"
+            },
+            {
+                "access": "RW",
+                "desc": "Millisecond counter 0-999",
+                "label": "Milliseconds",
+                "mandatory": "M",
+                "name": "Ms",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Sequence number of request",
+                "detail": "Shall be advanced for each request",
+                "label": "Sequence",
+                "mandatory": "M",
+                "name": "Seq",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Signing key used 0-5",
+                "detail": "Each controller is assigned a key index that maps to their access control role",
+                "label": "Role",
+                "mandatory": "M",
+                "name": "Role",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "mandatory": "M",
+                "name": "Rsrvd",
+                "type": "pad"
+            },
+            {
+                "access": "RW",
+                "desc": "Algorithm used to compute the digital signature",
+                "detail": "For future proof",
+                "label": "Algorithm",
+                "mandatory": "M",
+                "name": "Alg",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NONE",
+                        "name": "NONE",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "AES-GMAC-64",
+                        "name": "AES-GMAC-64",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "ECC-256",
+                        "name": "ECC-256",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "N",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Number of registers comprising the digital signature.",
+                "detail": "The value of N must be at least 4 (64 bits)",
+                "label": "N",
+                "mandatory": "M",
+                "name": "N",
+                "type": "uint16"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 6
 }

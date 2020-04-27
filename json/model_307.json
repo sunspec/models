@@ -1,166 +1,96 @@
 {
     "group": {
-        "comments": [],
         "desc": "Base Meteorological Model",
         "detail": "This model supersedes model 301",
-        "groups": [],
-        "id": "base_met",
         "label": "Base Met",
+        "name": "base_met",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "base_met model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 307
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "base_met model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TmpAmb",
-                "len": null,
-                "mandatory": "false",
-                "sf": "-1",
-                "symbols": [],
+                "label": "Ambient Temperature",
+                "name": "TmpAmb",
+                "sf": -1,
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "RH",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Relative Humidity",
+                "name": "RH",
                 "type": "int16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Pres",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Barometric Pressure",
+                "name": "Pres",
                 "type": "int16",
-                "units": "HPa",
-                "value": null
+                "units": "HPa"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WndSpd",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Wind Speed",
+                "name": "WndSpd",
                 "type": "int16",
-                "units": "mps",
-                "value": null
+                "units": "mps"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WndDir",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Wind Direction",
+                "name": "WndDir",
                 "type": "int16",
-                "units": "deg",
-                "value": null
+                "units": "deg"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Rain",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Rainfall",
+                "name": "Rain",
                 "type": "int16",
-                "units": "mm",
-                "value": null
+                "units": "mm"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Snw",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Snow Depth",
+                "name": "Snw",
                 "type": "int16",
-                "units": "mm",
-                "value": null
+                "units": "mm"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PPT",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "int16",
-                "units": null,
-                "value": null
+                "desc": "\u00a0Precipitation Type (WMO 4680 SYNOP code reference)",
+                "label": "Precipitation Type",
+                "name": "PPT",
+                "type": "int16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ElecFld",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Electric Field",
+                "name": "ElecFld",
                 "type": "int16",
-                "units": "Vm",
-                "value": null
+                "units": "Vm"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SurWet",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Surface Wetness",
+                "name": "SurWet",
                 "type": "int16",
-                "units": "kO",
-                "value": null
+                "units": "kO"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoilWet",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Soil Wetness",
+                "name": "SoilWet",
                 "type": "int16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 307
 }

@@ -1,67 +1,48 @@
 {
     "group": {
-        "comments": [],
-        "desc": null,
-        "detail": null,
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "battery_string",
+                "name": "battery_string",
                 "points": [
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "BatStTBD",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "label": "Battery String Points To Be Determined",
+                        "mandatory": "M",
+                        "name": "BatStTBD",
+                        "type": "uint16"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "flow_battery",
         "label": "Flow Battery Model",
+        "name": "flow_battery",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "flow_battery model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 806
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "flow_battery model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "BatTBD",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "label": "Battery Points To Be Determined",
+                "mandatory": "M",
+                "name": "BatTBD",
+                "type": "uint16"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 806
 }

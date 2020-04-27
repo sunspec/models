@@ -1,1078 +1,758 @@
 {
     "group": {
-        "comments": [],
-        "desc": null,
-        "detail": null,
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "lithium_ion_string_module",
+                "name": "lithium_ion_string_module",
                 "points": [
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ModNCell",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "desc": "Count of all cells in the module.",
+                        "label": "Module Cell Count",
+                        "mandatory": "M",
+                        "name": "ModNCell",
+                        "type": "uint16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ModSoC",
-                        "len": null,
-                        "mandatory": "false",
+                        "desc": "Module state of charge, expressed as a percentage.",
+                        "label": "Module SoC",
+                        "name": "ModSoC",
                         "sf": "SoC_SF",
-                        "symbols": [],
                         "type": "uint16",
-                        "units": "%",
-                        "value": null
+                        "units": "%"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ModSoH",
-                        "len": null,
-                        "mandatory": "false",
+                        "desc": "Module state of health, expressed as a percentage.",
+                        "label": "Module SoH",
+                        "name": "ModSoH",
                         "sf": "SoH_SF",
-                        "symbols": [],
                         "type": "uint16",
-                        "units": "%",
-                        "value": null
+                        "units": "%"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ModCellVMax",
-                        "len": null,
-                        "mandatory": "true",
+                        "desc": "Maximum voltage for all cells in the module.",
+                        "detail": "Measurement.",
+                        "label": "Max Cell Voltage",
+                        "mandatory": "M",
+                        "name": "ModCellVMax",
                         "sf": "CellV_SF",
-                        "symbols": [],
                         "type": "uint16",
-                        "units": "V",
-                        "value": null
+                        "units": "V"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ModCellVMaxCell",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "desc": "Cell with maximum voltage.",
+                        "label": "Max Cell Voltage Cell",
+                        "name": "ModCellVMaxCell",
+                        "type": "uint16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ModCellVMin",
-                        "len": null,
-                        "mandatory": "true",
+                        "desc": "Minimum voltage for all cells in the module.",
+                        "detail": "Measurement.",
+                        "label": "Min Cell Voltage",
+                        "mandatory": "M",
+                        "name": "ModCellVMin",
                         "sf": "CellV_SF",
-                        "symbols": [],
                         "type": "uint16",
-                        "units": "V",
-                        "value": null
+                        "units": "V"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ModCellVMinCell",
-                        "len": null,
-                        "mandatory": "false",
+                        "desc": "Cell with minimum voltage.",
+                        "label": "Min Cell Voltage Cell",
+                        "name": "ModCellVMinCell",
                         "sf": "CellV_SF",
-                        "symbols": [],
                         "type": "uint16",
-                        "units": "V",
-                        "value": null
+                        "units": "V"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ModCellVAvg",
-                        "len": null,
-                        "mandatory": "true",
+                        "desc": "Average voltage for all cells in the module.",
+                        "detail": "Calculation based on measurements.",
+                        "label": "Average Cell Voltage",
+                        "mandatory": "M",
+                        "name": "ModCellVAvg",
                         "sf": "CellV_SF",
-                        "symbols": [],
                         "type": "uint16",
-                        "units": "V",
-                        "value": null
+                        "units": "V"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ModCellTmpMax",
-                        "len": null,
-                        "mandatory": "true",
+                        "desc": "Maximum temperature for all cells in the module.",
+                        "detail": "Measurement.",
+                        "label": "Max Cell Temperature",
+                        "mandatory": "M",
+                        "name": "ModCellTmpMax",
                         "sf": "ModTmp_SF",
-                        "symbols": [],
                         "type": "int16",
-                        "units": "C",
-                        "value": null
+                        "units": "C"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ModCellTmpMaxCell",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "desc": "Cell with maximum temperature.",
+                        "label": "Max Cell Temperature Cell",
+                        "name": "ModCellTmpMaxCell",
+                        "type": "uint16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ModCellTmpMin",
-                        "len": null,
-                        "mandatory": "true",
+                        "desc": "Minimum temperature for all cells in the module.",
+                        "detail": "Measurement.",
+                        "label": "Min Cell Temperature",
+                        "mandatory": "M",
+                        "name": "ModCellTmpMin",
                         "sf": "ModTmp_SF",
-                        "symbols": [],
                         "type": "int16",
-                        "units": "C",
-                        "value": null
+                        "units": "C"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ModCellTmpMinCell",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "desc": "Cell with minimum temperature.",
+                        "label": "Min Cell Temperature Cell",
+                        "name": "ModCellTmpMinCell",
+                        "type": "uint16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ModCellTmpAvg",
-                        "len": null,
-                        "mandatory": "true",
+                        "desc": "Average temperature for all cells in the module.",
+                        "detail": "Calculation based on measurements.",
+                        "label": "Average Cell Temperature",
+                        "mandatory": "M",
+                        "name": "ModCellTmpAvg",
                         "sf": "ModTmp_SF",
-                        "symbols": [],
                         "type": "int16",
-                        "units": "C",
-                        "value": null
+                        "units": "C"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "Pad5",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "pad",
-                        "units": null,
-                        "value": null
+                        "desc": "Pad register.",
+                        "label": "Pad",
+                        "mandatory": "M",
+                        "name": "Pad5",
+                        "type": "pad"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "Pad6",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "pad",
-                        "units": null,
-                        "value": null
+                        "desc": "Pad register.",
+                        "label": "Pad",
+                        "mandatory": "M",
+                        "name": "Pad6",
+                        "type": "pad"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "Pad7",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "pad",
-                        "units": null,
-                        "value": null
+                        "desc": "Pad register.",
+                        "label": "Pad",
+                        "mandatory": "M",
+                        "name": "Pad7",
+                        "type": "pad"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "lithium_ion_string",
         "label": "Lithium-Ion String Model",
+        "name": "lithium_ion_string",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "lithium_ion_string model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 804
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "lithium_ion_string model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Idx",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Index of the string within the bank.",
+                "detail": "Indices are one-based.",
+                "label": "String Index",
+                "mandatory": "M",
+                "name": "Idx",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "NMod",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Count of modules in the string.",
+                "label": "Module Count",
+                "mandatory": "M",
+                "name": "NMod",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "St",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Current status of the string.",
+                "label": "String Status",
+                "mandatory": "M",
+                "name": "St",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "STRING_ENABLED",
+                        "name": "STRING_ENABLED",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_STATUS",
+                        "name": "CONTACTOR_STATUS",
                         "value": 1
                     }
                 ],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ConFail",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "label": "Connection Failure Reason",
+                "name": "ConFail",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NO_FAILURE",
+                        "name": "NO_FAILURE",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "BUTTON_PUSHED",
+                        "name": "BUTTON_PUSHED",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "STR_GROUND_FAULT",
+                        "name": "STR_GROUND_FAULT",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "OUTSIDE_VOLTAGE_RANGE",
+                        "name": "OUTSIDE_VOLTAGE_RANGE",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "STRING_NOT_ENABLED",
+                        "name": "STRING_NOT_ENABLED",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "FUSE_OPEN",
+                        "name": "FUSE_OPEN",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_FAILURE",
+                        "name": "CONTACTOR_FAILURE",
                         "value": 6
                     },
                     {
-                        "comments": [],
-                        "id": "PRECHARGE_FAILURE",
+                        "name": "PRECHARGE_FAILURE",
                         "value": 7
                     },
                     {
-                        "comments": [],
-                        "id": "STRING_FAULT",
+                        "name": "STRING_FAULT",
                         "value": 8
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "NCellBal",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Number of cells currently being balanced in the string.",
+                "label": "String Cell Balancing Count",
+                "name": "NCellBal",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoC",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Battery string state of charge, expressed as a percentage.",
+                "detail": "Measurement.",
+                "label": "String State of Charge",
+                "mandatory": "M",
+                "name": "SoC",
                 "sf": "SoC_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%",
-                "value": null
+                "units": "%"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DoD",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Depth of discharge for the string, expressed as a percentage.",
+                "detail": "Measurement.",
+                "label": "String Depth of Discharge",
+                "name": "DoD",
                 "sf": "DoD_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%",
-                "value": null
+                "units": "%"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "NCyc",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint32",
-                "units": null,
-                "value": null
+                "desc": "Number of discharge cycles executed upon the string.",
+                "label": "String Cycle Count",
+                "name": "NCyc",
+                "type": "uint32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoH",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Battery string state of health, expressed as a percentage.",
+                "detail": "Measurement.",
+                "label": "String State of Health",
+                "name": "SoH",
                 "sf": "SoH_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%",
-                "value": null
+                "units": "%"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "A",
-                "len": null,
-                "mandatory": "true",
+                "desc": "String current measurement.",
+                "detail": "Measurement.",
+                "label": "String Current",
+                "mandatory": "M",
+                "name": "A",
                 "sf": "A_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "V",
-                "len": null,
-                "mandatory": "false",
+                "desc": "String voltage measurement.",
+                "detail": "Measurement.",
+                "label": "String Voltage",
+                "name": "V",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMax",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Maximum voltage for all cells in the string.",
+                "detail": "Measurement.",
+                "label": "Max Cell Voltage",
+                "mandatory": "M",
+                "name": "CellVMax",
                 "sf": "CellV_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMaxMod",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Module containing the cell with maximum cell voltage.",
+                "label": "Max Cell Voltage Module",
+                "name": "CellVMaxMod",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMin",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Minimum voltage for all cells in the string.",
+                "detail": "Measurement.",
+                "label": "Min Cell Voltage",
+                "mandatory": "M",
+                "name": "CellVMin",
                 "sf": "CellV_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMinMod",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Module containing the cell with minimum cell voltage.",
+                "label": "Min Cell Voltage Module",
+                "name": "CellVMinMod",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVAvg",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Average voltage for all cells in the string.",
+                "detail": "Calculation based on measurements.",
+                "label": "Average Cell Voltage",
+                "mandatory": "M",
+                "name": "CellVAvg",
                 "sf": "CellV_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ModTmpMax",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Maximum temperature for all modules in the string.",
+                "detail": "Measurement.",
+                "label": "Max Module Temperature",
+                "mandatory": "M",
+                "name": "ModTmpMax",
                 "sf": "ModTmp_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ModTmpMaxMod",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Module with the maximum temperature.",
+                "label": "Max Module Temperature Module",
+                "mandatory": "M",
+                "name": "ModTmpMaxMod",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ModTmpMin",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Minimum temperature for all modules in the string.",
+                "detail": "Measurement.",
+                "label": "Min Module Temperature",
+                "mandatory": "M",
+                "name": "ModTmpMin",
                 "sf": "ModTmp_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ModTmpMinMod",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Module with the minimum temperature.",
+                "label": "Min Module Temperature Module",
+                "mandatory": "M",
+                "name": "ModTmpMinMod",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ModTmpAvg",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Average temperature for all modules in the string.",
+                "detail": "Calculation based on measurements.",
+                "label": "Average Module Temperature",
+                "mandatory": "M",
+                "name": "ModTmpAvg",
                 "sf": "ModTmp_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Pad1",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "pad",
-                "units": null,
-                "value": null
+                "desc": "Pad register.",
+                "label": "Pad",
+                "mandatory": "M",
+                "name": "Pad1",
+                "type": "pad"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ConSt",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "desc": "Status of the contactor(s) for the string.",
+                "label": "Contactor Status",
+                "name": "ConSt",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_0",
+                        "name": "CONTACTOR_0",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_1",
+                        "name": "CONTACTOR_1",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_2",
+                        "name": "CONTACTOR_2",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_3",
+                        "name": "CONTACTOR_3",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_4",
+                        "name": "CONTACTOR_4",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_5",
+                        "name": "CONTACTOR_5",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_6",
+                        "name": "CONTACTOR_6",
                         "value": 6
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_7",
+                        "name": "CONTACTOR_7",
                         "value": 7
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_8",
+                        "name": "CONTACTOR_8",
                         "value": 8
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_9",
+                        "name": "CONTACTOR_9",
                         "value": 9
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_10",
+                        "name": "CONTACTOR_10",
                         "value": 10
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_11",
+                        "name": "CONTACTOR_11",
                         "value": 11
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_12",
+                        "name": "CONTACTOR_12",
                         "value": 12
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_13",
+                        "name": "CONTACTOR_13",
                         "value": 13
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_14",
+                        "name": "CONTACTOR_14",
                         "value": 14
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_15",
+                        "name": "CONTACTOR_15",
                         "value": 15
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_16",
+                        "name": "CONTACTOR_16",
                         "value": 16
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_17",
+                        "name": "CONTACTOR_17",
                         "value": 17
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_18",
+                        "name": "CONTACTOR_18",
                         "value": 18
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_19",
+                        "name": "CONTACTOR_19",
                         "value": 19
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_20",
+                        "name": "CONTACTOR_20",
                         "value": 20
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_21",
+                        "name": "CONTACTOR_21",
                         "value": 21
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_22",
+                        "name": "CONTACTOR_22",
                         "value": 22
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_23",
+                        "name": "CONTACTOR_23",
                         "value": 23
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_24",
+                        "name": "CONTACTOR_24",
                         "value": 24
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_25",
+                        "name": "CONTACTOR_25",
                         "value": 25
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_26",
+                        "name": "CONTACTOR_26",
                         "value": 26
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_27",
+                        "name": "CONTACTOR_27",
                         "value": 27
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_28",
+                        "name": "CONTACTOR_28",
                         "value": 28
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_29",
+                        "name": "CONTACTOR_29",
                         "value": 29
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_30",
+                        "name": "CONTACTOR_30",
                         "value": 30
                     }
                 ],
-                "type": "bitfield32",
-                "units": "",
-                "value": null
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Evt1",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Alarms, warnings and status values.  Bit flags.",
+                "label": "String Event 1",
+                "mandatory": "M",
+                "name": "Evt1",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "COMMUNICATION_ERROR",
+                        "name": "COMMUNICATION_ERROR",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_TEMP_ALARM",
+                        "name": "OVER_TEMP_ALARM",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_TEMP_WARNING",
+                        "name": "OVER_TEMP_WARNING",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_TEMP_ALARM",
+                        "name": "UNDER_TEMP_ALARM",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_TEMP_WARNING",
+                        "name": "UNDER_TEMP_WARNING",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_CHARGE_CURRENT_ALARM",
+                        "name": "OVER_CHARGE_CURRENT_ALARM",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_CHARGE_CURRENT_WARNING",
+                        "name": "OVER_CHARGE_CURRENT_WARNING",
                         "value": 6
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_DISCHARGE_CURRENT_ALARM",
+                        "name": "OVER_DISCHARGE_CURRENT_ALARM",
                         "value": 7
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_DISCHARGE_CURRENT_WARNING",
+                        "name": "OVER_DISCHARGE_CURRENT_WARNING",
                         "value": 8
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_VOLT_ALARM",
+                        "name": "OVER_VOLT_ALARM",
                         "value": 9
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_VOLT_WARNING",
+                        "name": "OVER_VOLT_WARNING",
                         "value": 10
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_VOLT_ALARM",
+                        "name": "UNDER_VOLT_ALARM",
                         "value": 11
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_VOLT_WARNING",
+                        "name": "UNDER_VOLT_WARNING",
                         "value": 12
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_SOC_MIN_ALARM",
+                        "name": "UNDER_SOC_MIN_ALARM",
                         "value": 13
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_SOC_MIN_WARNING",
+                        "name": "UNDER_SOC_MIN_WARNING",
                         "value": 14
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_SOC_MAX_ALARM",
+                        "name": "OVER_SOC_MAX_ALARM",
                         "value": 15
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_SOC_MAX_WARNING",
+                        "name": "OVER_SOC_MAX_WARNING",
                         "value": 16
                     },
                     {
-                        "comments": [],
-                        "id": "VOLTAGE_IMBALANCE_WARNING",
+                        "name": "VOLTAGE_IMBALANCE_WARNING",
                         "value": 17
                     },
                     {
-                        "comments": [],
-                        "id": "TEMPERATURE_IMBALANCE_ALARM",
+                        "name": "TEMPERATURE_IMBALANCE_ALARM",
                         "value": 18
                     },
                     {
-                        "comments": [],
-                        "id": "TEMPERATURE_IMBALANCE_WARNING",
+                        "name": "TEMPERATURE_IMBALANCE_WARNING",
                         "value": 19
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_ERROR",
+                        "name": "CONTACTOR_ERROR",
                         "value": 20
                     },
                     {
-                        "comments": [],
-                        "id": "FAN_ERROR",
+                        "name": "FAN_ERROR",
                         "value": 21
                     },
                     {
-                        "comments": [],
-                        "id": "GROUND_FAULT",
+                        "name": "GROUND_FAULT",
                         "value": 22
                     },
                     {
-                        "comments": [],
-                        "id": "OPEN_DOOR_ERROR",
+                        "name": "OPEN_DOOR_ERROR",
                         "value": 23
                     },
                     {
-                        "comments": [],
-                        "id": "RESERVED_1",
+                        "name": "RESERVED_1",
                         "value": 24
                     },
                     {
-                        "comments": [],
-                        "id": "OTHER_ALARM",
+                        "name": "OTHER_ALARM",
                         "value": 25
                     },
                     {
-                        "comments": [],
-                        "id": "OTHER_WARNING",
+                        "name": "OTHER_WARNING",
                         "value": 26
                     },
                     {
-                        "comments": [],
-                        "id": "RESERVED_2",
+                        "name": "RESERVED_2",
                         "value": 27
                     },
                     {
-                        "comments": [],
-                        "id": "CONFIGURATION_ALARM",
+                        "name": "CONFIGURATION_ALARM",
                         "value": 28
                     },
                     {
-                        "comments": [],
-                        "id": "CONFIGURATION_WARNING",
+                        "name": "CONFIGURATION_WARNING",
                         "value": 29
                     }
                 ],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Evt2",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "desc": "Alarms, warnings and status values.  Bit flags.",
+                "detail": "Reserved for future use.",
+                "label": "String Event 2",
+                "name": "Evt2",
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "EvtVnd1",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "desc": "Vendor defined events.",
+                "label": "Vendor Event Bitfield 1",
+                "name": "EvtVnd1",
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "EvtVnd2",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "desc": "Vendor defined events.",
+                "label": "Vendor Event Bitfield 2",
+                "name": "EvtVnd2",
+                "type": "bitfield32"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "SetEna",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Enables and disables the string.  Should reset to 0 upon completion.",
+                "label": "Enable/Disable String",
+                "name": "SetEna",
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "SetCon",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "access": "RW",
+                "desc": "Connects and disconnects the string.",
+                "detail": "Should reset to 0 upon completion.",
+                "label": "Connect/Disconnect String",
+                "name": "SetCon",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "CONNECT_STRING",
+                        "name": "CONNECT_STRING",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "DISCONNECT_STRING",
+                        "name": "DISCONNECT_STRING",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoC_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for string state of charge.",
+                "mandatory": "M",
+                "name": "SoC_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoH_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for string state of health.",
+                "name": "SoH_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DoD_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for string depth of discharge.",
+                "name": "DoD_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "A_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for string current.",
+                "mandatory": "M",
+                "name": "A_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "V_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for string voltage.",
+                "name": "V_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellV_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for cell voltage.",
+                "mandatory": "M",
+                "name": "CellV_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ModTmp_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for module temperature.",
+                "mandatory": "M",
+                "name": "ModTmp_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Pad2",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "pad",
-                "units": null,
-                "value": null
+                "desc": "Pad register.",
+                "label": "Pad",
+                "mandatory": "M",
+                "name": "Pad2",
+                "type": "pad"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Pad3",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "pad",
-                "units": null,
-                "value": null
+                "desc": "Pad register.",
+                "label": "Pad",
+                "mandatory": "M",
+                "name": "Pad3",
+                "type": "pad"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Pad4",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "pad",
-                "units": null,
-                "value": null
+                "desc": "Pad register.",
+                "label": "Pad",
+                "mandatory": "M",
+                "name": "Pad4",
+                "type": "pad"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 804
 }

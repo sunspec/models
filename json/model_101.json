@@ -1,672 +1,425 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include this model for single phase inverter monitoring",
-        "detail": null,
-        "groups": [],
-        "id": "inverter",
         "label": "Inverter (Single Phase)",
+        "name": "inverter",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "inverter model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 101
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "inverter model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "A",
-                "len": null,
-                "mandatory": "true",
+                "desc": "AC Current",
+                "label": "Amps",
+                "mandatory": "M",
+                "name": "A",
                 "sf": "A_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "AphA",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Phase A Current",
+                "detail": "Connected Phase",
+                "label": "Amps PhaseA",
+                "mandatory": "M",
+                "name": "AphA",
                 "sf": "A_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "AphB",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase B Current",
+                "label": "Amps PhaseB",
+                "name": "AphB",
                 "sf": "A_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "AphC",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase C Current",
+                "label": "Amps PhaseC",
+                "name": "AphC",
                 "sf": "A_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "A_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "mandatory": "M",
+                "name": "A_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PPVphAB",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase Voltage AB",
+                "label": "Phase Voltage AB",
+                "name": "PPVphAB",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PPVphBC",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase Voltage BC",
+                "label": "Phase Voltage BC",
+                "name": "PPVphBC",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PPVphCA",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase Voltage CA",
+                "label": "Phase Voltage CA",
+                "name": "PPVphCA",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PhVphA",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Phase Voltage AN",
+                "label": "Phase Voltage AN",
+                "mandatory": "M",
+                "name": "PhVphA",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PhVphB",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase Voltage BN",
+                "label": "Phase Voltage BN",
+                "name": "PhVphB",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PhVphC",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase Voltage CN",
+                "label": "Phase Voltage CN",
+                "name": "PhVphC",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "V_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "mandatory": "M",
+                "name": "V_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "W",
-                "len": null,
-                "mandatory": "true",
+                "desc": "AC Power",
+                "label": "Watts",
+                "mandatory": "M",
+                "name": "W",
                 "sf": "W_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "W",
-                "value": null
+                "units": "W"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "W_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "mandatory": "M",
+                "name": "W_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Hz",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Line Frequency",
+                "label": "Hz",
+                "mandatory": "M",
+                "name": "Hz",
                 "sf": "Hz_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "Hz",
-                "value": null
+                "units": "Hz"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Hz_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "mandatory": "M",
+                "name": "Hz_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VA",
-                "len": null,
-                "mandatory": "false",
+                "desc": "AC Apparent Power",
+                "label": "VA",
+                "name": "VA",
                 "sf": "VA_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "VA",
-                "value": null
+                "units": "VA"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VA_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "name": "VA_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VAr",
-                "len": null,
-                "mandatory": "false",
+                "desc": "AC Reactive Power",
+                "label": "VAr",
+                "name": "VAr",
                 "sf": "VAr_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "var",
-                "value": null
+                "units": "var"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VAr_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "name": "VAr_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PF",
-                "len": null,
-                "mandatory": "false",
+                "desc": "AC Power Factor",
+                "label": "PF",
+                "name": "PF",
                 "sf": "PF_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PF_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "name": "PF_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WH",
-                "len": null,
-                "mandatory": "true",
+                "desc": "AC Energy",
+                "label": "WattHours",
+                "mandatory": "M",
+                "name": "WH",
                 "sf": "WH_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "Wh",
-                "value": null
+                "units": "Wh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WH_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "mandatory": "M",
+                "name": "WH_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCA",
-                "len": null,
-                "mandatory": "false",
+                "desc": "DC Current",
+                "label": "DC Amps",
+                "name": "DCA",
                 "sf": "DCA_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCA_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "name": "DCA_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCV",
-                "len": null,
-                "mandatory": "false",
+                "desc": "DC Voltage",
+                "label": "DC Voltage",
+                "name": "DCV",
                 "sf": "DCV_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCV_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "name": "DCV_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCW",
-                "len": null,
-                "mandatory": "false",
+                "desc": "DC Power",
+                "label": "DC Watts",
+                "name": "DCW",
                 "sf": "DCW_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "W",
-                "value": null
+                "units": "W"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCW_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "name": "DCW_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TmpCab",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Cabinet Temperature",
+                "label": "Cabinet Temperature",
+                "mandatory": "M",
+                "name": "TmpCab",
                 "sf": "Tmp_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TmpSnk",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Heat Sink Temperature",
+                "label": "Heat Sink Temperature",
+                "name": "TmpSnk",
                 "sf": "Tmp_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TmpTrns",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Transformer Temperature",
+                "label": "Transformer Temperature",
+                "name": "TmpTrns",
                 "sf": "Tmp_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TmpOt",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Other Temperature",
+                "label": "Other Temperature",
+                "name": "TmpOt",
                 "sf": "Tmp_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Tmp_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "mandatory": "M",
+                "name": "Tmp_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "St",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Enumerated value.  Operating state",
+                "label": "Operating State",
+                "mandatory": "M",
+                "name": "St",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "OFF",
+                        "name": "OFF",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "SLEEPING",
+                        "name": "SLEEPING",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "STARTING",
+                        "name": "STARTING",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "MPPT",
+                        "name": "MPPT",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "THROTTLED",
+                        "name": "THROTTLED",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "SHUTTING_DOWN",
+                        "name": "SHUTTING_DOWN",
                         "value": 6
                     },
                     {
-                        "comments": [],
-                        "id": "FAULT",
+                        "name": "FAULT",
                         "value": 7
                     },
                     {
-                        "comments": [],
-                        "id": "STANDBY",
+                        "name": "STANDBY",
                         "value": 8
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "StVnd",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "desc": "Vendor specific operating state code",
+                "label": "Vendor Operating State",
+                "name": "StVnd",
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Evt1",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Bitmask value. Event fields",
+                "label": "Event1",
+                "mandatory": "M",
+                "name": "Evt1",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "GROUND_FAULT",
+                        "name": "GROUND_FAULT",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "DC_OVER_VOLT",
+                        "name": "DC_OVER_VOLT",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "AC_DISCONNECT",
+                        "name": "AC_DISCONNECT",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "DC_DISCONNECT",
+                        "name": "DC_DISCONNECT",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "GRID_DISCONNECT",
+                        "name": "GRID_DISCONNECT",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "CABINET_OPEN",
+                        "name": "CABINET_OPEN",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "MANUAL_SHUTDOWN",
+                        "name": "MANUAL_SHUTDOWN",
                         "value": 6
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_TEMP",
+                        "name": "OVER_TEMP",
                         "value": 7
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_FREQUENCY",
+                        "name": "OVER_FREQUENCY",
                         "value": 8
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_FREQUENCY",
+                        "name": "UNDER_FREQUENCY",
                         "value": 9
                     },
                     {
-                        "comments": [],
-                        "id": "AC_OVER_VOLT",
+                        "name": "AC_OVER_VOLT",
                         "value": 10
                     },
                     {
-                        "comments": [],
-                        "id": "AC_UNDER_VOLT",
+                        "name": "AC_UNDER_VOLT",
                         "value": 11
                     },
                     {
-                        "comments": [],
-                        "id": "BLOWN_STRING_FUSE",
+                        "name": "BLOWN_STRING_FUSE",
                         "value": 12
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_TEMP",
+                        "name": "UNDER_TEMP",
                         "value": 13
                     },
                     {
-                        "comments": [],
-                        "id": "MEMORY_LOSS",
+                        "name": "MEMORY_LOSS",
                         "value": 14
                     },
                     {
-                        "comments": [],
-                        "id": "HW_TEST_FAILURE",
+                        "name": "HW_TEST_FAILURE",
                         "value": 15
                     }
                 ],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Evt2",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "desc": "Reserved for future use",
+                "label": "Event Bitfield 2",
+                "mandatory": "M",
+                "name": "Evt2",
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "EvtVnd1",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "desc": "Vendor defined events",
+                "label": "Vendor Event Bitfield 1",
+                "name": "EvtVnd1",
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "EvtVnd2",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "desc": "Vendor defined events",
+                "label": "Vendor Event Bitfield 2",
+                "name": "EvtVnd2",
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "EvtVnd3",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "desc": "Vendor defined events",
+                "label": "Vendor Event Bitfield 3",
+                "name": "EvtVnd3",
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "EvtVnd4",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "desc": "Vendor defined events",
+                "label": "Vendor Event Bitfield 4",
+                "name": "EvtVnd4",
+                "type": "bitfield32"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 101
 }
