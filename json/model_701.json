@@ -7,7 +7,6 @@
             {
                 "access": "R",
                 "desc": "DER AC measurement  model id.",
-                "detail": "The model ID of the DER AC Measurement model. The value MUST be a constant value of 701.",
                 "label": "DER AC Measure Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -18,7 +17,6 @@
             {
                 "access": "R",
                 "desc": "DER AC measurement  model length.",
-                "detail": "This pont is only valid for model instances that have a length associated with a model instance. For Modbus implementations, this point contains the total remaining length of the model in Modbus registers. Since there are no repeating elements, this point MUST be a constant value of 114.",
                 "label": "DER AC Measure Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -737,7 +735,7 @@
             {
                 "access": "R",
                 "comments": [
-                    "Throttling"
+                    "Active Power Throttling"
                 ],
                 "desc": "Throttling in Pct of maximum active power.",
                 "label": "Throttling in Pct",
@@ -825,6 +823,7 @@
                 "label": "Current Scale Factor",
                 "mandatory": "O",
                 "name": "A_SF",
+                "static": "S",
                 "type": "sunssf"
             },
             {
@@ -833,6 +832,7 @@
                 "label": "Voltage Scale Factor",
                 "mandatory": "O",
                 "name": "V_SF",
+                "static": "S",
                 "type": "sunssf"
             },
             {
@@ -841,6 +841,7 @@
                 "label": "Frequency Scale Factor",
                 "mandatory": "O",
                 "name": "Hz_SF",
+                "static": "S",
                 "type": "sunssf"
             },
             {
@@ -849,6 +850,7 @@
                 "label": "Active Power Scale Factor",
                 "mandatory": "O",
                 "name": "W_SF",
+                "static": "S",
                 "type": "sunssf"
             },
             {
@@ -857,6 +859,7 @@
                 "label": "Power Factor Scale Factor",
                 "mandatory": "O",
                 "name": "PF_SF",
+                "static": "S",
                 "type": "sunssf"
             },
             {
@@ -865,6 +868,7 @@
                 "label": "Apparent Power Scale Factor",
                 "mandatory": "O",
                 "name": "VA_SF",
+                "static": "S",
                 "type": "sunssf"
             },
             {
@@ -873,6 +877,7 @@
                 "label": "Reactive Power Scale Factor",
                 "mandatory": "O",
                 "name": "Var_SF",
+                "static": "S",
                 "type": "sunssf"
             },
             {
@@ -881,6 +886,7 @@
                 "label": "Active Energy Scale Factor",
                 "mandatory": "O",
                 "name": "TotWh_SF",
+                "static": "S",
                 "type": "sunssf"
             },
             {
@@ -889,6 +895,7 @@
                 "label": "Reactive Energy Scale Factor",
                 "mandatory": "O",
                 "name": "TotVarh_SF",
+                "static": "S",
                 "type": "sunssf"
             },
             {
@@ -897,6 +904,7 @@
                 "label": "Temperature Scale Factor",
                 "mandatory": "O",
                 "name": "Tmp_SF",
+                "static": "S",
                 "type": "sunssf"
             },
             {
