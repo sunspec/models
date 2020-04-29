@@ -27,8 +27,8 @@
       <point id="V2" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
       <point id="VAr2" offset="5" access="rw" type="int16" len="1" mandatory="false"  sf="DeptRef_SF"/>
       <point id="V3" offset="6" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="VAr3" offset="7" access="rw" type="int16" len="1" mandatory="false" units="Various" sf="DeptRef_SF"/>
-      <point id="V4" offset="8" access="rw" type="uint16" len="1" mandatory="false"  sf="V_SF"/>
+      <point id="VAr3" offset="7" access="rw" type="int16" len="1" mandatory="false"  sf="DeptRef_SF"/>
+      <point id="V4" offset="8" access="rw" type="uint16" len="1" mandatory="false"  units="% VRef" sf="V_SF"/>
       <point id="VAr4" offset="9" access="rw" type="int16" len="1" mandatory="false"  sf="DeptRef_SF"/>
       <point id="V5" offset="10" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
       <point id="VAr5" offset="11" access="rw" type="int16" len="1" mandatory="false"  sf="DeptRef_SF"/>

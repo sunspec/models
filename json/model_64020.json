@@ -1,439 +1,267 @@
 {
     "group": {
-        "comments": [],
-        "desc": null,
-        "detail": null,
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "repeating",
+                "name": "repeating",
                 "points": [
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "SerialNumber",
-                        "len": 9,
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "string",
-                        "units": null,
-                        "value": null
+                        "desc": "strings of 16 characters",
+                        "label": "Serial number",
+                        "mandatory": "M",
+                        "name": "SerialNumber",
+                        "size": 9,
+                        "type": "string"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "Firmware",
-                        "len": 6,
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "string",
-                        "units": null,
-                        "value": null
+                        "desc": "string of 11 characters",
+                        "label": "Firmware version",
+                        "mandatory": "M",
+                        "name": "Firmware",
+                        "size": 6,
+                        "type": "string"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "Hardware",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "label": "Hardware version",
+                        "mandatory": "M",
+                        "name": "Hardware",
+                        "type": "uint16"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "model_64020",
         "label": "Mersen GreenString",
+        "name": "model_64020",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_64020 model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 64020
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_64020 model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Aux0Tmp",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Aux 0 temperature",
+                "name": "Aux0Tmp",
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Aux1Tmp",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Aux 1 temperature",
+                "name": "Aux1Tmp",
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Aux2Tmp",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Aux 2 temperature",
+                "name": "Aux2Tmp",
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Aux3Tmp",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Aux 3 temperature",
+                "name": "Aux3Tmp",
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Aux4Tmp",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "label": "Aux 4 temperature",
+                "name": "Aux4Tmp",
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ProbeTmp",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
+                "label": "Probe Temperature",
+                "mandatory": "M",
+                "name": "ProbeTmp",
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "MainTmp",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
+                "label": "Main Temperature",
+                "mandatory": "M",
+                "name": "MainTmp",
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SensorV_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "label": "Voltage scale factor for the sensors",
+                "mandatory": "M",
+                "name": "SensorV_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SensorA_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "label": "Current scale factor for the sensors",
+                "mandatory": "M",
+                "name": "SensorA_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SensorHz_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "label": "Frequency scale factor for the sensors",
+                "mandatory": "M",
+                "name": "SensorHz_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor1Voltage",
-                "len": null,
-                "mandatory": "false",
+                "desc": "scale of 0-10V",
+                "label": "Sensor1 Voltage",
+                "name": "Sensor1Voltage",
                 "sf": "SensorV_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor2Voltage",
-                "len": null,
-                "mandatory": "false",
+                "desc": "scale of 0-10V",
+                "label": "Sensor2 Voltage",
+                "name": "Sensor2Voltage",
                 "sf": "SensorV_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor3Voltage",
-                "len": null,
-                "mandatory": "false",
+                "desc": "scale of 0-10V",
+                "label": "Sensor3 Voltage",
+                "name": "Sensor3Voltage",
                 "sf": "SensorV_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor4Voltage",
-                "len": null,
-                "mandatory": "false",
+                "desc": "scale of 0-10V",
+                "label": "Sensor4 Voltage",
+                "name": "Sensor4Voltage",
                 "sf": "SensorV_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor5Voltage",
-                "len": null,
-                "mandatory": "false",
+                "desc": "scale of 0-10V",
+                "label": "Sensor5 Voltage",
+                "name": "Sensor5Voltage",
                 "sf": "SensorV_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor6Voltage",
-                "len": null,
-                "mandatory": "false",
+                "desc": "scale of 0-10V",
+                "label": "Sensor6 Voltage",
+                "name": "Sensor6Voltage",
                 "sf": "SensorV_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor7Voltage",
-                "len": null,
-                "mandatory": "false",
+                "desc": "scale of 0-10V",
+                "label": "Sensor7 Voltage",
+                "name": "Sensor7Voltage",
                 "sf": "SensorV_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor1Current",
-                "len": null,
-                "mandatory": "false",
+                "desc": "scale of 4-20mA",
+                "label": "Sensor1 Current",
+                "name": "Sensor1Current",
                 "sf": "SensorA_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor2Current",
-                "len": null,
-                "mandatory": "false",
+                "desc": "in 4-20mA or 4-20mA",
+                "label": "Sensor2 Current",
+                "name": "Sensor2Current",
                 "sf": "SensorA_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor3Current",
-                "len": null,
-                "mandatory": "false",
+                "desc": "in 4-20mA or 4-20mA",
+                "label": "Sensor3 Current",
+                "name": "Sensor3Current",
                 "sf": "SensorA_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor4Current",
-                "len": null,
-                "mandatory": "false",
+                "desc": "in 4-20mA or 4-20mA",
+                "label": "Sensor4 Current",
+                "name": "Sensor4Current",
                 "sf": "SensorA_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor5Current",
-                "len": null,
-                "mandatory": "false",
+                "desc": "in 4-20mA or 4-20mA",
+                "label": "Sensor5 Current",
+                "name": "Sensor5Current",
                 "sf": "SensorA_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor6Current",
-                "len": null,
-                "mandatory": "false",
+                "desc": "in 4-20mA or 4-20mA",
+                "label": "Sensor6 Current",
+                "name": "Sensor6Current",
                 "sf": "SensorA_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor7Current",
-                "len": null,
-                "mandatory": "false",
+                "desc": "in 4-20mA or 4-20mA",
+                "label": "Sensor7 Current",
+                "name": "Sensor7Current",
                 "sf": "SensorA_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Sensor8",
-                "len": null,
-                "mandatory": "false",
+                "desc": "frequency in Hz",
+                "label": "Sensor8 frequency",
+                "name": "Sensor8",
                 "sf": "SensorHz_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "Hz",
-                "value": null
+                "units": "Hz"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Relay1",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "label": "Relay 1 state",
+                "name": "Relay1",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Relay2",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "label": "Relay 2 state",
+                "name": "Relay2",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Relay3",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "label": "Relay 3 state",
+                "name": "Relay3",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ResetAccumulators",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "always 0 in reading, used the code 0xC0DA during the writing for resetting them",
+                "label": "Reset the accumulators",
+                "name": "ResetAccumulators",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Reset",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "always 0 in reading, used the code 0xC0DA during the writing for resetting the system",
+                "label": "Reset the system",
+                "name": "Reset",
+                "type": "uint16"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 64020
 }

@@ -1,397 +1,262 @@
 {
     "group": {
-        "comments": [],
-        "desc": null,
-        "detail": null,
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "lithium-ion-module-cell",
+                "name": "lithium-ion-module-cell",
                 "points": [
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "CellV",
-                        "len": null,
-                        "mandatory": "true",
+                        "desc": "Cell terminal voltage.",
+                        "detail": "Measurement.",
+                        "label": "Cell Voltage",
+                        "mandatory": "M",
+                        "name": "CellV",
                         "sf": "CellV_SF",
-                        "symbols": [],
                         "type": "uint16",
-                        "units": "V",
-                        "value": null
+                        "units": "V"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "CellTmp",
-                        "len": null,
-                        "mandatory": "true",
+                        "desc": "Cell temperature.",
+                        "detail": "Measurement.",
+                        "label": "Cell Temperature",
+                        "mandatory": "M",
+                        "name": "CellTmp",
                         "sf": "Tmp_SF",
-                        "symbols": [],
                         "type": "int16",
-                        "units": "C",
-                        "value": null
+                        "units": "C"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "CellSt",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
+                        "desc": "Status of the cell.",
+                        "label": "Cell Status",
+                        "name": "CellSt",
                         "symbols": [
                             {
-                                "comments": [],
-                                "id": "CELL_IS_BALANCING",
+                                "name": "CELL_IS_BALANCING",
                                 "value": 0
                             }
                         ],
-                        "type": "bitfield32",
-                        "units": null,
-                        "value": null
+                        "type": "bitfield32"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "lithium-ion-module",
         "label": "Lithium-Ion Module Model",
+        "name": "lithium-ion-module",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "lithium-ion-module model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 805
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "lithium-ion-module model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "StrIdx",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Index of the string containing the module.",
+                "detail": "Indices are one-based.",
+                "label": "String Index",
+                "mandatory": "M",
+                "name": "StrIdx",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ModIdx",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Index of the module within the string.",
+                "detail": "Indices are one-based.",
+                "label": "Module Index",
+                "mandatory": "M",
+                "name": "ModIdx",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "NCell",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Count of all cells in the module.",
+                "label": "Module Cell Count",
+                "mandatory": "M",
+                "name": "NCell",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoC",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Module state of charge, expressed as a percentage.",
+                "label": "Module SoC",
+                "name": "SoC",
                 "sf": "SoC_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%",
-                "value": null
+                "units": "%"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DoD",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Depth of discharge for the module.",
+                "detail": "Measurement.",
+                "label": "Depth of Discharge",
+                "name": "DoD",
                 "sf": "DoD_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%",
-                "value": null
+                "units": "%"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoH",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Module state of health, expressed as a percentage.",
+                "label": "Module SoH",
+                "name": "SoH",
                 "sf": "SoH_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%",
-                "value": null
+                "units": "%"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "NCyc",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint32",
-                "units": null,
-                "value": null
+                "desc": "Count of cycles executed.",
+                "label": "Cycle Count",
+                "name": "NCyc",
+                "type": "uint32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "V",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Voltage of the module.",
+                "detail": "Measurement.",
+                "label": "Module Voltage",
+                "mandatory": "M",
+                "name": "V",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMax",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Maximum voltage for all cells in the module.",
+                "detail": "Measurement.",
+                "label": "Max Cell Voltage",
+                "mandatory": "M",
+                "name": "CellVMax",
                 "sf": "CellV_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMaxCell",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Cell with the maximum voltage.",
+                "label": "Max Cell Voltage Cell",
+                "name": "CellVMaxCell",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMin",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Minimum voltage for all cells in the module.",
+                "detail": "Measurement.",
+                "label": "Min Cell Voltage",
+                "mandatory": "M",
+                "name": "CellVMin",
                 "sf": "CellV_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMinCell",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Cell with the minimum voltage.",
+                "label": "Min Cell Voltage Cell",
+                "name": "CellVMinCell",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVAvg",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Average voltage for all cells in the module.",
+                "detail": "Calculation based on measurements.",
+                "label": "Average Cell Voltage",
+                "mandatory": "M",
+                "name": "CellVAvg",
                 "sf": "CellV_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellTmpMax",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Maximum temperature for all cells in the module.",
+                "detail": "Measurement.",
+                "label": "Max Cell Temperature",
+                "mandatory": "M",
+                "name": "CellTmpMax",
                 "sf": "Tmp_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellTmpMaxCell",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Cell with the maximum cell temperature.",
+                "label": "Max Cell Temperature Cell",
+                "name": "CellTmpMaxCell",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellTmpMin",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Minimum temperature for all cells in the module.",
+                "detail": "Measurement.",
+                "label": "Min Cell Temperature",
+                "mandatory": "M",
+                "name": "CellTmpMin",
                 "sf": "Tmp_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellTmpMinCell",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Cell with the minimum cell temperature.",
+                "label": "Min Cell Temperature Cell",
+                "name": "CellTmpMinCell",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellTmpAvg",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Average temperature for all cells in the module.",
+                "detail": "Calculation based on measurements.",
+                "label": "Average Cell Temperature",
+                "mandatory": "M",
+                "name": "CellTmpAvg",
                 "sf": "Tmp_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "C",
-                "value": null
+                "units": "C"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "NCellBal",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Number of cells currently being balanced in the module.",
+                "label": "Balanced Cell Count",
+                "name": "NCellBal",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SN",
-                "len": 16,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "desc": "Serial number for the module.",
+                "label": "Serial Number",
+                "name": "SN",
+                "size": 16,
+                "type": "string"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoC_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for module state of charge.",
+                "name": "SoC_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoH_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for module state of health.",
+                "name": "SoH_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DoD_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for module depth of discharge.",
+                "name": "DoD_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "V_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for module voltage.",
+                "mandatory": "M",
+                "name": "V_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellV_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for cell voltage.",
+                "mandatory": "M",
+                "name": "CellV_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Tmp_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for module temperature.",
+                "mandatory": "M",
+                "name": "Tmp_SF",
+                "type": "sunssf"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 805
 }

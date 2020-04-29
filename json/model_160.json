@@ -1,530 +1,362 @@
 {
     "group": {
-        "comments": [],
-        "desc": null,
-        "detail": null,
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "module",
+                "name": "module",
                 "points": [
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ID",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "label": "Input ID",
+                        "name": "ID",
+                        "type": "uint16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "IDStr",
-                        "len": 8,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "string",
-                        "units": null,
-                        "value": null
+                        "label": "Input ID Sting",
+                        "name": "IDStr",
+                        "size": 8,
+                        "type": "string"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "DCA",
-                        "len": null,
-                        "mandatory": "false",
+                        "label": "DC Current",
+                        "name": "DCA",
                         "sf": "DCA_SF",
-                        "symbols": [],
                         "type": "uint16",
-                        "units": "A",
-                        "value": null
+                        "units": "A"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "DCV",
-                        "len": null,
-                        "mandatory": "false",
+                        "label": "DC Voltage",
+                        "name": "DCV",
                         "sf": "DCV_SF",
-                        "symbols": [],
                         "type": "uint16",
-                        "units": "V",
-                        "value": null
+                        "units": "V"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "DCW",
-                        "len": null,
-                        "mandatory": "false",
+                        "label": "DC Power",
+                        "name": "DCW",
                         "sf": "DCW_SF",
-                        "symbols": [],
                         "type": "uint16",
-                        "units": "W",
-                        "value": null
+                        "units": "W"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "DCWH",
-                        "len": null,
-                        "mandatory": "false",
+                        "label": "Lifetime Energy",
+                        "name": "DCWH",
                         "sf": "DCWH_SF",
-                        "symbols": [],
                         "type": "acc32",
-                        "units": "Wh",
-                        "value": null
+                        "units": "Wh"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "Tms",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
+                        "label": "Timestamp",
+                        "name": "Tms",
                         "type": "uint32",
-                        "units": "Secs",
-                        "value": null
+                        "units": "Secs"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "Tmp",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
+                        "label": "Temperature",
+                        "name": "Tmp",
                         "type": "int16",
-                        "units": "C",
-                        "value": null
+                        "units": "C"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "DCSt",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
+                        "label": "Operating State",
+                        "name": "DCSt",
                         "symbols": [
                             {
-                                "comments": [],
-                                "id": "OFF",
+                                "name": "OFF",
                                 "value": 1
                             },
                             {
-                                "comments": [],
-                                "id": "SLEEPING",
+                                "name": "SLEEPING",
                                 "value": 2
                             },
                             {
-                                "comments": [],
-                                "id": "STARTING",
+                                "name": "STARTING",
                                 "value": 3
                             },
                             {
-                                "comments": [],
-                                "id": "MPPT",
+                                "name": "MPPT",
                                 "value": 4
                             },
                             {
-                                "comments": [],
-                                "id": "THROTTLED",
+                                "name": "THROTTLED",
                                 "value": 5
                             },
                             {
-                                "comments": [],
-                                "id": "SHUTTING_DOWN",
+                                "name": "SHUTTING_DOWN",
                                 "value": 6
                             },
                             {
-                                "comments": [],
-                                "id": "FAULT",
+                                "name": "FAULT",
                                 "value": 7
                             },
                             {
-                                "comments": [],
-                                "id": "STANDBY",
+                                "name": "STANDBY",
                                 "value": 8
                             },
                             {
-                                "comments": [],
-                                "id": "TEST",
+                                "name": "TEST",
                                 "value": 9
                             },
                             {
-                                "comments": [],
-                                "id": "RESERVED",
+                                "name": "RESERVED_10",
                                 "value": 10
                             }
                         ],
-                        "type": "enum16",
-                        "units": null,
-                        "value": null
+                        "type": "enum16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "DCEvt",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
+                        "label": "Module Events",
+                        "name": "DCEvt",
                         "symbols": [
                             {
-                                "comments": [],
-                                "id": "GROUND_FAULT",
+                                "name": "GROUND_FAULT",
                                 "value": 0
                             },
                             {
-                                "comments": [],
-                                "id": "INPUT_OVER_VOLTAGE",
+                                "name": "INPUT_OVER_VOLTAGE",
                                 "value": 1
                             },
                             {
-                                "comments": [],
-                                "id": "RESERVED",
+                                "name": "RESERVED_2",
                                 "value": 2
                             },
                             {
-                                "comments": [],
-                                "id": "DC_DISCONNECT",
+                                "name": "DC_DISCONNECT",
                                 "value": 3
                             },
                             {
-                                "comments": [],
-                                "id": "RESERVED",
+                                "name": "RESERVED_4",
                                 "value": 4
                             },
                             {
-                                "comments": [],
-                                "id": "CABINET_OPEN",
+                                "name": "CABINET_OPEN",
                                 "value": 5
                             },
                             {
-                                "comments": [],
-                                "id": "MANUAL_SHUTDOWN",
+                                "name": "MANUAL_SHUTDOWN",
                                 "value": 6
                             },
                             {
-                                "comments": [],
-                                "id": "OVER_TEMP",
+                                "name": "OVER_TEMP",
                                 "value": 7
                             },
                             {
-                                "comments": [],
-                                "id": "RESERVED",
+                                "name": "RESERVED_8",
                                 "value": 8
                             },
                             {
-                                "comments": [],
-                                "id": "RESERVED",
+                                "name": "RESERVED_9",
                                 "value": 9
                             },
                             {
-                                "comments": [],
-                                "id": "RESERVED",
+                                "name": "RESERVED_10",
                                 "value": 10
                             },
                             {
-                                "comments": [],
-                                "id": "RESERVED",
+                                "name": "RESERVED_11",
                                 "value": 11
                             },
                             {
-                                "comments": [],
-                                "id": "BLOWN_FUSE",
+                                "name": "BLOWN_FUSE",
                                 "value": 12
                             },
                             {
-                                "comments": [],
-                                "id": "UNDER_TEMP",
+                                "name": "UNDER_TEMP",
                                 "value": 13
                             },
                             {
-                                "comments": [],
-                                "id": "MEMORY_LOSS",
+                                "name": "MEMORY_LOSS",
                                 "value": 14
                             },
                             {
-                                "comments": [],
-                                "id": "ARC_DETECTION",
+                                "name": "ARC_DETECTION",
                                 "value": 15
                             },
                             {
-                                "comments": [],
-                                "id": "RESERVED",
+                                "name": "RESERVED_16",
                                 "value": 16
                             },
                             {
-                                "comments": [],
-                                "id": "RESERVED",
+                                "name": "RESERVED_17",
                                 "value": 17
                             },
                             {
-                                "comments": [],
-                                "id": "RESERVED",
+                                "name": "RESERVED_18",
                                 "value": 18
                             },
                             {
-                                "comments": [],
-                                "id": "RESERVED",
+                                "name": "RESERVED_19",
                                 "value": 19
                             },
                             {
-                                "comments": [],
-                                "id": "TEST_FAILED",
+                                "name": "TEST_FAILED",
                                 "value": 20
                             },
                             {
-                                "comments": [],
-                                "id": "INPUT_UNDER_VOLTAGE",
+                                "name": "INPUT_UNDER_VOLTAGE",
                                 "value": 21
                             },
                             {
-                                "comments": [],
-                                "id": "INPUT_OVER_CURRENT",
+                                "name": "INPUT_OVER_CURRENT",
                                 "value": 22
                             }
                         ],
-                        "type": "bitfield32",
-                        "units": null,
-                        "value": null
+                        "type": "bitfield32"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "mppt",
         "label": "Multiple MPPT Inverter Extension Model",
+        "name": "mppt",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "mppt model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 160
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "mppt model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCA_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "label": "Current Scale Factor",
+                "name": "DCA_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCV_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "label": "Voltage Scale Factor",
+                "name": "DCV_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCW_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "label": "Power Scale Factor",
+                "name": "DCW_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DCWH_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "label": "Energy Scale Factor",
+                "name": "DCWH_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Evt",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "label": "Global Events",
+                "name": "Evt",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "GROUND_FAULT",
+                        "name": "GROUND_FAULT",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "INPUT_OVER_VOLTAGE",
+                        "name": "INPUT_OVER_VOLTAGE",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "RESERVED",
+                        "name": "RESERVED_2",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "DC_DISCONNECT",
+                        "name": "DC_DISCONNECT",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "RESERVED",
+                        "name": "RESERVED_4",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "CABINET_OPEN",
+                        "name": "CABINET_OPEN",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "MANUAL_SHUTDOWN",
+                        "name": "MANUAL_SHUTDOWN",
                         "value": 6
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_TEMP",
+                        "name": "OVER_TEMP",
                         "value": 7
                     },
                     {
-                        "comments": [],
-                        "id": "RESERVED",
+                        "name": "RESERVED_8",
                         "value": 8
                     },
                     {
-                        "comments": [],
-                        "id": "RESERVED",
+                        "name": "RESERVED_9",
                         "value": 9
                     },
                     {
-                        "comments": [],
-                        "id": "RESERVED",
+                        "name": "RESERVED_10",
                         "value": 10
                     },
                     {
-                        "comments": [],
-                        "id": "RESERVED",
+                        "name": "RESERVED_11",
                         "value": 11
                     },
                     {
-                        "comments": [],
-                        "id": "BLOWN_FUSE",
+                        "name": "BLOWN_FUSE",
                         "value": 12
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_TEMP",
+                        "name": "UNDER_TEMP",
                         "value": 13
                     },
                     {
-                        "comments": [],
-                        "id": "MEMORY_LOSS",
+                        "name": "MEMORY_LOSS",
                         "value": 14
                     },
                     {
-                        "comments": [],
-                        "id": "ARC_DETECTION",
+                        "name": "ARC_DETECTION",
                         "value": 15
                     },
                     {
-                        "comments": [],
-                        "id": "RESERVED",
+                        "name": "RESERVED_16",
                         "value": 16
                     },
                     {
-                        "comments": [],
-                        "id": "RESERVED",
+                        "name": "RESERVED_17",
                         "value": 17
                     },
                     {
-                        "comments": [],
-                        "id": "RESERVED",
+                        "name": "RESERVED_18",
                         "value": 18
                     },
                     {
-                        "comments": [],
-                        "id": "RESERVED",
+                        "name": "RESERVED_19",
                         "value": 19
                     },
                     {
-                        "comments": [],
-                        "id": "TEST_FAILED",
+                        "name": "TEST_FAILED",
                         "value": 20
                     },
                     {
-                        "comments": [],
-                        "id": "INPUT_UNDER_VOLTAGE",
+                        "name": "INPUT_UNDER_VOLTAGE",
                         "value": 21
                     },
                     {
-                        "comments": [],
-                        "id": "INPUT_OVER_CURRENT",
+                        "name": "INPUT_OVER_CURRENT",
                         "value": 22
                     }
                 ],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "N",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "count",
-                "units": null,
-                "value": null
+                "label": "Number of Modules",
+                "name": "N",
+                "type": "count"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TmsPer",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "label": "Timestamp Period",
+                "name": "TmsPer",
+                "type": "uint16"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 160
 }

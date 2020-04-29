@@ -1,1044 +1,730 @@
 {
     "group": {
-        "comments": [],
-        "desc": null,
-        "detail": null,
-        "groups": [],
-        "id": "battery",
         "label": "Battery Base Model",
+        "name": "battery",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "battery model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 802
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "battery model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "AHRtg",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Nameplate charge capacity in amp-hours.",
+                "label": "Nameplate Charge Capacity",
+                "mandatory": "M",
+                "name": "AHRtg",
                 "sf": "AHRtg_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "Ah",
-                "value": null
+                "units": "Ah"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WHRtg",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Nameplate energy capacity in DC watt-hours.",
+                "label": "Nameplate Energy Capacity",
+                "mandatory": "M",
+                "name": "WHRtg",
                 "sf": "WHRtg_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "Wh",
-                "value": null
+                "units": "Wh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WChaRteMax",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Maximum rate of energy transfer into the storage device in DC watts.",
+                "label": "Nameplate Max Charge Rate",
+                "mandatory": "M",
+                "name": "WChaRteMax",
                 "sf": "WChaDisChaMax_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "W",
-                "value": null
+                "units": "W"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WDisChaRteMax",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Maximum rate of energy transfer out of the storage device in DC watts.",
+                "label": "Nameplate Max Discharge Rate",
+                "mandatory": "M",
+                "name": "WDisChaRteMax",
                 "sf": "WChaDisChaMax_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "W",
-                "value": null
+                "units": "W"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DisChaRte",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Self discharge rate.  Percentage of capacity (WHRtg) discharged per day.",
+                "label": "Self Discharge Rate",
+                "name": "DisChaRte",
                 "sf": "DisChaRte_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%WHRtg",
-                "value": null
+                "units": "%WHRtg"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoCMax",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Manufacturer maximum state of charge, expressed as a percentage.",
+                "label": "Nameplate Max SoC",
+                "name": "SoCMax",
                 "sf": "SoC_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%WHRtg",
-                "value": null
+                "units": "%WHRtg"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoCMin",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Manufacturer minimum state of charge, expressed as a percentage.",
+                "label": "Nameplate Min SoC",
+                "name": "SoCMin",
                 "sf": "SoC_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%WHRtg",
-                "value": null
+                "units": "%WHRtg"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "SocRsvMax",
-                "len": null,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Setpoint for maximum reserve for storage as a percentage of the nominal maximum storage.",
+                "label": "Max Reserve Percent",
+                "name": "SocRsvMax",
                 "sf": "SoC_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%WHRtg",
-                "value": null
+                "units": "%WHRtg"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "SoCRsvMin",
-                "len": null,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Setpoint for maximum reserve for storage as a percentage of the nominal maximum storage.",
+                "label": "Min Reserve Percent",
+                "name": "SoCRsvMin",
                 "sf": "SoC_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%WHRtg",
-                "value": null
+                "units": "%WHRtg"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoC",
-                "len": null,
-                "mandatory": "true",
+                "desc": "State of charge, expressed as a percentage.",
+                "detail": "Measurement.",
+                "label": "State of Charge",
+                "mandatory": "M",
+                "name": "SoC",
                 "sf": "SoC_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%WHRtg",
-                "value": null
+                "units": "%WHRtg"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DoD",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Depth of discharge, expressed as a percentage.",
+                "detail": "Measurement.",
+                "label": "Depth of Discharge",
+                "name": "DoD",
                 "sf": "DoD_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%",
-                "value": null
+                "units": "%"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoH",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Percentage of battery life remaining.",
+                "label": "State of Health",
+                "name": "SoH",
                 "sf": "SoH_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "%",
-                "value": null
+                "units": "%"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "NCyc",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint32",
-                "units": null,
-                "value": null
+                "desc": "Number of cycles executed in the battery.",
+                "label": "Cycle Count",
+                "name": "NCyc",
+                "type": "uint32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ChaSt",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "desc": "Charge status of storage device. Enumeration.",
+                "label": "Charge Status",
+                "name": "ChaSt",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "OFF",
+                        "name": "OFF",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "EMPTY",
+                        "name": "EMPTY",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "DISCHARGING",
+                        "name": "DISCHARGING",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "CHARGING",
+                        "name": "CHARGING",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "FULL",
+                        "name": "FULL",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "HOLDING",
+                        "name": "HOLDING",
                         "value": 6
                     },
                     {
-                        "comments": [],
-                        "id": "TESTING",
+                        "name": "TESTING",
                         "value": 7
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "LocRemCtl",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Battery control mode. Enumeration.",
+                "detail": "Maps to DRCC.LocRemCtl in IEC 61850.",
+                "label": "Control Mode",
+                "mandatory": "M",
+                "name": "LocRemCtl",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "REMOTE",
+                        "name": "REMOTE",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "LOCAL",
+                        "name": "LOCAL",
                         "value": 1
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Hb",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Value is incremented every second with periodic resets to zero.",
+                "label": "Battery Heartbeat",
+                "name": "Hb",
+                "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "CtrlHb",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Value is incremented every second with periodic resets to zero.",
+                "label": "Controller Heartbeat",
+                "name": "CtrlHb",
+                "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "AlmRst",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Used to reset any latched alarms.  1 = Reset.",
+                "detail": "Battery should reset to 0 when reset is complete.",
+                "label": "Alarm Reset",
+                "mandatory": "M",
+                "name": "AlmRst",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Typ",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Type of battery. Enumeration.",
+                "detail": "Maps to DBAT.BatTyp in 61850.",
+                "label": "Battery Type",
+                "mandatory": "M",
+                "name": "Typ",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NOT APPLICABLE_UNKNOWN",
+                        "name": "NOT APPLICABLE_UNKNOWN",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "LEAD_ACID",
+                        "name": "LEAD_ACID",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "NICKEL_METAL_HYDRATE",
+                        "name": "NICKEL_METAL_HYDRATE",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "NICKEL_CADMIUM",
+                        "name": "NICKEL_CADMIUM",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "LITHIUM_ION",
+                        "name": "LITHIUM_ION",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "CARBON_ZINC",
+                        "name": "CARBON_ZINC",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "ZINC_CHLORIDE",
+                        "name": "ZINC_CHLORIDE",
                         "value": 6
                     },
                     {
-                        "comments": [],
-                        "id": "ALKALINE",
+                        "name": "ALKALINE",
                         "value": 7
                     },
                     {
-                        "comments": [],
-                        "id": "RECHARGEABLE_ALKALINE",
+                        "name": "RECHARGEABLE_ALKALINE",
                         "value": 8
                     },
                     {
-                        "comments": [],
-                        "id": "SODIUM_SULFUR",
+                        "name": "SODIUM_SULFUR",
                         "value": 9
                     },
                     {
-                        "comments": [],
-                        "id": "FLOW",
+                        "name": "FLOW",
                         "value": 10
                     },
                     {
-                        "comments": [],
-                        "id": "OTHER",
+                        "name": "OTHER",
                         "value": 99
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "State",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "State of the battery bank.  Enumeration.",
+                "detail": "Must be reconciled with State in IEC 61850.",
+                "label": "State of the Battery Bank",
+                "mandatory": "M",
+                "name": "State",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "DISCONNECTED",
+                        "name": "DISCONNECTED",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "INITIALIZING",
+                        "name": "INITIALIZING",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "CONNECTED",
+                        "name": "CONNECTED",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "STANDBY",
+                        "name": "STANDBY",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "SOC PROTECTION",
+                        "name": "SOC PROTECTION",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "SUSPENDING",
+                        "name": "SUSPENDING",
                         "value": 6
                     },
                     {
-                        "comments": [],
-                        "id": "FAULT",
+                        "name": "FAULT",
                         "value": 99
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "StateVnd",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "desc": "Vendor specific battery bank state.  Enumeration.",
+                "label": "Vendor Battery Bank State",
+                "name": "StateVnd",
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WarrDt",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint32",
-                "units": null,
-                "value": null
+                "desc": "Date the device warranty expires.",
+                "detail": "Number of days since 1/1/2000.",
+                "label": "Warranty Date",
+                "name": "WarrDt",
+                "type": "uint32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Evt1",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Alarms and warnings.  Bit flags.",
+                "label": "Battery Event 1 Bitfield",
+                "mandatory": "M",
+                "name": "Evt1",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "COMMUNICATION_ERROR",
+                        "name": "COMMUNICATION_ERROR",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_TEMP_ALARM",
+                        "name": "OVER_TEMP_ALARM",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_TEMP_WARNING",
+                        "name": "OVER_TEMP_WARNING",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_TEMP_ALARM",
+                        "name": "UNDER_TEMP_ALARM",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_TEMP_WARNING",
+                        "name": "UNDER_TEMP_WARNING",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_CHARGE_CURRENT_ALARM",
+                        "name": "OVER_CHARGE_CURRENT_ALARM",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_CHARGE_CURRENT_WARNING",
+                        "name": "OVER_CHARGE_CURRENT_WARNING",
                         "value": 6
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_DISCHARGE_CURRENT_ALARM",
+                        "name": "OVER_DISCHARGE_CURRENT_ALARM",
                         "value": 7
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_DISCHARGE_CURRENT_WARNING",
+                        "name": "OVER_DISCHARGE_CURRENT_WARNING",
                         "value": 8
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_VOLT_ALARM",
+                        "name": "OVER_VOLT_ALARM",
                         "value": 9
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_VOLT_WARNING",
+                        "name": "OVER_VOLT_WARNING",
                         "value": 10
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_VOLT_ALARM",
+                        "name": "UNDER_VOLT_ALARM",
                         "value": 11
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_VOLT_WARNING",
+                        "name": "UNDER_VOLT_WARNING",
                         "value": 12
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_SOC_MIN_ALARM",
+                        "name": "UNDER_SOC_MIN_ALARM",
                         "value": 13
                     },
                     {
-                        "comments": [],
-                        "id": "UNDER_SOC_MIN_WARNING",
+                        "name": "UNDER_SOC_MIN_WARNING",
                         "value": 14
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_SOC_MAX_ALARM",
+                        "name": "OVER_SOC_MAX_ALARM",
                         "value": 15
                     },
                     {
-                        "comments": [],
-                        "id": "OVER_SOC_MAX_WARNING",
+                        "name": "OVER_SOC_MAX_WARNING",
                         "value": 16
                     },
                     {
-                        "comments": [],
-                        "id": "VOLTAGE_IMBALANCE_WARNING",
+                        "name": "VOLTAGE_IMBALANCE_WARNING",
                         "value": 17
                     },
                     {
-                        "comments": [],
-                        "id": "TEMPERATURE_IMBALANCE_ALARM",
+                        "name": "TEMPERATURE_IMBALANCE_ALARM",
                         "value": 18
                     },
                     {
-                        "comments": [],
-                        "id": "TEMPERATURE_IMBALANCE_WARNING",
+                        "name": "TEMPERATURE_IMBALANCE_WARNING",
                         "value": 19
                     },
                     {
-                        "comments": [],
-                        "id": "CONTACTOR_ERROR",
+                        "name": "CONTACTOR_ERROR",
                         "value": 20
                     },
                     {
-                        "comments": [],
-                        "id": "FAN_ERROR",
+                        "name": "FAN_ERROR",
                         "value": 21
                     },
                     {
-                        "comments": [],
-                        "id": "GROUND_FAULT",
+                        "name": "GROUND_FAULT",
                         "value": 22
                     },
                     {
-                        "comments": [],
-                        "id": "OPEN_DOOR_ERROR",
+                        "name": "OPEN_DOOR_ERROR",
                         "value": 23
                     },
                     {
-                        "comments": [],
-                        "id": "CURRENT_IMBALANCE_WARNING",
+                        "name": "CURRENT_IMBALANCE_WARNING",
                         "value": 24
                     },
                     {
-                        "comments": [],
-                        "id": "OTHER_ALARM",
+                        "name": "OTHER_ALARM",
                         "value": 25
                     },
                     {
-                        "comments": [],
-                        "id": "OTHER_WARNING",
+                        "name": "OTHER_WARNING",
                         "value": 26
                     },
                     {
-                        "comments": [],
-                        "id": "RESERVED_1",
+                        "name": "RESERVED_1",
                         "value": 27
                     },
                     {
-                        "comments": [],
-                        "id": "CONFIGURATION_ALARM",
+                        "name": "CONFIGURATION_ALARM",
                         "value": 28
                     },
                     {
-                        "comments": [],
-                        "id": "CONFIGURATION_WARNING",
+                        "name": "CONFIGURATION_WARNING",
                         "value": 29
                     }
                 ],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Evt2",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "desc": "Alarms and warnings.  Bit flags.",
+                "detail": "Reserved for future use.",
+                "label": "Battery Event 2 Bitfield",
+                "mandatory": "M",
+                "name": "Evt2",
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "EvtVnd1",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "desc": "Vendor defined events.",
+                "label": "Vendor Event Bitfield 1",
+                "mandatory": "M",
+                "name": "EvtVnd1",
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "EvtVnd2",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "desc": "Vendor defined events.",
+                "label": "Vendor Event Bitfield 2",
+                "mandatory": "M",
+                "name": "EvtVnd2",
+                "type": "bitfield32"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "V",
-                "len": null,
-                "mandatory": "true",
+                "desc": "DC Bus Voltage.",
+                "detail": "Maps to ZBAT.V in IEC 61850.",
+                "label": "External Battery Voltage",
+                "mandatory": "M",
+                "name": "V",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VMax",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Instantaneous maximum battery voltage.",
+                "detail": "If not implemented, must implement AChaMax and ADisChaMax.",
+                "label": "Max Battery Voltage",
+                "name": "VMax",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VMin",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Instantaneous minimum battery voltage.",
+                "detail": "If not implemented, must implement AChaMax and ADisChaMax.",
+                "label": "Min Battery Voltage",
+                "name": "VMin",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMax",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Maximum voltage for all cells in the bank.",
+                "detail": "Measurement.",
+                "label": "Max Cell Voltage",
+                "name": "CellVMax",
                 "sf": "CellV_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMaxStr",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "String containing the cell with maximum voltage.",
+                "label": "Max Cell Voltage String",
+                "name": "CellVMaxStr",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMaxMod",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Module containing the cell with maximum voltage.",
+                "label": "Max Cell Voltage Module",
+                "name": "CellVMaxMod",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMin",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Minimum voltage for all cells in the bank.",
+                "detail": "Measurement.",
+                "label": "Min Cell Voltage",
+                "name": "CellVMin",
                 "sf": "CellV_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMinStr",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "String containing the cell with minimum voltage.",
+                "label": "Min Cell Voltage String",
+                "name": "CellVMinStr",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVMinMod",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Module containing the cell with minimum voltage.",
+                "label": "Min Cell Voltage Module",
+                "name": "CellVMinMod",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellVAvg",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Average cell voltage for all cells in the bank.",
+                "detail": "Calculation based on measurements.",
+                "label": "Average Cell Voltage",
+                "name": "CellVAvg",
                 "sf": "CellV_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "A",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Total DC current flowing to/from the battery bank.",
+                "detail": "Measurement.",
+                "label": "Total DC Current",
+                "mandatory": "M",
+                "name": "A",
                 "sf": "A_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "AChaMax",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Instantaneous maximum DC charge current.",
+                "detail": "Calculation which is always unsigned (i.e. magnitude only). If not implemented, must implement VMax and VMin.",
+                "label": "Max Charge Current",
+                "name": "AChaMax",
                 "sf": "AMax_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ADisChaMax",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Instantaneous maximum DC discharge current.",
+                "detail": "Calculation which is always unsigned (i.e. magnitude only). If not implemented, must implement VMax and VMin.",
+                "label": "Max Discharge Current",
+                "name": "ADisChaMax",
                 "sf": "AMax_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "W",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Total power flowing to/from the battery bank.",
+                "detail": "Measurement.",
+                "label": "Total Power",
+                "mandatory": "M",
+                "name": "W",
                 "sf": "W_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "W",
-                "value": null
+                "units": "W"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ReqInvState",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "desc": "Request from battery to start or stop the inverter.  Enumeration.",
+                "detail": "Used in special states such as manual battery charging.",
+                "label": "Inverter State Request",
+                "name": "ReqInvState",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NO REQUEST",
+                        "name": "NO REQUEST",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "START",
+                        "name": "START",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "STOP",
+                        "name": "STOP",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ReqW",
-                "len": null,
-                "mandatory": "false",
+                "desc": "AC Power requested by battery.",
+                "detail": "Used in special states such as string balancing.",
+                "label": "Battery Power Request",
+                "name": "ReqW",
                 "sf": "W_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "W",
-                "value": null
+                "units": "W"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "SetOp",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "Instruct the battery bank to perform an operation such as connecting.  Enumeration.",
+                "label": "Set Operation",
+                "mandatory": "M",
+                "name": "SetOp",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "CONNECT",
+                        "name": "CONNECT",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "DISCONNECT",
+                        "name": "DISCONNECT",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "SetInvState",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "Set the current state of the inverter.",
+                "detail": "Information needed by battery for some operations.",
+                "label": "Set Inverter State",
+                "mandatory": "M",
+                "name": "SetInvState",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "INVERTER_STOPPED",
+                        "name": "INVERTER_STOPPED",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "INVERTER_STANDBY",
+                        "name": "INVERTER_STANDBY",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "INVERTER_STARTED",
+                        "name": "INVERTER_STARTED",
                         "value": 3
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "AHRtg_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for charge capacity.",
+                "mandatory": "M",
+                "name": "AHRtg_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WHRtg_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for energy capacity.",
+                "mandatory": "M",
+                "name": "WHRtg_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WChaDisChaMax_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for maximum charge and discharge rate.",
+                "mandatory": "M",
+                "name": "WChaDisChaMax_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DisChaRte_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for self discharge rate.",
+                "name": "DisChaRte_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoC_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for state of charge values.",
+                "mandatory": "M",
+                "name": "SoC_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DoD_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for depth of discharge.",
+                "name": "DoD_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "SoH_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for state of health.",
+                "name": "SoH_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "V_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for DC bus voltage.",
+                "mandatory": "M",
+                "name": "V_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CellV_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for cell voltage.",
+                "mandatory": "M",
+                "name": "CellV_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "A_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for DC current.",
+                "mandatory": "M",
+                "name": "A_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "AMax_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for instantaneous DC charge/discharge current.",
+                "mandatory": "M",
+                "name": "AMax_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "W_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for AC power request.",
+                "name": "W_SF",
+                "type": "sunssf"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 802
 }

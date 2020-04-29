@@ -1,213 +1,151 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include this model to configure a Point-to-Point Protocol link",
-        "detail": null,
-        "groups": [],
-        "id": "model_19",
         "label": "PPP Link",
+        "name": "model_19",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_19 model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 19
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_19 model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Nam",
-                "len": 4,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Interface name",
+                "label": "Name",
+                "name": "Nam",
+                "size": 4,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Rte",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Interface baud rate in bits per second",
+                "label": "Rate",
+                "mandatory": "M",
+                "name": "Rte",
                 "type": "uint32",
-                "units": "bps",
-                "value": null
+                "units": "bps"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Bits",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Number of data bits per character",
+                "label": "Bits",
+                "mandatory": "M",
+                "name": "Bits",
+                "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Pty",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "Bitmask value.  Parity setting",
+                "label": "Parity",
+                "mandatory": "M",
+                "name": "Pty",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NONE",
+                        "name": "NONE",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "ODD",
+                        "name": "ODD",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "EVEN",
+                        "name": "EVEN",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Dup",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "access": "RW",
+                "desc": "Enumerated value.  Duplex mode",
+                "label": "Duplex",
+                "name": "Dup",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "FULL",
+                        "name": "FULL",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "HALF",
+                        "name": "HALF",
                         "value": 1
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Flw",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "access": "RW",
+                "desc": "Flow Control Method",
+                "label": "Flow Control",
+                "name": "Flw",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NONE",
+                        "name": "NONE",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "HW",
+                        "name": "HW",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "XONXOFF",
+                        "name": "XONXOFF",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Auth",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "desc": "Enumerated value.  Authentication method",
+                "label": "Authentication",
+                "name": "Auth",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NONE",
+                        "name": "NONE",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "PAP",
+                        "name": "PAP",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "CHAP",
+                        "name": "CHAP",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "UsrNam",
-                "len": 12,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "desc": "Username for authentication",
+                "label": "Username",
+                "name": "UsrNam",
+                "size": 12,
+                "type": "string"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Pw",
-                "len": 6,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "desc": "Password for authentication",
+                "label": "Password",
+                "name": "Pw",
+                "size": 6,
+                "type": "string"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Pad",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "pad",
-                "units": null,
-                "value": null
+                "name": "Pad",
+                "type": "pad"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 19
 }

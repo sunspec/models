@@ -1,94 +1,67 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include this model to support a cellular interface link",
-        "detail": null,
-        "groups": [],
-        "id": "model_18",
         "label": "Cellular Link",
+        "name": "model_18",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_18 model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 18
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_18 model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Nam",
-                "len": 4,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Interface name",
+                "label": "Name",
+                "name": "Nam",
+                "size": 4,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "IMEI",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint32",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "International Mobile Equipment Identifier for the interface",
+                "label": "IMEI",
+                "name": "IMEI",
+                "type": "uint32"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "APN",
-                "len": 4,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Access Point Name for the interface",
+                "label": "APN",
+                "name": "APN",
+                "size": 4,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Num",
-                "len": 6,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Phone number for the interface",
+                "label": "Number",
+                "name": "Num",
+                "size": 6,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Pin",
-                "len": 6,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Personal Identification Number for the interface",
+                "label": "PIN",
+                "name": "Pin",
+                "size": 6,
+                "type": "string"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 18
 }
