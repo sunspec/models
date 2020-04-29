@@ -1,130 +1,97 @@
 {
     "group": {
-        "comments": [],
         "desc": "Inverter controls extended settings ",
-        "detail": null,
-        "groups": [],
-        "id": "ext_settings",
         "label": "Extended Settings",
+        "name": "ext_settings",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "ext_settings model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 145
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "ext_settings model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "NomRmpUpRte",
-                "len": 1,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Ramp up rate as a percentage of max current.",
+                "label": "Ramp Up Rate",
+                "name": "NomRmpUpRte",
                 "sf": "Rmp_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "NomRmpDnRte",
-                "len": 1,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Ramp down rate as a percentage of max current.",
+                "label": "NomRmpDnRte",
+                "name": "NomRmpDnRte",
                 "sf": "Rmp_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "EmgRmpUpRte",
-                "len": 1,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Emergency ramp up rate as a percentage of max current.",
+                "label": "Emergency Ramp Up Rate",
+                "name": "EmgRmpUpRte",
                 "sf": "Rmp_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "EmgRmpDnRte",
-                "len": 1,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Emergency ramp down rate as a percentage of max current.",
+                "label": "Emergency Ramp Down Rate",
+                "name": "EmgRmpDnRte",
                 "sf": "Rmp_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "ConnRmpUpRte",
-                "len": 1,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Connect ramp up rate as a percentage of max current.",
+                "label": "Connect Ramp Up Rate",
+                "name": "ConnRmpUpRte",
                 "sf": "Rmp_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "ConnRmpDnRte",
-                "len": 1,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Connect ramp down rate as a percentage of max current.",
+                "label": "Connect Ramp Down Rate",
+                "name": "ConnRmpDnRte",
                 "sf": "Rmp_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "AGra",
-                "len": 1,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Ramp rate specified in percent of max current.",
+                "label": "Default Ramp Rate",
+                "name": "AGra",
                 "sf": "Rmp_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Rmp_SF",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Ramp Rate Scale Factor",
+                "label": "Ramp Rate Scale Factor",
+                "name": "Rmp_SF",
+                "type": "sunssf"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 145
 }

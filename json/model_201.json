@@ -1,1004 +1,636 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include this model for single phase (AN or AB) metering",
-        "detail": null,
-        "groups": [],
-        "id": "ac_meter",
         "label": "Meter (Single Phase)single phase (AN or AB) meter",
+        "name": "ac_meter",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "ac_meter model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 201
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "ac_meter model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "A",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Total AC Current",
+                "label": "Amps",
+                "mandatory": "M",
+                "name": "A",
                 "sf": "A_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "AphA",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Phase A Current",
+                "label": "Amps PhaseA",
+                "mandatory": "M",
+                "name": "AphA",
                 "sf": "A_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "AphB",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase B Current",
+                "label": "Amps PhaseB",
+                "name": "AphB",
                 "sf": "A_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "AphC",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase C Current",
+                "label": "Amps PhaseC",
+                "name": "AphC",
                 "sf": "A_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "A_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Current scale factor",
+                "mandatory": "M",
+                "name": "A_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PhV",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Line to Neutral AC Voltage (average of active phases)",
+                "detail": "Conditional AN connection",
+                "label": "Voltage LN",
+                "name": "PhV",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PhVphA",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase Voltage AN",
+                "detail": "Conditional AN connection",
+                "label": "Phase Voltage AN",
+                "name": "PhVphA",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PhVphB",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase Voltage BN",
+                "label": "Phase Voltage BN",
+                "name": "PhVphB",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PhVphC",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase Voltage CN",
+                "label": "Phase Voltage CN",
+                "name": "PhVphC",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PPV",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Line to Line AC Voltage (average of active phases)",
+                "label": "Voltage LL",
+                "name": "PPV",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PPVphAB",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase Voltage AB",
+                "detail": "Conditional AB connection",
+                "label": "Phase Voltage AB",
+                "name": "PPVphAB",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PPVphBC",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase Voltage BC",
+                "label": "Phase Voltage BC",
+                "name": "PPVphBC",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PPVphCA",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Phase Voltage CA",
+                "label": "Phase Voltage CA",
+                "name": "PPVphCA",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "V_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Voltage scale factor",
+                "mandatory": "M",
+                "name": "V_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Hz",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Frequency",
+                "label": "Hz",
+                "mandatory": "M",
+                "name": "Hz",
                 "sf": "Hz_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "Hz",
-                "value": null
+                "units": "Hz"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Hz_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Frequency scale factor",
+                "name": "Hz_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "W",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Total Real Power",
+                "label": "Watts",
+                "mandatory": "M",
+                "name": "W",
                 "sf": "W_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "W",
-                "value": null
+                "units": "W"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WphA",
-                "len": null,
-                "mandatory": "false",
+                "label": "Watts phase A",
+                "name": "WphA",
                 "sf": "W_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "W",
-                "value": null
+                "units": "W"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WphB",
-                "len": null,
-                "mandatory": "false",
+                "label": "Watts phase B",
+                "name": "WphB",
                 "sf": "W_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "W",
-                "value": null
+                "units": "W"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WphC",
-                "len": null,
-                "mandatory": "false",
+                "label": "Watts phase C",
+                "name": "WphC",
                 "sf": "W_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "W",
-                "value": null
+                "units": "W"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "W_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Real Power scale factor",
+                "mandatory": "M",
+                "name": "W_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VA",
-                "len": null,
-                "mandatory": "false",
+                "desc": "AC Apparent Power",
+                "label": "VA",
+                "name": "VA",
                 "sf": "VA_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "VA",
-                "value": null
+                "units": "VA"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VAphA",
-                "len": null,
-                "mandatory": "false",
+                "label": "VA phase A",
+                "name": "VAphA",
                 "sf": "VA_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "VA",
-                "value": null
+                "units": "VA"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VAphB",
-                "len": null,
-                "mandatory": "false",
+                "label": "VA phase B",
+                "name": "VAphB",
                 "sf": "VA_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "VA",
-                "value": null
+                "units": "VA"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VAphC",
-                "len": null,
-                "mandatory": "false",
+                "label": "VA phase C",
+                "name": "VAphC",
                 "sf": "VA_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "VA",
-                "value": null
+                "units": "VA"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VA_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Apparent Power scale factor",
+                "name": "VA_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VAR",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Reactive Power",
+                "label": "VAR",
+                "name": "VAR",
                 "sf": "VAR_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "var",
-                "value": null
+                "units": "var"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VARphA",
-                "len": null,
-                "mandatory": "false",
+                "label": "VAR phase A",
+                "name": "VARphA",
                 "sf": "VAR_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "var",
-                "value": null
+                "units": "var"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VARphB",
-                "len": null,
-                "mandatory": "false",
+                "label": "VAR phase B",
+                "name": "VARphB",
                 "sf": "VAR_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "var",
-                "value": null
+                "units": "var"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VARphC",
-                "len": null,
-                "mandatory": "false",
+                "label": "VAR phase C",
+                "name": "VARphC",
                 "sf": "VAR_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "var",
-                "value": null
+                "units": "var"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VAR_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Reactive Power scale factor",
+                "name": "VAR_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PF",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Power Factor",
+                "label": "PF",
+                "name": "PF",
                 "sf": "PF_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PFphA",
-                "len": null,
-                "mandatory": "false",
+                "label": "PF phase A",
+                "name": "PFphA",
                 "sf": "PF_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PFphB",
-                "len": null,
-                "mandatory": "false",
+                "label": "PF phase B",
+                "name": "PFphB",
                 "sf": "PF_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PFphC",
-                "len": null,
-                "mandatory": "false",
+                "label": "PF phase C",
+                "name": "PFphC",
                 "sf": "PF_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "Pct",
-                "value": null
+                "units": "Pct"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "PF_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Power Factor scale factor",
+                "name": "PF_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotWhExp",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Total Real Energy Exported",
+                "label": "Total Watt-hours Exported",
+                "mandatory": "M",
+                "name": "TotWhExp",
                 "sf": "TotWh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "Wh",
-                "value": null
+                "units": "Wh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotWhExpPhA",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total Watt-hours Exported phase A",
+                "name": "TotWhExpPhA",
                 "sf": "TotWh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "Wh",
-                "value": null
+                "units": "Wh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotWhExpPhB",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total Watt-hours Exported phase B",
+                "name": "TotWhExpPhB",
                 "sf": "TotWh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "Wh",
-                "value": null
+                "units": "Wh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotWhExpPhC",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total Watt-hours Exported phase C",
+                "name": "TotWhExpPhC",
                 "sf": "TotWh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "Wh",
-                "value": null
+                "units": "Wh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotWhImp",
-                "len": null,
-                "mandatory": "true",
+                "desc": "Total Real Energy Imported",
+                "label": "Total Watt-hours Imported",
+                "mandatory": "M",
+                "name": "TotWhImp",
                 "sf": "TotWh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "Wh",
-                "value": null
+                "units": "Wh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotWhImpPhA",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total Watt-hours Imported phase A",
+                "name": "TotWhImpPhA",
                 "sf": "TotWh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "Wh",
-                "value": null
+                "units": "Wh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotWhImpPhB",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total Watt-hours Imported phase B",
+                "name": "TotWhImpPhB",
                 "sf": "TotWh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "Wh",
-                "value": null
+                "units": "Wh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotWhImpPhC",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total Watt-hours Imported phase C",
+                "name": "TotWhImpPhC",
                 "sf": "TotWh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "Wh",
-                "value": null
+                "units": "Wh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotWh_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Real Energy scale factor",
+                "mandatory": "M",
+                "name": "TotWh_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVAhExp",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Total Apparent Energy Exported",
+                "label": "Total VA-hours Exported",
+                "name": "TotVAhExp",
                 "sf": "TotVAh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "VAh",
-                "value": null
+                "units": "VAh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVAhExpPhA",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VA-hours Exported phase A",
+                "name": "TotVAhExpPhA",
                 "sf": "TotVAh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "VAh",
-                "value": null
+                "units": "VAh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVAhExpPhB",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VA-hours Exported phase B",
+                "name": "TotVAhExpPhB",
                 "sf": "TotVAh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "VAh",
-                "value": null
+                "units": "VAh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVAhExpPhC",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VA-hours Exported phase C",
+                "name": "TotVAhExpPhC",
                 "sf": "TotVAh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "VAh",
-                "value": null
+                "units": "VAh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVAhImp",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Total Apparent Energy Imported",
+                "label": "Total VA-hours Imported",
+                "name": "TotVAhImp",
                 "sf": "TotVAh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "VAh",
-                "value": null
+                "units": "VAh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVAhImpPhA",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VA-hours Imported phase A",
+                "name": "TotVAhImpPhA",
                 "sf": "TotVAh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "VAh",
-                "value": null
+                "units": "VAh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVAhImpPhB",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VA-hours Imported phase B",
+                "name": "TotVAhImpPhB",
                 "sf": "TotVAh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "VAh",
-                "value": null
+                "units": "VAh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVAhImpPhC",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VA-hours Imported phase C",
+                "name": "TotVAhImpPhC",
                 "sf": "TotVAh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "VAh",
-                "value": null
+                "units": "VAh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVAh_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Apparent Energy scale factor",
+                "name": "TotVAh_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhImpQ1",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Total Reactive Energy Imported Quadrant 1",
+                "label": "Total VAR-hours Imported Q1",
+                "name": "TotVArhImpQ1",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhImpQ1PhA",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VAr-hours Imported Q1 phase A",
+                "name": "TotVArhImpQ1PhA",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhImpQ1PhB",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VAr-hours Imported Q1 phase B",
+                "name": "TotVArhImpQ1PhB",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhImpQ1PhC",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VAr-hours Imported Q1 phase C",
+                "name": "TotVArhImpQ1PhC",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhImpQ2",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Total Reactive Power Imported Quadrant 2",
+                "label": "Total VAr-hours Imported Q2",
+                "name": "TotVArhImpQ2",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhImpQ2PhA",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VAr-hours Imported Q2 phase A",
+                "name": "TotVArhImpQ2PhA",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhImpQ2PhB",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VAr-hours Imported Q2 phase B",
+                "name": "TotVArhImpQ2PhB",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhImpQ2PhC",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VAr-hours Imported Q2 phase C",
+                "name": "TotVArhImpQ2PhC",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhExpQ3",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Total Reactive Power Exported Quadrant 3",
+                "label": "Total VAr-hours Exported Q3",
+                "name": "TotVArhExpQ3",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhExpQ3PhA",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VAr-hours Exported Q3 phase A",
+                "name": "TotVArhExpQ3PhA",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhExpQ3PhB",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VAr-hours Exported Q3 phase B",
+                "name": "TotVArhExpQ3PhB",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhExpQ3PhC",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VAr-hours Exported Q3 phase C",
+                "name": "TotVArhExpQ3PhC",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhExpQ4",
-                "len": null,
-                "mandatory": "false",
+                "desc": "Total Reactive Power Exported Quadrant 4",
+                "label": "Total VAr-hours Exported Q4",
+                "name": "TotVArhExpQ4",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhExpQ4PhA",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VAr-hours Exported Q4 Imported phase A",
+                "name": "TotVArhExpQ4PhA",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhExpQ4PhB",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VAr-hours Exported Q4 Imported phase B",
+                "name": "TotVArhExpQ4PhB",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArhExpQ4PhC",
-                "len": null,
-                "mandatory": "false",
+                "label": "Total VAr-hours Exported Q4 Imported phase C",
+                "name": "TotVArhExpQ4PhC",
                 "sf": "TotVArh_SF",
-                "symbols": [],
                 "type": "acc32",
-                "units": "varh",
-                "value": null
+                "units": "varh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TotVArh_SF",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Reactive Energy scale factor",
+                "name": "TotVArh_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Evt",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Meter Event Flags",
+                "label": "Events",
+                "mandatory": "M",
+                "name": "Evt",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "Power_Failure",
+                        "name": "Power_Failure",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "Under_Voltage",
+                        "name": "Under_Voltage",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "Low_PF",
+                        "name": "Low_PF",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "Over_Current",
+                        "name": "Over_Current",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "Over_Voltage",
+                        "name": "Over_Voltage",
                         "value": 6
                     },
                     {
-                        "comments": [],
-                        "id": "Missing_Sensor",
+                        "name": "Missing_Sensor",
                         "value": 7
                     },
                     {
-                        "comments": [],
-                        "id": "OEM01",
+                        "name": "OEM01",
                         "value": 16
                     },
                     {
-                        "comments": [],
-                        "id": "OEM02",
+                        "name": "OEM02",
                         "value": 17
                     },
                     {
-                        "comments": [],
-                        "id": "OEM03",
+                        "name": "OEM03",
                         "value": 18
                     },
                     {
-                        "comments": [],
-                        "id": "OEM04",
+                        "name": "OEM04",
                         "value": 19
                     },
                     {
-                        "comments": [],
-                        "id": "OEM05",
+                        "name": "OEM05",
                         "value": 20
                     },
                     {
-                        "comments": [],
-                        "id": "OEM06",
+                        "name": "OEM06",
                         "value": 21
                     },
                     {
-                        "comments": [],
-                        "id": "OEM07",
+                        "name": "OEM07",
                         "value": 22
                     },
                     {
-                        "comments": [],
-                        "id": "OEM08",
+                        "name": "OEM08",
                         "value": 23
                     },
                     {
-                        "comments": [],
-                        "id": "OEM09",
+                        "name": "OEM09",
                         "value": 24
                     },
                     {
-                        "comments": [],
-                        "id": "OEM10",
+                        "name": "OEM10",
                         "value": 25
                     },
                     {
-                        "comments": [],
-                        "id": "OEM11",
+                        "name": "OEM11",
                         "value": 26
                     },
                     {
-                        "comments": [],
-                        "id": "OEM12",
+                        "name": "OEM12",
                         "value": 27
                     },
                     {
-                        "comments": [],
-                        "id": "OEM13",
+                        "name": "OEM13",
                         "value": 28
                     },
                     {
-                        "comments": [],
-                        "id": "OEM14",
+                        "name": "OEM14",
                         "value": 29
                     },
                     {
-                        "comments": [],
-                        "id": "OEM15",
+                        "name": "OEM15",
                         "value": 30
                     }
                 ],
-                "type": "bitfield32",
-                "units": null,
-                "value": null
+                "type": "bitfield32"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 201
 }

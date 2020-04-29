@@ -1,67 +1,48 @@
 {
     "group": {
-        "comments": [],
-        "desc": null,
-        "detail": null,
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "stack",
+                "name": "stack",
                 "points": [
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "StackTBD",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null,
-                        "value": null
+                        "label": "Stack Points To Be Determined",
+                        "mandatory": "M",
+                        "name": "StackTBD",
+                        "type": "uint16"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "flow_battery_module",
         "label": "Flow Battery Module Model",
+        "name": "flow_battery_module",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "flow_battery_module model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 808
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "flow_battery_module model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ModuleTBD",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "label": "Module Points To Be Determined",
+                "mandatory": "M",
+                "name": "ModuleTBD",
+                "type": "uint16"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 808
 }

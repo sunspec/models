@@ -1,146 +1,107 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include this block to allow for a proxy server",
-        "detail": null,
-        "groups": [],
-        "id": "model_14",
         "label": "Proxy Server",
+        "name": "model_14",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_14 model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 14
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_14 model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Nam",
-                "len": 4,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Interface name (8 chars)",
+                "label": "name",
+                "name": "Nam",
+                "size": 4,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Cap",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "Bitmask value.  Proxy configuration capabilities",
+                "label": "Capabilities",
+                "mandatory": "M",
+                "name": "Cap",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NO_PROXY",
+                        "name": "NO_PROXY",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "IPV4_PROXY",
+                        "name": "IPV4_PROXY",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "IPV6_PROXY",
+                        "name": "IPV6_PROXY",
                         "value": 2
                     }
                 ],
-                "type": "bitfield16",
-                "units": null,
-                "value": null
+                "type": "bitfield16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Cfg",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Enumerated value.  Set proxy address type",
+                "label": "Config",
+                "mandatory": "M",
+                "name": "Cfg",
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Typ",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "bitfield16",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Enumerate value.  Proxy server type",
+                "label": "Type",
+                "mandatory": "M",
+                "name": "Typ",
+                "type": "bitfield16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Addr",
-                "len": 20,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "IPv4 or IPv6 proxy hostname or dotted address (40 chars)",
+                "label": "Address",
+                "mandatory": "M",
+                "name": "Addr",
+                "size": 20,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Port",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Proxy port number",
+                "label": "Port",
+                "mandatory": "M",
+                "name": "Port",
+                "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "User",
-                "len": 12,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Proxy user name",
+                "label": "Username",
+                "name": "User",
+                "size": 12,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Pw",
-                "len": 12,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Proxy password",
+                "label": "Password",
+                "name": "Pw",
+                "size": 12,
+                "type": "string"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 14
 }

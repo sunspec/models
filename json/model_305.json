@@ -1,106 +1,75 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include to support location measurements",
-        "detail": null,
-        "groups": [],
-        "id": "location",
         "label": "GPS",
+        "name": "location",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "location model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 305
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "location model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Tm",
-                "len": 6,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "desc": "UTC 24 hour time stamp to millisecond hhmmss.sssZ format",
+                "label": "Tm",
+                "name": "Tm",
+                "size": 6,
                 "type": "string",
-                "units": "hhmmss.sssZ",
-                "value": null
+                "units": "hhmmss.sssZ"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Date",
-                "len": 4,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "desc": "UTC Date string YYYYMMDD format",
+                "label": "Date",
+                "name": "Date",
+                "size": 4,
                 "type": "string",
-                "units": "YYYYMMDD",
-                "value": null
+                "units": "YYYYMMDD"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Loc",
-                "len": 20,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "desc": "Location string (40 chars max)",
+                "label": "Location",
+                "name": "Loc",
+                "size": 20,
                 "type": "string",
-                "units": "text",
-                "value": null
+                "units": "text"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Lat",
-                "len": null,
-                "mandatory": "false",
-                "sf": "-7",
-                "symbols": [],
+                "desc": "Latitude with seven degrees of precision",
+                "label": "Lat",
+                "name": "Lat",
+                "sf": -7,
                 "type": "int32",
-                "units": "Degrees",
-                "value": null
+                "units": "Degrees"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Long",
-                "len": null,
-                "mandatory": "false",
-                "sf": "-7",
-                "symbols": [],
+                "desc": "Longitude with seven degrees of precision",
+                "label": "Long",
+                "name": "Long",
+                "sf": -7,
                 "type": "int32",
-                "units": "Degrees",
-                "value": null
+                "units": "Degrees"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Alt",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "desc": "Altitude measurement in meters",
+                "label": "Altitude",
+                "name": "Alt",
                 "type": "int32",
-                "units": "meters",
-                "value": null
+                "units": "meters"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 305
 }

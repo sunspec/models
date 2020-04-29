@@ -18,16 +18,16 @@
       <point id="Evt" offset="2" type="bitfield32" mandatory="true" >
         <symbol id="GROUND_FAULT">0</symbol>
         <symbol id="INPUT_OVER_VOLTAGE">1</symbol>
-        <symbol id="RESERVED">2</symbol>
+        <symbol id="RESERVED_2">2</symbol>
         <symbol id="DC_DISCONNECT">3</symbol>
-        <symbol id="RESERVED">4</symbol>
-        <symbol id="RESERVED">5</symbol>
+        <symbol id="RESERVED_4">4</symbol>
+        <symbol id="RESERVED_5">5</symbol>
         <symbol id="MANUAL_SHUTDOWN">6</symbol>
         <symbol id="OVER_TEMPERATURE">7</symbol>
-        <symbol id="RESERVED">8</symbol>
-        <symbol id="RESERVED">9</symbol>
-        <symbol id="RESERVED">10</symbol>
-        <symbol id="RESERVED">11</symbol>
+        <symbol id="RESERVED_8">8</symbol>
+        <symbol id="RESERVED_9">9</symbol>
+        <symbol id="RESERVED_10">10</symbol>
+        <symbol id="RESERVED_11">11</symbol>
         <symbol id="BLOWN_FUSE">12</symbol>
         <symbol id="UNDER_TEMPERATURE">13</symbol>
         <symbol id="MEMORY_LOSS">14</symbol>

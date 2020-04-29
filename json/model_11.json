@@ -1,186 +1,137 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include to support a wired ethernet port",
-        "detail": null,
-        "groups": [],
-        "id": "model_11",
         "label": "Ethernet Link Layer",
+        "name": "model_11",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_11 model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 11
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_11 model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Spd",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
+                "desc": "Interface speed in Mb/s",
+                "label": "Ethernet Link Speed",
+                "mandatory": "M",
+                "name": "Spd",
                 "type": "uint16",
-                "units": "Mbps",
-                "value": null
+                "units": "Mbps"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "CfgSt",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Bitmask values Interface flags.",
+                "label": "Interface Status Flags",
+                "mandatory": "M",
+                "name": "CfgSt",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "LINK",
+                        "name": "LINK",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "FULL_DUPLEX",
+                        "name": "FULL_DUPLEX",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "AUTO_NEG1",
+                        "name": "AUTO_NEG1",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "AUTO_NEG2",
+                        "name": "AUTO_NEG2",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "AUTO_NEG3",
+                        "name": "AUTO_NEG3",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "RESET_REQUIRED",
+                        "name": "RESET_REQUIRED",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "HW_FAULT",
+                        "name": "HW_FAULT",
                         "value": 6
                     }
                 ],
-                "type": "bitfield16",
-                "units": null,
-                "value": null
+                "type": "bitfield16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "St",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Enumerated value. State information for this interface",
+                "label": "Link State",
+                "mandatory": "M",
+                "name": "St",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "UNKNOWN",
+                        "name": "UNKNOWN",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "ENABLED",
+                        "name": "ENABLED",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "DISABLED",
+                        "name": "DISABLED",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "TESTING",
+                        "name": "TESTING",
                         "value": 3
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "MAC",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "eui48",
-                "units": null,
-                "value": null
+                "desc": "IEEE MAC address of this interface",
+                "label": "MAC",
+                "name": "MAC",
+                "type": "eui48"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Nam",
-                "len": 4,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "access": "RW",
+                "desc": "Interface name (8 chars)",
+                "label": "Name",
+                "name": "Nam",
+                "size": 4,
+                "type": "string"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Ctl",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "access": "RW",
+                "desc": "Control flags",
+                "label": "Control",
+                "name": "Ctl",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "AUTO",
+                        "name": "AUTO",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "FULL_DUPLEX",
+                        "name": "FULL_DUPLEX",
                         "value": 1
                     }
                 ],
-                "type": "bitfield16",
-                "units": null,
-                "value": null
+                "type": "bitfield16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "FrcSpd",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Forced interface speed in Mb/s when AUTO is disabled",
+                "label": "Forced Speed",
+                "name": "FrcSpd",
                 "type": "uint16",
-                "units": "Mbps",
-                "value": null
+                "units": "Mbps"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 11
 }

@@ -1,383 +1,281 @@
 {
     "group": {
-        "comments": [],
         "desc": "Monitors and controls multiple trackers",
         "detail": "Trackers may include GPS model 305 for location information",
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "tracker",
+                "name": "tracker",
                 "points": [
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "Id",
-                        "len": 8,
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "string",
-                        "units": null,
-                        "value": null
+                        "desc": "Descriptive name for this tracker unit",
+                        "label": "Tracker",
+                        "name": "Id",
+                        "size": 8,
+                        "type": "string"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ElTrgt",
-                        "len": null,
-                        "mandatory": "false",
+                        "desc": "Auto target elevation in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
+                        "detail": "Conformant implementations shall implement El or Az",
+                        "label": "Target Elevation",
+                        "name": "ElTrgt",
                         "sf": "Dgr_SF",
-                        "symbols": [],
                         "type": "int32",
-                        "units": "Degrees",
-                        "value": null
+                        "units": "Degrees"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "AzTrgt",
-                        "len": null,
-                        "mandatory": "false",
+                        "desc": "Auto target azimuth  in degrees from true north towards east.  Unimplemented for single axis horizontal tracker type",
+                        "detail": "Conformant implementations shall implement El or Az",
+                        "label": "Target Azimuth",
+                        "name": "AzTrgt",
                         "sf": "Dgr_SF",
-                        "symbols": [],
                         "type": "int32",
-                        "units": "Degrees",
-                        "value": null
+                        "units": "Degrees"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "ElPos",
-                        "len": null,
-                        "mandatory": "false",
+                        "desc": "Actual elevation position  in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
+                        "detail": "Conformant implementations shall implement El or Az",
+                        "label": "Elevation",
+                        "name": "ElPos",
                         "sf": "Dgr_SF",
-                        "symbols": [],
                         "type": "int32",
-                        "units": "Degrees",
-                        "value": null
+                        "units": "Degrees"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "AzPos",
-                        "len": null,
-                        "mandatory": "false",
+                        "desc": "Actual azimuth position  in degrees from true north towards east.  Unimplemented for single axis horizontal tracker type",
+                        "detail": "Conformant implementations shall implement El or Az",
+                        "label": "Azimuth",
+                        "name": "AzPos",
                         "sf": "Dgr_SF",
-                        "symbols": [],
                         "type": "int32",
-                        "units": "Degrees",
-                        "value": null
+                        "units": "Degrees"
                     },
                     {
-                        "access": "rw",
-                        "comments": [],
-                        "id": "ElCtl",
-                        "len": null,
-                        "mandatory": "false",
+                        "access": "RW",
+                        "desc": "Manual override target position of elevation in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
+                        "label": "Manual Elevation",
+                        "name": "ElCtl",
                         "sf": "Dgr_SF",
-                        "symbols": [],
                         "type": "int32",
-                        "units": "Degrees",
-                        "value": null
+                        "units": "Degrees"
                     },
                     {
-                        "access": "rw",
-                        "comments": [],
-                        "id": "AzCtl",
-                        "len": null,
-                        "mandatory": "false",
+                        "access": "RW",
+                        "desc": "Manual override target position of azimuth in degrees from true north towards east.  Unimplemented for single axis azimuth tracker type",
+                        "label": "Manual Azimuth",
+                        "name": "AzCtl",
                         "sf": "Dgr_SF",
-                        "symbols": [],
                         "type": "int32",
-                        "units": "Degrees",
-                        "value": null
+                        "units": "Degrees"
                     },
                     {
-                        "access": "rw",
-                        "comments": [],
-                        "id": "Ctl",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
+                        "access": "RW",
+                        "desc": "Control register. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.",
+                        "label": "Mode",
+                        "name": "Ctl",
                         "symbols": [
                             {
-                                "comments": [],
-                                "id": "Automatic",
+                                "name": "Automatic",
                                 "value": 0
                             },
                             {
-                                "comments": [],
-                                "id": "Manual",
+                                "name": "Manual",
                                 "value": 1
                             },
                             {
-                                "comments": [],
-                                "id": "Calibrate",
+                                "name": "Calibrate",
                                 "value": 2
                             }
                         ],
-                        "type": "enum16",
-                        "units": null,
-                        "value": null
+                        "type": "enum16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "Alm",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": null,
+                        "desc": "Tracker alarm conditions",
+                        "label": "Alarm",
+                        "name": "Alm",
                         "symbols": [
                             {
-                                "comments": [],
-                                "id": "SetPoint",
+                                "name": "SetPoint",
                                 "value": 0
                             },
                             {
-                                "comments": [],
-                                "id": "ObsEl",
+                                "name": "ObsEl",
                                 "value": 1
                             },
                             {
-                                "comments": [],
-                                "id": "ObsAz",
+                                "name": "ObsAz",
                                 "value": 2
                             }
                         ],
-                        "type": "bitfield16",
-                        "units": null,
-                        "value": null
+                        "type": "bitfield16"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "tracker_controller",
         "label": "Tracker Controller DRAFT 2",
+        "name": "tracker_controller",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "tracker_controller model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 601
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "tracker_controller model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Nam",
-                "len": 8,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "string",
-                "units": null,
-                "value": null
+                "desc": "Descriptive name for this control unit",
+                "label": "Controller",
+                "name": "Nam",
+                "size": 8,
+                "type": "string"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Typ",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "desc": "Type of tracker",
+                "label": "Type",
+                "mandatory": "M",
+                "name": "Typ",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "Unknown",
+                        "name": "Unknown",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "Fixed",
+                        "name": "Fixed",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "Horizontal",
+                        "name": "Horizontal",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "Tilted",
+                        "name": "Tilted",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "Azimuth",
+                        "name": "Azimuth",
                         "value": 4
                     },
                     {
-                        "comments": [],
-                        "id": "Dual",
+                        "name": "Dual",
                         "value": 5
                     },
                     {
-                        "comments": [],
-                        "id": "Other",
+                        "name": "Other",
                         "value": 99
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "DtLoc",
-                "len": 5,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "desc": "Local date in YYYYMMDD format",
+                "label": "Date",
+                "name": "DtLoc",
+                "size": 5,
                 "type": "string",
-                "units": "YYYYMMDD",
-                "value": null
+                "units": "YYYYMMDD"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TmLoc",
-                "len": 3,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "desc": "24 hour local time stamp to second",
+                "label": "Time",
+                "name": "TmLoc",
+                "size": 3,
                 "type": "string",
-                "units": "hhmmss",
-                "value": null
+                "units": "hhmmss"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Day",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Number of the day in the year (1-366)",
+                "label": "Day",
+                "name": "Day",
+                "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "GlblElCtl",
-                "len": null,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Global manual override target position of elevation in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
+                "label": "Manual Elevation",
+                "name": "GlblElCtl",
                 "sf": "Dgr_SF",
-                "symbols": [],
                 "type": "int32",
-                "units": "Degrees",
-                "value": null
+                "units": "Degrees"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "GlblAzCtl",
-                "len": null,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Global manual override target position of azimuth in degrees from true north towards east.  Unimplemented for single axis azimuth tracker type",
+                "label": "Manual Azimuth",
+                "name": "GlblAzCtl",
                 "sf": "Dgr_SF",
-                "symbols": [],
                 "type": "int32",
-                "units": "Degrees",
-                "value": null
+                "units": "Degrees"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "GlblCtl",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "access": "RW",
+                "desc": "Global Control register operates on all trackers. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.",
+                "detail": "The global controls all trackers",
+                "label": "Global Mode",
+                "name": "GlblCtl",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "Automatic",
+                        "name": "Automatic",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "Manual",
+                        "name": "Manual",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "Calibrate",
+                        "name": "Calibrate",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "GlblAlm",
-                "len": null,
-                "mandatory": "false",
-                "sf": null,
+                "desc": "Global tracker alarm conditions",
+                "detail": "Combined tracker alarm conditions.  See individual trackers for alarms",
+                "label": "Global Alarm",
+                "name": "GlblAlm",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "SetPoint",
+                        "name": "SetPoint",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "ObsEl",
+                        "name": "ObsEl",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "ObsAz",
+                        "name": "ObsAz",
                         "value": 2
                     }
                 ],
-                "type": "bitfield16",
-                "units": null,
-                "value": null
+                "type": "bitfield16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Dgr_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale Factor for targets and position measurements in degrees",
+                "label": "SF",
+                "mandatory": "M",
+                "name": "Dgr_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "N",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "desc": "Number of trackers being controlled.  Size of repeating block.",
+                "label": "Trackers",
+                "mandatory": "M",
+                "name": "N",
+                "type": "uint16"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 601
 }

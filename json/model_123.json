@@ -1,387 +1,305 @@
 {
     "group": {
-        "comments": [],
         "desc": "Immediate Inverter Controls ",
         "detail": "Ref 3: 8.7.1.2, 8.7.2.2, 8.7.3.2",
-        "groups": [],
-        "id": "controls",
         "label": "Immediate Controls",
+        "name": "controls",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "controls model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 123
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "controls model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Conn_WinTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Time window for connect/disconnect.",
+                "detail": " ",
+                "label": "Conn_WinTms",
+                "name": "Conn_WinTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Conn_RvrtTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Timeout period for connect/disconnect.",
+                "detail": " ",
+                "label": "Conn_RvrtTms",
+                "name": "Conn_RvrtTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "Conn",
-                "len": 1,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "Enumerated valued.  Connection control.",
+                "detail": " ",
+                "label": "Conn",
+                "mandatory": "M",
+                "name": "Conn",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "DISCONNECT",
+                        "name": "DISCONNECT",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "CONNECT",
+                        "name": "CONNECT",
                         "value": 1
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "WMaxLimPct",
-                "len": 1,
-                "mandatory": "true",
+                "access": "RW",
+                "desc": "Set power output to specified level.",
+                "detail": " ",
+                "label": "WMaxLimPct",
+                "mandatory": "M",
+                "name": "WMaxLimPct",
                 "sf": "WMaxLimPct_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "% WMax",
-                "value": null
+                "units": "% WMax"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "WMaxLimPct_WinTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Time window for power limit change.",
+                "detail": " ",
+                "label": "WMaxLimPct_WinTms",
+                "name": "WMaxLimPct_WinTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "WMaxLimPct_RvrtTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Timeout period for power limit.",
+                "detail": " ",
+                "label": "WMaxLimPct_RvrtTms",
+                "name": "WMaxLimPct_RvrtTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "WMaxLimPct_RmpTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Ramp time for moving from current setpoint to new setpoint.",
+                "detail": " ",
+                "label": "WMaxLimPct_RmpTms",
+                "name": "WMaxLimPct_RmpTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "WMaxLim_Ena",
-                "len": 1,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "Enumerated valued.  Throttle enable/disable control.",
+                "detail": " ",
+                "label": "WMaxLim_Ena",
+                "mandatory": "M",
+                "name": "WMaxLim_Ena",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "DISABLED",
+                        "name": "DISABLED",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "ENABLED",
+                        "name": "ENABLED",
                         "value": 1
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "OutPFSet",
-                "len": 1,
-                "mandatory": "true",
+                "access": "RW",
+                "desc": "Set power factor to specific value - cosine of angle.",
+                "detail": " ",
+                "label": "OutPFSet",
+                "mandatory": "M",
+                "name": "OutPFSet",
                 "sf": "OutPFSet_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "cos()",
-                "value": null
+                "units": "cos()"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "OutPFSet_WinTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Time window for power factor change.",
+                "detail": " ",
+                "label": "OutPFSet_WinTms",
+                "name": "OutPFSet_WinTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "OutPFSet_RvrtTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Timeout period for power factor.",
+                "detail": " ",
+                "label": "OutPFSet_RvrtTms",
+                "name": "OutPFSet_RvrtTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "OutPFSet_RmpTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Ramp time for moving from current setpoint to new setpoint.",
+                "detail": " ",
+                "label": "OutPFSet_RmpTms",
+                "name": "OutPFSet_RmpTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "OutPFSet_Ena",
-                "len": 1,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "Enumerated valued.  Fixed power factor enable/disable control.",
+                "detail": " ",
+                "label": "OutPFSet_Ena",
+                "mandatory": "M",
+                "name": "OutPFSet_Ena",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "DISABLED",
+                        "name": "DISABLED",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "ENABLED",
+                        "name": "ENABLED",
                         "value": 1
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "VArWMaxPct",
-                "len": 1,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Reactive power in percent of WMax.",
+                "detail": " ",
+                "label": "VArWMaxPct",
+                "name": "VArWMaxPct",
                 "sf": "VArPct_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "% WMax",
-                "value": null
+                "units": "% WMax"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "VArMaxPct",
-                "len": 1,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Reactive power in percent of VArMax.",
+                "detail": " ",
+                "label": "VArMaxPct",
+                "name": "VArMaxPct",
                 "sf": "VArPct_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "% VArMax",
-                "value": null
+                "units": "% VArMax"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "VArAvalPct",
-                "len": 1,
-                "mandatory": "false",
+                "access": "RW",
+                "desc": "Reactive power in percent of VArAval.",
+                "detail": " ",
+                "label": "VArAvalPct",
+                "name": "VArAvalPct",
                 "sf": "VArPct_SF",
-                "symbols": [],
                 "type": "int16",
-                "units": "% VArAval",
-                "value": null
+                "units": "% VArAval"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "VArPct_WinTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Time window for VAR limit change.",
+                "detail": " ",
+                "label": "VArPct_WinTms",
+                "name": "VArPct_WinTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "VArPct_RvrtTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Timeout period for VAR limit.",
+                "detail": " ",
+                "label": "VArPct_RvrtTms",
+                "name": "VArPct_RvrtTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "VArPct_RmpTms",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
+                "access": "RW",
+                "desc": "Ramp time for moving from current setpoint to new setpoint.",
+                "detail": " ",
+                "label": "VArPct_RmpTms",
+                "name": "VArPct_RmpTms",
                 "type": "uint16",
-                "units": "Secs",
-                "value": null
+                "units": "Secs"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "VArPct_Mod",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
+                "access": "RW",
+                "desc": "Enumerated value. VAR percent limit mode.",
+                "detail": " ",
+                "label": "VArPct_Mod",
+                "name": "VArPct_Mod",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "NONE",
+                        "name": "NONE",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "WMax",
+                        "name": "WMax",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "VArMax",
+                        "name": "VArMax",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "VArAval",
+                        "name": "VArAval",
                         "value": 3
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "id": "VArPct_Ena",
-                "len": 1,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "Enumerated valued.  Percent limit VAr enable/disable control.",
+                "detail": " ",
+                "label": "VArPct_Ena",
+                "mandatory": "M",
+                "name": "VArPct_Ena",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "DISABLED",
+                        "name": "DISABLED",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "ENABLED",
+                        "name": "ENABLED",
                         "value": 1
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "WMaxLimPct_SF",
-                "len": 1,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for power output percent.",
+                "detail": " ",
+                "label": "WMaxLimPct_SF",
+                "mandatory": "M",
+                "name": "WMaxLimPct_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "OutPFSet_SF",
-                "len": 1,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for power factor.",
+                "detail": " ",
+                "label": "OutPFSet_SF",
+                "mandatory": "M",
+                "name": "OutPFSet_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VArPct_SF",
-                "len": 1,
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "desc": "Scale factor for reactive power percent.",
+                "detail": " ",
+                "label": "VArPct_SF",
+                "name": "VArPct_SF",
+                "type": "sunssf"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 123
 }

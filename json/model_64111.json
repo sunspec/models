@@ -1,336 +1,214 @@
 {
     "group": {
-        "comments": [],
-        "desc": null,
-        "detail": null,
-        "groups": [],
-        "id": "model_64111",
         "label": "Basic Charge Controller",
+        "name": "model_64111",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_64111 model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 64111
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "model_64111 model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "Port",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null,
-                "value": null
+                "label": "Port Number",
+                "mandatory": "M",
+                "name": "Port",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "V_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "mandatory": "M",
+                "name": "V_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "A_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "mandatory": "M",
+                "name": "A_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "P_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "mandatory": "M",
+                "name": "P_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "AH_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "mandatory": "M",
+                "name": "AH_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "KWH_SF",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null,
-                "value": null
+                "mandatory": "M",
+                "name": "KWH_SF",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "BattV",
-                "len": null,
-                "mandatory": "true",
+                "label": "Battery Voltage",
+                "mandatory": "M",
+                "name": "BattV",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ArrayV",
-                "len": null,
-                "mandatory": "true",
+                "label": "Array Voltage",
+                "mandatory": "M",
+                "name": "ArrayV",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "OutputA",
-                "len": null,
-                "mandatory": "true",
+                "label": "Output Current",
+                "mandatory": "M",
+                "name": "OutputA",
                 "sf": "A_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "InputA",
-                "len": null,
-                "mandatory": "true",
+                "label": "Array Current",
+                "mandatory": "M",
+                "name": "InputA",
                 "sf": "P_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "A",
-                "value": null
+                "units": "A"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "ChargerSt",
-                "len": null,
-                "mandatory": "true",
-                "sf": null,
+                "label": "Operating State",
+                "mandatory": "M",
+                "name": "ChargerSt",
                 "symbols": [
                     {
-                        "comments": [],
-                        "id": "Off",
+                        "name": "Off",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "id": "Float",
+                        "name": "Float",
                         "value": 1
                     },
                     {
-                        "comments": [],
-                        "id": "Bulk",
+                        "name": "Bulk",
                         "value": 2
                     },
                     {
-                        "comments": [],
-                        "id": "Absorb",
+                        "name": "Absorb",
                         "value": 3
                     },
                     {
-                        "comments": [],
-                        "id": "EQ",
+                        "name": "EQ",
                         "value": 4
                     }
                 ],
-                "type": "enum16",
-                "units": null,
-                "value": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "OutputW",
-                "len": null,
-                "mandatory": "true",
+                "label": "Output Wattage",
+                "mandatory": "M",
+                "name": "OutputW",
                 "sf": "P_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "W",
-                "value": null
+                "units": "W"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TodayMinBatV",
-                "len": null,
-                "mandatory": "true",
+                "label": "Today's Minimum Battery Voltage",
+                "mandatory": "M",
+                "name": "TodayMinBatV",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TodayMaxBatV",
-                "len": null,
-                "mandatory": "true",
+                "label": "Today's Maximum Battery Voltage",
+                "mandatory": "M",
+                "name": "TodayMaxBatV",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "VOCV",
-                "len": null,
-                "mandatory": "true",
+                "label": "VOC",
+                "mandatory": "M",
+                "name": "VOCV",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TodayMaxVOC",
-                "len": null,
-                "mandatory": "true",
+                "label": "Today's Maximum VOC",
+                "mandatory": "M",
+                "name": "TodayMaxVOC",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TodaykWhOutput",
-                "len": null,
-                "mandatory": "true",
+                "label": "Today's kWh",
+                "mandatory": "M",
+                "name": "TodaykWhOutput",
                 "sf": "KWH_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "kWh",
-                "value": null
+                "units": "kWh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "TodayAHOutput",
-                "len": null,
-                "mandatory": "true",
+                "label": "Today's AH",
+                "mandatory": "M",
+                "name": "TodayAHOutput",
                 "sf": "AH_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "AH",
-                "value": null
+                "units": "AH"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "LifeTimeKWHOut",
-                "len": null,
-                "mandatory": "true",
+                "label": "Lifetime kWh",
+                "mandatory": "M",
+                "name": "LifeTimeKWHOut",
                 "sf": "P_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "kWh",
-                "value": null
+                "units": "kWh"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "LifeTimeAHOut",
-                "len": null,
-                "mandatory": "true",
+                "label": "Lifetime kAH",
+                "mandatory": "M",
+                "name": "LifeTimeAHOut",
                 "sf": "KWH_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "kAH",
-                "value": null
+                "units": "kAH"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "LifeTimeMaxOut",
-                "len": null,
-                "mandatory": "true",
+                "label": "Lifetime Maximum Output Wattage",
+                "mandatory": "M",
+                "name": "LifeTimeMaxOut",
                 "sf": "P_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "W",
-                "value": null
+                "units": "W"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "LifeTimeMaxBatt",
-                "len": null,
-                "mandatory": "true",
+                "label": "Lifetime Maximum Battery Voltage",
+                "mandatory": "M",
+                "name": "LifeTimeMaxBatt",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             },
             {
-                "access": "r",
-                "comments": [],
-                "id": "LifeTimeMaxVOC",
-                "len": null,
-                "mandatory": "true",
+                "label": "Lifetime Maximum VOC Voltage",
+                "mandatory": "M",
+                "name": "LifeTimeMaxVOC",
                 "sf": "V_SF",
-                "symbols": [],
                 "type": "uint16",
-                "units": "V",
-                "value": null
+                "units": "V"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 64111
 }

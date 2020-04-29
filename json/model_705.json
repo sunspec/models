@@ -1,468 +1,352 @@
 {
     "group": {
-        "comments": [],
         "desc": "DER Volt-Var model.",
-        "detail": null,
         "groups": [
             {
                 "comments": [
-                    "Stored curve sets - Number of curve sets contained in NCrv"
+                    "Stored Curve Sets - Number of curve sets contained in NCrv"
                 ],
                 "count": "NCrv",
                 "desc": "Stored curve sets.",
-                "detail": null,
                 "groups": [
                     {
                         "comments": [
-                            "Stored curve sets - curve points for each stored curve - Number of curve points contained in NPt"
+                            "Stored Curve Sets - Curve points for each stored curve - Number of curve points contained in NPt"
                         ],
                         "count": "NPt",
                         "desc": "Stored curve points.",
-                        "detail": null,
-                        "groups": [],
-                        "id": "Pt",
                         "label": "Stored Curve Points",
+                        "name": "Pt",
                         "points": [
                             {
-                                "access": "rw",
-                                "comments": [],
+                                "access": "RW",
                                 "desc": "Curve voltage point as percentage.",
-                                "detail": null,
-                                "id": "V",
                                 "label": "Voltage Point",
-                                "mandatory": "true",
-                                "sf": null,
-                                "symbols": [],
+                                "mandatory": "M",
+                                "name": "V",
                                 "type": "uint16",
                                 "units": "VRefPct"
                             },
                             {
-                                "access": "rw",
-                                "comments": [],
+                                "access": "RW",
                                 "desc": "Curve reactive power point as set in DeptRef point.",
-                                "detail": null,
-                                "id": "Var",
                                 "label": "Reactive Power Point",
-                                "mandatory": "true",
+                                "mandatory": "M",
+                                "name": "Var",
                                 "sf": "DeptRef_SF",
-                                "symbols": [],
                                 "type": "int16",
                                 "units": "VarPct"
                             }
-                        ]
+                        ],
+                        "type": "group"
                     }
                 ],
-                "id": "Crv",
                 "label": "Stored Curves",
+                "name": "Crv",
                 "points": [
                     {
-                        "access": "rw",
-                        "comments": [],
+                        "access": "RW",
                         "desc": "Number of active points.",
-                        "detail": null,
-                        "id": "ActPt",
                         "label": "Active Points",
-                        "mandatory": "true",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null
+                        "mandatory": "M",
+                        "name": "ActPt",
+                        "type": "uint16"
                     },
                     {
-                        "access": "rw",
-                        "comments": [],
+                        "access": "RW",
                         "desc": "Curve dependent reference.",
-                        "detail": null,
-                        "id": "DeptRef",
                         "label": "Dependent Reference",
-                        "mandatory": "true",
-                        "sf": null,
+                        "mandatory": "M",
+                        "name": "DeptRef",
                         "symbols": [
                             {
-                                "comments": [],
-                                "desc": null,
-                                "detail": null,
-                                "id": "W_MAX_PCT",
                                 "label": "Percent Max Watts",
+                                "name": "W_MAX_PCT",
                                 "value": 1
                             },
                             {
-                                "comments": [],
-                                "desc": null,
-                                "detail": null,
-                                "id": "VAR_MAX_PCT",
                                 "label": "Percent Max Vars",
+                                "name": "VAR_MAX_PCT",
                                 "value": 2
                             },
                             {
-                                "comments": [],
-                                "desc": null,
-                                "detail": null,
-                                "id": "VAR_AVAL_PCT",
                                 "label": "Percent Available Vars",
+                                "name": "VAR_AVAL_PCT",
                                 "value": 3
                             }
                         ],
-                        "type": "enum16",
-                        "units": null
+                        "type": "enum16"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "desc": null,
-                        "detail": null,
-                        "id": "Pri",
-                        "label": null,
-                        "mandatory": "false",
-                        "sf": null,
+                        "access": "R",
+                        "mandatory": "O",
+                        "name": "Pri",
                         "symbols": [
                             {
-                                "comments": [],
-                                "desc": null,
-                                "detail": null,
-                                "id": "ACTIVE",
-                                "label": null,
+                                "desc": "Active power priority.",
+                                "label": "Active Power Priority",
+                                "name": "ACTIVE",
                                 "value": 1
                             },
                             {
-                                "comments": [],
-                                "desc": null,
-                                "detail": null,
-                                "id": "REACTIVE",
-                                "label": null,
+                                "desc": "Reactive power priority.",
+                                "label": "Reactive Power Priority",
+                                "name": "REACTIVE",
                                 "value": 2
+                            },
+                            {
+                                "desc": "IEEE 1547-2018 power priority mode.",
+                                "label": "IEEE 1547 Power Priority",
+                                "name": "IEEE_1547",
+                                "value": 3
+                            },
+                            {
+                                "desc": "Track PF setting derived from current active and reactive power settings.",
+                                "label": "PF Power Priority",
+                                "name": "PF",
+                                "value": 4
+                            },
+                            {
+                                "desc": "Power priority is vendor specific mode.",
+                                "label": "Vendor Power Priority",
+                                "name": "VENDOR",
+                                "value": 5
                             }
                         ],
-                        "type": "enum16",
-                        "units": null
+                        "type": "enum16"
                     },
                     {
-                        "access": "rw",
-                        "comments": [],
+                        "access": "RW",
                         "desc": "Vref adjustment as percentage.",
-                        "detail": null,
-                        "id": "VRef",
                         "label": "Vref adjustment",
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null
+                        "mandatory": "O",
+                        "name": "VRef",
+                        "type": "uint16"
                     },
                     {
-                        "access": "rw",
-                        "comments": [],
+                        "access": "RW",
                         "desc": "Enable automonous vref",
-                        "detail": null,
-                        "id": "VRefAuto",
                         "label": "Autonomous Vref Enable",
-                        "mandatory": "false",
-                        "sf": null,
+                        "mandatory": "O",
+                        "name": "VRefAuto",
                         "symbols": [
                             {
-                                "comments": [],
                                 "desc": "Enabled flag (Disabled = 0, Enabled = 1).",
-                                "detail": null,
-                                "id": "ENABLED",
                                 "label": "Enabled Flag",
+                                "name": "ENABLED",
                                 "value": 0
                             }
                         ],
-                        "type": "bitfield16",
-                        "units": null
+                        "type": "bitfield16"
                     },
                     {
-                        "access": "rw",
-                        "comments": [],
+                        "access": "RW",
                         "desc": "Autonomous vref time constant.",
-                        "detail": null,
-                        "id": "VRefTms",
                         "label": "Auto Vref Time Constant",
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null
+                        "mandatory": "O",
+                        "name": "VRefTms",
+                        "type": "uint16"
                     },
                     {
-                        "access": "rw",
-                        "comments": [],
+                        "access": "RW",
                         "desc": "Open loop response time.",
-                        "detail": null,
-                        "id": "RspTms",
                         "label": "Open Loop Response Time",
-                        "mandatory": "false",
-                        "sf": null,
-                        "symbols": [],
-                        "type": "uint16",
-                        "units": null
+                        "mandatory": "O",
+                        "name": "RspTms",
+                        "type": "uint16"
                     },
                     {
-                        "access": "rw",
-                        "comments": [],
+                        "access": "RW",
                         "desc": "Curve read-write access.",
-                        "detail": null,
-                        "id": "ReadOnly",
                         "label": "Curve Access",
-                        "mandatory": "false",
-                        "sf": null,
+                        "mandatory": "O",
+                        "name": "ReadOnly",
                         "symbols": [
                             {
-                                "comments": [],
                                 "desc": "Curve has read-write access.",
-                                "detail": null,
-                                "id": "RW",
                                 "label": "Read-Write Access",
+                                "name": "RW",
                                 "value": 0
                             },
                             {
-                                "comments": [],
                                 "desc": "Curve has read-only access.",
-                                "detail": null,
-                                "id": "R",
                                 "label": "Read-Only Access",
+                                "name": "R",
                                 "value": 1
                             }
                         ],
-                        "type": "enum16",
-                        "units": null
+                        "type": "enum16"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "DERVoltVar",
         "label": "DER Volt-Var",
+        "name": "DERVoltVar",
         "points": [
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "DER Volt-Var model id.",
-                "detail": null,
-                "id": "ID",
                 "label": "Model ID",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
-                "units": null,
                 "value": 705
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "DER Volt-Var model length.",
-                "detail": null,
-                "id": "L",
                 "label": "Model Length",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
+                "access": "RW",
                 "desc": "Is Volt-Var control active.",
-                "detail": null,
-                "id": "Ena",
                 "label": "Module Enable",
-                "mandatory": "true",
-                "sf": null,
+                "mandatory": "M",
+                "name": "Ena",
                 "symbols": [
                     {
-                        "comments": [],
                         "desc": "Function is enabled.",
-                        "detail": null,
-                        "id": "DISABLED",
                         "label": "Disabled",
+                        "name": "DISABLED",
                         "value": 0
                     },
                     {
-                        "comments": [],
                         "desc": "Function is disabled.",
-                        "detail": null,
-                        "id": "ENABLED",
                         "label": "Enabled",
+                        "name": "ENABLED",
                         "value": 1
                     }
                 ],
-                "type": "enum16",
-                "units": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "Current active  curve state.",
                 "detail": " ",
-                "id": "CrvSt",
                 "label": "Active Curve State",
-                "mandatory": "true",
-                "sf": null,
+                "mandatory": "M",
+                "name": "CrvSt",
                 "symbols": [
                     {
-                        "comments": [],
                         "desc": "No curve is currenly active.",
-                        "detail": null,
-                        "id": "INACTIVE",
                         "label": "No active curve",
+                        "name": "INACTIVE",
                         "value": 0
                     },
                     {
-                        "comments": [],
                         "desc": "Active curve in effect.",
-                        "detail": null,
-                        "id": "ACTIVE",
                         "label": "Active curve enabled",
+                        "name": "ACTIVE",
                         "value": 1
                     }
                 ],
-                "type": "enum16",
-                "units": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
+                "access": "RW",
                 "desc": "Set active curve. 0 = No active curve",
-                "detail": null,
-                "id": "AdptCrvReq",
                 "label": "Set active curve request",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null
+                "mandatory": "M",
+                "name": "AdptCrvReq",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "Result of last set active curve operation.",
-                "detail": null,
-                "id": "AdptCrvRslt",
                 "label": "Set active curve result",
-                "mandatory": "true",
-                "sf": null,
+                "mandatory": "M",
+                "name": "AdptCrvRslt",
                 "symbols": [
                     {
-                        "comments": [],
                         "desc": "Curve update in progress.",
-                        "detail": null,
-                        "id": "IN_PROGRESS",
                         "label": "Update In Progress",
+                        "name": "IN_PROGRESS",
                         "value": 0
                     },
                     {
-                        "comments": [],
                         "desc": "Curve update completed successfully.",
-                        "detail": null,
-                        "id": "COMPLETED",
                         "label": "Update Complete",
+                        "name": "COMPLETED",
                         "value": 1
                     },
                     {
-                        "comments": [],
                         "desc": "Curve update failed.",
-                        "detail": null,
-                        "id": "FAILED",
                         "label": "Update Failed",
+                        "name": "FAILED",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "Number of curve points supported.",
                 "detail": " ",
-                "id": "NPt",
                 "label": "Number of Points",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null
+                "mandatory": "M",
+                "name": "NPt",
+                "static": "S",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "Number of stored curves supported.",
-                "detail": null,
-                "id": "NCrv",
                 "label": "Stored Curve Count",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null
+                "mandatory": "M",
+                "name": "NCrv",
+                "static": "S",
+                "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
+                "access": "RW",
                 "desc": "Reversion time in seconds.  0 = No reversion time",
-                "detail": null,
-                "id": "RvrtTms",
                 "label": "Reversion timeout",
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint32",
-                "units": null
+                "mandatory": "O",
+                "name": "RvrtTms",
+                "type": "uint32"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "Reversion time remaining in seconds",
-                "detail": null,
-                "id": "RvrtRem",
                 "label": "Reversion time left",
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint32",
-                "units": null
+                "mandatory": "O",
+                "name": "RvrtRem",
+                "type": "uint32"
             },
             {
-                "access": "rw",
-                "comments": [],
+                "access": "RW",
                 "desc": "Default curve after reversion timeout.",
-                "detail": null,
-                "id": "RvrtCrv",
                 "label": "Reversion curve",
-                "mandatory": "false",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null
+                "mandatory": "O",
+                "name": "RvrtCrv",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "Scale factor for curve voltage points.",
-                "detail": null,
-                "id": "V_SF",
                 "label": "Voltage Scale Factor",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null
+                "mandatory": "M",
+                "name": "V_SF",
+                "static": "S",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "Scale factor for curve var points.",
-                "detail": null,
-                "id": "DeptRef_SF",
                 "label": "Var  Scale Factor",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null
+                "mandatory": "M",
+                "name": "DeptRef_SF",
+                "static": "S",
+                "type": "sunssf"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 705
 }

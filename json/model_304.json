@@ -1,79 +1,62 @@
 {
     "group": {
-        "comments": [],
         "desc": "Include to support orientation measurements",
-        "detail": null,
         "groups": [
             {
-                "comments": [],
                 "count": 0,
-                "groups": [],
-                "id": "incl",
+                "name": "incl",
                 "points": [
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "Inclx",
-                        "len": null,
-                        "mandatory": "true",
-                        "sf": "-2",
-                        "symbols": [],
+                        "desc": "X-Axis inclination",
+                        "label": "X",
+                        "mandatory": "M",
+                        "name": "Inclx",
+                        "sf": -2,
                         "type": "int32",
-                        "units": "Degrees",
-                        "value": null
+                        "units": "Degrees"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "Incly",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": "-2",
-                        "symbols": [],
+                        "desc": "Y-Axis inclination",
+                        "label": "Y",
+                        "name": "Incly",
+                        "sf": -2,
                         "type": "int32",
-                        "units": "Degrees",
-                        "value": null
+                        "units": "Degrees"
                     },
                     {
-                        "access": "r",
-                        "comments": [],
-                        "id": "Inclz",
-                        "len": null,
-                        "mandatory": "false",
-                        "sf": "-2",
-                        "symbols": [],
+                        "desc": "Z-Axis inclination",
+                        "label": "Z",
+                        "name": "Inclz",
+                        "sf": -2,
                         "type": "int32",
-                        "units": "Degrees",
-                        "value": null
+                        "units": "Degrees"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
-        "id": "inclinometer",
         "label": "Inclinometer Model",
+        "name": "inclinometer",
         "points": [
             {
-                "access": "r",
-                "comments": [],
-                "desc": "inclinometer model ID.",
-                "id": "ID",
+                "desc": "Model identifier",
                 "label": "Model ID",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
                 "value": 304
             },
             {
-                "access": "r",
-                "comments": [],
-                "desc": "inclinometer model length.",
-                "id": "L",
+                "desc": "Model length",
                 "label": "Model Length",
-                "mandatory": "true",
-                "symbols": [],
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
                 "type": "uint16"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 304
 }
