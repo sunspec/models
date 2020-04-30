@@ -1,364 +1,295 @@
 {
     "group": {
-        "comments": [],
         "desc": "DER high voltage trip model.",
-        "detail": null,
         "groups": [
             {
                 "comments": [
-                    "Stored curve sets - Number of curve sets contained in NCrv"
+                    "Stored curve sets - Number of curve sets contained in NCrv - The first set is read-only and indicates the current settings."
                 ],
                 "count": "NCrv",
                 "desc": "Stored curve sets.",
-                "detail": null,
                 "groups": [
                     {
                         "comments": [
                             "Stored curve set containing a Must Trip, May Trip, and Momentary Cessation Curve - Number of curve points contained in NPt"
                         ],
                         "desc": "Stored must trip curve.",
-                        "detail": null,
                         "groups": [
                             {
-                                "comments": [],
                                 "count": "NPt",
                                 "desc": "Must trip curve points.",
-                                "detail": null,
-                                "groups": [],
-                                "id": "Pt",
                                 "label": "Must Trip Curve Points",
+                                "name": "Pt",
                                 "points": [
                                     {
-                                        "access": "r",
-                                        "comments": [],
+                                        "access": "R",
                                         "desc": "Curve voltage point as percentage.",
-                                        "detail": null,
-                                        "id": "V",
                                         "label": "Voltage Point",
-                                        "mandatory": "true",
+                                        "mandatory": "M",
+                                        "name": "V",
                                         "sf": "V_SF",
-                                        "symbols": [],
                                         "type": "uint16",
                                         "units": "VRefPct"
                                     },
                                     {
-                                        "access": "r",
-                                        "comments": [],
+                                        "access": "R",
                                         "desc": "Curve time point in seconds.",
-                                        "detail": null,
-                                        "id": "Tms",
                                         "label": "Time Point",
-                                        "mandatory": "true",
+                                        "mandatory": "M",
+                                        "name": "Tms",
                                         "sf": "Tms_SF",
-                                        "symbols": [],
                                         "type": "uint16",
                                         "units": "Secs"
                                     }
-                                ]
+                                ],
+                                "type": "group"
                             }
                         ],
-                        "id": "MustTrip",
                         "label": "Must Trip Curve",
+                        "name": "MustTrip",
                         "points": [
                             {
-                                "access": "r",
-                                "comments": [],
+                                "access": "R",
                                 "desc": "Number of active points in must trip curve.",
-                                "detail": null,
-                                "id": "ActPt",
                                 "label": "Number of Active Points",
-                                "mandatory": "false",
-                                "sf": null,
-                                "symbols": [],
-                                "type": "uint16",
-                                "units": null
+                                "mandatory": "O",
+                                "name": "ActPt",
+                                "type": "uint16"
                             }
-                        ]
+                        ],
+                        "type": "group"
                     },
                     {
-                        "comments": [],
                         "desc": "Stored may trip curve.",
-                        "detail": null,
                         "groups": [
                             {
-                                "comments": [],
                                 "count": "NPt",
                                 "desc": "May trip curve points.",
-                                "detail": null,
-                                "groups": [],
-                                "id": "Pt",
                                 "label": "May Trip Curve Points",
+                                "name": "Pt",
                                 "points": [
                                     {
-                                        "access": "r",
-                                        "comments": [],
+                                        "access": "R",
                                         "desc": "Curve voltage point as percentage.",
-                                        "detail": null,
-                                        "id": "V",
                                         "label": "Voltage Point",
-                                        "mandatory": "true",
+                                        "mandatory": "M",
+                                        "name": "V",
                                         "sf": "V_SF",
-                                        "symbols": [],
                                         "type": "uint16",
                                         "units": "VRefPct"
                                     },
                                     {
-                                        "access": "r",
-                                        "comments": [],
+                                        "access": "R",
                                         "desc": "Curve time point in seconds.",
-                                        "detail": null,
-                                        "id": "Tms",
                                         "label": "Time Point",
-                                        "mandatory": "true",
+                                        "mandatory": "M",
+                                        "name": "Tms",
                                         "sf": "Tms_SF",
-                                        "symbols": [],
                                         "type": "uint16",
                                         "units": "Secs"
                                     }
-                                ]
+                                ],
+                                "type": "group"
                             }
                         ],
-                        "id": "MayTrip",
                         "label": "May Trip Curve",
+                        "name": "MayTrip",
                         "points": [
                             {
-                                "access": "r",
-                                "comments": [],
+                                "access": "R",
                                 "desc": "Number of active points in may trip curve.",
-                                "detail": null,
-                                "id": "ActPt",
                                 "label": "Number of Active Points",
-                                "mandatory": "false",
-                                "sf": null,
-                                "symbols": [],
-                                "type": "uint16",
-                                "units": null
+                                "mandatory": "O",
+                                "name": "ActPt",
+                                "type": "uint16"
                             }
-                        ]
+                        ],
+                        "type": "group"
                     },
                     {
-                        "comments": [],
                         "desc": "Stored momentary cessation curve.",
-                        "detail": null,
                         "groups": [
                             {
-                                "comments": [],
                                 "count": "NPt",
                                 "desc": "Monetary cessation curve points.",
-                                "detail": null,
-                                "groups": [],
-                                "id": "Pt",
                                 "label": "Mom Cessation Curve Points",
+                                "name": "Pt",
                                 "points": [
                                     {
-                                        "access": "r",
-                                        "comments": [],
+                                        "access": "R",
                                         "desc": "Curve voltage point as percentage.",
-                                        "detail": null,
-                                        "id": "V",
                                         "label": "Voltage Point",
-                                        "mandatory": "true",
+                                        "mandatory": "M",
+                                        "name": "V",
                                         "sf": "V_SF",
-                                        "symbols": [],
                                         "type": "uint16",
                                         "units": "VRefPct"
                                     },
                                     {
-                                        "access": "r",
-                                        "comments": [],
+                                        "access": "R",
                                         "desc": "Curve time point in seconds.",
-                                        "detail": null,
-                                        "id": "Tms",
                                         "label": "Time Point",
-                                        "mandatory": "true",
+                                        "mandatory": "M",
+                                        "name": "Tms",
                                         "sf": "Tms_SF",
-                                        "symbols": [],
                                         "type": "uint16",
                                         "units": "Secs"
                                     }
-                                ]
+                                ],
+                                "type": "group"
                             }
                         ],
-                        "id": "MomCess",
                         "label": "Momentary Cessation Curve",
+                        "name": "MomCess",
                         "points": [
                             {
-                                "access": "r",
-                                "comments": [],
+                                "access": "R",
                                 "desc": "Number of active points in the momentary cessation curve.",
-                                "detail": null,
-                                "id": "ActPt",
                                 "label": "Number of Active Points",
-                                "mandatory": "false",
-                                "sf": null,
-                                "symbols": [],
-                                "type": "uint16",
-                                "units": null
+                                "mandatory": "O",
+                                "name": "ActPt",
+                                "type": "uint16"
                             }
-                        ]
+                        ],
+                        "type": "group"
                     }
                 ],
-                "id": "Crv",
                 "label": "Stored Curves",
-                "points": []
+                "name": "Crv",
+                "type": "group"
             }
         ],
-        "id": "DERTripHV",
         "label": "DER Trip HV",
+        "name": "DERTripHV",
         "points": [
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "DER high voltage trip  model id.",
-                "detail": null,
-                "id": "ID",
                 "label": "DER Trip HV Model ID",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
-                "units": null,
                 "value": 708
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "DER high voltage trip model length.",
-                "detail": null,
-                "id": "L",
                 "label": "DER Trip HV Model Length",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "desc": "Is DER high voltage trip control active.",
+                "access": "RW",
+                "desc": "DER high voltage trip control enable.",
                 "detail": " ",
-                "id": "ModEna",
                 "label": "DER Trip HV Module Enable",
-                "mandatory": "true",
-                "sf": null,
+                "mandatory": "M",
+                "name": "Ena",
                 "symbols": [
                     {
-                        "comments": [],
-                        "desc": "Enabled flag (Disabled = 0, Enabled = 1).",
-                        "detail": null,
-                        "id": "ENABLED",
-                        "label": "Enabled Flag",
-                        "value": 0
-                    }
-                ],
-                "type": "bitfield16",
-                "units": null
-            },
-            {
-                "access": "rw",
-                "comments": [],
-                "desc": "Index of  curve points to adopt. First curve index is 1.",
-                "detail": " ",
-                "id": "AdoptCrv",
-                "label": "Adopt Curve",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null
-            },
-            {
-                "access": "r",
-                "comments": [],
-                "desc": "Result of last adopt curve operation.",
-                "detail": null,
-                "id": "AdoptCrvRslt",
-                "label": "Adopt Curve Result",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [
-                    {
-                        "comments": [],
-                        "desc": "Curve update in progress.",
-                        "detail": null,
-                        "id": "IN_PROGRESS",
-                        "label": "Update In Progress",
+                        "desc": "Function is enabled.",
+                        "detail": "Function is enabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
                         "value": 0
                     },
                     {
-                        "comments": [],
+                        "desc": "Function is disabled.",
+                        "detail": "Function is disabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "R",
+                "desc": "Current active  curve state.",
+                "label": "Active Curve State",
+                "mandatory": "M",
+                "name": "CrvSt",
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Index of  curve points to adopt. First curve index is 1.",
+                "detail": " ",
+                "label": "Adopt Curve Request",
+                "mandatory": "M",
+                "name": "AdptCrvReq",
+                "type": "uint16"
+            },
+            {
+                "access": "R",
+                "desc": "Result of last adopt curve operation.",
+                "label": "Adopt Curve Result",
+                "mandatory": "M",
+                "name": "AdptCrvRslt",
+                "symbols": [
+                    {
+                        "desc": "Curve update in progress.",
+                        "label": "Update In Progress",
+                        "name": "IN_PROGRESS",
+                        "value": 0
+                    },
+                    {
                         "desc": "Curve update completed successfully.",
-                        "detail": null,
-                        "id": "COMPLETED",
                         "label": "Update Complete",
+                        "name": "COMPLETED",
                         "value": 1
                     },
                     {
-                        "comments": [],
                         "desc": "Curve update failed.",
-                        "detail": null,
-                        "id": "FAILED",
                         "label": "Update Failed",
+                        "name": "FAILED",
                         "value": 2
                     }
                 ],
-                "type": "enum16",
-                "units": null
+                "type": "enum16"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "Number of curve points supported.",
                 "detail": " ",
-                "id": "NPt",
                 "label": "Number of Points",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null
+                "mandatory": "M",
+                "name": "NPt",
+                "static": "S",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "Number of stored curves supported.",
-                "detail": null,
-                "id": "NCrv",
                 "label": "Stored Curve Count",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null
+                "mandatory": "M",
+                "name": "NCrv",
+                "static": "S",
+                "type": "uint16"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "Scale factor for curve voltage points.",
-                "detail": null,
-                "id": "V_SF",
                 "label": "Voltage Scale Factor",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null
+                "mandatory": "M",
+                "name": "V_SF",
+                "static": "S",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "Scale factor for curve time points.",
-                "detail": null,
-                "id": "Tms_SF",
                 "label": "Time Point Scale Factor",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null
+                "mandatory": "M",
+                "name": "Tms_SF",
+                "static": "S",
+                "type": "sunssf"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 708
 }

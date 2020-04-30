@@ -1,174 +1,235 @@
 {
     "group": {
-        "comments": [],
         "desc": "DER Frequency Droop model.",
-        "detail": null,
-        "groups": [],
-        "id": "DERFreqDroop",
+        "groups": [
+            {
+                "comments": [
+                    "Stored control sets - Number of control sets contained in NCtl - The first set is read-only and indicates the current settings."
+                ],
+                "count": "NCtl",
+                "desc": "Stored curve sets.",
+                "label": "Stored Curves",
+                "name": "Ctl",
+                "points": [
+                    {
+                        "access": "RW",
+                        "desc": "The deadband value for over-frequency conditions in Hz.",
+                        "label": "Over-frequency Deadband",
+                        "mandatory": "M",
+                        "name": "DbOf",
+                        "sf": "Db_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "The deadband value for under-frequency conditions in Hz.",
+                        "label": "Under-frequency Deadband",
+                        "mandatory": "M",
+                        "name": "DbUf",
+                        "sf": "Db_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Frequency droop per-unit frequency change for over-frequency conditions corresponding to 1 per-unit power output change.",
+                        "label": "Over-frequency Change Ratio",
+                        "mandatory": "M",
+                        "name": "KOf",
+                        "sf": "K_SF",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Frequency droop per-unit frequency change for under-frequency conditions corresponding to 1 per-unit power output change.",
+                        "label": "Under-frequency Change Ratio",
+                        "mandatory": "M",
+                        "name": "KUf",
+                        "sf": "K_SF",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "The open-loop response time in seconds.",
+                        "label": "Open-Loop Response Time",
+                        "mandatory": "M",
+                        "name": "RspTms",
+                        "sf": "RspTms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
         "label": "DER Frequency Droop",
+        "name": "DERFreqDroop",
         "points": [
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "DER Frequency Droop model id.",
-                "detail": null,
-                "id": "ID",
                 "label": "DER Frequency Droop ID",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
                 "type": "uint16",
-                "units": null,
                 "value": 711
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "DER Frequency Droop  model length.",
-                "detail": null,
-                "id": "L",
                 "label": "DER Frequency Droop Length",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "uint16",
-                "units": null
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "desc": "Is DER Frequency-Watt (Frequency-Droop) control active.",
-                "detail": null,
-                "id": "ModEna",
-                "label": null,
-                "mandatory": "true",
-                "sf": null,
+                "access": "RW",
+                "desc": "DER Frequency-Watt (Frequency-Droop) control enable.",
+                "mandatory": "M",
+                "name": "Ena",
                 "symbols": [
                     {
-                        "comments": [],
-                        "desc": null,
-                        "detail": null,
-                        "id": "DISABLED",
-                        "label": null,
+                        "desc": "Function is enabled.",
+                        "detail": "Function is enabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
                         "value": 0
                     },
                     {
-                        "comments": [],
-                        "desc": null,
-                        "detail": null,
-                        "id": "ENABLED",
-                        "label": null,
+                        "desc": "Function is disabled.",
+                        "detail": "Function is disabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
                         "value": 1
                     }
                 ],
-                "type": "enum16",
-                "units": null
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "desc": "The deadband value for over-frequency conditions in Hz.",
-                "detail": null,
-                "id": "DbOf",
-                "label": "Over-frequency Deadband",
-                "mandatory": "true",
-                "sf": "Db_SF",
-                "symbols": [],
-                "type": "uint16",
-                "units": "Hz"
+                "access": "R",
+                "desc": "Current active  curve state.",
+                "detail": " ",
+                "label": "Active Curve State",
+                "mandatory": "M",
+                "name": "CrvSt",
+                "symbols": [
+                    {
+                        "desc": "No curve is currenly active.",
+                        "label": "No active curve",
+                        "name": "INACTIVE",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Active curve in effect.",
+                        "label": "Active curve enabled",
+                        "name": "ACTIVE",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "desc": "The deadband value for under-frequency conditions in Hz.",
-                "detail": null,
-                "id": "DbUf",
-                "label": "Under-frequency Deadband",
-                "mandatory": "true",
-                "sf": "Db_SF",
-                "symbols": [],
-                "type": "uint16",
-                "units": "Hz"
+                "access": "RW",
+                "desc": "Set active curve. 0 = No active curve",
+                "label": "Set active curve request",
+                "mandatory": "M",
+                "name": "AdptCrvReq",
+                "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "desc": "Frequency droop per-unit frequency change for over-frequency conditions corresponding to 1 per-unit power output change.",
-                "detail": null,
-                "id": "KOf",
-                "label": "Over-frequency Change Ratio",
-                "mandatory": "true",
-                "sf": "K_SF",
-                "symbols": [],
-                "type": "uint16",
-                "units": null
+                "access": "R",
+                "desc": "Result of last set active curve operation.",
+                "label": "Set active curve result",
+                "mandatory": "M",
+                "name": "AdptCrvRslt",
+                "symbols": [
+                    {
+                        "desc": "Curve update in progress.",
+                        "label": "Update In Progress",
+                        "name": "IN_PROGRESS",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Curve update completed successfully.",
+                        "detail": "The duration from a step change in control signal input until the output changes by 90% of its final change, before any overshoot.",
+                        "label": "Update Complete",
+                        "name": "COMPLETED",
+                        "value": 1
+                    },
+                    {
+                        "desc": "Curve update failed.",
+                        "label": "Update Failed",
+                        "name": "FAILED",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "desc": "Frequency droop per-unit frequency change for under-frequency conditions corresponding to 1 per-unit power output change.",
-                "detail": null,
-                "id": "KUf",
-                "label": "Under-frequency Change Ratio",
-                "mandatory": "true",
-                "sf": "K_SF",
-                "symbols": [],
-                "type": "uint16",
-                "units": null
+                "access": "R",
+                "desc": "Number of stored curves supported.",
+                "label": "Stored Curve Count",
+                "mandatory": "M",
+                "name": "NCtl",
+                "static": "S",
+                "type": "uint16"
             },
             {
-                "access": "rw",
-                "comments": [],
-                "desc": "The open-loop response time in seconds.",
-                "detail": "The duration from a step change in control signal input until the output changes by 90% of its final change, before any overshoot.",
-                "id": "RspTms",
-                "label": "Open-Loop Response Time",
-                "mandatory": "true",
-                "sf": "RspTms_SF",
-                "symbols": [],
-                "type": "uint16",
-                "units": "Secs"
+                "access": "RW",
+                "desc": "Reversion time in seconds.  0 = No reversion time",
+                "label": "Reversion timeout",
+                "mandatory": "O",
+                "name": "RvrtTms",
+                "type": "uint32"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
+                "desc": "Reversion time remaining in seconds",
+                "label": "Reversion time left",
+                "mandatory": "O",
+                "name": "RvrtRem",
+                "type": "uint32"
+            },
+            {
+                "access": "RW",
+                "desc": "Default curve after reversion timeout.",
+                "label": "Reversion curve",
+                "mandatory": "O",
+                "name": "RvrtCrv",
+                "type": "uint16"
+            },
+            {
+                "access": "R",
                 "desc": "Deadband scale factor.",
-                "detail": null,
-                "id": "Db_SF",
                 "label": "Deadband Scale Factor",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null
+                "mandatory": "M",
+                "name": "Db_SF",
+                "static": "S",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "Frequency change scale factor.",
-                "detail": null,
-                "id": "K_SF",
                 "label": "Frequency Change Scale Factor",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null
+                "mandatory": "M",
+                "name": "K_SF",
+                "static": "S",
+                "type": "sunssf"
             },
             {
-                "access": "r",
-                "comments": [],
+                "access": "R",
                 "desc": "Open loop response time scale factor.",
-                "detail": null,
-                "id": "RspTms_SF",
                 "label": "Open-Loop Scale Factor",
-                "mandatory": "true",
-                "sf": null,
-                "symbols": [],
-                "type": "sunssf",
-                "units": null
+                "mandatory": "M",
+                "name": "RspTms_SF",
+                "static": "S",
+                "type": "sunssf"
             }
-        ]
+        ],
+        "type": "group"
     },
     "id": 711
 }
