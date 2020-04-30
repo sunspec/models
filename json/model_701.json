@@ -5,7 +5,6 @@
         "name": "DERMeasureAC",
         "points": [
             {
-                "access": "R",
                 "desc": "DER AC measurement  model id.",
                 "label": "DER AC Measure Model ID",
                 "mandatory": "M",
@@ -15,7 +14,6 @@
                 "value": 701
             },
             {
-                "access": "R",
                 "desc": "DER AC measurement  model length.",
                 "label": "DER AC Measure Model Length",
                 "mandatory": "M",
@@ -24,13 +22,11 @@
                 "type": "uint16"
             },
             {
-                "access": "R",
                 "comments": [
                     "Wiring Type"
                 ],
                 "desc": "AC wiring type.",
                 "label": "AC Wiring Type",
-                "mandatory": "O",
                 "name": "ACType",
                 "symbols": [
                     {
@@ -52,7 +48,6 @@
                 "type": "enum16"
             },
             {
-                "access": "R",
                 "comments": [
                     "Operating State"
                 ],
@@ -109,7 +104,6 @@
                 "type": "enum16"
             },
             {
-                "access": "R",
                 "comments": [
                     "Alarms"
                 ],
@@ -207,548 +201,442 @@
                 "type": "bitfield32"
             },
             {
-                "access": "R",
                 "comments": [
                     "Summary"
                 ],
                 "desc": "Total active power.",
                 "detail": "The active power being injected or absorbed in watts. The value is positive if power is being injected and negative if power is being absorbed.",
                 "label": "Active Power",
-                "mandatory": "O",
                 "name": "W",
                 "sf": "W_SF",
                 "type": "int16",
                 "units": "W"
             },
             {
-                "access": "R",
                 "desc": "Total apparent power.",
                 "detail": "The apparent power being injected or absorbed in volt-amps. The value is positive if power is being injected and negative if power is being absorbed.",
                 "label": "Apparent Power",
-                "mandatory": "O",
                 "name": "VA",
                 "sf": "VA_SF",
                 "type": "int16",
                 "units": "VA"
             },
             {
-                "access": "R",
                 "desc": "Total reactive power.",
                 "detail": "The reactive power being injected or absorbed in volt-amps. The value is positive if power is being injected and negative if power is being absorbed.",
                 "label": "Reactive Power",
-                "mandatory": "O",
                 "name": "Var",
                 "sf": "Var_SF",
                 "type": "int16",
                 "units": "Var"
             },
             {
-                "access": "R",
                 "desc": "Power factor.",
                 "detail": "The power factor as computed by xxx. [Should it be signed?]",
                 "label": "Power Factor",
-                "mandatory": "O",
                 "name": "PF",
                 "sf": "PF_SF",
                 "type": "int16"
             },
             {
-                "access": "R",
                 "desc": "Total AC current.",
                 "detail": "The total AC current being injected or absorbed in amps. The value is positive if power is being injected and negative if power is being absorbed.",
                 "label": "Total AC Current",
-                "mandatory": "O",
                 "name": "A",
                 "sf": "A_SF",
                 "type": "int16",
                 "units": "A"
             },
             {
-                "access": "R",
                 "desc": "Line to line AC voltage as an average of active phases.",
                 "label": "Voltage LL",
-                "mandatory": "O",
                 "name": "LLV",
                 "sf": "V_SF",
                 "type": "int16",
                 "units": "V"
             },
             {
-                "access": "R",
                 "desc": "Line to neutral AC voltage as an average of active phases.",
                 "label": "Voltage LN",
-                "mandatory": "O",
                 "name": "LNV",
                 "sf": "V_SF",
                 "type": "int16",
                 "units": "V"
             },
             {
-                "access": "R",
                 "desc": "AC frequency.",
                 "label": "Frequency",
-                "mandatory": "O",
                 "name": "Hz",
                 "sf": "Hz_SF",
                 "type": "int16",
                 "units": "Hz"
             },
             {
-                "access": "R",
                 "desc": "Total active energy injected (Quadrants 1 & 4).",
                 "label": "Total Energy Injected",
-                "mandatory": "O",
                 "name": "TotWhInj",
                 "sf": "TotWh_SF",
                 "type": "acc64",
                 "units": "Wh"
             },
             {
-                "access": "R",
                 "desc": "Total active energy absorbed (Quadrants 2 & 3).",
                 "label": "Total Energy Absorbed",
-                "mandatory": "O",
                 "name": "TotWhAbs",
                 "sf": "TotWh_SF",
                 "type": "acc64",
                 "units": "Wh"
             },
             {
-                "access": "R",
                 "desc": "Total reactive energy injected (Quadrants 1 & 2).",
                 "label": "Total Reactive Energy Inj",
-                "mandatory": "O",
                 "name": "TotVarhInj",
                 "sf": "TotVar_SF",
                 "type": "acc64",
                 "units": "Varh"
             },
             {
-                "access": "R",
                 "desc": "Total reactive energy absorbed (Quadrants 3 & 4).",
                 "label": "Total Reactive Energy Abs",
-                "mandatory": "O",
                 "name": "TotVarhAbs",
                 "sf": "TotVar_SF",
                 "type": "acc64",
                 "units": "Varh"
             },
             {
-                "access": "R",
                 "comments": [
                     "Temperatures"
                 ],
                 "desc": "Ambient temperature.",
                 "label": "Ambient Temperature",
-                "mandatory": "O",
                 "name": "TmpAmb",
                 "sf": "Tmp_SF",
                 "type": "int16",
                 "units": "C"
             },
             {
-                "access": "R",
                 "desc": "Cabinet temperature.",
                 "label": "Cabinet Temperature",
-                "mandatory": "O",
                 "name": "TmpCab",
                 "sf": "Tmp_SF",
                 "type": "int16",
                 "units": "C"
             },
             {
-                "access": "R",
                 "desc": "Heat sink temperature.",
                 "label": "Heat Sink Temperature",
-                "mandatory": "O",
                 "name": "TmpSnk",
                 "sf": "Tmp_SF",
                 "type": "int16",
                 "units": "C"
             },
             {
-                "access": "R",
                 "desc": "Transformer temperature.",
                 "label": "Transformer Temperature",
-                "mandatory": "O",
                 "name": "TmpTrns",
                 "sf": "Tmp_SF",
                 "type": "int16",
                 "units": "C"
             },
             {
-                "access": "R",
                 "desc": "IGBT/MOSFET temperature.",
                 "label": "IGBT/MOSFET Temperature",
-                "mandatory": "O",
                 "name": "TmpSw",
                 "sf": "Tmp_SF",
                 "type": "int16",
                 "units": "C"
             },
             {
-                "access": "R",
                 "desc": "Other temperature.",
                 "label": "Other Temperature",
-                "mandatory": "O",
                 "name": "TmpOt",
                 "sf": "Tmp_SF",
                 "type": "int16",
                 "units": "C"
             },
             {
-                "access": "R",
                 "comments": [
                     "L1"
                 ],
                 "desc": "Active power L1.",
                 "label": "Watts L1",
-                "mandatory": "O",
                 "name": "WL1",
                 "sf": "W_SF",
                 "type": "int16",
                 "units": "W"
             },
             {
-                "access": "R",
                 "desc": "Apparent power L1.",
                 "label": "VA L1",
-                "mandatory": "O",
                 "name": "VAL1",
                 "sf": "VA_SF",
                 "type": "int16",
                 "units": "VA"
             },
             {
-                "access": "R",
                 "desc": "Reactive power L1.",
                 "label": "Var L1",
-                "mandatory": "O",
                 "name": "VarL1",
                 "sf": "Var_SF",
                 "type": "int16",
                 "units": "Var"
             },
             {
-                "access": "R",
                 "desc": "Power factor phase L1.",
                 "label": "PF L1",
-                "mandatory": "O",
                 "name": "PFL1",
                 "sf": "PF_SF",
                 "type": "int16"
             },
             {
-                "access": "R",
                 "desc": "Current phase L1.",
                 "label": "Amps L1",
-                "mandatory": "O",
                 "name": "AL1",
                 "sf": "A_SF",
                 "type": "int16",
                 "units": "A"
             },
             {
-                "access": "R",
                 "desc": "Phase voltage L1-L2.",
                 "label": "Phase Voltage L1-L2",
-                "mandatory": "O",
                 "name": "VL1L2",
                 "sf": "V_SF",
                 "type": "int16",
                 "units": "V"
             },
             {
-                "access": "R",
                 "desc": "Phase voltage L1-N.",
                 "label": "Phase Voltage L1-N",
-                "mandatory": "O",
                 "name": "VL1",
                 "sf": "V_SF",
                 "type": "int16",
                 "units": "V"
             },
             {
-                "access": "R",
                 "desc": "Total active energy injected L1.",
                 "label": "Total Watt-hours Inj L1",
-                "mandatory": "O",
                 "name": "TotWhInjL1",
                 "sf": "TotWh_SF",
                 "type": "acc64",
                 "units": "Wh"
             },
             {
-                "access": "R",
                 "desc": "Total active energy absorbed L1.",
                 "label": "Total Watt-hours Abs L1",
-                "mandatory": "O",
                 "name": "TotWhAbsL1",
                 "sf": "TotWh_SF",
                 "type": "acc64",
                 "units": "Wh"
             },
             {
-                "access": "R",
                 "desc": "Total reactive energy injected L1.",
                 "label": "Total Var-hours Inj L1",
-                "mandatory": "O",
                 "name": "TotVarhInjL1",
                 "sf": "TotVarh_SF",
                 "type": "acc64",
                 "units": "Varh"
             },
             {
-                "access": "R",
                 "desc": "Total reactive energy absorbed L1.",
                 "label": "Total Var-hours Abs L1",
-                "mandatory": "O",
                 "name": "TotVarhAbsL1",
                 "sf": "TotVarh_SF",
                 "type": "acc64",
                 "units": "Varh"
             },
             {
-                "access": "R",
                 "comments": [
                     "L2"
                 ],
                 "desc": "Active power L2.",
                 "label": "Watts L2",
-                "mandatory": "O",
                 "name": "WL2",
                 "sf": "W_SF",
                 "type": "int16",
                 "units": "W"
             },
             {
-                "access": "R",
                 "desc": "Apparent power L2.",
                 "label": "VA L2",
-                "mandatory": "O",
                 "name": "VAL2",
                 "sf": "VA_SF",
                 "type": "int16",
                 "units": "VA"
             },
             {
-                "access": "R",
                 "desc": "Reactive power L2.",
                 "label": "Var L2",
-                "mandatory": "O",
                 "name": "VarL2",
                 "sf": "Var_SF",
                 "type": "int16",
                 "units": "Var"
             },
             {
-                "access": "R",
                 "desc": "Power factor L2.",
                 "label": "PF L2",
-                "mandatory": "O",
                 "name": "PFL2",
                 "sf": "PF_SF",
                 "type": "int16"
             },
             {
-                "access": "R",
                 "desc": "Current L2.",
                 "label": "Amps L2",
-                "mandatory": "O",
                 "name": "AL2",
                 "sf": "A_SF",
                 "type": "int16",
                 "units": "A"
             },
             {
-                "access": "R",
                 "desc": "Phase voltage L2-L3.",
                 "label": "Phase Voltage L2-L3",
-                "mandatory": "O",
                 "name": "VL2L3",
                 "sf": "V_SF",
                 "type": "int16",
                 "units": "V"
             },
             {
-                "access": "R",
                 "desc": "Phase voltage L2-N.",
                 "label": "Phase Voltage L2-N",
-                "mandatory": "O",
                 "name": "VL2",
                 "sf": "V_SF",
                 "type": "int16",
                 "units": "V"
             },
             {
-                "access": "R",
                 "desc": "Total active energy injected L2.",
                 "label": "Total Watt-hours Inj L2",
-                "mandatory": "O",
                 "name": "TotWhInjL2",
                 "sf": "TotWh_SF",
                 "type": "acc64",
                 "units": "Wh"
             },
             {
-                "access": "R",
                 "desc": "Total active energy absorbed L2.",
                 "label": "Total Watt-hours Abs L2",
-                "mandatory": "O",
                 "name": "TotWhAbsL2",
                 "sf": "TotWh_SF",
                 "type": "acc64",
                 "units": "Wh"
             },
             {
-                "access": "R",
                 "desc": "Total reactive energy injected L2.",
                 "label": "Total Var-hours Inj L2",
-                "mandatory": "O",
                 "name": "TotVarhInjL2",
                 "sf": "TotVarh_SF",
                 "type": "acc64",
                 "units": "Varh"
             },
             {
-                "access": "R",
                 "desc": "Total reactive energy absorbed L2.",
                 "label": "Total Var-hours Abs L2",
-                "mandatory": "O",
                 "name": "TotVarhAbsL2",
                 "sf": "TotVarh_SF",
                 "type": "acc64",
                 "units": "Varh"
             },
             {
-                "access": "R",
                 "comments": [
                     "L3"
                 ],
                 "desc": "Active power L3.",
                 "label": "Watts L3",
-                "mandatory": "O",
                 "name": "WL3",
                 "sf": "W_SF",
                 "type": "int16",
                 "units": "W"
             },
             {
-                "access": "R",
                 "desc": "Apparent power L3.",
                 "label": "VA L3",
-                "mandatory": "O",
                 "name": "VAL3",
                 "sf": "VA_SF",
                 "type": "int16",
                 "units": "VA"
             },
             {
-                "access": "R",
                 "desc": "Reactive power L3.",
                 "label": "Var L3",
-                "mandatory": "O",
                 "name": "VarL3",
                 "sf": "Var_SF",
                 "type": "int16",
                 "units": "Var"
             },
             {
-                "access": "R",
                 "desc": "Power factor L3.",
                 "label": "PF L3",
-                "mandatory": "O",
                 "name": "PFL3",
                 "sf": "PF_SF",
                 "type": "int16"
             },
             {
-                "access": "R",
                 "desc": "Current L3.",
                 "label": "Amps L3",
-                "mandatory": "O",
                 "name": "AL3",
                 "sf": "A_SF",
                 "type": "int16",
                 "units": "A"
             },
             {
-                "access": "R",
                 "desc": "Phase voltage L3-L1.",
                 "label": "Phase Voltage L3-L1",
-                "mandatory": "O",
                 "name": "VL3L1",
                 "sf": "V_SF",
                 "type": "int16",
                 "units": "V"
             },
             {
-                "access": "R",
                 "desc": "Phase voltage L3-N.",
                 "label": "Phase Voltage L3-N",
-                "mandatory": "O",
                 "name": "VL3N",
                 "sf": "V_SF",
                 "type": "int16",
                 "units": "V"
             },
             {
-                "access": "R",
                 "desc": "Total active energy injected L3.",
                 "label": "Total Watt-hours Inj L3",
-                "mandatory": "O",
                 "name": "TotWhInjL3",
                 "sf": "TotWh_SF",
                 "type": "acc64",
                 "units": "Wh"
             },
             {
-                "access": "R",
                 "desc": "Total active energy absorbed L3.",
                 "label": "Total Watt-hours Abs L3",
-                "mandatory": "O",
                 "name": "TotWhAbsL3",
                 "sf": "TotWh_SF",
                 "type": "acc64",
                 "units": "Wh"
             },
             {
-                "access": "R",
                 "desc": "Total reactive energy injected L3.",
                 "label": "Total Var-hours Inj L3",
-                "mandatory": "O",
                 "name": "TotVarhInjL3",
                 "sf": "TotVarh_SF",
                 "type": "acc64",
                 "units": "Varh"
             },
             {
-                "access": "R",
                 "desc": "Total reactive energy absorbed L3.",
                 "label": "Total Var-hours Abs L3",
-                "mandatory": "O",
                 "name": "TotVarhAbsL3",
                 "sf": "TotVarh_SF",
                 "type": "acc64",
                 "units": "Varh"
             },
             {
-                "access": "R",
                 "comments": [
                     "Active Power Throttling"
                 ],
                 "desc": "Throttling in Pct of maximum active power.",
                 "label": "Throttling in Pct",
-                "mandatory": "O",
                 "name": "ThrotPct",
                 "type": "int16",
                 "units": "Pct"
             },
             {
-                "access": "R",
                 "desc": "Active throttling source.",
                 "label": "Throttle Source Information",
-                "mandatory": "O",
                 "name": "ThrotSrc",
                 "symbols": [
                     {
@@ -815,94 +703,74 @@
                 "type": "bitfield32"
             },
             {
-                "access": "R",
                 "comments": [
                     "Scale Factors"
                 ],
                 "desc": "Current scale factor.",
                 "label": "Current Scale Factor",
-                "mandatory": "O",
                 "name": "A_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Voltage scale factor.",
                 "label": "Voltage Scale Factor",
-                "mandatory": "O",
                 "name": "V_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Frequency scale factor.",
                 "label": "Frequency Scale Factor",
-                "mandatory": "O",
                 "name": "Hz_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Active power scale factor.",
                 "label": "Active Power Scale Factor",
-                "mandatory": "O",
                 "name": "W_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Power factor scale factor.",
                 "label": "Power Factor Scale Factor",
-                "mandatory": "O",
                 "name": "PF_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Apparent power scale factor.",
                 "label": "Apparent Power Scale Factor",
-                "mandatory": "O",
                 "name": "VA_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Reactive power scale factor.",
                 "label": "Reactive Power Scale Factor",
-                "mandatory": "O",
                 "name": "Var_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Active energy scale factor.",
                 "label": "Active Energy Scale Factor",
-                "mandatory": "O",
                 "name": "TotWh_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Reactive energy scale factor.",
                 "label": "Reactive Energy Scale Factor",
-                "mandatory": "O",
                 "name": "TotVarh_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Temperature scale factor.",
                 "label": "Temperature Scale Factor",
-                "mandatory": "O",
                 "name": "Tmp_SF",
                 "static": "S",
                 "type": "sunssf"
