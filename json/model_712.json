@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "DER Watt-Var mod.",
+        "desc": "DER Watt-Var model.",
         "groups": [
             {
                 "comments": [
@@ -78,8 +78,6 @@
                         "type": "enum16"
                     },
                     {
-                        "access": "R",
-                        "mandatory": "O",
                         "name": "Pri",
                         "symbols": [
                             {
@@ -97,7 +95,6 @@
                         "access": "RW",
                         "desc": "Curve read-write access.",
                         "label": "Curve Access",
-                        "mandatory": "O",
                         "name": "ReadOnly",
                         "symbols": [
                             {
@@ -123,7 +120,6 @@
         "name": "DERWattVar",
         "points": [
             {
-                "access": "R",
                 "desc": "DER Watt-Var model id.",
                 "label": "Model ID",
                 "mandatory": "M",
@@ -133,7 +129,6 @@
                 "value": 712
             },
             {
-                "access": "R",
                 "desc": "DER Watt-Var model length.",
                 "label": "Model Length",
                 "mandatory": "M",
@@ -166,7 +161,6 @@
                 "type": "enum16"
             },
             {
-                "access": "R",
                 "desc": "Current active  curve state.",
                 "detail": " ",
                 "label": "Active Curve State",
@@ -197,7 +191,6 @@
                 "type": "uint16"
             },
             {
-                "access": "R",
                 "desc": "Result of last set active curve operation.",
                 "label": "Set active curve result",
                 "mandatory": "M",
@@ -225,7 +218,6 @@
                 "type": "enum16"
             },
             {
-                "access": "R",
                 "desc": "Number of curve points supported.",
                 "detail": " ",
                 "label": "Number of Points",
@@ -235,7 +227,6 @@
                 "type": "uint16"
             },
             {
-                "access": "R",
                 "desc": "Number of stored curves supported.",
                 "label": "Stored Curve Count",
                 "mandatory": "M",
@@ -247,15 +238,12 @@
                 "access": "RW",
                 "desc": "Reversion time in seconds.  0 = No reversion time",
                 "label": "Reversion timeout",
-                "mandatory": "O",
                 "name": "RvrtTms",
                 "type": "uint32"
             },
             {
-                "access": "R",
                 "desc": "Reversion time remaining in seconds",
                 "label": "Reversion time left",
-                "mandatory": "O",
                 "name": "RvrtRem",
                 "type": "uint32"
             },
@@ -263,12 +251,10 @@
                 "access": "RW",
                 "desc": "Default curve after reversion timeout.",
                 "label": "Reversion curve",
-                "mandatory": "O",
                 "name": "RvrtCrv",
                 "type": "uint16"
             },
             {
-                "access": "R",
                 "desc": "Scale factor for curve var points.",
                 "label": "Var  Scale Factor",
                 "mandatory": "M",
