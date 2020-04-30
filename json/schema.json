@@ -41,7 +41,8 @@
 				    "enum": ["group", "sync"]
 				},
 				"count": {
-				    "type": ["string", "integer"]
+				    "type": ["integer", "string"],
+					"default": 1
 				},
 				"points": {
 				    "type": "array",
