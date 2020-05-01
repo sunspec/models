@@ -91,14 +91,14 @@
                         "label": "DC Energy Injected",
                         "name": "DCWhInj",
                         "sf": "DCWH_SF",
-                        "type": "acc64"
+                        "type": "uint64"
                     },
                     {
                         "desc": "Total cumulative DC energy absorbed for the port.",
                         "label": "DC Energy Absorbed",
                         "name": "DCWhAbs",
                         "sf": "DCWH_SF",
-                        "type": "acc64"
+                        "type": "uint64"
                     },
                     {
                         "desc": "DC port temerature.",
@@ -249,14 +249,14 @@
                 "label": "DC Energy Injected",
                 "name": "DCWhInj",
                 "sf": "DCWH_SF",
-                "type": "acc64"
+                "type": "uint64"
             },
             {
                 "desc": "Total cumulative DC energy absorbed for all ports.",
                 "label": "DC Energy Absorbed",
                 "name": "DCWhAbs",
                 "sf": "DCWH_SF",
-                "type": "acc64"
+                "type": "uint64"
             },
             {
                 "desc": "DC current scale factor.",
@@ -283,6 +283,13 @@
                 "desc": "DC energy scale factor.",
                 "label": "DC Energy Scale Factor",
                 "name": "DCWH_SF",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Temperature Scale Factor.",
+                "label": "Temperature Scale Factor",
+                "name": "Tmp_SF",
                 "static": "S",
                 "type": "sunssf"
             }

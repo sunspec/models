@@ -5,7 +5,6 @@
         "name": "DERCapacity",
         "points": [
             {
-                "access": "R",
                 "desc": "DER capacity model id.",
                 "label": "DER Capacity Model ID",
                 "mandatory": "M",
@@ -15,7 +14,6 @@
                 "value": 702
             },
             {
-                "access": "R",
                 "desc": "DER capacity name  model length.",
                 "label": "DER Capacity Model Length",
                 "mandatory": "M",
@@ -24,180 +22,144 @@
                 "type": "uint16"
             },
             {
-                "access": "R",
                 "comments": [
                     "Nameplate Ratings - Specifies capacity ratings"
                 ],
                 "desc": "Maximum active power rating at unity power factor in watts.",
                 "label": "Active Power Max Rating",
-                "mandatory": "O",
                 "name": "WMaxRtg",
                 "sf": "W_SF",
                 "type": "uint16",
                 "units": "W"
             },
             {
-                "access": "R",
                 "desc": "Active power rating at specified over-excited power factor in watts.",
                 "label": "Active Power (Over-Excited) Rating",
-                "mandatory": "O",
                 "name": "WOvrExtRtg",
                 "sf": "W_SF",
                 "type": "uint16",
                 "units": "W"
             },
             {
-                "access": "R",
                 "desc": "Specified over-excited power factor.",
                 "label": "Specified Over-Excited PF",
-                "mandatory": "O",
                 "name": "WOvrExtRtgPF",
                 "sf": "PF_SF",
                 "type": "uint16"
             },
             {
-                "access": "R",
                 "desc": "Active power rating at specified under-excited power factor in watts.",
                 "label": "Active Power (Under-Excited) Rating",
-                "mandatory": "O",
                 "name": "WUndExtRtg",
                 "sf": "W_SF",
                 "type": "uint16",
                 "units": "W"
             },
             {
-                "access": "R",
                 "desc": "Specified under-excited power factor.",
                 "label": "Specified Under-Excited PF",
-                "mandatory": "O",
                 "name": "WUndExtRtgPF",
                 "sf": "PF_SF",
                 "type": "uint16"
             },
             {
-                "access": "R",
                 "desc": "Maximum apparent power rating in voltamperes.",
                 "label": "Apparent Power Max Rating",
-                "mandatory": "O",
                 "name": "VAMaxRtg",
                 "sf": "VA_SF",
                 "type": "uint16",
                 "units": "VA"
             },
             {
-                "access": "R",
                 "desc": "Maximum injected reactive power rating in vars.",
                 "label": "Reactive Power Injected Rating",
-                "mandatory": "O",
                 "name": "VarMaxInjRtg",
                 "sf": "Var_SF",
                 "type": "uint16",
                 "units": "Var"
             },
             {
-                "access": "R",
                 "desc": "Maximum absorbed reactive power rating in vars.",
                 "label": "Reactive Power Absorbed Rating",
-                "mandatory": "O",
                 "name": "VarMaxAbsRtg",
                 "sf": "Var_SF",
                 "type": "uint16",
                 "units": "Var"
             },
             {
-                "access": "R",
                 "desc": "Maximum active power charge rate in watts.",
                 "label": "Charge Rate Max Rating",
-                "mandatory": "O",
                 "name": "WChaRteMaxRtg",
                 "sf": "W_SF",
                 "type": "uint16",
                 "units": "W"
             },
             {
-                "access": "R",
                 "desc": "Maximum active power discharge rate in watts.",
                 "label": "Discharge Rate Max Rating",
-                "mandatory": "O",
                 "name": "WDisChaRteMaxRtg",
                 "sf": "W_SF",
                 "type": "uint16",
                 "units": "W"
             },
             {
-                "access": "R",
                 "desc": "Maximum apparent power charge rate in voltamperes.",
                 "label": "Charge Rate Max VA Rating",
-                "mandatory": "O",
                 "name": "VAChaRteMaxRtg",
                 "sf": "VA_SF",
                 "type": "uint16",
                 "units": "VA"
             },
             {
-                "access": "R",
                 "desc": "Maximum apparent power discharge rate in voltamperes.",
                 "label": "Discharge Rate Max VA Rating",
-                "mandatory": "O",
                 "name": "VADisChaRteMaxRtg",
                 "sf": "VA_SF",
                 "type": "uint16",
                 "units": "VA"
             },
             {
-                "access": "R",
                 "desc": "AC voltage nominal rating.",
                 "label": "AC Voltage Nominal Rating",
-                "mandatory": "O",
                 "name": "VNomRtg",
                 "sf": "V_SF",
                 "type": "uint16",
                 "units": "V"
             },
             {
-                "access": "R",
                 "desc": "AC voltage maximum rating.",
                 "label": "AC Voltage Max Rating",
-                "mandatory": "O",
                 "name": "VMaxRtg",
                 "sf": "V_SF",
                 "type": "uint16",
                 "units": "V"
             },
             {
-                "access": "R",
                 "desc": "AC voltage minimum rating.",
                 "label": "AC Voltage Min Rating",
-                "mandatory": "O",
                 "name": "VMinRtg",
                 "sf": "V_SF",
                 "type": "uint16",
                 "units": "V"
             },
             {
-                "access": "R",
                 "desc": "AC current maximum rating in amps.",
                 "label": "AC Current Max Rating",
-                "mandatory": "O",
                 "name": "AMaxRtg",
                 "sf": "A_SF",
                 "type": "uint16",
                 "units": "A"
             },
             {
-                "access": "R",
                 "desc": "Power factor over-excited rating.",
                 "label": "PF Over-Excited Rating",
-                "mandatory": "O",
                 "name": "PFOvrExtRtg",
                 "sf": "PF_SF",
                 "type": "uint16"
             },
             {
-                "access": "R",
                 "desc": "Power factor under-excited rating.",
                 "label": "PF Under-Excited Rating",
-                "mandatory": "O",
                 "name": "PFUndExtRtg",
                 "sf": "PF_SF",
                 "type": "uint16"
@@ -211,10 +173,8 @@
                 "units": "S"
             },
             {
-                "access": "R",
                 "desc": "Normal operating performace category as specified in IEEE 1547-2018.",
                 "label": "Normal Operating Category",
-                "mandatory": "O",
                 "name": "NorOpCatRtg",
                 "symbols": [
                     {
@@ -229,10 +189,8 @@
                 "type": "enum16"
             },
             {
-                "access": "R",
                 "desc": "Abnormal operating performance category as specified in IEEE 1547-2018.",
                 "label": "Abnormal Operating Category",
-                "mandatory": "O",
                 "name": "AbnOpCatRtg",
                 "symbols": [
                     {
@@ -328,8 +286,8 @@
                 ],
                 "desc": "Maximum active power setting used to adjust maximum active power setting.",
                 "label": "Active Power Max Setting",
-                "mandatory": "O",
                 "name": "WMax",
+                "sf": "W_SF",
                 "type": "uint16",
                 "units": "W"
             },
@@ -337,7 +295,6 @@
                 "access": "RW",
                 "desc": "Active power setting at specified over-excited power factor in watts.",
                 "label": "Active Power (Over-Excited) Setting",
-                "mandatory": "O",
                 "name": "WMaxOvrExt",
                 "sf": "W_SF",
                 "type": "uint16",
@@ -347,7 +304,6 @@
                 "access": "RW",
                 "desc": "Specified over-excited power factor.",
                 "label": "Specified Over-Excited PF",
-                "mandatory": "O",
                 "name": "WOvrExtPF",
                 "sf": "PF_SF",
                 "type": "uint16"
@@ -356,7 +312,6 @@
                 "access": "RW",
                 "desc": "Active power setting at specified under-excited power factor in watts.",
                 "label": "Active Power (Under-Excited) Setting",
-                "mandatory": "O",
                 "name": "WMaxUndExt",
                 "sf": "W_SF",
                 "type": "uint16",
@@ -366,7 +321,6 @@
                 "access": "RW",
                 "desc": "Specified under-excited power factor.",
                 "label": "Specified Under-Excited PF",
-                "mandatory": "O",
                 "name": "WUndExtPF",
                 "sf": "PF_SF",
                 "type": "uint16"
@@ -375,8 +329,8 @@
                 "access": "RW",
                 "desc": "Maximum apparent power setting used to adjust maximum apparant power rating.",
                 "label": "Apparent Power Max Setting",
-                "mandatory": "O",
                 "name": "VAMax",
+                "sf": "VA_SF",
                 "type": "uint16",
                 "units": "VA"
             },
@@ -384,8 +338,8 @@
                 "access": "RW",
                 "desc": "Maximum AC current setting used to adjust maximum ac current rating.",
                 "label": "AC Current Max Setting",
-                "mandatory": "O",
                 "name": "AMax",
+                "sf": "A_SF",
                 "type": "uint16",
                 "units": "A"
             },
@@ -393,8 +347,8 @@
                 "access": "RW",
                 "desc": "Nominal AC voltage setting.",
                 "label": "Nominal AC Voltage Setting",
-                "mandatory": "O",
                 "name": "Vnom",
+                "sf": "V_SF",
                 "type": "uint16",
                 "units": "V"
             },
@@ -402,8 +356,8 @@
                 "access": "RW",
                 "desc": "Nominal AC voltage offset setting.",
                 "label": "Nominal AC Voltage Offset Setting",
-                "mandatory": "O",
                 "name": "VRefOfs",
+                "sf": "V_SF",
                 "type": "uint16",
                 "units": "V"
             },
@@ -411,8 +365,8 @@
                 "access": "RW",
                 "desc": "AC voltage maximum setting used to adjust AC voltage maximum rating.",
                 "label": "AC Voltage Max Setting",
-                "mandatory": "O",
                 "name": "VMax",
+                "sf": "V_SF",
                 "type": "uint16",
                 "units": "V"
             },
@@ -420,8 +374,8 @@
                 "access": "RW",
                 "desc": "AC voltage minimum setting used to adjust AC voltage maximum rating.",
                 "label": "AC Voltage Min Setting",
-                "mandatory": "O",
                 "name": "VMin",
+                "sf": "V_SF",
                 "type": "uint16",
                 "units": "V"
             },
@@ -429,8 +383,8 @@
                 "access": "RW",
                 "desc": "Maximum injected reactive power setting used to adjust maximum injected reactive power rating.",
                 "label": "Reactive Power Injected Setting",
-                "mandatory": "O",
                 "name": "VarMaxInj",
+                "sf": "Var_SF",
                 "type": "uint16",
                 "units": "Var"
             },
@@ -438,8 +392,8 @@
                 "access": "RW",
                 "desc": "Maximum absorbed reactive power setting used to adjust maximum absorbed reactive power rating.",
                 "label": "Reactive Power Absorbed Setting",
-                "mandatory": "O",
                 "name": "VarMaxAbs",
+                "sf": "Var_SF",
                 "type": "uint16",
                 "units": "Var"
             },
@@ -447,8 +401,8 @@
                 "access": "RW",
                 "desc": "Maximum active power charge rate setting used to adjust maximum active power charge rate rating.",
                 "label": "Charge Rate Max Setting",
-                "mandatory": "O",
                 "name": "WChaRteMax",
+                "sf": "W_SF",
                 "type": "uint16",
                 "units": "W"
             },
@@ -456,8 +410,8 @@
                 "access": "RW",
                 "desc": "Maximum active power discharge rate setting used to adjust maximum active power discharge rate rating.",
                 "label": "Discharge Rate Max Setting",
-                "mandatory": "O",
                 "name": "WDisChaRteMax",
+                "sf": "W_SF",
                 "type": "uint16",
                 "units": "W"
             },
@@ -465,8 +419,8 @@
                 "access": "RW",
                 "desc": "Maximum apparent power charge rate setting used to adjust maximum apparent power charge rate rating.",
                 "label": "Charge Rate Max VA Setting",
-                "mandatory": "O",
                 "name": "VAChaRteMax",
+                "sf": "VA_SF",
                 "type": "uint16",
                 "units": "VA"
             },
@@ -474,8 +428,8 @@
                 "access": "RW",
                 "desc": "Maximum apparent power discharge rate setting used to adjust maximum apparent power discharge rate rating.",
                 "label": "Discharge Rate Max VA Setting",
-                "mandatory": "O",
                 "name": "VADisChaRteMax",
+                "sf": "VA_SF",
                 "type": "uint16",
                 "units": "VA"
             },
@@ -487,58 +441,46 @@
                 "type": "bitfield16"
             },
             {
-                "access": "R",
                 "comments": [
                     "Scale Factors"
                 ],
                 "desc": "Active power scale factor.",
                 "label": "Active Power Scale Factor",
-                "mandatory": "O",
                 "name": "W_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Power factor scale factor.",
                 "label": "Power Factor Scale Factor",
-                "mandatory": "O",
                 "name": "PF_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Apparent power scale factor.",
                 "label": "Apparent Power Scale Factor",
-                "mandatory": "O",
                 "name": "VA_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Reactive power scale factor.",
                 "label": "Reactive Power Scale Factor",
-                "mandatory": "O",
                 "name": "Var_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Voltage scale factor.",
                 "label": "Voltage Scale Factor",
-                "mandatory": "O",
                 "name": "V_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Current scale factor.",
                 "label": "Current Scale Factor",
-                "mandatory": "O",
                 "name": "A_SF",
                 "static": "S",
                 "type": "sunssf"
