@@ -24,8 +24,9 @@
                                 "label": "Active Power Point",
                                 "mandatory": "M",
                                 "name": "W",
+                                "sf": "W_SF",
                                 "type": "uint16",
-                                "units": "VRefPct"
+                                "units": "WMaxPct"
                             },
                             {
                                 "access": "RW",
@@ -253,6 +254,14 @@
                 "label": "Reversion curve",
                 "name": "RvrtCrv",
                 "type": "uint16"
+            },
+            {
+                "desc": "Scale factor for curve active power points.",
+                "label": "Active Power Scale Factor",
+                "mandatory": "M",
+                "name": "W_SF",
+                "static": "S",
+                "type": "sunssf"
             },
             {
                 "desc": "Scale factor for curve var points.",
