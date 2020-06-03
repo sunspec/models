@@ -212,6 +212,20 @@
                 "label": "Active Curve State",
                 "mandatory": "M",
                 "name": "CrvSt",
+                "symbols": [
+                    {
+                        "desc": "No curve is currenly active.",
+                        "label": "No Active Curve",
+                        "name": "INACTIVE",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Active curve in effect.",
+                        "label": "Active Curve Enabled",
+                        "name": "ACTIVE",
+                        "value": 1
+                    }
+                ],
                 "type": "enum16"
             },
             {
