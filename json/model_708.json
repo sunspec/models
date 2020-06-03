@@ -49,7 +49,7 @@
                         "name": "MustTrip",
                         "points": [
                             {
-                                "access": "R",
+                                "access": "RW",
                                 "desc": "Number of active points in must trip curve.",
                                 "label": "Number of Active Points",
                                 "mandatory": "O",
@@ -96,7 +96,7 @@
                         "name": "MayTrip",
                         "points": [
                             {
-                                "access": "R",
+                                "access": "RW",
                                 "desc": "Number of active points in may trip curve.",
                                 "label": "Number of Active Points",
                                 "mandatory": "O",
@@ -143,7 +143,7 @@
                         "name": "MomCess",
                         "points": [
                             {
-                                "access": "R",
+                                "access": "RW",
                                 "desc": "Number of active points in the momentary cessation curve.",
                                 "label": "Number of Active Points",
                                 "mandatory": "O",
