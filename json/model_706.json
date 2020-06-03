@@ -80,7 +80,7 @@
                         "type": "uint16"
                     },
                     {
-                        "access": "RW",
+                        "access": "R",
                         "desc": "Curve read-write access.",
                         "label": "Curve Access",
                         "mandatory": "O",
