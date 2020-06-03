@@ -22,7 +22,7 @@
                                 "name": "Pt",
                                 "points": [
                                     {
-                                        "access": "R",
+                                        "access": "RW",
                                         "desc": "Curve frequency point.",
                                         "label": "Frequency Point",
                                         "mandatory": "O",
@@ -32,7 +32,7 @@
                                         "units": "Hz"
                                     },
                                     {
-                                        "access": "R",
+                                        "access": "RW",
                                         "desc": "Curve time point in seconds.",
                                         "label": "Time Point",
                                         "mandatory": "O",
@@ -69,7 +69,7 @@
                                 "name": "Pt",
                                 "points": [
                                     {
-                                        "access": "R",
+                                        "access": "RW",
                                         "desc": "Curve frequency point.",
                                         "label": "Frequency Point",
                                         "mandatory": "O",
@@ -79,7 +79,7 @@
                                         "units": "Hz"
                                     },
                                     {
-                                        "access": "R",
+                                        "access": "RW",
                                         "desc": "Curve time point in seconds.",
                                         "label": "Time Point",
                                         "mandatory": "O",
@@ -116,7 +116,7 @@
                                 "name": "Pt",
                                 "points": [
                                     {
-                                        "access": "R",
+                                        "access": "RW",
                                         "desc": "Curve frequency point.",
                                         "label": "Frequency Point",
                                         "mandatory": "O",
@@ -126,7 +126,7 @@
                                         "units": "Hz"
                                     },
                                     {
-                                        "access": "R",
+                                        "access": "RW",
                                         "desc": "Curve time point in seconds.",
                                         "label": "Time Point",
                                         "mandatory": "O",
