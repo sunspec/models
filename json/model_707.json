@@ -156,6 +156,30 @@
                 ],
                 "label": "Stored Curves",
                 "name": "Crv",
+                "points": [
+                    {
+                        "access": "R",
+                        "desc": "Curve read-write access.",
+                        "label": "Curve Access",
+                        "mandatory": "O",
+                        "name": "ReadOnly",
+                        "symbols": [
+                            {
+                                "desc": "Curve has read-write access.",
+                                "label": "Read-Write Access",
+                                "name": "RW",
+                                "value": 0
+                            },
+                            {
+                                "desc": "Curve has read-only access.",
+                                "label": "Read-Only Access",
+                                "name": "R",
+                                "value": 1
+                            }
+                        ],
+                        "type": "enum16"
+                    }
+                ],
                 "type": "group"
             }
         ],
