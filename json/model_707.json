@@ -4,9 +4,9 @@
         "groups": [
             {
                 "comments": [
-                    "Stored curve sets - Number of curve sets contained in NCrv - The first set is read-only and indicates the current settings."
+                    "Stored curve sets - Number of curve sets contained in NCrvSet - The first set is read-only and indicates the current settings."
                 ],
-                "count": "NCrv",
+                "count": "NCrvSet",
                 "desc": "Stored curve sets.",
                 "groups": [
                     {
@@ -266,7 +266,7 @@
                 "desc": "Number of stored curves supported.",
                 "label": "Stored Curve Count",
                 "mandatory": "M",
-                "name": "NCrv",
+                "name": "NCrvSetSet",
                 "static": "S",
                 "type": "uint16"
             },
