@@ -128,13 +128,19 @@
                         "name": "VRefAuto",
                         "symbols": [
                             {
+                                "desc": "Disabled flag (Disabled = 0, Enabled = 1).",
+                                "label": "Disabled Flag",
+                                "name": "DISABLED",
+                                "value": 0
+                            },                            
+                            {
                                 "desc": "Enabled flag (Disabled = 0, Enabled = 1).",
                                 "label": "Enabled Flag",
                                 "name": "ENABLED",
-                                "value": 0
+                                "value": 1
                             }
                         ],
-                        "type": "bitfield16"
+                        "type": "enum16"
                     },
                     {
                         "access": "RW",
