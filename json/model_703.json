@@ -15,7 +15,7 @@
                 "value": 703
             },
             {
-                "access": "RW",
+                "access": "R",
                 "desc": "Enter service  model length.",
                 "label": "Enter Service Length",
                 "mandatory": "M",
