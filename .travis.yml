@@ -8,6 +8,9 @@ addons:
     packages:
       # Needed for `xmllint`.
       - libxml2-utils
+      # Needed for jsonschema
+      - python3-jsonschema
 
 script:
   - make -C smdx
+  - make -C json
