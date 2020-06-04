@@ -22,7 +22,7 @@
                                 "access": "RW",
                                 "desc": "Curve voltage point as percentage.",
                                 "label": "Voltage Point",
-                                "mandatory": "M",
+                                "mandatory": "O",
                                 "name": "V",
                                 "sf": "V_SF",
                                 "type": "uint16",
@@ -32,7 +32,7 @@
                                 "access": "RW",
                                 "desc": "Curve reactive power point as set in DeptRef point.",
                                 "label": "Reactive Power Point",
-                                "mandatory": "M",
+                                "mandatory": "O",
                                 "name": "Var",
                                 "sf": "DeptRef_SF",
                                 "type": "int16",
@@ -128,13 +128,19 @@
                         "name": "VRefAuto",
                         "symbols": [
                             {
+                                "desc": "Disabled flag (Disabled = 0, Enabled = 1).",
+                                "label": "Disabled Flag",
+                                "name": "DISABLED",
+                                "value": 0
+                            },                            
+                            {
                                 "desc": "Enabled flag (Disabled = 0, Enabled = 1).",
                                 "label": "Enabled Flag",
                                 "name": "ENABLED",
-                                "value": 0
+                                "value": 1
                             }
                         ],
-                        "type": "bitfield16"
+                        "type": "enum16"
                     },
                     {
                         "access": "RW",
@@ -151,7 +157,7 @@
                         "type": "uint16"
                     },
                     {
-                        "access": "RW",
+                        "access": "R",
                         "desc": "Curve read-write access.",
                         "label": "Curve Access",
                         "name": "ReadOnly",
