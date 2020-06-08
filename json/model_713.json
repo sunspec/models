@@ -101,7 +101,7 @@
                         "type": "uint64"
                     },
                     {
-                        "desc": "DC port temerature.",
+                        "desc": "DC port temperature.",
                         "label": "DC Port Temperature",
                         "name": "Tmp",
                         "type": "int16"
