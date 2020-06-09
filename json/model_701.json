@@ -291,7 +291,7 @@
                 "desc": "Total reactive energy injected (Quadrants 1 & 2).",
                 "label": "Total Reactive Energy Inj",
                 "name": "TotVarhInj",
-                "sf": "TotVar_SF",
+                "sf": "TotVarh_SF",
                 "type": "uint64",
                 "units": "Varh"
             },
@@ -299,7 +299,7 @@
                 "desc": "Total reactive energy absorbed (Quadrants 3 & 4).",
                 "label": "Total Reactive Energy Abs",
                 "name": "TotVarhAbs",
-                "sf": "TotVar_SF",
+                "sf": "TotVarh_SF",
                 "type": "uint64",
                 "units": "Varh"
             },
