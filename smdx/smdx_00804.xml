@@ -416,7 +416,7 @@
         <description></description>
         <notes></notes>
       </symbol>
-    </point>  
+    </point>
     <point id="Evt1">
       <label>String Event 1</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
@@ -545,7 +545,7 @@
         <label>Reserved</label>
         <description>Reserved bit.</description>
         <notes>Do not implement.</notes>
-      </symbol>      
+      </symbol>
       <symbol id="OTHER_ALARM">
         <label>Other String Alarm</label>
         <description>A vendor specific alarm has occurred.</description>
@@ -560,7 +560,7 @@
         <label>Reserved</label>
         <description>Reserved bit.</description>
         <notes>Do not implement.</notes>
-      </symbol>      
+      </symbol>
       <symbol id="CONFIGURATION_ALARM">
         <label>Configuration Alarm</label>
         <description>The battery string has been configured incorrectly and will not operate as expected.</description>

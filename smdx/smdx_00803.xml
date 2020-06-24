@@ -557,7 +557,7 @@
         <description></description>
         <notes></notes>
       </symbol>
-    </point>      
+    </point>
     <point id="StrEvt1">
       <label>String Event 1</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>

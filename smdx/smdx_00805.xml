@@ -35,7 +35,7 @@
       <point id="CellTmp" offset="1" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
       <point id="CellSt" offset="2" type="bitfield32">
         <symbol id="CELL_IS_BALANCING">0</symbol>
-      </point>        
+      </point>
     </block>
   </model>
 
@@ -175,7 +175,7 @@
       <label></label>
       <description>Scale factor for module temperature.</description>
       <notes></notes>
-    </point>  
+    </point>
 
     <!-- Repeating Block Strings -->
 

@@ -132,7 +132,7 @@
                                 "label": "Disabled Flag",
                                 "name": "DISABLED",
                                 "value": 0
-                            },                            
+                            },
                             {
                                 "desc": "Enabled flag (Disabled = 0, Enabled = 1).",
                                 "label": "Enabled Flag",

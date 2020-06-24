@@ -159,7 +159,7 @@
       <description>Seconds since 01-01-2000 00:00 UTC</description>
       <notes> </notes>
     </point>
-	<point id="RtSt">
+    <point id="RtSt">
       <label>RtSt</label>
       <description>Bit Mask indicating active ride-through status.</description>
       <notes> </notes>
