@@ -22,7 +22,6 @@
                                 "access": "RW",
                                 "desc": "Curve voltage point as percentage.",
                                 "label": "Voltage Point",
-                                "mandatory": "O",
                                 "name": "V",
                                 "sf": "V_SF",
                                 "type": "uint16",
@@ -32,7 +31,6 @@
                                 "access": "RW",
                                 "desc": "Curve reactive power point as set in DeptRef point.",
                                 "label": "Reactive Power Point",
-                                "mandatory": "O",
                                 "name": "Var",
                                 "sf": "DeptRef_SF",
                                 "type": "int16",
@@ -157,7 +155,6 @@
                         "type": "uint16"
                     },
                     {
-                        "access": "R",
                         "desc": "Curve read-write access.",
                         "label": "Curve Access",
                         "name": "ReadOnly",

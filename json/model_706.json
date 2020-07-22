@@ -22,7 +22,6 @@
                                 "access": "RW",
                                 "desc": "Curve voltage point as percentage.",
                                 "label": "Voltage Point",
-                                "mandatory": "O",
                                 "name": "V",
                                 "sf": "V_SF",
                                 "type": "uint16",
@@ -32,7 +31,6 @@
                                 "access": "RW",
                                 "desc": "Curve time point in seconds.",
                                 "label": "Dependent Reference",
-                                "mandatory": "O",
                                 "name": "W",
                                 "sf": "DeptRef_SF",
                                 "type": "int16",
@@ -75,15 +73,12 @@
                         "access": "RW",
                         "desc": "Open loop response time.",
                         "label": "Open Loop Response Time",
-                        "mandatory": "O",
                         "name": "RspTms",
                         "type": "uint16"
                     },
                     {
-                        "access": "R",
                         "desc": "Curve read-write access.",
                         "label": "Curve Access",
-                        "mandatory": "O",
                         "name": "ReadOnly",
                         "symbols": [
                             {
@@ -109,7 +104,6 @@
         "name": "DERVoltWatt",
         "points": [
             {
-                "access": "R",
                 "desc": "DER Volt-Watt model id.",
                 "label": "Model ID",
                 "mandatory": "M",
@@ -119,7 +113,6 @@
                 "value": 706
             },
             {
-                "access": "R",
                 "desc": "DER Volt-Watt model length.",
                 "label": "Model Length",
                 "mandatory": "M",
@@ -153,7 +146,6 @@
                 "type": "enum16"
             },
             {
-                "access": "R",
                 "desc": "Current active  curve state.",
                 "label": "Active Curve State",
                 "mandatory": "M",
@@ -184,7 +176,6 @@
                 "type": "uint16"
             },
             {
-                "access": "R",
                 "desc": "Result of last adopt curve operation.",
                 "label": "Adopt Curve Result",
                 "mandatory": "M",
@@ -212,7 +203,6 @@
                 "type": "enum16"
             },
             {
-                "access": "R",
                 "desc": "Number of curve points supported.",
                 "detail": " ",
                 "label": "Number of Points",
@@ -222,7 +212,6 @@
                 "type": "uint16"
             },
             {
-                "access": "R",
                 "desc": "Number of stored curves supported.",
                 "label": "Stored Curve Count",
                 "mandatory": "M",
@@ -235,16 +224,13 @@
                 "desc": "Reversion time in seconds.  0 = No reversion time.",
                 "detail": "Reversion time in seconds.  0 = No reversion time",
                 "label": "Reversion Timeout",
-                "mandatory": "O",
                 "name": "RvrtTms",
                 "type": "uint32"
             },
             {
-                "access": "R",
                 "desc": "Reversion time remaining in seconds.",
                 "detail": "Reversion time remaining in seconds",
                 "label": "Reversion Time Remaining",
-                "mandatory": "O",
                 "name": "RvrtRem",
                 "type": "uint32"
             },
@@ -253,12 +239,10 @@
                 "desc": "Default curve after reversion timeout.",
                 "detail": "Default curve after reversion timeout.",
                 "label": "Reversion Curve",
-                "mandatory": "O",
                 "name": "RvrtCrv",
                 "type": "uint16"
             },
             {
-                "access": "R",
                 "desc": "Scale factor for curve voltage points.",
                 "label": "Voltage Scale Factor",
                 "mandatory": "M",
@@ -267,7 +251,6 @@
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Scale factor for curve watt points.",
                 "label": "Watt  Scale Factor",
                 "mandatory": "M",

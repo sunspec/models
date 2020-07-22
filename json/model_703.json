@@ -5,7 +5,6 @@
         "name": "DEREnterService",
         "points": [
             {
-                "access": "R",
                 "desc": "Enter service model id.",
                 "label": "Enter Service ID",
                 "mandatory": "M",
@@ -15,7 +14,6 @@
                 "value": 703
             },
             {
-                "access": "R",
                 "desc": "Enter service  model length.",
                 "label": "Enter Service Length",
                 "mandatory": "M",
@@ -28,7 +26,6 @@
                 "access": "RW",
                 "desc": "Permit enter service.",
                 "label": "Permit Enter Service",
-                "mandatory": "O",
                 "name": "ES",
                 "symbols": [
                     {
@@ -46,7 +43,6 @@
                 "access": "RW",
                 "desc": "Enter service voltage high threshold as percent of normal voltage.",
                 "label": "Enter Service Voltage High",
-                "mandatory": "O",
                 "name": "ESVHi",
                 "sf": "V_SF",
                 "type": "uint16",
@@ -56,7 +52,6 @@
                 "access": "RW",
                 "desc": "Enter service voltage low threshold as percent of normal voltage.",
                 "label": "Enter Service Voltage Low",
-                "mandatory": "O",
                 "name": "ESVLo",
                 "sf": "V_SF",
                 "type": "uint16",
@@ -66,7 +61,6 @@
                 "access": "RW",
                 "desc": "Enter service frequency high threshold.",
                 "label": "Enter Service Frequency High",
-                "mandatory": "O",
                 "name": "ESHzHi",
                 "sf": "Hz_SF",
                 "type": "uint32",
@@ -76,7 +70,6 @@
                 "access": "RW",
                 "desc": "Enter service frequency low threshold.",
                 "label": "Enter Service Frequency Low",
-                "mandatory": "O",
                 "name": "ESHzLo",
                 "sf": "Hz_SF",
                 "type": "uint32",
@@ -86,7 +79,6 @@
                 "access": "RW",
                 "desc": "Enter service delay time in seconds.",
                 "label": "Enter Service Delay Time",
-                "mandatory": "O",
                 "name": "ESDlyTms",
                 "type": "uint16",
                 "units": "Secs"
@@ -95,7 +87,6 @@
                 "access": "RW",
                 "desc": "Enter service random delay in seconds.",
                 "label": "Enter Service Random Delay",
-                "mandatory": "O",
                 "name": "ESRndTms",
                 "type": "uint16",
                 "units": "Secs"
@@ -104,25 +95,20 @@
                 "access": "RW",
                 "desc": "Enter service ramp time in seconds.",
                 "label": "Enter Service Ramp Time",
-                "mandatory": "O",
                 "name": "ESRmpTms",
                 "type": "uint16",
                 "units": "Secs"
             },
             {
-                "access": "R",
                 "desc": "Voltage scale factor.",
                 "label": "Voltage Scale Factor",
-                "mandatory": "O",
                 "name": "V_SF",
                 "static": "S",
                 "type": "sunssf"
             },
             {
-                "access": "R",
                 "desc": "Frequency scale factor.",
                 "label": "Frequency Scale Factor",
-                "mandatory": "O",
                 "name": "Hz_SF",
                 "static": "S",
                 "type": "sunssf"
