@@ -30,7 +30,7 @@
       <point id="MaxChaRte_SF" offset="22" access="r" type="sunssf" len="1" mandatory="false"  />
       <point id="MaxDisChaRte" offset="23" access="r" type="uint16" len="1" mandatory="false" units="W" sf="MaxDisChaRte_SF"/>
       <point id="MaxDisChaRte_SF" offset="24" access="r" type="sunssf" len="1" mandatory="false"  />
-	  <point id="Pad" offset="25" access="r" type="pad" len="1" mandatory="false"  />
+      <point id="Pad" offset="25" access="r" type="pad" len="1" mandatory="false"  />
     </block>
   </model>
   <strings id="120" locale="en">
