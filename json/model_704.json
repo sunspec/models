@@ -6,8 +6,8 @@
                 "comments": [
                     "Power Factor Settings"
                 ],
-                "desc": " ",
-                "label": " ",
+                "desc": "Power factor setpoint when injecting active power.",
+                "label": "Power Factor (W Inj) ",
                 "name": "PFWInj",
                 "points": [
                     {
@@ -43,8 +43,8 @@
                 "type": "sync"
             },
             {
-                "desc": " ",
-                "label": " ",
+                "desc": "Reversion power factor setpoint when injecting active power.",
+                "label": "Reversion Power Factor (W Inj) ",
                 "name": "PFWInjRvrt",
                 "points": [
                     {
@@ -80,8 +80,8 @@
                 "type": "sync"
             },
             {
-                "desc": " ",
-                "label": " ",
+                "desc": "Power factor setpoint when absorbing active power.",
+                "label": "Power Factor (W Abs) ",
                 "name": "PFWAbs",
                 "points": [
                     {
@@ -117,8 +117,8 @@
                 "type": "sync"
             },
             {
-                "desc": " ",
-                "label": " ",
+                "desc": "Reversion power factor setpoint when absorbing active power.",
+                "label": "Reversion Power Factor (W Abs) ",
                 "name": "PFWAbsRvrt",
                 "points": [
                     {
@@ -199,7 +199,9 @@
                 "type": "enum16"
             },
             {
-                "name": "PFWInjEnaRvrt",
+                "desc": "Power factor reversion timer when injecting active power enable.",
+                "label": "Power Factor Reversion Enable (W Inj)",
+                "name": "PFWInjRvrtEna",
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -256,7 +258,9 @@
                 "type": "enum16"
             },
             {
-                "name": "PFWAbsEnaRvrt",
+                "desc": "Power factor reversion timer when absorbing active power enable.",
+                "label": "Power Factor Reversion Enable (W Abs)",
+                "name": "PFWAbsRvrtEna",
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -331,7 +335,9 @@
                 "units": "Pct"
             },
             {
-                "name": "WMaxLimEnaRvrt",
+                "desc": "Reversion limit maximum active power value enable.",
+                "label": "Reversion Limit Max Power Enable",
+                "name": "WMaxLimRvrtEna",
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -445,7 +451,9 @@
                 "units": "Pct"
             },
             {
-                "name": "WSetEnaRvrt",
+                "desc": "Reversion active power function enable.",
+                "label": "Reversion Active Power Enable",
+                "name": "WSetRvrtEna",
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -535,6 +543,8 @@
                 "type": "enum16"
             },
             {
+                "desc": "Reactive power priority.",
+                "label": "Reactive Power Priority",
                 "name": "VarSetPri",
                 "symbols": [
                     {
@@ -603,6 +613,13 @@
                 "label": "Reversion Reactive Power (Pct)",
                 "name": "VarSetPctRvrt",
                 "sf": "VarSetPct_SF",
+                "type": "int32",
+                "units": "Pct"
+            },
+            {
+                "desc": "Reversion reactive power function enable.",
+                "label": "Reversion Reactive Power Enable",
+                "name": "VarSetRvrtEna",
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -617,8 +634,7 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16",
-                "units": "Pct"
+                "type": "enum16"
             },
             {
                 "access": "RW",
