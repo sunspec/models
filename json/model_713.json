@@ -110,6 +110,28 @@
                         "desc": "DC port status.",
                         "label": "DC Port Status",
                         "name": "DCSt",
+                        "symbols": [
+                            {
+                                "label": "Off",
+                                "name": "OFF",
+                                "value": 1
+                            },
+                            {
+                                "label": "On",
+                                "name": "ON",
+                                "value": 2
+                            },
+                            {
+                                "label": "Warning",
+                                "name": "WARNING",
+                                "value": 3
+                            },
+                            {
+                                "label": "Error",
+                                "name": "ERROR",
+                                "value": 4
+                            }
+                        ],
                         "type": "enum16"
                     },
                     {
