@@ -21,6 +21,9 @@
         "detail": {
             "type": "string"
         },
+        "notes": {
+            "type": "string"
+        },
         "comments": {
             "type": "array",
             "items": {
@@ -63,6 +66,9 @@
                     "type": "string"
                 },
                 "detail": {
+                    "type": "string"
+                },
+                "notes": {
                     "type": "string"
                 },
                 "comments": {
@@ -127,6 +133,9 @@
                 "detail": {
                     "type": "string"
                 },
+                "notes": {
+                    "type": "string"
+                },
                 "comments": {
                     "type": "array",
                     "items": {
@@ -150,6 +159,9 @@
                     "type": "string"
                 },
                 "detail": {
+                    "type": "string"
+                },
+                "notes": {
                     "type": "string"
                 },
                 "comments": {
