@@ -387,56 +387,6 @@
             },
             {
                 "access": "RW",
-                "desc": "Maximum AC current setting used to adjust maximum ac current rating.",
-                "label": "AC Current Max Setting",
-                "name": "AMax",
-                "notes": "",
-                "sf": "A_SF",
-                "type": "uint16",
-                "units": "A"
-            },
-            {
-                "access": "RW",
-                "desc": "Nominal AC voltage setting.",
-                "label": "Nominal AC Voltage Setting",
-                "name": "Vnom",
-                "notes": "",
-                "sf": "V_SF",
-                "type": "uint16",
-                "units": "V"
-            },
-            {
-                "access": "RW",
-                "desc": "Nominal AC voltage offset setting.",
-                "label": "Nominal AC Voltage Offset Setting",
-                "name": "VRefOfs",
-                "notes": "",
-                "sf": "V_SF",
-                "type": "uint16",
-                "units": "V"
-            },
-            {
-                "access": "RW",
-                "desc": "AC voltage maximum setting used to adjust AC voltage maximum rating.",
-                "label": "AC Voltage Max Setting",
-                "name": "VMax",
-                "notes": "",
-                "sf": "V_SF",
-                "type": "uint16",
-                "units": "V"
-            },
-            {
-                "access": "RW",
-                "desc": "AC voltage minimum setting used to adjust AC voltage maximum rating.",
-                "label": "AC Voltage Min Setting",
-                "name": "VMin",
-                "notes": "",
-                "sf": "V_SF",
-                "type": "uint16",
-                "units": "V"
-            },
-            {
-                "access": "RW",
                 "desc": "Maximum injected reactive power setting used to adjust maximum injected reactive power rating.",
                 "label": "Reactive Power Injected Setting",
                 "name": "VarMaxInj",
@@ -494,6 +444,56 @@
                 "sf": "VA_SF",
                 "type": "uint16",
                 "units": "VA"
+            },
+            {
+                "access": "RW",
+                "desc": "Nominal AC voltage setting.",
+                "label": "Nominal AC Voltage Setting",
+                "name": "Vnom",
+                "notes": "",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "access": "RW",
+                "desc": "AC voltage maximum setting used to adjust AC voltage maximum rating.",
+                "label": "AC Voltage Max Setting",
+                "name": "VMax",
+                "notes": "",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "access": "RW",
+                "desc": "AC voltage minimum setting used to adjust AC voltage maximum rating.",
+                "label": "AC Voltage Min Setting",
+                "name": "VMin",
+                "notes": "",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "access": "RW",
+                "desc": "Maximum AC current setting used to adjust maximum ac current rating.",
+                "label": "AC Current Max Setting",
+                "name": "AMax",
+                "notes": "",
+                "sf": "A_SF",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "access": "RW",
+                "desc": "Nominal AC voltage offset setting.",
+                "label": "Nominal AC Voltage Offset Setting",
+                "name": "VRefOfs",
+                "notes": "",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
             },
             {
                 "access": "RW",
