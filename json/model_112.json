@@ -31,7 +31,6 @@
             },
             {
                 "desc": "Phase A Current",
-                "detail": "Connected Phase",
                 "label": "Amps PhaseA",
                 "mandatory": "M",
                 "name": "AphA",
@@ -40,7 +39,6 @@
             },
             {
                 "desc": "Phase B Current",
-                "detail": "Connected Phase",
                 "label": "Amps PhaseB",
                 "mandatory": "M",
                 "name": "AphB",

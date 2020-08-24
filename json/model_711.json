@@ -10,6 +10,7 @@
                 "desc": "Stored curve sets.",
                 "label": "Stored Curves",
                 "name": "Ctl",
+                "notes": "",
                 "points": [
                     {
                         "access": "RW",
@@ -17,6 +18,7 @@
                         "label": "Over-frequency Deadband",
                         "mandatory": "M",
                         "name": "DbOf",
+                        "notes": "",
                         "sf": "Db_SF",
                         "type": "uint16",
                         "units": "Hz"
@@ -27,6 +29,7 @@
                         "label": "Under-frequency Deadband",
                         "mandatory": "M",
                         "name": "DbUf",
+                        "notes": "",
                         "sf": "Db_SF",
                         "type": "uint16",
                         "units": "Hz"
@@ -37,6 +40,7 @@
                         "label": "Over-frequency Change Ratio",
                         "mandatory": "M",
                         "name": "KOf",
+                        "notes": "",
                         "sf": "K_SF",
                         "type": "uint16"
                     },
@@ -46,6 +50,7 @@
                         "label": "Under-frequency Change Ratio",
                         "mandatory": "M",
                         "name": "KUf",
+                        "notes": "",
                         "sf": "K_SF",
                         "type": "uint16"
                     },
@@ -55,6 +60,7 @@
                         "label": "Open-Loop Response Time",
                         "mandatory": "M",
                         "name": "RspTms",
+                        "notes": "",
                         "sf": "RspTms_SF",
                         "type": "uint16",
                         "units": "Secs"
@@ -65,12 +71,14 @@
         ],
         "label": "DER Frequency Droop",
         "name": "DERFreqDroop",
+        "notes": "",
         "points": [
             {
                 "desc": "DER Frequency Droop model id.",
                 "label": "DER Frequency Droop ID",
                 "mandatory": "M",
                 "name": "ID",
+                "notes": "",
                 "static": "S",
                 "type": "uint16",
                 "value": 711
@@ -80,6 +88,7 @@
                 "label": "DER Frequency Droop Length",
                 "mandatory": "M",
                 "name": "L",
+                "notes": "",
                 "static": "S",
                 "type": "uint16"
             },
@@ -88,19 +97,20 @@
                 "desc": "DER Frequency-Watt (Frequency-Droop) control enable.",
                 "mandatory": "M",
                 "name": "Ena",
+                "notes": "",
                 "symbols": [
                     {
                         "desc": "Function is enabled.",
-                        "detail": "Function is enabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
+                        "notes": "Function is enabled.",
                         "value": 0
                     },
                     {
                         "desc": "Function is disabled.",
-                        "detail": "Function is disabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
+                        "notes": "Function is disabled.",
                         "value": 1
                     }
                 ],
@@ -108,21 +118,23 @@
             },
             {
                 "desc": "Current active  curve state.",
-                "detail": " ",
                 "label": "Active Curve State",
                 "mandatory": "M",
                 "name": "CrvSt",
+                "notes": " ",
                 "symbols": [
                     {
                         "desc": "No curve is currenly active.",
                         "label": "No active curve",
                         "name": "INACTIVE",
+                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Active curve in effect.",
                         "label": "Active curve enabled",
                         "name": "ACTIVE",
+                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -134,6 +146,7 @@
                 "label": "Set active curve request",
                 "mandatory": "M",
                 "name": "AdptCrvReq",
+                "notes": "",
                 "type": "uint16"
             },
             {
@@ -141,24 +154,27 @@
                 "label": "Set active curve result",
                 "mandatory": "M",
                 "name": "AdptCrvRslt",
+                "notes": "",
                 "symbols": [
                     {
                         "desc": "Curve update in progress.",
                         "label": "Update In Progress",
                         "name": "IN_PROGRESS",
+                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Curve update completed successfully.",
-                        "detail": "The duration from a step change in control signal input until the output changes by 90% of its final change, before any overshoot.",
                         "label": "Update Complete",
                         "name": "COMPLETED",
+                        "notes": "The duration from a step change in control signal input until the output changes by 90% of its final change, before any overshoot.",
                         "value": 1
                     },
                     {
                         "desc": "Curve update failed.",
                         "label": "Update Failed",
                         "name": "FAILED",
+                        "notes": "",
                         "value": 2
                     }
                 ],
@@ -169,6 +185,7 @@
                 "label": "Stored Curve Count",
                 "mandatory": "M",
                 "name": "NCtl",
+                "notes": "",
                 "static": "S",
                 "type": "uint16"
             },
@@ -177,12 +194,14 @@
                 "desc": "Reversion time in seconds.  0 = No reversion time",
                 "label": "Reversion timeout",
                 "name": "RvrtTms",
+                "notes": "",
                 "type": "uint32"
             },
             {
                 "desc": "Reversion time remaining in seconds",
                 "label": "Reversion time left",
                 "name": "RvrtRem",
+                "notes": "",
                 "type": "uint32"
             },
             {
@@ -190,6 +209,7 @@
                 "desc": "Default curve after reversion timeout.",
                 "label": "Reversion curve",
                 "name": "RvrtCrv",
+                "notes": "",
                 "type": "uint16"
             },
             {
@@ -197,6 +217,7 @@
                 "label": "Deadband Scale Factor",
                 "mandatory": "M",
                 "name": "Db_SF",
+                "notes": "",
                 "static": "S",
                 "type": "sunssf"
             },
@@ -205,6 +226,7 @@
                 "label": "Frequency Change Scale Factor",
                 "mandatory": "M",
                 "name": "K_SF",
+                "notes": "",
                 "static": "S",
                 "type": "sunssf"
             },
@@ -213,6 +235,7 @@
                 "label": "Open-Loop Scale Factor",
                 "mandatory": "M",
                 "name": "RspTms_SF",
+                "notes": "",
                 "static": "S",
                 "type": "sunssf"
             }

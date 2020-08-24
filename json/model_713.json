@@ -8,45 +8,54 @@
                 ],
                 "count": "NPrt",
                 "name": "Prt",
+                "notes": "",
                 "points": [
                     {
                         "desc": "Port type.",
                         "label": "Port Type",
                         "name": "PrtTyp",
+                        "notes": "",
                         "symbols": [
                             {
                                 "label": "Photovoltaic",
                                 "name": "PV",
+                                "notes": "",
                                 "value": 1
                             },
                             {
                                 "label": "Energy Storage System",
                                 "name": "ESS",
+                                "notes": "",
                                 "value": 2
                             },
                             {
                                 "label": "Electric Vehicle",
                                 "name": "EV",
+                                "notes": "",
                                 "value": 3
                             },
                             {
                                 "label": "Generic Injecting",
                                 "name": "INJ",
+                                "notes": "",
                                 "value": 4
                             },
                             {
                                 "label": "Generic Absorbing",
                                 "name": "ABS",
+                                "notes": "",
                                 "value": 5
                             },
                             {
                                 "label": "Generic Bidirectional",
                                 "name": "BIDIR",
+                                "notes": "",
                                 "value": 6
                             },
                             {
                                 "label": "DC to DC",
                                 "name": "DC_DC",
+                                "notes": "",
                                 "value": 7
                             }
                         ],
@@ -56,12 +65,14 @@
                         "desc": "Port ID.",
                         "label": "Port ID",
                         "name": "ID",
+                        "notes": "",
                         "type": "uint16"
                     },
                     {
                         "desc": "Port ID string.",
                         "label": "Port ID String",
                         "name": "IDStr",
+                        "notes": "",
                         "size": 8,
                         "type": "string"
                     },
@@ -69,6 +80,7 @@
                         "desc": "DC current for the port.",
                         "label": "DC Current",
                         "name": "DCA",
+                        "notes": "",
                         "sf": "DCA_SF",
                         "type": "int16"
                     },
@@ -76,6 +88,7 @@
                         "desc": "DC voltage for the port.",
                         "label": "DC Voltage",
                         "name": "DCV",
+                        "notes": "",
                         "sf": "DCV_SF",
                         "type": "uint16"
                     },
@@ -83,6 +96,7 @@
                         "desc": "DC power for the port.",
                         "label": "DC Power",
                         "name": "DCW",
+                        "notes": "",
                         "sf": "DCW_SF",
                         "type": "int16"
                     },
@@ -90,6 +104,7 @@
                         "desc": "Total cumulative DC energy injected for the port.",
                         "label": "DC Energy Injected",
                         "name": "DCWhInj",
+                        "notes": "",
                         "sf": "DCWH_SF",
                         "type": "uint64"
                     },
@@ -97,6 +112,7 @@
                         "desc": "Total cumulative DC energy absorbed for the port.",
                         "label": "DC Energy Absorbed",
                         "name": "DCWhAbs",
+                        "notes": "",
                         "sf": "DCWH_SF",
                         "type": "uint64"
                     },
@@ -104,31 +120,37 @@
                         "desc": "DC port temperature.",
                         "label": "DC Port Temperature",
                         "name": "Tmp",
+                        "notes": "",
                         "type": "int16"
                     },
                     {
                         "desc": "DC port status.",
                         "label": "DC Port Status",
                         "name": "DCSt",
+                        "notes": "",
                         "symbols": [
                             {
                                 "label": "Off",
                                 "name": "OFF",
+                                "notes": "",
                                 "value": 1
                             },
                             {
                                 "label": "On",
                                 "name": "ON",
+                                "notes": "",
                                 "value": 2
                             },
                             {
                                 "label": "Warning",
                                 "name": "WARNING",
+                                "notes": "",
                                 "value": 3
                             },
                             {
                                 "label": "Error",
                                 "name": "ERROR",
+                                "notes": "",
                                 "value": 4
                             }
                         ],
@@ -138,75 +160,90 @@
                         "desc": "DC port alarm.",
                         "label": "DC Port Alarm",
                         "name": "DCAlrm",
+                        "notes": "",
                         "symbols": [
                             {
                                 "label": "Ground Fault",
                                 "name": "GROUND_FAULT",
+                                "notes": "",
                                 "value": 0
                             },
                             {
                                 "label": "Input Over Voltage",
                                 "name": "INPUT_OVER_VOLTAGE",
+                                "notes": "",
                                 "value": 1
                             },
                             {
                                 "label": "Reserved",
                                 "name": "RESERVED",
+                                "notes": "",
                                 "value": 19
                             },
                             {
                                 "label": "DC Disconnect",
                                 "name": "DC_DISCONNECT",
+                                "notes": "",
                                 "value": 3
                             },
                             {
                                 "label": "Cabinet Open",
                                 "name": "CABINET_OPEN",
+                                "notes": "",
                                 "value": 5
                             },
                             {
                                 "label": "Manual Shutdown",
                                 "name": "MANUAL_SHUTDOWN",
+                                "notes": "",
                                 "value": 6
                             },
                             {
                                 "label": "Over Temperature",
                                 "name": "OVER_TEMP",
+                                "notes": "",
                                 "value": 7
                             },
                             {
                                 "label": "Blown Fuse",
                                 "name": "BLOWN_FUSE",
+                                "notes": "",
                                 "value": 12
                             },
                             {
                                 "label": "Under Temperature",
                                 "name": "UNDER_TEMP",
+                                "notes": "",
                                 "value": 13
                             },
                             {
                                 "label": "Memory Loss",
                                 "name": "MEMORY_LOSS",
+                                "notes": "",
                                 "value": 14
                             },
                             {
                                 "label": "Arc Detection",
                                 "name": "ARC_DETECTION",
+                                "notes": "",
                                 "value": 15
                             },
                             {
                                 "label": "Test Failed",
                                 "name": "TEST_FAILED",
+                                "notes": "",
                                 "value": 20
                             },
                             {
                                 "label": "Under Voltage",
                                 "name": "INPUT_UNDER_VOLTAGE",
+                                "notes": "",
                                 "value": 21
                             },
                             {
                                 "label": "Over Current",
                                 "name": "INPUT_OVER_CURRENT",
+                                "notes": "",
                                 "value": 22
                             }
                         ],
@@ -218,12 +255,14 @@
         ],
         "label": "DER DC Measurement",
         "name": "DERMeasureDC",
+        "notes": "",
         "points": [
             {
                 "desc": "DER DC measurement model id.",
                 "label": "DER DC Measure Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "notes": "",
                 "static": "S",
                 "type": "uint16",
                 "value": 713
@@ -233,6 +272,7 @@
                 "label": "DER DC MeasureModel Length",
                 "mandatory": "M",
                 "name": "L",
+                "notes": "",
                 "static": "S",
                 "type": "uint16"
             },
@@ -243,12 +283,14 @@
                 "desc": "Bitfield of ports with active alarms. Bit is 1 if port has an active alarm. Bit 0 is first port.",
                 "label": "Port Alarms",
                 "name": "PrtAlrms",
+                "notes": "",
                 "type": "bitfield32"
             },
             {
                 "desc": "Number of DC ports.",
                 "label": "Number of Ports",
                 "name": "NPrt",
+                "notes": "",
                 "static": "S",
                 "type": "uint16"
             },
@@ -256,6 +298,7 @@
                 "desc": "Total DC current for all ports.",
                 "label": "DC Current",
                 "name": "DCA",
+                "notes": "",
                 "sf": "DCA_SF",
                 "type": "int16"
             },
@@ -263,6 +306,7 @@
                 "desc": "Total DC power for all ports.",
                 "label": "DC Power",
                 "name": "DCW",
+                "notes": "",
                 "sf": "DCW_SF",
                 "type": "int16"
             },
@@ -270,6 +314,7 @@
                 "desc": "Total cumulative DC energy injected for all ports.",
                 "label": "DC Energy Injected",
                 "name": "DCWhInj",
+                "notes": "",
                 "sf": "DCWH_SF",
                 "type": "uint64"
             },
@@ -277,6 +322,7 @@
                 "desc": "Total cumulative DC energy absorbed for all ports.",
                 "label": "DC Energy Absorbed",
                 "name": "DCWhAbs",
+                "notes": "",
                 "sf": "DCWH_SF",
                 "type": "uint64"
             },
@@ -284,6 +330,7 @@
                 "desc": "DC current scale factor.",
                 "label": "DC Current Scale Factor",
                 "name": "DCA_SF",
+                "notes": "",
                 "static": "S",
                 "type": "sunssf"
             },
@@ -291,6 +338,7 @@
                 "desc": "DC voltage scale factor.",
                 "label": "DC Voltage Scale Factor",
                 "name": "DCV_SF",
+                "notes": "",
                 "static": "S",
                 "type": "sunssf"
             },
@@ -298,6 +346,7 @@
                 "desc": "DC power scale factor.",
                 "label": "DC Power Scale Factor",
                 "name": "DCW_SF",
+                "notes": "",
                 "static": "S",
                 "type": "sunssf"
             },
@@ -305,6 +354,7 @@
                 "desc": "DC energy scale factor.",
                 "label": "DC Energy Scale Factor",
                 "name": "DCWH_SF",
+                "notes": "",
                 "static": "S",
                 "type": "sunssf"
             },
@@ -312,6 +362,7 @@
                 "desc": "Temperature Scale Factor.",
                 "label": "Temperature Scale Factor",
                 "name": "Tmp_SF",
+                "notes": "",
                 "static": "S",
                 "type": "sunssf"
             }

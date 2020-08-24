@@ -1,6 +1,5 @@
 {
     "group": {
-        "detail": "Float",
         "label": "delta-connect three phase (abc) meter",
         "name": "ac_meter",
         "points": [

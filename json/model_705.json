@@ -17,12 +17,14 @@
                         "desc": "Stored curve points.",
                         "label": "Stored Curve Points",
                         "name": "Pt",
+                        "notes": "",
                         "points": [
                             {
                                 "access": "RW",
                                 "desc": "Curve voltage point as percentage.",
                                 "label": "Voltage Point",
                                 "name": "V",
+                                "notes": "",
                                 "sf": "V_SF",
                                 "type": "uint16",
                                 "units": "VRefPct"
@@ -32,6 +34,7 @@
                                 "desc": "Curve reactive power point as set in DeptRef point.",
                                 "label": "Reactive Power Point",
                                 "name": "Var",
+                                "notes": "",
                                 "sf": "DeptRef_SF",
                                 "type": "int16",
                                 "units": "VarPct"
@@ -42,6 +45,7 @@
                 ],
                 "label": "Stored Curves",
                 "name": "Crv",
+                "notes": "",
                 "points": [
                     {
                         "access": "RW",
@@ -49,6 +53,7 @@
                         "label": "Active Points",
                         "mandatory": "M",
                         "name": "ActPt",
+                        "notes": "",
                         "type": "uint16"
                     },
                     {
@@ -57,20 +62,24 @@
                         "label": "Dependent Reference",
                         "mandatory": "M",
                         "name": "DeptRef",
+                        "notes": "",
                         "symbols": [
                             {
                                 "label": "Percent Max Watts",
                                 "name": "W_MAX_PCT",
+                                "notes": "",
                                 "value": 1
                             },
                             {
                                 "label": "Percent Max Vars",
                                 "name": "VAR_MAX_PCT",
+                                "notes": "",
                                 "value": 2
                             },
                             {
                                 "label": "Percent Available Vars",
                                 "name": "VAR_AVAL_PCT",
+                                "notes": "",
                                 "value": 3
                             }
                         ],
@@ -78,35 +87,41 @@
                     },
                     {
                         "name": "Pri",
+                        "notes": "",
                         "symbols": [
                             {
                                 "desc": "Active power priority.",
                                 "label": "Active Power Priority",
                                 "name": "ACTIVE",
+                                "notes": "",
                                 "value": 1
                             },
                             {
                                 "desc": "Reactive power priority.",
                                 "label": "Reactive Power Priority",
                                 "name": "REACTIVE",
+                                "notes": "",
                                 "value": 2
                             },
                             {
                                 "desc": "IEEE 1547-2018 power priority mode.",
                                 "label": "IEEE 1547 Power Priority",
                                 "name": "IEEE_1547",
+                                "notes": "",
                                 "value": 3
                             },
                             {
                                 "desc": "Track PF setting derived from current active and reactive power settings.",
                                 "label": "PF Power Priority",
                                 "name": "PF",
+                                "notes": "",
                                 "value": 4
                             },
                             {
                                 "desc": "Power priority is vendor specific mode.",
                                 "label": "Vendor Power Priority",
                                 "name": "VENDOR",
+                                "notes": "",
                                 "value": 5
                             }
                         ],
@@ -117,6 +132,7 @@
                         "desc": "Vref adjustment as percentage.",
                         "label": "Vref adjustment",
                         "name": "VRef",
+                        "notes": "",
                         "type": "uint16"
                     },
                     {
@@ -124,17 +140,20 @@
                         "desc": "Enable automonous vref",
                         "label": "Autonomous Vref Enable",
                         "name": "VRefAuto",
+                        "notes": "",
                         "symbols": [
                             {
                                 "desc": "Disabled flag (Disabled = 0, Enabled = 1).",
                                 "label": "Disabled Flag",
                                 "name": "DISABLED",
+                                "notes": "",
                                 "value": 0
                             },
                             {
                                 "desc": "Enabled flag (Disabled = 0, Enabled = 1).",
                                 "label": "Enabled Flag",
                                 "name": "ENABLED",
+                                "notes": "",
                                 "value": 1
                             }
                         ],
@@ -145,6 +164,7 @@
                         "desc": "Autonomous vref time constant.",
                         "label": "Auto Vref Time Constant",
                         "name": "VRefTms",
+                        "notes": "",
                         "type": "uint16"
                     },
                     {
@@ -152,23 +172,27 @@
                         "desc": "Open loop response time.",
                         "label": "Open Loop Response Time",
                         "name": "RspTms",
+                        "notes": "",
                         "type": "uint16"
                     },
                     {
                         "desc": "Curve read-write access.",
                         "label": "Curve Access",
                         "name": "ReadOnly",
+                        "notes": "",
                         "symbols": [
                             {
                                 "desc": "Curve has read-write access.",
                                 "label": "Read-Write Access",
                                 "name": "RW",
+                                "notes": "",
                                 "value": 0
                             },
                             {
                                 "desc": "Curve has read-only access.",
                                 "label": "Read-Only Access",
                                 "name": "R",
+                                "notes": "",
                                 "value": 1
                             }
                         ],
@@ -180,12 +204,14 @@
         ],
         "label": "DER Volt-Var",
         "name": "DERVoltVar",
+        "notes": "",
         "points": [
             {
                 "desc": "DER Volt-Var model id.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "notes": "",
                 "static": "S",
                 "type": "uint16",
                 "value": 705
@@ -195,6 +221,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "notes": "",
                 "static": "S",
                 "type": "uint16"
             },
@@ -204,17 +231,20 @@
                 "label": "Module Enable",
                 "mandatory": "M",
                 "name": "Ena",
+                "notes": "",
                 "symbols": [
                     {
                         "desc": "Function is enabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
+                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Function is disabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
+                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -222,21 +252,23 @@
             },
             {
                 "desc": "Current active  curve state.",
-                "detail": " ",
                 "label": "Active Curve State",
                 "mandatory": "M",
                 "name": "CrvSt",
+                "notes": " ",
                 "symbols": [
                     {
                         "desc": "No curve is currenly active.",
                         "label": "No Active Curve",
                         "name": "INACTIVE",
+                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Active curve in effect.",
                         "label": "Active Curve Enabled",
                         "name": "ACTIVE",
+                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -248,6 +280,7 @@
                 "label": "Adopt Curve Request",
                 "mandatory": "M",
                 "name": "AdptCrvReq",
+                "notes": "",
                 "type": "uint16"
             },
             {
@@ -255,23 +288,27 @@
                 "label": "Adopt Curve Result",
                 "mandatory": "M",
                 "name": "AdptCrvRslt",
+                "notes": "",
                 "symbols": [
                     {
                         "desc": "Curve update in progress.",
                         "label": "Update In Progress",
                         "name": "IN_PROGRESS",
+                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Curve update completed successfully.",
                         "label": "Update Complete",
                         "name": "COMPLETED",
+                        "notes": "",
                         "value": 1
                     },
                     {
                         "desc": "Curve update failed.",
                         "label": "Update Failed",
                         "name": "FAILED",
+                        "notes": "",
                         "value": 2
                     }
                 ],
@@ -279,10 +316,10 @@
             },
             {
                 "desc": "Number of curve points supported.",
-                "detail": " ",
                 "label": "Number of Points",
                 "mandatory": "M",
                 "name": "NPt",
+                "notes": " ",
                 "static": "S",
                 "type": "uint16"
             },
@@ -291,6 +328,7 @@
                 "label": "Stored Curve Count",
                 "mandatory": "M",
                 "name": "NCrv",
+                "notes": "",
                 "static": "S",
                 "type": "uint16"
             },
@@ -299,12 +337,14 @@
                 "desc": "Reversion time in seconds.  0 = No reversion time.",
                 "label": "Reversion Timeout",
                 "name": "RvrtTms",
+                "notes": "",
                 "type": "uint32"
             },
             {
                 "desc": "Reversion time remaining in seconds.",
                 "label": "Reversion Time Remaining",
                 "name": "RvrtRem",
+                "notes": "",
                 "type": "uint32"
             },
             {
@@ -312,6 +352,7 @@
                 "desc": "Default curve after reversion timeout.",
                 "label": "Reversion Curve",
                 "name": "RvrtCrv",
+                "notes": "",
                 "type": "uint16"
             },
             {
@@ -319,6 +360,7 @@
                 "label": "Voltage Scale Factor",
                 "mandatory": "M",
                 "name": "V_SF",
+                "notes": "",
                 "static": "S",
                 "type": "sunssf"
             },
@@ -327,6 +369,7 @@
                 "label": "Var  Scale Factor",
                 "mandatory": "M",
                 "name": "DeptRef_SF",
+                "notes": "",
                 "static": "S",
                 "type": "sunssf"
             }

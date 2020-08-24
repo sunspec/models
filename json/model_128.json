@@ -1,7 +1,6 @@
 {
     "group": {
         "desc": "Dynamic Reactive Current ",
-        "detail": "Ref 3: 8.10.1.2; Ref 4: 12",
         "label": "Dynamic Reactive Current",
         "name": "reactive_current",
         "points": [
@@ -25,7 +24,6 @@
             {
                 "access": "RW",
                 "desc": "Indicates if gradients trend toward zero at the edges of the deadband or trend toward zero at the center of the deadband.",
-                "detail": " ",
                 "label": "ArGraMod",
                 "mandatory": "M",
                 "name": "ArGraMod",
@@ -44,7 +42,6 @@
             {
                 "access": "RW",
                 "desc": "The gradient used to increase capacitive dynamic current. A value of 0 indicates no additional reactive current support.",
-                "detail": " ",
                 "label": "ArGraSag",
                 "mandatory": "M",
                 "name": "ArGraSag",
@@ -55,7 +52,6 @@
             {
                 "access": "RW",
                 "desc": "The gradient used to increase inductive dynamic current.  A value of 0 indicates no additional reactive current support.",
-                "detail": " ",
                 "label": "ArGraSwell",
                 "mandatory": "M",
                 "name": "ArGraSwell",
@@ -66,7 +62,6 @@
             {
                 "access": "RW",
                 "desc": "Activate dynamic reactive current model",
-                "detail": " ",
                 "label": "ModEna",
                 "mandatory": "M",
                 "name": "ModEna",
@@ -81,7 +76,6 @@
             {
                 "access": "RW",
                 "desc": "The time window used to calculate the moving average voltage.",
-                "detail": " ",
                 "label": "FilTms",
                 "name": "FilTms",
                 "type": "uint16",
@@ -90,7 +84,6 @@
             {
                 "access": "RW",
                 "desc": "The lower delta voltage limit for which negative voltage deviations less than this value no dynamic vars are produced.",
-                "detail": " ",
                 "label": "DbVMin",
                 "name": "DbVMin",
                 "sf": "VRefPct_SF",
@@ -100,7 +93,6 @@
             {
                 "access": "RW",
                 "desc": "The upper delta voltage limit for which positive voltage deviations less than this value no dynamic current produced.",
-                "detail": " ",
                 "label": "DbVMax",
                 "name": "DbVMax",
                 "sf": "VRefPct_SF",
@@ -110,7 +102,6 @@
             {
                 "access": "RW",
                 "desc": "Block zone voltage which defines a lower voltage boundary below which no dynamic current is produced.",
-                "detail": " ",
                 "label": "BlkZnV",
                 "name": "BlkZnV",
                 "sf": "VRefPct_SF",
@@ -120,7 +111,6 @@
             {
                 "access": "RW",
                 "desc": "Hysteresis voltage used with BlkZnV.",
-                "detail": " ",
                 "label": "HysBlkZnV",
                 "name": "HysBlkZnV",
                 "sf": "VRefPct_SF",
@@ -130,7 +120,6 @@
             {
                 "access": "RW",
                 "desc": "Block zone time the time before which reactive current support remains active regardless of how low the voltage drops.",
-                "detail": " ",
                 "label": "BlkZnTmms",
                 "name": "BlkZnTmms",
                 "type": "uint16",
@@ -139,7 +128,6 @@
             {
                 "access": "RW",
                 "desc": "Hold time during which reactive current support continues after the average voltage has entered the dead zone.",
-                "detail": " ",
                 "label": "HoldTmms",
                 "name": "HoldTmms",
                 "type": "uint16",
@@ -147,7 +135,6 @@
             },
             {
                 "desc": "Scale factor for the gradients.",
-                "detail": " ",
                 "label": "ArGra_SF",
                 "mandatory": "M",
                 "name": "ArGra_SF",
@@ -155,7 +142,6 @@
             },
             {
                 "desc": "Scale factor for the voltage zone and limit settings.",
-                "detail": " ",
                 "label": "VRefPct_SF",
                 "name": "VRefPct_SF",
                 "type": "sunssf"

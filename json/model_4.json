@@ -8,7 +8,6 @@
                 "points": [
                     {
                         "desc": "Digital Signature",
-                        "detail": "The DS covers all registers from X to N and is N registers in length",
                         "label": "DS",
                         "mandatory": "M",
                         "name": "DS",
@@ -72,7 +71,6 @@
             },
             {
                 "desc": "Number of values from the request",
-                "detail": "A max of 50 values are allocated",
                 "label": "X",
                 "mandatory": "M",
                 "name": "X",
@@ -80,7 +78,6 @@
             },
             {
                 "desc": "Copy of value from register Off1.",
-                "detail": "Unused values shall return 0xFFFF (unimplemented)",
                 "label": "Value1",
                 "mandatory": "M",
                 "name": "Val1",
@@ -347,7 +344,6 @@
             },
             {
                 "desc": "Sequence number of response",
-                "detail": "Shall be advanced for each response",
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
@@ -372,7 +368,6 @@
             },
             {
                 "desc": "Algorithm used to compute the digital signature",
-                "detail": "For future proof",
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",
@@ -394,7 +389,6 @@
             },
             {
                 "desc": "Number of registers comprising the digital signature.",
-                "detail": "The value of N must be at least 4 (64 bits)",
                 "label": "N",
                 "mandatory": "M",
                 "name": "N",

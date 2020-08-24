@@ -17,12 +17,14 @@
                         "desc": "Stored curve points.",
                         "label": "Stored Curve Points",
                         "name": "Pt",
+                        "notes": "",
                         "points": [
                             {
                                 "access": "RW",
                                 "desc": "Curve active power point as percentage.",
                                 "label": "Active Power Point",
                                 "name": "W",
+                                "notes": "",
                                 "sf": "W_SF",
                                 "type": "uint16",
                                 "units": "WMaxPct"
@@ -32,6 +34,7 @@
                                 "desc": "Curve reactive power point as set in DeptRef point.",
                                 "label": "Reactive Power Point",
                                 "name": "Var",
+                                "notes": "",
                                 "sf": "DeptRef_SF",
                                 "type": "int16",
                                 "units": "VarPct"
@@ -42,6 +45,7 @@
                 ],
                 "label": "Stored Curves",
                 "name": "Crv",
+                "notes": "",
                 "points": [
                     {
                         "access": "RW",
@@ -49,6 +53,7 @@
                         "label": "Active Points",
                         "mandatory": "M",
                         "name": "ActPt",
+                        "notes": "",
                         "type": "uint16"
                     },
                     {
@@ -57,20 +62,24 @@
                         "label": "Dependent Reference",
                         "mandatory": "M",
                         "name": "DeptRef",
+                        "notes": "",
                         "symbols": [
                             {
                                 "label": "Percent Max Watts",
                                 "name": "W_MAX_PCT",
+                                "notes": "",
                                 "value": 1
                             },
                             {
                                 "label": "Percent Max Vars",
                                 "name": "VAR_MAX_PCT",
+                                "notes": "",
                                 "value": 2
                             },
                             {
                                 "label": "Percent Available Vars",
                                 "name": "VAR_AVAL_PCT",
+                                "notes": "",
                                 "value": 3
                             }
                         ],
@@ -78,13 +87,16 @@
                     },
                     {
                         "name": "Pri",
+                        "notes": "",
                         "symbols": [
                             {
                                 "name": "ACTIVE",
+                                "notes": "",
                                 "value": 1
                             },
                             {
                                 "name": "REACTIVE",
+                                "notes": "",
                                 "value": 2
                             }
                         ],
@@ -95,17 +107,20 @@
                         "desc": "Curve read-write access.",
                         "label": "Curve Access",
                         "name": "ReadOnly",
+                        "notes": "",
                         "symbols": [
                             {
                                 "desc": "Curve has read-write access.",
                                 "label": "Read-Write Access",
                                 "name": "RW",
+                                "notes": "",
                                 "value": 0
                             },
                             {
                                 "desc": "Curve has read-only access.",
                                 "label": "Read-Only Access",
                                 "name": "R",
+                                "notes": "",
                                 "value": 1
                             }
                         ],
@@ -117,12 +132,14 @@
         ],
         "label": "DER Watt-Var",
         "name": "DERWattVar",
+        "notes": "",
         "points": [
             {
                 "desc": "DER Watt-Var model id.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "notes": "",
                 "static": "S",
                 "type": "uint16",
                 "value": 712
@@ -132,6 +149,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "notes": "",
                 "static": "S",
                 "type": "uint16"
             },
@@ -141,19 +159,20 @@
                 "label": "Module Enable",
                 "mandatory": "M",
                 "name": "Ena",
+                "notes": "",
                 "symbols": [
                     {
                         "desc": "Function is enabled.",
-                        "detail": "Function is enabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
+                        "notes": "Function is enabled.",
                         "value": 0
                     },
                     {
                         "desc": "Function is disabled.",
-                        "detail": "Function is disabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
+                        "notes": "Function is disabled.",
                         "value": 1
                     }
                 ],
@@ -161,21 +180,23 @@
             },
             {
                 "desc": "Current active  curve state.",
-                "detail": " ",
                 "label": "Active Curve State",
                 "mandatory": "M",
                 "name": "CrvSt",
+                "notes": " ",
                 "symbols": [
                     {
                         "desc": "No curve is currenly active.",
                         "label": "No active curve",
                         "name": "INACTIVE",
+                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Active curve in effect.",
                         "label": "Active curve enabled",
                         "name": "ACTIVE",
+                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -187,6 +208,7 @@
                 "label": "Set active curve request",
                 "mandatory": "M",
                 "name": "AdptCrvReq",
+                "notes": "",
                 "type": "uint16"
             },
             {
@@ -194,23 +216,27 @@
                 "label": "Set active curve result",
                 "mandatory": "M",
                 "name": "AdptCrvRslt",
+                "notes": "",
                 "symbols": [
                     {
                         "desc": "Curve update in progress.",
                         "label": "Update In Progress",
                         "name": "IN_PROGRESS",
+                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Curve update completed successfully.",
                         "label": "Update Complete",
                         "name": "COMPLETED",
+                        "notes": "",
                         "value": 1
                     },
                     {
                         "desc": "Curve update failed.",
                         "label": "Update Failed",
                         "name": "FAILED",
+                        "notes": "",
                         "value": 2
                     }
                 ],
@@ -218,10 +244,10 @@
             },
             {
                 "desc": "Number of curve points supported.",
-                "detail": " ",
                 "label": "Number of Points",
                 "mandatory": "M",
                 "name": "NPt",
+                "notes": " ",
                 "static": "S",
                 "type": "uint16"
             },
@@ -230,6 +256,7 @@
                 "label": "Stored Curve Count",
                 "mandatory": "M",
                 "name": "NCrv",
+                "notes": "",
                 "static": "S",
                 "type": "uint16"
             },
@@ -238,12 +265,14 @@
                 "desc": "Reversion time in seconds.  0 = No reversion time",
                 "label": "Reversion timeout",
                 "name": "RvrtTms",
+                "notes": "",
                 "type": "uint32"
             },
             {
                 "desc": "Reversion time remaining in seconds",
                 "label": "Reversion time left",
                 "name": "RvrtRem",
+                "notes": "",
                 "type": "uint32"
             },
             {
@@ -251,6 +280,7 @@
                 "desc": "Default curve after reversion timeout.",
                 "label": "Reversion curve",
                 "name": "RvrtCrv",
+                "notes": "",
                 "type": "uint16"
             },
             {
@@ -258,6 +288,7 @@
                 "label": "Active Power Scale Factor",
                 "mandatory": "M",
                 "name": "W_SF",
+                "notes": "",
                 "static": "S",
                 "type": "sunssf"
             },
@@ -266,6 +297,7 @@
                 "label": "Var  Scale Factor",
                 "mandatory": "M",
                 "name": "DeptRef_SF",
+                "notes": "",
                 "static": "S",
                 "type": "sunssf"
             }

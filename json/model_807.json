@@ -7,7 +7,6 @@
                 "points": [
                     {
                         "desc": "Index of the module within the string.",
-                        "detail": "Indices are one-based.",
                         "label": "Module Index",
                         "mandatory": "M",
                         "name": "ModIdx",
@@ -66,7 +65,6 @@
                     },
                     {
                         "desc": "Maximum voltage for all cells in this module.",
-                        "detail": "Measurement.",
                         "label": "Maximum Cell Voltage",
                         "name": "ModCellVMax",
                         "sf": "CellV_SF",
@@ -81,7 +79,6 @@
                     },
                     {
                         "desc": "Minimum voltage for all cells in this module.",
-                        "detail": "Measurement.",
                         "label": "Minimum Cell Voltage",
                         "name": "ModCellVMin",
                         "sf": "CellV_SF",
@@ -96,7 +93,6 @@
                     },
                     {
                         "desc": "Average voltage for all cells in this module.",
-                        "detail": "Calculation based on measurements.",
                         "label": "Average Cell Voltage",
                         "name": "ModCellVAvg",
                         "sf": "CellV_SF",
@@ -456,7 +452,6 @@
                     {
                         "access": "RW",
                         "desc": "Enables and disables the module.",
-                        "detail": "Should reset to 0 upon completion.",
                         "label": "Enable/Disable Module",
                         "name": "ModSetEna",
                         "symbols": [
@@ -474,7 +469,6 @@
                     {
                         "access": "RW",
                         "desc": "Connects and disconnects the module.",
-                        "detail": "Should reset to 0 upon completion.",
                         "label": "Connect/Disconnect Module ",
                         "name": "ModSetCon",
                         "symbols": [
@@ -543,7 +537,6 @@
             },
             {
                 "desc": "Index of the string within the bank.",
-                "detail": "Indices are one-based.",
                 "label": "String Index",
                 "mandatory": "M",
                 "name": "Idx",
@@ -565,7 +558,6 @@
             },
             {
                 "desc": "Maximum voltage for all modules in the string.",
-                "detail": "Measurement.",
                 "label": "Max Module Voltage",
                 "mandatory": "M",
                 "name": "ModVMax",
@@ -581,7 +573,6 @@
             },
             {
                 "desc": "Minimum voltage for all modules in the string.",
-                "detail": "Measurement.",
                 "label": "Min Module Voltage",
                 "mandatory": "M",
                 "name": "ModVMin",
@@ -597,7 +588,6 @@
             },
             {
                 "desc": "Average voltage for all modules in the string.",
-                "detail": "Calculation based on measurements.",
                 "label": "Average Module Voltage",
                 "mandatory": "M",
                 "name": "ModVAvg",
@@ -607,7 +597,6 @@
             },
             {
                 "desc": "Maximum voltage for all cells in the string.",
-                "detail": "Measurement.",
                 "label": "Max Cell Voltage",
                 "name": "CellVMax",
                 "sf": "CellV_SF",
@@ -628,7 +617,6 @@
             },
             {
                 "desc": "Minimum voltage for all cells in the string.",
-                "detail": "Measurement.",
                 "label": "Min Cell Voltage",
                 "name": "CellVMin",
                 "sf": "CellV_SF",
@@ -649,7 +637,6 @@
             },
             {
                 "desc": "Average voltage for all cells in the string.",
-                "detail": "Calculation based on measurements.",
                 "label": "Average Cell Voltage",
                 "name": "CellVAvg",
                 "sf": "CellV_SF",
@@ -658,7 +645,6 @@
             },
             {
                 "desc": "Maximum electrolyte temperature for all modules in the string.",
-                "detail": "Measurement.",
                 "label": "Max Temperature",
                 "mandatory": "M",
                 "name": "TmpMax",
@@ -674,7 +660,6 @@
             },
             {
                 "desc": "Minimum electrolyte temperature for all modules in the string.",
-                "detail": "Measurement.",
                 "label": "Min Temperature",
                 "mandatory": "M",
                 "name": "TmpMin",
@@ -690,7 +675,6 @@
             },
             {
                 "desc": "Average electrolyte temperature for all modules in the string.",
-                "detail": "Calculation based on measurements.",
                 "label": "Average Temperature",
                 "mandatory": "M",
                 "name": "TmpAvg",
@@ -905,7 +889,6 @@
             },
             {
                 "desc": "Pad register.",
-                "detail": " ",
                 "label": "Pad",
                 "mandatory": "M",
                 "name": "Pad1",

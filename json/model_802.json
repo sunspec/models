@@ -100,7 +100,6 @@
             },
             {
                 "desc": "State of charge, expressed as a percentage.",
-                "detail": "Measurement.",
                 "label": "State of Charge",
                 "mandatory": "M",
                 "name": "SoC",
@@ -110,7 +109,6 @@
             },
             {
                 "desc": "Depth of discharge, expressed as a percentage.",
-                "detail": "Measurement.",
                 "label": "Depth of Discharge",
                 "name": "DoD",
                 "sf": "DoD_SF",
@@ -169,7 +167,6 @@
             },
             {
                 "desc": "Battery control mode. Enumeration.",
-                "detail": "Maps to DRCC.LocRemCtl in IEC 61850.",
                 "label": "Control Mode",
                 "mandatory": "M",
                 "name": "LocRemCtl",
@@ -201,7 +198,6 @@
             {
                 "access": "RW",
                 "desc": "Used to reset any latched alarms.  1 = Reset.",
-                "detail": "Battery should reset to 0 when reset is complete.",
                 "label": "Alarm Reset",
                 "mandatory": "M",
                 "name": "AlmRst",
@@ -209,7 +205,6 @@
             },
             {
                 "desc": "Type of battery. Enumeration.",
-                "detail": "Maps to DBAT.BatTyp in 61850.",
                 "label": "Battery Type",
                 "mandatory": "M",
                 "name": "Typ",
@@ -267,7 +262,6 @@
             },
             {
                 "desc": "State of the battery bank.  Enumeration.",
-                "detail": "Must be reconciled with State in IEC 61850.",
                 "label": "State of the Battery Bank",
                 "mandatory": "M",
                 "name": "State",
@@ -311,7 +305,6 @@
             },
             {
                 "desc": "Date the device warranty expires.",
-                "detail": "Number of days since 1/1/2000.",
                 "label": "Warranty Date",
                 "name": "WarrDt",
                 "type": "uint32"
@@ -447,7 +440,6 @@
             },
             {
                 "desc": "Alarms and warnings.  Bit flags.",
-                "detail": "Reserved for future use.",
                 "label": "Battery Event 2 Bitfield",
                 "mandatory": "M",
                 "name": "Evt2",
@@ -469,7 +461,6 @@
             },
             {
                 "desc": "DC Bus Voltage.",
-                "detail": "Maps to ZBAT.V in IEC 61850.",
                 "label": "External Battery Voltage",
                 "mandatory": "M",
                 "name": "V",
@@ -479,7 +470,6 @@
             },
             {
                 "desc": "Instantaneous maximum battery voltage.",
-                "detail": "If not implemented, must implement AChaMax and ADisChaMax.",
                 "label": "Max Battery Voltage",
                 "name": "VMax",
                 "sf": "V_SF",
@@ -488,7 +478,6 @@
             },
             {
                 "desc": "Instantaneous minimum battery voltage.",
-                "detail": "If not implemented, must implement AChaMax and ADisChaMax.",
                 "label": "Min Battery Voltage",
                 "name": "VMin",
                 "sf": "V_SF",
@@ -497,7 +486,6 @@
             },
             {
                 "desc": "Maximum voltage for all cells in the bank.",
-                "detail": "Measurement.",
                 "label": "Max Cell Voltage",
                 "name": "CellVMax",
                 "sf": "CellV_SF",
@@ -518,7 +506,6 @@
             },
             {
                 "desc": "Minimum voltage for all cells in the bank.",
-                "detail": "Measurement.",
                 "label": "Min Cell Voltage",
                 "name": "CellVMin",
                 "sf": "CellV_SF",
@@ -539,7 +526,6 @@
             },
             {
                 "desc": "Average cell voltage for all cells in the bank.",
-                "detail": "Calculation based on measurements.",
                 "label": "Average Cell Voltage",
                 "name": "CellVAvg",
                 "sf": "CellV_SF",
@@ -548,7 +534,6 @@
             },
             {
                 "desc": "Total DC current flowing to/from the battery bank.",
-                "detail": "Measurement.",
                 "label": "Total DC Current",
                 "mandatory": "M",
                 "name": "A",
@@ -558,7 +543,6 @@
             },
             {
                 "desc": "Instantaneous maximum DC charge current.",
-                "detail": "Calculation which is always unsigned (i.e. magnitude only). If not implemented, must implement VMax and VMin.",
                 "label": "Max Charge Current",
                 "name": "AChaMax",
                 "sf": "AMax_SF",
@@ -567,7 +551,6 @@
             },
             {
                 "desc": "Instantaneous maximum DC discharge current.",
-                "detail": "Calculation which is always unsigned (i.e. magnitude only). If not implemented, must implement VMax and VMin.",
                 "label": "Max Discharge Current",
                 "name": "ADisChaMax",
                 "sf": "AMax_SF",
@@ -576,7 +559,6 @@
             },
             {
                 "desc": "Total power flowing to/from the battery bank.",
-                "detail": "Measurement.",
                 "label": "Total Power",
                 "mandatory": "M",
                 "name": "W",
@@ -586,7 +568,6 @@
             },
             {
                 "desc": "Request from battery to start or stop the inverter.  Enumeration.",
-                "detail": "Used in special states such as manual battery charging.",
                 "label": "Inverter State Request",
                 "name": "ReqInvState",
                 "symbols": [
@@ -607,7 +588,6 @@
             },
             {
                 "desc": "AC Power requested by battery.",
-                "detail": "Used in special states such as string balancing.",
                 "label": "Battery Power Request",
                 "name": "ReqW",
                 "sf": "W_SF",
@@ -635,7 +615,6 @@
             {
                 "access": "RW",
                 "desc": "Set the current state of the inverter.",
-                "detail": "Information needed by battery for some operations.",
                 "label": "Set Inverter State",
                 "mandatory": "M",
                 "name": "SetInvState",

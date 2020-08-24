@@ -9,7 +9,6 @@
                     {
                         "access": "RW",
                         "desc": "Digital Signature",
-                        "detail": "The DS covers all registers from X to N and is N registers in length",
                         "label": "DS",
                         "mandatory": "M",
                         "name": "DS",
@@ -42,7 +41,6 @@
             {
                 "access": "RW",
                 "desc": "Number of (offset, value) pairs being written",
-                "detail": "A max of 50 (offset, value) pairs are allocated",
                 "label": "X",
                 "mandatory": "M",
                 "name": "X",
@@ -51,7 +49,6 @@
             {
                 "access": "RW",
                 "desc": "Starting offset for write operation",
-                "detail": "X values to follow ",
                 "label": "Offset",
                 "mandatory": "M",
                 "name": "Off",
@@ -558,7 +555,6 @@
             {
                 "access": "RW",
                 "desc": "Sequence number of request",
-                "detail": "Shall be advanced for each request",
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
@@ -567,7 +563,6 @@
             {
                 "access": "RW",
                 "desc": "Signing key used 0-5",
-                "detail": "Each controller is assigned a key index that maps to their access control role",
                 "label": "Role",
                 "mandatory": "M",
                 "name": "Role",
@@ -582,7 +577,6 @@
             {
                 "access": "RW",
                 "desc": "Algorithm used to compute the digital signature",
-                "detail": "For future proof",
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",
@@ -605,7 +599,6 @@
             {
                 "access": "RW",
                 "desc": "Number of registers comprising the digital signature.",
-                "detail": "The value of N must be at least 4 (64 bits)",
                 "label": "N",
                 "mandatory": "M",
                 "name": "N",

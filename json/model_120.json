@@ -1,7 +1,6 @@
 {
     "group": {
         "desc": "Inverter Controls Nameplate Ratings ",
-        "detail": "Ref 3: 8.14.3.2, Ref 4: 17",
         "label": "Nameplate",
         "name": "nameplate",
         "points": [
@@ -24,7 +23,6 @@
             },
             {
                 "desc": "Type of DER device. Default value is 4 to indicate PV device.",
-                "detail": " ",
                 "label": "DERTyp",
                 "mandatory": "M",
                 "name": "DERTyp",
@@ -42,7 +40,6 @@
             },
             {
                 "desc": "Continuous power output capability of the inverter.",
-                "detail": " ",
                 "label": "WRtg",
                 "mandatory": "M",
                 "name": "WRtg",
@@ -52,7 +49,6 @@
             },
             {
                 "desc": "Scale factor",
-                "detail": " ",
                 "label": "WRtg_SF",
                 "mandatory": "M",
                 "name": "WRtg_SF",
@@ -60,7 +56,6 @@
             },
             {
                 "desc": "Continuous Volt-Ampere capability of the inverter.",
-                "detail": " ",
                 "label": "VARtg",
                 "mandatory": "M",
                 "name": "VARtg",
@@ -70,7 +65,6 @@
             },
             {
                 "desc": "Scale factor",
-                "detail": " ",
                 "label": "VARtg_SF",
                 "mandatory": "M",
                 "name": "VARtg_SF",
@@ -78,7 +72,6 @@
             },
             {
                 "desc": "Continuous VAR capability of the inverter in quadrant 1.",
-                "detail": " ",
                 "label": "VArRtgQ1",
                 "mandatory": "M",
                 "name": "VArRtgQ1",
@@ -88,7 +81,6 @@
             },
             {
                 "desc": "Continuous VAR capability of the inverter in quadrant 2.",
-                "detail": " ",
                 "label": "VArRtgQ2",
                 "mandatory": "M",
                 "name": "VArRtgQ2",
@@ -98,7 +90,6 @@
             },
             {
                 "desc": "Continuous VAR capability of the inverter in quadrant 3.",
-                "detail": " ",
                 "label": "VArRtgQ3",
                 "mandatory": "M",
                 "name": "VArRtgQ3",
@@ -108,7 +99,6 @@
             },
             {
                 "desc": "Continuous VAR capability of the inverter in quadrant 4.",
-                "detail": " ",
                 "label": "VArRtgQ4",
                 "mandatory": "M",
                 "name": "VArRtgQ4",
@@ -118,7 +108,6 @@
             },
             {
                 "desc": "Scale factor",
-                "detail": " ",
                 "label": "VArRtg_SF",
                 "mandatory": "M",
                 "name": "VArRtg_SF",
@@ -126,7 +115,6 @@
             },
             {
                 "desc": "Maximum RMS AC current level capability of the inverter.",
-                "detail": "Sum of all connected phases.  Current rating under nominal voltage under nominal power factor.",
                 "label": "ARtg",
                 "mandatory": "M",
                 "name": "ARtg",
@@ -136,7 +124,6 @@
             },
             {
                 "desc": "Scale factor",
-                "detail": " ",
                 "label": "ARtg_SF",
                 "mandatory": "M",
                 "name": "ARtg_SF",
@@ -144,7 +131,6 @@
             },
             {
                 "desc": "Minimum power factor capability of the inverter in quadrant 1.",
-                "detail": "EEI sign convention.",
                 "label": "PFRtgQ1",
                 "mandatory": "M",
                 "name": "PFRtgQ1",
@@ -154,7 +140,6 @@
             },
             {
                 "desc": "Minimum power factor capability of the inverter in quadrant 2.",
-                "detail": "EEI sign convention.",
                 "label": "PFRtgQ2",
                 "mandatory": "M",
                 "name": "PFRtgQ2",
@@ -164,7 +149,6 @@
             },
             {
                 "desc": "Minimum power factor capability of the inverter in quadrant 3.",
-                "detail": "EEI sign convention.",
                 "label": "PFRtgQ3",
                 "mandatory": "M",
                 "name": "PFRtgQ3",
@@ -174,7 +158,6 @@
             },
             {
                 "desc": "Minimum power factor capability of the inverter in quadrant 4.",
-                "detail": "EEI sign convention.",
                 "label": "PFRtgQ4",
                 "mandatory": "M",
                 "name": "PFRtgQ4",
@@ -184,7 +167,6 @@
             },
             {
                 "desc": "Scale factor",
-                "detail": " ",
                 "label": "PFRtg_SF",
                 "mandatory": "M",
                 "name": "PFRtg_SF",
@@ -192,7 +174,6 @@
             },
             {
                 "desc": "Nominal energy rating of storage device.",
-                "detail": " ",
                 "label": "WHRtg",
                 "name": "WHRtg",
                 "sf": "WHRtg_SF",
@@ -201,14 +182,12 @@
             },
             {
                 "desc": "Scale factor",
-                "detail": " ",
                 "label": "WHRtg_SF",
                 "name": "WHRtg_SF",
                 "type": "sunssf"
             },
             {
                 "desc": "The usable capacity of the battery.  Maximum charge minus minimum charge from a technology capability perspective (Amp-hour capacity rating).",
-                "detail": " ",
                 "label": "AhrRtg",
                 "name": "AhrRtg",
                 "sf": "AhrRtg_SF",
@@ -217,14 +196,12 @@
             },
             {
                 "desc": "Scale factor for amp-hour rating.",
-                "detail": " ",
                 "label": "AhrRtg_SF",
                 "name": "AhrRtg_SF",
                 "type": "sunssf"
             },
             {
                 "desc": "Maximum rate of energy transfer into the storage device.",
-                "detail": " ",
                 "label": "MaxChaRte",
                 "name": "MaxChaRte",
                 "sf": "MaxChaRte_SF",
@@ -233,14 +210,12 @@
             },
             {
                 "desc": "Scale factor",
-                "detail": " ",
                 "label": "MaxChaRte_SF",
                 "name": "MaxChaRte_SF",
                 "type": "sunssf"
             },
             {
                 "desc": "Maximum rate of energy transfer out of the storage device.",
-                "detail": " ",
                 "label": "MaxDisChaRte",
                 "name": "MaxDisChaRte",
                 "sf": "MaxDisChaRte_SF",
@@ -249,14 +224,12 @@
             },
             {
                 "desc": "Scale factor",
-                "detail": " ",
                 "label": "MaxDisChaRte_SF",
                 "name": "MaxDisChaRte_SF",
                 "type": "sunssf"
             },
             {
                 "desc": "Pad register.",
-                "detail": " ",
                 "label": "Pad",
                 "name": "Pad",
                 "type": "pad"

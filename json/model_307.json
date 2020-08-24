@@ -1,7 +1,6 @@
 {
     "group": {
         "desc": "Base Meteorological Model",
-        "detail": "This model supersedes model 301",
         "label": "Base Met",
         "name": "base_met",
         "points": [

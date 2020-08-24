@@ -23,7 +23,6 @@
             },
             {
                 "desc": "AC Current",
-                "detail": "Sum of active phases",
                 "label": "Amps",
                 "mandatory": "M",
                 "name": "A",
@@ -32,7 +31,6 @@
             },
             {
                 "desc": "Phase A Current",
-                "detail": "Connected Phase",
                 "label": "Amps PhaseA",
                 "mandatory": "M",
                 "name": "AphA",
@@ -41,7 +39,6 @@
             },
             {
                 "desc": "Phase B Current",
-                "detail": "Connected Phase",
                 "label": "Amps PhaseB",
                 "mandatory": "M",
                 "name": "AphB",
@@ -50,7 +47,6 @@
             },
             {
                 "desc": "Phase C Current",
-                "detail": "Connected Phase",
                 "label": "Amps PhaseC",
                 "mandatory": "M",
                 "name": "AphC",

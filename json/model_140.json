@@ -1,7 +1,6 @@
 {
     "group": {
         "desc": "HVRT extended curve",
-        "detail": "Ref 4: 11",
         "groups": [
             {
                 "count": 0,
@@ -10,7 +9,6 @@
                     {
                         "access": "RW",
                         "desc": "Number of active points in array.",
-                        "detail": " ",
                         "label": "ActPt",
                         "mandatory": "M",
                         "name": "ActPt",
@@ -19,7 +17,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 1 duration.",
-                        "detail": " ",
                         "label": "Tms1",
                         "mandatory": "M",
                         "name": "Tms1",
@@ -30,7 +27,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 1 voltage.",
-                        "detail": " ",
                         "label": "V1",
                         "mandatory": "M",
                         "name": "V1",
@@ -41,7 +37,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 2 duration.",
-                        "detail": " ",
                         "label": "Tms2",
                         "name": "Tms2",
                         "sf": "Tms_SF",
@@ -51,7 +46,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 2 voltage.",
-                        "detail": " ",
                         "label": "V2",
                         "name": "V2",
                         "sf": "V_SF",
@@ -61,7 +55,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 3 duration.",
-                        "detail": " ",
                         "label": "Tms3",
                         "name": "Tms3",
                         "sf": "Tms_SF",
@@ -71,7 +64,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 3 voltage.",
-                        "detail": " ",
                         "label": "V3",
                         "name": "V3",
                         "sf": "V_SF",
@@ -81,7 +73,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 4 duration.",
-                        "detail": " ",
                         "label": "Tms4",
                         "name": "Tms4",
                         "sf": "Tms_SF",
@@ -91,7 +82,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 4 voltage.",
-                        "detail": " ",
                         "label": "V4",
                         "name": "V4",
                         "sf": "V_SF",
@@ -101,7 +91,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 5 duration.",
-                        "detail": " ",
                         "label": "Tms5",
                         "name": "Tms5",
                         "sf": "Tms_SF",
@@ -111,7 +100,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 5 voltage.",
-                        "detail": " ",
                         "label": "V5",
                         "name": "V5",
                         "sf": "V_SF",
@@ -121,7 +109,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 6 duration.",
-                        "detail": " ",
                         "label": "Tms6",
                         "name": "Tms6",
                         "sf": "Tms_SF",
@@ -131,7 +118,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 6 voltage.",
-                        "detail": " ",
                         "label": "V6",
                         "name": "V6",
                         "sf": "V_SF",
@@ -141,7 +127,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 7 duration.",
-                        "detail": " ",
                         "label": "Tms7",
                         "name": "Tms7",
                         "sf": "Tms_SF",
@@ -151,7 +136,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 7 voltage.",
-                        "detail": " ",
                         "label": "V7",
                         "name": "V7",
                         "sf": "V_SF",
@@ -161,7 +145,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 8 duration.",
-                        "detail": " ",
                         "label": "Tms8",
                         "name": "Tms8",
                         "sf": "Tms_SF",
@@ -171,7 +154,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 8 voltage.",
-                        "detail": " ",
                         "label": "V8",
                         "name": "V8",
                         "sf": "V_SF",
@@ -181,7 +163,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 9 duration.",
-                        "detail": " ",
                         "label": "Tms9",
                         "name": "Tms9",
                         "sf": "Tms_SF",
@@ -191,7 +172,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 9 voltage.",
-                        "detail": " ",
                         "label": "V9",
                         "name": "V9",
                         "sf": "V_SF",
@@ -201,7 +181,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 10 duration.",
-                        "detail": " ",
                         "label": "Tms10",
                         "name": "Tms10",
                         "sf": "Tms_SF",
@@ -211,7 +190,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 10 voltage.",
-                        "detail": " ",
                         "label": "V10",
                         "name": "V10",
                         "sf": "V_SF",
@@ -221,7 +199,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 11 duration.",
-                        "detail": " ",
                         "label": "Tms11",
                         "name": "Tms11",
                         "sf": "Tms_SF",
@@ -231,7 +208,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 11 voltage.",
-                        "detail": " ",
                         "label": "V11",
                         "name": "V11",
                         "sf": "V_SF",
@@ -241,7 +217,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 12 duration.",
-                        "detail": " ",
                         "label": "Tms12",
                         "name": "Tms12",
                         "sf": "Tms_SF",
@@ -251,7 +226,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 12 voltage.",
-                        "detail": " ",
                         "label": "V12",
                         "name": "V12",
                         "sf": "V_SF",
@@ -261,7 +235,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 13 duration.",
-                        "detail": " ",
                         "label": "Tms13",
                         "name": "Tms13",
                         "sf": "Tms_SF",
@@ -271,7 +244,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 13 voltage.",
-                        "detail": " ",
                         "label": "V13",
                         "name": "V13",
                         "sf": "V_SF",
@@ -281,7 +253,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 14 duration.",
-                        "detail": " ",
                         "label": "Tms14",
                         "name": "Tms14",
                         "sf": "Tms_SF",
@@ -291,7 +262,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 14 voltage.",
-                        "detail": " ",
                         "label": "V14",
                         "name": "V14",
                         "sf": "V_SF",
@@ -301,7 +271,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 15 duration.",
-                        "detail": " ",
                         "label": "Tms15",
                         "name": "Tms15",
                         "sf": "Tms_SF",
@@ -311,7 +280,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 15 voltage.",
-                        "detail": " ",
                         "label": "V15",
                         "name": "V15",
                         "sf": "V_SF",
@@ -321,7 +289,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 16 duration.",
-                        "detail": " ",
                         "label": "Tms16",
                         "name": "Tms16",
                         "sf": "Tms_SF",
@@ -331,7 +298,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 16 voltage.",
-                        "detail": " ",
                         "label": "V16",
                         "name": "V16",
                         "sf": "V_SF",
@@ -341,7 +307,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 17 duration.",
-                        "detail": " ",
                         "label": "Tms17",
                         "name": "Tms17",
                         "sf": "Tms_SF",
@@ -351,7 +316,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 17 voltage.",
-                        "detail": " ",
                         "label": "V17",
                         "name": "V17",
                         "sf": "V_SF",
@@ -361,7 +325,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 18 duration.",
-                        "detail": " ",
                         "label": "Tms18",
                         "name": "Tms18",
                         "sf": "Tms_SF",
@@ -371,7 +334,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 18 voltage.",
-                        "detail": " ",
                         "label": "V18",
                         "name": "V18",
                         "sf": "V_SF",
@@ -381,7 +343,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 19 duration.",
-                        "detail": " ",
                         "label": "Tms19",
                         "name": "Tms19",
                         "sf": "Tms_SF",
@@ -391,7 +352,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 19 voltage.",
-                        "detail": " ",
                         "label": "V19",
                         "name": "V19",
                         "sf": "V_SF",
@@ -401,7 +361,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 20 duration.",
-                        "detail": " ",
                         "label": "Tms20",
                         "name": "Tms20",
                         "sf": "Tms_SF",
@@ -411,7 +370,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 20 voltage.",
-                        "detail": " ",
                         "label": "V20",
                         "name": "V20",
                         "sf": "V_SF",
@@ -421,7 +379,6 @@
                     {
                         "access": "RW",
                         "desc": "Optional description for curve.",
-                        "detail": " ",
                         "label": "CrvNam",
                         "name": "CrvNam",
                         "size": 8,
@@ -429,7 +386,6 @@
                     },
                     {
                         "desc": "Enumerated value indicates if curve is read-only or can be modified.",
-                        "detail": " ",
                         "label": "ReadOnly",
                         "mandatory": "M",
                         "name": "ReadOnly",
@@ -472,7 +428,6 @@
             {
                 "access": "RW",
                 "desc": "Index of active curve. 0=no active curve.",
-                "detail": " ",
                 "label": "ActCrv",
                 "mandatory": "M",
                 "name": "ActCrv",
@@ -481,7 +436,6 @@
             {
                 "access": "RW",
                 "desc": "LVRT control mode. Enable active curve.  Bitfield value.",
-                "detail": " ",
                 "label": "ModEna",
                 "mandatory": "M",
                 "name": "ModEna",
@@ -496,7 +450,6 @@
             {
                 "access": "RW",
                 "desc": "Time window for LVRT change.",
-                "detail": "Setting is ignored for LVRT controls.",
                 "label": "WinTms",
                 "name": "WinTms",
                 "type": "uint16",
@@ -505,7 +458,6 @@
             {
                 "access": "RW",
                 "desc": "Timeout period for LVRT curve selection.",
-                "detail": "Setting is ignored for LVRT controls.",
                 "label": "RvrtTms",
                 "name": "RvrtTms",
                 "type": "uint16",
@@ -514,7 +466,6 @@
             {
                 "access": "RW",
                 "desc": "Ramp time for moving from current mode to new mode.",
-                "detail": "Setting is ignored for LVRT controls.",
                 "label": "RmpTms",
                 "name": "RmpTms",
                 "type": "uint16",
@@ -522,7 +473,6 @@
             },
             {
                 "desc": "Number of curves supported (recommend 4).",
-                "detail": " ",
                 "label": "NCrv",
                 "mandatory": "M",
                 "name": "NCrv",
@@ -530,7 +480,6 @@
             },
             {
                 "desc": "Number of curve points supported (maximum of 20).",
-                "detail": " ",
                 "label": "NPt",
                 "mandatory": "M",
                 "name": "NPt",
@@ -538,7 +487,6 @@
             },
             {
                 "desc": "Scale factor for duration.",
-                "detail": " ",
                 "label": "Tms_SF",
                 "mandatory": "M",
                 "name": "Tms_SF",
@@ -546,7 +494,6 @@
             },
             {
                 "desc": "Scale factor for percent VRef.",
-                "detail": " ",
                 "label": "V_SF",
                 "mandatory": "M",
                 "name": "V_SF",

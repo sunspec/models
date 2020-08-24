@@ -1,7 +1,6 @@
 {
     "group": {
         "desc": "A solar module model supporting DC-DC converter",
-        "detail": "Float",
         "label": "Solar Module",
         "name": "solar_module",
         "points": [

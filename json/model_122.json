@@ -1,7 +1,6 @@
 {
     "group": {
         "desc": "Inverter Controls Extended Measurements and Status ",
-        "detail": "Ref 3: 8.14.3.2, Ref 4: 17",
         "label": "Measurements_Status",
         "name": "status",
         "points": [
@@ -24,7 +23,6 @@
             },
             {
                 "desc": "PV inverter present/available status. Enumerated value.",
-                "detail": " ",
                 "label": "PVConn",
                 "mandatory": "M",
                 "name": "PVConn",
@@ -50,7 +48,6 @@
             },
             {
                 "desc": "Storage inverter present/available status. Enumerated value.",
-                "detail": " ",
                 "label": "StorConn",
                 "mandatory": "M",
                 "name": "StorConn",
@@ -76,7 +73,6 @@
             },
             {
                 "desc": "ECP connection status: disconnected=0  connected=1.",
-                "detail": " ",
                 "label": "ECPConn",
                 "mandatory": "M",
                 "name": "ECPConn",
@@ -90,7 +86,6 @@
             },
             {
                 "desc": "AC lifetime active (real) energy output.",
-                "detail": " ",
                 "label": "ActWh",
                 "name": "ActWh",
                 "type": "acc64",
@@ -98,7 +93,6 @@
             },
             {
                 "desc": "AC lifetime apparent energy output.",
-                "detail": " ",
                 "label": "ActVAh",
                 "name": "ActVAh",
                 "type": "acc64",
@@ -106,7 +100,6 @@
             },
             {
                 "desc": "AC lifetime reactive energy output in quadrant 1.",
-                "detail": " ",
                 "label": "ActVArhQ1",
                 "name": "ActVArhQ1",
                 "type": "acc64",
@@ -114,7 +107,6 @@
             },
             {
                 "desc": "AC lifetime reactive energy output in quadrant 2.",
-                "detail": " ",
                 "label": "ActVArhQ2",
                 "name": "ActVArhQ2",
                 "type": "acc64",
@@ -122,7 +114,6 @@
             },
             {
                 "desc": "AC lifetime negative energy output  in quadrant 3.",
-                "detail": " ",
                 "label": "ActVArhQ3",
                 "name": "ActVArhQ3",
                 "type": "acc64",
@@ -130,7 +121,6 @@
             },
             {
                 "desc": "AC lifetime reactive energy output  in quadrant 4.",
-                "detail": " ",
                 "label": "ActVArhQ4",
                 "name": "ActVArhQ4",
                 "type": "acc64",
@@ -138,7 +128,6 @@
             },
             {
                 "desc": "Amount of VARs available without impacting watts output.",
-                "detail": " ",
                 "label": "VArAval",
                 "name": "VArAval",
                 "sf": "VArAval_SF",
@@ -147,14 +136,12 @@
             },
             {
                 "desc": "Scale factor for available VARs.",
-                "detail": " ",
                 "label": "VArAval_SF",
                 "name": "VArAval_SF",
                 "type": "sunssf"
             },
             {
                 "desc": "Amount of Watts available.",
-                "detail": " ",
                 "label": "WAval",
                 "name": "WAval",
                 "sf": "WAval_SF",
@@ -163,14 +150,12 @@
             },
             {
                 "desc": "Scale factor for available Watts.",
-                "detail": " ",
                 "label": "WAval_SF",
                 "name": "WAval_SF",
                 "type": "sunssf"
             },
             {
                 "desc": "Bit Mask indicating setpoint limit(s) reached.",
-                "detail": "Bits shall be automatically cleared on read.",
                 "label": "StSetLimMsk",
                 "name": "StSetLimMsk",
                 "symbols": [
@@ -223,7 +208,6 @@
             },
             {
                 "desc": "Bit Mask indicating which inverter controls are currently active.",
-                "detail": " ",
                 "label": "StActCtl",
                 "name": "StActCtl",
                 "symbols": [
@@ -288,7 +272,6 @@
             },
             {
                 "desc": "Source of time synchronization.",
-                "detail": " ",
                 "label": "TmSrc",
                 "name": "TmSrc",
                 "size": 4,
@@ -296,7 +279,6 @@
             },
             {
                 "desc": "Seconds since 01-01-2000 00:00 UTC",
-                "detail": " ",
                 "label": "Tms",
                 "name": "Tms",
                 "type": "uint32",
@@ -304,7 +286,6 @@
             },
             {
                 "desc": "Bit Mask indicating active ride-through status.",
-                "detail": " ",
                 "label": "RtSt",
                 "name": "RtSt",
                 "symbols": [
@@ -329,7 +310,6 @@
             },
             {
                 "desc": "Isolation resistance.",
-                "detail": " ",
                 "label": "Ris",
                 "name": "Ris",
                 "sf": "Ris_SF",
@@ -338,7 +318,6 @@
             },
             {
                 "desc": "Scale factor for isolation resistance.",
-                "detail": " ",
                 "label": "Ris_SF",
                 "name": "Ris_SF",
                 "type": "sunssf"

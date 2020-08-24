@@ -107,7 +107,6 @@
             {
                 "access": "RW",
                 "desc": "Total Length of the Certificate",
-                "detail": "In registers, zero padded.",
                 "label": "Total Length",
                 "mandatory": "M",
                 "name": "TotLn",
@@ -116,7 +115,6 @@
             {
                 "access": "RW",
                 "desc": "Length of this fragment",
-                "detail": "Maximum fragment length is 80 registers",
                 "label": "Fragment length",
                 "mandatory": "M",
                 "name": "FrgLn",
@@ -613,7 +611,6 @@
             {
                 "access": "RW",
                 "desc": "Sequence number of request",
-                "detail": "Shall be advanced for each request",
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
@@ -630,7 +627,6 @@
             {
                 "access": "RW",
                 "desc": "Signing key used 0-5",
-                "detail": "Each controller is assigned a key index that maps to their access control role",
                 "label": "Role",
                 "mandatory": "M",
                 "name": "Role",
@@ -639,7 +635,6 @@
             {
                 "access": "RW",
                 "desc": "Algorithm used to compute the digital signature",
-                "detail": "For future proof",
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",
