@@ -487,16 +487,6 @@
             },
             {
                 "access": "RW",
-                "desc": "Nominal AC voltage offset setting.",
-                "label": "Nominal AC Voltage Offset Setting",
-                "name": "VRefOfs",
-                "notes": "",
-                "sf": "V_SF",
-                "type": "uint16",
-                "units": "V"
-            },
-            {
-                "access": "RW",
                 "desc": "Intentional island categories",
                 "label": "Intentional Island Categories",
                 "name": "IntIslandCat",
