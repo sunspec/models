@@ -279,12 +279,12 @@
                         "value": 7
                     },
                     {
-                        "name": "LVRT",
+                        "name": "LV_TRIP",
                         "notes": "",
                         "value": 8
                     },
                     {
-                        "name": "HVRT",
+                        "name": "HV_TRIP",
                         "notes": "",
                         "value": 9
                     },
@@ -304,12 +304,12 @@
                         "value": 12
                     },
                     {
-                        "name": "LFRT",
+                        "name": "LF_TRIP",
                         "notes": "",
                         "value": 13
                     },
                     {
-                        "name": "HFRT",
+                        "name": "HF_TRIP",
                         "notes": "",
                         "value": 14
                     }
