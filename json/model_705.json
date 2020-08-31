@@ -129,17 +129,24 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "Vref adjustment as percentage.",
+                        "desc": "Vref adjustment as percentage of nominal voltage.",
                         "label": "Vref adjustment",
                         "name": "VRef",
                         "notes": "",
                         "type": "uint16"
                     },
                     {
-                        "access": "RW",
-                        "desc": "Enable automonous vref",
-                        "label": "Autonomous Vref Enable",
+                        "desc": "Autonomous vref value as a percentage of nominal voltage.",
+                        "label": "Current autonomous vref",
                         "name": "VRefAuto",
+                        "notes": "",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Enable automonous vref.",
+                        "label": "Autonomous Vref Enable",
+                        "name": "VRefAutoEna",
                         "notes": "",
                         "symbols": [
                             {
