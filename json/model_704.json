@@ -225,6 +225,7 @@
                 "type": "enum16"
             },
             {
+                "access": "RW",
                 "desc": "Power factor reversion timer when injecting active power enable.",
                 "label": "Power Factor Reversion Enable (W Inj)",
                 "name": "PFWInjRvrtEna",
@@ -292,6 +293,7 @@
                 "type": "enum16"
             },
             {
+                "access": "RW",
                 "desc": "Power factor reversion timer when absorbing active power enable.",
                 "label": "Power Factor Reversion Enable (W Abs)",
                 "name": "PFWAbsRvrtEna",
@@ -379,6 +381,7 @@
                 "units": "Pct"
             },
             {
+                "access": "RW",
                 "desc": "Reversion limit maximum active power value enable.",
                 "label": "Reversion Limit Max Power Enable",
                 "name": "WMaxLimRvrtEna",
@@ -510,6 +513,7 @@
                 "units": "Pct"
             },
             {
+                "access": "RW",
                 "desc": "Reversion active power function enable.",
                 "label": "Reversion Active Power Enable",
                 "name": "WSetRvrtEna",
@@ -699,6 +703,7 @@
                 "units": "Pct"
             },
             {
+                "access": "RW",
                 "desc": "Reversion reactive power function enable.",
                 "label": "Reversion Reactive Power Enable",
                 "name": "VarSetRvrtEna",
