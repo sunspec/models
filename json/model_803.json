@@ -74,7 +74,6 @@
                     },
                     {
                         "desc": "Battery string state of charge, expressed as a percentage.",
-                        "detail": "Measurement.",
                         "label": "String State of Charge",
                         "mandatory": "M",
                         "name": "StrSoC",
@@ -84,7 +83,6 @@
                     },
                     {
                         "desc": "Battery string state of health, expressed as a percentage.",
-                        "detail": "Measurement.",
                         "label": "String State of Health",
                         "name": "StrSoH",
                         "sf": "SoH_SF",
@@ -93,7 +91,6 @@
                     },
                     {
                         "desc": "String current measurement.",
-                        "detail": "Measurement.",
                         "label": "String Current",
                         "mandatory": "M",
                         "name": "StrA",
@@ -103,7 +100,6 @@
                     },
                     {
                         "desc": "Maximum voltage for all cells in the string.",
-                        "detail": "Measurement.",
                         "label": "Max Cell Voltage",
                         "mandatory": "M",
                         "name": "StrCellVMax",
@@ -119,7 +115,6 @@
                     },
                     {
                         "desc": "Minimum voltage for all cells in the string.",
-                        "detail": "Measurement.",
                         "label": "Min Cell Voltage",
                         "mandatory": "M",
                         "name": "StrCellVMin",
@@ -135,7 +130,6 @@
                     },
                     {
                         "desc": "Average voltage for all cells in the string.",
-                        "detail": "Calculation based on measurements.",
                         "label": "Average Cell Voltage",
                         "mandatory": "M",
                         "name": "StrCellVAvg",
@@ -145,7 +139,6 @@
                     },
                     {
                         "desc": "Maximum temperature for all modules in the bank.",
-                        "detail": "Measurement.",
                         "label": "Max Module Temperature",
                         "mandatory": "M",
                         "name": "StrModTmpMax",
@@ -161,7 +154,6 @@
                     },
                     {
                         "desc": "Minimum temperature for all modules in the bank.",
-                        "detail": "Measurement.",
                         "label": "Min Module Temperature",
                         "mandatory": "M",
                         "name": "StrModTmpMin",
@@ -177,7 +169,6 @@
                     },
                     {
                         "desc": "Average temperature for all modules in the bank.",
-                        "detail": "Calculation based on measurements.",
                         "label": "Average Module Temperature",
                         "mandatory": "M",
                         "name": "StrModTmpAvg",
@@ -476,7 +467,6 @@
                     },
                     {
                         "desc": "Alarms, warnings and status values.  Bit flags.",
-                        "detail": "Reserved for future use.",
                         "label": "String Event 2",
                         "name": "StrEvt2",
                         "type": "bitfield32"
@@ -496,7 +486,6 @@
                     {
                         "access": "RW",
                         "desc": "Enables and disables the string.",
-                        "detail": "Should reset to 0 upon completion.",
                         "label": "Enable/Disable String",
                         "name": "StrSetEna",
                         "symbols": [
@@ -514,7 +503,6 @@
                     {
                         "access": "RW",
                         "desc": "Connects and disconnects the string.",
-                        "detail": "Should reset to 0 upon completion.",
                         "label": "Connect/Disconnect String",
                         "name": "StrSetCon",
                         "symbols": [
@@ -531,7 +519,6 @@
                     },
                     {
                         "desc": "Pad register.",
-                        "detail": " ",
                         "label": "Pad",
                         "mandatory": "M",
                         "name": "Pad1",
@@ -539,7 +526,6 @@
                     },
                     {
                         "desc": "Pad register.",
-                        "detail": " ",
                         "label": "Pad",
                         "mandatory": "M",
                         "name": "Pad2",
@@ -585,7 +571,6 @@
             },
             {
                 "desc": "Maximum temperature for all modules in the bank.",
-                "detail": "Measurement.",
                 "label": "Max Module Temperature",
                 "mandatory": "M",
                 "name": "ModTmpMax",
@@ -606,7 +591,6 @@
             },
             {
                 "desc": "Minimum temperature for all modules in the bank.",
-                "detail": "Measurement.",
                 "label": "Min Module Temperature",
                 "mandatory": "M",
                 "name": "ModTmpMin",
@@ -628,14 +612,12 @@
             },
             {
                 "desc": "Average temperature for all modules in the bank.",
-                "detail": "Calculation based on measurements.",
                 "label": "Average Module Temperature",
                 "name": "ModTmpAvg",
                 "type": "uint16"
             },
             {
                 "desc": "Maximum string voltage for all strings in the bank.",
-                "detail": "Measurement.",
                 "label": "Max String Voltage",
                 "name": "StrVMax",
                 "sf": "V_SF",
@@ -650,7 +632,6 @@
             },
             {
                 "desc": "Minimum string voltage for all strings in the bank.",
-                "detail": "Measurement.",
                 "label": "Min String Voltage",
                 "name": "StrVMin",
                 "sf": "V_SF",
@@ -665,7 +646,6 @@
             },
             {
                 "desc": "Average string voltage for all strings in the bank.",
-                "detail": "Calculation based on measurements.",
                 "label": "Average String Voltage",
                 "name": "StrVAvg",
                 "sf": "V_SF",
@@ -674,7 +654,6 @@
             },
             {
                 "desc": "Maximum current of any string in the bank.",
-                "detail": "Measurement.",
                 "label": "Max String Current",
                 "name": "StrAMax",
                 "sf": "A_SF",
@@ -689,7 +668,6 @@
             },
             {
                 "desc": "Minimum current of any string in the bank.",
-                "detail": "Measurement.",
                 "label": "Min String Current",
                 "name": "StrAMin",
                 "sf": "A_SF",
@@ -704,7 +682,6 @@
             },
             {
                 "desc": "Average string current for all strings in the bank.",
-                "detail": "Calculation based on measurements.",
                 "label": "Average String Current",
                 "name": "StrAAvg",
                 "sf": "A_SF",

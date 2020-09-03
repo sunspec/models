@@ -1,7 +1,6 @@
 {
     "group": {
         "desc": "Monitors and controls multiple trackers",
-        "detail": "Trackers may include GPS model 305 for location information",
         "groups": [
             {
                 "count": 0,
@@ -16,7 +15,6 @@
                     },
                     {
                         "desc": "Auto target elevation in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
-                        "detail": "Conformant implementations shall implement El or Az",
                         "label": "Target Elevation",
                         "name": "ElTrgt",
                         "sf": "Dgr_SF",
@@ -25,7 +23,6 @@
                     },
                     {
                         "desc": "Auto target azimuth  in degrees from true north towards east.  Unimplemented for single axis horizontal tracker type",
-                        "detail": "Conformant implementations shall implement El or Az",
                         "label": "Target Azimuth",
                         "name": "AzTrgt",
                         "sf": "Dgr_SF",
@@ -34,7 +31,6 @@
                     },
                     {
                         "desc": "Actual elevation position  in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
-                        "detail": "Conformant implementations shall implement El or Az",
                         "label": "Elevation",
                         "name": "ElPos",
                         "sf": "Dgr_SF",
@@ -43,7 +39,6 @@
                     },
                     {
                         "desc": "Actual azimuth position  in degrees from true north towards east.  Unimplemented for single axis horizontal tracker type",
-                        "detail": "Conformant implementations shall implement El or Az",
                         "label": "Azimuth",
                         "name": "AzPos",
                         "sf": "Dgr_SF",
@@ -220,7 +215,6 @@
             {
                 "access": "RW",
                 "desc": "Global Control register operates on all trackers. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.",
-                "detail": "The global controls all trackers",
                 "label": "Global Mode",
                 "name": "GlblCtl",
                 "symbols": [
@@ -241,7 +235,6 @@
             },
             {
                 "desc": "Global tracker alarm conditions",
-                "detail": "Combined tracker alarm conditions.  See individual trackers for alarms",
                 "label": "Global Alarm",
                 "name": "GlblAlm",
                 "symbols": [

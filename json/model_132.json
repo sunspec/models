@@ -1,7 +1,6 @@
 {
     "group": {
         "desc": "Volt-Watt ",
-        "detail": "Ref 3: 8.12.1.2",
         "groups": [
             {
                 "count": 0,
@@ -10,7 +9,6 @@
                     {
                         "access": "RW",
                         "desc": "Number of active points in array.",
-                        "detail": " ",
                         "label": "ActPt",
                         "mandatory": "M",
                         "name": "ActPt",
@@ -19,7 +17,6 @@
                     {
                         "access": "RW",
                         "desc": "Defines the meaning of the Watts DeptRef.  1=% WMax 2=% WAvail",
-                        "detail": " ",
                         "label": "DeptRef",
                         "mandatory": "M",
                         "name": "DeptRef",
@@ -38,7 +35,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 1 Volts.",
-                        "detail": " ",
                         "label": "V1",
                         "mandatory": "M",
                         "name": "V1",
@@ -49,7 +45,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 1 Watts.",
-                        "detail": " ",
                         "label": "W1",
                         "mandatory": "M",
                         "name": "W1",
@@ -60,7 +55,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 2 Volts.",
-                        "detail": " ",
                         "label": "V2",
                         "name": "V2",
                         "sf": "V_SF",
@@ -70,7 +64,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 2 Watts.",
-                        "detail": " ",
                         "label": "W2",
                         "name": "W2",
                         "sf": "DeptRef_SF",
@@ -80,7 +73,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 3 Volts.",
-                        "detail": " ",
                         "label": "V3",
                         "name": "V3",
                         "sf": "V_SF",
@@ -90,7 +82,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 3 Watts.",
-                        "detail": " ",
                         "label": "W3",
                         "name": "W3",
                         "sf": "DeptRef_SF",
@@ -100,7 +91,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 4 Volts.",
-                        "detail": " ",
                         "label": "V4",
                         "name": "V4",
                         "sf": "V_SF",
@@ -110,7 +100,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 4 Watts.",
-                        "detail": " ",
                         "label": "W4",
                         "name": "W4",
                         "sf": "DeptRef_SF",
@@ -120,7 +109,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 5 Volts.",
-                        "detail": " ",
                         "label": "V5",
                         "name": "V5",
                         "sf": "V_SF",
@@ -130,7 +118,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 5 Watts.",
-                        "detail": " ",
                         "label": "W5",
                         "name": "W5",
                         "sf": "DeptRef_SF",
@@ -140,7 +127,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 6 Volts.",
-                        "detail": " ",
                         "label": "V6",
                         "name": "V6",
                         "sf": "V_SF",
@@ -150,7 +136,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 6 Watts.",
-                        "detail": " ",
                         "label": "W6",
                         "name": "W6",
                         "sf": "DeptRef_SF",
@@ -160,7 +145,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 7 Volts.",
-                        "detail": " ",
                         "label": "V7",
                         "name": "V7",
                         "sf": "V_SF",
@@ -170,7 +154,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 7 Watts.",
-                        "detail": " ",
                         "label": "W7",
                         "name": "W7",
                         "sf": "DeptRef_SF",
@@ -180,7 +163,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 8 Volts.",
-                        "detail": " ",
                         "label": "V8",
                         "name": "V8",
                         "sf": "V_SF",
@@ -190,7 +172,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 8 Watts.",
-                        "detail": " ",
                         "label": "W8",
                         "name": "W8",
                         "sf": "DeptRef_SF",
@@ -200,7 +181,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 9 Volts.",
-                        "detail": " ",
                         "label": "V9",
                         "name": "V9",
                         "sf": "V_SF",
@@ -210,7 +190,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 9 Watts.",
-                        "detail": " ",
                         "label": "W9",
                         "name": "W9",
                         "sf": "DeptRef_SF",
@@ -220,7 +199,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 10 Volts.",
-                        "detail": " ",
                         "label": "V10",
                         "name": "V10",
                         "sf": "V_SF",
@@ -230,7 +208,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 10 Watts.",
-                        "detail": " ",
                         "label": "W10",
                         "name": "W10",
                         "sf": "DeptRef_SF",
@@ -240,7 +217,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 11 Volts.",
-                        "detail": " ",
                         "label": "V11",
                         "name": "V11",
                         "sf": "V_SF",
@@ -250,7 +226,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 11 Watts.",
-                        "detail": " ",
                         "label": "W11",
                         "name": "W11",
                         "sf": "DeptRef_SF",
@@ -260,7 +235,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 12 Volts.",
-                        "detail": " ",
                         "label": "V12",
                         "name": "V12",
                         "sf": "V_SF",
@@ -270,7 +244,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 12 Watts.",
-                        "detail": " ",
                         "label": "W12",
                         "name": "W12",
                         "sf": "DeptRef_SF",
@@ -280,7 +253,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 13 Volts.",
-                        "detail": " ",
                         "label": "V13",
                         "name": "V13",
                         "sf": "V_SF",
@@ -290,7 +262,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 13 Watts.",
-                        "detail": " ",
                         "label": "W13",
                         "name": "W13",
                         "sf": "DeptRef_SF",
@@ -300,7 +271,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 14 Volts.",
-                        "detail": " ",
                         "label": "V14",
                         "name": "V14",
                         "sf": "V_SF",
@@ -310,7 +280,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 14 Watts.",
-                        "detail": " ",
                         "label": "W14",
                         "name": "W14",
                         "sf": "DeptRef_SF",
@@ -320,7 +289,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 15 Volts.",
-                        "detail": " ",
                         "label": "V15",
                         "name": "V15",
                         "sf": "V_SF",
@@ -330,7 +298,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 15 Watts.",
-                        "detail": " ",
                         "label": "W15",
                         "name": "W15",
                         "sf": "DeptRef_SF",
@@ -340,7 +307,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 16 Volts.",
-                        "detail": " ",
                         "label": "V16",
                         "name": "V16",
                         "sf": "V_SF",
@@ -350,7 +316,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 16 Watts.",
-                        "detail": " ",
                         "label": "W16",
                         "name": "W16",
                         "sf": "DeptRef_SF",
@@ -360,7 +325,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 17 Volts.",
-                        "detail": " ",
                         "label": "V17",
                         "name": "V17",
                         "sf": "V_SF",
@@ -370,7 +334,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 17 Watts.",
-                        "detail": " ",
                         "label": "W17",
                         "name": "W17",
                         "sf": "DeptRef_SF",
@@ -380,7 +343,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 18 Volts.",
-                        "detail": " ",
                         "label": "V18",
                         "name": "V18",
                         "sf": "V_SF",
@@ -390,7 +352,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 18 Watts.",
-                        "detail": " ",
                         "label": "W18",
                         "name": "W18",
                         "sf": "DeptRef_SF",
@@ -400,7 +361,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 19 Volts.",
-                        "detail": " ",
                         "label": "V19",
                         "name": "V19",
                         "sf": "V_SF",
@@ -410,7 +370,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 19 Watts.",
-                        "detail": " ",
                         "label": "W19",
                         "name": "W19",
                         "sf": "DeptRef_SF",
@@ -420,7 +379,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 20 Volts.",
-                        "detail": " ",
                         "label": "V20",
                         "name": "V20",
                         "sf": "V_SF",
@@ -430,7 +388,6 @@
                     {
                         "access": "RW",
                         "desc": "Point 20 Watts.",
-                        "detail": " ",
                         "label": "W20",
                         "name": "W20",
                         "sf": "DeptRef_SF",
@@ -440,7 +397,6 @@
                     {
                         "access": "RW",
                         "desc": "Optional description for curve.",
-                        "detail": " ",
                         "label": "CrvNam",
                         "name": "CrvNam",
                         "size": 8,
@@ -449,7 +405,6 @@
                     {
                         "access": "RW",
                         "desc": "The time of the PT1 in seconds (time to accomplish a change of 95%).",
-                        "detail": " ",
                         "label": "RmpPt1Tms",
                         "name": "RmpPt1Tms",
                         "type": "uint16",
@@ -458,7 +413,6 @@
                     {
                         "access": "RW",
                         "desc": "The maximum rate at which the watt value may be reduced in response to changes in the voltage value.",
-                        "detail": " ",
                         "label": "RmpDecTmm",
                         "name": "RmpDecTmm",
                         "sf": "RmpIncDec_SF",
@@ -468,7 +422,6 @@
                     {
                         "access": "RW",
                         "desc": "The maximum rate at which the watt value may be increased in response to changes in the voltage value.",
-                        "detail": " ",
                         "label": "RmpIncTmm",
                         "name": "RmpIncTmm",
                         "sf": "RmpIncDec_SF",
@@ -477,7 +430,6 @@
                     },
                     {
                         "desc": "Enumerated value indicates if curve is read-only or can be modified.",
-                        "detail": " ",
                         "label": "ReadOnly",
                         "mandatory": "M",
                         "name": "ReadOnly",
@@ -520,7 +472,6 @@
             {
                 "access": "RW",
                 "desc": "Index of active curve. 0=no active curve.",
-                "detail": " ",
                 "label": "ActCrv",
                 "mandatory": "M",
                 "name": "ActCrv",
@@ -529,7 +480,6 @@
             {
                 "access": "RW",
                 "desc": "Is Volt-Watt control active.",
-                "detail": " ",
                 "label": "ModEna",
                 "mandatory": "M",
                 "name": "ModEna",
@@ -544,7 +494,6 @@
             {
                 "access": "RW",
                 "desc": "Time window for volt-watt change.",
-                "detail": " ",
                 "label": "WinTms",
                 "name": "WinTms",
                 "type": "uint16",
@@ -553,7 +502,6 @@
             {
                 "access": "RW",
                 "desc": "Timeout period for volt-watt curve selection.",
-                "detail": " ",
                 "label": "RvrtTms",
                 "name": "RvrtTms",
                 "type": "uint16",
@@ -562,7 +510,6 @@
             {
                 "access": "RW",
                 "desc": "Ramp time for moving from current mode to new mode.",
-                "detail": " ",
                 "label": "RmpTms",
                 "name": "RmpTms",
                 "type": "uint16",
@@ -570,7 +517,6 @@
             },
             {
                 "desc": "Number of curves supported (recommend min. 4).",
-                "detail": " ",
                 "label": "NCrv",
                 "mandatory": "M",
                 "name": "NCrv",
@@ -578,7 +524,6 @@
             },
             {
                 "desc": "Number of points in array (maximum 20).",
-                "detail": " ",
                 "label": "NPt",
                 "mandatory": "M",
                 "name": "NPt",
@@ -586,7 +531,6 @@
             },
             {
                 "desc": "Scale factor for percent VRef.",
-                "detail": " ",
                 "label": "V_SF",
                 "mandatory": "M",
                 "name": "V_SF",
@@ -594,7 +538,6 @@
             },
             {
                 "desc": "Scale Factor for % DeptRef",
-                "detail": " ",
                 "label": "DeptRef_SF",
                 "mandatory": "M",
                 "name": "DeptRef_SF",
@@ -602,7 +545,6 @@
             },
             {
                 "desc": "Scale factor for increment and decrement ramps.",
-                "detail": " ",
                 "label": "RmpIncDec_SF",
                 "name": "RmpIncDec_SF",
                 "type": "sunssf"

@@ -1,6 +1,5 @@
 {
     "group": {
-        "detail": "Float",
         "label": "wye-connect three phase (abcn) meter",
         "name": "ac_meter",
         "points": [

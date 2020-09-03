@@ -1,7 +1,6 @@
 {
     "group": {
         "desc": "An advanced string combiner including voltage and energy measurements",
-        "detail": "This model supersedes model 402",
         "groups": [
             {
                 "count": 0,
@@ -155,7 +154,6 @@
                     },
                     {
                         "desc": "Number of modules in this input string",
-                        "detail": "Configured value",
                         "label": "N",
                         "name": "InN",
                         "type": "uint16"

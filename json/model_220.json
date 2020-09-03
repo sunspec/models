@@ -328,7 +328,6 @@
             },
             {
                 "desc": "Sequence number of request",
-                "detail": "Shall be advanced for each request",
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
@@ -336,7 +335,6 @@
             },
             {
                 "desc": "Algorithm used to compute the digital signature",
-                "detail": "For future proof",
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",
@@ -358,7 +356,6 @@
             },
             {
                 "desc": "Number of registers comprising the digital signature.",
-                "detail": "The value of N must be at least 4 (64 bits)",
                 "label": "N",
                 "mandatory": "M",
                 "name": "N",

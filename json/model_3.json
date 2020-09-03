@@ -1,7 +1,6 @@
 {
     "group": {
         "desc": "Request a digital signature over a specified set of data registers",
-        "detail": "Used in conjunction with Secure Dataset Read Response Model",
         "groups": [
             {
                 "count": 0,
@@ -9,7 +8,6 @@
                 "points": [
                     {
                         "desc": "Digital Signature",
-                        "detail": "The DS covers all registers from X to N and is N registers in length",
                         "label": "DS",
                         "mandatory": "M",
                         "name": "DS",
@@ -42,7 +40,6 @@
             {
                 "access": "RW",
                 "desc": "Number of registers being requested",
-                "detail": "A max of 50 registers are allowed",
                 "label": "X",
                 "mandatory": "M",
                 "name": "X",
@@ -369,7 +366,6 @@
             {
                 "access": "RW",
                 "desc": "Sequence number of request",
-                "detail": "Shall be advanced for each request",
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
@@ -378,7 +374,6 @@
             {
                 "access": "RW",
                 "desc": "Digital Signature ID",
-                "detail": "User's role id 0-5",
                 "label": "Role",
                 "mandatory": "M",
                 "name": "Role",
@@ -386,7 +381,6 @@
             },
             {
                 "desc": "Algorithm used to compute the digital signature",
-                "detail": "For future proof",
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",
@@ -408,7 +402,6 @@
             },
             {
                 "desc": "Number of registers comprising the digital signature.",
-                "detail": "The value of N must be at least 4 (64 bits)",
                 "label": "N",
                 "mandatory": "M",
                 "name": "N",

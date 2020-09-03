@@ -7,7 +7,6 @@
                 "points": [
                     {
                         "desc": "Cell terminal voltage.",
-                        "detail": "Measurement.",
                         "label": "Cell Voltage",
                         "mandatory": "M",
                         "name": "CellV",
@@ -17,7 +16,6 @@
                     },
                     {
                         "desc": "Cell temperature.",
-                        "detail": "Measurement.",
                         "label": "Cell Temperature",
                         "mandatory": "M",
                         "name": "CellTmp",
@@ -63,7 +61,6 @@
             },
             {
                 "desc": "Index of the string containing the module.",
-                "detail": "Indices are one-based.",
                 "label": "String Index",
                 "mandatory": "M",
                 "name": "StrIdx",
@@ -71,7 +68,6 @@
             },
             {
                 "desc": "Index of the module within the string.",
-                "detail": "Indices are one-based.",
                 "label": "Module Index",
                 "mandatory": "M",
                 "name": "ModIdx",
@@ -94,7 +90,6 @@
             },
             {
                 "desc": "Depth of discharge for the module.",
-                "detail": "Measurement.",
                 "label": "Depth of Discharge",
                 "name": "DoD",
                 "sf": "DoD_SF",
@@ -117,7 +112,6 @@
             },
             {
                 "desc": "Voltage of the module.",
-                "detail": "Measurement.",
                 "label": "Module Voltage",
                 "mandatory": "M",
                 "name": "V",
@@ -127,7 +121,6 @@
             },
             {
                 "desc": "Maximum voltage for all cells in the module.",
-                "detail": "Measurement.",
                 "label": "Max Cell Voltage",
                 "mandatory": "M",
                 "name": "CellVMax",
@@ -143,7 +136,6 @@
             },
             {
                 "desc": "Minimum voltage for all cells in the module.",
-                "detail": "Measurement.",
                 "label": "Min Cell Voltage",
                 "mandatory": "M",
                 "name": "CellVMin",
@@ -159,7 +151,6 @@
             },
             {
                 "desc": "Average voltage for all cells in the module.",
-                "detail": "Calculation based on measurements.",
                 "label": "Average Cell Voltage",
                 "mandatory": "M",
                 "name": "CellVAvg",
@@ -169,7 +160,6 @@
             },
             {
                 "desc": "Maximum temperature for all cells in the module.",
-                "detail": "Measurement.",
                 "label": "Max Cell Temperature",
                 "mandatory": "M",
                 "name": "CellTmpMax",
@@ -185,7 +175,6 @@
             },
             {
                 "desc": "Minimum temperature for all cells in the module.",
-                "detail": "Measurement.",
                 "label": "Min Cell Temperature",
                 "mandatory": "M",
                 "name": "CellTmpMin",
@@ -201,7 +190,6 @@
             },
             {
                 "desc": "Average temperature for all cells in the module.",
-                "detail": "Calculation based on measurements.",
                 "label": "Average Cell Temperature",
                 "mandatory": "M",
                 "name": "CellTmpAvg",

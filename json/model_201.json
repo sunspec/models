@@ -63,7 +63,6 @@
             },
             {
                 "desc": "Line to Neutral AC Voltage (average of active phases)",
-                "detail": "Conditional AN connection",
                 "label": "Voltage LN",
                 "name": "PhV",
                 "sf": "V_SF",
@@ -72,7 +71,6 @@
             },
             {
                 "desc": "Phase Voltage AN",
-                "detail": "Conditional AN connection",
                 "label": "Phase Voltage AN",
                 "name": "PhVphA",
                 "sf": "V_SF",
@@ -105,7 +103,6 @@
             },
             {
                 "desc": "Phase Voltage AB",
-                "detail": "Conditional AB connection",
                 "label": "Phase Voltage AB",
                 "name": "PPVphAB",
                 "sf": "V_SF",

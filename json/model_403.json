@@ -1,7 +1,6 @@
 {
     "group": {
         "desc": "A basic string combiner model",
-        "detail": "This model supersedes model 401",
         "groups": [
             {
                 "count": 0,

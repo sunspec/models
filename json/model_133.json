@@ -1,7 +1,6 @@
 {
     "group": {
         "desc": "Basic Scheduling ",
-        "detail": "Ref 2: 2.2.8",
         "groups": [
             {
                 "count": 0,
@@ -10,7 +9,6 @@
                     {
                         "access": "RW",
                         "desc": "Number of active entries in schedule.",
-                        "detail": " ",
                         "label": "ActPts",
                         "mandatory": "M",
                         "name": "ActPts",
@@ -19,7 +17,6 @@
                     {
                         "access": "RW",
                         "desc": "Schedule start in seconds since 2000 JAN 01 00:00:00 UTC.",
-                        "detail": " ",
                         "label": "StrTms",
                         "mandatory": "M",
                         "name": "StrTms",
@@ -29,7 +26,6 @@
                     {
                         "access": "RW",
                         "desc": "The repetition count for time-based schedules (0=repeat forever)",
-                        "detail": " ",
                         "label": "RepPer",
                         "mandatory": "M",
                         "name": "RepPer",
@@ -38,7 +34,6 @@
                     {
                         "access": "RW",
                         "desc": "The repetition frequency for time-based schedules: no repeat=0",
-                        "detail": " ",
                         "label": "SchdTyp",
                         "mandatory": "M",
                         "name": "IntvTyp",
@@ -81,7 +76,6 @@
                     {
                         "access": "RW",
                         "desc": "The meaning of the X-values in the array. ",
-                        "detail": " ",
                         "label": "XTyp",
                         "mandatory": "M",
                         "name": "XTyp",
@@ -112,7 +106,6 @@
                     {
                         "access": "RW",
                         "desc": "Scale factor for schedule range values.",
-                        "detail": " ",
                         "label": "X_SF",
                         "mandatory": "M",
                         "name": "X_SF",
@@ -121,7 +114,6 @@
                     {
                         "access": "RW",
                         "desc": "The meaning of the Y-values in the array.",
-                        "detail": " ",
                         "label": "YTyp",
                         "mandatory": "M",
                         "name": "YTyp",
@@ -188,7 +180,6 @@
                     {
                         "access": "RW",
                         "desc": "Scale factor for schedule target values.",
-                        "detail": " ",
                         "label": "Y_SF",
                         "mandatory": "M",
                         "name": "Y_SF",
@@ -197,7 +188,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 1 range.",
-                        "detail": " ",
                         "label": "X1",
                         "mandatory": "M",
                         "name": "X1",
@@ -207,7 +197,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 1 target.",
-                        "detail": " ",
                         "label": "Y1",
                         "mandatory": "M",
                         "name": "Y1",
@@ -217,7 +206,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 2 range.",
-                        "detail": " ",
                         "label": "X2",
                         "name": "X2",
                         "sf": "X_SF",
@@ -226,7 +214,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 2 target.",
-                        "detail": " ",
                         "label": "Y2",
                         "name": "Y2",
                         "sf": "Y_SF",
@@ -235,7 +222,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 3 range.",
-                        "detail": " ",
                         "label": "X3",
                         "name": "X3",
                         "sf": "X_SF",
@@ -244,7 +230,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 3 target.",
-                        "detail": " ",
                         "label": "Y3",
                         "name": "Y3",
                         "sf": "Y_SF",
@@ -253,7 +238,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 4 range.",
-                        "detail": " ",
                         "label": "X4",
                         "name": "X4",
                         "sf": "X_SF",
@@ -262,7 +246,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 4 target.",
-                        "detail": " ",
                         "label": "Y4",
                         "name": "Y4",
                         "sf": "Y_SF",
@@ -271,7 +254,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 15range.",
-                        "detail": " ",
                         "label": "X5",
                         "name": "X5",
                         "sf": "X_SF",
@@ -280,7 +262,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 5 target.",
-                        "detail": " ",
                         "label": "Y5",
                         "name": "Y5",
                         "sf": "Y_SF",
@@ -289,7 +270,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 6 range.",
-                        "detail": " ",
                         "label": "X6",
                         "name": "X6",
                         "sf": "X_SF",
@@ -298,7 +278,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 6 target.",
-                        "detail": " ",
                         "label": "Y6",
                         "name": "Y6",
                         "sf": "Y_SF",
@@ -307,7 +286,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 7 range.",
-                        "detail": " ",
                         "label": "X7",
                         "name": "X7",
                         "sf": "X_SF",
@@ -316,7 +294,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 7 target.",
-                        "detail": " ",
                         "label": "Y7",
                         "name": "Y7",
                         "sf": "Y_SF",
@@ -325,7 +302,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 8 range.",
-                        "detail": " ",
                         "label": "X8",
                         "name": "X8",
                         "sf": "X_SF",
@@ -334,7 +310,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 8 target.",
-                        "detail": " ",
                         "label": "Y8",
                         "name": "Y8",
                         "sf": "Y_SF",
@@ -343,7 +318,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 9 range.",
-                        "detail": " ",
                         "label": "X9",
                         "name": "X9",
                         "sf": "X_SF",
@@ -352,7 +326,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 9 target.",
-                        "detail": " ",
                         "label": "Y9",
                         "name": "Y9",
                         "sf": "Y_SF",
@@ -361,7 +334,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 10 range.",
-                        "detail": " ",
                         "label": "X10",
                         "name": "X10",
                         "sf": "X_SF",
@@ -370,7 +342,6 @@
                     {
                         "access": "RW",
                         "desc": "Entry 10 target.",
-                        "detail": " ",
                         "label": "Y10",
                         "name": "Y10",
                         "sf": "Y_SF",
@@ -379,7 +350,6 @@
                     {
                         "access": "RW",
                         "desc": "Optional description for schedule.",
-                        "detail": " ",
                         "label": "Nam",
                         "name": "Nam",
                         "size": 8,
@@ -388,7 +358,6 @@
                     {
                         "access": "RW",
                         "desc": "Time window for schedule entry change.",
-                        "detail": " ",
                         "label": "WinTms",
                         "name": "WinTms",
                         "type": "uint16",
@@ -397,7 +366,6 @@
                     {
                         "access": "RW",
                         "desc": "Ramp time for moving from current target to new target.",
-                        "detail": " ",
                         "label": "RmpTms",
                         "name": "RmpTms",
                         "type": "uint16",
@@ -405,7 +373,6 @@
                     },
                     {
                         "desc": "Index of active entry in the active schedule.",
-                        "detail": " ",
                         "label": "ActIndx",
                         "mandatory": "M",
                         "name": "ActIndx",
@@ -438,7 +405,6 @@
             {
                 "access": "RW",
                 "desc": "Bitfield of active schedules",
-                "detail": " ",
                 "label": "ActSchd",
                 "mandatory": "M",
                 "name": "ActSchd",
@@ -573,7 +539,6 @@
             {
                 "access": "RW",
                 "desc": "Is basic scheduling active.",
-                "detail": " ",
                 "label": "ModEna",
                 "mandatory": "M",
                 "name": "ModEna",
@@ -587,7 +552,6 @@
             },
             {
                 "desc": "Number of schedules supported (recommend min. 4, max 32)",
-                "detail": " ",
                 "label": "NSchd",
                 "mandatory": "M",
                 "name": "NSchd",
@@ -595,7 +559,6 @@
             },
             {
                 "desc": "Number of schedule entries supported (maximum of 10).",
-                "detail": " ",
                 "label": "NPts",
                 "mandatory": "M",
                 "name": "NPts",
@@ -603,7 +566,6 @@
             },
             {
                 "desc": "Pad register.",
-                "detail": " ",
                 "label": "Pad",
                 "name": "Pad",
                 "type": "pad"
