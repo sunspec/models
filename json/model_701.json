@@ -887,7 +887,7 @@
                 ],
                 "desc": "Manufacturer alarm information. Valid if MANUFACTURER_ALRM indication is active.",
                 "label": "Manufacturer Alarm Info",
-                "name": "ManAlrmInfo",
+                "name": "MnAlrmInfo",
                 "notes": "",
                 "size": 32,
                 "type": "string"
