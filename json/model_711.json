@@ -142,18 +142,18 @@
             },
             {
                 "access": "RW",
-                "desc": "Set active curve. 0 = No active curve",
-                "label": "Set active curve request",
+                "desc": "Set active control. 0 = No active control.",
+                "label": "Set active control request",
                 "mandatory": "M",
-                "name": "AdptCrvReq",
+                "name": "AdptCtlReq",
                 "notes": "",
                 "type": "uint16"
             },
             {
-                "desc": "Result of last set active curve operation.",
-                "label": "Set active curve result",
+                "desc": "Result of last set active control operation.",
+                "label": "Set active control result",
                 "mandatory": "M",
-                "name": "AdptCrvRslt",
+                "name": "AdptCtlRslt",
                 "notes": "",
                 "symbols": [
                     {
@@ -206,9 +206,9 @@
             },
             {
                 "access": "RW",
-                "desc": "Default curve after reversion timeout.",
-                "label": "Reversion curve",
-                "name": "RvrtCrv",
+                "desc": "Default control after reversion timeout.",
+                "label": "Reversion control",
+                "name": "RvrtCtl",
                 "notes": "",
                 "type": "uint16"
             },
