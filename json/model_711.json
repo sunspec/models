@@ -64,6 +64,29 @@
                         "sf": "RspTms_SF",
                         "type": "uint16",
                         "units": "Secs"
+                    },
+                    {
+                        "desc": "Control read-write access.",
+                        "label": "Control Access",
+                        "name": "ReadOnly",
+                        "notes": "",
+                        "symbols": [
+                            {
+                                "desc": "Control has read-write access.",
+                                "label": "Read-Write Access",
+                                "name": "RW",
+                                "notes": "",
+                                "value": 0
+                            },
+                            {
+                                "desc": "Control has read-only access.",
+                                "label": "Read-Only Access",
+                                "name": "R",
+                                "notes": "",
+                                "value": 1
+                            }
+                        ],
+                        "type": "enum16"
                     }
                 ],
                 "type": "group"
