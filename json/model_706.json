@@ -31,7 +31,7 @@
                             },
                             {
                                 "access": "RW",
-                                "desc": "Curve time point in seconds.",
+                                "desc": "Active power in percent of rated active power.",
                                 "label": "Dependent Reference",
                                 "name": "W",
                                 "notes": "",
