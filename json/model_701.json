@@ -304,7 +304,7 @@
                 "name": "Hz",
                 "notes": "",
                 "sf": "Hz_SF",
-                "type": "int16",
+                "type": "uint32",
                 "units": "Hz"
             },
             {
