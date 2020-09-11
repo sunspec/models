@@ -86,6 +86,7 @@
                         "type": "enum16"
                     },
                     {
+                        "access": "RW",
                         "name": "Pri",
                         "notes": "",
                         "symbols": [
