@@ -619,6 +619,7 @@
                 "type": "enum16"
             },
             {
+                "access": "RW",
                 "desc": "Reactive power priority.",
                 "label": "Reactive Power Priority",
                 "name": "VarSetPri",
