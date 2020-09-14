@@ -29,14 +29,14 @@
                         "symbols": [
                             {
                                 "desc": "Power factor over-excited excitation.",
-                                "label": "Over-excited",
+                                "label": "Over-Excited",
                                 "name": "OVER_EXCITED",
                                 "notes": "",
                                 "value": 0
                             },
                             {
                                 "desc": "Power factor under-excited excitation.",
-                                "label": "Under-excited",
+                                "label": "Under-Excited",
                                 "name": "UNDER_EXCITED",
                                 "notes": "",
                                 "value": 1
@@ -71,14 +71,14 @@
                         "symbols": [
                             {
                                 "desc": "Power factor over-excited excitation.",
-                                "label": "Over-excited",
+                                "label": "Over-Excited",
                                 "name": "OVER_EXCITED",
                                 "notes": "",
                                 "value": 0
                             },
                             {
                                 "desc": "Power factor under-excited excitation.",
-                                "label": "Under-excited",
+                                "label": "Under-Excited",
                                 "name": "UNDER_EXCITED",
                                 "notes": "",
                                 "value": 1
@@ -113,14 +113,14 @@
                         "symbols": [
                             {
                                 "desc": "Power factor over-excited excitation.",
-                                "label": "Over-excited",
+                                "label": "Over-Excited",
                                 "name": "OVER_EXCITED",
                                 "notes": "",
                                 "value": 0
                             },
                             {
                                 "desc": "Power factor under-excited excitation.",
-                                "label": "Under-excited",
+                                "label": "Under-Excited",
                                 "name": "UNDER_EXCITED",
                                 "notes": "",
                                 "value": 1
@@ -155,14 +155,14 @@
                         "symbols": [
                             {
                                 "desc": "Power factor over-excited excitation.",
-                                "label": "Over-excited",
+                                "label": "Over-Excited",
                                 "name": "OVER_EXCITED",
                                 "notes": "",
                                 "value": 0
                             },
                             {
                                 "desc": "Power factor under-excited excitation.",
-                                "label": "Under-excited",
+                                "label": "Under-Excited",
                                 "name": "UNDER_EXCITED",
                                 "notes": "",
                                 "value": 1
@@ -589,28 +589,28 @@
                 "symbols": [
                     {
                         "desc": "Reactive power setting is percent of maximum active power.",
-                        "label": "Reactive Power as Watt Max Pct",
+                        "label": "Reactive Power As Watt Max Pct",
                         "name": "W_MAX_PCT",
                         "notes": "",
                         "value": 1
                     },
                     {
                         "desc": "Reactive power setting is percent of maximum reactive power.",
-                        "label": "Reactive Power as Var Max Pct",
+                        "label": "Reactive Power As Var Max Pct",
                         "name": "VAR_MAX_PCT",
                         "notes": "",
                         "value": 2
                     },
                     {
                         "desc": "Reactive power setting is percent of available reactive  power.",
-                        "label": "Reactive Power as Var Avail Pct",
+                        "label": "Reactive Power As Var Avail Pct",
                         "name": "VAR_AVAIL_PCT",
                         "notes": "",
                         "value": 3
                     },
                     {
                         "desc": "Reactive power is in vars.",
-                        "label": "Reactive Power as Vars",
+                        "label": "Reactive Power As Vars",
                         "name": "VARS",
                         "notes": "",
                         "value": 4

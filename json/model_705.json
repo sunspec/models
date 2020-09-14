@@ -131,14 +131,14 @@
                     {
                         "access": "RW",
                         "desc": "Vref adjustment as percentage of nominal voltage.",
-                        "label": "Vref adjustment",
+                        "label": "Vref Adjustment",
                         "name": "VRef",
                         "notes": "",
                         "type": "uint16"
                     },
                     {
                         "desc": "Autonomous vref value as a percentage of nominal voltage.",
-                        "label": "Current autonomous vref",
+                        "label": "Current Autonomous Vref",
                         "name": "VRefAuto",
                         "notes": "",
                         "type": "uint16"
@@ -324,7 +324,7 @@
             },
             {
                 "desc": "Number of curve points supported.",
-                "label": "Number of Points",
+                "label": "Number Of Points",
                 "mandatory": "M",
                 "name": "NPt",
                 "notes": " ",
@@ -374,7 +374,7 @@
             },
             {
                 "desc": "Scale factor for curve var points.",
-                "label": "Var  Scale Factor",
+                "label": "Var Scale Factor",
                 "mandatory": "M",
                 "name": "DeptRef_SF",
                 "notes": "",

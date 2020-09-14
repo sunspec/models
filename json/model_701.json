@@ -34,19 +34,19 @@
                 "notes": "",
                 "symbols": [
                     {
-                        "label": "Single phase",
+                        "label": "Single Phase",
                         "name": "SINGLE_PHASE",
                         "notes": "",
                         "value": 1
                     },
                     {
-                        "label": "Split phase",
+                        "label": "Split Phase",
                         "name": "SPLIT_PHASE",
                         "notes": "",
                         "value": 2
                     },
                     {
-                        "label": "Three phase",
+                        "label": "Three Phase",
                         "name": "THREE_PHASE",
                         "notes": "",
                         "value": 3
@@ -128,104 +128,104 @@
                 "notes": "",
                 "symbols": [
                     {
-                        "label": "Ground fault",
+                        "label": "Ground Fault",
                         "name": "GROUND_FAULT",
                         "notes": "",
                         "value": 0
                     },
                     {
-                        "label": "DC over voltage",
+                        "label": "DC Over Voltage",
                         "name": "DC_OVER_VOLT",
                         "notes": "",
                         "value": 1
                     },
                     {
-                        "label": "AC disconnect open",
+                        "label": "AC Disconnect Open",
                         "name": "AC_DISCONNECT",
                         "notes": "",
                         "value": 2
                     },
                     {
-                        "label": "DC disconnect open",
+                        "label": "DC Disconnect Open",
                         "name": "DC_DISCONNECT",
                         "notes": "",
                         "value": 3
                     },
                     {
-                        "label": "Grid disconnect",
+                        "label": "Grid Disconnect",
                         "name": "GRID_DISCONNECT",
                         "notes": "",
                         "value": 4
                     },
                     {
-                        "label": "Cabinet open",
+                        "label": "Cabinet Open",
                         "name": "CABINET_OPEN",
                         "notes": "",
                         "value": 5
                     },
                     {
-                        "label": "Manual shutdown",
+                        "label": "Manual Shutdown",
                         "name": "MANUAL_SHUTDOWN",
                         "notes": "",
                         "value": 6
                     },
                     {
-                        "label": "Over temperature",
+                        "label": "Over Temperature",
                         "name": "OVER_TEMP",
                         "notes": "",
                         "value": 7
                     },
                     {
-                        "label": "Frequency above limit",
+                        "label": "Frequency Above Limit",
                         "name": "OVER_FREQUENCY",
                         "notes": "",
                         "value": 8
                     },
                     {
-                        "label": "Frequency under limit",
+                        "label": "Frequency Under Limit",
                         "name": "UNDER_FREQUENCY",
                         "notes": "",
                         "value": 9
                     },
                     {
-                        "label": "AC Voltage above limit",
+                        "label": "AC Voltage Above Limit",
                         "name": "AC_OVER_VOLT",
                         "notes": "",
                         "value": 10
                     },
                     {
-                        "label": "AC Voltage under limit",
+                        "label": "AC Voltage Under Limit",
                         "name": "AC_UNDER_VOLT",
                         "notes": "",
                         "value": 11
                     },
                     {
-                        "label": "Blown String fuse on input",
+                        "label": "Blown String Fuse On Input",
                         "name": "BLOWN_STRING_FUSE",
                         "notes": "",
                         "value": 12
                     },
                     {
-                        "label": "Under temperature",
+                        "label": "Under Temperature",
                         "name": "UNDER_TEMP",
                         "notes": "",
                         "value": 13
                     },
                     {
-                        "label": "Generic Memory or Communication error (internal)",
+                        "label": "Generic Memory Or Communication Error (Internal)",
                         "name": "MEMORY_LOSS",
                         "notes": "",
                         "value": 14
                     },
                     {
-                        "label": "Hardware test failure",
+                        "label": "Hardware Test Failure",
                         "name": "HW_TEST_FAILURE",
                         "notes": "",
                         "value": 15
                     },
                     {
                         "desc": "Manufacturer alarm, see ManAlrmInfo field for more information.",
-                        "label": "Manfacturer alarm",
+                        "label": "Manfacturer Alarm",
                         "name": "MANUFACTURER_ALRM",
                         "notes": "",
                         "value": 16
@@ -467,7 +467,7 @@
             },
             {
                 "desc": "Total active energy injected L1.",
-                "label": "Total Watt-hours Inj L1",
+                "label": "Total Watt-Hours Inj L1",
                 "name": "TotWhInjL1",
                 "notes": "",
                 "sf": "TotWh_SF",
@@ -476,7 +476,7 @@
             },
             {
                 "desc": "Total active energy absorbed L1.",
-                "label": "Total Watt-hours Abs L1",
+                "label": "Total Watt-Hours Abs L1",
                 "name": "TotWhAbsL1",
                 "notes": "",
                 "sf": "TotWh_SF",
@@ -485,7 +485,7 @@
             },
             {
                 "desc": "Total reactive energy injected L1.",
-                "label": "Total Var-hours Inj L1",
+                "label": "Total Var-Hours Inj L1",
                 "name": "TotVarhInjL1",
                 "notes": "",
                 "sf": "TotVarh_SF",
@@ -494,7 +494,7 @@
             },
             {
                 "desc": "Total reactive energy absorbed L1.",
-                "label": "Total Var-hours Abs L1",
+                "label": "Total Var-Hours Abs L1",
                 "name": "TotVarhAbsL1",
                 "notes": "",
                 "sf": "TotVarh_SF",
@@ -568,7 +568,7 @@
             },
             {
                 "desc": "Total active energy injected L2.",
-                "label": "Total Watt-hours Inj L2",
+                "label": "Total Watt-Hours Inj L2",
                 "name": "TotWhInjL2",
                 "notes": "",
                 "sf": "TotWh_SF",
@@ -577,7 +577,7 @@
             },
             {
                 "desc": "Total active energy absorbed L2.",
-                "label": "Total Watt-hours Abs L2",
+                "label": "Total Watt-Hours Abs L2",
                 "name": "TotWhAbsL2",
                 "notes": "",
                 "sf": "TotWh_SF",
@@ -586,7 +586,7 @@
             },
             {
                 "desc": "Total reactive energy injected L2.",
-                "label": "Total Var-hours Inj L2",
+                "label": "Total Var-Hours Inj L2",
                 "name": "TotVarhInjL2",
                 "notes": "",
                 "sf": "TotVarh_SF",
@@ -595,7 +595,7 @@
             },
             {
                 "desc": "Total reactive energy absorbed L2.",
-                "label": "Total Var-hours Abs L2",
+                "label": "Total Var-Hours Abs L2",
                 "name": "TotVarhAbsL2",
                 "notes": "",
                 "sf": "TotVarh_SF",
@@ -669,7 +669,7 @@
             },
             {
                 "desc": "Total active energy injected L3.",
-                "label": "Total Watt-hours Inj L3",
+                "label": "Total Watt-Hours Inj L3",
                 "name": "TotWhInjL3",
                 "notes": "",
                 "sf": "TotWh_SF",
@@ -678,7 +678,7 @@
             },
             {
                 "desc": "Total active energy absorbed L3.",
-                "label": "Total Watt-hours Abs L3",
+                "label": "Total Watt-Hours Abs L3",
                 "name": "TotWhAbsL3",
                 "notes": "",
                 "sf": "TotWh_SF",
@@ -687,7 +687,7 @@
             },
             {
                 "desc": "Total reactive energy injected L3.",
-                "label": "Total Var-hours Inj L3",
+                "label": "Total Var-Hours Inj L3",
                 "name": "TotVarhInjL3",
                 "notes": "",
                 "sf": "TotVarh_SF",
@@ -696,7 +696,7 @@
             },
             {
                 "desc": "Total reactive energy absorbed L3.",
-                "label": "Total Var-hours Abs L3",
+                "label": "Total Var-Hours Abs L3",
                 "name": "TotVarhAbsL3",
                 "notes": "",
                 "sf": "TotVarh_SF",
@@ -708,7 +708,7 @@
                     "Active Power Throttling"
                 ],
                 "desc": "Throttling in Pct of maximum active power.",
-                "label": "Throttling in Pct",
+                "label": "Throttling In Pct",
                 "name": "ThrotPct",
                 "notes": "",
                 "type": "int16",

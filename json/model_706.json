@@ -226,7 +226,7 @@
             },
             {
                 "desc": "Number of curve points supported.",
-                "label": "Number of Points",
+                "label": "Number Of Points",
                 "mandatory": "M",
                 "name": "NPt",
                 "notes": " ",
