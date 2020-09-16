@@ -26,7 +26,7 @@
                                 "name": "W",
                                 "notes": "",
                                 "sf": "W_SF",
-                                "type": "uint16",
+                                "type": "int16",
                                 "units": "WMaxPct"
                             },
                             {
@@ -187,14 +187,14 @@
                 "symbols": [
                     {
                         "desc": "No curve is currenly active.",
-                        "label": "No active curve",
+                        "label": "No Active Curve",
                         "name": "INACTIVE",
                         "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Active curve in effect.",
-                        "label": "Active curve enabled",
+                        "label": "Active Curve Enabled",
                         "name": "ACTIVE",
                         "notes": "",
                         "value": 1
@@ -205,7 +205,7 @@
             {
                 "access": "RW",
                 "desc": "Set active curve. 0 = No active curve",
-                "label": "Set active curve request",
+                "label": "Set Active Curve Request",
                 "mandatory": "M",
                 "name": "AdptCrvReq",
                 "notes": "",
@@ -213,7 +213,7 @@
             },
             {
                 "desc": "Result of last set active curve operation.",
-                "label": "Set active curve result",
+                "label": "Set Active Curve Result",
                 "mandatory": "M",
                 "name": "AdptCrvRslt",
                 "notes": "",
@@ -244,7 +244,7 @@
             },
             {
                 "desc": "Number of curve points supported.",
-                "label": "Number of Points",
+                "label": "Number Of Points",
                 "mandatory": "M",
                 "name": "NPt",
                 "notes": " ",
@@ -263,14 +263,14 @@
             {
                 "access": "RW",
                 "desc": "Reversion time in seconds.  0 = No reversion time",
-                "label": "Reversion timeout",
+                "label": "Reversion Timeout",
                 "name": "RvrtTms",
                 "notes": "",
                 "type": "uint32"
             },
             {
                 "desc": "Reversion time remaining in seconds",
-                "label": "Reversion time left",
+                "label": "Reversion Time Left",
                 "name": "RvrtRem",
                 "notes": "",
                 "type": "uint32"
@@ -278,7 +278,7 @@
             {
                 "access": "RW",
                 "desc": "Default curve after reversion timeout.",
-                "label": "Reversion curve",
+                "label": "Reversion Curve",
                 "name": "RvrtCrv",
                 "notes": "",
                 "type": "uint16"
@@ -294,7 +294,7 @@
             },
             {
                 "desc": "Scale factor for curve var points.",
-                "label": "Var  Scale Factor",
+                "label": "Var Scale Factor",
                 "mandatory": "M",
                 "name": "DeptRef_SF",
                 "notes": "",

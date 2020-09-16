@@ -15,7 +15,7 @@
                     {
                         "access": "RW",
                         "desc": "The deadband value for over-frequency conditions in Hz.",
-                        "label": "Over-frequency Deadband",
+                        "label": "Over-Frequency Deadband",
                         "mandatory": "M",
                         "name": "DbOf",
                         "notes": "",
@@ -26,7 +26,7 @@
                     {
                         "access": "RW",
                         "desc": "The deadband value for under-frequency conditions in Hz.",
-                        "label": "Under-frequency Deadband",
+                        "label": "Under-Frequency Deadband",
                         "mandatory": "M",
                         "name": "DbUf",
                         "notes": "",
@@ -37,7 +37,7 @@
                     {
                         "access": "RW",
                         "desc": "Frequency droop per-unit frequency change for over-frequency conditions corresponding to 1 per-unit power output change.",
-                        "label": "Over-frequency Change Ratio",
+                        "label": "Over-Frequency Change Ratio",
                         "mandatory": "M",
                         "name": "KOf",
                         "notes": "",
@@ -47,7 +47,7 @@
                     {
                         "access": "RW",
                         "desc": "Frequency droop per-unit frequency change for under-frequency conditions corresponding to 1 per-unit power output change.",
-                        "label": "Under-frequency Change Ratio",
+                        "label": "Under-Frequency Change Ratio",
                         "mandatory": "M",
                         "name": "KUf",
                         "notes": "",
@@ -64,6 +64,29 @@
                         "sf": "RspTms_SF",
                         "type": "uint16",
                         "units": "Secs"
+                    },
+                    {
+                        "desc": "Control read-write access.",
+                        "label": "Control Access",
+                        "name": "ReadOnly",
+                        "notes": "",
+                        "symbols": [
+                            {
+                                "desc": "Control has read-write access.",
+                                "label": "Read-Write Access",
+                                "name": "RW",
+                                "notes": "",
+                                "value": 0
+                            },
+                            {
+                                "desc": "Control has read-only access.",
+                                "label": "Read-Only Access",
+                                "name": "R",
+                                "notes": "",
+                                "value": 1
+                            }
+                        ],
+                        "type": "enum16"
                     }
                 ],
                 "type": "group"
@@ -125,14 +148,14 @@
                 "symbols": [
                     {
                         "desc": "No curve is currenly active.",
-                        "label": "No active curve",
+                        "label": "No Active Curve",
                         "name": "INACTIVE",
                         "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Active curve in effect.",
-                        "label": "Active curve enabled",
+                        "label": "Active Curve Enabled",
                         "name": "ACTIVE",
                         "notes": "",
                         "value": 1
@@ -142,18 +165,18 @@
             },
             {
                 "access": "RW",
-                "desc": "Set active curve. 0 = No active curve",
-                "label": "Set active curve request",
+                "desc": "Set active control. 0 = No active control.",
+                "label": "Set Active Control Request",
                 "mandatory": "M",
-                "name": "AdptCrvReq",
+                "name": "AdptCtlReq",
                 "notes": "",
                 "type": "uint16"
             },
             {
-                "desc": "Result of last set active curve operation.",
-                "label": "Set active curve result",
+                "desc": "Result of last set active control operation.",
+                "label": "Set Active Control Result",
                 "mandatory": "M",
-                "name": "AdptCrvRslt",
+                "name": "AdptCtlRslt",
                 "notes": "",
                 "symbols": [
                     {
@@ -192,23 +215,23 @@
             {
                 "access": "RW",
                 "desc": "Reversion time in seconds.  0 = No reversion time",
-                "label": "Reversion timeout",
+                "label": "Reversion Timeout",
                 "name": "RvrtTms",
                 "notes": "",
                 "type": "uint32"
             },
             {
                 "desc": "Reversion time remaining in seconds",
-                "label": "Reversion time left",
+                "label": "Reversion Time Left",
                 "name": "RvrtRem",
                 "notes": "",
                 "type": "uint32"
             },
             {
                 "access": "RW",
-                "desc": "Default curve after reversion timeout.",
-                "label": "Reversion curve",
-                "name": "RvrtCrv",
+                "desc": "Default control after reversion timeout.",
+                "label": "Reversion Control",
+                "name": "RvrtCtl",
                 "notes": "",
                 "type": "uint16"
             },

@@ -288,7 +288,7 @@
             },
             {
                 "desc": "Number of DC ports.",
-                "label": "Number of Ports",
+                "label": "Number Of Ports",
                 "name": "NPrt",
                 "notes": "",
                 "static": "S",

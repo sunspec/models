@@ -53,7 +53,7 @@
                             {
                                 "access": "RW",
                                 "desc": "Number of active points in must trip curve.",
-                                "label": "Number of Active Points",
+                                "label": "Number Of Active Points",
                                 "name": "ActPt",
                                 "notes": "",
                                 "type": "uint16"
@@ -102,7 +102,7 @@
                             {
                                 "access": "RW",
                                 "desc": "Number of active points in may trip curve.",
-                                "label": "Number of Active Points",
+                                "label": "Number Of Active Points",
                                 "name": "ActPt",
                                 "notes": "",
                                 "type": "uint16"
@@ -151,7 +151,7 @@
                             {
                                 "access": "RW",
                                 "desc": "Number of active points in the momentary cessation curve.",
-                                "label": "Number of Active Points",
+                                "label": "Number Of Active Points",
                                 "name": "ActPt",
                                 "notes": "",
                                 "type": "uint16"
@@ -305,7 +305,7 @@
             },
             {
                 "desc": "Number of curve points supported.",
-                "label": "Number of Points",
+                "label": "Number Of Points",
                 "mandatory": "M",
                 "name": "NPt",
                 "notes": " ",

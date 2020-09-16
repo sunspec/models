@@ -31,7 +31,7 @@
                             },
                             {
                                 "access": "RW",
-                                "desc": "Curve time point in seconds.",
+                                "desc": "Active power in percent of rated active power.",
                                 "label": "Dependent Reference",
                                 "name": "W",
                                 "notes": "",
@@ -226,7 +226,7 @@
             },
             {
                 "desc": "Number of curve points supported.",
-                "label": "Number of Points",
+                "label": "Number Of Points",
                 "mandatory": "M",
                 "name": "NPt",
                 "notes": " ",
