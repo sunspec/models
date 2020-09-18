@@ -171,7 +171,7 @@
                         "access": "RW",
                         "desc": "Autonomous vref time constant.",
                         "label": "Auto Vref Time Constant",
-                        "name": "VRefTms",
+                        "name": "VRefAutoTms",
                         "notes": "",
                         "type": "uint16"
                     },
