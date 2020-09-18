@@ -181,7 +181,9 @@
                         "label": "Open Loop Response Time",
                         "name": "RspTms",
                         "notes": "",
-                        "type": "uint16"
+                        "sf": "RspTms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
                     },
                     {
                         "desc": "Curve read-write access.",
@@ -377,6 +379,15 @@
                 "label": "Var Scale Factor",
                 "mandatory": "M",
                 "name": "DeptRef_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Open loop response time scale factor.",
+                "label": "Open-Loop Scale Factor",
+                "mandatory": "M",
+                "name": "RspTms_SF",
                 "notes": "",
                 "static": "S",
                 "type": "sunssf"
