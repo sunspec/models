@@ -26,9 +26,9 @@
                                         "access": "RW",
                                         "desc": "Curve frequency point.",
                                         "label": "Frequency Point",
-                                        "name": "Freq",
+                                        "name": "Hz",
                                         "notes": "",
-                                        "sf": "Freq_SF",
+                                        "sf": "Hz_SF",
                                         "type": "uint16",
                                         "units": "Hz"
                                     },
@@ -39,7 +39,7 @@
                                         "name": "Tms",
                                         "notes": "",
                                         "sf": "Tms_SF",
-                                        "type": "uint16",
+                                        "type": "uint32",
                                         "units": "Secs"
                                     }
                                 ],
@@ -75,9 +75,9 @@
                                         "access": "RW",
                                         "desc": "Curve frequency point.",
                                         "label": "Frequency Point",
-                                        "name": "Freq",
+                                        "name": "Hz",
                                         "notes": "",
-                                        "sf": "Freq_SF",
+                                        "sf": "Hz_SF",
                                         "type": "uint16",
                                         "units": "Hz"
                                     },
@@ -88,7 +88,7 @@
                                         "name": "Tms",
                                         "notes": "",
                                         "sf": "Tms_SF",
-                                        "type": "uint16",
+                                        "type": "uint32",
                                         "units": "Secs"
                                     }
                                 ],
@@ -124,9 +124,9 @@
                                         "access": "RW",
                                         "desc": "Curve frequency point.",
                                         "label": "Frequency Point",
-                                        "name": "Freq",
+                                        "name": "Hz",
                                         "notes": "",
-                                        "sf": "Freq_SF",
+                                        "sf": "Hz_SF",
                                         "type": "uint16",
                                         "units": "Hz"
                                     },
@@ -137,7 +137,7 @@
                                         "name": "Tms",
                                         "notes": "",
                                         "sf": "Tms_SF",
-                                        "type": "uint16",
+                                        "type": "uint32",
                                         "units": "Secs"
                                     }
                                 ],
@@ -325,7 +325,7 @@
                 "desc": "Scale factor for curve frequency points.",
                 "label": "Frequency Scale Factor",
                 "mandatory": "M",
-                "name": "Freq_SF",
+                "name": "Hz_SF",
                 "notes": "",
                 "static": "S",
                 "type": "sunssf"

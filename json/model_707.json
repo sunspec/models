@@ -39,7 +39,7 @@
                                         "name": "Tms",
                                         "notes": "",
                                         "sf": "Tms_SF",
-                                        "type": "uint16",
+                                        "type": "uint32",
                                         "units": "Secs"
                                     }
                                 ],
@@ -88,7 +88,7 @@
                                         "name": "Tms",
                                         "notes": "",
                                         "sf": "Tms_SF",
-                                        "type": "uint16",
+                                        "type": "uint32",
                                         "units": "Secs"
                                     }
                                 ],
@@ -137,7 +137,7 @@
                                         "name": "Tms",
                                         "notes": "",
                                         "sf": "Tms_SF",
-                                        "type": "uint16",
+                                        "type": "uint32",
                                         "units": "Secs"
                                     }
                                 ],
