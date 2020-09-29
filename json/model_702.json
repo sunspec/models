@@ -317,7 +317,6 @@
                 "type": "bitfield32"
             },
             {
-                "access": "RW",
                 "desc": "Intentional island categories",
                 "label": "Intentional Island Categories",
                 "name": "IntIslandCatRtg",
