@@ -118,6 +118,7 @@
             {
                 "access": "RW",
                 "desc": "DER Frequency-Watt (Frequency-Droop) control enable.",
+                "label": "DER Frequency Droop Enable",
                 "mandatory": "M",
                 "name": "Ena",
                 "notes": "",
