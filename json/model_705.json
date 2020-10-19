@@ -261,30 +261,6 @@
                 "type": "enum16"
             },
             {
-                "desc": "Current active  curve state.",
-                "label": "Active Curve State",
-                "mandatory": "M",
-                "name": "CrvSt",
-                "notes": " ",
-                "symbols": [
-                    {
-                        "desc": "No curve is currenly active.",
-                        "label": "No Active Curve",
-                        "name": "INACTIVE",
-                        "notes": "",
-                        "value": 0
-                    },
-                    {
-                        "desc": "Active curve in effect.",
-                        "label": "Active Curve Enabled",
-                        "name": "ACTIVE",
-                        "notes": "",
-                        "value": 1
-                    }
-                ],
-                "type": "enum16"
-            },
-            {
                 "access": "RW",
                 "desc": "Index of  curve points to adopt. First curve index is 1.",
                 "label": "Adopt Curve Request",

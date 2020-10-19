@@ -179,30 +179,6 @@
                 "type": "enum16"
             },
             {
-                "desc": "Current active  curve state.",
-                "label": "Active Curve State",
-                "mandatory": "M",
-                "name": "CrvSt",
-                "notes": " ",
-                "symbols": [
-                    {
-                        "desc": "No curve is currenly active.",
-                        "label": "No Active Curve",
-                        "name": "INACTIVE",
-                        "notes": "",
-                        "value": 0
-                    },
-                    {
-                        "desc": "Active curve in effect.",
-                        "label": "Active Curve Enabled",
-                        "name": "ACTIVE",
-                        "notes": "",
-                        "value": 1
-                    }
-                ],
-                "type": "enum16"
-            },
-            {
                 "access": "RW",
                 "desc": "Set active curve. 0 = No active curve",
                 "label": "Set Active Curve Request",
