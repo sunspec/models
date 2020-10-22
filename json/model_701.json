@@ -661,7 +661,7 @@
             {
                 "desc": "Phase voltage L3-N.",
                 "label": "Phase Voltage L3-N",
-                "name": "VL3N",
+                "name": "VL3",
                 "notes": "",
                 "sf": "V_SF",
                 "type": "int16",
