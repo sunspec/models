@@ -448,7 +448,7 @@
                 "access": "RW",
                 "desc": "Nominal AC voltage setting.",
                 "label": "Nominal AC Voltage Setting",
-                "name": "Vnom",
+                "name": "VNom",
                 "notes": "",
                 "sf": "V_SF",
                 "type": "uint16",
