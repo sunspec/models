@@ -486,6 +486,24 @@
             },
             {
                 "access": "RW",
+                "desc": "Power factor over-excited setting.",
+                "label": "PF Over-Excited Setting",
+                "name": "PFOvrExt",
+                "notes": "",
+                "sf": "PF_SF",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Power factor under-excited setting.",
+                "label": "PF Under-Excited Setting",
+                "name": "PFUndExt",
+                "notes": "",
+                "sf": "PF_SF",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
                 "desc": "Intentional island categories",
                 "label": "Intentional Island Categories",
                 "name": "IntIslandCat",
