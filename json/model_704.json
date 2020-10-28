@@ -751,16 +751,16 @@
                 ],
                 "desc": "Ramp rate for increases in active power during normal generation.",
                 "label": "Normal Ramp Rate",
-                "name": "RGra",
+                "name": "WRmp",
                 "notes": "",
-                "type": "uint32",
+                "type": "uint16",
                 "units": "%Max/Sec"
             },
             {
                 "access": "RW",
                 "desc": "Ramp rate reference unit for increases in active power or current during normal generation.",
                 "label": "Normal Ramp Rate Reference",
-                "name": "RGraRef",
+                "name": "WRmpRef",
                 "notes": "",
                 "symbols": [
                     {
