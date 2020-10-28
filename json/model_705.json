@@ -81,6 +81,12 @@
                                 "name": "VAR_AVAL_PCT",
                                 "notes": "",
                                 "value": 3
+                            },
+                            {
+                                "label": "Percent Max Apparent Power",
+                                "name": "VA_MAX_PCT",
+                                "notes": "",
+                                "value": 4
                             }
                         ],
                         "type": "enum16"
