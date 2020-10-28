@@ -781,6 +781,15 @@
                 "type": "enum16"
             },
             {
+                "access": "RW",
+                "desc": "Ramp rate based on max reactive power per second.",
+                "label": "Reactive Power Ramp Rate",
+                "name": "VarRmp",
+                "notes": "",
+                "type": "uint16",
+                "units": "%Max/Sec"
+            },
+            {
                 "comments": [
                     "Scale Factors"
                 ],
