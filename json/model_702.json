@@ -321,6 +321,28 @@
                 "label": "Intentional Island Categories",
                 "name": "IntIslandCatRtg",
                 "notes": "",
+                "symbols": [
+                    {
+                        "name": "UNCATEGORIZED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "name": "INT_ISL_CAPABLE",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "name": "BLACK_START_CAPABLE",
+                        "notes": "",
+                        "value": 2
+                    },
+                    {
+                        "name": "ISOCH_CAPABLE",
+                        "notes": "",
+                        "value": 3
+                    }
+                ],
                 "type": "bitfield16"
             },
             {
@@ -508,6 +530,28 @@
                 "label": "Intentional Island Categories",
                 "name": "IntIslandCat",
                 "notes": "",
+                "symbols": [
+                    {
+                        "name": "UNCATEGORIZED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "name": "INT_ISL_CAPABLE",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "name": "BLACK_START_CAPABLE",
+                        "notes": "",
+                        "value": 2
+                    },
+                    {
+                        "name": "ISOCH_CAPABLE",
+                        "notes": "",
+                        "value": 3
+                    }
+                ],
                 "type": "bitfield16"
             },
             {
