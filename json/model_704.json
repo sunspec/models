@@ -499,7 +499,7 @@
                 "name": "WSetPct",
                 "notes": "",
                 "sf": "WSetPct_SF",
-                "type": "int32",
+                "type": "uint16",
                 "units": "Pct"
             },
             {
@@ -509,7 +509,7 @@
                 "name": "WSetPctRvrt",
                 "notes": "",
                 "sf": "WSetPct_SF",
-                "type": "int32",
+                "type": "uint16",
                 "units": "Pct"
             },
             {
@@ -690,7 +690,7 @@
                 "name": "VarSetPct",
                 "notes": "",
                 "sf": "VarSetPct_SF",
-                "type": "int32",
+                "type": "uint16",
                 "units": "Pct"
             },
             {
@@ -700,7 +700,7 @@
                 "name": "VarSetPctRvrt",
                 "notes": "",
                 "sf": "VarSetPct_SF",
-                "type": "int32",
+                "type": "uint16",
                 "units": "Pct"
             },
             {

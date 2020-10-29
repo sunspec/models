@@ -36,7 +36,7 @@
                                 "name": "W",
                                 "notes": "",
                                 "sf": "DeptRef_SF",
-                                "type": "int16",
+                                "type": "uint16",
                                 "units": "DeptRef"
                             }
                         ],
@@ -84,7 +84,7 @@
                         "name": "RspTms",
                         "notes": "",
                         "sf": "RspTms_SF",
-                        "type": "uint16",
+                        "type": "uint32",
                         "units": "Secs"
                     },
                     {

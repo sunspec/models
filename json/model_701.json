@@ -711,7 +711,7 @@
                 "label": "Throttling In Pct",
                 "name": "ThrotPct",
                 "notes": "",
-                "type": "int16",
+                "type": "uint16",
                 "units": "Pct"
             },
             {

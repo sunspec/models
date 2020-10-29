@@ -20,7 +20,7 @@
                         "name": "DbOf",
                         "notes": "",
                         "sf": "Db_SF",
-                        "type": "uint16",
+                        "type": "uint32",
                         "units": "Hz"
                     },
                     {
@@ -31,7 +31,7 @@
                         "name": "DbUf",
                         "notes": "",
                         "sf": "Db_SF",
-                        "type": "uint16",
+                        "type": "uint32",
                         "units": "Hz"
                     },
                     {
@@ -62,7 +62,7 @@
                         "name": "RspTms",
                         "notes": "",
                         "sf": "RspTms_SF",
-                        "type": "uint16",
+                        "type": "uint32",
                         "units": "Secs"
                     },
                     {
