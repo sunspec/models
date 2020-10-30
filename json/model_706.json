@@ -36,7 +36,7 @@
                                 "name": "W",
                                 "notes": "",
                                 "sf": "DeptRef_SF",
-                                "type": "int16",
+                                "type": "uint16",
                                 "units": "DeptRef"
                             }
                         ],
@@ -83,7 +83,9 @@
                         "label": "Open Loop Response Time",
                         "name": "RspTms",
                         "notes": "",
-                        "type": "uint16"
+                        "sf": "RspTms_SF",
+                        "type": "uint32",
+                        "units": "Secs"
                     },
                     {
                         "desc": "Curve read-write access.",
@@ -155,30 +157,6 @@
                         "label": "Enabled",
                         "name": "ENABLED",
                         "notes": "Function is disabled.",
-                        "value": 1
-                    }
-                ],
-                "type": "enum16"
-            },
-            {
-                "desc": "Current active  curve state.",
-                "label": "Active Curve State",
-                "mandatory": "M",
-                "name": "CrvSt",
-                "notes": "",
-                "symbols": [
-                    {
-                        "desc": "No curve is currenly active.",
-                        "label": "No Active Curve",
-                        "name": "INACTIVE",
-                        "notes": "",
-                        "value": 0
-                    },
-                    {
-                        "desc": "Active curve in effect.",
-                        "label": "Active Curve Enabled",
-                        "name": "ACTIVE",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -279,6 +257,15 @@
                 "label": "Watt  Scale Factor",
                 "mandatory": "M",
                 "name": "DeptRef_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Open loop response time scale factor.",
+                "label": "Open-Loop Scale Factor",
+                "mandatory": "M",
+                "name": "RspTms_SF",
                 "notes": "",
                 "static": "S",
                 "type": "sunssf"

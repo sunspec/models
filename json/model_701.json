@@ -269,7 +269,7 @@
                 "name": "PF",
                 "notes": "The power factor as computed by xxx. [Should it be signed?]",
                 "sf": "PF_SF",
-                "type": "int16"
+                "type": "uint16"
             },
             {
                 "desc": "Total AC current.",
@@ -436,7 +436,7 @@
                 "name": "PFL1",
                 "notes": "",
                 "sf": "PF_SF",
-                "type": "int16"
+                "type": "uint16"
             },
             {
                 "desc": "Current phase L1.",
@@ -537,7 +537,7 @@
                 "name": "PFL2",
                 "notes": "",
                 "sf": "PF_SF",
-                "type": "int16"
+                "type": "uint16"
             },
             {
                 "desc": "Current L2.",
@@ -638,7 +638,7 @@
                 "name": "PFL3",
                 "notes": "",
                 "sf": "PF_SF",
-                "type": "int16"
+                "type": "uint16"
             },
             {
                 "desc": "Current L3.",
@@ -661,7 +661,7 @@
             {
                 "desc": "Phase voltage L3-N.",
                 "label": "Phase Voltage L3-N",
-                "name": "VL3N",
+                "name": "VL3",
                 "notes": "",
                 "sf": "V_SF",
                 "type": "int16",
@@ -711,7 +711,7 @@
                 "label": "Throttling In Pct",
                 "name": "ThrotPct",
                 "notes": "",
-                "type": "int16",
+                "type": "uint16",
                 "units": "Pct"
             },
             {

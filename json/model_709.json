@@ -26,10 +26,10 @@
                                         "access": "RW",
                                         "desc": "Curve frequency point.",
                                         "label": "Frequency Point",
-                                        "name": "Freq",
+                                        "name": "Hz",
                                         "notes": "",
-                                        "sf": "Freq_SF",
-                                        "type": "uint16",
+                                        "sf": "Hz_SF",
+                                        "type": "uint32",
                                         "units": "Hz"
                                     },
                                     {
@@ -39,7 +39,7 @@
                                         "name": "Tms",
                                         "notes": "",
                                         "sf": "Tms_SF",
-                                        "type": "uint16",
+                                        "type": "uint32",
                                         "units": "Secs"
                                     }
                                 ],
@@ -75,10 +75,10 @@
                                         "access": "RW",
                                         "desc": "Curve frequency point.",
                                         "label": "Frequency Point",
-                                        "name": "Freq",
+                                        "name": "Hz",
                                         "notes": "",
-                                        "sf": "Freq_SF",
-                                        "type": "uint16",
+                                        "sf": "Hz_SF",
+                                        "type": "uint32",
                                         "units": "Hz"
                                     },
                                     {
@@ -88,7 +88,7 @@
                                         "name": "Tms",
                                         "notes": "",
                                         "sf": "Tms_SF",
-                                        "type": "uint16",
+                                        "type": "uint32",
                                         "units": "Secs"
                                     }
                                 ],
@@ -124,10 +124,10 @@
                                         "access": "RW",
                                         "desc": "Curve frequency point.",
                                         "label": "Frequency Point",
-                                        "name": "Freq",
+                                        "name": "Hz",
                                         "notes": "",
-                                        "sf": "Freq_SF",
-                                        "type": "uint16",
+                                        "sf": "Hz_SF",
+                                        "type": "uint32",
                                         "units": "Hz"
                                     },
                                     {
@@ -137,7 +137,7 @@
                                         "name": "Tms",
                                         "notes": "",
                                         "sf": "Tms_SF",
-                                        "type": "uint16",
+                                        "type": "uint32",
                                         "units": "Secs"
                                     }
                                 ],
@@ -240,30 +240,6 @@
                 "type": "enum16"
             },
             {
-                "desc": "Current active  curve state.",
-                "label": "Active Curve State",
-                "mandatory": "M",
-                "name": "CrvSt",
-                "notes": "",
-                "symbols": [
-                    {
-                        "desc": "No curve is currenly active.",
-                        "label": "No Active Curve",
-                        "name": "INACTIVE",
-                        "notes": "",
-                        "value": 0
-                    },
-                    {
-                        "desc": "Active curve in effect.",
-                        "label": "Active Curve Enabled",
-                        "name": "ACTIVE",
-                        "notes": "",
-                        "value": 1
-                    }
-                ],
-                "type": "enum16"
-            },
-            {
                 "access": "RW",
                 "desc": "Index of  curve points to adopt. First curve index is 1.",
                 "label": "Adopt Curve Request",
@@ -325,7 +301,7 @@
                 "desc": "Scale factor for curve frequency points.",
                 "label": "Frequency Scale Factor",
                 "mandatory": "M",
-                "name": "Freq_SF",
+                "name": "Hz_SF",
                 "notes": "",
                 "static": "S",
                 "type": "sunssf"

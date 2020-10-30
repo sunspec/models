@@ -91,7 +91,7 @@
                 "label": "Enter Service Delay Time",
                 "name": "ESDlyTms",
                 "notes": "",
-                "type": "uint16",
+                "type": "uint32",
                 "units": "Secs"
             },
             {
@@ -100,7 +100,7 @@
                 "label": "Enter Service Random Delay",
                 "name": "ESRndTms",
                 "notes": "",
-                "type": "uint16",
+                "type": "uint32",
                 "units": "Secs"
             },
             {
@@ -109,7 +109,7 @@
                 "label": "Enter Service Ramp Time",
                 "name": "ESRmpTms",
                 "notes": "",
-                "type": "uint16",
+                "type": "uint32",
                 "units": "Secs"
             },
             {

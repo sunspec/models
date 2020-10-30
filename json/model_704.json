@@ -338,9 +338,9 @@
                 "comments": [
                     "Limit Maximum Active Power Generation"
                 ],
-                "desc": "Limit maximum active power enable.",
-                "label": "Limit Max Active Power Enable",
-                "name": "WMaxLimEna",
+                "desc": "Limit maximum active power percent enable.",
+                "label": "Limit Max Power Pct Enable",
+                "name": "WMaxLimPctEna",
                 "notes": "",
                 "symbols": [
                     {
@@ -362,9 +362,9 @@
             },
             {
                 "access": "RW",
-                "desc": "Limit maximum active power value.",
-                "label": "Limit Max Power Setpoint",
-                "name": "WMaxLim",
+                "desc": "Limit maximum active power percent value.",
+                "label": "Limit Max Power Pct Setpoint",
+                "name": "WMaxLimPct",
                 "notes": "",
                 "sf": "WMaxLim_SF",
                 "type": "uint16",
@@ -372,9 +372,9 @@
             },
             {
                 "access": "RW",
-                "desc": "Reversion limit maximum active power value.",
-                "label": "Reversion Limit Max Power",
-                "name": "WMaxLimRvrt",
+                "desc": "Reversion limit maximum active power percent value.",
+                "label": "Reversion Limit Max Power Pct",
+                "name": "WMaxLimPctRvrt",
                 "notes": "",
                 "sf": "WMaxLim_SF",
                 "type": "uint16",
@@ -382,9 +382,9 @@
             },
             {
                 "access": "RW",
-                "desc": "Reversion limit maximum active power value enable.",
-                "label": "Reversion Limit Max Power Enable",
-                "name": "WMaxLimRvrtEna",
+                "desc": "Reversion limit maximum active power percent value enable.",
+                "label": "Reversion Limit Max Power Pct Enable",
+                "name": "WMaxLimPctRvrtEna",
                 "notes": "",
                 "symbols": [
                     {
@@ -406,17 +406,17 @@
             },
             {
                 "access": "RW",
-                "desc": "Limit maximum active power reversion time.",
-                "label": "Limit Max Power Reversion Time",
-                "name": "WMaxLimRvrtTms",
+                "desc": "Limit maximum active power percent reversion time.",
+                "label": "Limit Max Power Pct Reversion Time",
+                "name": "WMaxLimPctRvrtTms",
                 "notes": "",
                 "type": "uint32",
                 "units": "Secs"
             },
             {
-                "desc": "Limit maximum active power reversion time remaining.",
-                "label": "Limit Max Power Rev Time Rem",
-                "name": "WMaxLimRvrtRem",
+                "desc": "Limit maximum active power percent reversion time remaining.",
+                "label": "Limit Max Power Pct Rev Time Rem",
+                "name": "WMaxLimPctRvrtRem",
                 "notes": "",
                 "type": "uint32",
                 "units": "Secs"
@@ -499,7 +499,7 @@
                 "name": "WSetPct",
                 "notes": "",
                 "sf": "WSetPct_SF",
-                "type": "int32",
+                "type": "uint16",
                 "units": "Pct"
             },
             {
@@ -509,7 +509,7 @@
                 "name": "WSetPctRvrt",
                 "notes": "",
                 "sf": "WSetPct_SF",
-                "type": "int32",
+                "type": "uint16",
                 "units": "Pct"
             },
             {
@@ -690,7 +690,7 @@
                 "name": "VarSetPct",
                 "notes": "",
                 "sf": "VarSetPct_SF",
-                "type": "int32",
+                "type": "uint16",
                 "units": "Pct"
             },
             {
@@ -700,7 +700,7 @@
                 "name": "VarSetPctRvrt",
                 "notes": "",
                 "sf": "VarSetPct_SF",
-                "type": "int32",
+                "type": "uint16",
                 "units": "Pct"
             },
             {
@@ -751,16 +751,16 @@
                 ],
                 "desc": "Ramp rate for increases in active power during normal generation.",
                 "label": "Normal Ramp Rate",
-                "name": "RGra",
+                "name": "WRmp",
                 "notes": "",
-                "type": "uint32",
+                "type": "uint16",
                 "units": "%Max/Sec"
             },
             {
                 "access": "RW",
                 "desc": "Ramp rate reference unit for increases in active power or current during normal generation.",
                 "label": "Normal Ramp Rate Reference",
-                "name": "RGraRef",
+                "name": "WRmpRef",
                 "notes": "",
                 "symbols": [
                     {
@@ -779,6 +779,15 @@
                     }
                 ],
                 "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Ramp rate based on max reactive power per second.",
+                "label": "Reactive Power Ramp Rate",
+                "name": "VarRmp",
+                "notes": "",
+                "type": "uint16",
+                "units": "%Max/Sec"
             },
             {
                 "comments": [
