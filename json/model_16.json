@@ -1,0 +1,152 @@
+{
+    "group": {
+        "desc": "Include this model for a simple IPv4 network stack",
+        "label": "Simple IP Network",
+        "name": "model_16",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 16
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Interface name.  (8 chars)",
+                "label": "Name",
+                "name": "Nam",
+                "size": 4,
+                "type": "string"
+            },
+            {
+                "desc": "Enumerated value.  Force IPv4 configuration method",
+                "label": "Config",
+                "mandatory": "M",
+                "name": "Cfg",
+                "symbols": [
+                    {
+                        "name": "STATIC",
+                        "value": 0
+                    },
+                    {
+                        "name": "DHCP",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Bitmask value Configure use of services",
+                "label": "Control",
+                "mandatory": "M",
+                "name": "Ctl",
+                "symbols": [
+                    {
+                        "name": "ENABLE_DNS",
+                        "value": 0
+                    },
+                    {
+                        "name": "ENABLE_NTP",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "IP address",
+                "label": "Address",
+                "mandatory": "M",
+                "name": "Addr",
+                "size": 8,
+                "type": "string"
+            },
+            {
+                "access": "RW",
+                "desc": "Netmask",
+                "label": "Netmask",
+                "mandatory": "M",
+                "name": "Msk",
+                "size": 8,
+                "type": "string"
+            },
+            {
+                "access": "RW",
+                "desc": "Gateway IP address",
+                "label": "Gateway",
+                "name": "Gw",
+                "size": 8,
+                "type": "string"
+            },
+            {
+                "access": "RW",
+                "desc": "32 bit IP address of DNS server",
+                "label": "DNS1",
+                "name": "DNS1",
+                "size": 8,
+                "type": "string"
+            },
+            {
+                "access": "RW",
+                "desc": "32 bit IP address of DNS server",
+                "label": "DNS2",
+                "name": "DNS2",
+                "size": 8,
+                "type": "string"
+            },
+            {
+                "desc": "IEEE MAC address of this interface",
+                "label": "MAC",
+                "name": "MAC",
+                "type": "eui48"
+            },
+            {
+                "access": "RW",
+                "desc": "Bitmask value.  Link control flags",
+                "label": "Link Control",
+                "name": "LnkCtl",
+                "symbols": [
+                    {
+                        "name": "AUTONEGOTIATE",
+                        "value": 0
+                    },
+                    {
+                        "name": "FULL_DUPLEX",
+                        "value": 1
+                    },
+                    {
+                        "name": "FORCE_10MB",
+                        "value": 2
+                    },
+                    {
+                        "name": "FORCE_100MB",
+                        "value": 3
+                    },
+                    {
+                        "name": "FORCE_1GB",
+                        "value": 4
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "name": "Pad",
+                "type": "pad"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 16
+}

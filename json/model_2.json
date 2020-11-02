@@ -1,0 +1,219 @@
+{
+    "group": {
+        "desc": "Aggregates a collection of models for a given model id",
+        "label": "Basic Aggregator",
+        "name": "aggregator",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 2
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Aggregated model id",
+                "label": "AID",
+                "mandatory": "M",
+                "name": "AID",
+                "type": "uint16"
+            },
+            {
+                "desc": "Number of aggregated models",
+                "label": "N",
+                "mandatory": "M",
+                "name": "N",
+                "type": "uint16"
+            },
+            {
+                "desc": "Update Number.  Incrementing number each time the mapping is changed.  If the number is not changed from the last reading the direct access to a specific offset will result in reading the same logical model as before.  Otherwise the entire model must be read to refresh the changes",
+                "label": "UN",
+                "mandatory": "M",
+                "name": "UN",
+                "type": "uint16"
+            },
+            {
+                "desc": "Enumerated status code",
+                "label": "Status",
+                "mandatory": "M",
+                "name": "St",
+                "symbols": [
+                    {
+                        "name": "OFF",
+                        "value": 1
+                    },
+                    {
+                        "name": "ON",
+                        "value": 2
+                    },
+                    {
+                        "name": "FULL",
+                        "value": 3
+                    },
+                    {
+                        "name": "FAULT",
+                        "value": 4
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Vendor specific status code",
+                "label": "Vendor Status",
+                "name": "StVnd",
+                "type": "enum16"
+            },
+            {
+                "desc": "Bitmask event code",
+                "label": "Event Code",
+                "mandatory": "M",
+                "name": "Evt",
+                "symbols": [
+                    {
+                        "name": "GROUND_FAULT",
+                        "value": 0
+                    },
+                    {
+                        "name": "INPUT_OVER_VOLTAGE",
+                        "value": 1
+                    },
+                    {
+                        "name": "RESERVED_2",
+                        "value": 2
+                    },
+                    {
+                        "name": "DC_DISCONNECT",
+                        "value": 3
+                    },
+                    {
+                        "name": "RESERVED_4",
+                        "value": 4
+                    },
+                    {
+                        "name": "RESERVED_5",
+                        "value": 5
+                    },
+                    {
+                        "name": "MANUAL_SHUTDOWN",
+                        "value": 6
+                    },
+                    {
+                        "name": "OVER_TEMPERATURE",
+                        "value": 7
+                    },
+                    {
+                        "name": "RESERVED_8",
+                        "value": 8
+                    },
+                    {
+                        "name": "RESERVED_9",
+                        "value": 9
+                    },
+                    {
+                        "name": "RESERVED_10",
+                        "value": 10
+                    },
+                    {
+                        "name": "RESERVED_11",
+                        "value": 11
+                    },
+                    {
+                        "name": "BLOWN_FUSE",
+                        "value": 12
+                    },
+                    {
+                        "name": "UNDER_TEMPERATURE",
+                        "value": 13
+                    },
+                    {
+                        "name": "MEMORY_LOSS",
+                        "value": 14
+                    },
+                    {
+                        "name": "ARC_DETECTION",
+                        "value": 15
+                    },
+                    {
+                        "name": "THEFT_DETECTION",
+                        "value": 16
+                    },
+                    {
+                        "name": "OUTPUT_OVER_CURRENT",
+                        "value": 17
+                    },
+                    {
+                        "name": "OUTPUT_OVER_VOLTAGE",
+                        "value": 18
+                    },
+                    {
+                        "name": "OUTPUT_UNDER_VOLTAGE",
+                        "value": 19
+                    },
+                    {
+                        "name": "TEST_FAILED",
+                        "value": 20
+                    }
+                ],
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Vendor specific event code",
+                "label": "Vendor Event Code",
+                "name": "EvtVnd",
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Control register for all aggregated devices",
+                "label": "Control",
+                "name": "Ctl",
+                "symbols": [
+                    {
+                        "name": "NONE",
+                        "value": 0
+                    },
+                    {
+                        "name": "AUTOMATIC",
+                        "value": 1
+                    },
+                    {
+                        "name": "FORCE_OFF",
+                        "value": 2
+                    },
+                    {
+                        "name": "TEST",
+                        "value": 3
+                    },
+                    {
+                        "name": "THROTTLE",
+                        "value": 4
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Vendor control register for all aggregated devices",
+                "label": "Vendor Control",
+                "name": "CtlVnd",
+                "type": "enum32"
+            },
+            {
+                "desc": "Numerical value used as a parameter to the control",
+                "label": "Control Value",
+                "name": "CtlVl",
+                "type": "enum32"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 2
+}

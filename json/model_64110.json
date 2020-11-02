@@ -1,0 +1,374 @@
+{
+    "group": {
+        "label": "OutBack AXS device",
+        "name": "model_64110",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 64110
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "label": "AXS Major Firmware Number",
+                "mandatory": "M",
+                "name": "MajorFWRev",
+                "type": "uint16"
+            },
+            {
+                "label": "AXS Mid Firmware Number",
+                "mandatory": "M",
+                "name": "MidFWRev",
+                "type": "uint16"
+            },
+            {
+                "label": "AXS Minor Firmware Number",
+                "mandatory": "M",
+                "name": "MinorFWRev",
+                "type": "uint16"
+            },
+            {
+                "label": "Encryption Key",
+                "mandatory": "M",
+                "name": "EncrypKey",
+                "type": "uint16"
+            },
+            {
+                "label": "MAC Address",
+                "mandatory": "M",
+                "name": "MAC_Address",
+                "size": 7,
+                "type": "string"
+            },
+            {
+                "label": "Write Password",
+                "mandatory": "M",
+                "name": "WritePassword",
+                "size": 8,
+                "type": "string"
+            },
+            {
+                "label": "Enable DHCP",
+                "mandatory": "M",
+                "name": "EnableDHCP",
+                "type": "enum16"
+            },
+            {
+                "label": "TCPIP Address",
+                "mandatory": "M",
+                "name": "TCPIP_address",
+                "type": "ipaddr"
+            },
+            {
+                "label": "TCPIP Gateway",
+                "mandatory": "M",
+                "name": "Gateway_address",
+                "type": "ipaddr"
+            },
+            {
+                "label": "TCPIP Netmask",
+                "mandatory": "M",
+                "name": "TCPIP_Netmask",
+                "type": "ipaddr"
+            },
+            {
+                "label": "TCPIP DNS1",
+                "mandatory": "M",
+                "name": "DNS1_address",
+                "type": "ipaddr"
+            },
+            {
+                "label": "TCPIP DNS2",
+                "mandatory": "M",
+                "name": "DNS2_address",
+                "type": "ipaddr"
+            },
+            {
+                "label": "ModBus Port",
+                "mandatory": "M",
+                "name": "Modbus_port",
+                "type": "uint16"
+            },
+            {
+                "label": "SMTP Server Name",
+                "mandatory": "M",
+                "name": "SMTP_server_nm",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "label": "SMTP Account Name",
+                "mandatory": "M",
+                "name": "SMTP_account_nm",
+                "size": 16,
+                "type": "string"
+            },
+            {
+                "label": "Enable SMTP SSL",
+                "mandatory": "M",
+                "name": "SMTP_enable_SSL",
+                "symbols": [
+                    {
+                        "name": "ASX_DISABLED",
+                        "value": 0
+                    },
+                    {
+                        "name": "ASX_ENABLED",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "SMTP Password",
+                "mandatory": "M",
+                "name": "SMTP_password",
+                "size": 8,
+                "type": "string"
+            },
+            {
+                "label": "SMTP User Name",
+                "mandatory": "M",
+                "name": "SMTP_user_nm",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "label": "Status Email Interval",
+                "mandatory": "M",
+                "name": "Stat_email_int",
+                "type": "uint16"
+            },
+            {
+                "label": "Status Email Start Hour",
+                "mandatory": "M",
+                "name": "Stat_start_HR",
+                "type": "uint16"
+            },
+            {
+                "label": "Status Email Subject",
+                "mandatory": "M",
+                "name": "Stat_email_sub",
+                "size": 25,
+                "type": "string"
+            },
+            {
+                "label": "Status Email to Address 1",
+                "mandatory": "M",
+                "name": "Stat_email_addr1",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "label": "Status Email to Address 2",
+                "mandatory": "M",
+                "name": "Stat_email_addr2",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "label": "Enable Alarm Email",
+                "mandatory": "M",
+                "name": "Alarm_email_en",
+                "symbols": [
+                    {
+                        "name": "ASX_DISABLED",
+                        "value": 0
+                    },
+                    {
+                        "name": "ASX_ENABLED",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "Alarm Email Subject",
+                "mandatory": "M",
+                "name": "Alarm_email_sub",
+                "size": 25,
+                "type": "string"
+            },
+            {
+                "label": "Alarm Email to Address 1",
+                "mandatory": "M",
+                "name": "Alarm_email_addr1",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "label": "Alarm Email to Address 2",
+                "mandatory": "M",
+                "name": "Alarm_email_addr2",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "label": "FTP Password",
+                "mandatory": "M",
+                "name": "FTP_password",
+                "size": 8,
+                "type": "string"
+            },
+            {
+                "label": "Telnet Password",
+                "mandatory": "M",
+                "name": "TELNET_password",
+                "size": 8,
+                "type": "string"
+            },
+            {
+                "label": "SD-Card Datalog Write Interval",
+                "mandatory": "M",
+                "name": "Log_write_int",
+                "type": "uint16",
+                "units": "Tms"
+            },
+            {
+                "label": "SD-Card Datalog Retain",
+                "mandatory": "M",
+                "name": "Log_retain",
+                "type": "uint16",
+                "units": "Tmd"
+            },
+            {
+                "label": "SD-Card Datalog Mode",
+                "mandatory": "M",
+                "name": "Log_mode",
+                "symbols": [
+                    {
+                        "name": "LOG_DISABLED",
+                        "value": 0
+                    },
+                    {
+                        "name": "LOG_EXCEL",
+                        "value": 1
+                    },
+                    {
+                        "name": "LOG_COMPACT",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "NTP Timer Server Name",
+                "mandatory": "M",
+                "name": "NTP_server_nm",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "label": "Enable Network Time",
+                "mandatory": "M",
+                "name": "NTP_enable",
+                "symbols": [
+                    {
+                        "name": "ASX_DISABLED",
+                        "value": 0
+                    },
+                    {
+                        "name": "ASX_ENABLED",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "Time Zone",
+                "mandatory": "M",
+                "name": "TimeZone",
+                "type": "int16",
+                "units": "Tmh"
+            },
+            {
+                "label": "Year",
+                "mandatory": "M",
+                "name": "Date_year",
+                "type": "uint16"
+            },
+            {
+                "label": "Month",
+                "mandatory": "M",
+                "name": "Date_month",
+                "type": "uint16"
+            },
+            {
+                "label": "Day",
+                "mandatory": "M",
+                "name": "Date_Day",
+                "type": "uint16"
+            },
+            {
+                "label": "Hour",
+                "mandatory": "M",
+                "name": "Time_hour",
+                "type": "uint16"
+            },
+            {
+                "label": "Minute",
+                "mandatory": "M",
+                "name": "Time_minute",
+                "type": "uint16"
+            },
+            {
+                "label": "Second",
+                "mandatory": "M",
+                "name": "Time_second",
+                "type": "uint16"
+            },
+            {
+                "label": "Battery Temperature",
+                "mandatory": "M",
+                "name": "Battery_temp",
+                "sf": "Temp_SF",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "label": "Ambient Temperature",
+                "mandatory": "M",
+                "name": "Ambient_temp",
+                "sf": "Temp_SF",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "mandatory": "M",
+                "name": "Temp_SF",
+                "type": "sunssf"
+            },
+            {
+                "label": "AXS Error",
+                "mandatory": "M",
+                "name": "AXS_Error",
+                "type": "bitfield16"
+            },
+            {
+                "label": "AXS Status",
+                "mandatory": "M",
+                "name": "AXS_Status",
+                "type": "bitfield16"
+            },
+            {
+                "label": "Spare",
+                "mandatory": "M",
+                "name": "AXS_Spare",
+                "type": "uint16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 64110
+}

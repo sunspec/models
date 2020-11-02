@@ -1,0 +1,135 @@
+{
+    "group": {
+        "desc": "Enter service.",
+        "label": "Enter Service",
+        "name": "DEREnterService",
+        "notes": "",
+        "points": [
+            {
+                "desc": "Enter service model id.",
+                "label": "Enter Service ID",
+                "mandatory": "M",
+                "name": "ID",
+                "notes": "",
+                "static": "S",
+                "type": "uint16",
+                "value": 703
+            },
+            {
+                "desc": "Enter service  model length.",
+                "label": "Enter Service Length",
+                "mandatory": "M",
+                "name": "L",
+                "notes": "",
+                "static": "S",
+                "type": "uint16",
+                "value": 12
+            },
+            {
+                "access": "RW",
+                "desc": "Permit enter service.",
+                "label": "Permit Enter Service",
+                "name": "ES",
+                "notes": "",
+                "symbols": [
+                    {
+                        "name": "DISABLED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "name": "ENABLED",
+                        "notes": "",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Enter service voltage high threshold as percent of normal voltage.",
+                "label": "Enter Service Voltage High",
+                "name": "ESVHi",
+                "notes": "",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Enter service voltage low threshold as percent of normal voltage.",
+                "label": "Enter Service Voltage Low",
+                "name": "ESVLo",
+                "notes": "",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Enter service frequency high threshold.",
+                "label": "Enter Service Frequency High",
+                "name": "ESHzHi",
+                "notes": "",
+                "sf": "Hz_SF",
+                "type": "uint32",
+                "units": "Hz"
+            },
+            {
+                "access": "RW",
+                "desc": "Enter service frequency low threshold.",
+                "label": "Enter Service Frequency Low",
+                "name": "ESHzLo",
+                "notes": "",
+                "sf": "Hz_SF",
+                "type": "uint32",
+                "units": "Hz"
+            },
+            {
+                "access": "RW",
+                "desc": "Enter service delay time in seconds.",
+                "label": "Enter Service Delay Time",
+                "name": "ESDlyTms",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Enter service random delay in seconds.",
+                "label": "Enter Service Random Delay",
+                "name": "ESRndTms",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Enter service ramp time in seconds.",
+                "label": "Enter Service Ramp Time",
+                "name": "ESRmpTms",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "desc": "Voltage scale factor.",
+                "label": "Voltage Scale Factor",
+                "name": "V_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Frequency scale factor.",
+                "label": "Frequency Scale Factor",
+                "name": "Hz_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 703
+}

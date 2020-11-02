@@ -1,0 +1,72 @@
+{
+    "group": {
+        "desc": "Include to support various irradiance measurements",
+        "groups": [
+            {
+                "count": 0,
+                "name": "repeating",
+                "points": [
+                    {
+                        "desc": "Global Horizontal Irradiance",
+                        "label": "GHI",
+                        "name": "GHI",
+                        "type": "uint16",
+                        "units": "W/m2"
+                    },
+                    {
+                        "desc": "Plane-of-Array Irradiance",
+                        "label": "POAI",
+                        "name": "POAI",
+                        "type": "uint16",
+                        "units": "W/m2"
+                    },
+                    {
+                        "desc": "Diffuse Irradiance",
+                        "label": "DFI",
+                        "name": "DFI",
+                        "type": "uint16",
+                        "units": "W/m2"
+                    },
+                    {
+                        "desc": "Direct Normal Irradiance",
+                        "label": "DNI",
+                        "name": "DNI",
+                        "type": "uint16",
+                        "units": "W/m2"
+                    },
+                    {
+                        "desc": "Other Irradiance",
+                        "label": "OTI",
+                        "name": "OTI",
+                        "type": "uint16",
+                        "units": "W/m2"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "Irradiance Model",
+        "name": "irradiance",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 302
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 302
+}

@@ -1,0 +1,620 @@
+{
+    "group": {
+        "desc": "DER capacity model.",
+        "label": "DER Capacity",
+        "name": "DERCapacity",
+        "notes": "",
+        "points": [
+            {
+                "desc": "DER capacity model id.",
+                "label": "DER Capacity Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "notes": "",
+                "static": "S",
+                "type": "uint16",
+                "value": 702
+            },
+            {
+                "desc": "DER capacity name  model length.",
+                "label": "DER Capacity Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "notes": "",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "comments": [
+                    "Nameplate Ratings - Specifies capacity ratings"
+                ],
+                "desc": "Maximum active power rating at unity power factor in watts.",
+                "label": "Active Power Max Rating",
+                "name": "WMaxRtg",
+                "notes": "",
+                "sf": "W_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "desc": "Active power rating at specified over-excited power factor in watts.",
+                "label": "Active Power (Over-Excited) Rating",
+                "name": "WOvrExtRtg",
+                "notes": "",
+                "sf": "W_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "desc": "Specified over-excited power factor.",
+                "label": "Specified Over-Excited PF",
+                "name": "WOvrExtRtgPF",
+                "notes": "",
+                "sf": "PF_SF",
+                "type": "uint16"
+            },
+            {
+                "desc": "Active power rating at specified under-excited power factor in watts.",
+                "label": "Active Power (Under-Excited) Rating",
+                "name": "WUndExtRtg",
+                "notes": "",
+                "sf": "W_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "desc": "Specified under-excited power factor.",
+                "label": "Specified Under-Excited PF",
+                "name": "WUndExtRtgPF",
+                "notes": "",
+                "sf": "PF_SF",
+                "type": "uint16"
+            },
+            {
+                "desc": "Maximum apparent power rating in voltamperes.",
+                "label": "Apparent Power Max Rating",
+                "name": "VAMaxRtg",
+                "notes": "",
+                "sf": "VA_SF",
+                "type": "uint16",
+                "units": "VA"
+            },
+            {
+                "desc": "Maximum injected reactive power rating in vars.",
+                "label": "Reactive Power Injected Rating",
+                "name": "VarMaxInjRtg",
+                "notes": "",
+                "sf": "Var_SF",
+                "type": "uint16",
+                "units": "Var"
+            },
+            {
+                "desc": "Maximum absorbed reactive power rating in vars.",
+                "label": "Reactive Power Absorbed Rating",
+                "name": "VarMaxAbsRtg",
+                "notes": "",
+                "sf": "Var_SF",
+                "type": "uint16",
+                "units": "Var"
+            },
+            {
+                "desc": "Maximum active power charge rate in watts.",
+                "label": "Charge Rate Max Rating",
+                "name": "WChaRteMaxRtg",
+                "notes": "",
+                "sf": "W_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "desc": "Maximum active power discharge rate in watts.",
+                "label": "Discharge Rate Max Rating",
+                "name": "WDisChaRteMaxRtg",
+                "notes": "",
+                "sf": "W_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "desc": "Maximum apparent power charge rate in voltamperes.",
+                "label": "Charge Rate Max VA Rating",
+                "name": "VAChaRteMaxRtg",
+                "notes": "",
+                "sf": "VA_SF",
+                "type": "uint16",
+                "units": "VA"
+            },
+            {
+                "desc": "Maximum apparent power discharge rate in voltamperes.",
+                "label": "Discharge Rate Max VA Rating",
+                "name": "VADisChaRteMaxRtg",
+                "notes": "",
+                "sf": "VA_SF",
+                "type": "uint16",
+                "units": "VA"
+            },
+            {
+                "desc": "AC voltage nominal rating.",
+                "label": "AC Voltage Nominal Rating",
+                "name": "VNomRtg",
+                "notes": "",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "desc": "AC voltage maximum rating.",
+                "label": "AC Voltage Max Rating",
+                "name": "VMaxRtg",
+                "notes": "",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "desc": "AC voltage minimum rating.",
+                "label": "AC Voltage Min Rating",
+                "name": "VMinRtg",
+                "notes": "",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "desc": "AC current maximum rating in amps.",
+                "label": "AC Current Max Rating",
+                "name": "AMaxRtg",
+                "notes": "",
+                "sf": "A_SF",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "desc": "Power factor over-excited rating.",
+                "label": "PF Over-Excited Rating",
+                "name": "PFOvrExtRtg",
+                "notes": "",
+                "sf": "PF_SF",
+                "type": "uint16"
+            },
+            {
+                "desc": "Power factor under-excited rating.",
+                "label": "PF Under-Excited Rating",
+                "name": "PFUndExtRtg",
+                "notes": "",
+                "sf": "PF_SF",
+                "type": "uint16"
+            },
+            {
+                "desc": "Reactive susceptance that remains connected to the Area EPS in the cease to energize and trip state.",
+                "label": "Reactive Susceptance",
+                "name": "ReactSusceptRtg",
+                "notes": "",
+                "sf": "S_SF",
+                "type": "uint16",
+                "units": "S"
+            },
+            {
+                "desc": "Normal operating performace category as specified in IEEE 1547-2018.",
+                "label": "Normal Operating Category",
+                "name": "NorOpCatRtg",
+                "notes": "",
+                "symbols": [
+                    {
+                        "name": "CAT_A",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "name": "CAT_B",
+                        "notes": "",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Abnormal operating performance category as specified in IEEE 1547-2018.",
+                "label": "Abnormal Operating Category",
+                "name": "AbnOpCatRtg",
+                "notes": "",
+                "symbols": [
+                    {
+                        "name": "CAT_1",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "name": "CAT_2",
+                        "notes": "",
+                        "value": 2
+                    },
+                    {
+                        "name": "CAT_3",
+                        "notes": "",
+                        "value": 3
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Supported control mode functions.",
+                "label": "Supported Control Modes",
+                "name": "CtrlModes",
+                "notes": "",
+                "symbols": [
+                    {
+                        "name": "MAX_W",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "name": "FIXED_W",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "name": "FIXED_VAR",
+                        "notes": "",
+                        "value": 2
+                    },
+                    {
+                        "name": "FIXED_PF",
+                        "notes": "",
+                        "value": 3
+                    },
+                    {
+                        "name": "VOLT_VAR",
+                        "notes": "",
+                        "value": 4
+                    },
+                    {
+                        "name": "FREQ_WATT",
+                        "notes": "",
+                        "value": 5
+                    },
+                    {
+                        "name": "DYN_REACT_CURR",
+                        "notes": "",
+                        "value": 7
+                    },
+                    {
+                        "name": "LV_TRIP",
+                        "notes": "",
+                        "value": 8
+                    },
+                    {
+                        "name": "HV_TRIP",
+                        "notes": "",
+                        "value": 9
+                    },
+                    {
+                        "name": "WATT_VAR",
+                        "notes": "",
+                        "value": 10
+                    },
+                    {
+                        "name": "VOLT_WATT",
+                        "notes": "",
+                        "value": 11
+                    },
+                    {
+                        "name": "SCHEDULED",
+                        "notes": "",
+                        "value": 12
+                    },
+                    {
+                        "name": "LF_TRIP",
+                        "notes": "",
+                        "value": 13
+                    },
+                    {
+                        "name": "HF_TRIP",
+                        "notes": "",
+                        "value": 14
+                    }
+                ],
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Intentional island categories",
+                "label": "Intentional Island Categories",
+                "name": "IntIslandCatRtg",
+                "notes": "",
+                "symbols": [
+                    {
+                        "name": "UNCATEGORIZED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "name": "INT_ISL_CAPABLE",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "name": "BLACK_START_CAPABLE",
+                        "notes": "",
+                        "value": 2
+                    },
+                    {
+                        "name": "ISOCH_CAPABLE",
+                        "notes": "",
+                        "value": 3
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "access": "RW",
+                "comments": [
+                    "Settings - Used to adjust nameplate ratings"
+                ],
+                "desc": "Maximum active power setting used to adjust maximum active power setting.",
+                "label": "Active Power Max Setting",
+                "name": "WMax",
+                "notes": "",
+                "sf": "W_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "access": "RW",
+                "desc": "Active power setting at specified over-excited power factor in watts.",
+                "label": "Active Power (Over-Excited) Setting",
+                "name": "WMaxOvrExt",
+                "notes": "",
+                "sf": "W_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "access": "RW",
+                "desc": "Specified over-excited power factor.",
+                "label": "Specified Over-Excited PF",
+                "name": "WOvrExtPF",
+                "notes": "",
+                "sf": "PF_SF",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Active power setting at specified under-excited power factor in watts.",
+                "label": "Active Power (Under-Excited) Setting",
+                "name": "WMaxUndExt",
+                "notes": "",
+                "sf": "W_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "access": "RW",
+                "desc": "Specified under-excited power factor.",
+                "label": "Specified Under-Excited PF",
+                "name": "WUndExtPF",
+                "notes": "",
+                "sf": "PF_SF",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Maximum apparent power setting used to adjust maximum apparant power rating.",
+                "label": "Apparent Power Max Setting",
+                "name": "VAMax",
+                "notes": "",
+                "sf": "VA_SF",
+                "type": "uint16",
+                "units": "VA"
+            },
+            {
+                "access": "RW",
+                "desc": "Maximum injected reactive power setting used to adjust maximum injected reactive power rating.",
+                "label": "Reactive Power Injected Setting",
+                "name": "VarMaxInj",
+                "notes": "",
+                "sf": "Var_SF",
+                "type": "uint16",
+                "units": "Var"
+            },
+            {
+                "access": "RW",
+                "desc": "Maximum absorbed reactive power setting used to adjust maximum absorbed reactive power rating.",
+                "label": "Reactive Power Absorbed Setting",
+                "name": "VarMaxAbs",
+                "notes": "",
+                "sf": "Var_SF",
+                "type": "uint16",
+                "units": "Var"
+            },
+            {
+                "access": "RW",
+                "desc": "Maximum active power charge rate setting used to adjust maximum active power charge rate rating.",
+                "label": "Charge Rate Max Setting",
+                "name": "WChaRteMax",
+                "notes": "",
+                "sf": "W_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "access": "RW",
+                "desc": "Maximum active power discharge rate setting used to adjust maximum active power discharge rate rating.",
+                "label": "Discharge Rate Max Setting",
+                "name": "WDisChaRteMax",
+                "notes": "",
+                "sf": "W_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "access": "RW",
+                "desc": "Maximum apparent power charge rate setting used to adjust maximum apparent power charge rate rating.",
+                "label": "Charge Rate Max VA Setting",
+                "name": "VAChaRteMax",
+                "notes": "",
+                "sf": "VA_SF",
+                "type": "uint16",
+                "units": "VA"
+            },
+            {
+                "access": "RW",
+                "desc": "Maximum apparent power discharge rate setting used to adjust maximum apparent power discharge rate rating.",
+                "label": "Discharge Rate Max VA Setting",
+                "name": "VADisChaRteMax",
+                "notes": "",
+                "sf": "VA_SF",
+                "type": "uint16",
+                "units": "VA"
+            },
+            {
+                "access": "RW",
+                "desc": "Nominal AC voltage setting.",
+                "label": "Nominal AC Voltage Setting",
+                "name": "VNom",
+                "notes": "",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "access": "RW",
+                "desc": "AC voltage maximum setting used to adjust AC voltage maximum rating.",
+                "label": "AC Voltage Max Setting",
+                "name": "VMax",
+                "notes": "",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "access": "RW",
+                "desc": "AC voltage minimum setting used to adjust AC voltage maximum rating.",
+                "label": "AC Voltage Min Setting",
+                "name": "VMin",
+                "notes": "",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "access": "RW",
+                "desc": "Maximum AC current setting used to adjust maximum ac current rating.",
+                "label": "AC Current Max Setting",
+                "name": "AMax",
+                "notes": "",
+                "sf": "A_SF",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "access": "RW",
+                "desc": "Power factor over-excited setting.",
+                "label": "PF Over-Excited Setting",
+                "name": "PFOvrExt",
+                "notes": "",
+                "sf": "PF_SF",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Power factor under-excited setting.",
+                "label": "PF Under-Excited Setting",
+                "name": "PFUndExt",
+                "notes": "",
+                "sf": "PF_SF",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Intentional island categories",
+                "label": "Intentional Island Categories",
+                "name": "IntIslandCat",
+                "notes": "",
+                "symbols": [
+                    {
+                        "name": "UNCATEGORIZED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "name": "INT_ISL_CAPABLE",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "name": "BLACK_START_CAPABLE",
+                        "notes": "",
+                        "value": 2
+                    },
+                    {
+                        "name": "ISOCH_CAPABLE",
+                        "notes": "",
+                        "value": 3
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "comments": [
+                    "Scale Factors"
+                ],
+                "desc": "Active power scale factor.",
+                "label": "Active Power Scale Factor",
+                "name": "W_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Power factor scale factor.",
+                "label": "Power Factor Scale Factor",
+                "name": "PF_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Apparent power scale factor.",
+                "label": "Apparent Power Scale Factor",
+                "name": "VA_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Reactive power scale factor.",
+                "label": "Reactive Power Scale Factor",
+                "name": "Var_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Voltage scale factor.",
+                "label": "Voltage Scale Factor",
+                "name": "V_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Current scale factor.",
+                "label": "Current Scale Factor",
+                "name": "A_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Susceptance scale factor.",
+                "label": "Susceptance Scale Factor",
+                "name": "S_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 702
+}

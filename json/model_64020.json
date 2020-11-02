@@ -1,0 +1,267 @@
+{
+    "group": {
+        "groups": [
+            {
+                "count": 0,
+                "name": "repeating",
+                "points": [
+                    {
+                        "desc": "strings of 16 characters",
+                        "label": "Serial number",
+                        "mandatory": "M",
+                        "name": "SerialNumber",
+                        "size": 9,
+                        "type": "string"
+                    },
+                    {
+                        "desc": "string of 11 characters",
+                        "label": "Firmware version",
+                        "mandatory": "M",
+                        "name": "Firmware",
+                        "size": 6,
+                        "type": "string"
+                    },
+                    {
+                        "label": "Hardware version",
+                        "mandatory": "M",
+                        "name": "Hardware",
+                        "type": "uint16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "Mersen GreenString",
+        "name": "model_64020",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 64020
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "label": "Aux 0 temperature",
+                "name": "Aux0Tmp",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "label": "Aux 1 temperature",
+                "name": "Aux1Tmp",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "label": "Aux 2 temperature",
+                "name": "Aux2Tmp",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "label": "Aux 3 temperature",
+                "name": "Aux3Tmp",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "label": "Aux 4 temperature",
+                "name": "Aux4Tmp",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "label": "Probe Temperature",
+                "mandatory": "M",
+                "name": "ProbeTmp",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "label": "Main Temperature",
+                "mandatory": "M",
+                "name": "MainTmp",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "label": "Voltage scale factor for the sensors",
+                "mandatory": "M",
+                "name": "SensorV_SF",
+                "type": "sunssf"
+            },
+            {
+                "label": "Current scale factor for the sensors",
+                "mandatory": "M",
+                "name": "SensorA_SF",
+                "type": "sunssf"
+            },
+            {
+                "label": "Frequency scale factor for the sensors",
+                "mandatory": "M",
+                "name": "SensorHz_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "scale of 0-10V",
+                "label": "Sensor1 Voltage",
+                "name": "Sensor1Voltage",
+                "sf": "SensorV_SF",
+                "type": "int16",
+                "units": "V"
+            },
+            {
+                "desc": "scale of 0-10V",
+                "label": "Sensor2 Voltage",
+                "name": "Sensor2Voltage",
+                "sf": "SensorV_SF",
+                "type": "int16",
+                "units": "V"
+            },
+            {
+                "desc": "scale of 0-10V",
+                "label": "Sensor3 Voltage",
+                "name": "Sensor3Voltage",
+                "sf": "SensorV_SF",
+                "type": "int16",
+                "units": "V"
+            },
+            {
+                "desc": "scale of 0-10V",
+                "label": "Sensor4 Voltage",
+                "name": "Sensor4Voltage",
+                "sf": "SensorV_SF",
+                "type": "int16",
+                "units": "V"
+            },
+            {
+                "desc": "scale of 0-10V",
+                "label": "Sensor5 Voltage",
+                "name": "Sensor5Voltage",
+                "sf": "SensorV_SF",
+                "type": "int16",
+                "units": "V"
+            },
+            {
+                "desc": "scale of 0-10V",
+                "label": "Sensor6 Voltage",
+                "name": "Sensor6Voltage",
+                "sf": "SensorV_SF",
+                "type": "int16",
+                "units": "V"
+            },
+            {
+                "desc": "scale of 0-10V",
+                "label": "Sensor7 Voltage",
+                "name": "Sensor7Voltage",
+                "sf": "SensorV_SF",
+                "type": "int16",
+                "units": "V"
+            },
+            {
+                "desc": "scale of 4-20mA",
+                "label": "Sensor1 Current",
+                "name": "Sensor1Current",
+                "sf": "SensorA_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "in 4-20mA or 4-20mA",
+                "label": "Sensor2 Current",
+                "name": "Sensor2Current",
+                "sf": "SensorA_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "in 4-20mA or 4-20mA",
+                "label": "Sensor3 Current",
+                "name": "Sensor3Current",
+                "sf": "SensorA_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "in 4-20mA or 4-20mA",
+                "label": "Sensor4 Current",
+                "name": "Sensor4Current",
+                "sf": "SensorA_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "in 4-20mA or 4-20mA",
+                "label": "Sensor5 Current",
+                "name": "Sensor5Current",
+                "sf": "SensorA_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "in 4-20mA or 4-20mA",
+                "label": "Sensor6 Current",
+                "name": "Sensor6Current",
+                "sf": "SensorA_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "in 4-20mA or 4-20mA",
+                "label": "Sensor7 Current",
+                "name": "Sensor7Current",
+                "sf": "SensorA_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "frequency in Hz",
+                "label": "Sensor8 frequency",
+                "name": "Sensor8",
+                "sf": "SensorHz_SF",
+                "type": "uint16",
+                "units": "Hz"
+            },
+            {
+                "label": "Relay 1 state",
+                "name": "Relay1",
+                "type": "uint16"
+            },
+            {
+                "label": "Relay 2 state",
+                "name": "Relay2",
+                "type": "uint16"
+            },
+            {
+                "label": "Relay 3 state",
+                "name": "Relay3",
+                "type": "uint16"
+            },
+            {
+                "desc": "always 0 in reading, used the code 0xC0DA during the writing for resetting them",
+                "label": "Reset the accumulators",
+                "name": "ResetAccumulators",
+                "type": "uint16"
+            },
+            {
+                "desc": "always 0 in reading, used the code 0xC0DA during the writing for resetting the system",
+                "label": "Reset the system",
+                "name": "Reset",
+                "type": "uint16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 64020
+}

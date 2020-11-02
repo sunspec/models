@@ -1,0 +1,246 @@
+{
+    "group": {
+        "desc": "DER Frequency Droop model.",
+        "groups": [
+            {
+                "comments": [
+                    "Stored control sets - Number of control sets contained in NCtl - The first set is read-only and indicates the current settings."
+                ],
+                "count": "NCtl",
+                "desc": "Stored curve sets.",
+                "label": "Stored Curves",
+                "name": "Ctl",
+                "notes": "",
+                "points": [
+                    {
+                        "access": "RW",
+                        "desc": "The deadband value for over-frequency conditions in Hz.",
+                        "label": "Over-Frequency Deadband",
+                        "mandatory": "M",
+                        "name": "DbOf",
+                        "notes": "",
+                        "sf": "Db_SF",
+                        "type": "uint32",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "The deadband value for under-frequency conditions in Hz.",
+                        "label": "Under-Frequency Deadband",
+                        "mandatory": "M",
+                        "name": "DbUf",
+                        "notes": "",
+                        "sf": "Db_SF",
+                        "type": "uint32",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Frequency droop per-unit frequency change for over-frequency conditions corresponding to 1 per-unit power output change.",
+                        "label": "Over-Frequency Change Ratio",
+                        "mandatory": "M",
+                        "name": "KOf",
+                        "notes": "",
+                        "sf": "K_SF",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Frequency droop per-unit frequency change for under-frequency conditions corresponding to 1 per-unit power output change.",
+                        "label": "Under-Frequency Change Ratio",
+                        "mandatory": "M",
+                        "name": "KUf",
+                        "notes": "",
+                        "sf": "K_SF",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "The open-loop response time in seconds.",
+                        "label": "Open-Loop Response Time",
+                        "mandatory": "M",
+                        "name": "RspTms",
+                        "notes": "",
+                        "sf": "RspTms_SF",
+                        "type": "uint32",
+                        "units": "Secs"
+                    },
+                    {
+                        "desc": "Control read-write access.",
+                        "label": "Control Access",
+                        "name": "ReadOnly",
+                        "notes": "",
+                        "symbols": [
+                            {
+                                "desc": "Control has read-write access.",
+                                "label": "Read-Write Access",
+                                "name": "RW",
+                                "notes": "",
+                                "value": 0
+                            },
+                            {
+                                "desc": "Control has read-only access.",
+                                "label": "Read-Only Access",
+                                "name": "R",
+                                "notes": "",
+                                "value": 1
+                            }
+                        ],
+                        "type": "enum16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "DER Frequency Droop",
+        "name": "DERFreqDroop",
+        "notes": "",
+        "points": [
+            {
+                "desc": "DER Frequency Droop model id.",
+                "label": "DER Frequency Droop ID",
+                "mandatory": "M",
+                "name": "ID",
+                "notes": "",
+                "static": "S",
+                "type": "uint16",
+                "value": 711
+            },
+            {
+                "desc": "DER Frequency Droop  model length.",
+                "label": "DER Frequency Droop Length",
+                "mandatory": "M",
+                "name": "L",
+                "notes": "",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "DER Frequency-Watt (Frequency-Droop) control enable.",
+                "label": "DER Frequency Droop Enable",
+                "mandatory": "M",
+                "name": "Ena",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Function is enabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "Function is enabled.",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Function is disabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "Function is disabled.",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Set active control. 0 = No active control.",
+                "label": "Set Active Control Request",
+                "mandatory": "M",
+                "name": "AdptCtlReq",
+                "notes": "",
+                "type": "uint16"
+            },
+            {
+                "desc": "Result of last set active control operation.",
+                "label": "Set Active Control Result",
+                "mandatory": "M",
+                "name": "AdptCtlRslt",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Curve update in progress.",
+                        "label": "Update In Progress",
+                        "name": "IN_PROGRESS",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Curve update completed successfully.",
+                        "label": "Update Complete",
+                        "name": "COMPLETED",
+                        "notes": "The duration from a step change in control signal input until the output changes by 90% of its final change, before any overshoot.",
+                        "value": 1
+                    },
+                    {
+                        "desc": "Curve update failed.",
+                        "label": "Update Failed",
+                        "name": "FAILED",
+                        "notes": "",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Number of stored curves supported.",
+                "label": "Stored Curve Count",
+                "mandatory": "M",
+                "name": "NCtl",
+                "notes": "",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Reversion time in seconds.  0 = No reversion time",
+                "label": "Reversion Timeout",
+                "name": "RvrtTms",
+                "notes": "",
+                "type": "uint32"
+            },
+            {
+                "desc": "Reversion time remaining in seconds",
+                "label": "Reversion Time Left",
+                "name": "RvrtRem",
+                "notes": "",
+                "type": "uint32"
+            },
+            {
+                "access": "RW",
+                "desc": "Default control after reversion timeout.",
+                "label": "Reversion Control",
+                "name": "RvrtCtl",
+                "notes": "",
+                "type": "uint16"
+            },
+            {
+                "desc": "Deadband scale factor.",
+                "label": "Deadband Scale Factor",
+                "mandatory": "M",
+                "name": "Db_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Frequency change scale factor.",
+                "label": "Frequency Change Scale Factor",
+                "mandatory": "M",
+                "name": "K_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Open loop response time scale factor.",
+                "label": "Open-Loop Scale Factor",
+                "mandatory": "M",
+                "name": "RspTms_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 711
+}

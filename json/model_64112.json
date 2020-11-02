@@ -1,0 +1,622 @@
+{
+    "group": {
+        "label": "OutBack FM Charge Controller",
+        "name": "model_64112",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 64112
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "label": "Port Number",
+                "mandatory": "M",
+                "name": "Port",
+                "type": "uint16"
+            },
+            {
+                "mandatory": "M",
+                "name": "V_SF",
+                "type": "sunssf"
+            },
+            {
+                "mandatory": "M",
+                "name": "C_SF",
+                "type": "sunssf"
+            },
+            {
+                "mandatory": "M",
+                "name": "H_SF",
+                "type": "sunssf"
+            },
+            {
+                "mandatory": "M",
+                "name": "P_SF",
+                "type": "sunssf"
+            },
+            {
+                "mandatory": "M",
+                "name": "AH_SF",
+                "type": "sunssf"
+            },
+            {
+                "mandatory": "M",
+                "name": "KWH_SF",
+                "type": "sunssf"
+            },
+            {
+                "label": "Faults",
+                "mandatory": "M",
+                "name": "CC_Config_fault",
+                "type": "bitfield16"
+            },
+            {
+                "label": "Absorb",
+                "mandatory": "M",
+                "name": "CC_Config_absorb_V",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "Absorb Time",
+                "mandatory": "M",
+                "name": "CC_Config_absorb_Hr",
+                "sf": "H_SF",
+                "type": "uint16",
+                "units": "Tmh"
+            },
+            {
+                "label": "Absorb End",
+                "mandatory": "M",
+                "name": "CC_Config_absorb_End_A",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "label": "Rebulk",
+                "mandatory": "M",
+                "name": "CC_Config_rebulk_V",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "Float",
+                "mandatory": "M",
+                "name": "CC_Config_float_V",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "Maximum Charge",
+                "mandatory": "M",
+                "name": "CC_Config_max_Chg_A",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "label": "Equalize",
+                "mandatory": "M",
+                "name": "CC_Config_equalize_V",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "Equalize Time",
+                "mandatory": "M",
+                "name": "CC_Config_equalize_Hr",
+                "type": "uint16",
+                "units": "Tmh"
+            },
+            {
+                "label": "Auto Equalize Interval",
+                "mandatory": "M",
+                "name": "CC_Config_auto_equalize",
+                "type": "uint16",
+                "units": "Tmd"
+            },
+            {
+                "label": "MPPT mode",
+                "mandatory": "M",
+                "name": "CC_Config_MPPT_mode",
+                "symbols": [
+                    {
+                        "name": "Auto",
+                        "value": 0
+                    },
+                    {
+                        "name": "U_Pick",
+                        "value": 1
+                    },
+                    {
+                        "name": "Wind",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "Sweep Width",
+                "mandatory": "M",
+                "name": "CC_Config_sweep_width",
+                "symbols": [
+                    {
+                        "name": "Half",
+                        "value": 0
+                    },
+                    {
+                        "name": "Full",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "Sweep Maximum",
+                "mandatory": "M",
+                "name": "CC_Config_sweep_max",
+                "symbols": [
+                    {
+                        "name": "Eighty_Percent",
+                        "value": 0
+                    },
+                    {
+                        "name": "Eighty_Five_Percent",
+                        "value": 1
+                    },
+                    {
+                        "name": "Ninty_Percent",
+                        "value": 2
+                    },
+                    {
+                        "name": "Ninty_Nine_Percent",
+                        "value": 3
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "U-Pick PWM Duty Cycle",
+                "mandatory": "M",
+                "name": "CC_Config_U_Pick_Duty_cyc",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "label": "Grid Tie Mode",
+                "mandatory": "M",
+                "name": "CC_Config_grid_tie",
+                "symbols": [
+                    {
+                        "name": "Disabled",
+                        "value": 0
+                    },
+                    {
+                        "name": "Enabled",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "Temp Comp Mode",
+                "mandatory": "M",
+                "name": "CC_Config_temp_comp",
+                "symbols": [
+                    {
+                        "name": "Wide",
+                        "value": 0
+                    },
+                    {
+                        "name": "Limited",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "Temp Comp Lower Limit",
+                "mandatory": "M",
+                "name": "CC_Config_temp_comp_llimt",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "Temp Comp Upper Limit",
+                "mandatory": "M",
+                "name": "CC_Config_temp_comp_hlimt",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "Auto Restart Mode",
+                "mandatory": "M",
+                "name": "CC_Config_auto_restart",
+                "symbols": [
+                    {
+                        "name": "Off",
+                        "value": 0
+                    },
+                    {
+                        "name": "Every_90_Minutes",
+                        "value": 1
+                    },
+                    {
+                        "name": "Every_90_Minutes_if_Absorb_or_Float",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "Wakeup VOC Change",
+                "mandatory": "M",
+                "name": "CC_Config_wakeup_VOC",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "Snooze Mode",
+                "mandatory": "M",
+                "name": "CC_Config_snooze_mode_A",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "label": "Wakeup Interval",
+                "mandatory": "M",
+                "name": "CC_Config_wakeup_interval",
+                "type": "uint16",
+                "units": "Tms"
+            },
+            {
+                "label": "AUX Output Mode",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_mode",
+                "symbols": [
+                    {
+                        "name": "Float",
+                        "value": 0
+                    },
+                    {
+                        "name": "Diversion_Relay",
+                        "value": 1
+                    },
+                    {
+                        "name": "Diversion_Solid_St",
+                        "value": 2
+                    },
+                    {
+                        "name": "Low_Batt_Disconnect",
+                        "value": 3
+                    },
+                    {
+                        "name": "Remote",
+                        "value": 4
+                    },
+                    {
+                        "name": "Vent_Fan",
+                        "value": 5
+                    },
+                    {
+                        "name": "PV_Trigger",
+                        "value": 6
+                    },
+                    {
+                        "name": "Error_Output",
+                        "value": 7
+                    },
+                    {
+                        "name": "Night_Light",
+                        "value": 8
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "AUX Output Control",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_control",
+                "symbols": [
+                    {
+                        "name": "Off",
+                        "value": 0
+                    },
+                    {
+                        "name": "Auto",
+                        "value": 1
+                    },
+                    {
+                        "name": "On",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "AUX Output State",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_state",
+                "symbols": [
+                    {
+                        "name": "Disabled",
+                        "value": 0
+                    },
+                    {
+                        "name": "Enabled",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "AUX Output Polarity",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_polarity",
+                "symbols": [
+                    {
+                        "name": "Low",
+                        "value": 0
+                    },
+                    {
+                        "name": "High",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "label": "AUX Low Battery Disconnect",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_L_Batt_disc",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "AUX Low Battery Reconnect",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_L_Batt_rcon",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "AUX Low Battery Disconnect Delay",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_L_Batt_dly",
+                "type": "uint16",
+                "units": "Tms"
+            },
+            {
+                "label": "AUX Vent Fan",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_Vent_fan_V",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "AUX PV Trigger",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_PV_triggerV",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "AUX PV Trigger Hold Time",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_PV_trg_h_tm",
+                "type": "uint16",
+                "units": "Tms"
+            },
+            {
+                "label": "AUX Night Light Threshold",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_Nlite_ThrsV",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "AUX Night Light On Time",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_Nlite_On_tm",
+                "sf": "H_SF",
+                "type": "uint16",
+                "units": "Tmh"
+            },
+            {
+                "label": "AUX Night Light On Hysteresis",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_Nlite_On_hist",
+                "type": "uint16",
+                "units": "Tms"
+            },
+            {
+                "label": "AUX Night Light Off Hysteresis",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_Nlite_Off_hist",
+                "type": "uint16",
+                "units": "Tms"
+            },
+            {
+                "label": "AUX Error Output Low Battery",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_Error_batt_V",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "AUX Divert Hold Time",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_Divert_h_time",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "Tms"
+            },
+            {
+                "label": "AUX Divert Delay Time",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_Divert_dly_time",
+                "type": "uint16",
+                "units": "Tms"
+            },
+            {
+                "label": "AUX Divert Relative",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_Divert_Rel_V",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "AUX Divert Hysteresis",
+                "mandatory": "M",
+                "name": "CC_Config_AUX_Divert_Hyst_V",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "FM CC Major Firmware Number",
+                "mandatory": "M",
+                "name": "CC_Config_MajorFWRev",
+                "type": "uint16"
+            },
+            {
+                "label": "FM CC Mid Firmware Number",
+                "mandatory": "M",
+                "name": "CC_Config_MidFWRev",
+                "type": "uint16"
+            },
+            {
+                "label": "FM CC Minor Firmware Number",
+                "mandatory": "M",
+                "name": "CC_Config_MinorFWRev",
+                "type": "uint16"
+            },
+            {
+                "label": "Set Data Log Day Offset",
+                "mandatory": "M",
+                "name": "CC_Config_DataLog_Day_offset",
+                "type": "uint16",
+                "units": "Tmd"
+            },
+            {
+                "label": "Current Data Log Day Offset",
+                "mandatory": "M",
+                "name": "CC_Config_DataLog_Cur_Day_off",
+                "type": "uint16",
+                "units": "Tmd"
+            },
+            {
+                "label": "Data Log Daily (Ah)",
+                "mandatory": "M",
+                "name": "CC_Config_DataLog_Daily_AH",
+                "type": "uint16",
+                "units": "Ah"
+            },
+            {
+                "label": "Data Log Daily (kWh)",
+                "mandatory": "M",
+                "name": "CC_Config_DataLog_Daily_KWH",
+                "sf": "KWH_SF",
+                "type": "uint16",
+                "units": "kWh"
+            },
+            {
+                "label": "Data Log Daily Maximum Output (A)",
+                "mandatory": "M",
+                "name": "CC_Config_DataLog_Max_Out_A",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "label": "Data Log Daily Maximum Output (W)",
+                "mandatory": "M",
+                "name": "CC_Config_DataLog_Max_Out_W",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "label": "Data Log Daily Absorb Time",
+                "mandatory": "M",
+                "name": "CC_Config_DataLog_Absorb_T",
+                "type": "uint16",
+                "units": "Tms"
+            },
+            {
+                "label": "Data Log Daily Float Time",
+                "mandatory": "M",
+                "name": "CC_Config_DataLog_Float_T",
+                "type": "uint16",
+                "units": "Tms"
+            },
+            {
+                "label": "Data Log Daily Minimum Battery",
+                "mandatory": "M",
+                "name": "CC_Config_DataLog_Min_Batt_V",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "Data Log Daily Maximum Battery",
+                "mandatory": "M",
+                "name": "CC_Config_DataLog_Max_Batt_V",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "Data Log Daily Maximum Input",
+                "mandatory": "M",
+                "name": "CC_Config_DataLog_Max_Input_V",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "label": "Data Log Clear",
+                "mandatory": "M",
+                "name": "CC_Config_DataLog_Clear",
+                "type": "uint16"
+            },
+            {
+                "label": "Data Log Clear Complement",
+                "mandatory": "M",
+                "name": "CC_Config_DataLog_Clr_Comp",
+                "type": "uint16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 64112
+}

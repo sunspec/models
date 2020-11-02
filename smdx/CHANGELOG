@@ -8,7 +8,7 @@
 
 2012 Octoboer 23 : Flo Yee, Solectria renewables reported incorrect type of TmpAmb.  uint16 should be int16.   Models affected: E 308.
 
-2012 October 26: Bill Randle, AEI reported incorrect type for PF in the Watt-PF function.  PF should be a signed value (int16), not unsigned (unit16).  Models affected: IC 131 
+2012 October 26: Bill Randle, AEI reported incorrect type for PF in the Watt-PF function.  PF should be a signed value (int16), not unsigned (unit16).  Models affected: IC 131
 
 2012 November 1: Bob Fox, Loggerware reported use of the degree symbol problematic to denote °C.  It was agreed to use just "C" to denote degrees centrigrade in the units.  Models affected: E 303, 308
 

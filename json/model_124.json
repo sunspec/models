@@ -1,0 +1,261 @@
+{
+    "group": {
+        "desc": "Basic Storage Controls ",
+        "label": "Storage",
+        "name": "storage",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 124
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for maximum charge.",
+                "label": "WChaMax",
+                "mandatory": "M",
+                "name": "WChaMax",
+                "sf": "WChaMax_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for maximum charging rate. Default is MaxChaRte.",
+                "label": "WChaGra",
+                "mandatory": "M",
+                "name": "WChaGra",
+                "sf": "WChaDisChaGra_SF",
+                "type": "uint16",
+                "units": "% WChaMax/sec"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for maximum discharge rate. Default is MaxDisChaRte.",
+                "label": "WDisChaGra",
+                "mandatory": "M",
+                "name": "WDisChaGra",
+                "sf": "WChaDisChaGra_SF",
+                "type": "uint16",
+                "units": "% WChaMax/sec"
+            },
+            {
+                "access": "RW",
+                "desc": "Activate hold/discharge/charge storage control mode. Bitfield value.",
+                "label": "StorCtl_Mod",
+                "mandatory": "M",
+                "name": "StorCtl_Mod",
+                "symbols": [
+                    {
+                        "name": "CHARGE",
+                        "value": 0
+                    },
+                    {
+                        "name": "DiSCHARGE",
+                        "value": 1
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for maximum charging VA.",
+                "label": "VAChaMax",
+                "name": "VAChaMax",
+                "sf": "VAChaMax_SF",
+                "type": "uint16",
+                "units": "VA"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for minimum reserve for storage as a percentage of the nominal maximum storage.",
+                "label": "MinRsvPct",
+                "name": "MinRsvPct",
+                "sf": "MinRsvPct_SF",
+                "type": "uint16",
+                "units": "% WChaMax"
+            },
+            {
+                "desc": "Currently available energy as a percent of the capacity rating.",
+                "label": "ChaState",
+                "name": "ChaState",
+                "sf": "ChaState_SF",
+                "type": "uint16",
+                "units": "% AhrRtg"
+            },
+            {
+                "desc": "State of charge (ChaState) minus storage reserve (MinRsvPct) times capacity rating (AhrRtg).",
+                "label": "StorAval",
+                "name": "StorAval",
+                "sf": "StorAval_SF",
+                "type": "uint16",
+                "units": "AH"
+            },
+            {
+                "desc": "Internal battery voltage.",
+                "label": "InBatV",
+                "name": "InBatV",
+                "sf": "InBatV_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "desc": "Charge status of storage device. Enumerated value.",
+                "label": "ChaSt",
+                "name": "ChaSt",
+                "symbols": [
+                    {
+                        "name": "OFF",
+                        "value": 1
+                    },
+                    {
+                        "name": "EMPTY",
+                        "value": 2
+                    },
+                    {
+                        "name": "DISCHARGING",
+                        "value": 3
+                    },
+                    {
+                        "name": "CHARGING",
+                        "value": 4
+                    },
+                    {
+                        "name": "FULL",
+                        "value": 5
+                    },
+                    {
+                        "name": "HOLDING",
+                        "value": 6
+                    },
+                    {
+                        "name": "TESTING",
+                        "value": 7
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Percent of max discharge rate.",
+                "label": "OutWRte",
+                "name": "OutWRte",
+                "sf": "InOutWRte_SF",
+                "type": "int16",
+                "units": "% WDisChaMax"
+            },
+            {
+                "access": "RW",
+                "desc": "Percent of max charging rate.",
+                "label": "InWRte",
+                "name": "InWRte",
+                "sf": "InOutWRte_SF",
+                "type": "int16",
+                "units": " % WChaMax"
+            },
+            {
+                "access": "RW",
+                "desc": "Time window for charge/discharge rate change.",
+                "label": "InOutWRte_WinTms",
+                "name": "InOutWRte_WinTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Timeout period for charge/discharge rate.",
+                "label": "InOutWRte_RvrtTms",
+                "name": "InOutWRte_RvrtTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Ramp time for moving from current setpoint to new setpoint.",
+                "label": "InOutWRte_RmpTms",
+                "name": "InOutWRte_RmpTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "name": "ChaGriSet",
+                "symbols": [
+                    {
+                        "name": "PV",
+                        "value": 0
+                    },
+                    {
+                        "name": "GRID",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Scale factor for maximum charge.",
+                "label": "WChaMax_SF",
+                "mandatory": "M",
+                "name": "WChaMax_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for maximum charge and discharge rate.",
+                "label": "WChaDisChaGra_SF",
+                "mandatory": "M",
+                "name": "WChaDisChaGra_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for maximum charging VA.",
+                "label": "VAChaMax_SF",
+                "name": "VAChaMax_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for minimum reserve percentage.",
+                "label": "MinRsvPct_SF",
+                "name": "MinRsvPct_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for available energy percent.",
+                "label": "ChaState_SF",
+                "name": "ChaState_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for state of charge.",
+                "label": "StorAval_SF",
+                "name": "StorAval_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for battery voltage.",
+                "label": "InBatV_SF",
+                "name": "InBatV_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for percent charge/discharge rate.",
+                "label": "InOutWRte_SF",
+                "name": "InOutWRte_SF",
+                "type": "sunssf"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 124
+}

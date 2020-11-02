@@ -1,0 +1,176 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "JSON Schema for SunSpec information model definition",
+    "type": "object",
+    "required": ["id", "group"],
+    "properties": {
+        "id": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 65535
+        },
+        "group": {
+            "$ref": "#/definitions/group"
+        },
+        "label": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "detail": {
+            "type": "string"
+        },
+        "notes": {
+            "type": "string"
+        },
+        "comments": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+
+    },
+    "definitions": {
+        "group": {
+            "type": "object",
+            "required": ["name", "type"],
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "enum": ["group", "sync"]
+                },
+                "count": {
+                    "type": ["integer", "string"],
+                    "default": 1
+                },
+                "points": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/point"
+                    }
+                },
+                "groups": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/group"
+                    }
+                },
+                "label": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "detail": {
+                    "type": "string"
+                },
+                "notes": {
+                    "type": "string"
+                },
+                "comments": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "point": {
+            "type": "object",
+            "required": ["name", "type"],
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": ["int16", "int32", "int64", "raw16", "uint16", "uint32", "uint64" ,"acc16", "acc32",
+                             "acc64", "bitfield16", "bitfield32", "bitfield64", "enum16", "enum32", "float32",
+                             "float64", "string", "sf", "pad", "ipaddr", "ipv6addr", "eui48", "sunssf", "count"]
+                },
+                "value": {
+                    "type": ["integer", "string"]
+                },
+                "count": {
+                    "type": "integer"
+                },
+                "size": {
+                    "type": "integer"
+                },
+                "sf": {
+                    "type": ["integer", "string"],
+                    "minimum": -10,
+                    "maximum": 10
+                },
+                "units": {
+                    "type": "string"
+                },
+                "access": {
+                    "type": "string",
+                    "enum": ["R", "RW"],
+                    "default": "R"
+                },
+                "mandatory": {
+                    "type": "string",
+                    "enum": ["M", "O"],
+                    "default": "O"
+                },
+                "static": {
+                    "type": "string",
+                    "enum": ["D", "S"],
+                    "default": "D"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "detail": {
+                    "type": "string"
+                },
+                "notes": {
+                    "type": "string"
+                },
+                "comments": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "symbol": {
+            "type": "object",
+            "required": ["name", "value"],
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "value": {},
+                "label": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "detail": {
+                    "type": "string"
+                },
+                "notes": {
+                    "type": "string"
+                },
+                "comments": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

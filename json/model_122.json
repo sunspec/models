@@ -1,0 +1,329 @@
+{
+    "group": {
+        "desc": "Inverter Controls Extended Measurements and Status ",
+        "label": "Measurements_Status",
+        "name": "status",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 122
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "PV inverter present/available status. Enumerated value.",
+                "label": "PVConn",
+                "mandatory": "M",
+                "name": "PVConn",
+                "symbols": [
+                    {
+                        "name": "CONNECTED",
+                        "value": 0
+                    },
+                    {
+                        "name": "AVAILABLE",
+                        "value": 1
+                    },
+                    {
+                        "name": "OPERATING",
+                        "value": 2
+                    },
+                    {
+                        "name": "TEST",
+                        "value": 3
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "desc": "Storage inverter present/available status. Enumerated value.",
+                "label": "StorConn",
+                "mandatory": "M",
+                "name": "StorConn",
+                "symbols": [
+                    {
+                        "name": "CONNECTED",
+                        "value": 0
+                    },
+                    {
+                        "name": "AVAILABLE",
+                        "value": 1
+                    },
+                    {
+                        "name": "OPERATING",
+                        "value": 2
+                    },
+                    {
+                        "name": "TEST",
+                        "value": 3
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "desc": "ECP connection status: disconnected=0  connected=1.",
+                "label": "ECPConn",
+                "mandatory": "M",
+                "name": "ECPConn",
+                "symbols": [
+                    {
+                        "name": "CONNECTED",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "desc": "AC lifetime active (real) energy output.",
+                "label": "ActWh",
+                "name": "ActWh",
+                "type": "acc64",
+                "units": "Wh"
+            },
+            {
+                "desc": "AC lifetime apparent energy output.",
+                "label": "ActVAh",
+                "name": "ActVAh",
+                "type": "acc64",
+                "units": "VAh"
+            },
+            {
+                "desc": "AC lifetime reactive energy output in quadrant 1.",
+                "label": "ActVArhQ1",
+                "name": "ActVArhQ1",
+                "type": "acc64",
+                "units": "varh"
+            },
+            {
+                "desc": "AC lifetime reactive energy output in quadrant 2.",
+                "label": "ActVArhQ2",
+                "name": "ActVArhQ2",
+                "type": "acc64",
+                "units": "varh"
+            },
+            {
+                "desc": "AC lifetime negative energy output  in quadrant 3.",
+                "label": "ActVArhQ3",
+                "name": "ActVArhQ3",
+                "type": "acc64",
+                "units": "varh"
+            },
+            {
+                "desc": "AC lifetime reactive energy output  in quadrant 4.",
+                "label": "ActVArhQ4",
+                "name": "ActVArhQ4",
+                "type": "acc64",
+                "units": "varh"
+            },
+            {
+                "desc": "Amount of VARs available without impacting watts output.",
+                "label": "VArAval",
+                "name": "VArAval",
+                "sf": "VArAval_SF",
+                "type": "int16",
+                "units": "var"
+            },
+            {
+                "desc": "Scale factor for available VARs.",
+                "label": "VArAval_SF",
+                "name": "VArAval_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Amount of Watts available.",
+                "label": "WAval",
+                "name": "WAval",
+                "sf": "WAval_SF",
+                "type": "uint16",
+                "units": "var"
+            },
+            {
+                "desc": "Scale factor for available Watts.",
+                "label": "WAval_SF",
+                "name": "WAval_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Bit Mask indicating setpoint limit(s) reached.",
+                "label": "StSetLimMsk",
+                "name": "StSetLimMsk",
+                "symbols": [
+                    {
+                        "name": "WMax",
+                        "value": 0
+                    },
+                    {
+                        "name": "VAMax",
+                        "value": 1
+                    },
+                    {
+                        "name": "VArAval",
+                        "value": 2
+                    },
+                    {
+                        "name": "VArMaxQ1",
+                        "value": 3
+                    },
+                    {
+                        "name": "VArMaxQ2",
+                        "value": 4
+                    },
+                    {
+                        "name": "VArMaxQ3",
+                        "value": 5
+                    },
+                    {
+                        "name": "VArMaxQ4",
+                        "value": 6
+                    },
+                    {
+                        "name": "PFMinQ1",
+                        "value": 7
+                    },
+                    {
+                        "name": "PFMinQ2",
+                        "value": 8
+                    },
+                    {
+                        "name": "PFMinQ3",
+                        "value": 9
+                    },
+                    {
+                        "name": "PFMinQ4",
+                        "value": 10
+                    }
+                ],
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Bit Mask indicating which inverter controls are currently active.",
+                "label": "StActCtl",
+                "name": "StActCtl",
+                "symbols": [
+                    {
+                        "name": "FixedW",
+                        "value": 0
+                    },
+                    {
+                        "name": "FixedVAR",
+                        "value": 1
+                    },
+                    {
+                        "name": "FixedPF",
+                        "value": 2
+                    },
+                    {
+                        "name": "Volt-VAr",
+                        "value": 3
+                    },
+                    {
+                        "name": "Freq-Watt-Param",
+                        "value": 4
+                    },
+                    {
+                        "name": "Freq-Watt-Curve",
+                        "value": 5
+                    },
+                    {
+                        "name": "Dyn-Reactive-Current",
+                        "value": 6
+                    },
+                    {
+                        "name": "LVRT",
+                        "value": 7
+                    },
+                    {
+                        "name": "HVRT",
+                        "value": 8
+                    },
+                    {
+                        "name": "Watt-PF",
+                        "value": 9
+                    },
+                    {
+                        "name": "Volt-Watt",
+                        "value": 10
+                    },
+                    {
+                        "name": "Scheduled",
+                        "value": 12
+                    },
+                    {
+                        "name": "LFRT",
+                        "value": 13
+                    },
+                    {
+                        "name": "HFRT",
+                        "value": 14
+                    }
+                ],
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Source of time synchronization.",
+                "label": "TmSrc",
+                "name": "TmSrc",
+                "size": 4,
+                "type": "string"
+            },
+            {
+                "desc": "Seconds since 01-01-2000 00:00 UTC",
+                "label": "Tms",
+                "name": "Tms",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "desc": "Bit Mask indicating active ride-through status.",
+                "label": "RtSt",
+                "name": "RtSt",
+                "symbols": [
+                    {
+                        "name": "LVRT_ACTIVE",
+                        "value": 0
+                    },
+                    {
+                        "name": "HVRT_ACTIVE",
+                        "value": 1
+                    },
+                    {
+                        "name": "LFRT_ACTIVE",
+                        "value": 2
+                    },
+                    {
+                        "name": "HFRT_ACTIVE",
+                        "value": 3
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "desc": "Isolation resistance.",
+                "label": "Ris",
+                "name": "Ris",
+                "sf": "Ris_SF",
+                "type": "uint16",
+                "units": "ohms"
+            },
+            {
+                "desc": "Scale factor for isolation resistance.",
+                "label": "Ris_SF",
+                "name": "Ris_SF",
+                "type": "sunssf"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 122
+}

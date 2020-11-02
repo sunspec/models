@@ -1,0 +1,517 @@
+{
+    "group": {
+        "desc": "HFRT extended curve",
+        "groups": [
+            {
+                "count": 0,
+                "name": "curve",
+                "points": [
+                    {
+                        "access": "RW",
+                        "desc": "Number of active points in array.",
+                        "label": "ActPt",
+                        "mandatory": "M",
+                        "name": "ActPt",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 1 duration.",
+                        "label": "Tms1",
+                        "mandatory": "M",
+                        "name": "Tms1",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 1 frequency.",
+                        "label": "Hz1",
+                        "mandatory": "M",
+                        "name": "Hz1",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 2 duration.",
+                        "label": "Tms2",
+                        "name": "Tms2",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 2 frequency.",
+                        "label": "Hz2",
+                        "name": "Hz2",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 3 duration.",
+                        "label": "Tms3",
+                        "name": "Tms3",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 3 frequency.",
+                        "label": "Hz3",
+                        "name": "Hz3",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 4 duration.",
+                        "label": "Tms4",
+                        "name": "Tms4",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 4 frequency.",
+                        "label": "Hz4",
+                        "name": "Hz4",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 5 duration.",
+                        "label": "Tms5",
+                        "name": "Tms5",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 5 frequency.",
+                        "label": "Hz5",
+                        "name": "Hz5",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 6 duration.",
+                        "label": "Tms6",
+                        "name": "Tms6",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 6 frequency.",
+                        "label": "Hz6",
+                        "name": "Hz6",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 7 duration.",
+                        "label": "Tms7",
+                        "name": "Tms7",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 7 frequency.",
+                        "label": "Hz7",
+                        "name": "Hz7",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 8 duration.",
+                        "label": "Tms8",
+                        "name": "Tms8",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 8 frequency.",
+                        "label": "Hz8",
+                        "name": "Hz8",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 9 duration.",
+                        "label": "Tms9",
+                        "name": "Tms9",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 9 frequency.",
+                        "label": "Hz9",
+                        "name": "Hz9",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 10 duration.",
+                        "label": "Tms10",
+                        "name": "Tms10",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 10 frequency.",
+                        "label": "Hz10",
+                        "name": "Hz10",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 11 duration.",
+                        "label": "Tms11",
+                        "name": "Tms11",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 11 frequency.",
+                        "label": "Hz11",
+                        "name": "Hz11",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 12 duration.",
+                        "label": "Tms12",
+                        "name": "Tms12",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 12 frequency.",
+                        "label": "Hz12",
+                        "name": "Hz12",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 13 duration.",
+                        "label": "Tms13",
+                        "name": "Tms13",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 13 frequency.",
+                        "label": "Hz13",
+                        "name": "Hz13",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 14 duration.",
+                        "label": "Tms14",
+                        "name": "Tms14",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 14 frequency.",
+                        "label": "Hz14",
+                        "name": "Hz14",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 15 duration.",
+                        "label": "Tms15",
+                        "name": "Tms15",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 15 frequency.",
+                        "label": "Hz15",
+                        "name": "Hz15",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 16 duration.",
+                        "label": "Tms16",
+                        "name": "Tms16",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 16 frequency.",
+                        "label": "Hz16",
+                        "name": "Hz16",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 17 duration.",
+                        "label": "Tms17",
+                        "name": "Tms17",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 17 frequency.",
+                        "label": "Hz17",
+                        "name": "Hz17",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 18 duration.",
+                        "label": "Tms18",
+                        "name": "Tms18",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 18 frequency.",
+                        "label": "Hz18",
+                        "name": "Hz18",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 19 duration.",
+                        "label": "Tms19",
+                        "name": "Tms19",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 19 frequency.",
+                        "label": "Hz19",
+                        "name": "Hz19",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 20 duration.",
+                        "label": "Tms20",
+                        "name": "Tms20",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 20 frequency.",
+                        "label": "Hz20",
+                        "name": "Hz20",
+                        "sf": "Hz_SF",
+                        "type": "uint16",
+                        "units": "Hz"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Optional description for curve.",
+                        "label": "CrvNam",
+                        "name": "CrvNam",
+                        "size": 8,
+                        "type": "string"
+                    },
+                    {
+                        "desc": "Enumerated value indicates if curve is read-only or can be modified.",
+                        "label": "ReadOnly",
+                        "mandatory": "M",
+                        "name": "ReadOnly",
+                        "symbols": [
+                            {
+                                "name": "READWRITE",
+                                "value": 0
+                            },
+                            {
+                                "name": "READONLY",
+                                "value": 1
+                            }
+                        ],
+                        "type": "enum16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "HFRTX",
+        "name": "hfrtx",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 144
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Index of active curve. 0=no active curve.",
+                "label": "ActCrv",
+                "mandatory": "M",
+                "name": "ActCrv",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "LHzRT control mode. Enable active curve.  Bitfield value.",
+                "label": "ModEna",
+                "mandatory": "M",
+                "name": "ModEna",
+                "symbols": [
+                    {
+                        "name": "ENABLED",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "access": "RW",
+                "desc": "Time window for LFRT change.",
+                "label": "WinTms",
+                "name": "WinTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Timeout period for LFRT curve selection.",
+                "label": "RvrtTms",
+                "name": "RvrtTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Ramp time for moving from current mode to new mode.",
+                "label": "RmpTms",
+                "name": "RmpTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "desc": "Number of curves supported (recommend 4).",
+                "label": "NCrv",
+                "mandatory": "M",
+                "name": "NCrv",
+                "type": "uint16"
+            },
+            {
+                "desc": "Number of curve points supported (maximum of 20).",
+                "label": "NPt",
+                "mandatory": "M",
+                "name": "NPt",
+                "type": "uint16"
+            },
+            {
+                "desc": "Scale factor for duration.",
+                "label": "Tms_SF",
+                "mandatory": "M",
+                "name": "Tms_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for frequency.",
+                "label": "Hz_SF",
+                "mandatory": "M",
+                "name": "Hz_SF",
+                "type": "sunssf"
+            },
+            {
+                "mandatory": "M",
+                "name": "CrvType",
+                "symbols": [
+                    {
+                        "name": "CEASE_TO_ENERGIZE",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 144
+}

@@ -1,0 +1,280 @@
+{
+    "group": {
+        "desc": "Immediate Inverter Controls ",
+        "label": "Immediate Controls",
+        "name": "controls",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 123
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Time window for connect/disconnect.",
+                "label": "Conn_WinTms",
+                "name": "Conn_WinTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Timeout period for connect/disconnect.",
+                "label": "Conn_RvrtTms",
+                "name": "Conn_RvrtTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Enumerated valued.  Connection control.",
+                "label": "Conn",
+                "mandatory": "M",
+                "name": "Conn",
+                "symbols": [
+                    {
+                        "name": "DISCONNECT",
+                        "value": 0
+                    },
+                    {
+                        "name": "CONNECT",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Set power output to specified level.",
+                "label": "WMaxLimPct",
+                "mandatory": "M",
+                "name": "WMaxLimPct",
+                "sf": "WMaxLimPct_SF",
+                "type": "uint16",
+                "units": "% WMax"
+            },
+            {
+                "access": "RW",
+                "desc": "Time window for power limit change.",
+                "label": "WMaxLimPct_WinTms",
+                "name": "WMaxLimPct_WinTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Timeout period for power limit.",
+                "label": "WMaxLimPct_RvrtTms",
+                "name": "WMaxLimPct_RvrtTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Ramp time for moving from current setpoint to new setpoint.",
+                "label": "WMaxLimPct_RmpTms",
+                "name": "WMaxLimPct_RmpTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Enumerated valued.  Throttle enable/disable control.",
+                "label": "WMaxLim_Ena",
+                "mandatory": "M",
+                "name": "WMaxLim_Ena",
+                "symbols": [
+                    {
+                        "name": "DISABLED",
+                        "value": 0
+                    },
+                    {
+                        "name": "ENABLED",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Set power factor to specific value - cosine of angle.",
+                "label": "OutPFSet",
+                "mandatory": "M",
+                "name": "OutPFSet",
+                "sf": "OutPFSet_SF",
+                "type": "int16",
+                "units": "cos()"
+            },
+            {
+                "access": "RW",
+                "desc": "Time window for power factor change.",
+                "label": "OutPFSet_WinTms",
+                "name": "OutPFSet_WinTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Timeout period for power factor.",
+                "label": "OutPFSet_RvrtTms",
+                "name": "OutPFSet_RvrtTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Ramp time for moving from current setpoint to new setpoint.",
+                "label": "OutPFSet_RmpTms",
+                "name": "OutPFSet_RmpTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Enumerated valued.  Fixed power factor enable/disable control.",
+                "label": "OutPFSet_Ena",
+                "mandatory": "M",
+                "name": "OutPFSet_Ena",
+                "symbols": [
+                    {
+                        "name": "DISABLED",
+                        "value": 0
+                    },
+                    {
+                        "name": "ENABLED",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Reactive power in percent of WMax.",
+                "label": "VArWMaxPct",
+                "name": "VArWMaxPct",
+                "sf": "VArPct_SF",
+                "type": "int16",
+                "units": "% WMax"
+            },
+            {
+                "access": "RW",
+                "desc": "Reactive power in percent of VArMax.",
+                "label": "VArMaxPct",
+                "name": "VArMaxPct",
+                "sf": "VArPct_SF",
+                "type": "int16",
+                "units": "% VArMax"
+            },
+            {
+                "access": "RW",
+                "desc": "Reactive power in percent of VArAval.",
+                "label": "VArAvalPct",
+                "name": "VArAvalPct",
+                "sf": "VArPct_SF",
+                "type": "int16",
+                "units": "% VArAval"
+            },
+            {
+                "access": "RW",
+                "desc": "Time window for VAR limit change.",
+                "label": "VArPct_WinTms",
+                "name": "VArPct_WinTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Timeout period for VAR limit.",
+                "label": "VArPct_RvrtTms",
+                "name": "VArPct_RvrtTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Ramp time for moving from current setpoint to new setpoint.",
+                "label": "VArPct_RmpTms",
+                "name": "VArPct_RmpTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Enumerated value. VAR percent limit mode.",
+                "label": "VArPct_Mod",
+                "name": "VArPct_Mod",
+                "symbols": [
+                    {
+                        "name": "NONE",
+                        "value": 0
+                    },
+                    {
+                        "name": "WMax",
+                        "value": 1
+                    },
+                    {
+                        "name": "VArMax",
+                        "value": 2
+                    },
+                    {
+                        "name": "VArAval",
+                        "value": 3
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Enumerated valued.  Percent limit VAr enable/disable control.",
+                "label": "VArPct_Ena",
+                "mandatory": "M",
+                "name": "VArPct_Ena",
+                "symbols": [
+                    {
+                        "name": "DISABLED",
+                        "value": 0
+                    },
+                    {
+                        "name": "ENABLED",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Scale factor for power output percent.",
+                "label": "WMaxLimPct_SF",
+                "mandatory": "M",
+                "name": "WMaxLimPct_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for power factor.",
+                "label": "OutPFSet_SF",
+                "mandatory": "M",
+                "name": "OutPFSet_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for reactive power percent.",
+                "label": "VArPct_SF",
+                "name": "VArPct_SF",
+                "type": "sunssf"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 123
+}

@@ -1,0 +1,153 @@
+{
+    "group": {
+        "desc": "Include a digital signature over the response",
+        "groups": [
+            {
+                "count": 0,
+                "name": "repeating",
+                "points": [
+                    {
+                        "access": "RW",
+                        "desc": "Digital Signature",
+                        "label": "DS",
+                        "mandatory": "M",
+                        "name": "DS",
+                        "type": "uint16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "Secure Write Response Model (DRAFT 1)",
+        "name": "model_7",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 7
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Sequence number from the request",
+                "label": "Request Sequence",
+                "mandatory": "M",
+                "name": "RqSeq",
+                "type": "uint16"
+            },
+            {
+                "desc": "Status of last write operation",
+                "label": "Status",
+                "mandatory": "M",
+                "name": "Sts",
+                "symbols": [
+                    {
+                        "name": "SUCCESS",
+                        "value": 0
+                    },
+                    {
+                        "name": "DS",
+                        "value": 1
+                    },
+                    {
+                        "name": "ACL",
+                        "value": 2
+                    },
+                    {
+                        "name": "OFF",
+                        "value": 3
+                    },
+                    {
+                        "name": "VAL",
+                        "value": 4
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Timestamp value is the number of seconds since January 1, 2000",
+                "label": "Timestamp",
+                "mandatory": "M",
+                "name": "Ts",
+                "type": "uint32"
+            },
+            {
+                "desc": "Millisecond counter 0-999",
+                "label": "Milliseconds",
+                "mandatory": "M",
+                "name": "Ms",
+                "type": "uint16"
+            },
+            {
+                "desc": "Sequence number of response",
+                "label": "Sequence",
+                "mandatory": "M",
+                "name": "Seq",
+                "type": "uint16"
+            },
+            {
+                "desc": "Bitmask alarm code",
+                "label": "Alarm",
+                "mandatory": "M",
+                "name": "Alm",
+                "symbols": [
+                    {
+                        "name": "NONE",
+                        "value": 0
+                    },
+                    {
+                        "name": "ALM",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "mandatory": "M",
+                "name": "Rsrvd",
+                "type": "pad"
+            },
+            {
+                "desc": "Algorithm used to compute the digital signature",
+                "label": "Algorithm",
+                "mandatory": "M",
+                "name": "Alg",
+                "symbols": [
+                    {
+                        "name": "NONE",
+                        "value": 0
+                    },
+                    {
+                        "name": "AES-GMAC-64",
+                        "value": 1
+                    },
+                    {
+                        "name": "ECC-256",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Number of registers comprising the digital signature.",
+                "label": "N",
+                "mandatory": "M",
+                "name": "N",
+                "type": "uint16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 7
+}

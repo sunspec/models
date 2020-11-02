@@ -1,0 +1,847 @@
+{
+    "group": {
+        "desc": "DER AC controls model.",
+        "groups": [
+            {
+                "comments": [
+                    "Power Factor Settings"
+                ],
+                "desc": "Power factor setpoint when injecting active power.",
+                "label": "Power Factor (W Inj) ",
+                "name": "PFWInj",
+                "notes": "",
+                "points": [
+                    {
+                        "access": "RW",
+                        "desc": "Power factor setpoint when injecting active power.",
+                        "label": "Power Factor (W Inj) ",
+                        "name": "PF",
+                        "notes": "",
+                        "sf": "PF_SF",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Power factor excitation setpoint when injecting active power.",
+                        "label": "Power Factor Excitation (W Inj)",
+                        "name": "Ext",
+                        "notes": "",
+                        "symbols": [
+                            {
+                                "desc": "Power factor over-excited excitation.",
+                                "label": "Over-Excited",
+                                "name": "OVER_EXCITED",
+                                "notes": "",
+                                "value": 0
+                            },
+                            {
+                                "desc": "Power factor under-excited excitation.",
+                                "label": "Under-Excited",
+                                "name": "UNDER_EXCITED",
+                                "notes": "",
+                                "value": 1
+                            }
+                        ],
+                        "type": "enum16"
+                    }
+                ],
+                "type": "sync"
+            },
+            {
+                "desc": "Reversion power factor setpoint when injecting active power.",
+                "label": "Reversion Power Factor (W Inj) ",
+                "name": "PFWInjRvrt",
+                "notes": "",
+                "points": [
+                    {
+                        "access": "RW",
+                        "desc": "Reversion power factor setpoint when injecting active power.",
+                        "label": "Reversion Power Factor (W Inj) ",
+                        "name": "PF",
+                        "notes": "",
+                        "sf": "PF_SF",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Reversion power factor excitation setpoint when injecting active power.",
+                        "label": "Reversion PF Excitation (W Inj)",
+                        "name": "Ext",
+                        "notes": "",
+                        "symbols": [
+                            {
+                                "desc": "Power factor over-excited excitation.",
+                                "label": "Over-Excited",
+                                "name": "OVER_EXCITED",
+                                "notes": "",
+                                "value": 0
+                            },
+                            {
+                                "desc": "Power factor under-excited excitation.",
+                                "label": "Under-Excited",
+                                "name": "UNDER_EXCITED",
+                                "notes": "",
+                                "value": 1
+                            }
+                        ],
+                        "type": "enum16"
+                    }
+                ],
+                "type": "sync"
+            },
+            {
+                "desc": "Power factor setpoint when absorbing active power.",
+                "label": "Power Factor (W Abs) ",
+                "name": "PFWAbs",
+                "notes": "",
+                "points": [
+                    {
+                        "access": "RW",
+                        "desc": "Power factor setpoint when absorbing active power.",
+                        "label": "Power Factor (W Abs) ",
+                        "name": "PF",
+                        "notes": "",
+                        "sf": "PF_SF",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Power factor excitation setpoint when absorbing active power.",
+                        "label": "Power Factor Excitation (W Abs)",
+                        "name": "Ext",
+                        "notes": "",
+                        "symbols": [
+                            {
+                                "desc": "Power factor over-excited excitation.",
+                                "label": "Over-Excited",
+                                "name": "OVER_EXCITED",
+                                "notes": "",
+                                "value": 0
+                            },
+                            {
+                                "desc": "Power factor under-excited excitation.",
+                                "label": "Under-Excited",
+                                "name": "UNDER_EXCITED",
+                                "notes": "",
+                                "value": 1
+                            }
+                        ],
+                        "type": "enum16"
+                    }
+                ],
+                "type": "sync"
+            },
+            {
+                "desc": "Reversion power factor setpoint when absorbing active power.",
+                "label": "Reversion Power Factor (W Abs) ",
+                "name": "PFWAbsRvrt",
+                "notes": "",
+                "points": [
+                    {
+                        "access": "RW",
+                        "desc": "Reversion power factor setpoint when absorbing active power.",
+                        "label": "Reversion Power Factor (W Abs) ",
+                        "name": "PF",
+                        "notes": "",
+                        "sf": "PF_SF",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Reversion power factor excitation setpoint when absorbing active power.",
+                        "label": "Reversion PF Excitation (W Abs)",
+                        "name": "Ext",
+                        "notes": "",
+                        "symbols": [
+                            {
+                                "desc": "Power factor over-excited excitation.",
+                                "label": "Over-Excited",
+                                "name": "OVER_EXCITED",
+                                "notes": "",
+                                "value": 0
+                            },
+                            {
+                                "desc": "Power factor under-excited excitation.",
+                                "label": "Under-Excited",
+                                "name": "UNDER_EXCITED",
+                                "notes": "",
+                                "value": 1
+                            }
+                        ],
+                        "type": "enum16"
+                    }
+                ],
+                "type": "sync"
+            }
+        ],
+        "label": "DER AC Controls",
+        "name": "DERCtlAC",
+        "notes": "",
+        "points": [
+            {
+                "desc": "Model name model id.",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "notes": "",
+                "static": "S",
+                "type": "uint16",
+                "value": 704
+            },
+            {
+                "desc": "Model name  model length.",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "notes": "",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "comments": [
+                    "Set Power Factor (when injecting active power)"
+                ],
+                "desc": "Power factor enable when injecting active power.",
+                "label": "Power Factor Enable (W Inj) Enable",
+                "name": "PFWInjEna",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Function is disabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Function is enabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Power factor reversion timer when injecting active power enable.",
+                "label": "Power Factor Reversion Enable (W Inj)",
+                "name": "PFWInjRvrtEna",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Function is disabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Function is enabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Power factor reversion timer when injecting active power.",
+                "label": "PF Reversion Time (W Inj)",
+                "name": "PFWInjRvrtTms",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "desc": "Power factor reversion time remaining when injecting active power.",
+                "label": "PF Reversion Time Rem (W Inj)",
+                "name": "PFWInjRvrtRem",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "comments": [
+                    "Set Power Factor (when absorbing active power)"
+                ],
+                "desc": "Power factor enable when absorbing active power.",
+                "label": "Power Factor Enable (W Abs) Enable",
+                "name": "PFWAbsEna",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Function is disabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Function is enabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Power factor reversion timer when absorbing active power enable.",
+                "label": "Power Factor Reversion Enable (W Abs)",
+                "name": "PFWAbsRvrtEna",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Function is disabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Function is enabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Power factor reversion timer when absorbing active power.",
+                "label": "PF Reversion Time (W Abs)",
+                "name": "PFWAbsRvrtTms",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "desc": "Power factor reversion time remaining when absorbing active power.",
+                "label": "PF Reversion Time Rem (W Abs)",
+                "name": "PFWAbsRvrtRem",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "comments": [
+                    "Limit Maximum Active Power Generation"
+                ],
+                "desc": "Limit maximum active power percent enable.",
+                "label": "Limit Max Power Pct Enable",
+                "name": "WMaxLimPctEna",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Function is disabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Function is enabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Limit maximum active power percent value.",
+                "label": "Limit Max Power Pct Setpoint",
+                "name": "WMaxLimPct",
+                "notes": "",
+                "sf": "WMaxLim_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Reversion limit maximum active power percent value.",
+                "label": "Reversion Limit Max Power Pct",
+                "name": "WMaxLimPctRvrt",
+                "notes": "",
+                "sf": "WMaxLim_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Reversion limit maximum active power percent value enable.",
+                "label": "Reversion Limit Max Power Pct Enable",
+                "name": "WMaxLimPctRvrtEna",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Function is disabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Function is enabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Limit maximum active power percent reversion time.",
+                "label": "Limit Max Power Pct Reversion Time",
+                "name": "WMaxLimPctRvrtTms",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "desc": "Limit maximum active power percent reversion time remaining.",
+                "label": "Limit Max Power Pct Rev Time Rem",
+                "name": "WMaxLimPctRvrtRem",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "comments": [
+                    "Set Active Power Level (may be negative for charging)"
+                ],
+                "desc": "Set active power enable.",
+                "label": "Set Active Power Enable",
+                "name": "WSetEna",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Function is disabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Function is enabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Set active power mode.",
+                "label": "Set Active Power Mode",
+                "name": "WSetMod",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Active power setting is percentage of maximum active power.",
+                        "label": "Active Power As Max Percent",
+                        "name": "W_MAX_PCT",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "desc": "Active power setting is in watts.",
+                        "label": "Active Power As Watts",
+                        "name": "WATTS",
+                        "notes": "",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Active power setting value in watts.",
+                "label": "Active Power Setpoint (W)",
+                "name": "WSet",
+                "notes": "",
+                "sf": "WSet_SF",
+                "type": "int32",
+                "units": "W"
+            },
+            {
+                "access": "RW",
+                "desc": "Reversion active power setting value in watts.",
+                "label": "Reversion Active Power (W)",
+                "name": "WSetRvrt",
+                "notes": "",
+                "sf": "WSet_SF",
+                "type": "int32",
+                "units": "W"
+            },
+            {
+                "access": "RW",
+                "desc": "Active power setting value as percent.",
+                "label": "Active Power Setpoint (Pct)",
+                "name": "WSetPct",
+                "notes": "",
+                "sf": "WSetPct_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Reversion active power setting value as percent.",
+                "label": "Reversion Active Power (Pct)",
+                "name": "WSetPctRvrt",
+                "notes": "",
+                "sf": "WSetPct_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Reversion active power function enable.",
+                "label": "Reversion Active Power Enable",
+                "name": "WSetRvrtEna",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Function is disabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Function is enabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Set active power reversion time.",
+                "label": "Active Power Reversion Time",
+                "name": "WSetRvrtTms",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "desc": "Set active power reversion time remaining.",
+                "label": "Active Power Rev Time Rem",
+                "name": "WSetRvrtRem",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "comments": [
+                    "Set Reacitve Power Level"
+                ],
+                "desc": "Set reactive power enable.",
+                "label": "Set Reactive Power Enable",
+                "name": "VarSetEna",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Function is disabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Function is enabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Set reactive power mode.",
+                "label": "Set Reactive Power Mode",
+                "name": "VarSetMod",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Reactive power setting is percent of maximum active power.",
+                        "label": "Reactive Power As Watt Max Pct",
+                        "name": "W_MAX_PCT",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "desc": "Reactive power setting is percent of maximum reactive power.",
+                        "label": "Reactive Power As Var Max Pct",
+                        "name": "VAR_MAX_PCT",
+                        "notes": "",
+                        "value": 2
+                    },
+                    {
+                        "desc": "Reactive power setting is percent of available reactive  power.",
+                        "label": "Reactive Power As Var Avail Pct",
+                        "name": "VAR_AVAIL_PCT",
+                        "notes": "",
+                        "value": 3
+                    },
+                    {
+                        "desc": "Reactive power is in vars.",
+                        "label": "Reactive Power As Vars",
+                        "name": "VARS",
+                        "notes": "",
+                        "value": 4
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Reactive power priority.",
+                "label": "Reactive Power Priority",
+                "name": "VarSetPri",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Active power priority.",
+                        "label": "Active Power Priority",
+                        "name": "ACTIVE",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "desc": "Reactive power priority.",
+                        "label": "Reactive Power Priority",
+                        "name": "REACTIVE",
+                        "notes": "",
+                        "value": 2
+                    },
+                    {
+                        "desc": "IEEE 1547-2018 power priority mode.",
+                        "label": "IEEE 1547 Power Priority",
+                        "name": "IEEE_1547",
+                        "notes": "",
+                        "value": 3
+                    },
+                    {
+                        "desc": "Track PF setting derived from current active and reactive power settings.",
+                        "label": "PF Power Priority",
+                        "name": "PF",
+                        "notes": "",
+                        "value": 4
+                    },
+                    {
+                        "desc": "Power priority is vendor specific mode.",
+                        "label": "Vendor Power Priority",
+                        "name": "VENDOR",
+                        "notes": "",
+                        "value": 5
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Reactive power setting value in vars.",
+                "label": "Reactive Power Setpoint (Vars)",
+                "name": "VarSet",
+                "notes": "",
+                "sf": "VarSet_SF",
+                "type": "int32",
+                "units": "Var"
+            },
+            {
+                "access": "RW",
+                "desc": "Reversion reactive power setting value in vars.",
+                "label": "Reversion Reactive Power (Vars)",
+                "name": "VarSetRvrt",
+                "notes": "",
+                "sf": "VarSet_SF",
+                "type": "int32",
+                "units": "Var"
+            },
+            {
+                "access": "RW",
+                "desc": "Reactive power setting value as percent.",
+                "label": "Reactive Power Setpoint (Pct)",
+                "name": "VarSetPct",
+                "notes": "",
+                "sf": "VarSetPct_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Reversion reactive power setting value as percent.",
+                "label": "Reversion Reactive Power (Pct)",
+                "name": "VarSetPctRvrt",
+                "notes": "",
+                "sf": "VarSetPct_SF",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "access": "RW",
+                "desc": "Reversion reactive power function enable.",
+                "label": "Reversion Reactive Power Enable",
+                "name": "VarSetRvrtEna",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Function is disabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Function is enabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Set reactive power reversion time.",
+                "label": "Reactive Power Reversion Time",
+                "name": "VarSetRvrtTms",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "desc": "Set reactive power reversion time remaining.",
+                "label": "Reactive Power Rev Time Rem",
+                "name": "VarSetRvrtRem",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "comments": [
+                    "Ramp Rate"
+                ],
+                "desc": "Ramp rate for increases in active power during normal generation.",
+                "label": "Normal Ramp Rate",
+                "name": "WRmp",
+                "notes": "",
+                "type": "uint16",
+                "units": "%Max/Sec"
+            },
+            {
+                "access": "RW",
+                "desc": "Ramp rate reference unit for increases in active power or current during normal generation.",
+                "label": "Normal Ramp Rate Reference",
+                "name": "WRmpRef",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Ramp based on percent of max current per second.",
+                        "label": "Max Current Ramp",
+                        "name": "A_MAX",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "desc": "Ramp based on percent of max active power per second.",
+                        "label": "Max Active Power Ramp",
+                        "name": "W_MAX",
+                        "notes": "",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Ramp rate based on max reactive power per second.",
+                "label": "Reactive Power Ramp Rate",
+                "name": "VarRmp",
+                "notes": "",
+                "type": "uint16",
+                "units": "%Max/Sec"
+            },
+            {
+                "comments": [
+                    "Scale Factors"
+                ],
+                "desc": "Power factor scale factor.",
+                "label": "Power Factor Scale Factor",
+                "name": "PF_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Limit maximum power scale factor.",
+                "label": "Limit Max Power Scale Factor",
+                "name": "WMaxLim_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Active power scale factor.",
+                "label": "Active Power Scale Factor",
+                "name": "WSet_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Active power pct scale factor.",
+                "label": "Active Power Pct Scale Factor",
+                "name": "WSetPct_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Reactive power scale factor.",
+                "label": "Reactive Power Scale Factor",
+                "name": "VarSet_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Reactive power pct scale factor.",
+                "label": "Reactive Power Pct Scale Factor",
+                "name": "VarSetPct_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 704
+}

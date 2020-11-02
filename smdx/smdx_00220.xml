@@ -127,7 +127,7 @@
       <label>Total VA-hours Exported</label>
       <description>Total Apparent Energy Exported</description>
       <notes></notes>
-    </point> 
+    </point>
     <point id="TotVAh_SF"><description>Apparent Energy scale factor</description></point>
     <point id="TotVAhImp">
       <label>Total VA-hours Imported</label>

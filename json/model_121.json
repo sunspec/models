@@ -1,0 +1,302 @@
+{
+    "group": {
+        "desc": "Inverter Controls Basic Settings ",
+        "label": "Basic Settings",
+        "name": "settings",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 121
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Setting for maximum power output. Default to WRtg.",
+                "label": "WMax",
+                "mandatory": "M",
+                "name": "WMax",
+                "sf": "WMax_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "access": "RW",
+                "desc": "Voltage at the PCC.",
+                "label": "VRef",
+                "mandatory": "M",
+                "name": "VRef",
+                "sf": "VRef_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "access": "RW",
+                "desc": "Offset  from PCC to inverter.",
+                "label": "VRefOfs",
+                "mandatory": "M",
+                "name": "VRefOfs",
+                "sf": "VRefOfs_SF",
+                "type": "int16",
+                "units": "V"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for maximum voltage.",
+                "label": "VMax",
+                "name": "VMax",
+                "sf": "VMinMax_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for minimum voltage.",
+                "label": "VMin",
+                "name": "VMin",
+                "sf": "VMinMax_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for maximum apparent power. Default to VARtg.",
+                "label": "VAMax",
+                "name": "VAMax",
+                "sf": "VAMax_SF",
+                "type": "uint16",
+                "units": "VA"
+            },
+            {
+                "access": "RW",
+                "desc": "Setting for maximum reactive power in quadrant 1. Default to VArRtgQ1.",
+                "label": "VArMaxQ1",
+                "name": "VArMaxQ1",
+                "sf": "VArMax_SF",
+                "type": "int16",
+                "units": "var"
+            },
+            {
+                "access": "RW",
+                "desc": "Setting for maximum reactive power in quadrant 2. Default to VArRtgQ2.",
+                "label": "VArMaxQ2",
+                "name": "VArMaxQ2",
+                "sf": "VArMax_SF",
+                "type": "int16",
+                "units": "var"
+            },
+            {
+                "access": "RW",
+                "desc": "Setting for maximum reactive power in quadrant 3. Default to VArRtgQ3.",
+                "label": "VArMaxQ3",
+                "name": "VArMaxQ3",
+                "sf": "VArMax_SF",
+                "type": "int16",
+                "units": "var"
+            },
+            {
+                "access": "RW",
+                "desc": "Setting for maximum reactive power in quadrant 4. Default to VArRtgQ4.",
+                "label": "VArMaxQ4",
+                "name": "VArMaxQ4",
+                "sf": "VArMax_SF",
+                "type": "int16",
+                "units": "var"
+            },
+            {
+                "access": "RW",
+                "desc": "Default ramp rate of change of active power due to command or internal action.",
+                "label": "WGra",
+                "name": "WGra",
+                "sf": "WGra_SF",
+                "type": "uint16",
+                "units": "% WMax/sec"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for minimum power factor value in quadrant 1. Default to PFRtgQ1.",
+                "label": "PFMinQ1",
+                "name": "PFMinQ1",
+                "sf": "PFMin_SF",
+                "type": "int16",
+                "units": "cos()"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for minimum power factor value in quadrant 2. Default to PFRtgQ2.",
+                "label": "PFMinQ2",
+                "name": "PFMinQ2",
+                "sf": "PFMin_SF",
+                "type": "int16",
+                "units": "cos()"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for minimum power factor value in quadrant 3. Default to PFRtgQ3.",
+                "label": "PFMinQ3",
+                "name": "PFMinQ3",
+                "sf": "PFMin_SF",
+                "type": "int16",
+                "units": "cos()"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for minimum power factor value in quadrant 4. Default to PFRtgQ4.",
+                "label": "PFMinQ4",
+                "name": "PFMinQ4",
+                "sf": "PFMin_SF",
+                "type": "int16",
+                "units": "cos()"
+            },
+            {
+                "access": "RW",
+                "desc": "VAR action on change between charging and discharging: 1=switch 2=maintain VAR characterization.",
+                "label": "VArAct",
+                "name": "VArAct",
+                "symbols": [
+                    {
+                        "name": "SWITCH",
+                        "value": 1
+                    },
+                    {
+                        "name": "MAINTAIN",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Calculation method for total apparent power. 1=vector 2=arithmetic.",
+                "label": "ClcTotVA",
+                "name": "ClcTotVA",
+                "symbols": [
+                    {
+                        "name": "VECTOR",
+                        "value": 1
+                    },
+                    {
+                        "name": "ARITHMETIC",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for maximum ramp rate as percentage of nominal maximum ramp rate. This setting will limit the rate that watts delivery to the grid can increase or decrease in response to intermittent PV generation.",
+                "label": "MaxRmpRte",
+                "name": "MaxRmpRte",
+                "sf": "MaxRmpRte_SF",
+                "type": "uint16",
+                "units": "% WGra"
+            },
+            {
+                "access": "RW",
+                "desc": "Setpoint for nominal frequency at the ECP.",
+                "label": "ECPNomHz",
+                "name": "ECPNomHz",
+                "sf": "ECPNomHz_SF",
+                "type": "uint16",
+                "units": "Hz"
+            },
+            {
+                "access": "RW",
+                "desc": "Identity of connected phase for single phase inverters. A=1 B=2 C=3.",
+                "label": "ConnPh",
+                "name": "ConnPh",
+                "symbols": [
+                    {
+                        "name": "A",
+                        "value": 1
+                    },
+                    {
+                        "name": "B",
+                        "value": 2
+                    },
+                    {
+                        "name": "C",
+                        "value": 3
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Scale factor for real power.",
+                "label": "WMax_SF",
+                "mandatory": "M",
+                "name": "WMax_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for voltage at the PCC.",
+                "label": "VRef_SF",
+                "mandatory": "M",
+                "name": "VRef_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for offset voltage.",
+                "label": "VRefOfs_SF",
+                "mandatory": "M",
+                "name": "VRefOfs_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for min/max voltages.",
+                "label": "VMinMax_SF",
+                "name": "VMinMax_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for apparent power.",
+                "label": "VAMax_SF",
+                "name": "VAMax_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for reactive power.",
+                "label": "VArMax_SF",
+                "name": "VArMax_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for default ramp rate.",
+                "label": "WGra_SF",
+                "name": "WGra_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for minimum power factor.",
+                "label": "PFMin_SF",
+                "name": "PFMin_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for maximum ramp percentage.",
+                "label": "MaxRmpRte_SF",
+                "name": "MaxRmpRte_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for nominal frequency.",
+                "label": "ECPNomHz_SF",
+                "name": "ECPNomHz_SF",
+                "type": "sunssf"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 121
+}

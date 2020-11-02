@@ -1,0 +1,368 @@
+{
+    "group": {
+        "desc": "Include this model for secure metering",
+        "groups": [
+            {
+                "count": 0,
+                "name": "repeating",
+                "points": [
+                    {
+                        "mandatory": "M",
+                        "name": "DS",
+                        "type": "uint16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "Secure AC Meter Selected Readings",
+        "name": "ac_meter",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 220
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Total AC Current",
+                "label": "Amps",
+                "mandatory": "M",
+                "name": "A",
+                "sf": "A_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "Current scale factor",
+                "mandatory": "M",
+                "name": "A_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Average phase or line voltage",
+                "label": "Voltage",
+                "name": "PhV",
+                "sf": "V_SF",
+                "type": "int16",
+                "units": "V"
+            },
+            {
+                "desc": "Voltage scale factor",
+                "mandatory": "M",
+                "name": "V_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Frequency",
+                "label": "Hz",
+                "mandatory": "M",
+                "name": "Hz",
+                "sf": "Hz_SF",
+                "type": "int16",
+                "units": "Hz"
+            },
+            {
+                "desc": "Frequency scale factor",
+                "name": "Hz_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Total Real Power",
+                "label": "Watts",
+                "mandatory": "M",
+                "name": "W",
+                "sf": "W_SF",
+                "type": "int16",
+                "units": "W"
+            },
+            {
+                "desc": "Real Power scale factor",
+                "mandatory": "M",
+                "name": "W_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "AC Apparent Power",
+                "label": "VA",
+                "name": "VA",
+                "sf": "VA_SF",
+                "type": "int16",
+                "units": "VA"
+            },
+            {
+                "desc": "Apparent Power scale factor",
+                "name": "VA_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Reactive Power",
+                "label": "VAR",
+                "name": "VAR",
+                "sf": "VAR_SF",
+                "type": "int16",
+                "units": "var"
+            },
+            {
+                "desc": "Reactive Power scale factor",
+                "name": "VAR_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Power Factor",
+                "label": "PF",
+                "name": "PF",
+                "sf": "PF_SF",
+                "type": "int16",
+                "units": "Pct"
+            },
+            {
+                "desc": "Power Factor scale factor",
+                "name": "PF_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Total Real Energy Exported",
+                "label": "Total Watt-hours Exported",
+                "mandatory": "M",
+                "name": "TotWhExp",
+                "sf": "TotWh_SF",
+                "type": "acc32",
+                "units": "Wh"
+            },
+            {
+                "desc": "Total Real Energy Imported",
+                "label": "Total Watt-hours Imported",
+                "mandatory": "M",
+                "name": "TotWhImp",
+                "sf": "TotWh_SF",
+                "type": "acc32",
+                "units": "Wh"
+            },
+            {
+                "desc": "Real Energy scale factor",
+                "mandatory": "M",
+                "name": "TotWh_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Total Apparent Energy Exported",
+                "label": "Total VA-hours Exported",
+                "name": "TotVAhExp",
+                "sf": "TotVAh_SF",
+                "type": "acc32",
+                "units": "VAh"
+            },
+            {
+                "desc": "Total Apparent Energy Imported",
+                "label": "Total VA-hours Imported",
+                "name": "TotVAhImp",
+                "sf": "TotVAh_SF",
+                "type": "acc32",
+                "units": "VAh"
+            },
+            {
+                "desc": "Apparent Energy scale factor",
+                "name": "TotVAh_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Total Reactive Energy Imported Quadrant 1",
+                "label": "Total VAR-hours Imported Q1",
+                "name": "TotVArhImpQ1",
+                "sf": "TotVArh_SF",
+                "type": "acc32",
+                "units": "varh"
+            },
+            {
+                "desc": "Total Reactive Power Imported Quadrant 2",
+                "label": "Total VAr-hours Imported Q2",
+                "name": "TotVArhImpQ2",
+                "sf": "TotVArh_SF",
+                "type": "acc32",
+                "units": "varh"
+            },
+            {
+                "desc": "Total Reactive Power Exported Quadrant 3",
+                "label": "Total VAr-hours Exported Q3",
+                "name": "TotVArhExpQ3",
+                "sf": "TotVArh_SF",
+                "type": "acc32",
+                "units": "varh"
+            },
+            {
+                "desc": "Total Reactive Power Exported Quadrant 4",
+                "label": "Total VAr-hours Exported Q4",
+                "name": "TotVArhExpQ4",
+                "sf": "TotVArh_SF",
+                "type": "acc32",
+                "units": "varh"
+            },
+            {
+                "desc": "Reactive Energy scale factor",
+                "name": "TotVArh_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Meter Event Flags",
+                "label": "Events",
+                "mandatory": "M",
+                "name": "Evt",
+                "symbols": [
+                    {
+                        "name": "Power_Failure",
+                        "value": 2
+                    },
+                    {
+                        "name": "Under_Voltage",
+                        "value": 3
+                    },
+                    {
+                        "name": "Low_PF",
+                        "value": 4
+                    },
+                    {
+                        "name": "Over_Current",
+                        "value": 5
+                    },
+                    {
+                        "name": "Over_Voltage",
+                        "value": 6
+                    },
+                    {
+                        "name": "Missing_Sensor",
+                        "value": 7
+                    },
+                    {
+                        "name": "OEM01",
+                        "value": 16
+                    },
+                    {
+                        "name": "OEM02",
+                        "value": 17
+                    },
+                    {
+                        "name": "OEM03",
+                        "value": 18
+                    },
+                    {
+                        "name": "OEM04",
+                        "value": 19
+                    },
+                    {
+                        "name": "OEM05",
+                        "value": 20
+                    },
+                    {
+                        "name": "OEM06",
+                        "value": 21
+                    },
+                    {
+                        "name": "OEM07",
+                        "value": 22
+                    },
+                    {
+                        "name": "OEM08",
+                        "value": 23
+                    },
+                    {
+                        "name": "OEM09",
+                        "value": 24
+                    },
+                    {
+                        "name": "OEM10",
+                        "value": 25
+                    },
+                    {
+                        "name": "OEM11",
+                        "value": 26
+                    },
+                    {
+                        "name": "OEM12",
+                        "value": 27
+                    },
+                    {
+                        "name": "OEM13",
+                        "value": 28
+                    },
+                    {
+                        "name": "OEM14",
+                        "value": 29
+                    },
+                    {
+                        "name": "OEM15",
+                        "value": 30
+                    }
+                ],
+                "type": "bitfield32"
+            },
+            {
+                "mandatory": "M",
+                "name": "Rsrvd",
+                "type": "pad"
+            },
+            {
+                "desc": "Timestamp value is the number of seconds since January 1, 2000",
+                "label": "Timestamp",
+                "mandatory": "M",
+                "name": "Ts",
+                "type": "uint32"
+            },
+            {
+                "desc": "Millisecond counter 0-999",
+                "label": "Milliseconds",
+                "mandatory": "M",
+                "name": "Ms",
+                "type": "uint16"
+            },
+            {
+                "desc": "Sequence number of request",
+                "label": "Sequence",
+                "mandatory": "M",
+                "name": "Seq",
+                "type": "uint16"
+            },
+            {
+                "desc": "Algorithm used to compute the digital signature",
+                "label": "Algorithm",
+                "mandatory": "M",
+                "name": "Alg",
+                "symbols": [
+                    {
+                        "name": "NONE",
+                        "value": 0
+                    },
+                    {
+                        "name": "AES-GMAC-64",
+                        "value": 1
+                    },
+                    {
+                        "name": "ECC-256",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Number of registers comprising the digital signature.",
+                "label": "N",
+                "mandatory": "M",
+                "name": "N",
+                "type": "uint16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 220
+}

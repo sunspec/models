@@ -1,0 +1,428 @@
+{
+    "group": {
+        "desc": "Include this model for three phase inverter monitoring",
+        "label": "Inverter (Three Phase)",
+        "name": "inverter",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 103
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "AC Current",
+                "label": "Amps",
+                "mandatory": "M",
+                "name": "A",
+                "sf": "A_SF",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "desc": "Phase A Current",
+                "label": "Amps PhaseA",
+                "mandatory": "M",
+                "name": "AphA",
+                "sf": "A_SF",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "desc": "Phase B Current",
+                "label": "Amps PhaseB",
+                "mandatory": "M",
+                "name": "AphB",
+                "sf": "A_SF",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "desc": "Phase C Current",
+                "label": "Amps PhaseC",
+                "mandatory": "M",
+                "name": "AphC",
+                "sf": "A_SF",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "mandatory": "M",
+                "name": "A_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Phase Voltage AB",
+                "label": "Phase Voltage AB",
+                "name": "PPVphAB",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "desc": "Phase Voltage BC",
+                "label": "Phase Voltage BC",
+                "name": "PPVphBC",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "desc": "Phase Voltage CA",
+                "label": "Phase Voltage CA",
+                "name": "PPVphCA",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "desc": "Phase Voltage AN",
+                "label": "Phase Voltage AN",
+                "mandatory": "M",
+                "name": "PhVphA",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "desc": "Phase Voltage BN",
+                "label": "Phase Voltage BN",
+                "mandatory": "M",
+                "name": "PhVphB",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "desc": "Phase Voltage CN",
+                "label": "Phase Voltage CN",
+                "mandatory": "M",
+                "name": "PhVphC",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "mandatory": "M",
+                "name": "V_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "AC Power",
+                "label": "Watts",
+                "mandatory": "M",
+                "name": "W",
+                "sf": "W_SF",
+                "type": "int16",
+                "units": "W"
+            },
+            {
+                "mandatory": "M",
+                "name": "W_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Line Frequency",
+                "label": "Hz",
+                "mandatory": "M",
+                "name": "Hz",
+                "sf": "Hz_SF",
+                "type": "uint16",
+                "units": "Hz"
+            },
+            {
+                "mandatory": "M",
+                "name": "Hz_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "AC Apparent Power",
+                "label": "VA",
+                "name": "VA",
+                "sf": "VA_SF",
+                "type": "int16",
+                "units": "VA"
+            },
+            {
+                "name": "VA_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "AC Reactive Power",
+                "label": "VAr",
+                "name": "VAr",
+                "sf": "VAr_SF",
+                "type": "int16",
+                "units": "var"
+            },
+            {
+                "name": "VAr_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "AC Power Factor",
+                "label": "PF",
+                "name": "PF",
+                "sf": "PF_SF",
+                "type": "int16",
+                "units": "Pct"
+            },
+            {
+                "name": "PF_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "AC Energy",
+                "label": "WattHours",
+                "mandatory": "M",
+                "name": "WH",
+                "sf": "WH_SF",
+                "type": "acc32",
+                "units": "Wh"
+            },
+            {
+                "mandatory": "M",
+                "name": "WH_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "DC Current",
+                "label": "DC Amps",
+                "name": "DCA",
+                "sf": "DCA_SF",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "name": "DCA_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "DC Voltage",
+                "label": "DC Voltage",
+                "name": "DCV",
+                "sf": "DCV_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "name": "DCV_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "DC Power",
+                "label": "DC Watts",
+                "name": "DCW",
+                "sf": "DCW_SF",
+                "type": "int16",
+                "units": "W"
+            },
+            {
+                "name": "DCW_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Cabinet Temperature",
+                "label": "Cabinet Temperature",
+                "mandatory": "M",
+                "name": "TmpCab",
+                "sf": "Tmp_SF",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "desc": "Heat Sink Temperature",
+                "label": "Heat Sink Temperature",
+                "name": "TmpSnk",
+                "sf": "Tmp_SF",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "desc": "Transformer Temperature",
+                "label": "Transformer Temperature",
+                "name": "TmpTrns",
+                "sf": "Tmp_SF",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "desc": "Other Temperature",
+                "label": "Other Temperature",
+                "name": "TmpOt",
+                "sf": "Tmp_SF",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "mandatory": "M",
+                "name": "Tmp_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Enumerated value.  Operating state",
+                "label": "Operating State",
+                "mandatory": "M",
+                "name": "St",
+                "symbols": [
+                    {
+                        "name": "OFF",
+                        "value": 1
+                    },
+                    {
+                        "name": "SLEEPING",
+                        "value": 2
+                    },
+                    {
+                        "name": "STARTING",
+                        "value": 3
+                    },
+                    {
+                        "name": "MPPT",
+                        "value": 4
+                    },
+                    {
+                        "name": "THROTTLED",
+                        "value": 5
+                    },
+                    {
+                        "name": "SHUTTING_DOWN",
+                        "value": 6
+                    },
+                    {
+                        "name": "FAULT",
+                        "value": 7
+                    },
+                    {
+                        "name": "STANDBY",
+                        "value": 8
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Vendor specific operating state code",
+                "label": "Vendor Operating State",
+                "name": "StVnd",
+                "type": "enum16"
+            },
+            {
+                "desc": "Bitmask value. Event fields",
+                "label": "Event1",
+                "mandatory": "M",
+                "name": "Evt1",
+                "symbols": [
+                    {
+                        "name": "GROUND_FAULT",
+                        "value": 0
+                    },
+                    {
+                        "name": "DC_OVER_VOLT",
+                        "value": 1
+                    },
+                    {
+                        "name": "AC_DISCONNECT",
+                        "value": 2
+                    },
+                    {
+                        "name": "DC_DISCONNECT",
+                        "value": 3
+                    },
+                    {
+                        "name": "GRID_DISCONNECT",
+                        "value": 4
+                    },
+                    {
+                        "name": "CABINET_OPEN",
+                        "value": 5
+                    },
+                    {
+                        "name": "MANUAL_SHUTDOWN",
+                        "value": 6
+                    },
+                    {
+                        "name": "OVER_TEMP",
+                        "value": 7
+                    },
+                    {
+                        "name": "OVER_FREQUENCY",
+                        "value": 8
+                    },
+                    {
+                        "name": "UNDER_FREQUENCY",
+                        "value": 9
+                    },
+                    {
+                        "name": "AC_OVER_VOLT",
+                        "value": 10
+                    },
+                    {
+                        "name": "AC_UNDER_VOLT",
+                        "value": 11
+                    },
+                    {
+                        "name": "BLOWN_STRING_FUSE",
+                        "value": 12
+                    },
+                    {
+                        "name": "UNDER_TEMP",
+                        "value": 13
+                    },
+                    {
+                        "name": "MEMORY_LOSS",
+                        "value": 14
+                    },
+                    {
+                        "name": "HW_TEST_FAILURE",
+                        "value": 15
+                    }
+                ],
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Reserved for future use",
+                "label": "Event Bitfield 2",
+                "mandatory": "M",
+                "name": "Evt2",
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Vendor defined events",
+                "label": "Vendor Event Bitfield 1",
+                "name": "EvtVnd1",
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Vendor defined events",
+                "label": "Vendor Event Bitfield 2",
+                "name": "EvtVnd2",
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Vendor defined events",
+                "label": "Vendor Event Bitfield 3",
+                "name": "EvtVnd3",
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Vendor defined events",
+                "label": "Vendor Event Bitfield 4",
+                "name": "EvtVnd4",
+                "type": "bitfield32"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 103
+}

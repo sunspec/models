@@ -1,0 +1,117 @@
+{
+    "group": {
+        "desc": "Parameterized Frequency-Watt ",
+        "label": "Freq-Watt Param",
+        "name": "freq_watt_param",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 127
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "The slope of the reduction in the maximum allowed watts output as a function of frequency.",
+                "label": "WGra",
+                "mandatory": "M",
+                "name": "WGra",
+                "sf": "WGra_SF",
+                "type": "uint16",
+                "units": "% PM/Hz"
+            },
+            {
+                "access": "RW",
+                "desc": "The frequency deviation from nominal frequency (ECPNomHz) at which a snapshot of the instantaneous power output is taken to act as the CAPPED power level (PM) and above which reduction in power output occurs.",
+                "label": "HzStr",
+                "mandatory": "M",
+                "name": "HzStr",
+                "sf": "HzStrStop_SF",
+                "type": "int16",
+                "units": "Hz"
+            },
+            {
+                "access": "RW",
+                "desc": "The frequency deviation from nominal frequency (ECPNomHz) at which curtailed power output may return to normal and the cap on the power level value is removed.",
+                "label": "HzStop",
+                "mandatory": "M",
+                "name": "HzStop",
+                "sf": "HzStrStop_SF",
+                "type": "int16",
+                "units": "Hz"
+            },
+            {
+                "access": "RW",
+                "desc": "Enable hysteresis",
+                "label": "HysEna",
+                "mandatory": "M",
+                "name": "HysEna",
+                "symbols": [
+                    {
+                        "name": "ENABLED",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "access": "RW",
+                "desc": "Is Parameterized Frequency-Watt control active.",
+                "label": "ModEna",
+                "mandatory": "M",
+                "name": "ModEna",
+                "symbols": [
+                    {
+                        "name": "ENABLED",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "access": "RW",
+                "desc": "The maximum time-based rate of change at which power output returns to normal after having been capped by an over frequency event.",
+                "label": "HzStopWGra",
+                "name": "HzStopWGra",
+                "sf": "RmpIncDec_SF",
+                "type": "uint16",
+                "units": "% WMax/min"
+            },
+            {
+                "desc": "Scale factor for output gradient.",
+                "label": "WGra_SF",
+                "name": "WGra_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for frequency deviations.",
+                "label": "HzStrStop_SF",
+                "name": "HzStrStop_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for increment and decrement ramps.",
+                "label": "RmpIncDec_SF",
+                "name": "RmpIncDec_SF",
+                "type": "sunssf"
+            },
+            {
+                "name": "Pad",
+                "type": "pad"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 127
+}

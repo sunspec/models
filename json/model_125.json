@@ -1,0 +1,115 @@
+{
+    "group": {
+        "desc": "Pricing Signal  ",
+        "label": "Pricing",
+        "name": "pricing",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 125
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Is price-based charge/discharge mode active?",
+                "label": "ModEna",
+                "mandatory": "M",
+                "name": "ModEna",
+                "symbols": [
+                    {
+                        "name": "ENABLE",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "access": "RW",
+                "desc": "Meaning of the pricing signal. When a Price schedule is used, type must match the schedule range variable description.",
+                "label": "SigType",
+                "name": "SigType",
+                "symbols": [
+                    {
+                        "name": "UNKNOWN",
+                        "value": 0
+                    },
+                    {
+                        "name": "ABSOLUTE",
+                        "value": 1
+                    },
+                    {
+                        "name": "RELATIVE",
+                        "value": 2
+                    },
+                    {
+                        "name": "MULTIPLIER",
+                        "value": 3
+                    },
+                    {
+                        "name": "LEVEL",
+                        "value": 4
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Utility/ESP specific pricing signal. Content depends on pricing signal type. When H/M/L type is specified. Low=0; Med=1; High=2.",
+                "label": "Sig",
+                "mandatory": "M",
+                "name": "Sig",
+                "sf": "Sig_SF",
+                "type": "int16"
+            },
+            {
+                "access": "RW",
+                "desc": "Time window for charge/discharge pricing change.",
+                "label": "WinTms",
+                "name": "WinTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Timeout period for charge/discharge pricing change.",
+                "label": "RvtTms",
+                "name": "RvtTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Ramp time for moving from current charge or discharge level to new level.",
+                "label": "RmpTms",
+                "name": "RmpTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "desc": "Pricing signal scale factor.",
+                "label": "Sig_SF",
+                "mandatory": "M",
+                "name": "Sig_SF",
+                "type": "sunssf"
+            },
+            {
+                "name": "Pad",
+                "type": "pad"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 125
+}

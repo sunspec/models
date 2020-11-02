@@ -1,0 +1,577 @@
+{
+    "group": {
+        "desc": "Basic Scheduling ",
+        "groups": [
+            {
+                "count": 0,
+                "name": "repeating",
+                "points": [
+                    {
+                        "access": "RW",
+                        "desc": "Number of active entries in schedule.",
+                        "label": "ActPts",
+                        "mandatory": "M",
+                        "name": "ActPts",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Schedule start in seconds since 2000 JAN 01 00:00:00 UTC.",
+                        "label": "StrTms",
+                        "mandatory": "M",
+                        "name": "StrTms",
+                        "type": "uint32",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "The repetition count for time-based schedules (0=repeat forever)",
+                        "label": "RepPer",
+                        "mandatory": "M",
+                        "name": "RepPer",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "The repetition frequency for time-based schedules: no repeat=0",
+                        "label": "SchdTyp",
+                        "mandatory": "M",
+                        "name": "IntvTyp",
+                        "symbols": [
+                            {
+                                "name": "ONETIME",
+                                "value": 0
+                            },
+                            {
+                                "name": "DAILY",
+                                "value": 1
+                            },
+                            {
+                                "name": "WEEKLY",
+                                "value": 2
+                            },
+                            {
+                                "name": "MONTHLY",
+                                "value": 3
+                            },
+                            {
+                                "name": "WEEKDAY",
+                                "value": 4
+                            },
+                            {
+                                "name": "HOLIDAY",
+                                "value": 5
+                            },
+                            {
+                                "name": "WEEKEND",
+                                "value": 6
+                            },
+                            {
+                                "name": "YEARLY",
+                                "value": 7
+                            }
+                        ],
+                        "type": "enum16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "The meaning of the X-values in the array. ",
+                        "label": "XTyp",
+                        "mandatory": "M",
+                        "name": "XTyp",
+                        "symbols": [
+                            {
+                                "name": "UNSET",
+                                "value": 0
+                            },
+                            {
+                                "name": "TIME",
+                                "value": 1
+                            },
+                            {
+                                "name": "TEMP",
+                                "value": 2
+                            },
+                            {
+                                "name": "PRICE",
+                                "value": 3
+                            },
+                            {
+                                "name": "OTHER",
+                                "value": 99
+                            }
+                        ],
+                        "type": "enum16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Scale factor for schedule range values.",
+                        "label": "X_SF",
+                        "mandatory": "M",
+                        "name": "X_SF",
+                        "type": "sunssf"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "The meaning of the Y-values in the array.",
+                        "label": "YTyp",
+                        "mandatory": "M",
+                        "name": "YTyp",
+                        "symbols": [
+                            {
+                                "name": "UNSET",
+                                "value": 0
+                            },
+                            {
+                                "name": "WMax",
+                                "value": 1
+                            },
+                            {
+                                "name": "RSRVD2",
+                                "value": 2
+                            },
+                            {
+                                "name": "PF",
+                                "value": 3
+                            },
+                            {
+                                "name": "RSRVD4",
+                                "value": 4
+                            },
+                            {
+                                "name": "WATT_PRICE",
+                                "value": 5
+                            },
+                            {
+                                "name": "VAR_PRICE",
+                                "value": 6
+                            },
+                            {
+                                "name": "RSRVD7",
+                                "value": 7
+                            },
+                            {
+                                "name": "VOLT_VAR_ARRAY",
+                                "value": 8
+                            },
+                            {
+                                "name": "WChaGra",
+                                "value": 9
+                            },
+                            {
+                                "name": "WDisChaGra",
+                                "value": 10
+                            },
+                            {
+                                "name": "VArAval",
+                                "value": 11
+                            },
+                            {
+                                "name": "Schedule",
+                                "value": 12
+                            },
+                            {
+                                "name": "OTHER",
+                                "value": 99
+                            }
+                        ],
+                        "type": "enum16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Scale factor for schedule target values.",
+                        "label": "Y_SF",
+                        "mandatory": "M",
+                        "name": "Y_SF",
+                        "type": "sunssf"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 1 range.",
+                        "label": "X1",
+                        "mandatory": "M",
+                        "name": "X1",
+                        "sf": "X_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 1 target.",
+                        "label": "Y1",
+                        "mandatory": "M",
+                        "name": "Y1",
+                        "sf": "Y_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 2 range.",
+                        "label": "X2",
+                        "name": "X2",
+                        "sf": "X_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 2 target.",
+                        "label": "Y2",
+                        "name": "Y2",
+                        "sf": "Y_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 3 range.",
+                        "label": "X3",
+                        "name": "X3",
+                        "sf": "X_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 3 target.",
+                        "label": "Y3",
+                        "name": "Y3",
+                        "sf": "Y_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 4 range.",
+                        "label": "X4",
+                        "name": "X4",
+                        "sf": "X_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 4 target.",
+                        "label": "Y4",
+                        "name": "Y4",
+                        "sf": "Y_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 15range.",
+                        "label": "X5",
+                        "name": "X5",
+                        "sf": "X_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 5 target.",
+                        "label": "Y5",
+                        "name": "Y5",
+                        "sf": "Y_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 6 range.",
+                        "label": "X6",
+                        "name": "X6",
+                        "sf": "X_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 6 target.",
+                        "label": "Y6",
+                        "name": "Y6",
+                        "sf": "Y_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 7 range.",
+                        "label": "X7",
+                        "name": "X7",
+                        "sf": "X_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 7 target.",
+                        "label": "Y7",
+                        "name": "Y7",
+                        "sf": "Y_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 8 range.",
+                        "label": "X8",
+                        "name": "X8",
+                        "sf": "X_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 8 target.",
+                        "label": "Y8",
+                        "name": "Y8",
+                        "sf": "Y_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 9 range.",
+                        "label": "X9",
+                        "name": "X9",
+                        "sf": "X_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 9 target.",
+                        "label": "Y9",
+                        "name": "Y9",
+                        "sf": "Y_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 10 range.",
+                        "label": "X10",
+                        "name": "X10",
+                        "sf": "X_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Entry 10 target.",
+                        "label": "Y10",
+                        "name": "Y10",
+                        "sf": "Y_SF",
+                        "type": "int32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Optional description for schedule.",
+                        "label": "Nam",
+                        "name": "Nam",
+                        "size": 8,
+                        "type": "string"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Time window for schedule entry change.",
+                        "label": "WinTms",
+                        "name": "WinTms",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Ramp time for moving from current target to new target.",
+                        "label": "RmpTms",
+                        "name": "RmpTms",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "desc": "Index of active entry in the active schedule.",
+                        "label": "ActIndx",
+                        "mandatory": "M",
+                        "name": "ActIndx",
+                        "type": "uint16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "Basic Scheduling",
+        "name": "schedule",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 133
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Bitfield of active schedules",
+                "label": "ActSchd",
+                "mandatory": "M",
+                "name": "ActSchd",
+                "symbols": [
+                    {
+                        "name": "SCHED1",
+                        "value": 0
+                    },
+                    {
+                        "name": "SCHED2",
+                        "value": 1
+                    },
+                    {
+                        "name": "SCHED3",
+                        "value": 2
+                    },
+                    {
+                        "name": "SCHED4",
+                        "value": 3
+                    },
+                    {
+                        "name": "SCHED5",
+                        "value": 4
+                    },
+                    {
+                        "name": "SCHED6",
+                        "value": 5
+                    },
+                    {
+                        "name": "SCHED7",
+                        "value": 6
+                    },
+                    {
+                        "name": "SCHED8",
+                        "value": 7
+                    },
+                    {
+                        "name": "SCHED9",
+                        "value": 8
+                    },
+                    {
+                        "name": "SCHED10",
+                        "value": 9
+                    },
+                    {
+                        "name": "SCHED12",
+                        "value": 10
+                    },
+                    {
+                        "name": "SCHED13",
+                        "value": 11
+                    },
+                    {
+                        "name": "SCHED14",
+                        "value": 12
+                    },
+                    {
+                        "name": "SCHED15",
+                        "value": 13
+                    },
+                    {
+                        "name": "SCHED16",
+                        "value": 14
+                    },
+                    {
+                        "name": "SCHED17",
+                        "value": 15
+                    },
+                    {
+                        "name": "SCHED18",
+                        "value": 16
+                    },
+                    {
+                        "name": "SCHED19",
+                        "value": 17
+                    },
+                    {
+                        "name": "SCHED20",
+                        "value": 18
+                    },
+                    {
+                        "name": "SCHED21",
+                        "value": 19
+                    },
+                    {
+                        "name": "SCHED22",
+                        "value": 21
+                    },
+                    {
+                        "name": "SCHED23",
+                        "value": 22
+                    },
+                    {
+                        "name": "SCHED24",
+                        "value": 23
+                    },
+                    {
+                        "name": "SCHED25",
+                        "value": 24
+                    },
+                    {
+                        "name": "SCHED26",
+                        "value": 25
+                    },
+                    {
+                        "name": "SCHED27",
+                        "value": 26
+                    },
+                    {
+                        "name": "SCHED28",
+                        "value": 27
+                    },
+                    {
+                        "name": "SCHED29",
+                        "value": 28
+                    },
+                    {
+                        "name": "SCHED30",
+                        "value": 29
+                    },
+                    {
+                        "name": "SCHED31",
+                        "value": 30
+                    },
+                    {
+                        "name": "SCHED32",
+                        "value": 31
+                    }
+                ],
+                "type": "bitfield32"
+            },
+            {
+                "access": "RW",
+                "desc": "Is basic scheduling active.",
+                "label": "ModEna",
+                "mandatory": "M",
+                "name": "ModEna",
+                "symbols": [
+                    {
+                        "name": "ENABLED",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "desc": "Number of schedules supported (recommend min. 4, max 32)",
+                "label": "NSchd",
+                "mandatory": "M",
+                "name": "NSchd",
+                "type": "uint16"
+            },
+            {
+                "desc": "Number of schedule entries supported (maximum of 10).",
+                "label": "NPts",
+                "mandatory": "M",
+                "name": "NPts",
+                "type": "uint16"
+            },
+            {
+                "desc": "Pad register.",
+                "label": "Pad",
+                "name": "Pad",
+                "type": "pad"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 133
+}

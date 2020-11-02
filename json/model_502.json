@@ -1,0 +1,301 @@
+{
+    "group": {
+        "desc": "A solar module model supporting DC-DC converter",
+        "label": "Solar Module",
+        "name": "solar_module",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 502
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Current scale factor",
+                "name": "A_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Voltage scale factor",
+                "name": "V_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Power scale factor",
+                "name": "W_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Energy scale factor",
+                "name": "Wh_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Enumerated value.  Module Status Code",
+                "label": "Status",
+                "mandatory": "M",
+                "name": "Stat",
+                "symbols": [
+                    {
+                        "name": "OFF",
+                        "value": 1
+                    },
+                    {
+                        "name": "SLEEPING",
+                        "value": 2
+                    },
+                    {
+                        "name": "STARTING",
+                        "value": 3
+                    },
+                    {
+                        "name": "MPPT",
+                        "value": 4
+                    },
+                    {
+                        "name": "THROTTLED",
+                        "value": 5
+                    },
+                    {
+                        "name": "SHUTTING_DOWN",
+                        "value": 6
+                    },
+                    {
+                        "name": "FAULT",
+                        "value": 7
+                    },
+                    {
+                        "name": "STANDBY",
+                        "value": 8
+                    },
+                    {
+                        "name": "TEST",
+                        "value": 9
+                    },
+                    {
+                        "name": "OTHER",
+                        "value": 10
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Module Vendor Status Code",
+                "label": "Vendor Status",
+                "name": "StatVend",
+                "type": "enum16"
+            },
+            {
+                "desc": "Bitmask value.  Module Event Flags",
+                "label": "Events",
+                "mandatory": "M",
+                "name": "Evt",
+                "symbols": [
+                    {
+                        "name": "GROUND_FAULT",
+                        "value": 0
+                    },
+                    {
+                        "name": "INPUT_OVER_VOLTAGE",
+                        "value": 1
+                    },
+                    {
+                        "name": "RESERVED_2",
+                        "value": 2
+                    },
+                    {
+                        "name": "DC_DISCONNECT",
+                        "value": 3
+                    },
+                    {
+                        "name": "RESERVED_4",
+                        "value": 4
+                    },
+                    {
+                        "name": "RESERVED_5",
+                        "value": 5
+                    },
+                    {
+                        "name": "MANUAL_SHUTDOWN",
+                        "value": 6
+                    },
+                    {
+                        "name": "OVER_TEMPERATURE",
+                        "value": 7
+                    },
+                    {
+                        "name": "RESERVED_8",
+                        "value": 8
+                    },
+                    {
+                        "name": "RESERVED_9",
+                        "value": 9
+                    },
+                    {
+                        "name": "RESERVED_10",
+                        "value": 10
+                    },
+                    {
+                        "name": "RESERVED_11",
+                        "value": 11
+                    },
+                    {
+                        "name": "BLOWN_FUSE",
+                        "value": 12
+                    },
+                    {
+                        "name": "UNDER_TEMPERATURE",
+                        "value": 13
+                    },
+                    {
+                        "name": "MEMORY_LOSS",
+                        "value": 14
+                    },
+                    {
+                        "name": "ARC_DETECTION",
+                        "value": 15
+                    },
+                    {
+                        "name": "THEFT_DETECTION",
+                        "value": 16
+                    },
+                    {
+                        "name": "OUTPUT_OVER_CURRENT",
+                        "value": 17
+                    },
+                    {
+                        "name": "OUTPUT_OVER_VOLTAGE",
+                        "value": 18
+                    },
+                    {
+                        "name": "OUTPUT_UNDER_VOLTAGE",
+                        "value": 19
+                    },
+                    {
+                        "name": "TEST_FAILED",
+                        "value": 20
+                    }
+                ],
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Vendor specific flags",
+                "label": "Vendor Module Event Flags",
+                "name": "EvtVend",
+                "type": "bitfield32"
+            },
+            {
+                "access": "RW",
+                "desc": "Module Control",
+                "label": "Control",
+                "name": "Ctl",
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Vendor Module Control",
+                "label": "Vendor Control",
+                "name": "CtlVend",
+                "type": "enum32"
+            },
+            {
+                "access": "RW",
+                "desc": "Module Control Value",
+                "label": "Control Value",
+                "name": "CtlVal",
+                "type": "int32"
+            },
+            {
+                "desc": "Time in seconds since 2000 epoch",
+                "label": "Timestamp",
+                "name": "Tms",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "desc": "Output Current",
+                "label": "Output Current",
+                "name": "OutA",
+                "sf": "A_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "Output Voltage",
+                "label": "Output Voltage",
+                "name": "OutV",
+                "sf": "V_SF",
+                "type": "int16",
+                "units": "V"
+            },
+            {
+                "desc": "Output Energy",
+                "label": "Output Energy",
+                "name": "OutWh",
+                "sf": "Wh_SF",
+                "type": "acc32",
+                "units": "Wh"
+            },
+            {
+                "desc": "Output Power",
+                "label": "Output Power",
+                "name": "OutPw",
+                "sf": "W_SF",
+                "type": "int16",
+                "units": "W"
+            },
+            {
+                "desc": "Module Temperature",
+                "label": "Temp",
+                "name": "Tmp",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "desc": "Input Current",
+                "label": "Input Current",
+                "name": "InA",
+                "sf": "A_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "Input Voltage",
+                "label": "Input Voltage",
+                "name": "InV",
+                "sf": "V_SF",
+                "type": "int16",
+                "units": "V"
+            },
+            {
+                "desc": "Input Energy",
+                "label": "Input Energy",
+                "name": "InWh",
+                "sf": "Wh_SF",
+                "type": "acc32",
+                "units": "Wh"
+            },
+            {
+                "desc": "Input Power",
+                "label": "Input Power",
+                "name": "InW",
+                "sf": "W_SF",
+                "type": "int16",
+                "units": "W"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 502
+}

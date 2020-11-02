@@ -1,0 +1,375 @@
+{
+    "group": {
+        "desc": "An advanced string combiner",
+        "groups": [
+            {
+                "count": 0,
+                "name": "string",
+                "points": [
+                    {
+                        "desc": "Uniquely identifies this input set",
+                        "label": "ID",
+                        "mandatory": "M",
+                        "name": "InID",
+                        "type": "uint16"
+                    },
+                    {
+                        "desc": "String Input Event Flags",
+                        "label": "Input Event",
+                        "mandatory": "M",
+                        "name": "InEvt",
+                        "symbols": [
+                            {
+                                "name": "LOW_VOLTAGE",
+                                "value": 0
+                            },
+                            {
+                                "name": "LOW_POWER",
+                                "value": 1
+                            },
+                            {
+                                "name": "LOW_EFFICIENCY",
+                                "value": 2
+                            },
+                            {
+                                "name": "CURRENT",
+                                "value": 3
+                            },
+                            {
+                                "name": "VOLTAGE",
+                                "value": 4
+                            },
+                            {
+                                "name": "POWER",
+                                "value": 5
+                            },
+                            {
+                                "name": "PR",
+                                "value": 6
+                            },
+                            {
+                                "name": "DISCONNECTED",
+                                "value": 7
+                            },
+                            {
+                                "name": "FUSE_FAULT",
+                                "value": 8
+                            },
+                            {
+                                "name": "COMBINER_FUSE_FAULT",
+                                "value": 9
+                            },
+                            {
+                                "name": "COMBINER_CABINET_OPEN",
+                                "value": 10
+                            },
+                            {
+                                "name": "TEMP",
+                                "value": 11
+                            },
+                            {
+                                "name": "GROUNDFAULT",
+                                "value": 12
+                            },
+                            {
+                                "name": "REVERSED_POLARITY",
+                                "value": 13
+                            },
+                            {
+                                "name": "INCOMPATIBLE",
+                                "value": 14
+                            },
+                            {
+                                "name": "COMM_ERROR",
+                                "value": 15
+                            },
+                            {
+                                "name": "INTERNAL_ERROR",
+                                "value": 16
+                            },
+                            {
+                                "name": "THEFT",
+                                "value": 17
+                            },
+                            {
+                                "name": "ARC_DETECTED",
+                                "value": 18
+                            }
+                        ],
+                        "type": "bitfield32"
+                    },
+                    {
+                        "desc": "Bitmask value.  Vendor defined events",
+                        "label": "Vendor Event",
+                        "name": "EvtVnd",
+                        "type": "bitfield32"
+                    },
+                    {
+                        "desc": "String Input Current",
+                        "label": "Amps",
+                        "mandatory": "M",
+                        "name": "InDCA",
+                        "sf": "DCA_SF",
+                        "type": "int16",
+                        "units": "A"
+                    },
+                    {
+                        "desc": "String Input Amp-Hours",
+                        "label": "Amp-hours",
+                        "name": "InDCAhr",
+                        "sf": "DCAhr_SF",
+                        "type": "uint32",
+                        "units": "Ah"
+                    },
+                    {
+                        "desc": "String Input Voltage",
+                        "label": "Voltage",
+                        "name": "InDCV",
+                        "sf": "DCV_SF",
+                        "type": "uint16",
+                        "units": "V"
+                    },
+                    {
+                        "desc": "String Input Power",
+                        "label": "Watts",
+                        "name": "InDCW",
+                        "sf": "DCWh_SF",
+                        "type": "int16",
+                        "units": "W"
+                    },
+                    {
+                        "desc": "String Input Energy",
+                        "label": "Watt-hours",
+                        "name": "InDCWh",
+                        "type": "uint32",
+                        "units": "Wh"
+                    },
+                    {
+                        "desc": "String Performance Ratio",
+                        "label": "PR",
+                        "name": "InDCPR",
+                        "type": "uint16",
+                        "units": "Pct"
+                    },
+                    {
+                        "desc": "Number of modules in this input string",
+                        "label": "N",
+                        "name": "InN",
+                        "type": "uint16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "String Combiner (Advanced)",
+        "name": "string_combiner",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 402
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Current scale factor",
+                "mandatory": "M",
+                "name": "DCA_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Amp-hour scale factor",
+                "name": "DCAhr_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Voltage scale factor",
+                "name": "DCV_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Power scale factor",
+                "name": "DCW_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Energy scale factor",
+                "mandatory": "M",
+                "name": "DCWh_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Maximum DC Current Rating",
+                "label": "Rating",
+                "name": "DCAMax",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "desc": "Number of Inputs",
+                "label": "N",
+                "name": "N",
+                "type": "count"
+            },
+            {
+                "desc": "Bitmask value.  Events",
+                "label": "Event",
+                "mandatory": "M",
+                "name": "Evt",
+                "symbols": [
+                    {
+                        "name": "LOW_VOLTAGE",
+                        "value": 0
+                    },
+                    {
+                        "name": "LOW_POWER",
+                        "value": 1
+                    },
+                    {
+                        "name": "LOW_EFFICIENCY",
+                        "value": 2
+                    },
+                    {
+                        "name": "CURRENT",
+                        "value": 3
+                    },
+                    {
+                        "name": "VOLTAGE",
+                        "value": 4
+                    },
+                    {
+                        "name": "POWER",
+                        "value": 5
+                    },
+                    {
+                        "name": "PR",
+                        "value": 6
+                    },
+                    {
+                        "name": "DISCONNECTED",
+                        "value": 7
+                    },
+                    {
+                        "name": "FUSE_FAULT",
+                        "value": 8
+                    },
+                    {
+                        "name": "COMBINER_FUSE_FAULT",
+                        "value": 9
+                    },
+                    {
+                        "name": "COMBINER_CABINET_OPEN",
+                        "value": 10
+                    },
+                    {
+                        "name": "TEMP",
+                        "value": 11
+                    },
+                    {
+                        "name": "GROUNDFAULT",
+                        "value": 12
+                    },
+                    {
+                        "name": "REVERSED_POLARITY",
+                        "value": 13
+                    },
+                    {
+                        "name": "INCOMPATIBLE",
+                        "value": 14
+                    },
+                    {
+                        "name": "COMM_ERROR",
+                        "value": 15
+                    },
+                    {
+                        "name": "INTERNAL_ERROR",
+                        "value": 16
+                    },
+                    {
+                        "name": "THEFT",
+                        "value": 17
+                    },
+                    {
+                        "name": "ARC_DETECTED",
+                        "value": 18
+                    }
+                ],
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Bitmask value.  Vendor defined events",
+                "label": "Vendor Event",
+                "name": "EvtVnd",
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Total measured current",
+                "label": "Amps",
+                "mandatory": "M",
+                "name": "DCA",
+                "sf": "DCA_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "Total metered Amp-hours",
+                "label": "Amp-hours",
+                "name": "DCAhr",
+                "sf": "DCAhr_SF",
+                "type": "uint32",
+                "units": "Ah"
+            },
+            {
+                "desc": "Output Voltage",
+                "label": "Voltage",
+                "name": "DCV",
+                "sf": "DCV_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "desc": "Internal operating temperature",
+                "label": "Temp",
+                "name": "Tmp",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "desc": "Output power",
+                "label": "Watts",
+                "name": "DCW",
+                "sf": "DCW_SF",
+                "type": "int16",
+                "units": "W"
+            },
+            {
+                "desc": "DC Performance ratio value",
+                "label": "PR",
+                "name": "DCPR",
+                "type": "uint16",
+                "units": "Pct"
+            },
+            {
+                "desc": "Output energy",
+                "label": "Watt-hours",
+                "mandatory": "M",
+                "name": "DCWh",
+                "sf": "DCWh_SF",
+                "type": "uint32",
+                "units": "Wh"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 402
+}

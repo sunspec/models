@@ -1,0 +1,75 @@
+{
+    "group": {
+        "desc": "Include to support location measurements",
+        "label": "GPS",
+        "name": "location",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 305
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "UTC 24 hour time stamp to millisecond hhmmss.sssZ format",
+                "label": "Tm",
+                "name": "Tm",
+                "size": 6,
+                "type": "string",
+                "units": "hhmmss.sssZ"
+            },
+            {
+                "desc": "UTC Date string YYYYMMDD format",
+                "label": "Date",
+                "name": "Date",
+                "size": 4,
+                "type": "string",
+                "units": "YYYYMMDD"
+            },
+            {
+                "desc": "Location string (40 chars max)",
+                "label": "Location",
+                "name": "Loc",
+                "size": 20,
+                "type": "string",
+                "units": "text"
+            },
+            {
+                "desc": "Latitude with seven degrees of precision",
+                "label": "Lat",
+                "name": "Lat",
+                "sf": -7,
+                "type": "int32",
+                "units": "Degrees"
+            },
+            {
+                "desc": "Longitude with seven degrees of precision",
+                "label": "Long",
+                "name": "Long",
+                "sf": -7,
+                "type": "int32",
+                "units": "Degrees"
+            },
+            {
+                "desc": "Altitude measurement in meters",
+                "label": "Altitude",
+                "name": "Alt",
+                "type": "int32",
+                "units": "meters"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 305
+}

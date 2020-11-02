@@ -1,0 +1,735 @@
+{
+    "group": {
+        "groups": [
+            {
+                "count": 0,
+                "name": "string",
+                "points": [
+                    {
+                        "desc": "Count of modules in the string.",
+                        "label": "Module Count",
+                        "mandatory": "M",
+                        "name": "StrNMod",
+                        "type": "uint16"
+                    },
+                    {
+                        "desc": "Current status of the string.",
+                        "label": "String Status",
+                        "mandatory": "M",
+                        "name": "StrSt",
+                        "symbols": [
+                            {
+                                "name": "STRING_ENABLED",
+                                "value": 0
+                            },
+                            {
+                                "name": "CONTACTOR_STATUS",
+                                "value": 1
+                            }
+                        ],
+                        "type": "bitfield32"
+                    },
+                    {
+                        "label": "Connection Failure Reason",
+                        "name": "StrConFail",
+                        "symbols": [
+                            {
+                                "name": "NO_FAILURE",
+                                "value": 0
+                            },
+                            {
+                                "name": "BUTTON_PUSHED",
+                                "value": 1
+                            },
+                            {
+                                "name": "STR_GROUND_FAULT",
+                                "value": 2
+                            },
+                            {
+                                "name": "OUTSIDE_VOLTAGE_RANGE",
+                                "value": 3
+                            },
+                            {
+                                "name": "STRING_NOT_ENABLED",
+                                "value": 4
+                            },
+                            {
+                                "name": "FUSE_OPEN",
+                                "value": 5
+                            },
+                            {
+                                "name": "CONTACTOR_FAILURE",
+                                "value": 6
+                            },
+                            {
+                                "name": "PRECHARGE_FAILURE",
+                                "value": 7
+                            },
+                            {
+                                "name": "STRING_FAULT",
+                                "value": 8
+                            }
+                        ],
+                        "type": "enum16"
+                    },
+                    {
+                        "desc": "Battery string state of charge, expressed as a percentage.",
+                        "label": "String State of Charge",
+                        "mandatory": "M",
+                        "name": "StrSoC",
+                        "sf": "SoC_SF",
+                        "type": "uint16",
+                        "units": "%"
+                    },
+                    {
+                        "desc": "Battery string state of health, expressed as a percentage.",
+                        "label": "String State of Health",
+                        "name": "StrSoH",
+                        "sf": "SoH_SF",
+                        "type": "uint16",
+                        "units": "%"
+                    },
+                    {
+                        "desc": "String current measurement.",
+                        "label": "String Current",
+                        "mandatory": "M",
+                        "name": "StrA",
+                        "sf": "A_SF",
+                        "type": "int16",
+                        "units": "A"
+                    },
+                    {
+                        "desc": "Maximum voltage for all cells in the string.",
+                        "label": "Max Cell Voltage",
+                        "mandatory": "M",
+                        "name": "StrCellVMax",
+                        "sf": "CellV_SF",
+                        "type": "uint16",
+                        "units": "V"
+                    },
+                    {
+                        "desc": "Module containing the maximum cell voltage.",
+                        "label": "Max Cell Voltage Module",
+                        "name": "StrCellVMaxMod",
+                        "type": "uint16"
+                    },
+                    {
+                        "desc": "Minimum voltage for all cells in the string.",
+                        "label": "Min Cell Voltage",
+                        "mandatory": "M",
+                        "name": "StrCellVMin",
+                        "sf": "CellV_SF",
+                        "type": "uint16",
+                        "units": "V"
+                    },
+                    {
+                        "desc": "Module containing the minimum cell voltage.",
+                        "label": "Min Cell Voltage Module",
+                        "name": "StrCellVMinMod",
+                        "type": "uint16"
+                    },
+                    {
+                        "desc": "Average voltage for all cells in the string.",
+                        "label": "Average Cell Voltage",
+                        "mandatory": "M",
+                        "name": "StrCellVAvg",
+                        "sf": "CellV_SF",
+                        "type": "uint16",
+                        "units": "V"
+                    },
+                    {
+                        "desc": "Maximum temperature for all modules in the bank.",
+                        "label": "Max Module Temperature",
+                        "mandatory": "M",
+                        "name": "StrModTmpMax",
+                        "sf": "ModTmp_SF",
+                        "type": "int16",
+                        "units": "C"
+                    },
+                    {
+                        "desc": "Module with the maximum temperature.",
+                        "label": "Max Module Temperature Module",
+                        "name": "StrModTmpMaxMod",
+                        "type": "uint16"
+                    },
+                    {
+                        "desc": "Minimum temperature for all modules in the bank.",
+                        "label": "Min Module Temperature",
+                        "mandatory": "M",
+                        "name": "StrModTmpMin",
+                        "sf": "ModTmp_SF",
+                        "type": "int16",
+                        "units": "C"
+                    },
+                    {
+                        "desc": "Module with the minimum temperature.",
+                        "label": "Min Module Temperature Module",
+                        "name": "StrModTmpMinMod",
+                        "type": "uint16"
+                    },
+                    {
+                        "desc": "Average temperature for all modules in the bank.",
+                        "label": "Average Module Temperature",
+                        "mandatory": "M",
+                        "name": "StrModTmpAvg",
+                        "sf": "ModTmp_SF",
+                        "type": "int16",
+                        "units": "C"
+                    },
+                    {
+                        "desc": "Reason why the string is currently disabled.",
+                        "label": "Disabled Reason",
+                        "name": "StrDisRsn",
+                        "symbols": [
+                            {
+                                "name": "NONE",
+                                "value": 0
+                            },
+                            {
+                                "name": "FAULT",
+                                "value": 1
+                            },
+                            {
+                                "name": "MAINTENANCE",
+                                "value": 2
+                            },
+                            {
+                                "name": "EXTERNAL",
+                                "value": 3
+                            },
+                            {
+                                "name": "OTHER",
+                                "value": 4
+                            }
+                        ],
+                        "type": "enum16"
+                    },
+                    {
+                        "desc": "Status of the contactor(s) for the string.",
+                        "label": "Contactor Status",
+                        "name": "StrConSt",
+                        "symbols": [
+                            {
+                                "name": "CONTACTOR_0",
+                                "value": 0
+                            },
+                            {
+                                "name": "CONTACTOR_1",
+                                "value": 1
+                            },
+                            {
+                                "name": "CONTACTOR_2",
+                                "value": 2
+                            },
+                            {
+                                "name": "CONTACTOR_3",
+                                "value": 3
+                            },
+                            {
+                                "name": "CONTACTOR_4",
+                                "value": 4
+                            },
+                            {
+                                "name": "CONTACTOR_5",
+                                "value": 5
+                            },
+                            {
+                                "name": "CONTACTOR_6",
+                                "value": 6
+                            },
+                            {
+                                "name": "CONTACTOR_7",
+                                "value": 7
+                            },
+                            {
+                                "name": "CONTACTOR_8",
+                                "value": 8
+                            },
+                            {
+                                "name": "CONTACTOR_9",
+                                "value": 9
+                            },
+                            {
+                                "name": "CONTACTOR_10",
+                                "value": 10
+                            },
+                            {
+                                "name": "CONTACTOR_11",
+                                "value": 11
+                            },
+                            {
+                                "name": "CONTACTOR_12",
+                                "value": 12
+                            },
+                            {
+                                "name": "CONTACTOR_13",
+                                "value": 13
+                            },
+                            {
+                                "name": "CONTACTOR_14",
+                                "value": 14
+                            },
+                            {
+                                "name": "CONTACTOR_15",
+                                "value": 15
+                            },
+                            {
+                                "name": "CONTACTOR_16",
+                                "value": 16
+                            },
+                            {
+                                "name": "CONTACTOR_17",
+                                "value": 17
+                            },
+                            {
+                                "name": "CONTACTOR_18",
+                                "value": 18
+                            },
+                            {
+                                "name": "CONTACTOR_19",
+                                "value": 19
+                            },
+                            {
+                                "name": "CONTACTOR_20",
+                                "value": 20
+                            },
+                            {
+                                "name": "CONTACTOR_21",
+                                "value": 21
+                            },
+                            {
+                                "name": "CONTACTOR_22",
+                                "value": 22
+                            },
+                            {
+                                "name": "CONTACTOR_23",
+                                "value": 23
+                            },
+                            {
+                                "name": "CONTACTOR_24",
+                                "value": 24
+                            },
+                            {
+                                "name": "CONTACTOR_25",
+                                "value": 25
+                            },
+                            {
+                                "name": "CONTACTOR_26",
+                                "value": 26
+                            },
+                            {
+                                "name": "CONTACTOR_27",
+                                "value": 27
+                            },
+                            {
+                                "name": "CONTACTOR_28",
+                                "value": 28
+                            },
+                            {
+                                "name": "CONTACTOR_29",
+                                "value": 29
+                            },
+                            {
+                                "name": "CONTACTOR_30",
+                                "value": 30
+                            }
+                        ],
+                        "type": "bitfield32"
+                    },
+                    {
+                        "desc": "Alarms, warnings and status values.  Bit flags.",
+                        "label": "String Event 1",
+                        "mandatory": "M",
+                        "name": "StrEvt1",
+                        "symbols": [
+                            {
+                                "name": "COMMUNICATION_ERROR",
+                                "value": 0
+                            },
+                            {
+                                "name": "OVER_TEMP_ALARM",
+                                "value": 1
+                            },
+                            {
+                                "name": "OVER_TEMP_WARNING",
+                                "value": 2
+                            },
+                            {
+                                "name": "UNDER_TEMP_ALARM",
+                                "value": 3
+                            },
+                            {
+                                "name": "UNDER_TEMP_WARNING",
+                                "value": 4
+                            },
+                            {
+                                "name": "OVER_CHARGE_CURRENT_ALARM",
+                                "value": 5
+                            },
+                            {
+                                "name": "OVER_CHARGE_CURRENT_WARNING",
+                                "value": 6
+                            },
+                            {
+                                "name": "OVER_DISCHARGE_CURRENT_ALARM",
+                                "value": 7
+                            },
+                            {
+                                "name": "OVER_DISCHARGE_CURRENT_WARNING",
+                                "value": 8
+                            },
+                            {
+                                "name": "OVER_VOLT_ALARM",
+                                "value": 9
+                            },
+                            {
+                                "name": "OVER_VOLT_WARNING",
+                                "value": 10
+                            },
+                            {
+                                "name": "UNDER_VOLT_ALARM",
+                                "value": 11
+                            },
+                            {
+                                "name": "UNDER_VOLT_WARNING",
+                                "value": 12
+                            },
+                            {
+                                "name": "UNDER_SOC_MIN_ALARM",
+                                "value": 13
+                            },
+                            {
+                                "name": "UNDER_SOC_MIN_WARNING",
+                                "value": 14
+                            },
+                            {
+                                "name": "OVER_SOC_MAX_ALARM",
+                                "value": 15
+                            },
+                            {
+                                "name": "OVER_SOC_MAX_WARNING",
+                                "value": 16
+                            },
+                            {
+                                "name": "VOLTAGE_IMBALANCE_WARNING",
+                                "value": 17
+                            },
+                            {
+                                "name": "TEMPERATURE_IMBALANCE_ALARM",
+                                "value": 18
+                            },
+                            {
+                                "name": "TEMPERATURE_IMBALANCE_WARNING",
+                                "value": 19
+                            },
+                            {
+                                "name": "CONTACTOR_ERROR",
+                                "value": 20
+                            },
+                            {
+                                "name": "FAN_ERROR",
+                                "value": 21
+                            },
+                            {
+                                "name": "GROUND_FAULT",
+                                "value": 22
+                            },
+                            {
+                                "name": "OPEN_DOOR_ERROR",
+                                "value": 23
+                            },
+                            {
+                                "name": "RESERVED_1",
+                                "value": 24
+                            },
+                            {
+                                "name": "OTHER_ALARM",
+                                "value": 25
+                            },
+                            {
+                                "name": "OTHER_WARNING",
+                                "value": 26
+                            },
+                            {
+                                "name": "RESERVED_2",
+                                "value": 27
+                            },
+                            {
+                                "name": "CONFIGURATION_ALARM",
+                                "value": 28
+                            },
+                            {
+                                "name": "CONFIGURATION_WARNING",
+                                "value": 29
+                            }
+                        ],
+                        "type": "bitfield32"
+                    },
+                    {
+                        "desc": "Alarms, warnings and status values.  Bit flags.",
+                        "label": "String Event 2",
+                        "name": "StrEvt2",
+                        "type": "bitfield32"
+                    },
+                    {
+                        "desc": "Vendor defined events.",
+                        "label": "Vendor String Event Bitfield 1",
+                        "name": "StrEvtVnd1",
+                        "type": "bitfield32"
+                    },
+                    {
+                        "desc": "Vendor defined events.",
+                        "label": "Vendor String Event Bitfield 2",
+                        "name": "StrEvtVnd2",
+                        "type": "bitfield32"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Enables and disables the string.",
+                        "label": "Enable/Disable String",
+                        "name": "StrSetEna",
+                        "symbols": [
+                            {
+                                "name": "ENABLE_STRING",
+                                "value": 1
+                            },
+                            {
+                                "name": "DISABLE_STRING",
+                                "value": 2
+                            }
+                        ],
+                        "type": "enum16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Connects and disconnects the string.",
+                        "label": "Connect/Disconnect String",
+                        "name": "StrSetCon",
+                        "symbols": [
+                            {
+                                "name": "CONNECT_STRING",
+                                "value": 1
+                            },
+                            {
+                                "name": "DISCONNECT_STRING",
+                                "value": 2
+                            }
+                        ],
+                        "type": "enum16"
+                    },
+                    {
+                        "desc": "Pad register.",
+                        "label": "Pad",
+                        "mandatory": "M",
+                        "name": "Pad1",
+                        "type": "pad"
+                    },
+                    {
+                        "desc": "Pad register.",
+                        "label": "Pad",
+                        "mandatory": "M",
+                        "name": "Pad2",
+                        "type": "pad"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "Lithium-Ion Battery Bank Model",
+        "name": "lithium_ion_bank",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 803
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Number of strings in the bank.",
+                "label": "String Count",
+                "mandatory": "M",
+                "name": "NStr",
+                "type": "uint16"
+            },
+            {
+                "desc": "Number of strings with contactor closed.",
+                "label": "Connected String Count",
+                "mandatory": "M",
+                "name": "NStrCon",
+                "type": "uint16"
+            },
+            {
+                "desc": "Maximum temperature for all modules in the bank.",
+                "label": "Max Module Temperature",
+                "mandatory": "M",
+                "name": "ModTmpMax",
+                "sf": "ModTmp_SF",
+                "type": "int16"
+            },
+            {
+                "desc": "String containing the module with maximum temperature.",
+                "label": "Max Module Temperature String",
+                "name": "ModTmpMaxStr",
+                "type": "uint16"
+            },
+            {
+                "desc": "Module with maximum temperature.",
+                "label": "Max Module Temperature Module",
+                "name": "ModTmpMaxMod",
+                "type": "uint16"
+            },
+            {
+                "desc": "Minimum temperature for all modules in the bank.",
+                "label": "Min Module Temperature",
+                "mandatory": "M",
+                "name": "ModTmpMin",
+                "sf": "ModTmp_SF",
+                "type": "int16",
+                "units": "C"
+            },
+            {
+                "desc": "String containing the module with minimum temperature.",
+                "label": "Min Module Temperature String",
+                "name": "ModTmpMinStr",
+                "type": "uint16"
+            },
+            {
+                "desc": "Module with minimum temperature.",
+                "label": "Min Module Temperature Module",
+                "name": "ModTmpMinMod",
+                "type": "uint16"
+            },
+            {
+                "desc": "Average temperature for all modules in the bank.",
+                "label": "Average Module Temperature",
+                "name": "ModTmpAvg",
+                "type": "uint16"
+            },
+            {
+                "desc": "Maximum string voltage for all strings in the bank.",
+                "label": "Max String Voltage",
+                "name": "StrVMax",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "desc": "String with maximum voltage.",
+                "label": "Max String Voltage String",
+                "name": "StrVMaxStr",
+                "type": "uint16"
+            },
+            {
+                "desc": "Minimum string voltage for all strings in the bank.",
+                "label": "Min String Voltage",
+                "name": "StrVMin",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "desc": "String with minimum voltage.",
+                "label": "Min String Voltage String",
+                "name": "StrVMinStr",
+                "type": "uint16"
+            },
+            {
+                "desc": "Average string voltage for all strings in the bank.",
+                "label": "Average String Voltage",
+                "name": "StrVAvg",
+                "sf": "V_SF",
+                "type": "uint16",
+                "units": "V"
+            },
+            {
+                "desc": "Maximum current of any string in the bank.",
+                "label": "Max String Current",
+                "name": "StrAMax",
+                "sf": "A_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "String with the maximum current.",
+                "label": "Max String Current String",
+                "name": "StrAMaxStr",
+                "type": "uint16"
+            },
+            {
+                "desc": "Minimum current of any string in the bank.",
+                "label": "Min String Current",
+                "name": "StrAMin",
+                "sf": "A_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "String with the minimum current.",
+                "label": "Min String Current String",
+                "name": "StrAMinStr",
+                "type": "uint16"
+            },
+            {
+                "desc": "Average string current for all strings in the bank.",
+                "label": "Average String Current",
+                "name": "StrAAvg",
+                "sf": "A_SF",
+                "type": "int16",
+                "units": "A"
+            },
+            {
+                "desc": "Total number of cells that are currently being balanced.",
+                "label": "Battery Cell Balancing Count",
+                "name": "NCellBal",
+                "type": "uint16"
+            },
+            {
+                "desc": "Scale factor for cell voltage.",
+                "mandatory": "M",
+                "name": "CellV_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for module temperatures.",
+                "mandatory": "M",
+                "name": "ModTmp_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for string currents.",
+                "mandatory": "M",
+                "name": "A_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for string state of health.",
+                "name": "SoH_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for string state of charge.",
+                "mandatory": "M",
+                "name": "SoC_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for string voltage.",
+                "name": "V_SF",
+                "type": "sunssf"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 803
+}

@@ -1,0 +1,157 @@
+{
+    "group": {
+        "desc": "Dynamic Reactive Current ",
+        "label": "Dynamic Reactive Current",
+        "name": "reactive_current",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 128
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Indicates if gradients trend toward zero at the edges of the deadband or trend toward zero at the center of the deadband.",
+                "label": "ArGraMod",
+                "mandatory": "M",
+                "name": "ArGraMod",
+                "symbols": [
+                    {
+                        "name": "EDGE",
+                        "value": 0
+                    },
+                    {
+                        "name": "CENTER",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "The gradient used to increase capacitive dynamic current. A value of 0 indicates no additional reactive current support.",
+                "label": "ArGraSag",
+                "mandatory": "M",
+                "name": "ArGraSag",
+                "sf": "ArGra_SF",
+                "type": "uint16",
+                "units": "%ARtg/%dV"
+            },
+            {
+                "access": "RW",
+                "desc": "The gradient used to increase inductive dynamic current.  A value of 0 indicates no additional reactive current support.",
+                "label": "ArGraSwell",
+                "mandatory": "M",
+                "name": "ArGraSwell",
+                "sf": "ArGra_SF",
+                "type": "uint16",
+                "units": "%ARtg/%dV"
+            },
+            {
+                "access": "RW",
+                "desc": "Activate dynamic reactive current model",
+                "label": "ModEna",
+                "mandatory": "M",
+                "name": "ModEna",
+                "symbols": [
+                    {
+                        "name": "ENABLED",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "access": "RW",
+                "desc": "The time window used to calculate the moving average voltage.",
+                "label": "FilTms",
+                "name": "FilTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "The lower delta voltage limit for which negative voltage deviations less than this value no dynamic vars are produced.",
+                "label": "DbVMin",
+                "name": "DbVMin",
+                "sf": "VRefPct_SF",
+                "type": "uint16",
+                "units": "% VRef"
+            },
+            {
+                "access": "RW",
+                "desc": "The upper delta voltage limit for which positive voltage deviations less than this value no dynamic current produced.",
+                "label": "DbVMax",
+                "name": "DbVMax",
+                "sf": "VRefPct_SF",
+                "type": "uint16",
+                "units": "% VRef"
+            },
+            {
+                "access": "RW",
+                "desc": "Block zone voltage which defines a lower voltage boundary below which no dynamic current is produced.",
+                "label": "BlkZnV",
+                "name": "BlkZnV",
+                "sf": "VRefPct_SF",
+                "type": "uint16",
+                "units": "% VRef"
+            },
+            {
+                "access": "RW",
+                "desc": "Hysteresis voltage used with BlkZnV.",
+                "label": "HysBlkZnV",
+                "name": "HysBlkZnV",
+                "sf": "VRefPct_SF",
+                "type": "uint16",
+                "units": "% VRef"
+            },
+            {
+                "access": "RW",
+                "desc": "Block zone time the time before which reactive current support remains active regardless of how low the voltage drops.",
+                "label": "BlkZnTmms",
+                "name": "BlkZnTmms",
+                "type": "uint16",
+                "units": "mSecs"
+            },
+            {
+                "access": "RW",
+                "desc": "Hold time during which reactive current support continues after the average voltage has entered the dead zone.",
+                "label": "HoldTmms",
+                "name": "HoldTmms",
+                "type": "uint16",
+                "units": "mSecs"
+            },
+            {
+                "desc": "Scale factor for the gradients.",
+                "label": "ArGra_SF",
+                "mandatory": "M",
+                "name": "ArGra_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for the voltage zone and limit settings.",
+                "label": "VRefPct_SF",
+                "name": "VRefPct_SF",
+                "type": "sunssf"
+            },
+            {
+                "name": "Pad",
+                "type": "pad"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 128
+}

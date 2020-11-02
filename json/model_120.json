@@ -1,0 +1,241 @@
+{
+    "group": {
+        "desc": "Inverter Controls Nameplate Ratings ",
+        "label": "Nameplate",
+        "name": "nameplate",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 120
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Type of DER device. Default value is 4 to indicate PV device.",
+                "label": "DERTyp",
+                "mandatory": "M",
+                "name": "DERTyp",
+                "symbols": [
+                    {
+                        "name": "PV",
+                        "value": 4
+                    },
+                    {
+                        "name": "PV_STOR",
+                        "value": 82
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Continuous power output capability of the inverter.",
+                "label": "WRtg",
+                "mandatory": "M",
+                "name": "WRtg",
+                "sf": "WRtg_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "desc": "Scale factor",
+                "label": "WRtg_SF",
+                "mandatory": "M",
+                "name": "WRtg_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Continuous Volt-Ampere capability of the inverter.",
+                "label": "VARtg",
+                "mandatory": "M",
+                "name": "VARtg",
+                "sf": "VARtg_SF",
+                "type": "uint16",
+                "units": "VA"
+            },
+            {
+                "desc": "Scale factor",
+                "label": "VARtg_SF",
+                "mandatory": "M",
+                "name": "VARtg_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Continuous VAR capability of the inverter in quadrant 1.",
+                "label": "VArRtgQ1",
+                "mandatory": "M",
+                "name": "VArRtgQ1",
+                "sf": "VArRtg_SF",
+                "type": "int16",
+                "units": "var"
+            },
+            {
+                "desc": "Continuous VAR capability of the inverter in quadrant 2.",
+                "label": "VArRtgQ2",
+                "mandatory": "M",
+                "name": "VArRtgQ2",
+                "sf": "VArRtg_SF",
+                "type": "int16",
+                "units": "var"
+            },
+            {
+                "desc": "Continuous VAR capability of the inverter in quadrant 3.",
+                "label": "VArRtgQ3",
+                "mandatory": "M",
+                "name": "VArRtgQ3",
+                "sf": "VArRtg_SF",
+                "type": "int16",
+                "units": "var"
+            },
+            {
+                "desc": "Continuous VAR capability of the inverter in quadrant 4.",
+                "label": "VArRtgQ4",
+                "mandatory": "M",
+                "name": "VArRtgQ4",
+                "sf": "VArRtg_SF",
+                "type": "int16",
+                "units": "var"
+            },
+            {
+                "desc": "Scale factor",
+                "label": "VArRtg_SF",
+                "mandatory": "M",
+                "name": "VArRtg_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Maximum RMS AC current level capability of the inverter.",
+                "label": "ARtg",
+                "mandatory": "M",
+                "name": "ARtg",
+                "sf": "ARtg_SF",
+                "type": "uint16",
+                "units": "A"
+            },
+            {
+                "desc": "Scale factor",
+                "label": "ARtg_SF",
+                "mandatory": "M",
+                "name": "ARtg_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Minimum power factor capability of the inverter in quadrant 1.",
+                "label": "PFRtgQ1",
+                "mandatory": "M",
+                "name": "PFRtgQ1",
+                "sf": "PFRtg_SF",
+                "type": "int16",
+                "units": "cos()"
+            },
+            {
+                "desc": "Minimum power factor capability of the inverter in quadrant 2.",
+                "label": "PFRtgQ2",
+                "mandatory": "M",
+                "name": "PFRtgQ2",
+                "sf": "PFRtg_SF",
+                "type": "int16",
+                "units": "cos()"
+            },
+            {
+                "desc": "Minimum power factor capability of the inverter in quadrant 3.",
+                "label": "PFRtgQ3",
+                "mandatory": "M",
+                "name": "PFRtgQ3",
+                "sf": "PFRtg_SF",
+                "type": "int16",
+                "units": "cos()"
+            },
+            {
+                "desc": "Minimum power factor capability of the inverter in quadrant 4.",
+                "label": "PFRtgQ4",
+                "mandatory": "M",
+                "name": "PFRtgQ4",
+                "sf": "PFRtg_SF",
+                "type": "int16",
+                "units": "cos()"
+            },
+            {
+                "desc": "Scale factor",
+                "label": "PFRtg_SF",
+                "mandatory": "M",
+                "name": "PFRtg_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Nominal energy rating of storage device.",
+                "label": "WHRtg",
+                "name": "WHRtg",
+                "sf": "WHRtg_SF",
+                "type": "uint16",
+                "units": "Wh"
+            },
+            {
+                "desc": "Scale factor",
+                "label": "WHRtg_SF",
+                "name": "WHRtg_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "The usable capacity of the battery.  Maximum charge minus minimum charge from a technology capability perspective (Amp-hour capacity rating).",
+                "label": "AhrRtg",
+                "name": "AhrRtg",
+                "sf": "AhrRtg_SF",
+                "type": "uint16",
+                "units": "AH"
+            },
+            {
+                "desc": "Scale factor for amp-hour rating.",
+                "label": "AhrRtg_SF",
+                "name": "AhrRtg_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Maximum rate of energy transfer into the storage device.",
+                "label": "MaxChaRte",
+                "name": "MaxChaRte",
+                "sf": "MaxChaRte_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "desc": "Scale factor",
+                "label": "MaxChaRte_SF",
+                "name": "MaxChaRte_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Maximum rate of energy transfer out of the storage device.",
+                "label": "MaxDisChaRte",
+                "name": "MaxDisChaRte",
+                "sf": "MaxDisChaRte_SF",
+                "type": "uint16",
+                "units": "W"
+            },
+            {
+                "desc": "Scale factor",
+                "label": "MaxDisChaRte_SF",
+                "name": "MaxDisChaRte_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Pad register.",
+                "label": "Pad",
+                "name": "Pad",
+                "type": "pad"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 120
+}

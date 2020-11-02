@@ -1,0 +1,48 @@
+{
+    "group": {
+        "groups": [
+            {
+                "count": 0,
+                "name": "cell",
+                "points": [
+                    {
+                        "label": "Cell Points To Be Determined",
+                        "mandatory": "M",
+                        "name": "CellTBD",
+                        "type": "uint16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "Flow Battery Stack Model",
+        "name": "flow_battery_stack",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 809
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "label": "Stack Points To Be Determined",
+                "mandatory": "M",
+                "name": "StackTBD",
+                "type": "uint16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 809
+}

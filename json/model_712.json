@@ -1,0 +1,290 @@
+{
+    "group": {
+        "desc": "DER Watt-Var model.",
+        "groups": [
+            {
+                "comments": [
+                    "Stored curve sets - Number of curve sets contained in NCrv - The first set is read-only and indicates the current settings."
+                ],
+                "count": "NCrv",
+                "desc": "Stored curve sets.",
+                "groups": [
+                    {
+                        "comments": [
+                            "Stored curve sets - curve points for each stored curve - Number of curve points contained in NPt"
+                        ],
+                        "count": "NPt",
+                        "desc": "Stored curve points.",
+                        "label": "Stored Curve Points",
+                        "name": "Pt",
+                        "notes": "",
+                        "points": [
+                            {
+                                "access": "RW",
+                                "desc": "Curve active power point as percentage.",
+                                "label": "Active Power Point",
+                                "name": "W",
+                                "notes": "",
+                                "sf": "W_SF",
+                                "type": "uint16",
+                                "units": "WMaxPct"
+                            },
+                            {
+                                "access": "RW",
+                                "desc": "Curve reactive power point as set in DeptRef point.",
+                                "label": "Reactive Power Point",
+                                "name": "Var",
+                                "notes": "",
+                                "sf": "DeptRef_SF",
+                                "type": "uint16",
+                                "units": "VarPct"
+                            }
+                        ],
+                        "type": "group"
+                    }
+                ],
+                "label": "Stored Curves",
+                "name": "Crv",
+                "notes": "",
+                "points": [
+                    {
+                        "access": "RW",
+                        "desc": "Number of active points.",
+                        "label": "Active Points",
+                        "mandatory": "M",
+                        "name": "ActPt",
+                        "notes": "",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Curve dependent reference.",
+                        "label": "Dependent Reference",
+                        "mandatory": "M",
+                        "name": "DeptRef",
+                        "notes": "",
+                        "symbols": [
+                            {
+                                "label": "Percent Max Watts",
+                                "name": "W_MAX_PCT",
+                                "notes": "",
+                                "value": 1
+                            },
+                            {
+                                "label": "Percent Max Vars",
+                                "name": "VAR_MAX_PCT",
+                                "notes": "",
+                                "value": 2
+                            },
+                            {
+                                "label": "Percent Available Vars",
+                                "name": "VAR_AVAL_PCT",
+                                "notes": "",
+                                "value": 3
+                            },
+                            {
+                                "label": "Percent Max Apparent Power",
+                                "name": "VA_MAX_PCT",
+                                "notes": "",
+                                "value": 4
+                            }
+                        ],
+                        "type": "enum16"
+                    },
+                    {
+                        "name": "Pri",
+                        "notes": "",
+                        "symbols": [
+                            {
+                                "name": "ACTIVE",
+                                "notes": "",
+                                "value": 1
+                            },
+                            {
+                                "name": "REACTIVE",
+                                "notes": "",
+                                "value": 2
+                            }
+                        ],
+                        "type": "enum16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Curve read-write access.",
+                        "label": "Curve Access",
+                        "name": "ReadOnly",
+                        "notes": "",
+                        "symbols": [
+                            {
+                                "desc": "Curve has read-write access.",
+                                "label": "Read-Write Access",
+                                "name": "RW",
+                                "notes": "",
+                                "value": 0
+                            },
+                            {
+                                "desc": "Curve has read-only access.",
+                                "label": "Read-Only Access",
+                                "name": "R",
+                                "notes": "",
+                                "value": 1
+                            }
+                        ],
+                        "type": "enum16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "DER Watt-Var",
+        "name": "DERWattVar",
+        "notes": "",
+        "points": [
+            {
+                "desc": "DER Watt-Var model id.",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "notes": "",
+                "static": "S",
+                "type": "uint16",
+                "value": 712
+            },
+            {
+                "desc": "DER Watt-Var model length.",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "notes": "",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Watt-Var control enable.",
+                "label": "Module Enable",
+                "mandatory": "M",
+                "name": "Ena",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Function is enabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "Function is enabled.",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Function is disabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "Function is disabled.",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Set active curve. 0 = No active curve",
+                "label": "Set Active Curve Request",
+                "mandatory": "M",
+                "name": "AdptCrvReq",
+                "notes": "",
+                "type": "uint16"
+            },
+            {
+                "desc": "Result of last set active curve operation.",
+                "label": "Set Active Curve Result",
+                "mandatory": "M",
+                "name": "AdptCrvRslt",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Curve update in progress.",
+                        "label": "Update In Progress",
+                        "name": "IN_PROGRESS",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Curve update completed successfully.",
+                        "label": "Update Complete",
+                        "name": "COMPLETED",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "desc": "Curve update failed.",
+                        "label": "Update Failed",
+                        "name": "FAILED",
+                        "notes": "",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Number of curve points supported.",
+                "label": "Number Of Points",
+                "mandatory": "M",
+                "name": "NPt",
+                "notes": " ",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Number of stored curves supported.",
+                "label": "Stored Curve Count",
+                "mandatory": "M",
+                "name": "NCrv",
+                "notes": "",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Reversion time in seconds.  0 = No reversion time",
+                "label": "Reversion Timeout",
+                "name": "RvrtTms",
+                "notes": "",
+                "type": "uint32"
+            },
+            {
+                "desc": "Reversion time remaining in seconds",
+                "label": "Reversion Time Left",
+                "name": "RvrtRem",
+                "notes": "",
+                "type": "uint32"
+            },
+            {
+                "access": "RW",
+                "desc": "Default curve after reversion timeout.",
+                "label": "Reversion Curve",
+                "name": "RvrtCrv",
+                "notes": "",
+                "type": "uint16"
+            },
+            {
+                "desc": "Scale factor for curve active power points.",
+                "label": "Active Power Scale Factor",
+                "mandatory": "M",
+                "name": "W_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for curve var points.",
+                "label": "Var Scale Factor",
+                "mandatory": "M",
+                "name": "DeptRef_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 712
+}

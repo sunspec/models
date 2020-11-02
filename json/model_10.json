@@ -1,0 +1,88 @@
+{
+    "group": {
+        "desc": "To be included first for a complete interface description",
+        "label": "Communication Interface Header",
+        "name": "model_10",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 10
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Overall interface status",
+                "label": "Interface Status",
+                "mandatory": "M",
+                "name": "St",
+                "symbols": [
+                    {
+                        "name": "DOWN",
+                        "value": 0
+                    },
+                    {
+                        "name": "UP",
+                        "value": 1
+                    },
+                    {
+                        "name": "FAULT",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Overall interface control (TBD)",
+                "label": "Interface Control",
+                "name": "Ctl",
+                "type": "uint16"
+            },
+            {
+                "desc": "Enumerated value.  Type of physical media",
+                "label": "Physical Access Type",
+                "name": "Typ",
+                "symbols": [
+                    {
+                        "name": "UNKNOWN",
+                        "value": 0
+                    },
+                    {
+                        "name": "INTERNAL",
+                        "value": 1
+                    },
+                    {
+                        "name": "TWISTED_PAIR",
+                        "value": 2
+                    },
+                    {
+                        "name": "FIBER",
+                        "value": 3
+                    },
+                    {
+                        "name": "WIRELESS",
+                        "value": 4
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "name": "Pad",
+                "type": "pad"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 10
+}

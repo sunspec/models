@@ -205,97 +205,97 @@
       <label>Module Count</label>
       <description>Number of modules in this string.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="NModCon">
       <label>Connected Module Count</label>
       <description>Number of electrically connected modules in this string.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="ModVMax">
       <label>Max Module Voltage</label>
       <description>Maximum voltage for all modules in the string.</description>
       <notes>Measurement.</notes>
-    </point>      
+    </point>
     <point id="ModVMaxMod">
       <label>Max Module Voltage Module</label>
       <description>Module with the maximum voltage.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="ModVMin">
       <label>Min Module Voltage</label>
       <description>Minimum voltage for all modules in the string.</description>
       <notes>Measurement.</notes>
-    </point>      
+    </point>
     <point id="ModVMinMod">
       <label>Min Module Voltage Module</label>
       <description>Module with the minimum voltage.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="ModVAvg">
       <label>Average Module Voltage</label>
       <description>Average voltage for all modules in the string.</description>
       <notes>Calculation based on measurements.</notes>
-    </point>      
+    </point>
     <point id="CellVMax">
       <label>Max Cell Voltage</label>
       <description>Maximum voltage for all cells in the string.</description>
       <notes>Measurement.</notes>
-    </point>      
+    </point>
     <point id="CellVMaxMod">
       <label>Max Cell Voltage Module</label>
       <description>Module containing the cell with the maximum voltage.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="CellVMaxStk">
       <label>Max Cell Voltage Stack</label>
       <description>Stack containing the cell with the maximum voltage.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="CellVMin">
       <label>Min Cell Voltage</label>
       <description>Minimum voltage for all cells in the string.</description>
       <notes>Measurement.</notes>
-    </point>      
+    </point>
     <point id="CellVMinMod">
       <label>Min Cell Voltage Module</label>
       <description>Module containing the cell with the minimum voltage.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="CellVMinStk">
       <label>Min Cell Voltage Stack</label>
       <description>Stack containing the cell with the minimum voltage.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="CellVAvg">
       <label>Average Cell Voltage</label>
       <description>Average voltage for all cells in the string.</description>
       <notes>Calculation based on measurements.</notes>
-    </point>      
+    </point>
     <point id="TmpMax">
       <label>Max Temperature</label>
       <description>Maximum electrolyte temperature for all modules in the string.</description>
       <notes>Measurement.</notes>
-    </point>      
+    </point>
     <point id="TmpMaxMod">
       <label>Max Temperature Module</label>
       <description>Module with the maximum temperature.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="TmpMin">
       <label>Min Temperature</label>
       <description>Minimum electrolyte temperature for all modules in the string.</description>
       <notes>Measurement.</notes>
-    </point>      
+    </point>
     <point id="TmpMinMod">
       <label>Min Temperature Module</label>
       <description>Module with the minimum temperature.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="TmpAvg">
       <label>Average Temperature</label>
       <description>Average electrolyte temperature for all modules in the string.</description>
       <notes>Calculation based on measurements.</notes>
-    </point>      
+    </point>
     <point id="Evt1">
       <label>String Event 1</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
@@ -533,7 +533,7 @@
       <label>Stack Count</label>
       <description>Number of stacks in this module.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="ModSt">
       <label>Module Status</label>
       <description>Current status of the module.</description>
@@ -553,22 +553,22 @@
       <label>Module State of Charge</label>
       <description>State of charge for this module.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="ModOCV">
       <label>Open Circuit Voltage</label>
       <description>Open circuit voltage for this module.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="ModV">
       <label>External Voltage</label>
       <description>External voltage fo this module.</description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="ModCellVMax">
       <label>Maximum Cell Voltage</label>
       <description>Maximum voltage for all cells in this module.</description>
       <notes>Measurement.</notes>
-    </point>      
+    </point>
     <point id="ModCellVMaxCell">
       <label>Max Cell Voltage Cell</label>
       <description>Cell with the maximum cell voltage.</description>
@@ -578,7 +578,7 @@
       <label>Minimum Cell Voltage</label>
       <description>Minimum voltage for all cells in this module.</description>
       <notes>Measurement.</notes>
-    </point>      
+    </point>
     <point id="ModCellVMinCell">
       <label>Min Cell Voltage Cell</label>
       <description>Cell with the minimum cell voltage.</description>
@@ -588,17 +588,17 @@
       <label>Average Cell Voltage</label>
       <description>Average voltage for all cells in this module.</description>
       <notes>Calculation based on measurements.</notes>
-    </point>      
+    </point>
     <point id="ModAnoTmp">
       <label>Anolyte Temperature</label>
       <description></description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="ModCatTmp">
       <label>Catholyte Temperature</label>
       <description></description>
       <notes></notes>
-    </point>      
+    </point>
     <point id="ModConSt">
       <label>Contactor Status</label>
       <description></description>
@@ -758,7 +758,7 @@
         <description></description>
         <notes></notes>
       </symbol>
-    </point>      
+    </point>
     <point id="ModEvt1">
       <label>Module Event 1</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
@@ -913,7 +913,7 @@
         <description>The battery module has been configured incorrectly and may not operate as expected.</description>
         <notes></notes>
       </symbol>
-    </point>      
+    </point>
     <point id="ModEvt2">
       <label>Module Event 2</label>
       <description>Alarms, warnings and status values.  Bit flags.</description>
@@ -948,7 +948,7 @@
         <description>Flow approaching minimum value.</description>
         <notes></notes>
       </symbol>
-    </point>      
+    </point>
     <point id="ModConFail">
       <label>Connection Failure Reason</label>
       <description></description>

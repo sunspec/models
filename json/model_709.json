@@ -1,0 +1,322 @@
+{
+    "group": {
+        "desc": "DER low frequency trip model.",
+        "groups": [
+            {
+                "comments": [
+                    "Stored curve sets - Number of curve sets contained in NCrvSet - The first set is read-only and indicates the current settings."
+                ],
+                "count": "NCrvSet",
+                "desc": "Stored curve sets.",
+                "groups": [
+                    {
+                        "comments": [
+                            "Stored curve set containing a Must Trip, May Trip, and Momentary Cessation Curve - Number of curve points contained in NPt"
+                        ],
+                        "desc": "Stored must trip curve.",
+                        "groups": [
+                            {
+                                "count": "NPt",
+                                "desc": "Must trip curve points.",
+                                "label": "Must Trip Curve Points",
+                                "name": "Pt",
+                                "notes": "",
+                                "points": [
+                                    {
+                                        "access": "RW",
+                                        "desc": "Curve frequency point.",
+                                        "label": "Frequency Point",
+                                        "name": "Hz",
+                                        "notes": "",
+                                        "sf": "Hz_SF",
+                                        "type": "uint32",
+                                        "units": "Hz"
+                                    },
+                                    {
+                                        "access": "RW",
+                                        "desc": "Curve time point in seconds.",
+                                        "label": "Time Point",
+                                        "name": "Tms",
+                                        "notes": "",
+                                        "sf": "Tms_SF",
+                                        "type": "uint32",
+                                        "units": "Secs"
+                                    }
+                                ],
+                                "type": "group"
+                            }
+                        ],
+                        "label": "Must Trip Curve",
+                        "name": "MustTrip",
+                        "notes": "",
+                        "points": [
+                            {
+                                "access": "RW",
+                                "desc": "Number of active points in must trip curve.",
+                                "label": "Number Of Active Points",
+                                "name": "ActPt",
+                                "notes": "",
+                                "type": "uint16"
+                            }
+                        ],
+                        "type": "group"
+                    },
+                    {
+                        "desc": "Stored may trip curve.",
+                        "groups": [
+                            {
+                                "count": "NPt",
+                                "desc": "May trip curve points.",
+                                "label": "May Trip Curve Points",
+                                "name": "Pt",
+                                "notes": "",
+                                "points": [
+                                    {
+                                        "access": "RW",
+                                        "desc": "Curve frequency point.",
+                                        "label": "Frequency Point",
+                                        "name": "Hz",
+                                        "notes": "",
+                                        "sf": "Hz_SF",
+                                        "type": "uint32",
+                                        "units": "Hz"
+                                    },
+                                    {
+                                        "access": "RW",
+                                        "desc": "Curve time point in seconds.",
+                                        "label": "Time Point",
+                                        "name": "Tms",
+                                        "notes": "",
+                                        "sf": "Tms_SF",
+                                        "type": "uint32",
+                                        "units": "Secs"
+                                    }
+                                ],
+                                "type": "group"
+                            }
+                        ],
+                        "label": "May Trip Curve",
+                        "name": "MayTrip",
+                        "notes": "",
+                        "points": [
+                            {
+                                "access": "RW",
+                                "desc": "Number of active points in may trip curve.",
+                                "label": "Number Of Active Points",
+                                "name": "ActPt",
+                                "notes": "",
+                                "type": "uint16"
+                            }
+                        ],
+                        "type": "group"
+                    },
+                    {
+                        "desc": "Stored momentary cessation curve.",
+                        "groups": [
+                            {
+                                "count": "NPt",
+                                "desc": "Monetary cessation curve points.",
+                                "label": "Mom Cessation Curve Points",
+                                "name": "Pt",
+                                "notes": "",
+                                "points": [
+                                    {
+                                        "access": "RW",
+                                        "desc": "Curve frequency point.",
+                                        "label": "Frequency Point",
+                                        "name": "Hz",
+                                        "notes": "",
+                                        "sf": "Hz_SF",
+                                        "type": "uint32",
+                                        "units": "Hz"
+                                    },
+                                    {
+                                        "access": "RW",
+                                        "desc": "Curve time point in seconds.",
+                                        "label": "Time Point",
+                                        "name": "Tms",
+                                        "notes": "",
+                                        "sf": "Tms_SF",
+                                        "type": "uint32",
+                                        "units": "Secs"
+                                    }
+                                ],
+                                "type": "group"
+                            }
+                        ],
+                        "label": "Momentary Cessation Curve",
+                        "name": "MomCess",
+                        "notes": "",
+                        "points": [
+                            {
+                                "access": "RW",
+                                "desc": "Number of active points in the momentary cessation curve.",
+                                "label": "Number Of Active Points",
+                                "name": "ActPt",
+                                "notes": "",
+                                "type": "uint16"
+                            }
+                        ],
+                        "type": "group"
+                    }
+                ],
+                "label": "Stored Curves",
+                "name": "Crv",
+                "notes": "",
+                "points": [
+                    {
+                        "desc": "Curve read-write access.",
+                        "label": "Curve Access",
+                        "name": "ReadOnly",
+                        "notes": "",
+                        "symbols": [
+                            {
+                                "desc": "Curve has read-write access.",
+                                "label": "Read-Write Access",
+                                "name": "RW",
+                                "notes": "",
+                                "value": 0
+                            },
+                            {
+                                "desc": "Curve has read-only access.",
+                                "label": "Read-Only Access",
+                                "name": "R",
+                                "notes": "",
+                                "value": 1
+                            }
+                        ],
+                        "type": "enum16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "DER Trip LF",
+        "name": "DERTripLF",
+        "notes": "",
+        "points": [
+            {
+                "desc": "DER low frequency trip model id.",
+                "label": "DER Trip LF Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "notes": "",
+                "static": "S",
+                "type": "uint16",
+                "value": 709
+            },
+            {
+                "desc": "DER low frequency trip model length.",
+                "label": "DER Trip LF Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "notes": "",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "DER low frequency trip control enable.",
+                "label": "DER Trip LF Module Enable",
+                "mandatory": "M",
+                "name": "Ena",
+                "notes": " ",
+                "symbols": [
+                    {
+                        "desc": "Function is enabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "Function is enabled.",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Function is disabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "Function is disabled.",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "access": "RW",
+                "desc": "Index of  curve points to adopt. First curve index is 1.",
+                "label": "Adopt Curve Request",
+                "mandatory": "M",
+                "name": "AdptCrvReq",
+                "notes": " ",
+                "type": "uint16"
+            },
+            {
+                "desc": "Result of last adopt curve operation.",
+                "label": "Adopt Curve Result",
+                "mandatory": "M",
+                "name": "AdptCrvRslt",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Curve update in progress.",
+                        "label": "Update In Progress",
+                        "name": "IN_PROGRESS",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Curve update completed successfully.",
+                        "label": "Update Complete",
+                        "name": "COMPLETED",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "desc": "Curve update failed.",
+                        "label": "Update Failed",
+                        "name": "FAILED",
+                        "notes": "",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Number of curve points supported.",
+                "label": "Number Of Points",
+                "mandatory": "M",
+                "name": "NPt",
+                "notes": " ",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Number of stored curves supported.",
+                "label": "Stored Curve Count",
+                "mandatory": "M",
+                "name": "NCrvSet",
+                "notes": "",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Scale factor for curve frequency points.",
+                "label": "Frequency Scale Factor",
+                "mandatory": "M",
+                "name": "Hz_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for curve time points.",
+                "label": "Time Point Scale Factor",
+                "mandatory": "M",
+                "name": "Tms_SF",
+                "notes": "",
+                "static": "S",
+                "type": "sunssf"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 709
+}

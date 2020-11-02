@@ -1,0 +1,48 @@
+{
+    "group": {
+        "groups": [
+            {
+                "count": 0,
+                "name": "battery_string",
+                "points": [
+                    {
+                        "label": "Battery String Points To Be Determined",
+                        "mandatory": "M",
+                        "name": "BatStTBD",
+                        "type": "uint16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "Flow Battery Model",
+        "name": "flow_battery",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 806
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "label": "Battery Points To Be Determined",
+                "mandatory": "M",
+                "name": "BatTBD",
+                "type": "uint16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 806
+}

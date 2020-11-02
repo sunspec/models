@@ -1,0 +1,510 @@
+{
+    "group": {
+        "desc": "LVRT Must Disconnect",
+        "groups": [
+            {
+                "count": 0,
+                "name": "curve",
+                "points": [
+                    {
+                        "access": "RW",
+                        "desc": "Number of active points in array.",
+                        "label": "ActPt",
+                        "mandatory": "M",
+                        "name": "ActPt",
+                        "type": "uint16"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 1 must disconnect duration.",
+                        "label": "Tms1",
+                        "mandatory": "M",
+                        "name": "Tms1",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 1 must disconnect voltage.",
+                        "label": "V1",
+                        "mandatory": "M",
+                        "name": "V1",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 2 must disconnect duration.",
+                        "label": "Tms2",
+                        "name": "Tms2",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 2 must disconnect voltage.",
+                        "label": "V2",
+                        "name": "V2",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 3 must disconnect duration.",
+                        "label": "Tms3",
+                        "name": "Tms3",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 3 must disconnect voltage.",
+                        "label": "V3",
+                        "name": "V3",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 4 must disconnect duration.",
+                        "label": "Tms4",
+                        "name": "Tms4",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 4 must disconnect voltage.",
+                        "label": "V4",
+                        "name": "V4",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 5 must disconnect duration.",
+                        "label": "Tms5",
+                        "name": "Tms5",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 5 must disconnect voltage.",
+                        "label": "V5",
+                        "name": "V5",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 6 must disconnect duration.",
+                        "label": "Tms6",
+                        "name": "Tms6",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 6 must disconnect voltage.",
+                        "label": "V6",
+                        "name": "V6",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 7 must disconnect duration.",
+                        "label": "Tms7",
+                        "name": "Tms7",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 7 must disconnect voltage.",
+                        "label": "V7",
+                        "name": "V7",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 8 must disconnect duration.",
+                        "label": "Tms8",
+                        "name": "Tms8",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 8 must disconnect voltage.",
+                        "label": "V8",
+                        "name": "V8",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 9 must disconnect duration.",
+                        "label": "Tms9",
+                        "name": "Tms9",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 9 must disconnect voltage.",
+                        "label": "V9",
+                        "name": "V9",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 10 must disconnect duration.",
+                        "label": "Tms10",
+                        "name": "Tms10",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 10 must disconnect voltage.",
+                        "label": "V10",
+                        "name": "V10",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 11 must disconnect duration.",
+                        "label": "Tms11",
+                        "name": "Tms11",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 11 must disconnect voltage.",
+                        "label": "V11",
+                        "name": "V11",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 12 must disconnect duration.",
+                        "label": "Tms12",
+                        "name": "Tms12",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 12 must disconnect voltage.",
+                        "label": "V12",
+                        "name": "V12",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 13 must disconnect duration.",
+                        "label": "Tms13",
+                        "name": "Tms13",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 13 must disconnect voltage.",
+                        "label": "V13",
+                        "name": "V13",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 14 must disconnect duration.",
+                        "label": "Tms14",
+                        "name": "Tms14",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 14 must disconnect voltage.",
+                        "label": "V14",
+                        "name": "V14",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 15 must disconnect duration.",
+                        "label": "Tms15",
+                        "name": "Tms15",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 15 must disconnect voltage.",
+                        "label": "V15",
+                        "name": "V15",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 16 must disconnect duration.",
+                        "label": "Tms16",
+                        "name": "Tms16",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 16 must disconnect voltage.",
+                        "label": "V16",
+                        "name": "V16",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 17 must disconnect duration.",
+                        "label": "Tms17",
+                        "name": "Tms17",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 17 must disconnect voltage.",
+                        "label": "V17",
+                        "name": "V17",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 18 must disconnect duration.",
+                        "label": "Tms18",
+                        "name": "Tms18",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 18 must disconnect voltage.",
+                        "label": "V18",
+                        "name": "V18",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 19 must disconnect duration.",
+                        "label": "Tms19",
+                        "name": "Tms19",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 19 must disconnect voltage.",
+                        "label": "V19",
+                        "name": "V19",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 20 must disconnect duration.",
+                        "label": "Tms20",
+                        "name": "Tms20",
+                        "sf": "Tms_SF",
+                        "type": "uint16",
+                        "units": "Secs"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Point 20 must disconnect voltage.",
+                        "label": "V20",
+                        "name": "V20",
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "% VRef"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Optional description for curve.",
+                        "label": "CrvNam",
+                        "name": "CrvNam",
+                        "size": 8,
+                        "type": "string"
+                    },
+                    {
+                        "desc": "Enumerated value indicates if curve is read-only or can be modified.",
+                        "label": "ReadOnly",
+                        "mandatory": "M",
+                        "name": "ReadOnly",
+                        "symbols": [
+                            {
+                                "name": "READWRITE",
+                                "value": 0
+                            },
+                            {
+                                "name": "READONLY",
+                                "value": 1
+                            }
+                        ],
+                        "type": "enum16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "LVRTD",
+        "name": "lvrt",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 129
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Index of active curve. 0=no active curve.",
+                "label": "ActCrv",
+                "mandatory": "M",
+                "name": "ActCrv",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "LVRT control mode. Enable active curve.  Bitfield value.",
+                "label": "ModEna",
+                "mandatory": "M",
+                "name": "ModEna",
+                "symbols": [
+                    {
+                        "name": "ENABLED",
+                        "value": 0
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "access": "RW",
+                "desc": "Time window for LVRT change.",
+                "label": "WinTms",
+                "name": "WinTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Timeout period for LVRT curve selection.",
+                "label": "RvrtTms",
+                "name": "RvrtTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "access": "RW",
+                "desc": "Ramp time for moving from current mode to new mode.",
+                "label": "RmpTms",
+                "name": "RmpTms",
+                "type": "uint16",
+                "units": "Secs"
+            },
+            {
+                "desc": "Number of curves supported (recommend 4).",
+                "label": "NCrv",
+                "mandatory": "M",
+                "name": "NCrv",
+                "type": "uint16"
+            },
+            {
+                "desc": "Number of curve points supported (maximum of 20).",
+                "label": "NPt",
+                "mandatory": "M",
+                "name": "NPt",
+                "type": "uint16"
+            },
+            {
+                "desc": "Scale factor for duration.",
+                "label": "Tms_SF",
+                "mandatory": "M",
+                "name": "Tms_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for percent VRef.",
+                "label": "V_SF",
+                "mandatory": "M",
+                "name": "V_SF",
+                "type": "sunssf"
+            },
+            {
+                "name": "Pad",
+                "type": "pad"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 129
+}

@@ -1,0 +1,274 @@
+{
+    "group": {
+        "desc": "Monitors and controls multiple trackers",
+        "groups": [
+            {
+                "count": 0,
+                "name": "tracker",
+                "points": [
+                    {
+                        "desc": "Descriptive name for this tracker unit",
+                        "label": "Tracker",
+                        "name": "Id",
+                        "size": 8,
+                        "type": "string"
+                    },
+                    {
+                        "desc": "Auto target elevation in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
+                        "label": "Target Elevation",
+                        "name": "ElTrgt",
+                        "sf": "Dgr_SF",
+                        "type": "int32",
+                        "units": "Degrees"
+                    },
+                    {
+                        "desc": "Auto target azimuth  in degrees from true north towards east.  Unimplemented for single axis horizontal tracker type",
+                        "label": "Target Azimuth",
+                        "name": "AzTrgt",
+                        "sf": "Dgr_SF",
+                        "type": "int32",
+                        "units": "Degrees"
+                    },
+                    {
+                        "desc": "Actual elevation position  in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
+                        "label": "Elevation",
+                        "name": "ElPos",
+                        "sf": "Dgr_SF",
+                        "type": "int32",
+                        "units": "Degrees"
+                    },
+                    {
+                        "desc": "Actual azimuth position  in degrees from true north towards east.  Unimplemented for single axis horizontal tracker type",
+                        "label": "Azimuth",
+                        "name": "AzPos",
+                        "sf": "Dgr_SF",
+                        "type": "int32",
+                        "units": "Degrees"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Manual override target position of elevation in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
+                        "label": "Manual Elevation",
+                        "name": "ElCtl",
+                        "sf": "Dgr_SF",
+                        "type": "int32",
+                        "units": "Degrees"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Manual override target position of azimuth in degrees from true north towards east.  Unimplemented for single axis azimuth tracker type",
+                        "label": "Manual Azimuth",
+                        "name": "AzCtl",
+                        "sf": "Dgr_SF",
+                        "type": "int32",
+                        "units": "Degrees"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Control register. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.",
+                        "label": "Mode",
+                        "name": "Ctl",
+                        "symbols": [
+                            {
+                                "name": "Automatic",
+                                "value": 0
+                            },
+                            {
+                                "name": "Manual",
+                                "value": 1
+                            },
+                            {
+                                "name": "Calibrate",
+                                "value": 2
+                            }
+                        ],
+                        "type": "enum16"
+                    },
+                    {
+                        "desc": "Tracker alarm conditions",
+                        "label": "Alarm",
+                        "name": "Alm",
+                        "symbols": [
+                            {
+                                "name": "SetPoint",
+                                "value": 0
+                            },
+                            {
+                                "name": "ObsEl",
+                                "value": 1
+                            },
+                            {
+                                "name": "ObsAz",
+                                "value": 2
+                            }
+                        ],
+                        "type": "bitfield16"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "label": "Tracker Controller DRAFT 2",
+        "name": "tracker_controller",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "static": "S",
+                "type": "uint16",
+                "value": 601
+            },
+            {
+                "desc": "Model length",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Descriptive name for this control unit",
+                "label": "Controller",
+                "name": "Nam",
+                "size": 8,
+                "type": "string"
+            },
+            {
+                "desc": "Type of tracker",
+                "label": "Type",
+                "mandatory": "M",
+                "name": "Typ",
+                "symbols": [
+                    {
+                        "name": "Unknown",
+                        "value": 0
+                    },
+                    {
+                        "name": "Fixed",
+                        "value": 1
+                    },
+                    {
+                        "name": "Horizontal",
+                        "value": 2
+                    },
+                    {
+                        "name": "Tilted",
+                        "value": 3
+                    },
+                    {
+                        "name": "Azimuth",
+                        "value": 4
+                    },
+                    {
+                        "name": "Dual",
+                        "value": 5
+                    },
+                    {
+                        "name": "Other",
+                        "value": 99
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Local date in YYYYMMDD format",
+                "label": "Date",
+                "name": "DtLoc",
+                "size": 5,
+                "type": "string",
+                "units": "YYYYMMDD"
+            },
+            {
+                "desc": "24 hour local time stamp to second",
+                "label": "Time",
+                "name": "TmLoc",
+                "size": 3,
+                "type": "string",
+                "units": "hhmmss"
+            },
+            {
+                "desc": "Number of the day in the year (1-366)",
+                "label": "Day",
+                "name": "Day",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Global manual override target position of elevation in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
+                "label": "Manual Elevation",
+                "name": "GlblElCtl",
+                "sf": "Dgr_SF",
+                "type": "int32",
+                "units": "Degrees"
+            },
+            {
+                "access": "RW",
+                "desc": "Global manual override target position of azimuth in degrees from true north towards east.  Unimplemented for single axis azimuth tracker type",
+                "label": "Manual Azimuth",
+                "name": "GlblAzCtl",
+                "sf": "Dgr_SF",
+                "type": "int32",
+                "units": "Degrees"
+            },
+            {
+                "access": "RW",
+                "desc": "Global Control register operates on all trackers. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.",
+                "label": "Global Mode",
+                "name": "GlblCtl",
+                "symbols": [
+                    {
+                        "name": "Automatic",
+                        "value": 0
+                    },
+                    {
+                        "name": "Manual",
+                        "value": 1
+                    },
+                    {
+                        "name": "Calibrate",
+                        "value": 2
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Global tracker alarm conditions",
+                "label": "Global Alarm",
+                "name": "GlblAlm",
+                "symbols": [
+                    {
+                        "name": "SetPoint",
+                        "value": 0
+                    },
+                    {
+                        "name": "ObsEl",
+                        "value": 1
+                    },
+                    {
+                        "name": "ObsAz",
+                        "value": 2
+                    }
+                ],
+                "type": "bitfield16"
+            },
+            {
+                "desc": "Scale Factor for targets and position measurements in degrees",
+                "label": "SF",
+                "mandatory": "M",
+                "name": "Dgr_SF",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Number of trackers being controlled.  Size of repeating block.",
+                "label": "Trackers",
+                "mandatory": "M",
+                "name": "N",
+                "type": "uint16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 601
+}
