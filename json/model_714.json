@@ -1,0 +1,97 @@
+{
+    "group": {
+        "desc": "DER Control",
+        "label": "DERCtl",
+        "name": "DERCtl",
+        "points": [
+            {
+                "desc": "DER control model id.",
+                "label": "DER Control Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "type": "uint16",
+                "value": 714
+            },
+            {
+                "desc": "DER control model length.",
+                "label": "DER Control Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "type": "uint16"
+            },
+            {
+                "comments": [
+                    "DER Controls"
+                ],
+                "desc": "DER control mode. Enumeration.",
+                "label": "Control Mode",
+                "name": "LocRemCtl",
+                "symbols": [
+                    {
+                        "label": "Remote Control",
+                        "name": "REMOTE",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Local mode is required for manual/maintenance operations. Once invoked, it must be explicitly exited for the inverter to be controlled remotely.",
+                        "label": "Local Control",
+                        "name": "LOCAL",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Value is incremented every second by the DER with periodic resets to zero.",
+                "label": "DER Heartbeat",
+                "name": "DERHb",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Value is incremented every second by the controller with periodic resets to zero.",
+                "label": "Controller Heartbeat",
+                "name": "ControllerHb",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Used to reset any latched alarms. 1 = Reset.",
+                "label": "Alarm Reset",
+                "name": "AlarmReset",
+                "type": "uint16"
+            },
+            {
+                "access": "RW",
+                "desc": "Commands to PCS. Enumerated value.",
+                "label": "Set Operation",
+                "name": "OpCtl",
+                "symbols": [
+                    {
+                        "label": "Stop the DER",
+                        "name": "STOP",
+                        "value": 1
+                    },
+                    {
+                        "label": "Start the DER",
+                        "name": "START",
+                        "value": 2
+                    },
+                    {
+                        "label": "Enter Standby Mode",
+                        "name": "ENTER_STANDBY",
+                        "value": 3
+                    },
+                    {
+                        "label": "Exit Standby Mode",
+                        "name": "EXIT_STANDBY",
+                        "value": 4
+                    }
+                ],
+                "type": "enum16"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 714
+}

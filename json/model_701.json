@@ -94,6 +94,58 @@
             },
             {
                 "comments": [
+                    "Inverter State"
+                ],
+                "desc": "Enumerated value.  Inverter state.",
+                "label": "Inverter State",
+                "name": "InvSt",
+                "notes": "",
+                "symbols": [
+                    {
+                        "name": "OFF",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "name": "SLEEPING",
+                        "notes": "",
+                        "value": 2
+                    },
+                    {
+                        "name": "STARTING",
+                        "notes": "",
+                        "value": 3
+                    },
+                    {
+                        "name": "MPPT",
+                        "notes": "",
+                        "value": 4
+                    },
+                    {
+                        "name": "THROTTLED",
+                        "notes": "",
+                        "value": 5
+                    },
+                    {
+                        "name": "SHUTTING_DOWN",
+                        "notes": "",
+                        "value": 6
+                    },
+                    {
+                        "name": "FAULT",
+                        "notes": "",
+                        "value": 7
+                    },
+                    {
+                        "name": "STANDBY",
+                        "notes": "",
+                        "value": 8
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
+                "comments": [
                     "Grid Connection State"
                 ],
                 "desc": "Grid connection state of the DER.",
@@ -240,7 +292,7 @@
                 "desc": "Total active power.",
                 "label": "Active Power",
                 "name": "W",
-                "notes": "The active power being injected or absorbed in watts. The value is positive if power is being injected and negative if power is being absorbed.",
+                "notes": "",
                 "sf": "W_SF",
                 "type": "int16",
                 "units": "W"
@@ -249,7 +301,7 @@
                 "desc": "Total apparent power.",
                 "label": "Apparent Power",
                 "name": "VA",
-                "notes": "The apparent power being injected or absorbed in volt-amps. The value is positive if power is being injected and negative if power is being absorbed.",
+                "notes": "",
                 "sf": "VA_SF",
                 "type": "int16",
                 "units": "VA"
@@ -258,7 +310,7 @@
                 "desc": "Total reactive power.",
                 "label": "Reactive Power",
                 "name": "Var",
-                "notes": "The reactive power being injected or absorbed in volt-amps. The value is positive if power is being injected and negative if power is being absorbed.",
+                "notes": "",
                 "sf": "Var_SF",
                 "type": "int16",
                 "units": "Var"
@@ -267,7 +319,7 @@
                 "desc": "Power factor.",
                 "label": "Power Factor",
                 "name": "PF",
-                "notes": "The power factor as computed by xxx. [Should it be signed?]",
+                "notes": "",
                 "sf": "PF_SF",
                 "type": "uint16"
             },
@@ -275,7 +327,7 @@
                 "desc": "Total AC current.",
                 "label": "Total AC Current",
                 "name": "A",
-                "notes": "The total AC current being injected or absorbed in amps. The value is positive if power is being injected and negative if power is being absorbed.",
+                "notes": "",
                 "sf": "A_SF",
                 "type": "int16",
                 "units": "A"
