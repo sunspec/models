@@ -258,7 +258,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER DC measurement model id.",
+                "desc": "DER DC measurement model ID.",
                 "label": "DER DC Measure Model ID",
                 "mandatory": "M",
                 "name": "ID",

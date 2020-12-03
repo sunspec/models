@@ -179,7 +179,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "Model name model id.",
+                "desc": "Model name model ID.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",

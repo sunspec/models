@@ -5,7 +5,7 @@
         "name": "DERCtl",
         "points": [
             {
-                "desc": "DER control model id.",
+                "desc": "DER control model ID.",
                 "label": "DER Control Model ID",
                 "mandatory": "M",
                 "name": "ID",

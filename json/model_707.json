@@ -196,7 +196,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER low voltage trip model id.",
+                "desc": "DER low voltage trip model ID.",
                 "label": "DER Trip LV Model ID",
                 "mandatory": "M",
                 "name": "ID",

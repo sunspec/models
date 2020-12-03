@@ -97,7 +97,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER Frequency Droop model id.",
+                "desc": "DER Frequency Droop model ID.",
                 "label": "DER Frequency Droop ID",
                 "mandatory": "M",
                 "name": "ID",

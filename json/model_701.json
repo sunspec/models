@@ -6,7 +6,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER AC measurement  model id.",
+                "desc": "DER AC measurement  model ID.",
                 "label": "DER AC Measure Model ID",
                 "mandatory": "M",
                 "name": "ID",

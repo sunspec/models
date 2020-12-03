@@ -196,7 +196,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER high frequency trip model id.",
+                "desc": "DER high frequency trip model ID.",
                 "label": "DER Trip HFModel ID",
                 "mandatory": "M",
                 "name": "ID",

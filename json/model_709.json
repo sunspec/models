@@ -196,7 +196,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER low frequency trip model id.",
+                "desc": "DER low frequency trip model ID.",
                 "label": "DER Trip LF Model ID",
                 "mandatory": "M",
                 "name": "ID",

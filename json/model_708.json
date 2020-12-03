@@ -196,7 +196,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER high voltage trip  model id.",
+                "desc": "DER high voltage trip  model ID.",
                 "label": "DER Trip HV Model ID",
                 "mandatory": "M",
                 "name": "ID",

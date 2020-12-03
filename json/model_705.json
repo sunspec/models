@@ -223,7 +223,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER Volt-Var model id.",
+                "desc": "DER Volt-Var model ID.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",

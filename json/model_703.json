@@ -6,7 +6,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "Enter service model id.",
+                "desc": "Enter service model ID.",
                 "label": "Enter Service ID",
                 "mandatory": "M",
                 "name": "ID",

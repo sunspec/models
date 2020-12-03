@@ -141,7 +141,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER Watt-Var model id.",
+                "desc": "DER Watt-Var model ID.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
