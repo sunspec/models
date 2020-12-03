@@ -74,20 +74,6 @@
                         "name": "ON",
                         "notes": "",
                         "value": 2
-                    },
-                    {
-                        "desc": "There is an active alarm, device is able to generate with possible constraints.",
-                        "label": "Warning",
-                        "name": "WARNING",
-                        "notes": "",
-                        "value": 3
-                    },
-                    {
-                        "desc": "There is an active alarm, device is not able to generate due to one or more of the alarm issues.",
-                        "label": "Error",
-                        "name": "ERROR",
-                        "notes": "",
-                        "value": 4
                     }
                 ],
                 "type": "enum16"
@@ -281,6 +267,36 @@
                         "name": "MANUFACTURER_ALRM",
                         "notes": "",
                         "value": 16
+                    }
+                ],
+                "type": "bitfield32"
+            },
+            {
+                "desc": "Current operational characteristics of the DER.",
+                "label": "DER Operational Characteristics",
+                "name": "DERMode",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "The DER is operating as part of a larger grid.",
+                        "label": "Grid Following",
+                        "name": "GRID_FOLLOWING",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "The DER is providing the grid.",
+                        "label": "Grid Forming",
+                        "name": "GRID_FORMING",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "desc": "The PV output is clipped.",
+                        "label": "PV Output Clipped",
+                        "name": "PV_CLIPPED",
+                        "notes": "",
+                        "value": 2
                     }
                 ],
                 "type": "bitfield32"
