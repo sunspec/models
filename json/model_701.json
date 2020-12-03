@@ -354,7 +354,7 @@
                 "name": "LLV",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -363,7 +363,7 @@
                 "name": "LNV",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -521,7 +521,7 @@
                 "name": "VL1L2",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -530,7 +530,7 @@
                 "name": "VL1",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -622,7 +622,7 @@
                 "name": "VL2L3",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -631,7 +631,7 @@
                 "name": "VL2",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -723,7 +723,7 @@
                 "name": "VL3L1",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -732,7 +732,7 @@
                 "name": "VL3",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
