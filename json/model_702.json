@@ -6,7 +6,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER capacity model id.",
+                "desc": "DER capacity model ID.",
                 "label": "DER Capacity Model ID",
                 "mandatory": "M",
                 "name": "ID",

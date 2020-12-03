@@ -115,7 +115,7 @@
                         "groups": [
                             {
                                 "count": "NPt",
-                                "desc": "Monetary cessation curve points.",
+                                "desc": "Momentary cessation curve points.",
                                 "label": "Mom Cessation Curve Points",
                                 "name": "Pt",
                                 "notes": "",
@@ -196,7 +196,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER high voltage trip  model id.",
+                "desc": "DER high voltage trip  model ID.",
                 "label": "DER Trip HV Model ID",
                 "mandatory": "M",
                 "name": "ID",

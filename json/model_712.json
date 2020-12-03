@@ -92,6 +92,7 @@
                         "type": "enum16"
                     },
                     {
+                        "access": "RW",
                         "name": "Pri",
                         "notes": "",
                         "symbols": [
@@ -141,7 +142,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER Watt-Var model id.",
+                "desc": "DER Watt-Var model ID.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",

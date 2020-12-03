@@ -119,7 +119,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER Volt-Watt model id.",
+                "desc": "DER Volt-Watt model ID.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",

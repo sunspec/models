@@ -6,7 +6,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "Enter service model id.",
+                "desc": "Enter service model ID.",
                 "label": "Enter Service ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -108,6 +108,14 @@
                 "desc": "Enter service ramp time in seconds.",
                 "label": "Enter Service Ramp Time",
                 "name": "ESRmpTms",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
+                "desc": "Enter service delay time remaining in seconds.",
+                "label": "Enter Service Delay Remaining",
+                "name": "ESDlyRemTms",
                 "notes": "",
                 "type": "uint32",
                 "units": "Secs"

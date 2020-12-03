@@ -6,7 +6,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER AC measurement  model id.",
+                "desc": "DER AC measurement  model ID.",
                 "label": "DER AC Measure Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -74,20 +74,6 @@
                         "name": "ON",
                         "notes": "",
                         "value": 2
-                    },
-                    {
-                        "desc": "There is an active alarm, device is able to generate with possible constraints.",
-                        "label": "Warning",
-                        "name": "WARNING",
-                        "notes": "",
-                        "value": 3
-                    },
-                    {
-                        "desc": "There is an active alarm, device is not able to generate due to one or more of the alarm issues.",
-                        "label": "Error",
-                        "name": "ERROR",
-                        "notes": "",
-                        "value": 4
                     }
                 ],
                 "type": "enum16"
@@ -286,6 +272,36 @@
                 "type": "bitfield32"
             },
             {
+                "desc": "Current operational characteristics of the DER.",
+                "label": "DER Operational Characteristics",
+                "name": "DERMode",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "The DER is operating as part of a larger grid.",
+                        "label": "Grid Following",
+                        "name": "GRID_FOLLOWING",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "The DER is providing the grid.",
+                        "label": "Grid Forming",
+                        "name": "GRID_FORMING",
+                        "notes": "",
+                        "value": 1
+                    },
+                    {
+                        "desc": "The PV output is clipped.",
+                        "label": "PV Output Clipped",
+                        "name": "PV_CLIPPED",
+                        "notes": "",
+                        "value": 2
+                    }
+                ],
+                "type": "bitfield32"
+            },
+            {
                 "comments": [
                     "Summary"
                 ],
@@ -338,7 +354,7 @@
                 "name": "LLV",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -347,7 +363,7 @@
                 "name": "LNV",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -505,7 +521,7 @@
                 "name": "VL1L2",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -514,7 +530,7 @@
                 "name": "VL1",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -606,7 +622,7 @@
                 "name": "VL2L3",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -615,7 +631,7 @@
                 "name": "VL2",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -707,7 +723,7 @@
                 "name": "VL3L1",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
@@ -716,7 +732,7 @@
                 "name": "VL3",
                 "notes": "",
                 "sf": "V_SF",
-                "type": "int16",
+                "type": "uint16",
                 "units": "V"
             },
             {
