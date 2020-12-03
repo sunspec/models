@@ -113,6 +113,14 @@
                 "units": "Secs"
             },
             {
+                "desc": "Enter service delay time remaining in seconds.",
+                "label": "Enter Service Delay Remaining",
+                "name": "ESDlyRemTms",
+                "notes": "",
+                "type": "uint32",
+                "units": "Secs"
+            },
+            {
                 "desc": "Voltage scale factor.",
                 "label": "Voltage Scale Factor",
                 "name": "V_SF",
