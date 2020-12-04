@@ -30,6 +30,7 @@
                 ],
                 "desc": "AC wiring type.",
                 "label": "AC Wiring Type",
+                "mandatory": "M",
                 "name": "ACType",
                 "notes": "",
                 "symbols": [
