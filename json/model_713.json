@@ -27,6 +27,13 @@
                 "units": "WH"
             },
             {
+                "desc": "Energy available of the DER storage (WHAvail = WHRtg * SoC * SoH)",
+                "label": "Energy Available",
+                "name": "WHAvail",
+                "type": "uint16",
+                "units": "WH"
+            },
+            {
                 "desc": "State of charge of the DER storage.",
                 "label": "State of Charge",
                 "name": "SoC",
@@ -41,11 +48,30 @@
                 "units": "Pct"
             },
             {
-                "desc": "Energy available of the DER storage (WHAvail = WHRtg * SoC * SoH)",
-                "label": "Energy Available",
-                "name": "WHAvail",
-                "type": "uint16",
-                "units": "WH"
+                "desc": "Storage status.",
+                "label": "Status",
+                "name": "Sta",
+                "symbols": [
+                    {
+                        "desc": "No warnings or errors pending.",
+                        "label": "OK",
+                        "name": "OK",
+                        "value": 1
+                    },
+                    {
+                        "desc": "One or more warnings pending.",
+                        "label": "Warning",
+                        "name": "WARNING",
+                        "value": 2
+                    },
+                    {
+                        "desc": "One or more errors pending.",
+                        "label": "Error",
+                        "name": "ERROR",
+                        "value": 3
+                    }
+                ],
+                "type": "enum16"
             },
             {
                 "desc": "Scale factor for energy capacity.",
