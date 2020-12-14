@@ -126,7 +126,7 @@
                     {
                         "desc": "DC port status.",
                         "label": "DC Port Status",
-                        "name": "DCSt",
+                        "name": "DCSta",
                         "notes": "",
                         "symbols": [
                             {
