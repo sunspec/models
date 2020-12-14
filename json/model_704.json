@@ -790,6 +790,30 @@
                 "units": "%Max/Sec"
             },
             {
+                "access": "RW",
+                "desc": "Anti-islanding enable.",
+                "label": "Anti-Islanding Enable",
+                "name": "AntiIslEna",
+                "notes": "",
+                "symbols": [
+                    {
+                        "desc": "Anti-islanding is disabled.",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "notes": "",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Anti-islanding is enabled.",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "notes": "",
+                        "value": 1
+                    }
+                ],
+                "type": "enum16"
+            },
+            {
                 "comments": [
                     "Scale Factors"
                 ],
