@@ -264,7 +264,7 @@
                     },
                     {
                         "desc": "Manufacturer alarm, see ManAlrmInfo field for more information.",
-                        "label": "Manfacturer Alarm",
+                        "label": "Manufacturer Alarm",
                         "name": "MANUFACTURER_ALRM",
                         "notes": "",
                         "value": 16
