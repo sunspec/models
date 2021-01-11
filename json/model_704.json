@@ -195,7 +195,8 @@
                 "name": "L",
                 "notes": "",
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "value": 65
             },
             {
                 "access": "RW",

@@ -22,7 +22,8 @@
                 "name": "L",
                 "notes": "",
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "value": 153
             },
             {
                 "comments": [

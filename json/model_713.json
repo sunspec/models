@@ -17,7 +17,8 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
-                "type": "uint16"
+                "type": "uint16",
+                "value": 6
             },
             {
                 "desc": "Energy rating of the DER storage.",

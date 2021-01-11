@@ -17,7 +17,8 @@
                 "label": "DER Control Model Length",
                 "mandatory": "M",
                 "name": "L",
-                "type": "uint16"
+                "type": "uint16",
+                "value": 5
             },
             {
                 "comments": [
