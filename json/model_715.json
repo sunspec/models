@@ -71,22 +71,22 @@
                     {
                         "label": "Stop the DER",
                         "name": "STOP",
-                        "value": 1
+                        "value": 0
                     },
                     {
                         "label": "Start the DER",
                         "name": "START",
-                        "value": 2
+                        "value": 1
                     },
                     {
                         "label": "Enter Standby Mode",
                         "name": "ENTER_STANDBY",
-                        "value": 3
+                        "value": 2
                     },
                     {
                         "label": "Exit Standby Mode",
                         "name": "EXIT_STANDBY",
-                        "value": 4
+                        "value": 3
                     }
                 ],
                 "type": "enum16"

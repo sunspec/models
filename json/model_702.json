@@ -204,12 +204,12 @@
                     {
                         "name": "CAT_A",
                         "notes": "",
-                        "value": 1
+                        "value": 0
                     },
                     {
                         "name": "CAT_B",
                         "notes": "",
-                        "value": 2
+                        "value": 1
                     }
                 ],
                 "type": "enum16"
@@ -223,17 +223,17 @@
                     {
                         "name": "CAT_1",
                         "notes": "",
-                        "value": 1
+                        "value": 0
                     },
                     {
                         "name": "CAT_2",
                         "notes": "",
-                        "value": 2
+                        "value": 1
                     },
                     {
                         "name": "CAT_3",
                         "notes": "",
-                        "value": 3
+                        "value": 2
                     }
                 ],
                 "type": "enum16"

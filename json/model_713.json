@@ -57,19 +57,19 @@
                         "desc": "No warnings or errors pending.",
                         "label": "OK",
                         "name": "OK",
-                        "value": 1
+                        "value": 0
                     },
                     {
                         "desc": "One or more warnings pending.",
                         "label": "Warning",
                         "name": "WARNING",
-                        "value": 2
+                        "value": 1
                     },
                     {
                         "desc": "One or more errors pending.",
                         "label": "Error",
                         "name": "ERROR",
-                        "value": 3
+                        "value": 2
                     }
                 ],
                 "type": "enum16"

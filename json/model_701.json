@@ -39,19 +39,19 @@
                         "label": "Single Phase",
                         "name": "SINGLE_PHASE",
                         "notes": "",
-                        "value": 1
+                        "value": 0
                     },
                     {
                         "label": "Split Phase",
                         "name": "SPLIT_PHASE",
                         "notes": "",
-                        "value": 2
+                        "value": 1
                     },
                     {
                         "label": "Three Phase",
                         "name": "THREE_PHASE",
                         "notes": "",
-                        "value": 3
+                        "value": 2
                     }
                 ],
                 "type": "enum16"
@@ -69,13 +69,13 @@
                         "label": "Off",
                         "name": "OFF",
                         "notes": "",
-                        "value": 1
+                        "value": 0
                     },
                     {
                         "label": "On",
                         "name": "ON",
                         "notes": "",
-                        "value": 2
+                        "value": 1
                     }
                 ],
                 "type": "enum16"
@@ -92,42 +92,42 @@
                     {
                         "name": "OFF",
                         "notes": "",
-                        "value": 1
+                        "value": 0
                     },
                     {
                         "name": "SLEEPING",
                         "notes": "",
-                        "value": 2
+                        "value": 1
                     },
                     {
                         "name": "STARTING",
                         "notes": "",
-                        "value": 3
+                        "value": 2
                     },
                     {
                         "name": "MPPT",
                         "notes": "",
-                        "value": 4
+                        "value": 3
                     },
                     {
                         "name": "THROTTLED",
                         "notes": "",
-                        "value": 5
+                        "value": 4
                     },
                     {
                         "name": "SHUTTING_DOWN",
                         "notes": "",
-                        "value": 6
+                        "value": 5
                     },
                     {
                         "name": "FAULT",
                         "notes": "",
-                        "value": 7
+                        "value": 6
                     },
                     {
                         "name": "STANDBY",
                         "notes": "",
-                        "value": 8
+                        "value": 7
                     }
                 ],
                 "type": "enum16"
@@ -146,14 +146,14 @@
                         "label": "Disconnected",
                         "name": "DISCONNECTED",
                         "notes": "",
-                        "value": 1
+                        "value": 0
                     },
                     {
                         "desc": "Connected to the grid.",
                         "label": "Connected",
                         "name": "CONNECTED",
                         "notes": "",
-                        "value": 2
+                        "value": 1
                     }
                 ],
                 "type": "enum16"

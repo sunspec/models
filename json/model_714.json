@@ -20,43 +20,43 @@
                                 "label": "Photovoltaic",
                                 "name": "PV",
                                 "notes": "",
-                                "value": 1
+                                "value": 0
                             },
                             {
                                 "label": "Energy Storage System",
                                 "name": "ESS",
                                 "notes": "",
-                                "value": 2
+                                "value": 1
                             },
                             {
                                 "label": "Electric Vehicle",
                                 "name": "EV",
                                 "notes": "",
-                                "value": 3
+                                "value": 2
                             },
                             {
                                 "label": "Generic Injecting",
                                 "name": "INJ",
                                 "notes": "",
-                                "value": 4
+                                "value": 3
                             },
                             {
                                 "label": "Generic Absorbing",
                                 "name": "ABS",
                                 "notes": "",
-                                "value": 5
+                                "value": 4
                             },
                             {
                                 "label": "Generic Bidirectional",
                                 "name": "BIDIR",
                                 "notes": "",
-                                "value": 6
+                                "value": 5
                             },
                             {
                                 "label": "DC to DC",
                                 "name": "DC_DC",
                                 "notes": "",
-                                "value": 7
+                                "value": 6
                             }
                         ],
                         "type": "enum16"
@@ -133,25 +133,25 @@
                                 "label": "Off",
                                 "name": "OFF",
                                 "notes": "",
-                                "value": 1
+                                "value": 0
                             },
                             {
                                 "label": "On",
                                 "name": "ON",
                                 "notes": "",
-                                "value": 2
+                                "value": 1
                             },
                             {
                                 "label": "Warning",
                                 "name": "WARNING",
                                 "notes": "",
-                                "value": 3
+                                "value": 2
                             },
                             {
                                 "label": "Error",
                                 "name": "ERROR",
                                 "notes": "",
-                                "value": 4
+                                "value": 3
                             }
                         ],
                         "type": "enum16"
@@ -173,12 +173,6 @@
                                 "name": "INPUT_OVER_VOLTAGE",
                                 "notes": "",
                                 "value": 1
-                            },
-                            {
-                                "label": "Reserved",
-                                "name": "RESERVED",
-                                "notes": "",
-                                "value": 19
                             },
                             {
                                 "label": "DC Disconnect",
@@ -227,6 +221,12 @@
                                 "name": "ARC_DETECTION",
                                 "notes": "",
                                 "value": 15
+                            },
+                            {
+                                "label": "Reserved",
+                                "name": "RESERVED",
+                                "notes": "",
+                                "value": 19
                             },
                             {
                                 "label": "Test Failed",

@@ -68,25 +68,25 @@
                                 "label": "Percent Max Watts",
                                 "name": "W_MAX_PCT",
                                 "notes": "",
-                                "value": 1
+                                "value": 0
                             },
                             {
                                 "label": "Percent Max Vars",
                                 "name": "VAR_MAX_PCT",
                                 "notes": "",
-                                "value": 2
+                                "value": 1
                             },
                             {
                                 "label": "Percent Available Vars",
                                 "name": "VAR_AVAL_PCT",
                                 "notes": "",
-                                "value": 3
+                                "value": 2
                             },
                             {
                                 "label": "Percent Max Apparent Power",
                                 "name": "VA_MAX_PCT",
                                 "notes": "",
-                                "value": 4
+                                "value": 3
                             }
                         ],
                         "type": "enum16"
@@ -101,35 +101,35 @@
                                 "label": "Active Power Priority",
                                 "name": "ACTIVE",
                                 "notes": "",
-                                "value": 1
+                                "value": 0
                             },
                             {
                                 "desc": "Reactive power priority.",
                                 "label": "Reactive Power Priority",
                                 "name": "REACTIVE",
                                 "notes": "",
-                                "value": 2
+                                "value": 1
                             },
                             {
                                 "desc": "IEEE 1547-2018 power priority mode.",
                                 "label": "IEEE 1547 Power Priority",
                                 "name": "IEEE_1547",
                                 "notes": "",
-                                "value": 3
+                                "value": 2
                             },
                             {
                                 "desc": "Track PF setting derived from current active and reactive power settings.",
                                 "label": "PF Power Priority",
                                 "name": "PF",
                                 "notes": "",
-                                "value": 4
+                                "value": 3
                             },
                             {
                                 "desc": "Power priority is vendor specific mode.",
                                 "label": "Vendor Power Priority",
                                 "name": "VENDOR",
                                 "notes": "",
-                                "value": 5
+                                "value": 4
                             }
                         ],
                         "type": "enum16"
