@@ -46,14 +46,14 @@
                 "desc": "Value is incremented every second by the DER with periodic resets to zero.",
                 "label": "DER Heartbeat",
                 "name": "DERHb",
-                "type": "uint16"
+                "type": "uint32"
             },
             {
                 "access": "RW",
                 "desc": "Value is incremented every second by the controller with periodic resets to zero.",
                 "label": "Controller Heartbeat",
                 "name": "ControllerHb",
-                "type": "uint16"
+                "type": "uint32"
             },
             {
                 "access": "RW",
