@@ -195,7 +195,8 @@
                 "name": "L",
                 "notes": "",
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "value": 65
             },
             {
                 "access": "RW",
@@ -460,14 +461,14 @@
                         "label": "Active Power As Max Percent",
                         "name": "W_MAX_PCT",
                         "notes": "",
-                        "value": 1
+                        "value": 0
                     },
                     {
                         "desc": "Active power setting is in watts.",
                         "label": "Active Power As Watts",
                         "name": "WATTS",
                         "notes": "",
-                        "value": 2
+                        "value": 1
                     }
                 ],
                 "type": "enum16"
@@ -592,28 +593,28 @@
                         "label": "Reactive Power As Watt Max Pct",
                         "name": "W_MAX_PCT",
                         "notes": "",
-                        "value": 1
+                        "value": 0
                     },
                     {
                         "desc": "Reactive power setting is percent of maximum reactive power.",
                         "label": "Reactive Power As Var Max Pct",
                         "name": "VAR_MAX_PCT",
                         "notes": "",
-                        "value": 2
+                        "value": 1
                     },
                     {
                         "desc": "Reactive power setting is percent of available reactive  power.",
                         "label": "Reactive Power As Var Avail Pct",
                         "name": "VAR_AVAIL_PCT",
                         "notes": "",
-                        "value": 3
+                        "value": 2
                     },
                     {
                         "desc": "Reactive power is in vars.",
                         "label": "Reactive Power As Vars",
                         "name": "VARS",
                         "notes": "",
-                        "value": 4
+                        "value": 3
                     }
                 ],
                 "type": "enum16"
@@ -630,35 +631,35 @@
                         "label": "Active Power Priority",
                         "name": "ACTIVE",
                         "notes": "",
-                        "value": 1
+                        "value": 0
                     },
                     {
                         "desc": "Reactive power priority.",
                         "label": "Reactive Power Priority",
                         "name": "REACTIVE",
                         "notes": "",
-                        "value": 2
+                        "value": 1
                     },
                     {
                         "desc": "IEEE 1547-2018 power priority mode.",
                         "label": "IEEE 1547 Power Priority",
                         "name": "IEEE_1547",
                         "notes": "",
-                        "value": 3
+                        "value": 2
                     },
                     {
                         "desc": "Track PF setting derived from current active and reactive power settings.",
                         "label": "PF Power Priority",
                         "name": "PF",
                         "notes": "",
-                        "value": 4
+                        "value": 3
                     },
                     {
                         "desc": "Power priority is vendor specific mode.",
                         "label": "Vendor Power Priority",
                         "name": "VENDOR",
                         "notes": "",
-                        "value": 5
+                        "value": 4
                     }
                 ],
                 "type": "enum16"
@@ -768,14 +769,14 @@
                         "label": "Max Current Ramp",
                         "name": "A_MAX",
                         "notes": "",
-                        "value": 1
+                        "value": 0
                     },
                     {
                         "desc": "Ramp based on percent of max active power per second.",
                         "label": "Max Active Power Ramp",
                         "name": "W_MAX",
                         "notes": "",
-                        "value": 2
+                        "value": 1
                     }
                 ],
                 "type": "enum16"

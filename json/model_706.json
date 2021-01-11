@@ -67,12 +67,12 @@
                             {
                                 "name": "W_MAX_PCT",
                                 "notes": "",
-                                "value": 1
+                                "value": 0
                             },
                             {
                                 "name": "W_AVAL_PCT",
                                 "notes": "",
-                                "value": 2
+                                "value": 1
                             }
                         ],
                         "type": "enum16"

@@ -68,25 +68,25 @@
                                 "label": "Percent Max Watts",
                                 "name": "W_MAX_PCT",
                                 "notes": "",
-                                "value": 1
+                                "value": 0
                             },
                             {
                                 "label": "Percent Max Vars",
                                 "name": "VAR_MAX_PCT",
                                 "notes": "",
-                                "value": 2
+                                "value": 1
                             },
                             {
                                 "label": "Percent Available Vars",
                                 "name": "VAR_AVAL_PCT",
                                 "notes": "",
-                                "value": 3
+                                "value": 2
                             },
                             {
                                 "label": "Percent Max Apparent Power",
                                 "name": "VA_MAX_PCT",
                                 "notes": "",
-                                "value": 4
+                                "value": 3
                             }
                         ],
                         "type": "enum16"
@@ -99,12 +99,12 @@
                             {
                                 "name": "ACTIVE",
                                 "notes": "",
-                                "value": 1
+                                "value": 0
                             },
                             {
                                 "name": "REACTIVE",
                                 "notes": "",
-                                "value": 2
+                                "value": 1
                             }
                         ],
                         "type": "enum16"
