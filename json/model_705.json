@@ -140,14 +140,18 @@
                         "label": "Vref Adjustment",
                         "name": "VRef",
                         "notes": "",
-                        "type": "uint16"
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "VRefPct"
                     },
                     {
                         "desc": "Autonomous vref value as a percentage of nominal voltage.",
                         "label": "Current Autonomous Vref",
                         "name": "VRefAuto",
                         "notes": "",
-                        "type": "uint16"
+                        "sf": "V_SF",
+                        "type": "uint16",
+                        "units": "VRefPct"
                     },
                     {
                         "access": "RW",
