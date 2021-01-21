@@ -27,6 +27,7 @@
                 "mandatory": "M",
                 "name": "Mn",
                 "size": 16,
+                "static": "S",
                 "type": "string"
             },
             {
@@ -35,6 +36,7 @@
                 "mandatory": "M",
                 "name": "Md",
                 "size": 16,
+                "static": "S",
                 "type": "string"
             },
             {
@@ -42,6 +44,7 @@
                 "label": "Options",
                 "name": "Opt",
                 "size": 8,
+                "static": "S",
                 "type": "string"
             },
             {
@@ -49,6 +52,7 @@
                 "label": "Version",
                 "name": "Vr",
                 "size": 8,
+                "static": "S",
                 "type": "string"
             },
             {
@@ -57,6 +61,7 @@
                 "mandatory": "M",
                 "name": "SN",
                 "size": 16,
+                "static": "S",
                 "type": "string"
             },
             {
@@ -69,6 +74,7 @@
             {
                 "desc": "Force even alignment",
                 "name": "Pad",
+                "static": "S",
                 "type": "pad"
             }
         ],
