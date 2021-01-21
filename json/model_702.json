@@ -34,6 +34,7 @@
                 "name": "WMaxRtg",
                 "notes": "",
                 "sf": "W_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "W"
             },
@@ -43,6 +44,7 @@
                 "name": "WOvrExtRtg",
                 "notes": "",
                 "sf": "W_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "W"
             },
@@ -52,6 +54,7 @@
                 "name": "WOvrExtRtgPF",
                 "notes": "",
                 "sf": "PF_SF",
+                "static": "S",
                 "type": "uint16"
             },
             {
@@ -60,6 +63,7 @@
                 "name": "WUndExtRtg",
                 "notes": "",
                 "sf": "W_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "W"
             },
@@ -69,6 +73,7 @@
                 "name": "WUndExtRtgPF",
                 "notes": "",
                 "sf": "PF_SF",
+                "static": "S",
                 "type": "uint16"
             },
             {
@@ -77,6 +82,7 @@
                 "name": "VAMaxRtg",
                 "notes": "",
                 "sf": "VA_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "VA"
             },
@@ -86,6 +92,7 @@
                 "name": "VarMaxInjRtg",
                 "notes": "",
                 "sf": "Var_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "Var"
             },
@@ -95,6 +102,7 @@
                 "name": "VarMaxAbsRtg",
                 "notes": "",
                 "sf": "Var_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "Var"
             },
@@ -104,6 +112,7 @@
                 "name": "WChaRteMaxRtg",
                 "notes": "",
                 "sf": "W_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "W"
             },
@@ -113,6 +122,7 @@
                 "name": "WDisChaRteMaxRtg",
                 "notes": "",
                 "sf": "W_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "W"
             },
@@ -122,6 +132,7 @@
                 "name": "VAChaRteMaxRtg",
                 "notes": "",
                 "sf": "VA_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "VA"
             },
@@ -131,6 +142,7 @@
                 "name": "VADisChaRteMaxRtg",
                 "notes": "",
                 "sf": "VA_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "VA"
             },
@@ -140,6 +152,7 @@
                 "name": "VNomRtg",
                 "notes": "",
                 "sf": "V_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "V"
             },
@@ -149,6 +162,7 @@
                 "name": "VMaxRtg",
                 "notes": "",
                 "sf": "V_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "V"
             },
@@ -158,6 +172,7 @@
                 "name": "VMinRtg",
                 "notes": "",
                 "sf": "V_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "V"
             },
@@ -167,6 +182,7 @@
                 "name": "AMaxRtg",
                 "notes": "",
                 "sf": "A_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "A"
             },
@@ -176,6 +192,7 @@
                 "name": "PFOvrExtRtg",
                 "notes": "",
                 "sf": "PF_SF",
+                "static": "S",
                 "type": "uint16"
             },
             {
@@ -184,6 +201,7 @@
                 "name": "PFUndExtRtg",
                 "notes": "",
                 "sf": "PF_SF",
+                "static": "S",
                 "type": "uint16"
             },
             {
@@ -192,6 +210,7 @@
                 "name": "ReactSusceptRtg",
                 "notes": "",
                 "sf": "S_SF",
+                "static": "S",
                 "type": "uint16",
                 "units": "S"
             },
@@ -200,6 +219,7 @@
                 "label": "Normal Operating Category",
                 "name": "NorOpCatRtg",
                 "notes": "",
+                "static": "S",
                 "symbols": [
                     {
                         "name": "CAT_A",
@@ -219,6 +239,7 @@
                 "label": "Abnormal Operating Category",
                 "name": "AbnOpCatRtg",
                 "notes": "",
+                "static": "S",
                 "symbols": [
                     {
                         "name": "CAT_1",
@@ -243,6 +264,7 @@
                 "label": "Supported Control Modes",
                 "name": "CtrlModes",
                 "notes": "",
+                "static": "S",
                 "symbols": [
                     {
                         "name": "MAX_W",
@@ -322,6 +344,7 @@
                 "label": "Intentional Island Categories",
                 "name": "IntIslandCatRtg",
                 "notes": "",
+                "static": "S",
                 "symbols": [
                     {
                         "name": "UNCATEGORIZED",
