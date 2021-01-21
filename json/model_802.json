@@ -91,7 +91,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Setpoint for maximum reserve for storage as a percentage of the nominal maximum storage.",
+                "desc": "Setpoint for minimum reserve for storage as a percentage of the nominal maximum storage.",
                 "label": "Min Reserve Percent",
                 "name": "SoCRsvMin",
                 "sf": "SoC_SF",

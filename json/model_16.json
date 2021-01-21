@@ -62,7 +62,7 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "bitfield16"
             },
             {
                 "access": "RW",
