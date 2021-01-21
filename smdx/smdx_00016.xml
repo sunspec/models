@@ -7,7 +7,7 @@
         <symbol id="STATIC">0</symbol>
         <symbol id="DHCP">1</symbol>
       </point>
-      <point id="Ctl" offset="5" type="enum16" mandatory="true" access="rw" >
+      <point id="Ctl" offset="5" type="bitfield16" mandatory="true" access="rw" >
         <symbol id="ENABLE_DNS">0</symbol>
         <symbol id="ENABLE_NTP">1</symbol>
       </point>
