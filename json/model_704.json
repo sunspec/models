@@ -229,7 +229,7 @@
                 "access": "RW",
                 "desc": "Power factor reversion timer when injecting active power enable.",
                 "label": "Power Factor Reversion Enable (W Inj)",
-                "name": "PFWInjRvrtEna",
+                "name": "PFWInjEnaRvrt",
                 "notes": "",
                 "symbols": [
                     {
@@ -297,7 +297,7 @@
                 "access": "RW",
                 "desc": "Power factor reversion timer when absorbing active power enable.",
                 "label": "Power Factor Reversion Enable (W Abs)",
-                "name": "PFWAbsRvrtEna",
+                "name": "PFWAbsEnaRvrt",
                 "notes": "",
                 "symbols": [
                     {
@@ -367,7 +367,7 @@
                 "label": "Limit Max Power Pct Setpoint",
                 "name": "WMaxLimPct",
                 "notes": "",
-                "sf": "WMaxLim_SF",
+                "sf": "WMaxLimPct_SF",
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -377,7 +377,7 @@
                 "label": "Reversion Limit Max Power Pct",
                 "name": "WMaxLimPctRvrt",
                 "notes": "",
-                "sf": "WMaxLim_SF",
+                "sf": "WMaxLimPct_SF",
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -385,7 +385,7 @@
                 "access": "RW",
                 "desc": "Reversion limit maximum active power percent value enable.",
                 "label": "Reversion Limit Max Power Pct Enable",
-                "name": "WMaxLimPctRvrtEna",
+                "name": "WMaxLimPctEnaRvrt",
                 "notes": "",
                 "symbols": [
                     {
@@ -517,7 +517,7 @@
                 "access": "RW",
                 "desc": "Reversion active power function enable.",
                 "label": "Reversion Active Power Enable",
-                "name": "WSetRvrtEna",
+                "name": "WSetEnaRvrt",
                 "notes": "",
                 "symbols": [
                     {
@@ -708,7 +708,7 @@
                 "access": "RW",
                 "desc": "Reversion reactive power function enable.",
                 "label": "Reversion Reactive Power Enable",
-                "name": "VarSetRvrtEna",
+                "name": "VarSetEnaRvrt",
                 "notes": "",
                 "symbols": [
                     {
@@ -828,7 +828,7 @@
             {
                 "desc": "Limit maximum power scale factor.",
                 "label": "Limit Max Power Scale Factor",
-                "name": "WMaxLim_SF",
+                "name": "WMaxLimPct_SF",
                 "notes": "",
                 "static": "S",
                 "type": "sunssf"
