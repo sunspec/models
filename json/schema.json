@@ -15,7 +15,7 @@
         "label": {
             "type": "string"
         },
-        "description": {
+        "desc": {
             "type": "string"
         },
         "detail": {
@@ -62,7 +62,7 @@
                 "label": {
                     "type": "string"
                 },
-                "description": {
+                "desc": {
                     "type": "string"
                 },
                 "detail": {
@@ -127,7 +127,7 @@
                 "label": {
                     "type": "string"
                 },
-                "description": {
+                "desc": {
                     "type": "string"
                 },
                 "detail": {
@@ -155,7 +155,7 @@
                 "label": {
                     "type": "string"
                 },
-                "description": {
+                "desc": {
                     "type": "string"
                 },
                 "detail": {
