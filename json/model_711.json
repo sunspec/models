@@ -68,8 +68,10 @@
                     {
                         "desc": "Control read-write access.",
                         "label": "Control Access",
+                        "mandatory": "M",
                         "name": "ReadOnly",
                         "notes": "",
+                        "static": "S",
                         "symbols": [
                             {
                                 "desc": "Control has read-write access.",

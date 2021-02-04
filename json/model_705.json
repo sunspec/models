@@ -198,8 +198,10 @@
                     {
                         "desc": "Curve read-write access.",
                         "label": "Curve Access",
+                        "mandatory": "M",
                         "name": "ReadOnly",
                         "notes": "",
+                        "static": "S",
                         "symbols": [
                             {
                                 "desc": "Curve has read-write access.",
