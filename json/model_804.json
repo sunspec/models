@@ -10,6 +10,7 @@
                         "label": "Module Cell Count",
                         "mandatory": "M",
                         "name": "ModNCell",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -17,6 +18,7 @@
                         "label": "Module SoC",
                         "name": "ModSoC",
                         "sf": "SoC_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "%"
                     },
@@ -25,6 +27,7 @@
                         "label": "Module SoH",
                         "name": "ModSoH",
                         "sf": "SoH_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "%"
                     },
@@ -34,6 +37,7 @@
                         "mandatory": "M",
                         "name": "ModCellVMax",
                         "sf": "CellV_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "V"
                     },
@@ -41,6 +45,7 @@
                         "desc": "Cell with maximum voltage.",
                         "label": "Max Cell Voltage Cell",
                         "name": "ModCellVMaxCell",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -49,6 +54,7 @@
                         "mandatory": "M",
                         "name": "ModCellVMin",
                         "sf": "CellV_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "V"
                     },
@@ -57,6 +63,7 @@
                         "label": "Min Cell Voltage Cell",
                         "name": "ModCellVMinCell",
                         "sf": "CellV_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "V"
                     },
@@ -66,6 +73,7 @@
                         "mandatory": "M",
                         "name": "ModCellVAvg",
                         "sf": "CellV_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "V"
                     },
@@ -75,6 +83,7 @@
                         "mandatory": "M",
                         "name": "ModCellTmpMax",
                         "sf": "ModTmp_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "C"
                     },
@@ -82,6 +91,7 @@
                         "desc": "Cell with maximum temperature.",
                         "label": "Max Cell Temperature Cell",
                         "name": "ModCellTmpMaxCell",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -90,6 +100,7 @@
                         "mandatory": "M",
                         "name": "ModCellTmpMin",
                         "sf": "ModTmp_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "C"
                     },
@@ -97,6 +108,7 @@
                         "desc": "Cell with minimum temperature.",
                         "label": "Min Cell Temperature Cell",
                         "name": "ModCellTmpMinCell",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -105,6 +117,7 @@
                         "mandatory": "M",
                         "name": "ModCellTmpAvg",
                         "sf": "ModTmp_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "C"
                     },
@@ -113,6 +126,7 @@
                         "label": "Pad",
                         "mandatory": "M",
                         "name": "Pad5",
+                        "size": 1,
                         "type": "pad"
                     },
                     {
@@ -120,6 +134,7 @@
                         "label": "Pad",
                         "mandatory": "M",
                         "name": "Pad6",
+                        "size": 1,
                         "type": "pad"
                     },
                     {
@@ -127,6 +142,7 @@
                         "label": "Pad",
                         "mandatory": "M",
                         "name": "Pad7",
+                        "size": 1,
                         "type": "pad"
                     }
                 ],
@@ -141,6 +157,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 804
@@ -150,6 +167,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -158,6 +176,7 @@
                 "label": "String Index",
                 "mandatory": "M",
                 "name": "Idx",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -165,6 +184,7 @@
                 "label": "Module Count",
                 "mandatory": "M",
                 "name": "NMod",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -172,6 +192,7 @@
                 "label": "String Status",
                 "mandatory": "M",
                 "name": "St",
+                "size": 2,
                 "symbols": [
                     {
                         "name": "STRING_ENABLED",
@@ -187,6 +208,7 @@
             {
                 "label": "Connection Failure Reason",
                 "name": "ConFail",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "NO_FAILURE",
@@ -231,6 +253,7 @@
                 "desc": "Number of cells currently being balanced in the string.",
                 "label": "String Cell Balancing Count",
                 "name": "NCellBal",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -239,6 +262,7 @@
                 "mandatory": "M",
                 "name": "SoC",
                 "sf": "SoC_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%"
             },
@@ -247,6 +271,7 @@
                 "label": "String Depth of Discharge",
                 "name": "DoD",
                 "sf": "DoD_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%"
             },
@@ -254,6 +279,7 @@
                 "desc": "Number of discharge cycles executed upon the string.",
                 "label": "String Cycle Count",
                 "name": "NCyc",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -261,6 +287,7 @@
                 "label": "String State of Health",
                 "name": "SoH",
                 "sf": "SoH_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%"
             },
@@ -270,6 +297,7 @@
                 "mandatory": "M",
                 "name": "A",
                 "sf": "A_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "A"
             },
@@ -278,6 +306,7 @@
                 "label": "String Voltage",
                 "name": "V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -287,6 +316,7 @@
                 "mandatory": "M",
                 "name": "CellVMax",
                 "sf": "CellV_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -294,6 +324,7 @@
                 "desc": "Module containing the cell with maximum cell voltage.",
                 "label": "Max Cell Voltage Module",
                 "name": "CellVMaxMod",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -302,6 +333,7 @@
                 "mandatory": "M",
                 "name": "CellVMin",
                 "sf": "CellV_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -309,6 +341,7 @@
                 "desc": "Module containing the cell with minimum cell voltage.",
                 "label": "Min Cell Voltage Module",
                 "name": "CellVMinMod",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -317,6 +350,7 @@
                 "mandatory": "M",
                 "name": "CellVAvg",
                 "sf": "CellV_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -326,6 +360,7 @@
                 "mandatory": "M",
                 "name": "ModTmpMax",
                 "sf": "ModTmp_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
@@ -334,6 +369,7 @@
                 "label": "Max Module Temperature Module",
                 "mandatory": "M",
                 "name": "ModTmpMaxMod",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -342,6 +378,7 @@
                 "mandatory": "M",
                 "name": "ModTmpMin",
                 "sf": "ModTmp_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
@@ -350,6 +387,7 @@
                 "label": "Min Module Temperature Module",
                 "mandatory": "M",
                 "name": "ModTmpMinMod",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -358,6 +396,7 @@
                 "mandatory": "M",
                 "name": "ModTmpAvg",
                 "sf": "ModTmp_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
@@ -366,12 +405,14 @@
                 "label": "Pad",
                 "mandatory": "M",
                 "name": "Pad1",
+                "size": 1,
                 "type": "pad"
             },
             {
                 "desc": "Status of the contactor(s) for the string.",
                 "label": "Contactor Status",
                 "name": "ConSt",
+                "size": 2,
                 "symbols": [
                     {
                         "name": "CONTACTOR_0",
@@ -505,6 +546,7 @@
                 "label": "String Event 1",
                 "mandatory": "M",
                 "name": "Evt1",
+                "size": 2,
                 "symbols": [
                     {
                         "name": "COMMUNICATION_ERROR",
@@ -633,18 +675,21 @@
                 "desc": "Alarms, warnings and status values.  Bit flags.",
                 "label": "String Event 2",
                 "name": "Evt2",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
                 "desc": "Vendor defined events.",
                 "label": "Vendor Event Bitfield 1",
                 "name": "EvtVnd1",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
                 "desc": "Vendor defined events.",
                 "label": "Vendor Event Bitfield 2",
                 "name": "EvtVnd2",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
@@ -652,6 +697,7 @@
                 "desc": "Enables and disables the string.  Should reset to 0 upon completion.",
                 "label": "Enable/Disable String",
                 "name": "SetEna",
+                "size": 1,
                 "type": "enum16"
             },
             {
@@ -659,6 +705,7 @@
                 "desc": "Connects and disconnects the string.",
                 "label": "Connect/Disconnect String",
                 "name": "SetCon",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "CONNECT_STRING",
@@ -675,39 +722,46 @@
                 "desc": "Scale factor for string state of charge.",
                 "mandatory": "M",
                 "name": "SoC_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for string state of health.",
                 "name": "SoH_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for string depth of discharge.",
                 "name": "DoD_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for string current.",
                 "mandatory": "M",
                 "name": "A_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for string voltage.",
                 "name": "V_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for cell voltage.",
                 "mandatory": "M",
                 "name": "CellV_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for module temperature.",
                 "mandatory": "M",
                 "name": "ModTmp_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -715,6 +769,7 @@
                 "label": "Pad",
                 "mandatory": "M",
                 "name": "Pad2",
+                "size": 1,
                 "type": "pad"
             },
             {
@@ -722,6 +777,7 @@
                 "label": "Pad",
                 "mandatory": "M",
                 "name": "Pad3",
+                "size": 1,
                 "type": "pad"
             },
             {
@@ -729,6 +785,7 @@
                 "label": "Pad",
                 "mandatory": "M",
                 "name": "Pad4",
+                "size": 1,
                 "type": "pad"
             }
         ],

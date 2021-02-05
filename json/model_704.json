@@ -18,6 +18,7 @@
                         "name": "PF",
                         "notes": "",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -26,6 +27,7 @@
                         "label": "Power Factor Excitation (W Inj)",
                         "name": "Ext",
                         "notes": "",
+                        "size": 1,
                         "symbols": [
                             {
                                 "desc": "Power factor over-excited excitation.",
@@ -60,6 +62,7 @@
                         "name": "PF",
                         "notes": "",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -68,6 +71,7 @@
                         "label": "Reversion PF Excitation (W Inj)",
                         "name": "Ext",
                         "notes": "",
+                        "size": 1,
                         "symbols": [
                             {
                                 "desc": "Power factor over-excited excitation.",
@@ -102,6 +106,7 @@
                         "name": "PF",
                         "notes": "",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -110,6 +115,7 @@
                         "label": "Power Factor Excitation (W Abs)",
                         "name": "Ext",
                         "notes": "",
+                        "size": 1,
                         "symbols": [
                             {
                                 "desc": "Power factor over-excited excitation.",
@@ -144,6 +150,7 @@
                         "name": "PF",
                         "notes": "",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -152,6 +159,7 @@
                         "label": "Reversion PF Excitation (W Abs)",
                         "name": "Ext",
                         "notes": "",
+                        "size": 1,
                         "symbols": [
                             {
                                 "desc": "Power factor over-excited excitation.",
@@ -184,6 +192,7 @@
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 704
@@ -194,6 +203,7 @@
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 65
@@ -207,6 +217,7 @@
                 "label": "Power Factor Enable (W Inj) Enable",
                 "name": "PFWInjEna",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -231,6 +242,7 @@
                 "label": "Power Factor Reversion Enable (W Inj)",
                 "name": "PFWInjEnaRvrt",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -255,6 +267,7 @@
                 "label": "PF Reversion Time (W Inj)",
                 "name": "PFWInjRvrtTms",
                 "notes": "",
+                "size": 2,
                 "type": "uint32",
                 "units": "Secs"
             },
@@ -263,6 +276,7 @@
                 "label": "PF Reversion Time Rem (W Inj)",
                 "name": "PFWInjRvrtRem",
                 "notes": "",
+                "size": 2,
                 "type": "uint32",
                 "units": "Secs"
             },
@@ -275,6 +289,7 @@
                 "label": "Power Factor Enable (W Abs) Enable",
                 "name": "PFWAbsEna",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -299,6 +314,7 @@
                 "label": "Power Factor Reversion Enable (W Abs)",
                 "name": "PFWAbsEnaRvrt",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -323,6 +339,7 @@
                 "label": "PF Reversion Time (W Abs)",
                 "name": "PFWAbsRvrtTms",
                 "notes": "",
+                "size": 2,
                 "type": "uint32",
                 "units": "Secs"
             },
@@ -331,6 +348,7 @@
                 "label": "PF Reversion Time Rem (W Abs)",
                 "name": "PFWAbsRvrtRem",
                 "notes": "",
+                "size": 2,
                 "type": "uint32",
                 "units": "Secs"
             },
@@ -343,6 +361,7 @@
                 "label": "Limit Max Power Pct Enable",
                 "name": "WMaxLimPctEna",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -368,6 +387,7 @@
                 "name": "WMaxLimPct",
                 "notes": "",
                 "sf": "WMaxLimPct_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -378,6 +398,7 @@
                 "name": "WMaxLimPctRvrt",
                 "notes": "",
                 "sf": "WMaxLimPct_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -387,6 +408,7 @@
                 "label": "Reversion Limit Max Power Pct Enable",
                 "name": "WMaxLimPctEnaRvrt",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -411,6 +433,7 @@
                 "label": "Limit Max Power Pct Reversion Time",
                 "name": "WMaxLimPctRvrtTms",
                 "notes": "",
+                "size": 2,
                 "type": "uint32",
                 "units": "Secs"
             },
@@ -419,6 +442,7 @@
                 "label": "Limit Max Power Pct Rev Time Rem",
                 "name": "WMaxLimPctRvrtRem",
                 "notes": "",
+                "size": 2,
                 "type": "uint32",
                 "units": "Secs"
             },
@@ -431,6 +455,7 @@
                 "label": "Set Active Power Enable",
                 "name": "WSetEna",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -455,6 +480,7 @@
                 "label": "Set Active Power Mode",
                 "name": "WSetMod",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Active power setting is percentage of maximum active power.",
@@ -480,6 +506,7 @@
                 "name": "WSet",
                 "notes": "",
                 "sf": "WSet_SF",
+                "size": 2,
                 "type": "int32",
                 "units": "W"
             },
@@ -490,6 +517,7 @@
                 "name": "WSetRvrt",
                 "notes": "",
                 "sf": "WSet_SF",
+                "size": 2,
                 "type": "int32",
                 "units": "W"
             },
@@ -500,6 +528,7 @@
                 "name": "WSetPct",
                 "notes": "",
                 "sf": "WSetPct_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "Pct"
             },
@@ -510,6 +539,7 @@
                 "name": "WSetPctRvrt",
                 "notes": "",
                 "sf": "WSetPct_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "Pct"
             },
@@ -519,6 +549,7 @@
                 "label": "Reversion Active Power Enable",
                 "name": "WSetEnaRvrt",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -543,6 +574,7 @@
                 "label": "Active Power Reversion Time",
                 "name": "WSetRvrtTms",
                 "notes": "",
+                "size": 2,
                 "type": "uint32",
                 "units": "Secs"
             },
@@ -551,6 +583,7 @@
                 "label": "Active Power Rev Time Rem",
                 "name": "WSetRvrtRem",
                 "notes": "",
+                "size": 2,
                 "type": "uint32",
                 "units": "Secs"
             },
@@ -563,6 +596,7 @@
                 "label": "Set Reactive Power Enable",
                 "name": "VarSetEna",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -587,6 +621,7 @@
                 "label": "Set Reactive Power Mode",
                 "name": "VarSetMod",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Reactive power setting is percent of maximum active power.",
@@ -625,6 +660,7 @@
                 "label": "Reactive Power Priority",
                 "name": "VarSetPri",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Active power priority.",
@@ -671,6 +707,7 @@
                 "name": "VarSet",
                 "notes": "",
                 "sf": "VarSet_SF",
+                "size": 2,
                 "type": "int32",
                 "units": "Var"
             },
@@ -681,6 +718,7 @@
                 "name": "VarSetRvrt",
                 "notes": "",
                 "sf": "VarSet_SF",
+                "size": 2,
                 "type": "int32",
                 "units": "Var"
             },
@@ -691,6 +729,7 @@
                 "name": "VarSetPct",
                 "notes": "",
                 "sf": "VarSetPct_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "Pct"
             },
@@ -701,6 +740,7 @@
                 "name": "VarSetPctRvrt",
                 "notes": "",
                 "sf": "VarSetPct_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "Pct"
             },
@@ -710,6 +750,7 @@
                 "label": "Reversion Reactive Power Enable",
                 "name": "VarSetEnaRvrt",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
@@ -734,6 +775,7 @@
                 "label": "Reactive Power Reversion Time",
                 "name": "VarSetRvrtTms",
                 "notes": "",
+                "size": 2,
                 "type": "uint32",
                 "units": "Secs"
             },
@@ -742,6 +784,7 @@
                 "label": "Reactive Power Rev Time Rem",
                 "name": "VarSetRvrtRem",
                 "notes": "",
+                "size": 2,
                 "type": "uint32",
                 "units": "Secs"
             },
@@ -754,6 +797,7 @@
                 "label": "Normal Ramp Rate",
                 "name": "WRmp",
                 "notes": "",
+                "size": 1,
                 "type": "uint16",
                 "units": "%Max/Sec"
             },
@@ -763,6 +807,7 @@
                 "label": "Normal Ramp Rate Reference",
                 "name": "WRmpRef",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Ramp based on percent of max current per second.",
@@ -787,6 +832,7 @@
                 "label": "Reactive Power Ramp Rate",
                 "name": "VarRmp",
                 "notes": "",
+                "size": 1,
                 "type": "uint16",
                 "units": "%Max/Sec"
             },
@@ -796,6 +842,7 @@
                 "label": "Anti-Islanding Enable",
                 "name": "AntiIslEna",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Anti-islanding is disabled.",
@@ -822,6 +869,7 @@
                 "label": "Power Factor Scale Factor",
                 "name": "PF_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -830,6 +878,7 @@
                 "label": "Limit Max Power Scale Factor",
                 "name": "WMaxLimPct_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -838,6 +887,7 @@
                 "label": "Active Power Scale Factor",
                 "name": "WSet_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -846,6 +896,7 @@
                 "label": "Active Power Pct Scale Factor",
                 "name": "WSetPct_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -854,6 +905,7 @@
                 "label": "Reactive Power Scale Factor",
                 "name": "VarSet_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -862,6 +914,7 @@
                 "label": "Reactive Power Pct Scale Factor",
                 "name": "VarSetPct_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             }

@@ -12,6 +12,7 @@
                         "label": "DS",
                         "mandatory": "M",
                         "name": "DS",
+                        "size": 1,
                         "type": "uint16"
                     }
                 ],
@@ -26,6 +27,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 7
@@ -35,6 +37,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -43,6 +46,7 @@
                 "label": "Request Sequence",
                 "mandatory": "M",
                 "name": "RqSeq",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -50,6 +54,7 @@
                 "label": "Status",
                 "mandatory": "M",
                 "name": "Sts",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "SUCCESS",
@@ -79,6 +84,7 @@
                 "label": "Timestamp",
                 "mandatory": "M",
                 "name": "Ts",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -86,6 +92,7 @@
                 "label": "Milliseconds",
                 "mandatory": "M",
                 "name": "Ms",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -93,6 +100,7 @@
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -100,6 +108,7 @@
                 "label": "Alarm",
                 "mandatory": "M",
                 "name": "Alm",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "NONE",
@@ -115,6 +124,7 @@
             {
                 "mandatory": "M",
                 "name": "Rsrvd",
+                "size": 1,
                 "type": "pad"
             },
             {
@@ -122,6 +132,7 @@
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "NONE",
@@ -144,6 +155,7 @@
                 "label": "N",
                 "mandatory": "M",
                 "name": "N",
+                "size": 1,
                 "type": "uint16"
             }
         ],

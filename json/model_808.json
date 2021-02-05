@@ -9,6 +9,7 @@
                         "label": "Stack Points To Be Determined",
                         "mandatory": "M",
                         "name": "StackTBD",
+                        "size": 1,
                         "type": "uint16"
                     }
                 ],
@@ -23,6 +24,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 808
@@ -32,6 +34,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -39,6 +42,7 @@
                 "label": "Module Points To Be Determined",
                 "mandatory": "M",
                 "name": "ModuleTBD",
+                "size": 1,
                 "type": "uint16"
             }
         ],

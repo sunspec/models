@@ -8,6 +8,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 802
@@ -17,6 +18,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -26,6 +28,7 @@
                 "mandatory": "M",
                 "name": "AHRtg",
                 "sf": "AHRtg_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Ah"
             },
@@ -35,6 +38,7 @@
                 "mandatory": "M",
                 "name": "WHRtg",
                 "sf": "WHRtg_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Wh"
             },
@@ -44,6 +48,7 @@
                 "mandatory": "M",
                 "name": "WChaRteMax",
                 "sf": "WChaDisChaMax_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "W"
             },
@@ -53,6 +58,7 @@
                 "mandatory": "M",
                 "name": "WDisChaRteMax",
                 "sf": "WChaDisChaMax_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "W"
             },
@@ -61,6 +67,7 @@
                 "label": "Self Discharge Rate",
                 "name": "DisChaRte",
                 "sf": "DisChaRte_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%WHRtg"
             },
@@ -69,6 +76,7 @@
                 "label": "Nameplate Max SoC",
                 "name": "SoCMax",
                 "sf": "SoC_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%WHRtg"
             },
@@ -77,6 +85,7 @@
                 "label": "Nameplate Min SoC",
                 "name": "SoCMin",
                 "sf": "SoC_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%WHRtg"
             },
@@ -86,6 +95,7 @@
                 "label": "Max Reserve Percent",
                 "name": "SocRsvMax",
                 "sf": "SoC_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%WHRtg"
             },
@@ -95,6 +105,7 @@
                 "label": "Min Reserve Percent",
                 "name": "SoCRsvMin",
                 "sf": "SoC_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%WHRtg"
             },
@@ -104,6 +115,7 @@
                 "mandatory": "M",
                 "name": "SoC",
                 "sf": "SoC_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%WHRtg"
             },
@@ -112,6 +124,7 @@
                 "label": "Depth of Discharge",
                 "name": "DoD",
                 "sf": "DoD_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%"
             },
@@ -120,6 +133,7 @@
                 "label": "State of Health",
                 "name": "SoH",
                 "sf": "SoH_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%"
             },
@@ -127,12 +141,14 @@
                 "desc": "Number of cycles executed in the battery.",
                 "label": "Cycle Count",
                 "name": "NCyc",
+                "size": 2,
                 "type": "uint32"
             },
             {
                 "desc": "Charge status of storage device. Enumeration.",
                 "label": "Charge Status",
                 "name": "ChaSt",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "OFF",
@@ -170,6 +186,7 @@
                 "label": "Control Mode",
                 "mandatory": "M",
                 "name": "LocRemCtl",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "REMOTE",
@@ -186,6 +203,7 @@
                 "desc": "Value is incremented every second with periodic resets to zero.",
                 "label": "Battery Heartbeat",
                 "name": "Hb",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -193,6 +211,7 @@
                 "desc": "Value is incremented every second with periodic resets to zero.",
                 "label": "Controller Heartbeat",
                 "name": "CtrlHb",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -201,6 +220,7 @@
                 "label": "Alarm Reset",
                 "mandatory": "M",
                 "name": "AlmRst",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -208,6 +228,7 @@
                 "label": "Battery Type",
                 "mandatory": "M",
                 "name": "Typ",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "NOT APPLICABLE_UNKNOWN",
@@ -265,6 +286,7 @@
                 "label": "State of the Battery Bank",
                 "mandatory": "M",
                 "name": "State",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "DISCONNECTED",
@@ -301,12 +323,14 @@
                 "desc": "Vendor specific battery bank state.  Enumeration.",
                 "label": "Vendor Battery Bank State",
                 "name": "StateVnd",
+                "size": 1,
                 "type": "enum16"
             },
             {
                 "desc": "Date the device warranty expires.",
                 "label": "Warranty Date",
                 "name": "WarrDt",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -314,6 +338,7 @@
                 "label": "Battery Event 1 Bitfield",
                 "mandatory": "M",
                 "name": "Evt1",
+                "size": 2,
                 "symbols": [
                     {
                         "name": "COMMUNICATION_ERROR",
@@ -443,6 +468,7 @@
                 "label": "Battery Event 2 Bitfield",
                 "mandatory": "M",
                 "name": "Evt2",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
@@ -450,6 +476,7 @@
                 "label": "Vendor Event Bitfield 1",
                 "mandatory": "M",
                 "name": "EvtVnd1",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
@@ -457,6 +484,7 @@
                 "label": "Vendor Event Bitfield 2",
                 "mandatory": "M",
                 "name": "EvtVnd2",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
@@ -465,6 +493,7 @@
                 "mandatory": "M",
                 "name": "V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -473,6 +502,7 @@
                 "label": "Max Battery Voltage",
                 "name": "VMax",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -481,6 +511,7 @@
                 "label": "Min Battery Voltage",
                 "name": "VMin",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -489,6 +520,7 @@
                 "label": "Max Cell Voltage",
                 "name": "CellVMax",
                 "sf": "CellV_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -496,12 +528,14 @@
                 "desc": "String containing the cell with maximum voltage.",
                 "label": "Max Cell Voltage String",
                 "name": "CellVMaxStr",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "desc": "Module containing the cell with maximum voltage.",
                 "label": "Max Cell Voltage Module",
                 "name": "CellVMaxMod",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -509,6 +543,7 @@
                 "label": "Min Cell Voltage",
                 "name": "CellVMin",
                 "sf": "CellV_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -516,12 +551,14 @@
                 "desc": "String containing the cell with minimum voltage.",
                 "label": "Min Cell Voltage String",
                 "name": "CellVMinStr",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "desc": "Module containing the cell with minimum voltage.",
                 "label": "Min Cell Voltage Module",
                 "name": "CellVMinMod",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -529,6 +566,7 @@
                 "label": "Average Cell Voltage",
                 "name": "CellVAvg",
                 "sf": "CellV_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -538,6 +576,7 @@
                 "mandatory": "M",
                 "name": "A",
                 "sf": "A_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "A"
             },
@@ -546,6 +585,7 @@
                 "label": "Max Charge Current",
                 "name": "AChaMax",
                 "sf": "AMax_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
@@ -554,6 +594,7 @@
                 "label": "Max Discharge Current",
                 "name": "ADisChaMax",
                 "sf": "AMax_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
@@ -563,6 +604,7 @@
                 "mandatory": "M",
                 "name": "W",
                 "sf": "W_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "W"
             },
@@ -570,6 +612,7 @@
                 "desc": "Request from battery to start or stop the inverter.  Enumeration.",
                 "label": "Inverter State Request",
                 "name": "ReqInvState",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "NO REQUEST",
@@ -591,6 +634,7 @@
                 "label": "Battery Power Request",
                 "name": "ReqW",
                 "sf": "W_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "W"
             },
@@ -600,6 +644,7 @@
                 "label": "Set Operation",
                 "mandatory": "M",
                 "name": "SetOp",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "CONNECT",
@@ -618,6 +663,7 @@
                 "label": "Set Inverter State",
                 "mandatory": "M",
                 "name": "SetInvState",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "INVERTER_STOPPED",
@@ -638,68 +684,80 @@
                 "desc": "Scale factor for charge capacity.",
                 "mandatory": "M",
                 "name": "AHRtg_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for energy capacity.",
                 "mandatory": "M",
                 "name": "WHRtg_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for maximum charge and discharge rate.",
                 "mandatory": "M",
                 "name": "WChaDisChaMax_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for self discharge rate.",
                 "name": "DisChaRte_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for state of charge values.",
                 "mandatory": "M",
                 "name": "SoC_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for depth of discharge.",
                 "name": "DoD_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for state of health.",
                 "name": "SoH_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for DC bus voltage.",
                 "mandatory": "M",
                 "name": "V_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for cell voltage.",
                 "mandatory": "M",
                 "name": "CellV_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for DC current.",
                 "mandatory": "M",
                 "name": "A_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for instantaneous DC charge/discharge current.",
                 "mandatory": "M",
                 "name": "AMax_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for AC power request.",
                 "name": "W_SF",
+                "size": 1,
                 "type": "sunssf"
             }
         ],

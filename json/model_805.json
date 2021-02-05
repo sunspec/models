@@ -11,6 +11,7 @@
                         "mandatory": "M",
                         "name": "CellV",
                         "sf": "CellV_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "V"
                     },
@@ -20,6 +21,7 @@
                         "mandatory": "M",
                         "name": "CellTmp",
                         "sf": "Tmp_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "C"
                     },
@@ -27,6 +29,7 @@
                         "desc": "Status of the cell.",
                         "label": "Cell Status",
                         "name": "CellSt",
+                        "size": 2,
                         "symbols": [
                             {
                                 "name": "CELL_IS_BALANCING",
@@ -47,6 +50,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 805
@@ -56,6 +60,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -64,6 +69,7 @@
                 "label": "String Index",
                 "mandatory": "M",
                 "name": "StrIdx",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -71,6 +77,7 @@
                 "label": "Module Index",
                 "mandatory": "M",
                 "name": "ModIdx",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -78,6 +85,7 @@
                 "label": "Module Cell Count",
                 "mandatory": "M",
                 "name": "NCell",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -85,6 +93,7 @@
                 "label": "Module SoC",
                 "name": "SoC",
                 "sf": "SoC_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%"
             },
@@ -93,6 +102,7 @@
                 "label": "Depth of Discharge",
                 "name": "DoD",
                 "sf": "DoD_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%"
             },
@@ -101,6 +111,7 @@
                 "label": "Module SoH",
                 "name": "SoH",
                 "sf": "SoH_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "%"
             },
@@ -108,6 +119,7 @@
                 "desc": "Count of cycles executed.",
                 "label": "Cycle Count",
                 "name": "NCyc",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -116,6 +128,7 @@
                 "mandatory": "M",
                 "name": "V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -125,6 +138,7 @@
                 "mandatory": "M",
                 "name": "CellVMax",
                 "sf": "CellV_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -132,6 +146,7 @@
                 "desc": "Cell with the maximum voltage.",
                 "label": "Max Cell Voltage Cell",
                 "name": "CellVMaxCell",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -140,6 +155,7 @@
                 "mandatory": "M",
                 "name": "CellVMin",
                 "sf": "CellV_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -147,6 +163,7 @@
                 "desc": "Cell with the minimum voltage.",
                 "label": "Min Cell Voltage Cell",
                 "name": "CellVMinCell",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -155,6 +172,7 @@
                 "mandatory": "M",
                 "name": "CellVAvg",
                 "sf": "CellV_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -164,6 +182,7 @@
                 "mandatory": "M",
                 "name": "CellTmpMax",
                 "sf": "Tmp_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
@@ -171,6 +190,7 @@
                 "desc": "Cell with the maximum cell temperature.",
                 "label": "Max Cell Temperature Cell",
                 "name": "CellTmpMaxCell",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -179,6 +199,7 @@
                 "mandatory": "M",
                 "name": "CellTmpMin",
                 "sf": "Tmp_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
@@ -186,6 +207,7 @@
                 "desc": "Cell with the minimum cell temperature.",
                 "label": "Min Cell Temperature Cell",
                 "name": "CellTmpMinCell",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -194,6 +216,7 @@
                 "mandatory": "M",
                 "name": "CellTmpAvg",
                 "sf": "Tmp_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
@@ -201,6 +224,7 @@
                 "desc": "Number of cells currently being balanced in the module.",
                 "label": "Balanced Cell Count",
                 "name": "NCellBal",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -213,34 +237,40 @@
             {
                 "desc": "Scale factor for module state of charge.",
                 "name": "SoC_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for module state of health.",
                 "name": "SoH_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for module depth of discharge.",
                 "name": "DoD_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for module voltage.",
                 "mandatory": "M",
                 "name": "V_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for cell voltage.",
                 "mandatory": "M",
                 "name": "CellV_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for module temperature.",
                 "mandatory": "M",
                 "name": "Tmp_SF",
+                "size": 1,
                 "type": "sunssf"
             }
         ],

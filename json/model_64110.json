@@ -8,6 +8,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 64110
@@ -17,6 +18,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -24,24 +26,28 @@
                 "label": "AXS Major Firmware Number",
                 "mandatory": "M",
                 "name": "MajorFWRev",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "AXS Mid Firmware Number",
                 "mandatory": "M",
                 "name": "MidFWRev",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "AXS Minor Firmware Number",
                 "mandatory": "M",
                 "name": "MinorFWRev",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Encryption Key",
                 "mandatory": "M",
                 "name": "EncrypKey",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -62,42 +68,49 @@
                 "label": "Enable DHCP",
                 "mandatory": "M",
                 "name": "EnableDHCP",
+                "size": 1,
                 "type": "enum16"
             },
             {
                 "label": "TCPIP Address",
                 "mandatory": "M",
                 "name": "TCPIP_address",
+                "size": 2,
                 "type": "ipaddr"
             },
             {
                 "label": "TCPIP Gateway",
                 "mandatory": "M",
                 "name": "Gateway_address",
+                "size": 2,
                 "type": "ipaddr"
             },
             {
                 "label": "TCPIP Netmask",
                 "mandatory": "M",
                 "name": "TCPIP_Netmask",
+                "size": 2,
                 "type": "ipaddr"
             },
             {
                 "label": "TCPIP DNS1",
                 "mandatory": "M",
                 "name": "DNS1_address",
+                "size": 2,
                 "type": "ipaddr"
             },
             {
                 "label": "TCPIP DNS2",
                 "mandatory": "M",
                 "name": "DNS2_address",
+                "size": 2,
                 "type": "ipaddr"
             },
             {
                 "label": "ModBus Port",
                 "mandatory": "M",
                 "name": "Modbus_port",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -118,6 +131,7 @@
                 "label": "Enable SMTP SSL",
                 "mandatory": "M",
                 "name": "SMTP_enable_SSL",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "ASX_DISABLED",
@@ -148,12 +162,14 @@
                 "label": "Status Email Interval",
                 "mandatory": "M",
                 "name": "Stat_email_int",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Status Email Start Hour",
                 "mandatory": "M",
                 "name": "Stat_start_HR",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -181,6 +197,7 @@
                 "label": "Enable Alarm Email",
                 "mandatory": "M",
                 "name": "Alarm_email_en",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "ASX_DISABLED",
@@ -232,6 +249,7 @@
                 "label": "SD-Card Datalog Write Interval",
                 "mandatory": "M",
                 "name": "Log_write_int",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tms"
             },
@@ -239,6 +257,7 @@
                 "label": "SD-Card Datalog Retain",
                 "mandatory": "M",
                 "name": "Log_retain",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tmd"
             },
@@ -246,6 +265,7 @@
                 "label": "SD-Card Datalog Mode",
                 "mandatory": "M",
                 "name": "Log_mode",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "LOG_DISABLED",
@@ -273,6 +293,7 @@
                 "label": "Enable Network Time",
                 "mandatory": "M",
                 "name": "NTP_enable",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "ASX_DISABLED",
@@ -289,6 +310,7 @@
                 "label": "Time Zone",
                 "mandatory": "M",
                 "name": "TimeZone",
+                "size": 1,
                 "type": "int16",
                 "units": "Tmh"
             },
@@ -296,36 +318,42 @@
                 "label": "Year",
                 "mandatory": "M",
                 "name": "Date_year",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Month",
                 "mandatory": "M",
                 "name": "Date_month",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Day",
                 "mandatory": "M",
                 "name": "Date_Day",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Hour",
                 "mandatory": "M",
                 "name": "Time_hour",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Minute",
                 "mandatory": "M",
                 "name": "Time_minute",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Second",
                 "mandatory": "M",
                 "name": "Time_second",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -333,6 +361,7 @@
                 "mandatory": "M",
                 "name": "Battery_temp",
                 "sf": "Temp_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
@@ -341,30 +370,35 @@
                 "mandatory": "M",
                 "name": "Ambient_temp",
                 "sf": "Temp_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
             {
                 "mandatory": "M",
                 "name": "Temp_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "label": "AXS Error",
                 "mandatory": "M",
                 "name": "AXS_Error",
+                "size": 1,
                 "type": "bitfield16"
             },
             {
                 "label": "AXS Status",
                 "mandatory": "M",
                 "name": "AXS_Status",
+                "size": 1,
                 "type": "bitfield16"
             },
             {
                 "label": "Spare",
                 "mandatory": "M",
                 "name": "AXS_Spare",
+                "size": 1,
                 "type": "uint16"
             }
         ],

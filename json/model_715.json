@@ -9,6 +9,7 @@
                 "label": "DER Control Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "type": "uint16",
                 "value": 715
             },
@@ -17,6 +18,7 @@
                 "label": "DER Control Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "type": "uint16",
                 "value": 7
             },
@@ -27,6 +29,7 @@
                 "desc": "DER control mode. Enumeration.",
                 "label": "Control Mode",
                 "name": "LocRemCtl",
+                "size": 1,
                 "symbols": [
                     {
                         "label": "Remote Control",
@@ -46,6 +49,7 @@
                 "desc": "Value is incremented every second by the DER with periodic resets to zero.",
                 "label": "DER Heartbeat",
                 "name": "DERHb",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -53,6 +57,7 @@
                 "desc": "Value is incremented every second by the controller with periodic resets to zero.",
                 "label": "Controller Heartbeat",
                 "name": "ControllerHb",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -60,6 +65,7 @@
                 "desc": "Used to reset any latched alarms. 1 = Reset.",
                 "label": "Alarm Reset",
                 "name": "AlarmReset",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -67,6 +73,7 @@
                 "desc": "Commands to PCS. Enumerated value.",
                 "label": "Set Operation",
                 "name": "OpCtl",
+                "size": 1,
                 "symbols": [
                     {
                         "label": "Stop the DER",

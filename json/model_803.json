@@ -10,6 +10,7 @@
                         "label": "Module Count",
                         "mandatory": "M",
                         "name": "StrNMod",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -17,6 +18,7 @@
                         "label": "String Status",
                         "mandatory": "M",
                         "name": "StrSt",
+                        "size": 2,
                         "symbols": [
                             {
                                 "name": "STRING_ENABLED",
@@ -32,6 +34,7 @@
                     {
                         "label": "Connection Failure Reason",
                         "name": "StrConFail",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "NO_FAILURE",
@@ -78,6 +81,7 @@
                         "mandatory": "M",
                         "name": "StrSoC",
                         "sf": "SoC_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "%"
                     },
@@ -86,6 +90,7 @@
                         "label": "String State of Health",
                         "name": "StrSoH",
                         "sf": "SoH_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "%"
                     },
@@ -95,6 +100,7 @@
                         "mandatory": "M",
                         "name": "StrA",
                         "sf": "A_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "A"
                     },
@@ -104,6 +110,7 @@
                         "mandatory": "M",
                         "name": "StrCellVMax",
                         "sf": "CellV_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "V"
                     },
@@ -111,6 +118,7 @@
                         "desc": "Module containing the maximum cell voltage.",
                         "label": "Max Cell Voltage Module",
                         "name": "StrCellVMaxMod",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -119,6 +127,7 @@
                         "mandatory": "M",
                         "name": "StrCellVMin",
                         "sf": "CellV_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "V"
                     },
@@ -126,6 +135,7 @@
                         "desc": "Module containing the minimum cell voltage.",
                         "label": "Min Cell Voltage Module",
                         "name": "StrCellVMinMod",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -134,6 +144,7 @@
                         "mandatory": "M",
                         "name": "StrCellVAvg",
                         "sf": "CellV_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "V"
                     },
@@ -143,6 +154,7 @@
                         "mandatory": "M",
                         "name": "StrModTmpMax",
                         "sf": "ModTmp_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "C"
                     },
@@ -150,6 +162,7 @@
                         "desc": "Module with the maximum temperature.",
                         "label": "Max Module Temperature Module",
                         "name": "StrModTmpMaxMod",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -158,6 +171,7 @@
                         "mandatory": "M",
                         "name": "StrModTmpMin",
                         "sf": "ModTmp_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "C"
                     },
@@ -165,6 +179,7 @@
                         "desc": "Module with the minimum temperature.",
                         "label": "Min Module Temperature Module",
                         "name": "StrModTmpMinMod",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -173,6 +188,7 @@
                         "mandatory": "M",
                         "name": "StrModTmpAvg",
                         "sf": "ModTmp_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "C"
                     },
@@ -180,6 +196,7 @@
                         "desc": "Reason why the string is currently disabled.",
                         "label": "Disabled Reason",
                         "name": "StrDisRsn",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "NONE",
@@ -208,6 +225,7 @@
                         "desc": "Status of the contactor(s) for the string.",
                         "label": "Contactor Status",
                         "name": "StrConSt",
+                        "size": 2,
                         "symbols": [
                             {
                                 "name": "CONTACTOR_0",
@@ -341,6 +359,7 @@
                         "label": "String Event 1",
                         "mandatory": "M",
                         "name": "StrEvt1",
+                        "size": 2,
                         "symbols": [
                             {
                                 "name": "COMMUNICATION_ERROR",
@@ -469,18 +488,21 @@
                         "desc": "Alarms, warnings and status values.  Bit flags.",
                         "label": "String Event 2",
                         "name": "StrEvt2",
+                        "size": 2,
                         "type": "bitfield32"
                     },
                     {
                         "desc": "Vendor defined events.",
                         "label": "Vendor String Event Bitfield 1",
                         "name": "StrEvtVnd1",
+                        "size": 2,
                         "type": "bitfield32"
                     },
                     {
                         "desc": "Vendor defined events.",
                         "label": "Vendor String Event Bitfield 2",
                         "name": "StrEvtVnd2",
+                        "size": 2,
                         "type": "bitfield32"
                     },
                     {
@@ -488,6 +510,7 @@
                         "desc": "Enables and disables the string.",
                         "label": "Enable/Disable String",
                         "name": "StrSetEna",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "ENABLE_STRING",
@@ -505,6 +528,7 @@
                         "desc": "Connects and disconnects the string.",
                         "label": "Connect/Disconnect String",
                         "name": "StrSetCon",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "CONNECT_STRING",
@@ -522,6 +546,7 @@
                         "label": "Pad",
                         "mandatory": "M",
                         "name": "Pad1",
+                        "size": 1,
                         "type": "pad"
                     },
                     {
@@ -529,6 +554,7 @@
                         "label": "Pad",
                         "mandatory": "M",
                         "name": "Pad2",
+                        "size": 1,
                         "type": "pad"
                     }
                 ],
@@ -543,6 +569,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 803
@@ -552,6 +579,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -560,6 +588,7 @@
                 "label": "String Count",
                 "mandatory": "M",
                 "name": "NStr",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -567,6 +596,7 @@
                 "label": "Connected String Count",
                 "mandatory": "M",
                 "name": "NStrCon",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -575,18 +605,21 @@
                 "mandatory": "M",
                 "name": "ModTmpMax",
                 "sf": "ModTmp_SF",
+                "size": 1,
                 "type": "int16"
             },
             {
                 "desc": "String containing the module with maximum temperature.",
                 "label": "Max Module Temperature String",
                 "name": "ModTmpMaxStr",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "desc": "Module with maximum temperature.",
                 "label": "Max Module Temperature Module",
                 "name": "ModTmpMaxMod",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -595,6 +628,7 @@
                 "mandatory": "M",
                 "name": "ModTmpMin",
                 "sf": "ModTmp_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
@@ -602,18 +636,21 @@
                 "desc": "String containing the module with minimum temperature.",
                 "label": "Min Module Temperature String",
                 "name": "ModTmpMinStr",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "desc": "Module with minimum temperature.",
                 "label": "Min Module Temperature Module",
                 "name": "ModTmpMinMod",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "desc": "Average temperature for all modules in the bank.",
                 "label": "Average Module Temperature",
                 "name": "ModTmpAvg",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -621,6 +658,7 @@
                 "label": "Max String Voltage",
                 "name": "StrVMax",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -628,6 +666,7 @@
                 "desc": "String with maximum voltage.",
                 "label": "Max String Voltage String",
                 "name": "StrVMaxStr",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -635,6 +674,7 @@
                 "label": "Min String Voltage",
                 "name": "StrVMin",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -642,6 +682,7 @@
                 "desc": "String with minimum voltage.",
                 "label": "Min String Voltage String",
                 "name": "StrVMinStr",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -649,6 +690,7 @@
                 "label": "Average String Voltage",
                 "name": "StrVAvg",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -657,6 +699,7 @@
                 "label": "Max String Current",
                 "name": "StrAMax",
                 "sf": "A_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "A"
             },
@@ -664,6 +707,7 @@
                 "desc": "String with the maximum current.",
                 "label": "Max String Current String",
                 "name": "StrAMaxStr",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -671,6 +715,7 @@
                 "label": "Min String Current",
                 "name": "StrAMin",
                 "sf": "A_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "A"
             },
@@ -678,6 +723,7 @@
                 "desc": "String with the minimum current.",
                 "label": "Min String Current String",
                 "name": "StrAMinStr",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -685,6 +731,7 @@
                 "label": "Average String Current",
                 "name": "StrAAvg",
                 "sf": "A_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "A"
             },
@@ -692,40 +739,47 @@
                 "desc": "Total number of cells that are currently being balanced.",
                 "label": "Battery Cell Balancing Count",
                 "name": "NCellBal",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "desc": "Scale factor for cell voltage.",
                 "mandatory": "M",
                 "name": "CellV_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for module temperatures.",
                 "mandatory": "M",
                 "name": "ModTmp_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for string currents.",
                 "mandatory": "M",
                 "name": "A_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for string state of health.",
                 "name": "SoH_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for string state of charge.",
                 "mandatory": "M",
                 "name": "SoC_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for string voltage.",
                 "name": "V_SF",
+                "size": 1,
                 "type": "sunssf"
             }
         ],

@@ -12,6 +12,7 @@
                         "mandatory": "M",
                         "name": "TmpBOM",
                         "sf": -1,
+                        "size": 1,
                         "type": "int16",
                         "units": "C"
                     }
@@ -27,6 +28,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 303
@@ -36,6 +38,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             }

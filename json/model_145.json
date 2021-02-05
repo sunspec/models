@@ -9,6 +9,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 145
@@ -18,6 +19,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -27,6 +29,7 @@
                 "label": "Ramp Up Rate",
                 "name": "NomRmpUpRte",
                 "sf": "Rmp_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -36,6 +39,7 @@
                 "label": "NomRmpDnRte",
                 "name": "NomRmpDnRte",
                 "sf": "Rmp_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -45,6 +49,7 @@
                 "label": "Emergency Ramp Up Rate",
                 "name": "EmgRmpUpRte",
                 "sf": "Rmp_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -54,6 +59,7 @@
                 "label": "Emergency Ramp Down Rate",
                 "name": "EmgRmpDnRte",
                 "sf": "Rmp_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -63,6 +69,7 @@
                 "label": "Connect Ramp Up Rate",
                 "name": "ConnRmpUpRte",
                 "sf": "Rmp_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -72,6 +79,7 @@
                 "label": "Connect Ramp Down Rate",
                 "name": "ConnRmpDnRte",
                 "sf": "Rmp_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -81,6 +89,7 @@
                 "label": "Default Ramp Rate",
                 "name": "AGra",
                 "sf": "Rmp_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -88,6 +97,7 @@
                 "desc": "Ramp Rate Scale Factor",
                 "label": "Ramp Rate Scale Factor",
                 "name": "Rmp_SF",
+                "size": 1,
                 "type": "sunssf"
             }
         ],

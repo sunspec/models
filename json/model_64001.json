@@ -8,6 +8,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 64001
@@ -17,6 +18,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -24,21 +26,25 @@
                 "access": "RW",
                 "label": "Command Code",
                 "name": "Cmd",
+                "size": 1,
                 "type": "enum16"
             },
             {
                 "label": "Hardware Revision",
                 "name": "HWRev",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "RS FW Revision",
                 "name": "RSFWRev",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "OS FW Revision",
                 "name": "OSFWRev",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -50,47 +56,56 @@
             {
                 "label": "Boot Count",
                 "name": "Boots",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "DIP Switches",
                 "name": "Switch",
+                "size": 1,
                 "type": "bitfield16"
             },
             {
                 "label": "Num Detected Sensors",
                 "name": "Sensors",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Num Communicating Sensors",
                 "name": "Talking",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "System Status",
                 "name": "Status",
+                "size": 1,
                 "type": "bitfield16"
             },
             {
                 "label": "System Configuration",
                 "name": "Config",
+                "size": 1,
                 "type": "bitfield16"
             },
             {
                 "label": "LED Blink Threshold",
                 "name": "LEDblink",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
             {
                 "label": "LED On Threshold",
                 "name": "LEDon",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
             {
                 "name": "Reserved",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -102,16 +117,19 @@
             {
                 "label": "Sensor 1 Unit ID",
                 "name": "S1ID",
+                "size": 1,
                 "type": "enum16"
             },
             {
                 "label": "Sensor 1 Address",
                 "name": "S1Addr",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Sensor 1 OS Version",
                 "name": "S1OSVer",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -129,16 +147,19 @@
             {
                 "label": "Sensor 2 Unit ID",
                 "name": "S2ID",
+                "size": 1,
                 "type": "enum16"
             },
             {
                 "label": "Sensor 2 Address",
                 "name": "S2Addr",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Sensor 2 OS Version",
                 "name": "S2OSVer",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -156,16 +177,19 @@
             {
                 "label": "Sensor 3 Unit ID",
                 "name": "S3ID",
+                "size": 1,
                 "type": "enum16"
             },
             {
                 "label": "Sensor 3 Address",
                 "name": "S3Addr",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Sensor 3 OS Version",
                 "name": "S3OSVer",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -183,16 +207,19 @@
             {
                 "label": "Sensor 4 Unit ID",
                 "name": "S4ID",
+                "size": 1,
                 "type": "enum16"
             },
             {
                 "label": "Sensor 4 Address",
                 "name": "S4Addr",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Sensor 4 OS Version",
                 "name": "S4OSVer",
+                "size": 1,
                 "type": "uint16"
             },
             {

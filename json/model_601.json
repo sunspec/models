@@ -18,6 +18,7 @@
                         "label": "Target Elevation",
                         "name": "ElTrgt",
                         "sf": "Dgr_SF",
+                        "size": 2,
                         "type": "int32",
                         "units": "Degrees"
                     },
@@ -26,6 +27,7 @@
                         "label": "Target Azimuth",
                         "name": "AzTrgt",
                         "sf": "Dgr_SF",
+                        "size": 2,
                         "type": "int32",
                         "units": "Degrees"
                     },
@@ -34,6 +36,7 @@
                         "label": "Elevation",
                         "name": "ElPos",
                         "sf": "Dgr_SF",
+                        "size": 2,
                         "type": "int32",
                         "units": "Degrees"
                     },
@@ -42,6 +45,7 @@
                         "label": "Azimuth",
                         "name": "AzPos",
                         "sf": "Dgr_SF",
+                        "size": 2,
                         "type": "int32",
                         "units": "Degrees"
                     },
@@ -51,6 +55,7 @@
                         "label": "Manual Elevation",
                         "name": "ElCtl",
                         "sf": "Dgr_SF",
+                        "size": 2,
                         "type": "int32",
                         "units": "Degrees"
                     },
@@ -60,6 +65,7 @@
                         "label": "Manual Azimuth",
                         "name": "AzCtl",
                         "sf": "Dgr_SF",
+                        "size": 2,
                         "type": "int32",
                         "units": "Degrees"
                     },
@@ -68,6 +74,7 @@
                         "desc": "Control register. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.",
                         "label": "Mode",
                         "name": "Ctl",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "Automatic",
@@ -88,6 +95,7 @@
                         "desc": "Tracker alarm conditions",
                         "label": "Alarm",
                         "name": "Alm",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "SetPoint",
@@ -116,6 +124,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 601
@@ -125,6 +134,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -140,6 +150,7 @@
                 "label": "Type",
                 "mandatory": "M",
                 "name": "Typ",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "Unknown",
@@ -192,6 +203,7 @@
                 "desc": "Number of the day in the year (1-366)",
                 "label": "Day",
                 "name": "Day",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -200,6 +212,7 @@
                 "label": "Manual Elevation",
                 "name": "GlblElCtl",
                 "sf": "Dgr_SF",
+                "size": 2,
                 "type": "int32",
                 "units": "Degrees"
             },
@@ -209,6 +222,7 @@
                 "label": "Manual Azimuth",
                 "name": "GlblAzCtl",
                 "sf": "Dgr_SF",
+                "size": 2,
                 "type": "int32",
                 "units": "Degrees"
             },
@@ -217,6 +231,7 @@
                 "desc": "Global Control register operates on all trackers. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.",
                 "label": "Global Mode",
                 "name": "GlblCtl",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "Automatic",
@@ -237,6 +252,7 @@
                 "desc": "Global tracker alarm conditions",
                 "label": "Global Alarm",
                 "name": "GlblAlm",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "SetPoint",
@@ -258,6 +274,7 @@
                 "label": "SF",
                 "mandatory": "M",
                 "name": "Dgr_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -265,6 +282,7 @@
                 "label": "Trackers",
                 "mandatory": "M",
                 "name": "N",
+                "size": 1,
                 "type": "uint16"
             }
         ],

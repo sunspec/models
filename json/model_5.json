@@ -12,6 +12,7 @@
                         "label": "DS",
                         "mandatory": "M",
                         "name": "DS",
+                        "size": 1,
                         "type": "uint16"
                     }
                 ],
@@ -26,6 +27,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 5
@@ -35,6 +37,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -44,6 +47,7 @@
                 "label": "X",
                 "mandatory": "M",
                 "name": "X",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -52,6 +56,7 @@
                 "label": "Offset1",
                 "mandatory": "M",
                 "name": "Off1",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -60,474 +65,553 @@
                 "label": "Value1",
                 "mandatory": "M",
                 "name": "Val1",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off2",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val2",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off3",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val3",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off4",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val4",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off5",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val5",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off6",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val6",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off7",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val7",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off8",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val8",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off9",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val9",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off10",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val10",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off11",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val11",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off12",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val12",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off13",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val13",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off14",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val14",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off15",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val15",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off16",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val16",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off17",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val17",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off18",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val18",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off19",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val19",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off20",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val20",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off21",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val21",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off22",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val22",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off23",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val23",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off24",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val24",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off25",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val25",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off26",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val26",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off27",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val27",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off28",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val28",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off29",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val29",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off30",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val30",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off31",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val31",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off32",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val32",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off33",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val33",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off34",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val34",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off35",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val35",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off36",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val36",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off37",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val37",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off38",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val38",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off39",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val39",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Off40",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Val40",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -536,6 +620,7 @@
                 "label": "Timestamp",
                 "mandatory": "M",
                 "name": "Ts",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -544,6 +629,7 @@
                 "label": "Milliseconds",
                 "mandatory": "M",
                 "name": "Ms",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -552,6 +638,7 @@
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -560,6 +647,7 @@
                 "label": "Role",
                 "mandatory": "M",
                 "name": "Role",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -568,6 +656,7 @@
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "NONE",
@@ -590,6 +679,7 @@
                 "label": "N",
                 "mandatory": "M",
                 "name": "N",
+                "size": 1,
                 "type": "uint16"
             }
         ],

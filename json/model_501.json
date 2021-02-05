@@ -9,6 +9,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 501
@@ -18,6 +19,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -26,6 +28,7 @@
                 "label": "Status",
                 "mandatory": "M",
                 "name": "Stat",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "OFF",
@@ -74,6 +77,7 @@
                 "desc": "Module Vendor Status Code",
                 "label": "Vendor Status",
                 "name": "StatVend",
+                "size": 1,
                 "type": "enum16"
             },
             {
@@ -81,6 +85,7 @@
                 "label": "Events",
                 "mandatory": "M",
                 "name": "Evt",
+                "size": 2,
                 "symbols": [
                     {
                         "name": "GROUND_FAULT",
@@ -173,6 +178,7 @@
                 "desc": "Vendor specific flags",
                 "label": "Vendor Module Event Flags",
                 "name": "EvtVend",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
@@ -180,6 +186,7 @@
                 "desc": "Module Control",
                 "label": "Control",
                 "name": "Ctl",
+                "size": 1,
                 "type": "enum16"
             },
             {
@@ -187,6 +194,7 @@
                 "desc": "Vendor Module Control",
                 "label": "Vendor Control",
                 "name": "CtlVend",
+                "size": 2,
                 "type": "enum32"
             },
             {
@@ -194,12 +202,14 @@
                 "desc": "Module Control Value",
                 "label": "Control Value",
                 "name": "CtlVal",
+                "size": 2,
                 "type": "int32"
             },
             {
                 "desc": "Time in seconds since 2000 epoch",
                 "label": "Timestamp",
                 "name": "Tms",
+                "size": 2,
                 "type": "uint32",
                 "units": "Secs"
             },
@@ -207,6 +217,7 @@
                 "desc": "Output Current",
                 "label": "Output Current",
                 "name": "OutA",
+                "size": 2,
                 "type": "float32",
                 "units": "A"
             },
@@ -214,6 +225,7 @@
                 "desc": "Output Voltage",
                 "label": "Output Voltage",
                 "name": "OutV",
+                "size": 2,
                 "type": "float32",
                 "units": "V"
             },
@@ -221,6 +233,7 @@
                 "desc": "Output Energy",
                 "label": "Output Energy",
                 "name": "OutWh",
+                "size": 2,
                 "type": "float32",
                 "units": "Wh"
             },
@@ -228,6 +241,7 @@
                 "desc": "Output Power",
                 "label": "Output Power",
                 "name": "OutW",
+                "size": 2,
                 "type": "float32",
                 "units": "W"
             },
@@ -235,6 +249,7 @@
                 "desc": "Module Temperature",
                 "label": "Temp",
                 "name": "Tmp",
+                "size": 2,
                 "type": "float32",
                 "units": "C"
             },
@@ -242,6 +257,7 @@
                 "desc": "Input Current",
                 "label": "Input Current",
                 "name": "InA",
+                "size": 2,
                 "type": "float32",
                 "units": "A"
             },
@@ -249,6 +265,7 @@
                 "desc": "Input Voltage",
                 "label": "Input Voltage",
                 "name": "InV",
+                "size": 2,
                 "type": "float32",
                 "units": "V"
             },
@@ -256,6 +273,7 @@
                 "desc": "Input Energy",
                 "label": "Input Energy",
                 "name": "InWh",
+                "size": 2,
                 "type": "float32",
                 "units": "Wh"
             },
@@ -263,6 +281,7 @@
                 "desc": "Input Power",
                 "label": "Input Power",
                 "name": "InW",
+                "size": 2,
                 "type": "float32",
                 "units": "W"
             }

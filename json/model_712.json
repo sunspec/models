@@ -26,6 +26,7 @@
                                 "name": "W",
                                 "notes": "",
                                 "sf": "W_SF",
+                                "size": 1,
                                 "type": "int16",
                                 "units": "WMaxPct"
                             },
@@ -36,6 +37,7 @@
                                 "name": "Var",
                                 "notes": "",
                                 "sf": "DeptRef_SF",
+                                "size": 1,
                                 "type": "int16",
                                 "units": "VarPct"
                             }
@@ -54,6 +56,7 @@
                         "mandatory": "M",
                         "name": "ActPt",
                         "notes": "",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -63,6 +66,7 @@
                         "mandatory": "M",
                         "name": "DeptRef",
                         "notes": "",
+                        "size": 1,
                         "symbols": [
                             {
                                 "label": "Percent Max Watts",
@@ -95,6 +99,7 @@
                         "access": "RW",
                         "name": "Pri",
                         "notes": "",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "ACTIVE",
@@ -116,6 +121,7 @@
                         "mandatory": "M",
                         "name": "ReadOnly",
                         "notes": "",
+                        "size": 1,
                         "static": "S",
                         "symbols": [
                             {
@@ -149,6 +155,7 @@
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 712
@@ -159,6 +166,7 @@
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -169,6 +177,7 @@
                 "mandatory": "M",
                 "name": "Ena",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is enabled.",
@@ -194,6 +203,7 @@
                 "mandatory": "M",
                 "name": "AdptCrvReq",
                 "notes": "",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -202,6 +212,7 @@
                 "mandatory": "M",
                 "name": "AdptCrvRslt",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Curve update in progress.",
@@ -233,6 +244,7 @@
                 "mandatory": "M",
                 "name": "NPt",
                 "notes": " ",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -242,6 +254,7 @@
                 "mandatory": "M",
                 "name": "NCrv",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -251,6 +264,7 @@
                 "label": "Reversion Timeout",
                 "name": "RvrtTms",
                 "notes": "",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -258,6 +272,7 @@
                 "label": "Reversion Time Left",
                 "name": "RvrtRem",
                 "notes": "",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -266,6 +281,7 @@
                 "label": "Reversion Curve",
                 "name": "RvrtCrv",
                 "notes": "",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -274,6 +290,7 @@
                 "mandatory": "M",
                 "name": "W_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -283,6 +300,7 @@
                 "mandatory": "M",
                 "name": "DeptRef_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             }

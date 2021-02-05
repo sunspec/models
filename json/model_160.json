@@ -8,6 +8,7 @@
                     {
                         "label": "Input ID",
                         "name": "ID",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -20,6 +21,7 @@
                         "label": "DC Current",
                         "name": "DCA",
                         "sf": "DCA_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "A"
                     },
@@ -27,6 +29,7 @@
                         "label": "DC Voltage",
                         "name": "DCV",
                         "sf": "DCV_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "V"
                     },
@@ -34,6 +37,7 @@
                         "label": "DC Power",
                         "name": "DCW",
                         "sf": "DCW_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "W"
                     },
@@ -41,24 +45,28 @@
                         "label": "Lifetime Energy",
                         "name": "DCWH",
                         "sf": "DCWH_SF",
+                        "size": 2,
                         "type": "acc32",
                         "units": "Wh"
                     },
                     {
                         "label": "Timestamp",
                         "name": "Tms",
+                        "size": 2,
                         "type": "uint32",
                         "units": "Secs"
                     },
                     {
                         "label": "Temperature",
                         "name": "Tmp",
+                        "size": 1,
                         "type": "int16",
                         "units": "C"
                     },
                     {
                         "label": "Operating State",
                         "name": "DCSt",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "OFF",
@@ -106,6 +114,7 @@
                     {
                         "label": "Module Events",
                         "name": "DCEvt",
+                        "size": 2,
                         "symbols": [
                             {
                                 "name": "GROUND_FAULT",
@@ -214,6 +223,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 160
@@ -223,32 +233,38 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
             {
                 "label": "Current Scale Factor",
                 "name": "DCA_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "label": "Voltage Scale Factor",
                 "name": "DCV_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "label": "Power Scale Factor",
                 "name": "DCW_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "label": "Energy Scale Factor",
                 "name": "DCWH_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "label": "Global Events",
                 "name": "Evt",
+                "size": 2,
                 "symbols": [
                     {
                         "name": "GROUND_FAULT",
@@ -348,11 +364,13 @@
             {
                 "label": "Number of Modules",
                 "name": "N",
+                "size": 1,
                 "type": "count"
             },
             {
                 "label": "Timestamp Period",
                 "name": "TmsPer",
+                "size": 1,
                 "type": "uint16"
             }
         ],

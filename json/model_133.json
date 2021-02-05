@@ -12,6 +12,7 @@
                         "label": "ActPts",
                         "mandatory": "M",
                         "name": "ActPts",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -20,6 +21,7 @@
                         "label": "StrTms",
                         "mandatory": "M",
                         "name": "StrTms",
+                        "size": 2,
                         "type": "uint32",
                         "units": "Secs"
                     },
@@ -29,6 +31,7 @@
                         "label": "RepPer",
                         "mandatory": "M",
                         "name": "RepPer",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -37,6 +40,7 @@
                         "label": "SchdTyp",
                         "mandatory": "M",
                         "name": "IntvTyp",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "ONETIME",
@@ -79,6 +83,7 @@
                         "label": "XTyp",
                         "mandatory": "M",
                         "name": "XTyp",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "UNSET",
@@ -109,6 +114,7 @@
                         "label": "X_SF",
                         "mandatory": "M",
                         "name": "X_SF",
+                        "size": 1,
                         "type": "sunssf"
                     },
                     {
@@ -117,6 +123,7 @@
                         "label": "YTyp",
                         "mandatory": "M",
                         "name": "YTyp",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "UNSET",
@@ -183,6 +190,7 @@
                         "label": "Y_SF",
                         "mandatory": "M",
                         "name": "Y_SF",
+                        "size": 1,
                         "type": "sunssf"
                     },
                     {
@@ -192,6 +200,7 @@
                         "mandatory": "M",
                         "name": "X1",
                         "sf": "X_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -201,6 +210,7 @@
                         "mandatory": "M",
                         "name": "Y1",
                         "sf": "Y_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -209,6 +219,7 @@
                         "label": "X2",
                         "name": "X2",
                         "sf": "X_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -217,6 +228,7 @@
                         "label": "Y2",
                         "name": "Y2",
                         "sf": "Y_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -225,6 +237,7 @@
                         "label": "X3",
                         "name": "X3",
                         "sf": "X_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -233,6 +246,7 @@
                         "label": "Y3",
                         "name": "Y3",
                         "sf": "Y_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -241,6 +255,7 @@
                         "label": "X4",
                         "name": "X4",
                         "sf": "X_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -249,6 +264,7 @@
                         "label": "Y4",
                         "name": "Y4",
                         "sf": "Y_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -257,6 +273,7 @@
                         "label": "X5",
                         "name": "X5",
                         "sf": "X_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -265,6 +282,7 @@
                         "label": "Y5",
                         "name": "Y5",
                         "sf": "Y_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -273,6 +291,7 @@
                         "label": "X6",
                         "name": "X6",
                         "sf": "X_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -281,6 +300,7 @@
                         "label": "Y6",
                         "name": "Y6",
                         "sf": "Y_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -289,6 +309,7 @@
                         "label": "X7",
                         "name": "X7",
                         "sf": "X_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -297,6 +318,7 @@
                         "label": "Y7",
                         "name": "Y7",
                         "sf": "Y_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -305,6 +327,7 @@
                         "label": "X8",
                         "name": "X8",
                         "sf": "X_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -313,6 +336,7 @@
                         "label": "Y8",
                         "name": "Y8",
                         "sf": "Y_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -321,6 +345,7 @@
                         "label": "X9",
                         "name": "X9",
                         "sf": "X_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -329,6 +354,7 @@
                         "label": "Y9",
                         "name": "Y9",
                         "sf": "Y_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -337,6 +363,7 @@
                         "label": "X10",
                         "name": "X10",
                         "sf": "X_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -345,6 +372,7 @@
                         "label": "Y10",
                         "name": "Y10",
                         "sf": "Y_SF",
+                        "size": 2,
                         "type": "int32"
                     },
                     {
@@ -360,6 +388,7 @@
                         "desc": "Time window for schedule entry change.",
                         "label": "WinTms",
                         "name": "WinTms",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -368,6 +397,7 @@
                         "desc": "Ramp time for moving from current target to new target.",
                         "label": "RmpTms",
                         "name": "RmpTms",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -376,6 +406,7 @@
                         "label": "ActIndx",
                         "mandatory": "M",
                         "name": "ActIndx",
+                        "size": 1,
                         "type": "uint16"
                     }
                 ],
@@ -390,6 +421,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 133
@@ -399,6 +431,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -408,6 +441,7 @@
                 "label": "ActSchd",
                 "mandatory": "M",
                 "name": "ActSchd",
+                "size": 2,
                 "symbols": [
                     {
                         "name": "SCHED1",
@@ -542,6 +576,7 @@
                 "label": "ModEna",
                 "mandatory": "M",
                 "name": "ModEna",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "ENABLED",
@@ -555,6 +590,7 @@
                 "label": "NSchd",
                 "mandatory": "M",
                 "name": "NSchd",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -562,12 +598,14 @@
                 "label": "NPts",
                 "mandatory": "M",
                 "name": "NPts",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "desc": "Pad register.",
                 "label": "Pad",
                 "name": "Pad",
+                "size": 1,
                 "type": "pad"
             }
         ],
