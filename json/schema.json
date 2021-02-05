@@ -81,7 +81,7 @@
         },
         "point": {
             "type": "object",
-            "required": ["name", "type"],
+            "required": ["name", "type", "size"],
             "properties": {
                 "name": {
                     "type": "string"
