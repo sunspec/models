@@ -173,7 +173,7 @@
             {
                 "access": "RW",
                 "desc": "Watt-Var control enable.",
-                "label": "Module Enable",
+                "label": "DER Watt-Var Module Enable",
                 "mandatory": "M",
                 "name": "Ena",
                 "notes": "",

@@ -7,7 +7,7 @@
         "points": [
             {
                 "desc": "Enter service model ID.",
-                "label": "Enter Service ID",
+                "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
@@ -18,7 +18,7 @@
             },
             {
                 "desc": "Enter service  model length.",
-                "label": "Enter Service Length",
+                "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",

@@ -208,8 +208,8 @@
         "notes": "",
         "points": [
             {
-                "desc": "DER high voltage trip  model ID.",
-                "label": "DER Trip HV Model ID",
+                "desc": "DER high voltage trip model ID.",
+                "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
@@ -220,7 +220,7 @@
             },
             {
                 "desc": "DER high voltage trip model length.",
-                "label": "DER Trip HV Model Length",
+                "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",

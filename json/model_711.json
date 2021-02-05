@@ -106,7 +106,7 @@
         "points": [
             {
                 "desc": "DER Frequency Droop model ID.",
-                "label": "DER Frequency Droop ID",
+                "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
@@ -117,7 +117,7 @@
             },
             {
                 "desc": "DER Frequency Droop  model length.",
-                "label": "DER Frequency Droop Length",
+                "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",
@@ -128,7 +128,7 @@
             {
                 "access": "RW",
                 "desc": "DER Frequency-Watt (Frequency-Droop) control enable.",
-                "label": "DER Frequency Droop Enable",
+                "label": "DER Frequency Droop Module Enable",
                 "mandatory": "M",
                 "name": "Ena",
                 "notes": "",

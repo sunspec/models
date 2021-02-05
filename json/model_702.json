@@ -7,7 +7,7 @@
         "points": [
             {
                 "desc": "DER capacity model ID.",
-                "label": "DER Capacity Model ID",
+                "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
@@ -18,7 +18,7 @@
             },
             {
                 "desc": "DER capacity name  model length.",
-                "label": "DER Capacity Model Length",
+                "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",

@@ -209,7 +209,7 @@
         "points": [
             {
                 "desc": "DER low frequency trip model ID.",
-                "label": "DER Trip LF Model ID",
+                "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
@@ -220,7 +220,7 @@
             },
             {
                 "desc": "DER low frequency trip model length.",
-                "label": "DER Trip LF Model Length",
+                "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",

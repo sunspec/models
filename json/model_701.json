@@ -7,7 +7,7 @@
         "points": [
             {
                 "desc": "DER AC measurement  model ID.",
-                "label": "DER AC Measure Model ID",
+                "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
@@ -18,7 +18,7 @@
             },
             {
                 "desc": "DER AC measurement  model length.",
-                "label": "DER AC Measure Model Length",
+                "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",

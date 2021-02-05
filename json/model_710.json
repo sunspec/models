@@ -209,7 +209,7 @@
         "points": [
             {
                 "desc": "DER high frequency trip model ID.",
-                "label": "DER Trip HFModel ID",
+                "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
@@ -220,7 +220,7 @@
             },
             {
                 "desc": "DER high frequency trip model length.",
-                "label": "DER Trip HFModel Length",
+                "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",
@@ -231,7 +231,7 @@
             {
                 "access": "RW",
                 "desc": "DER high frequency trip control enable.",
-                "label": "DER Trip HFModule Enable",
+                "label": "DER Trip HF Module Enable",
                 "mandatory": "M",
                 "name": "Ena",
                 "notes": " ",

@@ -269,7 +269,7 @@
         "points": [
             {
                 "desc": "DER DC measurement model ID.",
-                "label": "DER DC Measure Model ID",
+                "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
@@ -280,7 +280,7 @@
             },
             {
                 "desc": "DER DC measurement model length.",
-                "label": "DER DC MeasureModel Length",
+                "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",

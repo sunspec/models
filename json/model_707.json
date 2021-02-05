@@ -209,7 +209,7 @@
         "points": [
             {
                 "desc": "DER low voltage trip model ID.",
-                "label": "DER Trip LV Model ID",
+                "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
@@ -220,7 +220,7 @@
             },
             {
                 "desc": "DER low volatage trip model length.",
-                "label": "DER Trip LV Model Length",
+                "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",

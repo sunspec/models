@@ -263,7 +263,7 @@
             {
                 "access": "RW",
                 "desc": "Volt-Var control enable.",
-                "label": "Module Enable",
+                "label": "DER Volt-Var Module Enable",
                 "mandatory": "M",
                 "name": "Ena",
                 "notes": "",
