@@ -157,17 +157,17 @@
                 "size": 1,
                 "symbols": [
                     {
-                        "desc": "Function is enabled.",
+                        "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "Function is enabled.",
+                        "notes": "Function is disabled.",
                         "value": 0
                     },
                     {
-                        "desc": "Function is disabled.",
+                        "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "Function is disabled.",
+                        "notes": "Function is enabled.",
                         "value": 1
                     }
                 ],
