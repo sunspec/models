@@ -651,7 +651,7 @@
                 "label": "Average Module Temperature",
                 "name": "ModTmpAvg",
                 "size": 1,
-                "type": "uint16"
+                "type": "int16"
             },
             {
                 "desc": "Maximum string voltage for all strings in the bank.",
