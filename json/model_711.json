@@ -71,6 +71,16 @@
                         "units": "Secs"
                     },
                     {
+                        "access": "RW",
+                        "desc": "The minimum active power output due to DER prime mover constraints, in percent of the DER active power rating. The valid range is -100 to 100. This setting applies only to the frequency droop control.",
+                        "label": "Minimum Active Power",
+                        "name": "PMin",
+                        "notes": "",
+                        "size": 1,
+                        "type": "int16",
+                        "units": "Pct"
+                    },
+                    {
                         "desc": "Control read-write access.",
                         "label": "Control Access",
                         "mandatory": "M",
