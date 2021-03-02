@@ -9,6 +9,7 @@
                         "label": "Battery String Points To Be Determined",
                         "mandatory": "M",
                         "name": "BatStTBD",
+                        "size": 1,
                         "type": "uint16"
                     }
                 ],
@@ -23,6 +24,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 806
@@ -32,6 +34,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -39,6 +42,7 @@
                 "label": "Battery Points To Be Determined",
                 "mandatory": "M",
                 "name": "BatTBD",
+                "size": 1,
                 "type": "uint16"
             }
         ],

@@ -26,6 +26,7 @@
                                 "name": "V",
                                 "notes": "",
                                 "sf": "V_SF",
+                                "size": 1,
                                 "type": "uint16",
                                 "units": "VRefPct"
                             },
@@ -36,6 +37,7 @@
                                 "name": "W",
                                 "notes": "",
                                 "sf": "DeptRef_SF",
+                                "size": 1,
                                 "type": "int16",
                                 "units": "DeptRef"
                             }
@@ -54,6 +56,7 @@
                         "mandatory": "M",
                         "name": "ActPt",
                         "notes": "",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -63,6 +66,7 @@
                         "mandatory": "M",
                         "name": "DeptRef",
                         "notes": "",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "W_MAX_PCT",
@@ -84,14 +88,18 @@
                         "name": "RspTms",
                         "notes": "",
                         "sf": "RspTms_SF",
+                        "size": 2,
                         "type": "uint32",
                         "units": "Secs"
                     },
                     {
                         "desc": "Curve read-write access.",
                         "label": "Curve Access",
+                        "mandatory": "M",
                         "name": "ReadOnly",
                         "notes": "",
+                        "size": 1,
+                        "static": "S",
                         "symbols": [
                             {
                                 "desc": "Curve has read-write access.",
@@ -114,7 +122,7 @@
                 "type": "group"
             }
         ],
-        "label": "DERVolt-Watt",
+        "label": "DER Volt-Watt",
         "name": "DERVoltWatt",
         "notes": "",
         "points": [
@@ -124,6 +132,7 @@
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 706
@@ -134,29 +143,31 @@
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "desc": "Volt-Watt control enable.",
-                "label": "Module Enable",
+                "label": "DER Volt-Watt Module Enable",
                 "mandatory": "M",
                 "name": "Ena",
                 "notes": " ",
+                "size": 1,
                 "symbols": [
                     {
-                        "desc": "Function is enabled.",
+                        "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "Function is enabled.",
+                        "notes": "Function is disabled.",
                         "value": 0
                     },
                     {
-                        "desc": "Function is disabled.",
+                        "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "Function is disabled.",
+                        "notes": "Function is enabled.",
                         "value": 1
                     }
                 ],
@@ -169,6 +180,7 @@
                 "mandatory": "M",
                 "name": "AdptCrvReq",
                 "notes": " ",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -177,6 +189,7 @@
                 "mandatory": "M",
                 "name": "AdptCrvRslt",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Curve update in progress.",
@@ -208,6 +221,7 @@
                 "mandatory": "M",
                 "name": "NPt",
                 "notes": " ",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -217,6 +231,7 @@
                 "mandatory": "M",
                 "name": "NCrv",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -226,6 +241,7 @@
                 "label": "Reversion Timeout",
                 "name": "RvrtTms",
                 "notes": "Reversion time in seconds.  0 = No reversion time",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -233,6 +249,7 @@
                 "label": "Reversion Time Remaining",
                 "name": "RvrtRem",
                 "notes": "Reversion time remaining in seconds",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -241,6 +258,7 @@
                 "label": "Reversion Curve",
                 "name": "RvrtCrv",
                 "notes": "Default curve after reversion timeout.",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -249,6 +267,7 @@
                 "mandatory": "M",
                 "name": "V_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -258,6 +277,7 @@
                 "mandatory": "M",
                 "name": "DeptRef_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -267,6 +287,7 @@
                 "mandatory": "M",
                 "name": "RspTms_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             }

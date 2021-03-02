@@ -20,6 +20,7 @@
                         "name": "DbOf",
                         "notes": "",
                         "sf": "Db_SF",
+                        "size": 2,
                         "type": "uint32",
                         "units": "Hz"
                     },
@@ -31,6 +32,7 @@
                         "name": "DbUf",
                         "notes": "",
                         "sf": "Db_SF",
+                        "size": 2,
                         "type": "uint32",
                         "units": "Hz"
                     },
@@ -42,6 +44,7 @@
                         "name": "KOf",
                         "notes": "",
                         "sf": "K_SF",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -52,6 +55,7 @@
                         "name": "KUf",
                         "notes": "",
                         "sf": "K_SF",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -62,14 +66,28 @@
                         "name": "RspTms",
                         "notes": "",
                         "sf": "RspTms_SF",
+                        "size": 2,
                         "type": "uint32",
                         "units": "Secs"
                     },
                     {
+                        "access": "RW",
+                        "desc": "The minimum active power output due to DER prime mover constraints, in percent of the DER active power rating. The valid range is -100 to 100. This setting applies only to the frequency droop control.",
+                        "label": "Minimum Active Power",
+                        "name": "PMin",
+                        "notes": "",
+                        "size": 1,
+                        "type": "int16",
+                        "units": "Pct"
+                    },
+                    {
                         "desc": "Control read-write access.",
                         "label": "Control Access",
+                        "mandatory": "M",
                         "name": "ReadOnly",
                         "notes": "",
+                        "size": 1,
+                        "static": "S",
                         "symbols": [
                             {
                                 "desc": "Control has read-write access.",
@@ -98,43 +116,46 @@
         "points": [
             {
                 "desc": "DER Frequency Droop model ID.",
-                "label": "DER Frequency Droop ID",
+                "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 711
             },
             {
                 "desc": "DER Frequency Droop  model length.",
-                "label": "DER Frequency Droop Length",
+                "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "desc": "DER Frequency-Watt (Frequency-Droop) control enable.",
-                "label": "DER Frequency Droop Enable",
+                "label": "DER Frequency Droop Module Enable",
                 "mandatory": "M",
                 "name": "Ena",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
-                        "desc": "Function is enabled.",
+                        "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "Function is enabled.",
+                        "notes": "Function is disabled.",
                         "value": 0
                     },
                     {
-                        "desc": "Function is disabled.",
+                        "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "Function is disabled.",
+                        "notes": "Function is enabled.",
                         "value": 1
                     }
                 ],
@@ -147,6 +168,7 @@
                 "mandatory": "M",
                 "name": "AdptCtlReq",
                 "notes": "",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -155,6 +177,7 @@
                 "mandatory": "M",
                 "name": "AdptCtlRslt",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Curve update in progress.",
@@ -186,6 +209,7 @@
                 "mandatory": "M",
                 "name": "NCtl",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -195,6 +219,7 @@
                 "label": "Reversion Timeout",
                 "name": "RvrtTms",
                 "notes": "",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -202,6 +227,7 @@
                 "label": "Reversion Time Left",
                 "name": "RvrtRem",
                 "notes": "",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -210,6 +236,7 @@
                 "label": "Reversion Control",
                 "name": "RvrtCtl",
                 "notes": "",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -218,6 +245,7 @@
                 "mandatory": "M",
                 "name": "Db_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -227,6 +255,7 @@
                 "mandatory": "M",
                 "name": "K_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -236,6 +265,7 @@
                 "mandatory": "M",
                 "name": "RspTms_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             }

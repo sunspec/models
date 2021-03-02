@@ -8,6 +8,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 64101
@@ -17,35 +18,43 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
             {
                 "name": "Eltek_Country_Code",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "name": "Eltek_Feeding_Phase",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "name": "Eltek_APD_Method",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "name": "Eltek_APD_Power_Ref",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "name": "Eltek_RPS_Method",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "name": "Eltek_RPS_Q_Ref",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "name": "Eltek_RPS_CosPhi_Ref",
+                "size": 1,
                 "type": "int16"
             }
         ],

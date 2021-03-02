@@ -9,6 +9,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 305
@@ -18,6 +19,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -50,6 +52,7 @@
                 "label": "Lat",
                 "name": "Lat",
                 "sf": -7,
+                "size": 2,
                 "type": "int32",
                 "units": "Degrees"
             },
@@ -58,6 +61,7 @@
                 "label": "Long",
                 "name": "Long",
                 "sf": -7,
+                "size": 2,
                 "type": "int32",
                 "units": "Degrees"
             },
@@ -65,6 +69,7 @@
                 "desc": "Altitude measurement in meters",
                 "label": "Altitude",
                 "name": "Alt",
+                "size": 2,
                 "type": "int32",
                 "units": "meters"
             }

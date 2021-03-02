@@ -10,6 +10,7 @@
                         "desc": "Global Horizontal Irradiance",
                         "label": "GHI",
                         "name": "GHI",
+                        "size": 1,
                         "type": "uint16",
                         "units": "W/m2"
                     },
@@ -17,6 +18,7 @@
                         "desc": "Plane-of-Array Irradiance",
                         "label": "POAI",
                         "name": "POAI",
+                        "size": 1,
                         "type": "uint16",
                         "units": "W/m2"
                     },
@@ -24,6 +26,7 @@
                         "desc": "Diffuse Irradiance",
                         "label": "DFI",
                         "name": "DFI",
+                        "size": 1,
                         "type": "uint16",
                         "units": "W/m2"
                     },
@@ -31,6 +34,7 @@
                         "desc": "Direct Normal Irradiance",
                         "label": "DNI",
                         "name": "DNI",
+                        "size": 1,
                         "type": "uint16",
                         "units": "W/m2"
                     },
@@ -38,6 +42,7 @@
                         "desc": "Other Irradiance",
                         "label": "OTI",
                         "name": "OTI",
+                        "size": 1,
                         "type": "uint16",
                         "units": "W/m2"
                     }
@@ -53,6 +58,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 302
@@ -62,6 +68,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             }

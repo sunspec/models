@@ -11,6 +11,7 @@
                         "label": "Cert",
                         "mandatory": "M",
                         "name": "Cert",
+                        "size": 1,
                         "type": "uint16"
                     }
                 ],
@@ -25,6 +26,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 8
@@ -34,6 +36,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -42,6 +45,7 @@
                 "label": "Format",
                 "mandatory": "M",
                 "name": "Fmt",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "NONE",
@@ -63,6 +67,7 @@
                 "label": "N",
                 "mandatory": "M",
                 "name": "N",
+                "size": 1,
                 "type": "uint16"
             }
         ],

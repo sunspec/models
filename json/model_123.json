@@ -9,6 +9,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 123
@@ -18,6 +19,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -26,6 +28,7 @@
                 "desc": "Time window for connect/disconnect.",
                 "label": "Conn_WinTms",
                 "name": "Conn_WinTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -34,6 +37,7 @@
                 "desc": "Timeout period for connect/disconnect.",
                 "label": "Conn_RvrtTms",
                 "name": "Conn_RvrtTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -43,6 +47,7 @@
                 "label": "Conn",
                 "mandatory": "M",
                 "name": "Conn",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "DISCONNECT",
@@ -62,6 +67,7 @@
                 "mandatory": "M",
                 "name": "WMaxLimPct",
                 "sf": "WMaxLimPct_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "% WMax"
             },
@@ -70,6 +76,7 @@
                 "desc": "Time window for power limit change.",
                 "label": "WMaxLimPct_WinTms",
                 "name": "WMaxLimPct_WinTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -78,6 +85,7 @@
                 "desc": "Timeout period for power limit.",
                 "label": "WMaxLimPct_RvrtTms",
                 "name": "WMaxLimPct_RvrtTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -86,6 +94,7 @@
                 "desc": "Ramp time for moving from current setpoint to new setpoint.",
                 "label": "WMaxLimPct_RmpTms",
                 "name": "WMaxLimPct_RmpTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -95,6 +104,7 @@
                 "label": "WMaxLim_Ena",
                 "mandatory": "M",
                 "name": "WMaxLim_Ena",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "DISABLED",
@@ -114,6 +124,7 @@
                 "mandatory": "M",
                 "name": "OutPFSet",
                 "sf": "OutPFSet_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "cos()"
             },
@@ -122,6 +133,7 @@
                 "desc": "Time window for power factor change.",
                 "label": "OutPFSet_WinTms",
                 "name": "OutPFSet_WinTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -130,6 +142,7 @@
                 "desc": "Timeout period for power factor.",
                 "label": "OutPFSet_RvrtTms",
                 "name": "OutPFSet_RvrtTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -138,6 +151,7 @@
                 "desc": "Ramp time for moving from current setpoint to new setpoint.",
                 "label": "OutPFSet_RmpTms",
                 "name": "OutPFSet_RmpTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -147,6 +161,7 @@
                 "label": "OutPFSet_Ena",
                 "mandatory": "M",
                 "name": "OutPFSet_Ena",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "DISABLED",
@@ -165,6 +180,7 @@
                 "label": "VArWMaxPct",
                 "name": "VArWMaxPct",
                 "sf": "VArPct_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "% WMax"
             },
@@ -174,6 +190,7 @@
                 "label": "VArMaxPct",
                 "name": "VArMaxPct",
                 "sf": "VArPct_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "% VArMax"
             },
@@ -183,6 +200,7 @@
                 "label": "VArAvalPct",
                 "name": "VArAvalPct",
                 "sf": "VArPct_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "% VArAval"
             },
@@ -191,6 +209,7 @@
                 "desc": "Time window for VAR limit change.",
                 "label": "VArPct_WinTms",
                 "name": "VArPct_WinTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -199,6 +218,7 @@
                 "desc": "Timeout period for VAR limit.",
                 "label": "VArPct_RvrtTms",
                 "name": "VArPct_RvrtTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -207,6 +227,7 @@
                 "desc": "Ramp time for moving from current setpoint to new setpoint.",
                 "label": "VArPct_RmpTms",
                 "name": "VArPct_RmpTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -215,6 +236,7 @@
                 "desc": "Enumerated value. VAR percent limit mode.",
                 "label": "VArPct_Mod",
                 "name": "VArPct_Mod",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "NONE",
@@ -241,6 +263,7 @@
                 "label": "VArPct_Ena",
                 "mandatory": "M",
                 "name": "VArPct_Ena",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "DISABLED",
@@ -258,6 +281,7 @@
                 "label": "WMaxLimPct_SF",
                 "mandatory": "M",
                 "name": "WMaxLimPct_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -265,12 +289,14 @@
                 "label": "OutPFSet_SF",
                 "mandatory": "M",
                 "name": "OutPFSet_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for reactive power percent.",
                 "label": "VArPct_SF",
                 "name": "VArPct_SF",
+                "size": 1,
                 "type": "sunssf"
             }
         ],

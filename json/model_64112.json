@@ -8,6 +8,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 64112
@@ -17,6 +18,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -24,42 +26,50 @@
                 "label": "Port Number",
                 "mandatory": "M",
                 "name": "Port",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "mandatory": "M",
                 "name": "V_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "mandatory": "M",
                 "name": "C_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "mandatory": "M",
                 "name": "H_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "mandatory": "M",
                 "name": "P_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "mandatory": "M",
                 "name": "AH_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "mandatory": "M",
                 "name": "KWH_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "label": "Faults",
                 "mandatory": "M",
                 "name": "CC_Config_fault",
+                "size": 1,
                 "type": "bitfield16"
             },
             {
@@ -67,6 +77,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_absorb_V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -75,6 +86,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_absorb_Hr",
                 "sf": "H_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tmh"
             },
@@ -83,6 +95,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_absorb_End_A",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
@@ -91,6 +104,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_rebulk_V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -99,6 +113,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_float_V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -107,6 +122,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_max_Chg_A",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
@@ -115,6 +131,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_equalize_V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -122,6 +139,7 @@
                 "label": "Equalize Time",
                 "mandatory": "M",
                 "name": "CC_Config_equalize_Hr",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tmh"
             },
@@ -129,6 +147,7 @@
                 "label": "Auto Equalize Interval",
                 "mandatory": "M",
                 "name": "CC_Config_auto_equalize",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tmd"
             },
@@ -136,6 +155,7 @@
                 "label": "MPPT mode",
                 "mandatory": "M",
                 "name": "CC_Config_MPPT_mode",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "Auto",
@@ -156,6 +176,7 @@
                 "label": "Sweep Width",
                 "mandatory": "M",
                 "name": "CC_Config_sweep_width",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "Half",
@@ -172,6 +193,7 @@
                 "label": "Sweep Maximum",
                 "mandatory": "M",
                 "name": "CC_Config_sweep_max",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "Eighty_Percent",
@@ -197,6 +219,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_U_Pick_Duty_cyc",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -204,6 +227,7 @@
                 "label": "Grid Tie Mode",
                 "mandatory": "M",
                 "name": "CC_Config_grid_tie",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "Disabled",
@@ -220,6 +244,7 @@
                 "label": "Temp Comp Mode",
                 "mandatory": "M",
                 "name": "CC_Config_temp_comp",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "Wide",
@@ -237,6 +262,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_temp_comp_llimt",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -245,6 +271,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_temp_comp_hlimt",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -252,6 +279,7 @@
                 "label": "Auto Restart Mode",
                 "mandatory": "M",
                 "name": "CC_Config_auto_restart",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "Off",
@@ -273,6 +301,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_wakeup_VOC",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -281,6 +310,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_snooze_mode_A",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
@@ -288,6 +318,7 @@
                 "label": "Wakeup Interval",
                 "mandatory": "M",
                 "name": "CC_Config_wakeup_interval",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tms"
             },
@@ -295,6 +326,7 @@
                 "label": "AUX Output Mode",
                 "mandatory": "M",
                 "name": "CC_Config_AUX_mode",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "Float",
@@ -339,6 +371,7 @@
                 "label": "AUX Output Control",
                 "mandatory": "M",
                 "name": "CC_Config_AUX_control",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "Off",
@@ -359,6 +392,7 @@
                 "label": "AUX Output State",
                 "mandatory": "M",
                 "name": "CC_Config_AUX_state",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "Disabled",
@@ -375,6 +409,7 @@
                 "label": "AUX Output Polarity",
                 "mandatory": "M",
                 "name": "CC_Config_AUX_polarity",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "Low",
@@ -392,6 +427,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_AUX_L_Batt_disc",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -400,6 +436,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_AUX_L_Batt_rcon",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -407,6 +444,7 @@
                 "label": "AUX Low Battery Disconnect Delay",
                 "mandatory": "M",
                 "name": "CC_Config_AUX_L_Batt_dly",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tms"
             },
@@ -415,6 +453,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_AUX_Vent_fan_V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -423,6 +462,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_AUX_PV_triggerV",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -430,6 +470,7 @@
                 "label": "AUX PV Trigger Hold Time",
                 "mandatory": "M",
                 "name": "CC_Config_AUX_PV_trg_h_tm",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tms"
             },
@@ -438,6 +479,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_AUX_Nlite_ThrsV",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -446,6 +488,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_AUX_Nlite_On_tm",
                 "sf": "H_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tmh"
             },
@@ -453,6 +496,7 @@
                 "label": "AUX Night Light On Hysteresis",
                 "mandatory": "M",
                 "name": "CC_Config_AUX_Nlite_On_hist",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tms"
             },
@@ -460,6 +504,7 @@
                 "label": "AUX Night Light Off Hysteresis",
                 "mandatory": "M",
                 "name": "CC_Config_AUX_Nlite_Off_hist",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tms"
             },
@@ -468,6 +513,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_AUX_Error_batt_V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -476,6 +522,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_AUX_Divert_h_time",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tms"
             },
@@ -483,6 +530,7 @@
                 "label": "AUX Divert Delay Time",
                 "mandatory": "M",
                 "name": "CC_Config_AUX_Divert_dly_time",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tms"
             },
@@ -491,6 +539,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_AUX_Divert_Rel_V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -499,6 +548,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_AUX_Divert_Hyst_V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -506,24 +556,28 @@
                 "label": "FM CC Major Firmware Number",
                 "mandatory": "M",
                 "name": "CC_Config_MajorFWRev",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "FM CC Mid Firmware Number",
                 "mandatory": "M",
                 "name": "CC_Config_MidFWRev",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "FM CC Minor Firmware Number",
                 "mandatory": "M",
                 "name": "CC_Config_MinorFWRev",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Set Data Log Day Offset",
                 "mandatory": "M",
                 "name": "CC_Config_DataLog_Day_offset",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tmd"
             },
@@ -531,6 +585,7 @@
                 "label": "Current Data Log Day Offset",
                 "mandatory": "M",
                 "name": "CC_Config_DataLog_Cur_Day_off",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tmd"
             },
@@ -538,6 +593,7 @@
                 "label": "Data Log Daily (Ah)",
                 "mandatory": "M",
                 "name": "CC_Config_DataLog_Daily_AH",
+                "size": 1,
                 "type": "uint16",
                 "units": "Ah"
             },
@@ -546,6 +602,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_DataLog_Daily_KWH",
                 "sf": "KWH_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "kWh"
             },
@@ -554,6 +611,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_DataLog_Max_Out_A",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
@@ -562,6 +620,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_DataLog_Max_Out_W",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "W"
             },
@@ -569,6 +628,7 @@
                 "label": "Data Log Daily Absorb Time",
                 "mandatory": "M",
                 "name": "CC_Config_DataLog_Absorb_T",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tms"
             },
@@ -576,6 +636,7 @@
                 "label": "Data Log Daily Float Time",
                 "mandatory": "M",
                 "name": "CC_Config_DataLog_Float_T",
+                "size": 1,
                 "type": "uint16",
                 "units": "Tms"
             },
@@ -584,6 +645,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_DataLog_Min_Batt_V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -592,6 +654,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_DataLog_Max_Batt_V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -600,6 +663,7 @@
                 "mandatory": "M",
                 "name": "CC_Config_DataLog_Max_Input_V",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -607,12 +671,14 @@
                 "label": "Data Log Clear",
                 "mandatory": "M",
                 "name": "CC_Config_DataLog_Clear",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "label": "Data Log Clear Complement",
                 "mandatory": "M",
                 "name": "CC_Config_DataLog_Clr_Comp",
+                "size": 1,
                 "type": "uint16"
             }
         ],

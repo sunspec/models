@@ -8,6 +8,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 64111
@@ -17,6 +18,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -24,31 +26,37 @@
                 "label": "Port Number",
                 "mandatory": "M",
                 "name": "Port",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "mandatory": "M",
                 "name": "V_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "mandatory": "M",
                 "name": "A_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "mandatory": "M",
                 "name": "P_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "mandatory": "M",
                 "name": "AH_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "mandatory": "M",
                 "name": "KWH_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -56,6 +64,7 @@
                 "mandatory": "M",
                 "name": "BattV",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -64,6 +73,7 @@
                 "mandatory": "M",
                 "name": "ArrayV",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -72,6 +82,7 @@
                 "mandatory": "M",
                 "name": "OutputA",
                 "sf": "A_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
@@ -80,6 +91,7 @@
                 "mandatory": "M",
                 "name": "InputA",
                 "sf": "P_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
@@ -87,6 +99,7 @@
                 "label": "Operating State",
                 "mandatory": "M",
                 "name": "ChargerSt",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "Off",
@@ -116,6 +129,7 @@
                 "mandatory": "M",
                 "name": "OutputW",
                 "sf": "P_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "W"
             },
@@ -124,6 +138,7 @@
                 "mandatory": "M",
                 "name": "TodayMinBatV",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -132,6 +147,7 @@
                 "mandatory": "M",
                 "name": "TodayMaxBatV",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -140,6 +156,7 @@
                 "mandatory": "M",
                 "name": "VOCV",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -148,6 +165,7 @@
                 "mandatory": "M",
                 "name": "TodayMaxVOC",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -156,6 +174,7 @@
                 "mandatory": "M",
                 "name": "TodaykWhOutput",
                 "sf": "KWH_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "kWh"
             },
@@ -164,6 +183,7 @@
                 "mandatory": "M",
                 "name": "TodayAHOutput",
                 "sf": "AH_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "AH"
             },
@@ -172,6 +192,7 @@
                 "mandatory": "M",
                 "name": "LifeTimeKWHOut",
                 "sf": "P_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "kWh"
             },
@@ -180,6 +201,7 @@
                 "mandatory": "M",
                 "name": "LifeTimeAHOut",
                 "sf": "KWH_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "kAH"
             },
@@ -188,6 +210,7 @@
                 "mandatory": "M",
                 "name": "LifeTimeMaxOut",
                 "sf": "P_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "W"
             },
@@ -196,6 +219,7 @@
                 "mandatory": "M",
                 "name": "LifeTimeMaxBatt",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -204,6 +228,7 @@
                 "mandatory": "M",
                 "name": "LifeTimeMaxVOC",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             }

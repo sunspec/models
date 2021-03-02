@@ -12,6 +12,7 @@
                         "label": "ActPt",
                         "mandatory": "M",
                         "name": "ActPt",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -21,6 +22,7 @@
                         "mandatory": "M",
                         "name": "W1",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -31,6 +33,7 @@
                         "mandatory": "M",
                         "name": "PF1",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -40,6 +43,7 @@
                         "label": "W2",
                         "name": "W2",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -49,6 +53,7 @@
                         "label": "PF2",
                         "name": "PF2",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -58,6 +63,7 @@
                         "label": "W3",
                         "name": "W3",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -67,6 +73,7 @@
                         "label": "PF3",
                         "name": "PF3",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -76,6 +83,7 @@
                         "label": "W4",
                         "name": "W4",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -85,6 +93,7 @@
                         "label": "PF4",
                         "name": "PF4",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -94,6 +103,7 @@
                         "label": "W5",
                         "name": "W5",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -103,6 +113,7 @@
                         "label": "PF5",
                         "name": "PF5",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -112,6 +123,7 @@
                         "label": "W6",
                         "name": "W6",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -121,6 +133,7 @@
                         "label": "PF6",
                         "name": "PF6",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -130,6 +143,7 @@
                         "label": "W7",
                         "name": "W7",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -139,6 +153,7 @@
                         "label": "PF7",
                         "name": "PF7",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -148,6 +163,7 @@
                         "label": "W8",
                         "name": "W8",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -157,6 +173,7 @@
                         "label": "PF8",
                         "name": "PF8",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -166,6 +183,7 @@
                         "label": "W9",
                         "name": "W9",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -175,6 +193,7 @@
                         "label": "PF9",
                         "name": "PF9",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -184,6 +203,7 @@
                         "label": "W10",
                         "name": "W10",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -193,6 +213,7 @@
                         "label": "PF10",
                         "name": "PF10",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -202,6 +223,7 @@
                         "label": "W11",
                         "name": "W11",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -211,6 +233,7 @@
                         "label": "PF11",
                         "name": "PF11",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -220,6 +243,7 @@
                         "label": "W12",
                         "name": "W12",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -229,6 +253,7 @@
                         "label": "PF12",
                         "name": "PF12",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -238,6 +263,7 @@
                         "label": "W13",
                         "name": "W13",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -247,6 +273,7 @@
                         "label": "PF13",
                         "name": "PF13",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -256,6 +283,7 @@
                         "label": "W14",
                         "name": "W14",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -265,6 +293,7 @@
                         "label": "PF14",
                         "name": "PF14",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -274,6 +303,7 @@
                         "label": "W15",
                         "name": "W15",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -283,6 +313,7 @@
                         "label": "PF15",
                         "name": "PF15",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -292,6 +323,7 @@
                         "label": "W16",
                         "name": "W16",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -301,6 +333,7 @@
                         "label": "PF16",
                         "name": "PF16",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -310,6 +343,7 @@
                         "label": "W17",
                         "name": "W17",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -319,6 +353,7 @@
                         "label": "PF17",
                         "name": "PF17",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -328,6 +363,7 @@
                         "label": "W18",
                         "name": "W18",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -337,6 +373,7 @@
                         "label": "PF18",
                         "name": "PF18",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -346,6 +383,7 @@
                         "label": "W19",
                         "name": "W19",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -355,6 +393,7 @@
                         "label": "PF19",
                         "name": "PF19",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -364,6 +403,7 @@
                         "label": "W20",
                         "name": "W20",
                         "sf": "W_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "% WMax"
                     },
@@ -373,6 +413,7 @@
                         "label": "PF20",
                         "name": "PF20",
                         "sf": "PF_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "cos()"
                     },
@@ -389,6 +430,7 @@
                         "desc": "The time of the PT1 in seconds (time to accomplish a change of 95%).",
                         "label": "RmpPT1Tms",
                         "name": "RmpPT1Tms",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -398,6 +440,7 @@
                         "label": "RmpDecTmm",
                         "name": "RmpDecTmm",
                         "sf": "RmpIncDec_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% PF/min"
                     },
@@ -407,6 +450,7 @@
                         "label": "RmpIncTmm",
                         "name": "RmpIncTmm",
                         "sf": "RmpIncDec_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% PF/min"
                     },
@@ -415,6 +459,7 @@
                         "label": "ReadOnly",
                         "mandatory": "M",
                         "name": "ReadOnly",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "READWRITE",
@@ -429,6 +474,7 @@
                     },
                     {
                         "name": "Pad",
+                        "size": 1,
                         "type": "pad"
                     }
                 ],
@@ -443,6 +489,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 131
@@ -452,6 +499,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -461,6 +509,7 @@
                 "label": "ActCrv",
                 "mandatory": "M",
                 "name": "ActCrv",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -469,6 +518,7 @@
                 "label": "ModEna",
                 "mandatory": "M",
                 "name": "ModEna",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "ENABLED",
@@ -482,6 +532,7 @@
                 "desc": "Time window for watt-PF change.",
                 "label": "WinTms",
                 "name": "WinTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -490,6 +541,7 @@
                 "desc": "Timeout period for watt-PF curve selection.",
                 "label": "RvrtTms",
                 "name": "RvrtTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -498,6 +550,7 @@
                 "desc": "Ramp time for moving from current mode to new mode.",
                 "label": "RmpTms",
                 "name": "RmpTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -506,6 +559,7 @@
                 "label": "NCrv",
                 "mandatory": "M",
                 "name": "NCrv",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -513,6 +567,7 @@
                 "label": "NPt",
                 "mandatory": "M",
                 "name": "NPt",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -520,6 +575,7 @@
                 "label": "W_SF",
                 "mandatory": "M",
                 "name": "W_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -527,12 +583,14 @@
                 "label": "PF_SF",
                 "mandatory": "M",
                 "name": "PF_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Scale factor for increment and decrement ramps.",
                 "label": "RmpIncDec_SF",
                 "name": "RmpIncDec_SF",
+                "size": 1,
                 "type": "sunssf"
             }
         ],

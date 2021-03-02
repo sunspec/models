@@ -9,6 +9,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 113
@@ -18,6 +19,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -26,6 +28,7 @@
                 "label": "Amps",
                 "mandatory": "M",
                 "name": "A",
+                "size": 2,
                 "type": "float32",
                 "units": "A"
             },
@@ -34,6 +37,7 @@
                 "label": "Amps PhaseA",
                 "mandatory": "M",
                 "name": "AphA",
+                "size": 2,
                 "type": "float32",
                 "units": "A"
             },
@@ -42,6 +46,7 @@
                 "label": "Amps PhaseB",
                 "mandatory": "M",
                 "name": "AphB",
+                "size": 2,
                 "type": "float32",
                 "units": "A"
             },
@@ -50,6 +55,7 @@
                 "label": "Amps PhaseC",
                 "mandatory": "M",
                 "name": "AphC",
+                "size": 2,
                 "type": "float32",
                 "units": "A"
             },
@@ -57,6 +63,7 @@
                 "desc": "Phase Voltage AB",
                 "label": "Phase Voltage AB",
                 "name": "PPVphAB",
+                "size": 2,
                 "type": "float32",
                 "units": "V"
             },
@@ -64,6 +71,7 @@
                 "desc": "Phase Voltage BC",
                 "label": "Phase Voltage BC",
                 "name": "PPVphBC",
+                "size": 2,
                 "type": "float32",
                 "units": "V"
             },
@@ -71,6 +79,7 @@
                 "desc": "Phase Voltage CA",
                 "label": "Phase Voltage CA",
                 "name": "PPVphCA",
+                "size": 2,
                 "type": "float32",
                 "units": "V"
             },
@@ -79,6 +88,7 @@
                 "label": "Phase Voltage AN",
                 "mandatory": "M",
                 "name": "PhVphA",
+                "size": 2,
                 "type": "float32",
                 "units": "V"
             },
@@ -87,6 +97,7 @@
                 "label": "Phase Voltage BN",
                 "mandatory": "M",
                 "name": "PhVphB",
+                "size": 2,
                 "type": "float32",
                 "units": "V"
             },
@@ -95,6 +106,7 @@
                 "label": "Phase Voltage CN",
                 "mandatory": "M",
                 "name": "PhVphC",
+                "size": 2,
                 "type": "float32",
                 "units": "V"
             },
@@ -103,6 +115,7 @@
                 "label": "Watts",
                 "mandatory": "M",
                 "name": "W",
+                "size": 2,
                 "type": "float32",
                 "units": "W"
             },
@@ -111,6 +124,7 @@
                 "label": "Hz",
                 "mandatory": "M",
                 "name": "Hz",
+                "size": 2,
                 "type": "float32",
                 "units": "Hz"
             },
@@ -118,6 +132,7 @@
                 "desc": "AC Apparent Power",
                 "label": "VA",
                 "name": "VA",
+                "size": 2,
                 "type": "float32",
                 "units": "VA"
             },
@@ -125,6 +140,7 @@
                 "desc": "AC Reactive Power",
                 "label": "VAr",
                 "name": "VAr",
+                "size": 2,
                 "type": "float32",
                 "units": "var"
             },
@@ -132,6 +148,7 @@
                 "desc": "AC Power Factor",
                 "label": "PF",
                 "name": "PF",
+                "size": 2,
                 "type": "float32",
                 "units": "Pct"
             },
@@ -140,6 +157,7 @@
                 "label": "WattHours",
                 "mandatory": "M",
                 "name": "WH",
+                "size": 2,
                 "type": "float32",
                 "units": "Wh"
             },
@@ -147,6 +165,7 @@
                 "desc": "DC Current",
                 "label": "DC Amps",
                 "name": "DCA",
+                "size": 2,
                 "type": "float32",
                 "units": "A"
             },
@@ -154,6 +173,7 @@
                 "desc": "DC Voltage",
                 "label": "DC Voltage",
                 "name": "DCV",
+                "size": 2,
                 "type": "float32",
                 "units": "V"
             },
@@ -161,6 +181,7 @@
                 "desc": "DC Power",
                 "label": "DC Watts",
                 "name": "DCW",
+                "size": 2,
                 "type": "float32",
                 "units": "W"
             },
@@ -169,6 +190,7 @@
                 "label": "Cabinet Temperature",
                 "mandatory": "M",
                 "name": "TmpCab",
+                "size": 2,
                 "type": "float32",
                 "units": "C"
             },
@@ -176,6 +198,7 @@
                 "desc": "Heat Sink Temperature",
                 "label": "Heat Sink Temperature",
                 "name": "TmpSnk",
+                "size": 2,
                 "type": "float32",
                 "units": "C"
             },
@@ -183,6 +206,7 @@
                 "desc": "Transformer Temperature",
                 "label": "Transformer Temperature",
                 "name": "TmpTrns",
+                "size": 2,
                 "type": "float32",
                 "units": "C"
             },
@@ -190,6 +214,7 @@
                 "desc": "Other Temperature",
                 "label": "Other Temperature",
                 "name": "TmpOt",
+                "size": 2,
                 "type": "float32",
                 "units": "C"
             },
@@ -198,6 +223,7 @@
                 "label": "Operating State",
                 "mandatory": "M",
                 "name": "St",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "OFF",
@@ -238,6 +264,7 @@
                 "desc": "Vendor specific operating state code",
                 "label": "Vendor Operating State",
                 "name": "StVnd",
+                "size": 1,
                 "type": "enum16"
             },
             {
@@ -245,6 +272,7 @@
                 "label": "Event1",
                 "mandatory": "M",
                 "name": "Evt1",
+                "size": 2,
                 "symbols": [
                     {
                         "name": "GROUND_FAULT",
@@ -318,30 +346,35 @@
                 "label": "Event Bitfield 2",
                 "mandatory": "M",
                 "name": "Evt2",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
                 "desc": "Vendor defined events",
                 "label": "Vendor Event Bitfield 1",
                 "name": "EvtVnd1",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
                 "desc": "Vendor defined events",
                 "label": "Vendor Event Bitfield 2",
                 "name": "EvtVnd2",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
                 "desc": "Vendor defined events",
                 "label": "Vendor Event Bitfield 3",
                 "name": "EvtVnd3",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
                 "desc": "Vendor defined events",
                 "label": "Vendor Event Bitfield 4",
                 "name": "EvtVnd4",
+                "size": 2,
                 "type": "bitfield32"
             }
         ],

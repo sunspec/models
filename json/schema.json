@@ -15,7 +15,7 @@
         "label": {
             "type": "string"
         },
-        "description": {
+        "desc": {
             "type": "string"
         },
         "detail": {
@@ -62,7 +62,7 @@
                 "label": {
                     "type": "string"
                 },
-                "description": {
+                "desc": {
                     "type": "string"
                 },
                 "detail": {
@@ -81,7 +81,7 @@
         },
         "point": {
             "type": "object",
-            "required": ["name", "type"],
+            "required": ["name", "type", "size"],
             "properties": {
                 "name": {
                     "type": "string"
@@ -127,7 +127,7 @@
                 "label": {
                     "type": "string"
                 },
-                "description": {
+                "desc": {
                     "type": "string"
                 },
                 "detail": {
@@ -140,6 +140,12 @@
                     "type": "array",
                     "items": {
                         "type": "string"
+                    }
+                },
+                "symbols": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/symbol"
                     }
                 }
             }
@@ -155,7 +161,7 @@
                 "label": {
                     "type": "string"
                 },
-                "description": {
+                "desc": {
                     "type": "string"
                 },
                 "detail": {

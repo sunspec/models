@@ -9,6 +9,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 101
@@ -18,6 +19,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -27,6 +29,7 @@
                 "mandatory": "M",
                 "name": "A",
                 "sf": "A_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
@@ -36,6 +39,7 @@
                 "mandatory": "M",
                 "name": "AphA",
                 "sf": "A_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
@@ -44,6 +48,7 @@
                 "label": "Amps PhaseB",
                 "name": "AphB",
                 "sf": "A_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
@@ -52,12 +57,14 @@
                 "label": "Amps PhaseC",
                 "name": "AphC",
                 "sf": "A_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
             {
                 "mandatory": "M",
                 "name": "A_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -65,6 +72,7 @@
                 "label": "Phase Voltage AB",
                 "name": "PPVphAB",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -73,6 +81,7 @@
                 "label": "Phase Voltage BC",
                 "name": "PPVphBC",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -81,6 +90,7 @@
                 "label": "Phase Voltage CA",
                 "name": "PPVphCA",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -90,6 +100,7 @@
                 "mandatory": "M",
                 "name": "PhVphA",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -98,6 +109,7 @@
                 "label": "Phase Voltage BN",
                 "name": "PhVphB",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -106,12 +118,14 @@
                 "label": "Phase Voltage CN",
                 "name": "PhVphC",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
             {
                 "mandatory": "M",
                 "name": "V_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -120,12 +134,14 @@
                 "mandatory": "M",
                 "name": "W",
                 "sf": "W_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "W"
             },
             {
                 "mandatory": "M",
                 "name": "W_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -134,12 +150,14 @@
                 "mandatory": "M",
                 "name": "Hz",
                 "sf": "Hz_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Hz"
             },
             {
                 "mandatory": "M",
                 "name": "Hz_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -147,11 +165,13 @@
                 "label": "VA",
                 "name": "VA",
                 "sf": "VA_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "VA"
             },
             {
                 "name": "VA_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -159,11 +179,13 @@
                 "label": "VAr",
                 "name": "VAr",
                 "sf": "VAr_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "var"
             },
             {
                 "name": "VAr_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -171,11 +193,13 @@
                 "label": "PF",
                 "name": "PF",
                 "sf": "PF_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "Pct"
             },
             {
                 "name": "PF_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -184,12 +208,14 @@
                 "mandatory": "M",
                 "name": "WH",
                 "sf": "WH_SF",
+                "size": 2,
                 "type": "acc32",
                 "units": "Wh"
             },
             {
                 "mandatory": "M",
                 "name": "WH_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -197,11 +223,13 @@
                 "label": "DC Amps",
                 "name": "DCA",
                 "sf": "DCA_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
             {
                 "name": "DCA_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -209,11 +237,13 @@
                 "label": "DC Voltage",
                 "name": "DCV",
                 "sf": "DCV_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
             {
                 "name": "DCV_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -221,11 +251,13 @@
                 "label": "DC Watts",
                 "name": "DCW",
                 "sf": "DCW_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "W"
             },
             {
                 "name": "DCW_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -234,6 +266,7 @@
                 "mandatory": "M",
                 "name": "TmpCab",
                 "sf": "Tmp_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
@@ -242,6 +275,7 @@
                 "label": "Heat Sink Temperature",
                 "name": "TmpSnk",
                 "sf": "Tmp_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
@@ -250,6 +284,7 @@
                 "label": "Transformer Temperature",
                 "name": "TmpTrns",
                 "sf": "Tmp_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
@@ -258,12 +293,14 @@
                 "label": "Other Temperature",
                 "name": "TmpOt",
                 "sf": "Tmp_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
             {
                 "mandatory": "M",
                 "name": "Tmp_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -271,6 +308,7 @@
                 "label": "Operating State",
                 "mandatory": "M",
                 "name": "St",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "OFF",
@@ -311,6 +349,7 @@
                 "desc": "Vendor specific operating state code",
                 "label": "Vendor Operating State",
                 "name": "StVnd",
+                "size": 1,
                 "type": "enum16"
             },
             {
@@ -318,6 +357,7 @@
                 "label": "Event1",
                 "mandatory": "M",
                 "name": "Evt1",
+                "size": 2,
                 "symbols": [
                     {
                         "name": "GROUND_FAULT",
@@ -391,30 +431,35 @@
                 "label": "Event Bitfield 2",
                 "mandatory": "M",
                 "name": "Evt2",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
                 "desc": "Vendor defined events",
                 "label": "Vendor Event Bitfield 1",
                 "name": "EvtVnd1",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
                 "desc": "Vendor defined events",
                 "label": "Vendor Event Bitfield 2",
                 "name": "EvtVnd2",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
                 "desc": "Vendor defined events",
                 "label": "Vendor Event Bitfield 3",
                 "name": "EvtVnd3",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
                 "desc": "Vendor defined events",
                 "label": "Vendor Event Bitfield 4",
                 "name": "EvtVnd4",
+                "size": 2,
                 "type": "bitfield32"
             }
         ],

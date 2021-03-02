@@ -9,6 +9,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 11
@@ -18,6 +19,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -26,6 +28,7 @@
                 "label": "Ethernet Link Speed",
                 "mandatory": "M",
                 "name": "Spd",
+                "size": 1,
                 "type": "uint16",
                 "units": "Mbps"
             },
@@ -34,6 +37,7 @@
                 "label": "Interface Status Flags",
                 "mandatory": "M",
                 "name": "CfgSt",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "LINK",
@@ -71,6 +75,7 @@
                 "label": "Link State",
                 "mandatory": "M",
                 "name": "St",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "UNKNOWN",
@@ -95,6 +100,7 @@
                 "desc": "IEEE MAC address of this interface",
                 "label": "MAC",
                 "name": "MAC",
+                "size": 4,
                 "type": "eui48"
             },
             {
@@ -110,6 +116,7 @@
                 "desc": "Control flags",
                 "label": "Control",
                 "name": "Ctl",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "AUTO",
@@ -127,6 +134,7 @@
                 "desc": "Forced interface speed in Mb/s when AUTO is disabled",
                 "label": "Forced Speed",
                 "name": "FrcSpd",
+                "size": 1,
                 "type": "uint16",
                 "units": "Mbps"
             }

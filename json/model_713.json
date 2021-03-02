@@ -9,6 +9,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "type": "uint16",
                 "value": 713
             },
@@ -17,6 +18,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "type": "uint16",
                 "value": 6
             },
@@ -24,6 +26,7 @@
                 "desc": "Energy rating of the DER storage.",
                 "label": "Energy Rating",
                 "name": "WHRtg",
+                "size": 1,
                 "type": "uint16",
                 "units": "WH"
             },
@@ -31,6 +34,7 @@
                 "desc": "Energy available of the DER storage (WHAvail = WHRtg * SoC * SoH)",
                 "label": "Energy Available",
                 "name": "WHAvail",
+                "size": 1,
                 "type": "uint16",
                 "units": "WH"
             },
@@ -38,6 +42,7 @@
                 "desc": "State of charge of the DER storage.",
                 "label": "State of Charge",
                 "name": "SoC",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -45,6 +50,7 @@
                 "desc": "State of health of the DER storage.",
                 "label": "State of Health",
                 "name": "SoH",
+                "size": 1,
                 "type": "uint16",
                 "units": "Pct"
             },
@@ -52,6 +58,7 @@
                 "desc": "Storage status.",
                 "label": "Status",
                 "name": "Sta",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "No warnings or errors pending.",
@@ -78,6 +85,7 @@
                 "desc": "Scale factor for energy capacity.",
                 "label": "WH_SF",
                 "name": "WH_SF",
+                "size": 1,
                 "type": "sunssf"
             }
         ],

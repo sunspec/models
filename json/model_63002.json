@@ -7,21 +7,25 @@
                 "points": [
                     {
                         "name": "sunssf_1",
+                        "size": 1,
                         "type": "sunssf"
                     },
                     {
                         "access": "RW",
                         "name": "int16_1",
                         "sf": "sunssf_1",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
                         "name": "int16_2",
                         "sf": "sunssf_2",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
                         "name": "sunssf_2",
+                        "size": 1,
                         "type": "sunssf"
                     }
                 ],
@@ -36,6 +40,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 63002
@@ -45,6 +50,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             }

@@ -12,6 +12,7 @@
                         "mandatory": "M",
                         "name": "Inclx",
                         "sf": -2,
+                        "size": 2,
                         "type": "int32",
                         "units": "Degrees"
                     },
@@ -20,6 +21,7 @@
                         "label": "Y",
                         "name": "Incly",
                         "sf": -2,
+                        "size": 2,
                         "type": "int32",
                         "units": "Degrees"
                     },
@@ -28,6 +30,7 @@
                         "label": "Z",
                         "name": "Inclz",
                         "sf": -2,
+                        "size": 2,
                         "type": "int32",
                         "units": "Degrees"
                     }
@@ -43,6 +46,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 304
@@ -52,6 +56,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             }

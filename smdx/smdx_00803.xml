@@ -11,7 +11,7 @@
       <point id="ModTmpMin" offset="5" type="int16" sf="ModTmp_SF" units="C" mandatory="true" />
       <point id="ModTmpMinStr" offset="6" type="uint16" />
       <point id="ModTmpMinMod" offset="7" type="uint16" />
-      <point id="ModTmpAvg" offset="8" type="uint16" />
+      <point id="ModTmpAvg" offset="8" type="int16" />
       <point id="StrVMax" offset="9" type="uint16" sf="V_SF" units="V" />
       <point id="StrVMaxStr" offset="10" type="uint16" />
       <point id="StrVMin" offset="11" type="uint16" sf="V_SF" units="V" />

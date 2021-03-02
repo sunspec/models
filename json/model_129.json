@@ -12,6 +12,7 @@
                         "label": "ActPt",
                         "mandatory": "M",
                         "name": "ActPt",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -21,6 +22,7 @@
                         "mandatory": "M",
                         "name": "Tms1",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -31,6 +33,7 @@
                         "mandatory": "M",
                         "name": "V1",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -40,6 +43,7 @@
                         "label": "Tms2",
                         "name": "Tms2",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -49,6 +53,7 @@
                         "label": "V2",
                         "name": "V2",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -58,6 +63,7 @@
                         "label": "Tms3",
                         "name": "Tms3",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -67,6 +73,7 @@
                         "label": "V3",
                         "name": "V3",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -76,6 +83,7 @@
                         "label": "Tms4",
                         "name": "Tms4",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -85,6 +93,7 @@
                         "label": "V4",
                         "name": "V4",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -94,6 +103,7 @@
                         "label": "Tms5",
                         "name": "Tms5",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -103,6 +113,7 @@
                         "label": "V5",
                         "name": "V5",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -112,6 +123,7 @@
                         "label": "Tms6",
                         "name": "Tms6",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -121,6 +133,7 @@
                         "label": "V6",
                         "name": "V6",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -130,6 +143,7 @@
                         "label": "Tms7",
                         "name": "Tms7",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -139,6 +153,7 @@
                         "label": "V7",
                         "name": "V7",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -148,6 +163,7 @@
                         "label": "Tms8",
                         "name": "Tms8",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -157,6 +173,7 @@
                         "label": "V8",
                         "name": "V8",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -166,6 +183,7 @@
                         "label": "Tms9",
                         "name": "Tms9",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -175,6 +193,7 @@
                         "label": "V9",
                         "name": "V9",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -184,6 +203,7 @@
                         "label": "Tms10",
                         "name": "Tms10",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -193,6 +213,7 @@
                         "label": "V10",
                         "name": "V10",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -202,6 +223,7 @@
                         "label": "Tms11",
                         "name": "Tms11",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -211,6 +233,7 @@
                         "label": "V11",
                         "name": "V11",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -220,6 +243,7 @@
                         "label": "Tms12",
                         "name": "Tms12",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -229,6 +253,7 @@
                         "label": "V12",
                         "name": "V12",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -238,6 +263,7 @@
                         "label": "Tms13",
                         "name": "Tms13",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -247,6 +273,7 @@
                         "label": "V13",
                         "name": "V13",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -256,6 +283,7 @@
                         "label": "Tms14",
                         "name": "Tms14",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -265,6 +293,7 @@
                         "label": "V14",
                         "name": "V14",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -274,6 +303,7 @@
                         "label": "Tms15",
                         "name": "Tms15",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -283,6 +313,7 @@
                         "label": "V15",
                         "name": "V15",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -292,6 +323,7 @@
                         "label": "Tms16",
                         "name": "Tms16",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -301,6 +333,7 @@
                         "label": "V16",
                         "name": "V16",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -310,6 +343,7 @@
                         "label": "Tms17",
                         "name": "Tms17",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -319,6 +353,7 @@
                         "label": "V17",
                         "name": "V17",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -328,6 +363,7 @@
                         "label": "Tms18",
                         "name": "Tms18",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -337,6 +373,7 @@
                         "label": "V18",
                         "name": "V18",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -346,6 +383,7 @@
                         "label": "Tms19",
                         "name": "Tms19",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -355,6 +393,7 @@
                         "label": "V19",
                         "name": "V19",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -364,6 +403,7 @@
                         "label": "Tms20",
                         "name": "Tms20",
                         "sf": "Tms_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -373,6 +413,7 @@
                         "label": "V20",
                         "name": "V20",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -389,6 +430,7 @@
                         "label": "ReadOnly",
                         "mandatory": "M",
                         "name": "ReadOnly",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "READWRITE",
@@ -413,6 +455,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 129
@@ -422,6 +465,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -431,6 +475,7 @@
                 "label": "ActCrv",
                 "mandatory": "M",
                 "name": "ActCrv",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -439,6 +484,7 @@
                 "label": "ModEna",
                 "mandatory": "M",
                 "name": "ModEna",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "ENABLED",
@@ -452,6 +498,7 @@
                 "desc": "Time window for LVRT change.",
                 "label": "WinTms",
                 "name": "WinTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -460,6 +507,7 @@
                 "desc": "Timeout period for LVRT curve selection.",
                 "label": "RvrtTms",
                 "name": "RvrtTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -468,6 +516,7 @@
                 "desc": "Ramp time for moving from current mode to new mode.",
                 "label": "RmpTms",
                 "name": "RmpTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -476,6 +525,7 @@
                 "label": "NCrv",
                 "mandatory": "M",
                 "name": "NCrv",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -483,6 +533,7 @@
                 "label": "NPt",
                 "mandatory": "M",
                 "name": "NPt",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -490,6 +541,7 @@
                 "label": "Tms_SF",
                 "mandatory": "M",
                 "name": "Tms_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -497,10 +549,12 @@
                 "label": "V_SF",
                 "mandatory": "M",
                 "name": "V_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "name": "Pad",
+                "size": 1,
                 "type": "pad"
             }
         ],

@@ -11,6 +11,7 @@
                         "label": "ID",
                         "mandatory": "M",
                         "name": "InID",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -18,6 +19,7 @@
                         "label": "Input Event",
                         "mandatory": "M",
                         "name": "InEvt",
+                        "size": 2,
                         "symbols": [
                             {
                                 "name": "LOW_VOLTAGE",
@@ -102,6 +104,7 @@
                         "desc": "String Input Vendor Event Flags",
                         "label": "Input Event Vendor",
                         "name": "InEvtVnd",
+                        "size": 2,
                         "type": "bitfield32"
                     },
                     {
@@ -110,6 +113,7 @@
                         "mandatory": "M",
                         "name": "InDCA",
                         "sf": "InDCA_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "A"
                     },
@@ -118,6 +122,7 @@
                         "label": "Amp-hours",
                         "name": "InDCAhr",
                         "sf": "InDCAhr_SF",
+                        "size": 2,
                         "type": "acc32",
                         "units": "Ah"
                     },
@@ -126,6 +131,7 @@
                         "label": "Voltage",
                         "name": "InDCV",
                         "sf": "InDCV_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "V"
                     },
@@ -134,6 +140,7 @@
                         "label": "Watts",
                         "name": "InDCW",
                         "sf": "InDCW_SF",
+                        "size": 1,
                         "type": "int16",
                         "units": "W"
                     },
@@ -142,6 +149,7 @@
                         "label": "Watt-hours",
                         "name": "InDCWh",
                         "sf": "InDCWh_SF",
+                        "size": 2,
                         "type": "acc32",
                         "units": "Wh"
                     },
@@ -149,6 +157,7 @@
                         "desc": "String Performance Ratio",
                         "label": "PR",
                         "name": "InDCPR",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Pct"
                     },
@@ -156,6 +165,7 @@
                         "desc": "Number of modules in this input string",
                         "label": "N",
                         "name": "InN",
+                        "size": 1,
                         "type": "uint16"
                     }
                 ],
@@ -170,6 +180,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 404
@@ -179,6 +190,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -186,26 +198,31 @@
                 "desc": "Current scale factor",
                 "mandatory": "M",
                 "name": "DCA_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Amp-hour scale factor",
                 "name": "DCAhr_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Voltage scale factor",
                 "name": "DCV_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Power scale factor",
                 "name": "DCW_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Energy scale factor",
                 "name": "DCWh_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -214,6 +231,7 @@
                 "mandatory": "M",
                 "name": "DCAMax",
                 "sf": "DCA_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
@@ -222,6 +240,7 @@
                 "label": "N",
                 "mandatory": "M",
                 "name": "N",
+                "size": 1,
                 "type": "count"
             },
             {
@@ -229,6 +248,7 @@
                 "label": "Event",
                 "mandatory": "M",
                 "name": "Evt",
+                "size": 2,
                 "symbols": [
                     {
                         "name": "LOW_VOLTAGE",
@@ -313,6 +333,7 @@
                 "desc": "Bitmask value.  Vendor defined events",
                 "label": "Vendor Event",
                 "name": "EvtVnd",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
@@ -321,6 +342,7 @@
                 "mandatory": "M",
                 "name": "DCA",
                 "sf": "DCA_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "A"
             },
@@ -329,6 +351,7 @@
                 "label": "Amp-hours",
                 "name": "DCAhr",
                 "sf": "DCAhr_SF",
+                "size": 2,
                 "type": "acc32",
                 "units": "Ah"
             },
@@ -337,6 +360,7 @@
                 "label": "Voltage",
                 "name": "DCV",
                 "sf": "DCV_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "V"
             },
@@ -344,6 +368,7 @@
                 "desc": "Internal operating temperature",
                 "label": "Temp",
                 "name": "Tmp",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
@@ -352,6 +377,7 @@
                 "label": "Watts",
                 "name": "DCW",
                 "sf": "DCW_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "W"
             },
@@ -359,6 +385,7 @@
                 "desc": "DC Performance ratio value",
                 "label": "PR",
                 "name": "DCPR",
+                "size": 1,
                 "type": "int16",
                 "units": "Pct"
             },
@@ -367,32 +394,38 @@
                 "label": "Watt-hours",
                 "name": "DCWh",
                 "sf": "DCWh_SF",
+                "size": 2,
                 "type": "acc32",
                 "units": "Wh"
             },
             {
                 "desc": "Current scale factor for inputs",
                 "name": "InDCA_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Amp-hour scale factor for inputs",
                 "name": "InDCAhr_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Voltage scale factor for inputs",
                 "name": "InDCV_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Power scale factor for inputs",
                 "name": "InDCW_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Energy scale factor for inputs",
                 "name": "InDCWh_SF",
+                "size": 1,
                 "type": "sunssf"
             }
         ],

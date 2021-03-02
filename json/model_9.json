@@ -10,6 +10,7 @@
                         "access": "RW",
                         "mandatory": "M",
                         "name": "Cert",
+                        "size": 1,
                         "type": "uint16"
                     }
                 ],
@@ -24,6 +25,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 9
@@ -33,6 +35,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -42,6 +45,7 @@
                 "label": "Cert_UID",
                 "mandatory": "M",
                 "name": "CertUID",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -50,6 +54,7 @@
                 "label": "Cert_Role",
                 "mandatory": "M",
                 "name": "CertRole",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -58,6 +63,7 @@
                 "label": "Format",
                 "mandatory": "M",
                 "name": "Fmt",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "NONE",
@@ -80,6 +86,7 @@
                 "label": "Type",
                 "mandatory": "M",
                 "name": "Typ",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "DEV_KEY_PAIR",
@@ -110,6 +117,7 @@
                 "label": "Total Length",
                 "mandatory": "M",
                 "name": "TotLn",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -118,6 +126,7 @@
                 "label": "Fragment length",
                 "mandatory": "M",
                 "name": "FrgLn",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -126,462 +135,539 @@
                 "label": "Frag1",
                 "mandatory": "M",
                 "name": "Frg1",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg2",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg3",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg4",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg5",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg6",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg7",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg8",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg9",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg10",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg11",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg12",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg13",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg14",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg15",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg16",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg17",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg18",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg19",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg20",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg21",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg22",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg23",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg24",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg25",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg26",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg27",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg28",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg29",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg30",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg31",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg32",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg33",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg34",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg35",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg36",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg37",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg38",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg39",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg40",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg41",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg42",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg43",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg44",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg45",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg46",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg47",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg48",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg49",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg50",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg51",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg52",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg53",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg54",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg55",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg56",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg57",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg58",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg59",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg60",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg61",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg62",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg63",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg64",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg65",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg66",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg67",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg68",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg69",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg70",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg71",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg72",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg73",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg74",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg75",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg78",
+                "size": 1,
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "mandatory": "M",
                 "name": "Frg79",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -590,6 +676,7 @@
                 "label": "Frag80",
                 "mandatory": "M",
                 "name": "Frg80",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -598,6 +685,7 @@
                 "label": "Timestamp",
                 "mandatory": "M",
                 "name": "Ts",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -606,6 +694,7 @@
                 "label": "Milliseconds",
                 "mandatory": "M",
                 "name": "Ms",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -614,6 +703,7 @@
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -622,6 +712,7 @@
                 "label": "UID",
                 "mandatory": "M",
                 "name": "UID",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -630,6 +721,7 @@
                 "label": "Role",
                 "mandatory": "M",
                 "name": "Role",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -638,6 +730,7 @@
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "NONE",
@@ -660,6 +753,7 @@
                 "label": "N",
                 "mandatory": "M",
                 "name": "N",
+                "size": 1,
                 "type": "uint16"
             }
         ],

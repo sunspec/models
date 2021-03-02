@@ -7,20 +7,22 @@
         "points": [
             {
                 "desc": "DER capacity model ID.",
-                "label": "DER Capacity Model ID",
+                "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 702
             },
             {
                 "desc": "DER capacity name  model length.",
-                "label": "DER Capacity Model Length",
+                "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 50
@@ -34,6 +36,7 @@
                 "name": "WMaxRtg",
                 "notes": "",
                 "sf": "W_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "W"
@@ -44,6 +47,7 @@
                 "name": "WOvrExtRtg",
                 "notes": "",
                 "sf": "W_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "W"
@@ -54,6 +58,7 @@
                 "name": "WOvrExtRtgPF",
                 "notes": "",
                 "sf": "PF_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -63,6 +68,7 @@
                 "name": "WUndExtRtg",
                 "notes": "",
                 "sf": "W_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "W"
@@ -73,6 +79,7 @@
                 "name": "WUndExtRtgPF",
                 "notes": "",
                 "sf": "PF_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -82,6 +89,7 @@
                 "name": "VAMaxRtg",
                 "notes": "",
                 "sf": "VA_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "VA"
@@ -92,6 +100,7 @@
                 "name": "VarMaxInjRtg",
                 "notes": "",
                 "sf": "Var_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "Var"
@@ -102,6 +111,7 @@
                 "name": "VarMaxAbsRtg",
                 "notes": "",
                 "sf": "Var_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "Var"
@@ -112,6 +122,7 @@
                 "name": "WChaRteMaxRtg",
                 "notes": "",
                 "sf": "W_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "W"
@@ -122,6 +133,7 @@
                 "name": "WDisChaRteMaxRtg",
                 "notes": "",
                 "sf": "W_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "W"
@@ -132,6 +144,7 @@
                 "name": "VAChaRteMaxRtg",
                 "notes": "",
                 "sf": "VA_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "VA"
@@ -142,6 +155,7 @@
                 "name": "VADisChaRteMaxRtg",
                 "notes": "",
                 "sf": "VA_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "VA"
@@ -152,6 +166,7 @@
                 "name": "VNomRtg",
                 "notes": "",
                 "sf": "V_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "V"
@@ -162,6 +177,7 @@
                 "name": "VMaxRtg",
                 "notes": "",
                 "sf": "V_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "V"
@@ -172,6 +188,7 @@
                 "name": "VMinRtg",
                 "notes": "",
                 "sf": "V_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "V"
@@ -182,6 +199,7 @@
                 "name": "AMaxRtg",
                 "notes": "",
                 "sf": "A_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "A"
@@ -192,6 +210,7 @@
                 "name": "PFOvrExtRtg",
                 "notes": "",
                 "sf": "PF_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -201,6 +220,7 @@
                 "name": "PFUndExtRtg",
                 "notes": "",
                 "sf": "PF_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -210,6 +230,7 @@
                 "name": "ReactSusceptRtg",
                 "notes": "",
                 "sf": "S_SF",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "units": "S"
@@ -219,6 +240,7 @@
                 "label": "Normal Operating Category",
                 "name": "NorOpCatRtg",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "symbols": [
                     {
@@ -239,6 +261,7 @@
                 "label": "Abnormal Operating Category",
                 "name": "AbnOpCatRtg",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "symbols": [
                     {
@@ -264,6 +287,7 @@
                 "label": "Supported Control Modes",
                 "name": "CtrlModes",
                 "notes": "",
+                "size": 2,
                 "static": "S",
                 "symbols": [
                     {
@@ -344,6 +368,7 @@
                 "label": "Intentional Island Categories",
                 "name": "IntIslandCatRtg",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "symbols": [
                     {
@@ -379,6 +404,7 @@
                 "name": "WMax",
                 "notes": "",
                 "sf": "W_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "W"
             },
@@ -389,6 +415,7 @@
                 "name": "WMaxOvrExt",
                 "notes": "",
                 "sf": "W_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "W"
             },
@@ -399,6 +426,7 @@
                 "name": "WOvrExtPF",
                 "notes": "",
                 "sf": "PF_SF",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -408,6 +436,7 @@
                 "name": "WMaxUndExt",
                 "notes": "",
                 "sf": "W_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "W"
             },
@@ -418,6 +447,7 @@
                 "name": "WUndExtPF",
                 "notes": "",
                 "sf": "PF_SF",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -427,6 +457,7 @@
                 "name": "VAMax",
                 "notes": "",
                 "sf": "VA_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "VA"
             },
@@ -437,6 +468,7 @@
                 "name": "VarMaxInj",
                 "notes": "",
                 "sf": "Var_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Var"
             },
@@ -447,6 +479,7 @@
                 "name": "VarMaxAbs",
                 "notes": "",
                 "sf": "Var_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "Var"
             },
@@ -457,6 +490,7 @@
                 "name": "WChaRteMax",
                 "notes": "",
                 "sf": "W_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "W"
             },
@@ -467,6 +501,7 @@
                 "name": "WDisChaRteMax",
                 "notes": "",
                 "sf": "W_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "W"
             },
@@ -477,6 +512,7 @@
                 "name": "VAChaRteMax",
                 "notes": "",
                 "sf": "VA_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "VA"
             },
@@ -487,6 +523,7 @@
                 "name": "VADisChaRteMax",
                 "notes": "",
                 "sf": "VA_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "VA"
             },
@@ -497,6 +534,7 @@
                 "name": "VNom",
                 "notes": "",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -507,6 +545,7 @@
                 "name": "VMax",
                 "notes": "",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -517,6 +556,7 @@
                 "name": "VMin",
                 "notes": "",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "V"
             },
@@ -527,6 +567,7 @@
                 "name": "AMax",
                 "notes": "",
                 "sf": "A_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "A"
             },
@@ -537,6 +578,7 @@
                 "name": "PFOvrExt",
                 "notes": "",
                 "sf": "PF_SF",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -546,6 +588,7 @@
                 "name": "PFUndExt",
                 "notes": "",
                 "sf": "PF_SF",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -554,6 +597,7 @@
                 "label": "Intentional Island Categories",
                 "name": "IntIslandCat",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "UNCATEGORIZED",
@@ -586,6 +630,7 @@
                 "label": "Active Power Scale Factor",
                 "name": "W_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -594,6 +639,7 @@
                 "label": "Power Factor Scale Factor",
                 "name": "PF_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -602,6 +648,7 @@
                 "label": "Apparent Power Scale Factor",
                 "name": "VA_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -610,6 +657,7 @@
                 "label": "Reactive Power Scale Factor",
                 "name": "Var_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -618,6 +666,7 @@
                 "label": "Voltage Scale Factor",
                 "name": "V_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -626,6 +675,7 @@
                 "label": "Current Scale Factor",
                 "name": "A_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -634,6 +684,7 @@
                 "label": "Susceptance Scale Factor",
                 "name": "S_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             }

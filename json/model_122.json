@@ -9,6 +9,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 122
@@ -18,6 +19,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -26,6 +28,7 @@
                 "label": "PVConn",
                 "mandatory": "M",
                 "name": "PVConn",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "CONNECTED",
@@ -51,6 +54,7 @@
                 "label": "StorConn",
                 "mandatory": "M",
                 "name": "StorConn",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "CONNECTED",
@@ -76,6 +80,7 @@
                 "label": "ECPConn",
                 "mandatory": "M",
                 "name": "ECPConn",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "CONNECTED",
@@ -88,6 +93,7 @@
                 "desc": "AC lifetime active (real) energy output.",
                 "label": "ActWh",
                 "name": "ActWh",
+                "size": 4,
                 "type": "acc64",
                 "units": "Wh"
             },
@@ -95,6 +101,7 @@
                 "desc": "AC lifetime apparent energy output.",
                 "label": "ActVAh",
                 "name": "ActVAh",
+                "size": 4,
                 "type": "acc64",
                 "units": "VAh"
             },
@@ -102,6 +109,7 @@
                 "desc": "AC lifetime reactive energy output in quadrant 1.",
                 "label": "ActVArhQ1",
                 "name": "ActVArhQ1",
+                "size": 4,
                 "type": "acc64",
                 "units": "varh"
             },
@@ -109,6 +117,7 @@
                 "desc": "AC lifetime reactive energy output in quadrant 2.",
                 "label": "ActVArhQ2",
                 "name": "ActVArhQ2",
+                "size": 4,
                 "type": "acc64",
                 "units": "varh"
             },
@@ -116,6 +125,7 @@
                 "desc": "AC lifetime negative energy output  in quadrant 3.",
                 "label": "ActVArhQ3",
                 "name": "ActVArhQ3",
+                "size": 4,
                 "type": "acc64",
                 "units": "varh"
             },
@@ -123,6 +133,7 @@
                 "desc": "AC lifetime reactive energy output  in quadrant 4.",
                 "label": "ActVArhQ4",
                 "name": "ActVArhQ4",
+                "size": 4,
                 "type": "acc64",
                 "units": "varh"
             },
@@ -131,6 +142,7 @@
                 "label": "VArAval",
                 "name": "VArAval",
                 "sf": "VArAval_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "var"
             },
@@ -138,6 +150,7 @@
                 "desc": "Scale factor for available VARs.",
                 "label": "VArAval_SF",
                 "name": "VArAval_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -145,6 +158,7 @@
                 "label": "WAval",
                 "name": "WAval",
                 "sf": "WAval_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "var"
             },
@@ -152,12 +166,14 @@
                 "desc": "Scale factor for available Watts.",
                 "label": "WAval_SF",
                 "name": "WAval_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Bit Mask indicating setpoint limit(s) reached.",
                 "label": "StSetLimMsk",
                 "name": "StSetLimMsk",
+                "size": 2,
                 "symbols": [
                     {
                         "name": "WMax",
@@ -210,6 +226,7 @@
                 "desc": "Bit Mask indicating which inverter controls are currently active.",
                 "label": "StActCtl",
                 "name": "StActCtl",
+                "size": 2,
                 "symbols": [
                     {
                         "name": "FixedW",
@@ -281,6 +298,7 @@
                 "desc": "Seconds since 01-01-2000 00:00 UTC",
                 "label": "Tms",
                 "name": "Tms",
+                "size": 2,
                 "type": "uint32",
                 "units": "Secs"
             },
@@ -288,6 +306,7 @@
                 "desc": "Bit Mask indicating active ride-through status.",
                 "label": "RtSt",
                 "name": "RtSt",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "LVRT_ACTIVE",
@@ -313,6 +332,7 @@
                 "label": "Ris",
                 "name": "Ris",
                 "sf": "Ris_SF",
+                "size": 1,
                 "type": "uint16",
                 "units": "ohms"
             },
@@ -320,6 +340,7 @@
                 "desc": "Scale factor for isolation resistance.",
                 "label": "Ris_SF",
                 "name": "Ris_SF",
+                "size": 1,
                 "type": "sunssf"
             }
         ],

@@ -26,6 +26,7 @@
                                 "name": "V",
                                 "notes": "",
                                 "sf": "V_SF",
+                                "size": 1,
                                 "type": "uint16",
                                 "units": "VRefPct"
                             },
@@ -36,6 +37,7 @@
                                 "name": "Var",
                                 "notes": "",
                                 "sf": "DeptRef_SF",
+                                "size": 1,
                                 "type": "int16",
                                 "units": "VarPct"
                             }
@@ -54,6 +56,7 @@
                         "mandatory": "M",
                         "name": "ActPt",
                         "notes": "",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -63,6 +66,7 @@
                         "mandatory": "M",
                         "name": "DeptRef",
                         "notes": "",
+                        "size": 1,
                         "symbols": [
                             {
                                 "label": "Percent Max Watts",
@@ -95,6 +99,7 @@
                         "access": "RW",
                         "name": "Pri",
                         "notes": "",
+                        "size": 1,
                         "symbols": [
                             {
                                 "desc": "Active power priority.",
@@ -141,6 +146,7 @@
                         "name": "VRef",
                         "notes": "",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "VRefPct"
                     },
@@ -150,6 +156,7 @@
                         "name": "VRefAuto",
                         "notes": "",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "VRefPct"
                     },
@@ -159,6 +166,7 @@
                         "label": "Autonomous Vref Enable",
                         "name": "VRefAutoEna",
                         "notes": "",
+                        "size": 1,
                         "symbols": [
                             {
                                 "desc": "Disabled flag (Disabled = 0, Enabled = 1).",
@@ -183,6 +191,7 @@
                         "label": "Auto Vref Time Constant",
                         "name": "VRefAutoTms",
                         "notes": "",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -192,14 +201,18 @@
                         "name": "RspTms",
                         "notes": "",
                         "sf": "RspTms_SF",
+                        "size": 2,
                         "type": "uint32",
                         "units": "Secs"
                     },
                     {
                         "desc": "Curve read-write access.",
                         "label": "Curve Access",
+                        "mandatory": "M",
                         "name": "ReadOnly",
                         "notes": "",
+                        "size": 1,
+                        "static": "S",
                         "symbols": [
                             {
                                 "desc": "Curve has read-write access.",
@@ -232,6 +245,7 @@
                 "mandatory": "M",
                 "name": "ID",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 705
@@ -242,26 +256,28 @@
                 "mandatory": "M",
                 "name": "L",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
             {
                 "access": "RW",
                 "desc": "Volt-Var control enable.",
-                "label": "Module Enable",
+                "label": "DER Volt-Var Module Enable",
                 "mandatory": "M",
                 "name": "Ena",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
-                        "desc": "Function is enabled.",
+                        "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
                         "notes": "",
                         "value": 0
                     },
                     {
-                        "desc": "Function is disabled.",
+                        "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
                         "notes": "",
@@ -277,6 +293,7 @@
                 "mandatory": "M",
                 "name": "AdptCrvReq",
                 "notes": "",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -285,6 +302,7 @@
                 "mandatory": "M",
                 "name": "AdptCrvRslt",
                 "notes": "",
+                "size": 1,
                 "symbols": [
                     {
                         "desc": "Curve update in progress.",
@@ -316,6 +334,7 @@
                 "mandatory": "M",
                 "name": "NPt",
                 "notes": " ",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -325,6 +344,7 @@
                 "mandatory": "M",
                 "name": "NCrv",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -334,6 +354,7 @@
                 "label": "Reversion Timeout",
                 "name": "RvrtTms",
                 "notes": "",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -341,6 +362,7 @@
                 "label": "Reversion Time Remaining",
                 "name": "RvrtRem",
                 "notes": "",
+                "size": 2,
                 "type": "uint32"
             },
             {
@@ -349,6 +371,7 @@
                 "label": "Reversion Curve",
                 "name": "RvrtCrv",
                 "notes": "",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -357,6 +380,7 @@
                 "mandatory": "M",
                 "name": "V_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -366,6 +390,7 @@
                 "mandatory": "M",
                 "name": "DeptRef_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             },
@@ -375,6 +400,7 @@
                 "mandatory": "M",
                 "name": "RspTms_SF",
                 "notes": "",
+                "size": 1,
                 "static": "S",
                 "type": "sunssf"
             }

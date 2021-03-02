@@ -9,6 +9,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 125
@@ -18,6 +19,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -27,6 +29,7 @@
                 "label": "ModEna",
                 "mandatory": "M",
                 "name": "ModEna",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "ENABLE",
@@ -40,6 +43,7 @@
                 "desc": "Meaning of the pricing signal. When a Price schedule is used, type must match the schedule range variable description.",
                 "label": "SigType",
                 "name": "SigType",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "UNKNOWN",
@@ -71,6 +75,7 @@
                 "mandatory": "M",
                 "name": "Sig",
                 "sf": "Sig_SF",
+                "size": 1,
                 "type": "int16"
             },
             {
@@ -78,6 +83,7 @@
                 "desc": "Time window for charge/discharge pricing change.",
                 "label": "WinTms",
                 "name": "WinTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -86,6 +92,7 @@
                 "desc": "Timeout period for charge/discharge pricing change.",
                 "label": "RvtTms",
                 "name": "RvtTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -94,6 +101,7 @@
                 "desc": "Ramp time for moving from current charge or discharge level to new level.",
                 "label": "RmpTms",
                 "name": "RmpTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -102,10 +110,12 @@
                 "label": "Sig_SF",
                 "mandatory": "M",
                 "name": "Sig_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "name": "Pad",
+                "size": 1,
                 "type": "pad"
             }
         ],

@@ -9,6 +9,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 502
@@ -18,27 +19,32 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
             {
                 "desc": "Current scale factor",
                 "name": "A_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Voltage scale factor",
                 "name": "V_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Power scale factor",
                 "name": "W_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "desc": "Energy scale factor",
                 "name": "Wh_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -46,6 +52,7 @@
                 "label": "Status",
                 "mandatory": "M",
                 "name": "Stat",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "OFF",
@@ -94,6 +101,7 @@
                 "desc": "Module Vendor Status Code",
                 "label": "Vendor Status",
                 "name": "StatVend",
+                "size": 1,
                 "type": "enum16"
             },
             {
@@ -101,6 +109,7 @@
                 "label": "Events",
                 "mandatory": "M",
                 "name": "Evt",
+                "size": 2,
                 "symbols": [
                     {
                         "name": "GROUND_FAULT",
@@ -193,6 +202,7 @@
                 "desc": "Vendor specific flags",
                 "label": "Vendor Module Event Flags",
                 "name": "EvtVend",
+                "size": 2,
                 "type": "bitfield32"
             },
             {
@@ -200,6 +210,7 @@
                 "desc": "Module Control",
                 "label": "Control",
                 "name": "Ctl",
+                "size": 1,
                 "type": "enum16"
             },
             {
@@ -207,6 +218,7 @@
                 "desc": "Vendor Module Control",
                 "label": "Vendor Control",
                 "name": "CtlVend",
+                "size": 2,
                 "type": "enum32"
             },
             {
@@ -214,12 +226,14 @@
                 "desc": "Module Control Value",
                 "label": "Control Value",
                 "name": "CtlVal",
+                "size": 2,
                 "type": "int32"
             },
             {
                 "desc": "Time in seconds since 2000 epoch",
                 "label": "Timestamp",
                 "name": "Tms",
+                "size": 2,
                 "type": "uint32",
                 "units": "Secs"
             },
@@ -228,6 +242,7 @@
                 "label": "Output Current",
                 "name": "OutA",
                 "sf": "A_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "A"
             },
@@ -236,6 +251,7 @@
                 "label": "Output Voltage",
                 "name": "OutV",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "V"
             },
@@ -244,6 +260,7 @@
                 "label": "Output Energy",
                 "name": "OutWh",
                 "sf": "Wh_SF",
+                "size": 2,
                 "type": "acc32",
                 "units": "Wh"
             },
@@ -252,6 +269,7 @@
                 "label": "Output Power",
                 "name": "OutPw",
                 "sf": "W_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "W"
             },
@@ -259,6 +277,7 @@
                 "desc": "Module Temperature",
                 "label": "Temp",
                 "name": "Tmp",
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
@@ -267,6 +286,7 @@
                 "label": "Input Current",
                 "name": "InA",
                 "sf": "A_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "A"
             },
@@ -275,6 +295,7 @@
                 "label": "Input Voltage",
                 "name": "InV",
                 "sf": "V_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "V"
             },
@@ -283,6 +304,7 @@
                 "label": "Input Energy",
                 "name": "InWh",
                 "sf": "Wh_SF",
+                "size": 2,
                 "type": "acc32",
                 "units": "Wh"
             },
@@ -291,6 +313,7 @@
                 "label": "Input Power",
                 "name": "InW",
                 "sf": "W_SF",
+                "size": 1,
                 "type": "int16",
                 "units": "W"
             }

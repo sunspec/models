@@ -12,6 +12,7 @@
                         "label": "ActPt",
                         "mandatory": "M",
                         "name": "ActPt",
+                        "size": 1,
                         "type": "uint16"
                     },
                     {
@@ -20,6 +21,7 @@
                         "label": "DeptRef",
                         "mandatory": "M",
                         "name": "DeptRef",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "WMax",
@@ -43,6 +45,7 @@
                         "mandatory": "M",
                         "name": "V1",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -53,6 +56,7 @@
                         "mandatory": "M",
                         "name": "VAr1",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -61,6 +65,7 @@
                         "label": "V2",
                         "name": "V2",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -70,6 +75,7 @@
                         "label": "VAr2",
                         "name": "VAr2",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -78,6 +84,7 @@
                         "label": "V3",
                         "name": "V3",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -87,6 +94,7 @@
                         "label": "VAr3",
                         "name": "VAr3",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -95,6 +103,7 @@
                         "label": "V4",
                         "name": "V4",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -104,6 +113,7 @@
                         "label": "VAr4",
                         "name": "VAr4",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -112,6 +122,7 @@
                         "label": "V5",
                         "name": "V5",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -121,6 +132,7 @@
                         "label": "VAr5",
                         "name": "VAr5",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -129,6 +141,7 @@
                         "label": "V6",
                         "name": "V6",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -138,6 +151,7 @@
                         "label": "VAr6",
                         "name": "VAr6",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -146,6 +160,7 @@
                         "label": "V7",
                         "name": "V7",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -155,6 +170,7 @@
                         "label": "VAr7",
                         "name": "VAr7",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -163,6 +179,7 @@
                         "label": "V8",
                         "name": "V8",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -172,6 +189,7 @@
                         "label": "VAr8",
                         "name": "VAr8",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -180,6 +198,7 @@
                         "label": "V9",
                         "name": "V9",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -189,6 +208,7 @@
                         "label": "VAr9",
                         "name": "VAr9",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -197,6 +217,7 @@
                         "label": "V10",
                         "name": "V10",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -206,6 +227,7 @@
                         "label": "VAr10",
                         "name": "VAr10",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -214,6 +236,7 @@
                         "label": "V11",
                         "name": "V11",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -223,6 +246,7 @@
                         "label": "VAr11",
                         "name": "VAr11",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -231,6 +255,7 @@
                         "label": "V12",
                         "name": "V12",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -240,6 +265,7 @@
                         "label": "VAr12",
                         "name": "VAr12",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -248,6 +274,7 @@
                         "label": "V13",
                         "name": "V13",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -257,6 +284,7 @@
                         "label": "VAr13",
                         "name": "VAr13",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -265,6 +293,7 @@
                         "label": "V14",
                         "name": "V14",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -274,6 +303,7 @@
                         "label": "VAr14",
                         "name": "VAr14",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -282,6 +312,7 @@
                         "label": "V15",
                         "name": "V15",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -291,6 +322,7 @@
                         "label": "VAr15",
                         "name": "VAr15",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -299,6 +331,7 @@
                         "label": "V16",
                         "name": "V16",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -308,6 +341,7 @@
                         "label": "VAr16",
                         "name": "VAr16",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -316,6 +350,7 @@
                         "label": "V17",
                         "name": "V17",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -325,6 +360,7 @@
                         "label": "VAr17",
                         "name": "VAr17",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -333,6 +369,7 @@
                         "label": "V18",
                         "name": "V18",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -342,6 +379,7 @@
                         "label": "VAr18",
                         "name": "VAr18",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -350,6 +388,7 @@
                         "label": "V19",
                         "name": "V19",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -359,6 +398,7 @@
                         "label": "VAr19",
                         "name": "VAr19",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -367,6 +407,7 @@
                         "label": "V20",
                         "name": "V20",
                         "sf": "V_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% VRef"
                     },
@@ -376,6 +417,7 @@
                         "label": "VAr20",
                         "name": "VAr20",
                         "sf": "DeptRef_SF",
+                        "size": 1,
                         "type": "int16"
                     },
                     {
@@ -391,6 +433,7 @@
                         "desc": "The time of the PT1 in seconds (time to accomplish a change of 95%).",
                         "label": "RmpTms",
                         "name": "RmpTms",
+                        "size": 1,
                         "type": "uint16",
                         "units": "Secs"
                     },
@@ -400,6 +443,7 @@
                         "label": "RmpDecTmm",
                         "name": "RmpDecTmm",
                         "sf": "RmpIncDec_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% ref_value/min"
                     },
@@ -409,6 +453,7 @@
                         "label": "RmpIncTmm",
                         "name": "RmpIncTmm",
                         "sf": "RmpIncDec_SF",
+                        "size": 1,
                         "type": "uint16",
                         "units": "% ref_value/min"
                     },
@@ -417,6 +462,7 @@
                         "label": "ReadOnly",
                         "mandatory": "M",
                         "name": "ReadOnly",
+                        "size": 1,
                         "symbols": [
                             {
                                 "name": "READWRITE",
@@ -441,6 +487,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 126
@@ -450,6 +497,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -459,6 +507,7 @@
                 "label": "ActCrv",
                 "mandatory": "M",
                 "name": "ActCrv",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -467,6 +516,7 @@
                 "label": "ModEna",
                 "mandatory": "M",
                 "name": "ModEna",
+                "size": 1,
                 "symbols": [
                     {
                         "name": "ENABLED",
@@ -480,6 +530,7 @@
                 "desc": "Time window for volt-VAR change.",
                 "label": "WinTms",
                 "name": "WinTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -488,6 +539,7 @@
                 "desc": "Timeout period for volt-VAR curve selection.",
                 "label": "RvrtTms",
                 "name": "RvrtTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -496,6 +548,7 @@
                 "desc": "The time of the PT1 in seconds (time to accomplish a change of 95%).",
                 "label": "RmpTms",
                 "name": "RmpTms",
+                "size": 1,
                 "type": "uint16",
                 "units": "Secs"
             },
@@ -504,6 +557,7 @@
                 "label": "NCrv",
                 "mandatory": "M",
                 "name": "NCrv",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -511,6 +565,7 @@
                 "label": "NPt",
                 "mandatory": "M",
                 "name": "NPt",
+                "size": 1,
                 "type": "uint16"
             },
             {
@@ -518,6 +573,7 @@
                 "label": "V_SF",
                 "mandatory": "M",
                 "name": "V_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
@@ -525,10 +581,12 @@
                 "label": "DeptRef_SF",
                 "mandatory": "M",
                 "name": "DeptRef_SF",
+                "size": 1,
                 "type": "sunssf"
             },
             {
                 "name": "RmpIncDec_SF",
+                "size": 1,
                 "type": "sunssf"
             }
         ],

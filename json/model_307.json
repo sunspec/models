@@ -9,6 +9,7 @@
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
+                "size": 1,
                 "static": "S",
                 "type": "uint16",
                 "value": 307
@@ -18,6 +19,7 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
+                "size": 1,
                 "static": "S",
                 "type": "uint16"
             },
@@ -25,42 +27,49 @@
                 "label": "Ambient Temperature",
                 "name": "TmpAmb",
                 "sf": -1,
+                "size": 1,
                 "type": "int16",
                 "units": "C"
             },
             {
                 "label": "Relative Humidity",
                 "name": "RH",
+                "size": 1,
                 "type": "int16",
                 "units": "Pct"
             },
             {
                 "label": "Barometric Pressure",
                 "name": "Pres",
+                "size": 1,
                 "type": "int16",
                 "units": "HPa"
             },
             {
                 "label": "Wind Speed",
                 "name": "WndSpd",
+                "size": 1,
                 "type": "int16",
                 "units": "mps"
             },
             {
                 "label": "Wind Direction",
                 "name": "WndDir",
+                "size": 1,
                 "type": "int16",
                 "units": "deg"
             },
             {
                 "label": "Rainfall",
                 "name": "Rain",
+                "size": 1,
                 "type": "int16",
                 "units": "mm"
             },
             {
                 "label": "Snow Depth",
                 "name": "Snw",
+                "size": 1,
                 "type": "int16",
                 "units": "mm"
             },
@@ -68,23 +77,27 @@
                 "desc": "\u00a0Precipitation Type (WMO 4680 SYNOP code reference)",
                 "label": "Precipitation Type",
                 "name": "PPT",
+                "size": 1,
                 "type": "int16"
             },
             {
                 "label": "Electric Field",
                 "name": "ElecFld",
+                "size": 1,
                 "type": "int16",
                 "units": "Vm"
             },
             {
                 "label": "Surface Wetness",
                 "name": "SurWet",
+                "size": 1,
                 "type": "int16",
                 "units": "kO"
             },
             {
                 "label": "Soil Wetness",
                 "name": "SoilWet",
+                "size": 1,
                 "type": "int16",
                 "units": "Pct"
             }
