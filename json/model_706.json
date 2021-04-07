@@ -175,7 +175,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Index of  curve points to adopt. First curve index is 1.",
+                "desc": "Index of curve points to adopt. First curve index is 1.",
                 "label": "Adopt Curve Request",
                 "mandatory": "M",
                 "name": "AdptCrvReq",
@@ -273,7 +273,7 @@
             },
             {
                 "desc": "Scale factor for curve watt points.",
-                "label": "Watt  Scale Factor",
+                "label": "Watt Scale Factor",
                 "mandatory": "M",
                 "name": "DeptRef_SF",
                 "notes": "",

@@ -187,7 +187,7 @@
         "notes": "",
         "points": [
             {
-                "desc": "Model name model ID.",
+                "desc": "DER AC controls model ID.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -198,7 +198,7 @@
                 "value": 704
             },
             {
-                "desc": "Model name  model length.",
+                "desc": "DER AC controls model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",

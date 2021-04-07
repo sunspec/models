@@ -126,7 +126,7 @@
                 "value": 711
             },
             {
-                "desc": "DER Frequency Droop  model length.",
+                "desc": "DER Frequency Droop model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -215,7 +215,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Reversion time in seconds.  0 = No reversion time",
+                "desc": "Reversion time in seconds.  0 = No reversion time.",
                 "label": "Reversion Timeout",
                 "name": "RvrtTms",
                 "notes": "",
@@ -223,7 +223,7 @@
                 "type": "uint32"
             },
             {
-                "desc": "Reversion time remaining in seconds",
+                "desc": "Reversion time remaining in seconds.",
                 "label": "Reversion Time Left",
                 "name": "RvrtRem",
                 "notes": "",
