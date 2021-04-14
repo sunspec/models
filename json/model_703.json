@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "Enter service.",
+        "desc": "Enter service model.",
         "label": "Enter Service",
         "name": "DEREnterService",
         "notes": "",
@@ -17,7 +17,7 @@
                 "value": 703
             },
             {
-                "desc": "Enter service  model length.",
+                "desc": "Enter service model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",

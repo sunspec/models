@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "DER Low voltage trip model.",
+        "desc": "DER low voltage trip model.",
         "groups": [
             {
                 "comments": [
@@ -219,7 +219,7 @@
                 "value": 707
             },
             {
-                "desc": "DER low volatage trip model length.",
+                "desc": "DER low voltage trip model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -230,7 +230,7 @@
             },
             {
                 "access": "RW",
-                "desc": "DER low voltage trip  control enable.",
+                "desc": "DER low voltage trip control enable.",
                 "label": "DER Trip LV Module Enable",
                 "mandatory": "M",
                 "name": "Ena",
@@ -256,7 +256,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Index of  curve points to adopt. First curve index is 1.",
+                "desc": "Index of curve points to adopt. First curve index is 1.",
                 "label": "Adopt Curve Request",
                 "mandatory": "M",
                 "name": "AdptCrvReq",

@@ -17,7 +17,7 @@
                 "value": 702
             },
             {
-                "desc": "DER capacity name  model length.",
+                "desc": "DER capacity model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -236,7 +236,7 @@
                 "units": "S"
             },
             {
-                "desc": "Normal operating performace category as specified in IEEE 1547-2018.",
+                "desc": "Normal operating performance category as specified in IEEE 1547-2018.",
                 "label": "Normal Operating Category",
                 "name": "NorOpCatRtg",
                 "notes": "",
@@ -244,11 +244,13 @@
                 "static": "S",
                 "symbols": [
                     {
+                        "label": "Category A",
                         "name": "CAT_A",
                         "notes": "",
                         "value": 0
                     },
                     {
+                        "label": "Category B",
                         "name": "CAT_B",
                         "notes": "",
                         "value": 1
@@ -265,16 +267,19 @@
                 "static": "S",
                 "symbols": [
                     {
+                        "label": "Category I",
                         "name": "CAT_1",
                         "notes": "",
                         "value": 0
                     },
                     {
+                        "label": "Category II",
                         "name": "CAT_2",
                         "notes": "",
                         "value": 1
                     },
                     {
+                        "label": "Category III",
                         "name": "CAT_3",
                         "notes": "",
                         "value": 2
@@ -291,71 +296,85 @@
                 "static": "S",
                 "symbols": [
                     {
+                        "label": "Limit Maximum Active Power",
                         "name": "MAX_W",
                         "notes": "",
                         "value": 0
                     },
                     {
+                        "label": "Fixed Active Power",
                         "name": "FIXED_W",
                         "notes": "",
                         "value": 1
                     },
                     {
+                        "label": "Fixed Reactive Power",
                         "name": "FIXED_VAR",
                         "notes": "",
                         "value": 2
                     },
                     {
+                        "label": "Fixed Power Factor",
                         "name": "FIXED_PF",
                         "notes": "",
                         "value": 3
                     },
                     {
+                        "label": "Volt-Var Function",
                         "name": "VOLT_VAR",
                         "notes": "",
                         "value": 4
                     },
                     {
+                        "label": "Freq-Watt Function",
                         "name": "FREQ_WATT",
                         "notes": "",
                         "value": 5
                     },
                     {
+                        "label": "Dynamic Reactive Current Function",
                         "name": "DYN_REACT_CURR",
                         "notes": "",
                         "value": 6
                     },
                     {
+                        "label": "Low-Voltage Trip",
                         "name": "LV_TRIP",
                         "notes": "",
                         "value": 7
                     },
                     {
+                        "label": "High-Voltage Trip",
                         "name": "HV_TRIP",
                         "notes": "",
                         "value": 8
                     },
                     {
+                        "label": "Watt-Var Function",
                         "name": "WATT_VAR",
                         "notes": "",
                         "value": 9
                     },
                     {
+                        "label": "Volt-Watt Function",
                         "name": "VOLT_WATT",
                         "notes": "",
                         "value": 10
                     },
                     {
+                        "label": "Scheduling",
                         "name": "SCHEDULED",
                         "notes": "",
                         "value": 11
                     },
                     {
+                        "label": "Low-Frequency Trip",
                         "name": "LF_TRIP",
                         "notes": "",
                         "value": 12
                     },
                     {
+                        "label": "High-Frequency Trip",
                         "name": "HF_TRIP",
                         "notes": "",
                         "value": 13
@@ -364,7 +383,7 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Intentional island categories",
+                "desc": "Intentional island categories.",
                 "label": "Intentional Island Categories",
                 "name": "IntIslandCatRtg",
                 "notes": "",
@@ -372,21 +391,25 @@
                 "static": "S",
                 "symbols": [
                     {
+                        "label": "Uncategorized",
                         "name": "UNCATEGORIZED",
                         "notes": "",
                         "value": 0
                     },
                     {
+                        "label": "Intentional Island-Capable",
                         "name": "INT_ISL_CAPABLE",
                         "notes": "",
                         "value": 1
                     },
                     {
+                        "label": "Black Start-Capable",
                         "name": "BLACK_START_CAPABLE",
                         "notes": "",
                         "value": 2
                     },
                     {
+                        "label": "Isochronous-Capable",
                         "name": "ISOCH_CAPABLE",
                         "notes": "",
                         "value": 3
@@ -452,7 +475,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Maximum apparent power setting used to adjust maximum apparant power rating.",
+                "desc": "Maximum apparent power setting used to adjust maximum apparent power rating.",
                 "label": "Apparent Power Max Setting",
                 "name": "VAMax",
                 "notes": "",
@@ -551,7 +574,7 @@
             },
             {
                 "access": "RW",
-                "desc": "AC voltage minimum setting used to adjust AC voltage maximum rating.",
+                "desc": "AC voltage minimum setting used to adjust AC voltage minimum rating.",
                 "label": "AC Voltage Min Setting",
                 "name": "VMin",
                 "notes": "",
@@ -562,7 +585,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Maximum AC current setting used to adjust maximum ac current rating.",
+                "desc": "Maximum AC current setting used to adjust maximum AC current rating.",
                 "label": "AC Current Max Setting",
                 "name": "AMax",
                 "notes": "",
@@ -593,28 +616,32 @@
             },
             {
                 "access": "RW",
-                "desc": "Intentional island categories",
+                "desc": "Intentional island categories.",
                 "label": "Intentional Island Categories",
                 "name": "IntIslandCat",
                 "notes": "",
                 "size": 1,
                 "symbols": [
                     {
+                        "label": "Uncategorized",
                         "name": "UNCATEGORIZED",
                         "notes": "",
                         "value": 0
                     },
                     {
+                        "label": "Intentional Island-Capable",
                         "name": "INT_ISL_CAPABLE",
                         "notes": "",
                         "value": 1
                     },
                     {
+                        "label": "Black Start-Capable",
                         "name": "BLACK_START_CAPABLE",
                         "notes": "",
                         "value": 2
                     },
                     {
+                        "label": "Isochronous-Capable",
                         "name": "ISOCH_CAPABLE",
                         "notes": "",
                         "value": 3

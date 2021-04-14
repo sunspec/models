@@ -10,6 +10,7 @@
                 "mandatory": "M",
                 "name": "ID",
                 "size": 1,
+                "static": "S",
                 "type": "uint16",
                 "value": 713
             },
@@ -19,6 +20,7 @@
                 "mandatory": "M",
                 "name": "L",
                 "size": 1,
+                "static": "S",
                 "type": "uint16",
                 "value": 6
             },
@@ -26,6 +28,7 @@
                 "desc": "Energy rating of the DER storage.",
                 "label": "Energy Rating",
                 "name": "WHRtg",
+                "sf": "WH_SF",
                 "size": 1,
                 "type": "uint16",
                 "units": "WH"
@@ -34,6 +37,7 @@
                 "desc": "Energy available of the DER storage (WHAvail = WHRtg * SoC * SoH)",
                 "label": "Energy Available",
                 "name": "WHAvail",
+                "sf": "WH_SF",
                 "size": 1,
                 "type": "uint16",
                 "units": "WH"
@@ -83,7 +87,7 @@
             },
             {
                 "desc": "Scale factor for energy capacity.",
-                "label": "WH_SF",
+                "label": "Energy Scale Factor",
                 "name": "WH_SF",
                 "size": 1,
                 "type": "sunssf"
