@@ -220,7 +220,8 @@
                 "name": "RvrtTms",
                 "notes": "",
                 "size": 2,
-                "type": "uint32"
+                "type": "uint32",
+                "units": "Secs"
             },
             {
                 "desc": "Reversion time remaining in seconds.",
@@ -228,7 +229,8 @@
                 "name": "RvrtRem",
                 "notes": "",
                 "size": 2,
-                "type": "uint32"
+                "type": "uint32",
+                "units": "Secs"
             },
             {
                 "access": "RW",

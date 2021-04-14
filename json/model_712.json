@@ -97,16 +97,22 @@
                     },
                     {
                         "access": "RW",
+                        "desc": "Power priority.",
+                        "label": "Power Priority",
                         "name": "Pri",
                         "notes": "",
                         "size": 1,
                         "symbols": [
                             {
+                                "desc": "Active power priority.",
+                                "label": "Active Power Priority",
                                 "name": "ACTIVE",
                                 "notes": "",
                                 "value": 0
                             },
                             {
+                                "desc": "Reactive power priority.",
+                                "label": "Reactive Power Priority",
                                 "name": "REACTIVE",
                                 "notes": "",
                                 "value": 1
@@ -115,7 +121,6 @@
                         "type": "enum16"
                     },
                     {
-                        "access": "RW",
                         "desc": "Curve read-write access.",
                         "label": "Curve Access",
                         "mandatory": "M",
@@ -204,6 +209,7 @@
                 "name": "AdptCrvReq",
                 "notes": "",
                 "size": 1,
+                "static": "S",
                 "type": "uint16"
             },
             {
@@ -213,6 +219,7 @@
                 "name": "AdptCrvRslt",
                 "notes": "",
                 "size": 1,
+                "static": "S",
                 "symbols": [
                     {
                         "desc": "Curve update in progress.",
@@ -265,7 +272,8 @@
                 "name": "RvrtTms",
                 "notes": "",
                 "size": 2,
-                "type": "uint32"
+                "type": "uint32",
+                "units": "Secs"
             },
             {
                 "desc": "Reversion time remaining in seconds.",
@@ -273,7 +281,8 @@
                 "name": "RvrtRem",
                 "notes": "",
                 "size": 2,
-                "type": "uint32"
+                "type": "uint32",
+                "units": "Secs"
             },
             {
                 "access": "RW",

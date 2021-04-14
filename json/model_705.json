@@ -39,7 +39,7 @@
                                 "sf": "DeptRef_SF",
                                 "size": 1,
                                 "type": "int16",
-                                "units": "VarPct"
+                                "units": "DeptRef"
                             }
                         ],
                         "type": "group"
@@ -97,6 +97,8 @@
                     },
                     {
                         "access": "RW",
+                        "desc": "Power priority.",
+                        "label": "Power Priority",
                         "name": "Pri",
                         "notes": "",
                         "size": 1,
@@ -162,7 +164,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "Enable automonous vref.",
+                        "desc": "Enable autonomous vref.",
                         "label": "Autonomous Vref Enable",
                         "name": "VRefAutoEna",
                         "notes": "",
@@ -355,7 +357,8 @@
                 "name": "RvrtTms",
                 "notes": "",
                 "size": 2,
-                "type": "uint32"
+                "type": "uint32",
+                "units": "Secs"
             },
             {
                 "desc": "Reversion time remaining in seconds.",
@@ -363,7 +366,8 @@
                 "name": "RvrtRem",
                 "notes": "",
                 "size": 2,
-                "type": "uint32"
+                "type": "uint32",
+                "units": "Secs"
             },
             {
                 "access": "RW",

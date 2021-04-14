@@ -836,7 +836,7 @@
                 "comments": [
                     "Active Power Throttling"
                 ],
-                "desc": "Throttling in Pct of maximum active power.",
+                "desc": "Throttling in pct of maximum active power.",
                 "label": "Throttling In Pct",
                 "name": "ThrotPct",
                 "notes": "",
