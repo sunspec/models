@@ -9,14 +9,12 @@
                 "desc": "Power factor setpoint when injecting active power.",
                 "label": "Power Factor (W Inj) ",
                 "name": "PFWInj",
-                "notes": "",
                 "points": [
                     {
                         "access": "RW",
                         "desc": "Power factor setpoint when injecting active power.",
                         "label": "Power Factor (W Inj) ",
                         "name": "PF",
-                        "notes": "",
                         "sf": "PF_SF",
                         "size": 1,
                         "type": "uint16"
@@ -26,21 +24,18 @@
                         "desc": "Power factor excitation setpoint when injecting active power.",
                         "label": "Power Factor Excitation (W Inj)",
                         "name": "Ext",
-                        "notes": "",
                         "size": 1,
                         "symbols": [
                             {
                                 "desc": "Power factor over-excited excitation.",
                                 "label": "Over-Excited",
                                 "name": "OVER_EXCITED",
-                                "notes": "",
                                 "value": 0
                             },
                             {
                                 "desc": "Power factor under-excited excitation.",
                                 "label": "Under-Excited",
                                 "name": "UNDER_EXCITED",
-                                "notes": "",
                                 "value": 1
                             }
                         ],
@@ -53,14 +48,12 @@
                 "desc": "Reversion power factor setpoint when injecting active power.",
                 "label": "Reversion Power Factor (W Inj) ",
                 "name": "PFWInjRvrt",
-                "notes": "",
                 "points": [
                     {
                         "access": "RW",
                         "desc": "Reversion power factor setpoint when injecting active power.",
                         "label": "Reversion Power Factor (W Inj) ",
                         "name": "PF",
-                        "notes": "",
                         "sf": "PF_SF",
                         "size": 1,
                         "type": "uint16"
@@ -70,21 +63,18 @@
                         "desc": "Reversion power factor excitation setpoint when injecting active power.",
                         "label": "Reversion PF Excitation (W Inj)",
                         "name": "Ext",
-                        "notes": "",
                         "size": 1,
                         "symbols": [
                             {
                                 "desc": "Power factor over-excited excitation.",
                                 "label": "Over-Excited",
                                 "name": "OVER_EXCITED",
-                                "notes": "",
                                 "value": 0
                             },
                             {
                                 "desc": "Power factor under-excited excitation.",
                                 "label": "Under-Excited",
                                 "name": "UNDER_EXCITED",
-                                "notes": "",
                                 "value": 1
                             }
                         ],
@@ -97,14 +87,12 @@
                 "desc": "Power factor setpoint when absorbing active power.",
                 "label": "Power Factor (W Abs) ",
                 "name": "PFWAbs",
-                "notes": "",
                 "points": [
                     {
                         "access": "RW",
                         "desc": "Power factor setpoint when absorbing active power.",
                         "label": "Power Factor (W Abs) ",
                         "name": "PF",
-                        "notes": "",
                         "sf": "PF_SF",
                         "size": 1,
                         "type": "uint16"
@@ -114,21 +102,18 @@
                         "desc": "Power factor excitation setpoint when absorbing active power.",
                         "label": "Power Factor Excitation (W Abs)",
                         "name": "Ext",
-                        "notes": "",
                         "size": 1,
                         "symbols": [
                             {
                                 "desc": "Power factor over-excited excitation.",
                                 "label": "Over-Excited",
                                 "name": "OVER_EXCITED",
-                                "notes": "",
                                 "value": 0
                             },
                             {
                                 "desc": "Power factor under-excited excitation.",
                                 "label": "Under-Excited",
                                 "name": "UNDER_EXCITED",
-                                "notes": "",
                                 "value": 1
                             }
                         ],
@@ -141,14 +126,12 @@
                 "desc": "Reversion power factor setpoint when absorbing active power.",
                 "label": "Reversion Power Factor (W Abs) ",
                 "name": "PFWAbsRvrt",
-                "notes": "",
                 "points": [
                     {
                         "access": "RW",
                         "desc": "Reversion power factor setpoint when absorbing active power.",
                         "label": "Reversion Power Factor (W Abs) ",
                         "name": "PF",
-                        "notes": "",
                         "sf": "PF_SF",
                         "size": 1,
                         "type": "uint16"
@@ -158,21 +141,18 @@
                         "desc": "Reversion power factor excitation setpoint when absorbing active power.",
                         "label": "Reversion PF Excitation (W Abs)",
                         "name": "Ext",
-                        "notes": "",
                         "size": 1,
                         "symbols": [
                             {
                                 "desc": "Power factor over-excited excitation.",
                                 "label": "Over-Excited",
                                 "name": "OVER_EXCITED",
-                                "notes": "",
                                 "value": 0
                             },
                             {
                                 "desc": "Power factor under-excited excitation.",
                                 "label": "Under-Excited",
                                 "name": "UNDER_EXCITED",
-                                "notes": "",
                                 "value": 1
                             }
                         ],
@@ -184,14 +164,12 @@
         ],
         "label": "DER AC Controls",
         "name": "DERCtlAC",
-        "notes": "",
         "points": [
             {
                 "desc": "DER AC controls model ID.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
-                "notes": "",
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
@@ -202,7 +180,6 @@
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
-                "notes": "",
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
@@ -216,21 +193,18 @@
                 "desc": "Power factor enable when injecting active power.",
                 "label": "Power Factor Enable (W Inj) Enable",
                 "name": "PFWInjEna",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -241,21 +215,18 @@
                 "desc": "Power factor reversion timer when injecting active power enable.",
                 "label": "Power Factor Reversion Enable (W Inj)",
                 "name": "PFWInjEnaRvrt",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -266,7 +237,6 @@
                 "desc": "Power factor reversion timer when injecting active power.",
                 "label": "PF Reversion Time (W Inj)",
                 "name": "PFWInjRvrtTms",
-                "notes": "",
                 "size": 2,
                 "type": "uint32",
                 "units": "Secs"
@@ -275,7 +245,6 @@
                 "desc": "Power factor reversion time remaining when injecting active power.",
                 "label": "PF Reversion Time Rem (W Inj)",
                 "name": "PFWInjRvrtRem",
-                "notes": "",
                 "size": 2,
                 "type": "uint32",
                 "units": "Secs"
@@ -288,21 +257,18 @@
                 "desc": "Power factor enable when absorbing active power.",
                 "label": "Power Factor Enable (W Abs) Enable",
                 "name": "PFWAbsEna",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -313,21 +279,18 @@
                 "desc": "Power factor reversion timer when absorbing active power enable.",
                 "label": "Power Factor Reversion Enable (W Abs)",
                 "name": "PFWAbsEnaRvrt",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -338,7 +301,6 @@
                 "desc": "Power factor reversion timer when absorbing active power.",
                 "label": "PF Reversion Time (W Abs)",
                 "name": "PFWAbsRvrtTms",
-                "notes": "",
                 "size": 2,
                 "type": "uint32",
                 "units": "Secs"
@@ -347,7 +309,6 @@
                 "desc": "Power factor reversion time remaining when absorbing active power.",
                 "label": "PF Reversion Time Rem (W Abs)",
                 "name": "PFWAbsRvrtRem",
-                "notes": "",
                 "size": 2,
                 "type": "uint32",
                 "units": "Secs"
@@ -360,21 +321,18 @@
                 "desc": "Limit maximum active power percent enable.",
                 "label": "Limit Max Power Pct Enable",
                 "name": "WMaxLimPctEna",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -385,7 +343,6 @@
                 "desc": "Limit maximum active power percent value.",
                 "label": "Limit Max Power Pct Setpoint",
                 "name": "WMaxLimPct",
-                "notes": "",
                 "sf": "WMaxLimPct_SF",
                 "size": 1,
                 "type": "uint16",
@@ -396,7 +353,6 @@
                 "desc": "Reversion limit maximum active power percent value.",
                 "label": "Reversion Limit Max Power Pct",
                 "name": "WMaxLimPctRvrt",
-                "notes": "",
                 "sf": "WMaxLimPct_SF",
                 "size": 1,
                 "type": "uint16",
@@ -407,21 +363,18 @@
                 "desc": "Reversion limit maximum active power percent value enable.",
                 "label": "Reversion Limit Max Power Pct Enable",
                 "name": "WMaxLimPctEnaRvrt",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -432,7 +385,6 @@
                 "desc": "Limit maximum active power percent reversion time.",
                 "label": "Limit Max Power Pct Reversion Time",
                 "name": "WMaxLimPctRvrtTms",
-                "notes": "",
                 "size": 2,
                 "type": "uint32",
                 "units": "Secs"
@@ -441,7 +393,6 @@
                 "desc": "Limit maximum active power percent reversion time remaining.",
                 "label": "Limit Max Power Pct Rev Time Rem",
                 "name": "WMaxLimPctRvrtRem",
-                "notes": "",
                 "size": 2,
                 "type": "uint32",
                 "units": "Secs"
@@ -454,21 +405,18 @@
                 "desc": "Set active power enable.",
                 "label": "Set Active Power Enable",
                 "name": "WSetEna",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -479,21 +427,18 @@
                 "desc": "Set active power mode.",
                 "label": "Set Active Power Mode",
                 "name": "WSetMod",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Active power setting is percentage of maximum active power.",
                         "label": "Active Power As Max Percent",
                         "name": "W_MAX_PCT",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Active power setting is in watts.",
                         "label": "Active Power As Watts",
                         "name": "WATTS",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -504,7 +449,6 @@
                 "desc": "Active power setting value in watts.",
                 "label": "Active Power Setpoint (W)",
                 "name": "WSet",
-                "notes": "",
                 "sf": "WSet_SF",
                 "size": 2,
                 "type": "int32",
@@ -515,7 +459,6 @@
                 "desc": "Reversion active power setting value in watts.",
                 "label": "Reversion Active Power (W)",
                 "name": "WSetRvrt",
-                "notes": "",
                 "sf": "WSet_SF",
                 "size": 2,
                 "type": "int32",
@@ -526,7 +469,6 @@
                 "desc": "Active power setting value as percent.",
                 "label": "Active Power Setpoint (Pct)",
                 "name": "WSetPct",
-                "notes": "",
                 "sf": "WSetPct_SF",
                 "size": 1,
                 "type": "int16",
@@ -537,7 +479,6 @@
                 "desc": "Reversion active power setting value as percent.",
                 "label": "Reversion Active Power (Pct)",
                 "name": "WSetPctRvrt",
-                "notes": "",
                 "sf": "WSetPct_SF",
                 "size": 1,
                 "type": "int16",
@@ -548,21 +489,18 @@
                 "desc": "Reversion active power function enable.",
                 "label": "Reversion Active Power Enable",
                 "name": "WSetEnaRvrt",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -573,7 +511,6 @@
                 "desc": "Set active power reversion time.",
                 "label": "Active Power Reversion Time",
                 "name": "WSetRvrtTms",
-                "notes": "",
                 "size": 2,
                 "type": "uint32",
                 "units": "Secs"
@@ -582,7 +519,6 @@
                 "desc": "Set active power reversion time remaining.",
                 "label": "Active Power Rev Time Rem",
                 "name": "WSetRvrtRem",
-                "notes": "",
                 "size": 2,
                 "type": "uint32",
                 "units": "Secs"
@@ -595,21 +531,18 @@
                 "desc": "Set reactive power enable.",
                 "label": "Set Reactive Power Enable",
                 "name": "VarSetEna",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -620,35 +553,30 @@
                 "desc": "Set reactive power mode.",
                 "label": "Set Reactive Power Mode",
                 "name": "VarSetMod",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Reactive power setting is percent of maximum active power.",
                         "label": "Reactive Power As Watt Max Pct",
                         "name": "W_MAX_PCT",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Reactive power setting is percent of maximum reactive power.",
                         "label": "Reactive Power As Var Max Pct",
                         "name": "VAR_MAX_PCT",
-                        "notes": "",
                         "value": 1
                     },
                     {
                         "desc": "Reactive power setting is percent of available reactive  power.",
                         "label": "Reactive Power As Var Avail Pct",
                         "name": "VAR_AVAIL_PCT",
-                        "notes": "",
                         "value": 2
                     },
                     {
                         "desc": "Reactive power is in vars.",
                         "label": "Reactive Power As Vars",
                         "name": "VARS",
-                        "notes": "",
                         "value": 3
                     }
                 ],
@@ -659,42 +587,36 @@
                 "desc": "Reactive power priority.",
                 "label": "Reactive Power Priority",
                 "name": "VarSetPri",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Active power priority.",
                         "label": "Active Power Priority",
                         "name": "ACTIVE",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Reactive power priority.",
                         "label": "Reactive Power Priority",
                         "name": "REACTIVE",
-                        "notes": "",
                         "value": 1
                     },
                     {
                         "desc": "IEEE 1547-2018 power priority mode.",
                         "label": "IEEE 1547 Power Priority",
                         "name": "IEEE_1547",
-                        "notes": "",
                         "value": 2
                     },
                     {
                         "desc": "Track PF setting derived from current active and reactive power settings.",
                         "label": "PF Power Priority",
                         "name": "PF",
-                        "notes": "",
                         "value": 3
                     },
                     {
                         "desc": "Power priority is vendor specific mode.",
                         "label": "Vendor Power Priority",
                         "name": "VENDOR",
-                        "notes": "",
                         "value": 4
                     }
                 ],
@@ -705,7 +627,6 @@
                 "desc": "Reactive power setting value in vars.",
                 "label": "Reactive Power Setpoint (Vars)",
                 "name": "VarSet",
-                "notes": "",
                 "sf": "VarSet_SF",
                 "size": 2,
                 "type": "int32",
@@ -716,7 +637,6 @@
                 "desc": "Reversion reactive power setting value in vars.",
                 "label": "Reversion Reactive Power (Vars)",
                 "name": "VarSetRvrt",
-                "notes": "",
                 "sf": "VarSet_SF",
                 "size": 2,
                 "type": "int32",
@@ -727,7 +647,6 @@
                 "desc": "Reactive power setting value as percent.",
                 "label": "Reactive Power Setpoint (Pct)",
                 "name": "VarSetPct",
-                "notes": "",
                 "sf": "VarSetPct_SF",
                 "size": 1,
                 "type": "int16",
@@ -738,7 +657,6 @@
                 "desc": "Reversion reactive power setting value as percent.",
                 "label": "Reversion Reactive Power (Pct)",
                 "name": "VarSetPctRvrt",
-                "notes": "",
                 "sf": "VarSetPct_SF",
                 "size": 1,
                 "type": "int16",
@@ -749,21 +667,18 @@
                 "desc": "Reversion reactive power function enable.",
                 "label": "Reversion Reactive Power Enable",
                 "name": "VarSetEnaRvrt",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Function is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Function is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -774,7 +689,6 @@
                 "desc": "Set reactive power reversion time.",
                 "label": "Reactive Power Reversion Time",
                 "name": "VarSetRvrtTms",
-                "notes": "",
                 "size": 2,
                 "type": "uint32",
                 "units": "Secs"
@@ -783,7 +697,6 @@
                 "desc": "Set reactive power reversion time remaining.",
                 "label": "Reactive Power Rev Time Rem",
                 "name": "VarSetRvrtRem",
-                "notes": "",
                 "size": 2,
                 "type": "uint32",
                 "units": "Secs"
@@ -796,7 +709,6 @@
                 "desc": "Ramp rate for increases in active power during normal generation.",
                 "label": "Normal Ramp Rate",
                 "name": "WRmp",
-                "notes": "",
                 "size": 1,
                 "type": "uint16",
                 "units": "%Max/Sec"
@@ -806,21 +718,18 @@
                 "desc": "Ramp rate reference unit for increases in active power or current during normal generation.",
                 "label": "Normal Ramp Rate Reference",
                 "name": "WRmpRef",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Ramp based on percent of max current per second.",
                         "label": "Max Current Ramp",
                         "name": "A_MAX",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Ramp based on percent of max active power per second.",
                         "label": "Max Active Power Ramp",
                         "name": "W_MAX",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -831,7 +740,6 @@
                 "desc": "Ramp rate based on max reactive power per second.",
                 "label": "Reactive Power Ramp Rate",
                 "name": "VarRmp",
-                "notes": "",
                 "size": 1,
                 "type": "uint16",
                 "units": "%Max/Sec"
@@ -841,21 +749,18 @@
                 "desc": "Anti-islanding enable.",
                 "label": "Anti-Islanding Enable",
                 "name": "AntiIslEna",
-                "notes": "",
                 "size": 1,
                 "symbols": [
                     {
                         "desc": "Anti-islanding is disabled.",
                         "label": "Disabled",
                         "name": "DISABLED",
-                        "notes": "",
                         "value": 0
                     },
                     {
                         "desc": "Anti-islanding is enabled.",
                         "label": "Enabled",
                         "name": "ENABLED",
-                        "notes": "",
                         "value": 1
                     }
                 ],
@@ -868,7 +773,6 @@
                 "desc": "Power factor scale factor.",
                 "label": "Power Factor Scale Factor",
                 "name": "PF_SF",
-                "notes": "",
                 "size": 1,
                 "static": "S",
                 "type": "sunssf"
@@ -877,7 +781,6 @@
                 "desc": "Limit maximum power scale factor.",
                 "label": "Limit Max Power Scale Factor",
                 "name": "WMaxLimPct_SF",
-                "notes": "",
                 "size": 1,
                 "static": "S",
                 "type": "sunssf"
@@ -886,7 +789,6 @@
                 "desc": "Active power scale factor.",
                 "label": "Active Power Scale Factor",
                 "name": "WSet_SF",
-                "notes": "",
                 "size": 1,
                 "static": "S",
                 "type": "sunssf"
@@ -895,7 +797,6 @@
                 "desc": "Active power pct scale factor.",
                 "label": "Active Power Pct Scale Factor",
                 "name": "WSetPct_SF",
-                "notes": "",
                 "size": 1,
                 "static": "S",
                 "type": "sunssf"
@@ -904,7 +805,6 @@
                 "desc": "Reactive power scale factor.",
                 "label": "Reactive Power Scale Factor",
                 "name": "VarSet_SF",
-                "notes": "",
                 "size": 1,
                 "static": "S",
                 "type": "sunssf"
@@ -913,7 +813,6 @@
                 "desc": "Reactive power pct scale factor.",
                 "label": "Reactive Power Pct Scale Factor",
                 "name": "VarSetPct_SF",
-                "notes": "",
                 "size": 1,
                 "static": "S",
                 "type": "sunssf"
