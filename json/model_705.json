@@ -194,7 +194,8 @@
                         "name": "VRefAutoTms",
                         "notes": "",
                         "size": 1,
-                        "type": "uint16"
+                        "type": "uint16",
+                        "units": "Secs"
                     },
                     {
                         "access": "RW",
