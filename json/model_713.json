@@ -46,6 +46,7 @@
                 "desc": "State of charge of the DER storage.",
                 "label": "State of Charge",
                 "name": "SoC",
+                "sf": "Pct_SF",
                 "size": 1,
                 "type": "uint16",
                 "units": "Pct"
@@ -54,6 +55,7 @@
                 "desc": "State of health of the DER storage.",
                 "label": "State of Health",
                 "name": "SoH",
+                "sf": "Pct_SF",
                 "size": 1,
                 "type": "uint16",
                 "units": "Pct"
@@ -90,6 +92,15 @@
                 "label": "Energy Scale Factor",
                 "name": "WH_SF",
                 "size": 1,
+                "static": "S",
+                "type": "sunssf"
+            },
+            {
+                "desc": "Scale factor for percentage.",
+                "label": "Percent Scale Factor",
+                "name": "Pct_SF",
+                "size": 1,
+                "static": "S",
                 "type": "sunssf"
             }
         ],

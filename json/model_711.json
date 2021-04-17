@@ -7,8 +7,8 @@
                     "Stored control sets - Number of control sets contained in NCtl - The first set is read-only and indicates the current settings."
                 ],
                 "count": "NCtl",
-                "desc": "Stored curve sets.",
-                "label": "Stored Curves",
+                "desc": "Stored control sets.",
+                "label": "Stored Controls",
                 "name": "Ctl",
                 "points": [
                     {
@@ -162,19 +162,19 @@
                 "size": 1,
                 "symbols": [
                     {
-                        "desc": "Curve update in progress.",
+                        "desc": "Control update in progress.",
                         "label": "Update In Progress",
                         "name": "IN_PROGRESS",
                         "value": 0
                     },
                     {
-                        "desc": "Curve update completed successfully.",
+                        "desc": "Control update completed successfully.",
                         "label": "Update Complete",
                         "name": "COMPLETED",
                         "value": 1
                     },
                     {
-                        "desc": "Curve update failed.",
+                        "desc": "Control update failed.",
                         "label": "Update Failed",
                         "name": "FAILED",
                         "value": 2
@@ -183,8 +183,8 @@
                 "type": "enum16"
             },
             {
-                "desc": "Number of stored curves supported.",
-                "label": "Stored Curve Count",
+                "desc": "Number of stored controls supported.",
+                "label": "Stored Control Count",
                 "mandatory": "M",
                 "name": "NCtl",
                 "size": 1,
