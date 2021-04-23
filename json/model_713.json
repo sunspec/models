@@ -22,7 +22,7 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 6
+                "value": 7
             },
             {
                 "desc": "Energy rating of the DER storage.",
