@@ -271,7 +271,7 @@
                 "comments": [
                     "Summary"
                 ],
-                "desc": "Total active power.",
+                "desc": "Total active power. This model is generator reference, so active power is positive for generation and negative for absorption.",
                 "label": "Active Power",
                 "name": "W",
                 "sf": "W_SF",
@@ -298,12 +298,12 @@
                 "units": "Var"
             },
             {
-                "desc": "Power factor.",
+                "desc": "Power factor. The sign of power factor should be the sign of active power.",
                 "label": "Power Factor",
                 "name": "PF",
                 "sf": "PF_SF",
                 "size": 1,
-                "type": "uint16"
+                "type": "int16"
             },
             {
                 "desc": "Total AC current.",
@@ -470,7 +470,7 @@
                 "name": "PFL1",
                 "sf": "PF_SF",
                 "size": 1,
-                "type": "uint16"
+                "type": "int16"
             },
             {
                 "desc": "Current phase L1.",
@@ -571,7 +571,7 @@
                 "name": "PFL2",
                 "sf": "PF_SF",
                 "size": 1,
-                "type": "uint16"
+                "type": "int16"
             },
             {
                 "desc": "Current L2.",
@@ -672,7 +672,7 @@
                 "name": "PFL3",
                 "sf": "PF_SF",
                 "size": 1,
-                "type": "uint16"
+                "type": "int16"
             },
             {
                 "desc": "Current L3.",
