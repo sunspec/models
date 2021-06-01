@@ -271,7 +271,7 @@
                 "comments": [
                     "Summary"
                 ],
-                "desc": "Total active power. This model is generator reference, so active power is positive for generation and negative for absorption.",
+                "desc": "Total active power. Active power is positive for DER generation and negative for absorption.",
                 "label": "Active Power",
                 "name": "W",
                 "sf": "W_SF",
