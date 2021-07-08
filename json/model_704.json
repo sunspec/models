@@ -574,10 +574,16 @@
                         "value": 2
                     },
                     {
+                        "desc": "Reactive power setting is percent of maximum apparent power.",
+                        "label": "Reactive Power As VA Max Pct",
+                        "name": "VA_MAX_PCT",
+                        "value": 3
+                    },
+                    {
                         "desc": "Reactive power is in vars.",
                         "label": "Reactive Power As Vars",
                         "name": "VARS",
-                        "value": 3
+                        "value": 4
                     }
                 ],
                 "type": "enum16"
