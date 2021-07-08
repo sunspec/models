@@ -602,22 +602,10 @@
                         "value": 1
                     },
                     {
-                        "desc": "IEEE 1547-2018 power priority mode.",
-                        "label": "IEEE 1547 Power Priority",
-                        "name": "IEEE_1547",
-                        "value": 2
-                    },
-                    {
-                        "desc": "Track PF setting derived from current active and reactive power settings.",
-                        "label": "PF Power Priority",
-                        "name": "PF",
-                        "value": 3
-                    },
-                    {
                         "desc": "Power priority is vendor specific mode.",
                         "label": "Vendor Power Priority",
                         "name": "VENDOR",
-                        "value": 4
+                        "value": 2
                     }
                 ],
                 "type": "enum16"
