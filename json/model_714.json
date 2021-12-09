@@ -73,7 +73,8 @@
                         "name": "DCA",
                         "sf": "DCA_SF",
                         "size": 1,
-                        "type": "int16"
+                        "type": "int16",
+                        "units": "A"
                     },
                     {
                         "desc": "DC voltage for the port.",
@@ -81,7 +82,8 @@
                         "name": "DCV",
                         "sf": "DCV_SF",
                         "size": 1,
-                        "type": "uint16"
+                        "type": "uint16",
+                        "units": "V"
                     },
                     {
                         "desc": "DC power for the port.",
@@ -89,7 +91,8 @@
                         "name": "DCW",
                         "sf": "DCW_SF",
                         "size": 1,
-                        "type": "int16"
+                        "type": "int16",
+                        "units": "W"
                     },
                     {
                         "desc": "Total cumulative DC energy injected for the port.",
@@ -97,7 +100,8 @@
                         "name": "DCWhInj",
                         "sf": "DCWH_SF",
                         "size": 4,
-                        "type": "uint64"
+                        "type": "uint64",
+                        "units": "Wh"
                     },
                     {
                         "desc": "Total cumulative DC energy absorbed for the port.",
@@ -105,14 +109,17 @@
                         "name": "DCWhAbs",
                         "sf": "DCWH_SF",
                         "size": 4,
-                        "type": "uint64"
+                        "type": "uint64",
+                        "units": "Wh"
                     },
                     {
                         "desc": "DC port temperature.",
                         "label": "DC Port Temperature",
                         "name": "Tmp",
+                        "sf": "Tmp_SF",
                         "size": 1,
-                        "type": "int16"
+                        "type": "int16",
+                        "units": "C"
                     },
                     {
                         "desc": "DC port status.",
@@ -272,7 +279,8 @@
                 "name": "DCA",
                 "sf": "DCA_SF",
                 "size": 1,
-                "type": "int16"
+                "type": "int16",
+                "units": "A"
             },
             {
                 "desc": "Total DC power for all ports.",
@@ -280,7 +288,8 @@
                 "name": "DCW",
                 "sf": "DCW_SF",
                 "size": 1,
-                "type": "int16"
+                "type": "int16",
+                "units": "W"
             },
             {
                 "desc": "Total cumulative DC energy injected for all ports.",
@@ -288,7 +297,8 @@
                 "name": "DCWhInj",
                 "sf": "DCWH_SF",
                 "size": 4,
-                "type": "uint64"
+                "type": "uint64",
+                "units": "Wh"
             },
             {
                 "desc": "Total cumulative DC energy absorbed for all ports.",
@@ -296,7 +306,8 @@
                 "name": "DCWhAbs",
                 "sf": "DCWH_SF",
                 "size": 4,
-                "type": "uint64"
+                "type": "uint64",
+                "units": "Wh"
             },
             {
                 "desc": "DC current scale factor.",

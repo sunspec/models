@@ -29,7 +29,7 @@
                                         "sf": "V_SF",
                                         "size": 1,
                                         "type": "uint16",
-                                        "units": "VRefPct"
+                                        "units": "VNomPct"
                                     },
                                     {
                                         "access": "RW",
@@ -76,7 +76,7 @@
                                         "sf": "V_SF",
                                         "size": 1,
                                         "type": "uint16",
-                                        "units": "VRefPct"
+                                        "units": "VNomPct"
                                     },
                                     {
                                         "access": "RW",
@@ -123,7 +123,7 @@
                                         "sf": "V_SF",
                                         "size": 1,
                                         "type": "uint16",
-                                        "units": "VRefPct"
+                                        "units": "VNomPct"
                                     },
                                     {
                                         "access": "RW",
