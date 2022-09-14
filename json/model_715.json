@@ -10,6 +10,7 @@
                 "mandatory": "M",
                 "name": "ID",
                 "size": 1,
+                "static": "S",
                 "type": "uint16",
                 "value": 715
             },
@@ -19,6 +20,7 @@
                 "mandatory": "M",
                 "name": "L",
                 "size": 1,
+                "static": "S",
                 "type": "uint16",
                 "value": 7
             },
