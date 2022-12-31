@@ -90,7 +90,7 @@
                     "type": "string",
                     "enum": ["int16", "int32", "int64", "raw16", "uint16", "uint32", "uint64" ,"acc16", "acc32",
                              "acc64", "bitfield16", "bitfield32", "bitfield64", "enum16", "enum32", "float32",
-                             "float64", "string", "sf", "pad", "ipaddr", "ipv6addr", "eui48", "sunssf", "count"]
+                             "float64", "string", "pad", "ipaddr", "ipv6addr", "eui48", "sunssf", "count"]
                 },
                 "value": {
                     "type": ["integer", "string"]
