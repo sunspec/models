@@ -90,17 +90,17 @@
                 "units": "C"
             },
             {
+              "label": "Main Temperature",
+              "mandatory": "M",
+              "name": "MainTmp",
+              "size": 1,
+              "type": "int16",
+              "units": "C"
+            },
+            {
                 "label": "Probe Temperature",
                 "mandatory": "M",
                 "name": "ProbeTmp",
-                "size": 1,
-                "type": "int16",
-                "units": "C"
-            },
-            {
-                "label": "Main Temperature",
-                "mandatory": "M",
-                "name": "MainTmp",
                 "size": 1,
                 "type": "int16",
                 "units": "C"
