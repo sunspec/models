@@ -33,107 +33,107 @@
     <model>
       <label>PPP Link</label>
       <description>Include this model to configure a Point-to-Point Protocol link</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="Nam">
       <label>Name</label>
       <description>Interface name</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Rte">
       <label>Rate</label>
       <description>Interface baud rate in bits per second</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Bits">
       <label>Bits</label>
       <description>Number of data bits per character</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Pty">
       <label>Parity</label>
       <description>Bitmask value.  Parity setting</description>
-      <notes></notes>
+      <notes/>
       <symbol id="NONE">
         <label>none</label>
         <description>No Parity</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="ODD">
         <label>odd</label>
         <description>Odd Parity</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="EVEN">
         <label>even</label>
         <description>Even Parity</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
     <point id="Dup">
       <label>Duplex</label>
       <description>Enumerated value.  Duplex mode</description>
-      <notes></notes>
+      <notes/>
       <symbol id="FULL">
         <label>full</label>
         <description>Full Duplex</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="HALF">
         <label>half</label>
         <description>Half Duplex</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
     <point id="Flw">
       <label>Flow Control</label>
       <description>Flow Control Method</description>
-      <notes></notes>
+      <notes/>
       <symbol id="NONE">
         <label>none</label>
         <description>No flow control</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="HW">
         <label>hardware</label>
         <description>Hardware flow control</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="XONXOFF">
         <label>software</label>
         <description>Soft (XON/XOFF) flow control</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
     <point id="Auth">
       <label>Authentication</label>
       <description>Enumerated value.  Authentication method</description>
-      <notes></notes>
+      <notes/>
       <symbol id="NONE">
         <label>none</label>
         <description>No Authentication</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="PAP">
         <label>PAP</label>
         <description>Use PAP authentication</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="CHAP">
         <label>CHAP</label>
         <description>Use CHAP authentication</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
     <point id="UsrNam">
       <label>Username</label>
       <description>Username for authentication</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Pw">
       <label>Password</label>
       <description>Password for authentication</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

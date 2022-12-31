@@ -13,32 +13,32 @@
     <model>
       <label>Cellular Link</label>
       <description>Include this model to support a cellular interface link</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="Nam">
       <label>Name</label>
       <description>Interface name</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="IMEI">
       <label>IMEI</label>
       <description>International Mobile Equipment Identifier for the interface</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="APN">
       <label>APN</label>
       <description>Access Point Name for the interface</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Num">
       <label>Number</label>
       <description>Phone number for the interface</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Pin">
       <label>PIN</label>
       <description>Personal Identification Number for the interface</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

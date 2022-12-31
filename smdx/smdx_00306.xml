@@ -12,27 +12,27 @@
     <model>
       <label>Reference Point Model</label>
       <description>Include to support a standard reference point</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="GHI">
       <label>GHI</label>
       <description>Global Horizontal Irradiance</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="A">
       <label>Amps</label>
       <description>Current measurement at reference point</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="V">
       <label>Voltage</label>
       <description>Voltage  measurement at reference point</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Tmp">
       <label>Temperature</label>
       <description>Temperature measurement at reference point</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

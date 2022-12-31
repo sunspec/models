@@ -13,27 +13,27 @@
     <model>
       <label>Mini Met Model</label>
       <description>Include to support a few basic measurements</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="GHI">
       <label>GHI</label>
       <description>Global Horizontal Irradiance</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TmpBOM">
       <label>Temp</label>
       <description>Back of module temperature measurement</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TmpAmb">
       <label>Ambient Temperature</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="WndSpd">
       <label>Wind Speed</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

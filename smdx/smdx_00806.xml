@@ -12,18 +12,18 @@
   <strings id="806" locale="en">
     <model>
       <label>Flow Battery Model</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </model>
     <point id="BatTBD">
       <label>Battery Points To Be Determined</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="BatStTBD">
       <label>Battery String Points To Be Determined</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
 
    </strings>

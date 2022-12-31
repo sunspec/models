@@ -22,61 +22,61 @@
     <model>
       <label>Communication Interface Header</label>
       <description>To be included first for a complete interface description</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="St">
       <label>Interface Status</label>
       <description>Overall interface status</description>
-      <notes></notes>
+      <notes/>
       <symbol id="DOWN">
         <label>down</label>
         <description>Interface is down</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="UP">
         <label>up</label>
         <description>Interface is up</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="FAULT">
         <label>fault</label>
         <description>Interface is in a fault state</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
     <point id="Ctl">
       <label>Interface Control</label>
       <description>Overall interface control (TBD)</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Typ">
       <label>Physical Access Type</label>
       <description>Enumerated value.  Type of physical media</description>
-      <notes></notes>
+      <notes/>
       <symbol id="UNKNOWN">
         <label>unknown</label>
         <description>Unknown media</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="INTERNAL">
         <label>internal</label>
         <description>Internal e.g. embedded switch</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="TWISTED_PAIR">
         <label>twisted pair</label>
         <description>Twisted Pair</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="FIBER">
         <label>fiber</label>
         <description>Fiber</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="WIFI">
         <label>wifi</label>
         <description>WIFI</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
   </strings>

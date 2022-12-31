@@ -47,22 +47,22 @@
       <symbol id="AES-GMAC-64">
         <label>AES-GMAC-64</label>
         <description>64 bit AES signature algorithm is used</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="ECC-256">
         <label>ECC-256</label>
         <description>256 bit ECC signature algorithm is used</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
     <point id="Sts">
       <label>Status</label>
       <description>Status of last write operation</description>
-      <notes></notes>
+      <notes/>
       <symbol id="SUCCESS">
         <label>SUCCESS</label>
         <description>Operation succeeded</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="DS">
         <label>DS</label>
@@ -93,7 +93,7 @@
     <point id="RqSeq">
       <label>Request Sequence</label>
       <description>Sequence number from the request</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Seq">
       <label>Sequence</label>
@@ -103,21 +103,21 @@
     <point id="Ts">
       <label>Timestamp</label>
       <description>Timestamp value is the number of seconds since January 1, 2000</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Ms">
       <label>Milliseconds</label>
       <description>Millisecond counter 0-999</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Alm">
       <label>Alarm</label>
       <description>Bitmask alarm code</description>
-      <notes></notes>
+      <notes/>
       <symbol id="NONE">
         <label>NONE</label>
         <description>No Alarms</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="ALM">
         <label>ALARM</label>

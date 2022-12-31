@@ -114,458 +114,458 @@
   <strings id="64112" locale="en">
     <model>
       <label>OutBack FM Charge Controller</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </model>
     <point id="Port">
       <label>Port Number</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_fault">
       <label>Faults</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_absorb_V">
       <label>Absorb</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_absorb_Hr">
       <label>Absorb Time</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_absorb_End_A">
       <label>Absorb End</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_rebulk_V">
       <label>Rebulk</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_float_V">
       <label>Float</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_max_Chg_A">
       <label>Maximum Charge</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_equalize_V">
       <label>Equalize</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_equalize_Hr">
       <label>Equalize Time</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_auto_equalize">
       <label>Auto Equalize Interval</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_MPPT_mode">
       <label>MPPT mode</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="Auto">
         <label>Auto</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="U_Pick">
         <label>U-Pick</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Wind">
         <label>Wind</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="CC_Config_sweep_width">
       <label>Sweep Width</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="Half">
         <label>Half</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Full">
         <label>Full</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="CC_Config_sweep_max">
       <label>Sweep Maximum</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="Eighty_Percent">
         <label>80 %</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Eighty_Five_Percent">
         <label>85 %</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Ninty_Percent">
         <label>90 %</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Ninty_Nine_Percent">
         <label>99 %</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="CC_Config_U_Pick_Duty_cyc">
       <label>U-Pick PWM Duty Cycle</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_grid_tie">
       <label>Grid Tie Mode</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="Disabled">
         <label>Grid Tie Mode Disabled</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Enabled">
         <label>Grid Tie Mode Enabled</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="CC_Config_temp_comp">
       <label>Temp Comp Mode</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="Wide">
         <label>Wide</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Limited">
         <label>Limited</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="CC_Config_temp_comp_llimt">
       <label>Temp Comp Lower Limit</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_temp_comp_hlimt">
       <label>Temp Comp Upper Limit</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_auto_restart">
       <label>Auto Restart Mode</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="Off">
         <label>Off</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Every_90_Minutes">
         <label>Every 90 Minutes</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Every_90_Minutes_if_Absorb_or_Float">
         <label>Every 90 Minutes if Absorb or Float</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="CC_Config_wakeup_VOC">
       <label>Wakeup VOC Change</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_snooze_mode_A">
       <label>Snooze Mode</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_wakeup_interval">
       <label>Wakeup Interval</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_mode">
       <label>AUX Output Mode</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="Float">
         <label>Float</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Diversion_Relay">
         <label>Diversion: Relay</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Diversion_Solid_St">
         <label>Diversion: Solid St</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Low_Batt_Disconnect">
         <label>Low Batt Disconnect</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Remote">
         <label>Remote</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Vent_Fan">
         <label>Vent Fan</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="PV_Trigger">
         <label>PV Trigger</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Error_Output">
         <label>Alarm Output</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Night_Light">
         <label>Night Light</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="CC_Config_AUX_control">
       <label>AUX Output Control</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="Off">
         <label>Off</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Auto">
         <label>Auto</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="On">
         <label>On</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="CC_Config_AUX_state">
       <label>AUX Output State</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="Disabled">
         <label>Disabled</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="Enabled">
         <label>Enabled</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="CC_Config_AUX_polarity">
       <label>AUX Output Polarity</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="Low">
         <label>Low</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="High">
         <label>High</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="CC_Config_AUX_L_Batt_disc">
       <label>AUX Low Battery Disconnect</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_L_Batt_rcon">
       <label>AUX Low Battery Reconnect</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_L_Batt_dly">
       <label>AUX Low Battery Disconnect Delay</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_Vent_fan_V">
       <label>AUX Vent Fan</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_PV_triggerV">
       <label>AUX PV Trigger</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_PV_trg_h_tm">
       <label>AUX PV Trigger Hold Time</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_Nlite_ThrsV">
       <label>AUX Night Light Threshold</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_Nlite_On_tm">
       <label>AUX Night Light On Time</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_Nlite_On_hist">
       <label>AUX Night Light On Hysteresis</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_Nlite_Off_hist">
       <label>AUX Night Light Off Hysteresis</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_Error_batt_V">
       <label>AUX Error Output Low Battery</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_Divert_h_time">
       <label>AUX Divert Hold Time</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_Divert_dly_time">
       <label>AUX Divert Delay Time</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_Divert_Rel_V">
       <label>AUX Divert Relative</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_AUX_Divert_Hyst_V">
       <label>AUX Divert Hysteresis</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_MajorFWRev">
       <label>FM CC Major Firmware Number</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_MidFWRev">
       <label>FM CC Mid Firmware Number</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_MinorFWRev">
       <label>FM CC Minor Firmware Number</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_DataLog_Day_offset">
       <label>Set Data Log Day Offset</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_DataLog_Cur_Day_off">
       <label>Current Data Log Day Offset</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_DataLog_Daily_AH">
       <label>Data Log Daily (Ah)</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_DataLog_Daily_KWH">
       <label>Data Log Daily (kWh)</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_DataLog_Max_Out_A">
       <label>Data Log Daily Maximum Output (A)</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_DataLog_Max_Out_W">
       <label>Data Log Daily Maximum Output (W)</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_DataLog_Absorb_T">
       <label>Data Log Daily Absorb Time</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_DataLog_Float_T">
       <label>Data Log Daily Float Time</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_DataLog_Min_Batt_V">
       <label>Data Log Daily Minimum Battery</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_DataLog_Max_Batt_V">
       <label>Data Log Daily Maximum Battery</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_DataLog_Max_Input_V">
       <label>Data Log Daily Maximum Input</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_DataLog_Clear">
       <label>Data Log Clear</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CC_Config_DataLog_Clr_Comp">
       <label>Data Log Clear Complement</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

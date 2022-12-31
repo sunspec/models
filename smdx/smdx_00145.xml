@@ -16,47 +16,47 @@
     <model>
       <label>Extended Settings</label>
       <description>Inverter controls extended settings </description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="NomRmpUpRte">
       <label>Ramp Up Rate</label>
       <description>Ramp up rate as a percentage of max current.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="NomRmpDnRte">
       <label>NomRmpDnRte</label>
       <description>Ramp down rate as a percentage of max current.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="EmgRmpUpRte">
       <label>Emergency Ramp Up Rate</label>
       <description>Emergency ramp up rate as a percentage of max current.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="EmgRmpDnRte">
       <label>Emergency Ramp Down Rate</label>
       <description>Emergency ramp down rate as a percentage of max current.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="ConnRmpUpRte">
       <label>Connect Ramp Up Rate</label>
       <description>Connect ramp up rate as a percentage of max current.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="ConnRmpDnRte">
       <label>Connect Ramp Down Rate</label>
       <description>Connect ramp down rate as a percentage of max current.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="AGra">
       <label>Default Ramp Rate</label>
       <description>Ramp rate specified in percent of max current.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Rmp_SF">
       <label>Ramp Rate Scale Factor</label>
       <description>Ramp Rate Scale Factor</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

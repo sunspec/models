@@ -109,437 +109,437 @@
   <strings id="203" locale="en">
     <model>
       <label>wye-connect three phase (abcn) meter</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </model>
     <point id="A">
       <label>Amps</label>
       <description>Total AC Current</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="AphA">
       <label>Amps PhaseA</label>
       <description>Phase A Current</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="AphB">
       <label>Amps PhaseB</label>
       <description>Phase B Current</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="AphC">
       <label>Amps PhaseC</label>
       <description>Phase C Current</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="A_SF"><description>Current scale factor</description></point>
     <point id="PhV">
       <label>Voltage LN</label>
       <description>Line to Neutral AC Voltage (average of active phases)</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PhVphAB">
       <label>Phase Voltage AB</label>
       <description>Phase Voltage AB</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PhVphBC">
       <label>Phase Voltage BC</label>
       <description>Phase Voltage BC</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PhVphCA">
       <label>Phase Voltage CA</label>
       <description>Phase Voltage CA</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PPV">
       <label>Voltage LL</label>
       <description>Line to Line AC Voltage (average of active phases)</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PhVphA">
       <label>Phase Voltage AN</label>
       <description>Phase Voltage AN</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PhVphB">
       <label>Phase Voltage BN</label>
       <description>Phase Voltage BN</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PhVphC">
       <label>Phase Voltage CN</label>
       <description>Phase Voltage CN</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="V_SF"><description>Voltage scale factor</description></point>
     <point id="Hz">
       <label>Hz</label>
       <description>Frequency</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Hz_SF"><description>Frequency scale factor</description></point>
     <point id="W">
       <label>Watts</label>
       <description>Total Real Power</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="W_SF"><description>Real Power scale factor</description></point>
     <point id="WphA">
       <label>Watts phase A</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="WphB">
       <label>Watts phase B</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="WphC">
       <label>Watts phase C</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="VA">
       <label>VA</label>
       <description>AC Apparent Power</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="VA_SF"><description>Apparent Power scale factor</description></point>
     <point id="VAphA">
       <label>VA phase A</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="VAphB">
       <label>VA phase B</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="VAphC">
       <label>VA phase C</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="VAR">
       <label>VAR</label>
       <description>Reactive Power</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="VAR_SF"><description>Reactive Power scale factor</description></point>
     <point id="VARphA">
       <label>VAR phase A</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="VARphB">
       <label>VAR phase B</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="VARphC">
       <label>VAR phase C</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="PF">
       <label>PF</label>
       <description>Power Factor</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PF_SF"><description>Power Factor scale factor</description></point>
     <point id="PFphA">
       <label>PF phase A</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="PFphB">
       <label>PF phase B</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="PFphC">
       <label>PF phase C</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotWhExp">
       <label>Total Watt-hours Exported</label>
       <description>Total Real Energy Exported</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TotWh_SF"><description>Real Energy scale factor</description></point>
     <point id="TotWhExpPhA">
       <label>Total Watt-hours Exported phase A</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotWhExpPhB">
       <label>Total Watt-hours Exported phase B</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotWhExpPhC">
       <label>Total Watt-hours Exported phase C</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotWhImp">
       <label>Total Watt-hours Imported</label>
       <description>Total Real Energy Imported</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TotWhImpPhA">
       <label>Total Watt-hours Imported phase A</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotWhImpPhB">
       <label>Total Watt-hours Imported phase B</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotWhImpPhC">
       <label>Total Watt-hours Imported phase C</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVAhExp">
       <label>Total VA-hours Exported</label>
       <description>Total Apparent Energy Exported</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TotVAh_SF"><description>Apparent Energy scale factor</description></point>
     <point id="TotVAhExpPhA">
       <label>Total VA-hours Exported phase A</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVAhExpPhB">
       <label>Total VA-hours Exported phase B</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVAhExpPhC">
       <label>Total VA-hours Exported phase C</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVAhImp">
       <label>Total VA-hours Imported</label>
       <description>Total Apparent Energy Imported</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TotVAhImpPhA">
       <label>Total VA-hours Imported phase A</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVAhImpPhB">
       <label>Total VA-hours Imported phase B</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVAhImpPhC">
       <label>Total VA-hours Imported phase C</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVArh_SF"><description>Reactive Energy scale factor</description></point>
     <point id="TotVArhImpQ1">
       <label>Total VAR-hours Imported Q1</label>
       <description>Total Reactive Energy Imported Quadrant 1</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TotVArhImpQ1PhA">
       <label>Total VAr-hours Imported Q1 phase A</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVArhImpQ1PhB">
       <label>Total VAr-hours Imported Q1 phase B</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVArhImpQ1PhC">
       <label>Total VAr-hours Imported Q1 phase C</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVArhImpQ2">
       <label>Total VAr-hours Imported Q2</label>
       <description>Total Reactive Power Imported Quadrant 2</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TotVArhImpQ2PhA">
       <label>Total VAr-hours Imported Q2 phase A</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVArhImpQ2PhB">
       <label>Total VAr-hours Imported Q2 phase B</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVArhImpQ2PhC">
       <label>Total VAr-hours Imported Q2 phase C</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVArhExpQ3">
       <label>Total VAr-hours Exported Q3</label>
       <description>Total Reactive Power Exported Quadrant 3</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TotVArhExpQ3PhA">
       <label>Total VAr-hours Exported Q3 phase A</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVArhExpQ3PhB">
       <label>Total VAr-hours Exported Q3 phase B</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVArhExpQ3PhC">
       <label>Total VAr-hours Exported Q3 phase C</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVArhExpQ4">
       <label>Total VAr-hours Exported Q4</label>
       <description>Total Reactive Power Exported Quadrant 4</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TotVArhExpQ4PhA">
       <label>Total VAr-hours Exported Q4 Imported phase A</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVArhExpQ4PhB">
       <label>Total VAr-hours Exported Q4 Imported phase B</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TotVArhExpQ4PhC">
       <label>Total VAr-hours Exported Q4 Imported phase C</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Evt">
       <label>Events</label>
       <description>Meter Event Flags</description>
-      <notes></notes>
+      <notes/>
       <symbol id="Power_Failure">
         <label>Power Failure</label>
         <description>Loss of power or phase</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="Under_Voltage">
         <label>Under Voltage</label>
         <description>Voltage below threshold (Phase Loss)</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="Low_PF">
         <label>Low PF</label>
         <description>Power Factor below threshold</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="Over_Current">
         <label>Over Current</label>
         <description>Current Input over threshold</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="Over_Voltage">
         <label>Over Voltage</label>
         <description>Voltage Input over threshold</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="Missing_Sensor">
         <label>Missing Sensor</label>
         <description>Sensor not connected</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM01">
         <label>OEM01</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM02">
         <label>OEM02</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM03">
         <label>OEM01</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM04">
         <label>OEM04</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM05">
         <label>OEM05</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM06">
         <label>OEM06</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM07">
         <label>OEM07</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM08">
         <label>OEM08</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM09">
         <label>OEM09</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM10">
         <label>OEM10</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM11">
         <label>OEM11</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM12">
         <label>OEM12</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM13">
         <label>OEM13</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM14">
         <label>OEM14</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM15">
         <label>OEM15</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OEM16">
         <label>OEM16</label>
         <description>Reserved for OEM use</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
   </strings>

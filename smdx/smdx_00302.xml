@@ -13,32 +13,32 @@
     <model>
       <label>Irradiance Model</label>
       <description>Include to support various irradiance measurements</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="GHI">
       <label>GHI</label>
       <description>Global Horizontal Irradiance</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="POAI">
       <label>POAI</label>
       <description>Plane-of-Array Irradiance</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="DFI">
       <label>DFI</label>
       <description>Diffuse Irradiance</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="DNI">
       <label>DNI</label>
       <description>Direct Normal Irradiance</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="OTI">
       <label>OTI</label>
       <description>Other Irradiance</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

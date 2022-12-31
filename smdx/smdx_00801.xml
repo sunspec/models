@@ -9,12 +9,12 @@
     <model>
       <label>Energy Storage Base Model (DEPRECATED)</label>
       <description>This model has been deprecated.</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="DEPRECATED">
       <label>Deprecated Model</label>
       <description>This model has been deprecated.</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

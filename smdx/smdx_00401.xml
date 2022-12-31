@@ -74,67 +74,67 @@
     <point id="DCAMax">
       <label>Rating</label>
       <description>Maximum DC Current Rating</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="N">
       <label>N</label>
       <description>Number of Inputs</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Evt">
       <label>Event</label>
       <description>Bitmask value.  Events</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="EvtVnd">
       <label>Vendor Event</label>
       <description>Bitmask value.  Vendor defined events</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="DCA">
       <label>Amps</label>
       <description>Total measured current</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="DCAhr">
       <label>Amp-hours</label>
       <description>Total metered Amp-hours</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="DCV">
       <label>Voltage</label>
       <description>Output Voltage</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Tmp">
       <label>Temp</label>
       <description>Internal operating temperature</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="InID">
       <label>ID</label>
       <description>Uniquely identifies this input set</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="InEvt">
       <label>Input Event</label>
       <description>String Input Event Flags</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="InEvtVnd">
       <label>Input Event Vendor</label>
       <description>String Input Vendor Event Flags</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="InDCA">
       <label>Amps</label>
       <description>String Input Current</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="InDCAhr">
       <label>Amp-hours</label>
       <description>String Input Amp-Hours</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

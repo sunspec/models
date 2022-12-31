@@ -43,178 +43,178 @@
   <strings id="64001" locale="en">
     <model>
       <label>Veris Status and Configuration</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </model>
     <point id="Cmd">
       <label>Command Code</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="HWRev">
       <label>Hardware Revision</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="RSFWRev">
       <label>RS FW Revision</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="OSFWRev">
       <label>OS FW Revision</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="ProdRev">
       <label>Product Revision</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Boots">
       <label>Boot Count</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Switch">
       <label>DIP Switches</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Sensors">
       <label>Num Detected Sensors</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Talking">
       <label>Num Communicating Sensors</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Status">
       <label>System Status</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Config">
       <label>System Configuration</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="LEDblink">
       <label>LED Blink Threshold</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="LEDon">
       <label>LED On Threshold</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Loc">
       <label>Location String</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S1ID">
       <label>Sensor 1 Unit ID</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S1Addr">
       <label>Sensor 1 Address</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S1OSVer">
       <label>Sensor 1 OS Version</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S1Ver">
       <label>Sensor 1 Product Version</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S1Serial">
       <label>Sensor 1 Serial Num</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S2ID">
       <label>Sensor 2 Unit ID</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S2Addr">
       <label>Sensor 2 Address</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S2OSVer">
       <label>Sensor 2 OS Version</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S2Ver">
       <label>Sensor 2 Product Version</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S2Serial">
       <label>Sensor 2 Serial Num</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S3ID">
       <label>Sensor 3 Unit ID</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S3Addr">
       <label>Sensor 3 Address</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S3OSVer">
       <label>Sensor 3 OS Version</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S3Ver">
       <label>Sensor 3 Product Version</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S3Serial">
       <label>Sensor 3 Serial Num</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S4ID">
       <label>Sensor 4 Unit ID</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S4Addr">
       <label>Sensor 4 Address</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S4OSVer">
       <label>Sensor 4 OS Version</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S4Ver">
       <label>Sensor 4 Product Version</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="S4Serial">
       <label>Sensor 4 Serial Num</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

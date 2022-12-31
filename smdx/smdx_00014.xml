@@ -20,62 +20,62 @@
     <model>
       <label>Proxy Server</label>
       <description>Include this block to allow for a proxy server</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="Nam">
       <label>name</label>
       <description>Interface name (8 chars)</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Cap">
       <label>Capabilities</label>
       <description>Bitmask value.  Proxy configuration capabilities</description>
-      <notes></notes>
+      <notes/>
       <symbol id="NO_PROXY">
         <label>No Proxy</label>
         <description>Turn off the proxy</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="IPV4_PROXY">
         <label>IPv4 Proxy</label>
         <description>Can proxy IPv4</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="IPV6_PROXY">
         <label>IPv6 Proxy</label>
         <description>Can proxy IPv6</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
     <point id="Cfg">
       <label>Config</label>
       <description>Enumerated value.  Set proxy address type</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Typ">
       <label>Type</label>
       <description>Enumerate value.  Proxy server type</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Addr">
       <label>Address</label>
       <description>IPv4 or IPv6 proxy hostname or dotted address (40 chars)</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Port">
       <label>Port</label>
       <description>Proxy port number</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="User">
       <label>Username</label>
       <description>Proxy user name</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Pw">
       <label>Password</label>
       <description>Proxy password</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

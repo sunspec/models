@@ -68,283 +68,283 @@
   <strings id="64110" locale="en">
     <model>
       <label>OutBack AXS device</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </model>
     <point id="MajorFWRev">
       <label>AXS Major Firmware Number</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="MidFWRev">
       <label>AXS Mid Firmware Number</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="MinorFWRev">
       <label>AXS Minor Firmware Number</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="EncrypKey">
       <label>Encryption Key</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="MAC_Address">
       <label>MAC Address</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="WritePassword">
       <label>Write Password</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="EnableDHCP">
       <label>Enable DHCP</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TCPIP_address">
       <label>TCPIP Address</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Gateway_address">
       <label>TCPIP Gateway</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TCPIP_Netmask">
       <label>TCPIP Netmask</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="DNS1_address">
       <label>TCPIP DNS1</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="DNS2_address">
       <label>TCPIP DNS2</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Modbus_port">
       <label>ModBus Port</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="SMTP_server_nm">
       <label>SMTP Server Name</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="SMTP_account_nm">
       <label>SMTP Account Name</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="SMTP_enable_SSL">
       <label>Enable SMTP SSL</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="ASX_DISABLED">
         <label>Disabled</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="ASX_ENABLED">
         <label>Enabled</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="SMTP_password">
       <label>SMTP Password</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="SMTP_user_nm">
       <label>SMTP User Name</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Stat_email_int">
       <label>Status Email Interval</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Stat_start_HR">
       <label>Status Email Start Hour</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Stat_email_sub">
       <label>Status Email Subject</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Stat_email_addr1">
       <label>Status Email to Address 1</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Stat_email_addr2">
       <label>Status Email to Address 2</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Alarm_email_en">
       <label>Enable Alarm Email</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="ASX_DISABLED">
         <label>Disabled</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="ASX_ENABLED">
         <label>Enabled</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="Alarm_email_sub">
       <label>Alarm Email Subject</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Alarm_email_addr1">
       <label>Alarm Email to Address 1</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Alarm_email_addr2">
       <label>Alarm Email to Address 2</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="FTP_password">
       <label>FTP Password</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="TELNET_password">
       <label>Telnet Password</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Log_write_int">
       <label>SD-Card Datalog Write Interval</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Log_retain">
       <label>SD-Card Datalog Retain</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Log_mode">
       <label>SD-Card Datalog Mode</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="LOG_DISABLED">
         <label>Disabled</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="LOG_EXCEL">
         <label>Excel</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="LOG_COMPACT">
         <label>Compact</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="NTP_server_nm">
       <label>NTP Timer Server Name</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="NTP_enable">
       <label>Enable Network Time</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
       <symbol id="ASX_DISABLED">
         <label>Disabled</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="ASX_ENABLED">
         <label>Enabled</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="TimeZone">
       <label>Time Zone</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Date_year">
       <label>Year</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Date_month">
       <label>Month</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Date_Day">
       <label>Day</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Time_hour">
       <label>Hour</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Time_minute">
       <label>Minute</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Time_second">
       <label>Second</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Battery_temp">
       <label>Battery Temperature</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="Ambient_temp">
       <label>Ambient Temperature</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="AXS_Error">
       <label>AXS Error</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="AXS_Status">
       <label>AXS Status</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="AXS_Spare">
       <label>Spare</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

@@ -102,7 +102,7 @@
     <model>
       <label>Secure Write Request</label>
       <description>Include a digital signature along with the control data</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="Alg">
       <label>Algorithm</label>
@@ -116,23 +116,23 @@
       <symbol id="AES-GMAC-64">
         <label>AES-GMAC-64</label>
         <description>64 bit AES signature algorithm is used</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="ECC-256">
         <label>ECC-256</label>
         <description>256 bit ECC signature algorithm is used</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
     <point id="Ts">
       <label>Timestamp</label>
       <description>Timestamp value is the number of seconds since January 1, 2000</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Ms">
       <label>Milliseconds</label>
       <description>Millisecond counter 0-999</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Seq">
       <label>Sequence</label>
@@ -157,12 +157,12 @@
     <point id="Off1">
       <label>Offset1</label>
       <description>Offset of control register to write value to</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Val1">
       <label>Value1</label>
       <description>Value to write to control register at offset</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="DS">
       <label>DS</label>

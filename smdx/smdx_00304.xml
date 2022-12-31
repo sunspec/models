@@ -11,22 +11,22 @@
     <model>
       <label>Inclinometer Model</label>
       <description>Include to support orientation measurements</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="Inclx">
       <label>X</label>
       <description>X-Axis inclination</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Incly">
       <label>Y</label>
       <description>Y-Axis inclination</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Inclz">
       <label>Z</label>
       <description>Z-Axis inclination</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

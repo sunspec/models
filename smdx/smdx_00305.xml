@@ -14,37 +14,37 @@
     <model>
       <label>GPS</label>
       <description>Include to support location measurements</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="Tm">
       <label>Tm</label>
       <description>UTC 24 hour time stamp to millisecond hhmmss.sssZ format</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Date">
       <label>Date</label>
       <description>UTC Date string YYYYMMDD format</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Loc">
       <label>Location</label>
       <description>Location string (40 chars max)</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Lat">
       <label>Lat</label>
       <description>Latitude with seven degrees of precision</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Long">
       <label>Long</label>
       <description>Longitude with seven degrees of precision</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Alt">
       <label>Altitude</label>
       <description>Altitude measurement in meters</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

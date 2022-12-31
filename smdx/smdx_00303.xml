@@ -10,12 +10,12 @@
     <model>
       <label>Back of Module Temperature Model</label>
       <description>Include to support variable number of  back of module temperature measurements</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="TmpBOM">
       <label>Temp</label>
       <description>Back of module temperature measurement</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

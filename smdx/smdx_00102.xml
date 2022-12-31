@@ -77,7 +77,7 @@
     <model>
       <label>Inverter (Split-Phase)</label>
       <description>Include this model for split phase inverter monitoring</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="A">
       <label>Amps</label>
@@ -97,262 +97,262 @@
     <point id="AphC">
       <label>Amps PhaseC</label>
       <description>Phase C Current</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PPVphAB">
       <label>Phase Voltage AB</label>
       <description>Phase Voltage AB</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PPVphBC">
       <label>Phase Voltage BC</label>
       <description>Phase Voltage BC</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PPVphCA">
       <label>Phase Voltage CA</label>
       <description>Phase Voltage CA</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PhVphA">
       <label>Phase Voltage AN</label>
       <description>Phase Voltage AN</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PhVphB">
       <label>Phase Voltage BN</label>
       <description>Phase Voltage BN</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PhVphC">
       <label>Phase Voltage CN</label>
       <description>Phase Voltage CN</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="W">
       <label>Watts</label>
       <description>AC Power</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Hz">
       <label>Hz</label>
       <description>Line Frequency</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="VA">
       <label>VA</label>
       <description>AC Apparent Power</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="VAr">
       <label>VAr</label>
       <description>AC Reactive Power</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="PF">
       <label>PF</label>
       <description>AC Power Factor</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="WH">
       <label>WattHours</label>
       <description>AC Energy</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="DCA">
       <label>DC Amps</label>
       <description>DC Current</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="DCV">
       <label>DC Voltage</label>
       <description>DC Voltage</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="DCW">
       <label>DC Watts</label>
       <description>DC Power</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TmpCab">
       <label>Cabinet Temperature</label>
       <description>Cabinet Temperature</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TmpSnk">
       <label>Heat Sink Temperature</label>
       <description>Heat Sink Temperature</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TmpTrns">
       <label>Transformer Temperature</label>
       <description>Transformer Temperature</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="TmpOt">
       <label>Other Temperature</label>
       <description>Other Temperature</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="St">
       <label>Operating State</label>
       <description>Enumerated value.  Operating state</description>
-      <notes></notes>
+      <notes/>
       <symbol id="OFF">
         <label>Off</label>
         <description>Device is not operating</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="SLEEPING">
         <label>Sleeping</label>
         <description>Device is sleeping / auto-shutdown</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="STARTING">
         <label>Starting</label>
         <description>Device is staring up</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="MPPT">
         <label>MPPT</label>
         <description>Device is auto tracking maximum power point</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="THROTTLED">
         <label>Throttled</label>
         <description>Device is operating at reduced power output</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="SHUTTING_DOWN">
         <label>Shutting down</label>
         <description>Device is shutting down</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="FAULT">
         <label>Fault</label>
         <description>One or more faults exist</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="STANDBY">
         <label>Standby</label>
         <description>Device is in standby mode</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
     <point id="StVnd">
       <label>Vendor Operating State</label>
       <description>Vendor specific operating state code</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="Evt1">
       <label>Event1</label>
       <description>Bitmask value. Event fields</description>
-      <notes></notes>
+      <notes/>
       <symbol id="GROUND_FAULT">
         <label>Ground fault</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="DC_OVER_VOLT">
         <label>DC over voltage</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="AC_DISCONNECT">
         <label>AC disconnect open</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="DC_DISCONNECT">
         <label>DC disconnect open</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="GRID_DISCONNECT">
         <label>Grid shutdown</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="CABINET_OPEN">
         <label>Cabinet open</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="MANUAL_SHUTDOWN">
         <label>Manual shutdown</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="OVER_TEMP">
         <label>Over temperature</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="OVER_FREQUENCY">
         <label>Frequency above limit</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="UNDER_FREQUENCY">
         <label>Frequency under limit</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="AC_OVER_VOLT">
         <label>AC Voltage above limit</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="AC_UNDER_VOLT">
         <label>AC Voltage under limit</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="BLOWN_STRING_FUSE">
         <label>Blown String fuse on input</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="UNDER_TEMP">
         <label>Under temperature</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="MEMORY_LOSS">
         <label>Generic Memory or Communication error (internal)</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="HW_TEST_FAILURE">
         <label>Hardware test failure</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="Evt2">
       <label>Event Bitfield 2</label>
       <description>Reserved for future use</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="EvtVnd1">
       <label>Vendor Event Bitfield 1</label>
       <description>Vendor defined events</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="EvtVnd2">
       <label>Vendor Event Bitfield 2</label>
       <description>Vendor defined events</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="EvtVnd3">
       <label>Vendor Event Bitfield 3</label>
       <description>Vendor defined events</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="EvtVnd4">
       <label>Vendor Event Bitfield 4</label>
       <description>Vendor defined events</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>

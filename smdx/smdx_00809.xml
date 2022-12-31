@@ -12,18 +12,18 @@
   <strings id="809" locale="en">
     <model>
       <label>Flow Battery Stack Model</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </model>
     <point id="StackTBD">
       <label>Stack Points To Be Determined</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
     <point id="CellTBD">
       <label>Cell Points To Be Determined</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </point>
 
    </strings>

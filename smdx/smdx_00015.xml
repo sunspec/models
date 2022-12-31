@@ -21,67 +21,67 @@
     <model>
       <label>Interface Counters Model</label>
       <description>Interface counters</description>
-      <notes></notes>
+      <notes/>
     </model>
     <point id="Clr">
       <label>Clear</label>
       <description>Write a "1" to clear all counters</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="InCnt">
       <label>Input Count</label>
       <description>Number of bytes received</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="InUcCnt">
       <label>Input Unicast Count</label>
       <description>Number of Unicast packets received</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="InNUcCnt">
       <label>Input Non-Unicast Count</label>
       <description>Number of non-Unicast packets received</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="InDscCnt">
       <label>Input Discarded Count</label>
       <description>Number of inbound packets received on the interface but discarded</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="InErrCnt">
       <label>Input Error Count</label>
       <description>Number of inbound packets that contain errors (excluding discards)</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="InUnkCnt">
       <label>Input Unknown Count</label>
       <description>Number of inbound packets with unknown protocol</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="OutCnt">
       <label>Output Count</label>
       <description>Total number of bytes transmitted on this interface</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="OutUcCnt">
       <label>Output Unicast Count</label>
       <description>Number of Unicast packets transmitted</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="OutNUcCnt">
       <label>Output Non-Unicast Count</label>
       <description>Number of Non-Unicast packets transmitted</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="OutDscCnt">
       <label>Output Discarded Count</label>
       <description>Number of Discarded output packets</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="OutErrCnt">
       <label>Output Error Count</label>
       <description>Number of outbound error packets</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>
