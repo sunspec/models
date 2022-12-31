@@ -1,9 +1,9 @@
 <sunSpecModels v="1">
   <!-- 11: ethernet link layer -->
   <model id="11" len="13">
-    <block len="13">
-      <point id="Spd" offset="0" type="uint16" mandatory="true" units="Mbps" />
-      <point id="CfgSt" offset="1" type="bitfield16" mandatory="true" >
+    <block len="13" type="fixed">
+      <point id="Spd" offset="0" type="uint16" len="1" units="Mbps" mandatory="true" />
+      <point id="CfgSt" offset="1" type="bitfield16" len="1" mandatory="true" >
         <symbol id="LINK">0</symbol>
         <symbol id="FULL_DUPLEX">1</symbol>
         <symbol id="AUTO_NEG1">2</symbol>
@@ -12,19 +12,19 @@
         <symbol id="RESET_REQUIRED">5</symbol>
         <symbol id="HW_FAULT">6</symbol>
       </point>
-      <point id="St" offset="2" type="enum16" mandatory="true" >
+      <point id="St" offset="2" type="enum16" len="1" mandatory="true" >
         <symbol id="UNKNOWN">0</symbol>
         <symbol id="ENABLED">1</symbol>
         <symbol id="DISABLED">2</symbol>
         <symbol id="TESTING">3</symbol>
       </point>
-      <point id="MAC" offset="3" type="eui48" />
+      <point id="MAC" offset="3" type="eui48" len="4" />
       <point id="Nam" offset="7" type="string" len="4" access="rw" />
-      <point id="Ctl" offset="11" type="bitfield16" access="rw" >
+      <point id="Ctl" offset="11" type="bitfield16" len="1" access="rw" >
         <symbol id="AUTO">0</symbol>
         <symbol id="FULL_DUPLEX">1</symbol>
       </point>
-      <point id="FrcSpd" offset="12" type="uint16" access="rw" units="Mbps" />
+      <point id="FrcSpd" offset="12" type="uint16" len="1" access="rw" units="Mbps" />
     </block>
   </model>
   <strings id="11" locale="en">

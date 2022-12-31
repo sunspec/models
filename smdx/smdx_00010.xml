@@ -1,21 +1,21 @@
 <sunSpecModels v="1">
   <!-- 10: Communication Interface Header -->
   <model id="10" len="4">
-    <block len="4">
-      <point id="St" offset="0" type="enum16" mandatory="true" >
+    <block len="4" type="fixed">
+      <point id="St" offset="0" type="enum16" len="1" mandatory="true" >
         <symbol id="DOWN">0</symbol>
         <symbol id="UP">1</symbol>
         <symbol id="FAULT">2</symbol>
       </point>
-      <point id="Ctl" offset="1" type="uint16" access="rw" />
-      <point id="Typ" offset="2" type="enum16" >
+      <point id="Ctl" offset="1" type="uint16" len="1" access="rw" />
+      <point id="Typ" offset="2" type="enum16" len="1" >
         <symbol id="UNKNOWN">0</symbol>
         <symbol id="INTERNAL">1</symbol>
         <symbol id="TWISTED_PAIR">2</symbol>
         <symbol id="FIBER">3</symbol>
         <symbol id="WIRELESS">4</symbol>
       </point>
-      <point id="Pad" offset="3" type="pad" />
+      <point id="Pad" offset="3" type="pad" len="1" />
     </block>
   </model>
   <strings id="10" locale="en">

@@ -1,17 +1,17 @@
 <sunSpecModels v="1">
   <!-- 12: IPv4 protocol -->
   <model id="12" len="98">
-    <block len="98">
+    <block len="98" type="fixed">
       <point id="Nam" offset="0" type="string" len="4" access="rw" />
-      <point id="CfgSt" offset="4" type="enum16" mandatory="true" >
+      <point id="CfgSt" offset="4" type="enum16" len="1" mandatory="true" >
         <symbol id="NOT_CONFIGURED">0</symbol>
         <symbol id="VALID_SETTING">1</symbol>
         <symbol id="VALID_HW">2</symbol>
       </point>
-      <point id="ChgSt" offset="5" type="bitfield16" mandatory="true" >
+      <point id="ChgSt" offset="5" type="bitfield16" len="1" mandatory="true" >
         <symbol id="PENDING">0</symbol>
       </point>
-      <point id="Cap" offset="6" type="bitfield16" mandatory="true" >
+      <point id="Cap" offset="6" type="bitfield16" len="1" mandatory="true" >
         <symbol id="DHCP">0</symbol>
         <symbol id="BOOTP">1</symbol>
         <symbol id="ZEROCONF">2</symbol>
@@ -21,18 +21,18 @@
         <symbol id="NTP_CLIENT">6</symbol>
         <symbol id="RESET_REQUIRED">7</symbol>
       </point>
-      <point id="Cfg" offset="7" type="enum16" mandatory="true" access="rw" >
+      <point id="Cfg" offset="7" type="enum16" len="1" access="rw" mandatory="true" >
         <symbol id="STATIC">0</symbol>
         <symbol id="DHCP">1</symbol>
         <symbol id="BOOTP">2</symbol>
         <symbol id="ZEROCONF">3</symbol>
       </point>
-      <point id="Ctl" offset="8" type="enum16" mandatory="true" access="rw" >
+      <point id="Ctl" offset="8" type="enum16" len="1" access="rw" mandatory="true" >
         <symbol id="ENABLE_DNS">0</symbol>
         <symbol id="ENABLE_NTP">1</symbol>
       </point>
-      <point id="Addr" offset="9" type="string" len="8" mandatory="true" access="rw" />
-      <point id="Msk" offset="17" type="string" len="8" mandatory="true" access="rw" />
+      <point id="Addr" offset="9" type="string" len="8" access="rw" mandatory="true" />
+      <point id="Msk" offset="17" type="string" len="8" access="rw" mandatory="true" />
       <point id="Gw" offset="25" type="string" len="8" access="rw" />
       <point id="DNS1" offset="33" type="string" len="8" access="rw" />
       <point id="DNS2" offset="41" type="string" len="8" access="rw" />
@@ -40,7 +40,7 @@
       <point id="NTP2" offset="61" type="string" len="12" access="rw" />
       <point id="DomNam" offset="73" type="string" len="12" access="rw" />
       <point id="HostNam" offset="85" type="string" len="12" access="rw" />
-      <point id="Pad" offset="97" type="pad" />
+      <point id="Pad" offset="97" type="pad" len="1" />
     </block>
   </model>
   <strings id="12" locale="en">

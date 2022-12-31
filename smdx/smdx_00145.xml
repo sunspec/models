@@ -2,14 +2,14 @@
   <!-- 145: Extended Inverter Controls Basic Settings  -->
   <model id="145" len="8" name="ext_settings" status="test">
     <block len="8" type="fixed">
-      <point id="NomRmpUpRte" offset="0" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
-      <point id="NomRmpDnRte" offset="1" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
-      <point id="EmgRmpUpRte" offset="2" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
-      <point id="EmgRmpDnRte" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
-      <point id="ConnRmpUpRte" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
-      <point id="ConnRmpDnRte" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
-      <point id="AGra" offset="6" access="rw" type="uint16" len="1" mandatory="false" units="Pct" sf="Rmp_SF"/>
-      <point id="Rmp_SF" offset="7" access="r" type="sunssf" len="1" mandatory="false" />
+      <point id="NomRmpUpRte" offset="0" type="uint16" len="1" sf="Rmp_SF" access="rw" units="Pct" />
+      <point id="NomRmpDnRte" offset="1" type="uint16" len="1" sf="Rmp_SF" access="rw" units="Pct" />
+      <point id="EmgRmpUpRte" offset="2" type="uint16" len="1" sf="Rmp_SF" access="rw" units="Pct" />
+      <point id="EmgRmpDnRte" offset="3" type="uint16" len="1" sf="Rmp_SF" access="rw" units="Pct" />
+      <point id="ConnRmpUpRte" offset="4" type="uint16" len="1" sf="Rmp_SF" access="rw" units="Pct" />
+      <point id="ConnRmpDnRte" offset="5" type="uint16" len="1" sf="Rmp_SF" access="rw" units="Pct" />
+      <point id="AGra" offset="6" type="uint16" len="1" sf="Rmp_SF" access="rw" units="Pct" />
+      <point id="Rmp_SF" offset="7" type="sunssf" len="1" />
     </block>
   </model>
   <strings id="145" locale="en">

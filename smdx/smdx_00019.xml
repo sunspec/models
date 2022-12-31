@@ -1,32 +1,32 @@
 <sunSpecModels v="1">
   <!-- 19: PPP Link -->
   <model id="19" len="30">
-    <block len="30">
+    <block len="30" type="fixed">
       <point id="Nam" offset="0" type="string" len="4" access="rw" />
-      <point id="Rte" offset="4" type="uint32" mandatory="true" access="rw" units="bps" />
-      <point id="Bits" offset="6" type="uint16" mandatory="true" access="rw" />
-      <point id="Pty" offset="7" type="enum16" mandatory="true" access="rw" >
+      <point id="Rte" offset="4" type="uint32" len="2" access="rw" units="bps" mandatory="true" />
+      <point id="Bits" offset="6" type="uint16" len="1" access="rw" mandatory="true" />
+      <point id="Pty" offset="7" type="enum16" len="1" access="rw" mandatory="true" >
         <symbol id="NONE">0</symbol>
         <symbol id="ODD">1</symbol>
         <symbol id="EVEN">2</symbol>
       </point>
-      <point id="Dup" offset="8" type="enum16" access="rw" >
+      <point id="Dup" offset="8" type="enum16" len="1" access="rw" >
         <symbol id="FULL">0</symbol>
         <symbol id="HALF">1</symbol>
       </point>
-      <point id="Flw" offset="9" type="enum16" access="rw" >
+      <point id="Flw" offset="9" type="enum16" len="1" access="rw" >
         <symbol id="NONE">0</symbol>
         <symbol id="HW">1</symbol>
         <symbol id="XONXOFF">2</symbol>
       </point>
-      <point id="Auth" offset="10" type="enum16" >
+      <point id="Auth" offset="10" type="enum16" len="1" >
         <symbol id="NONE">0</symbol>
         <symbol id="PAP">1</symbol>
         <symbol id="CHAP">2</symbol>
       </point>
       <point id="UsrNam" offset="11" type="string" len="12" />
       <point id="Pw" offset="23" type="string" len="6" />
-      <point id="Pad" offset="29" type="pad" />
+      <point id="Pad" offset="29" type="pad" len="1" />
     </block>
   </model>
   <strings id="19" locale="en">

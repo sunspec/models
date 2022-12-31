@@ -1,21 +1,21 @@
 <sunSpecModels v="1">
   <!-- 802: Battery Base Model -->
   <model id="802" len="62" name="battery">
-    <block len="62">
-      <point id="AHRtg" offset="0" type="uint16" sf="AHRtg_SF" units="Ah" mandatory="true" />
-      <point id="WHRtg" offset="1" type="uint16" sf="WHRtg_SF" units="Wh" mandatory="true" />
-      <point id="WChaRteMax" offset="2" type="uint16" sf="WChaDisChaMax_SF" units="W" mandatory="true" />
-      <point id="WDisChaRteMax" offset="3" type="uint16" sf="WChaDisChaMax_SF" units="W" mandatory="true" />
-      <point id="DisChaRte" offset="4" type="uint16" sf="DisChaRte_SF" units="%WHRtg" />
-      <point id="SoCMax" offset="5" type="uint16" sf="SoC_SF" units="%WHRtg" />
-      <point id="SoCMin" offset="6" type="uint16" sf="SoC_SF" units="%WHRtg" />
-      <point id="SocRsvMax" offset="7" access="rw" type="uint16" sf="SoC_SF" units="%WHRtg" />
-      <point id="SoCRsvMin" offset="8" access="rw" type="uint16" sf="SoC_SF" units="%WHRtg" />
-      <point id="SoC" offset="9" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
-      <point id="DoD" offset="10" type="uint16" sf="DoD_SF" units="%" />
-      <point id="SoH" offset="11" type="uint16" sf="SoH_SF" units="%" />
-      <point id="NCyc" offset="12" type="uint32" />
-      <point id="ChaSt" offset="14" type="enum16" >
+    <block len="62" type="fixed">
+      <point id="AHRtg" offset="0" type="uint16" len="1" sf="AHRtg_SF" units="Ah" mandatory="true" />
+      <point id="WHRtg" offset="1" type="uint16" len="1" sf="WHRtg_SF" units="Wh" mandatory="true" />
+      <point id="WChaRteMax" offset="2" type="uint16" len="1" sf="WChaDisChaMax_SF" units="W" mandatory="true" />
+      <point id="WDisChaRteMax" offset="3" type="uint16" len="1" sf="WChaDisChaMax_SF" units="W" mandatory="true" />
+      <point id="DisChaRte" offset="4" type="uint16" len="1" sf="DisChaRte_SF" units="%WHRtg" />
+      <point id="SoCMax" offset="5" type="uint16" len="1" sf="SoC_SF" units="%WHRtg" />
+      <point id="SoCMin" offset="6" type="uint16" len="1" sf="SoC_SF" units="%WHRtg" />
+      <point id="SocRsvMax" offset="7" type="uint16" len="1" sf="SoC_SF" access="rw" units="%WHRtg" />
+      <point id="SoCRsvMin" offset="8" type="uint16" len="1" sf="SoC_SF" access="rw" units="%WHRtg" />
+      <point id="SoC" offset="9" type="uint16" len="1" sf="SoC_SF" units="%WHRtg" mandatory="true" />
+      <point id="DoD" offset="10" type="uint16" len="1" sf="DoD_SF" units="%" />
+      <point id="SoH" offset="11" type="uint16" len="1" sf="SoH_SF" units="%" />
+      <point id="NCyc" offset="12" type="uint32" len="2" />
+      <point id="ChaSt" offset="14" type="enum16" len="1" >
         <symbol id="OFF">1</symbol>
         <symbol id="EMPTY">2</symbol>
         <symbol id="DISCHARGING">3</symbol>
@@ -24,14 +24,14 @@
         <symbol id="HOLDING">6</symbol>
         <symbol id="TESTING">7</symbol>
       </point>
-      <point id="LocRemCtl" offset="15" type="enum16" mandatory="true" >
+      <point id="LocRemCtl" offset="15" type="enum16" len="1" mandatory="true" >
         <symbol id="REMOTE">0</symbol>
         <symbol id="LOCAL">1</symbol>
       </point>
-      <point id="Hb" offset="16" type="uint16" />
-      <point id="CtrlHb" offset="17" access="rw" type="uint16" />
-      <point id="AlmRst" offset="18" access="rw" type="uint16" mandatory="true" />
-      <point id="Typ" offset="19" type="enum16" mandatory="true" >
+      <point id="Hb" offset="16" type="uint16" len="1" />
+      <point id="CtrlHb" offset="17" type="uint16" len="1" access="rw" />
+      <point id="AlmRst" offset="18" type="uint16" len="1" access="rw" mandatory="true" />
+      <point id="Typ" offset="19" type="enum16" len="1" mandatory="true" >
         <symbol id="NOT APPLICABLE_UNKNOWN">0</symbol>
         <symbol id="LEAD_ACID">1</symbol>
         <symbol id="NICKEL_METAL_HYDRATE">2</symbol>
@@ -45,7 +45,7 @@
         <symbol id="FLOW">10</symbol>
         <symbol id="OTHER">99</symbol>
       </point>
-      <point id="State" offset="20" type="enum16" mandatory="true" >
+      <point id="State" offset="20" type="enum16" len="1" mandatory="true" >
         <symbol id="DISCONNECTED">1</symbol>
         <symbol id="INITIALIZING">2</symbol>
         <symbol id="CONNECTED">3</symbol>
@@ -54,9 +54,9 @@
         <symbol id="SUSPENDING">6</symbol>
         <symbol id="FAULT">99</symbol>
       </point>
-      <point id="StateVnd" offset="21" type="enum16" mandatory="false" />
-      <point id="WarrDt" offset="22" type="uint32" />
-      <point id="Evt1" offset="24" type="bitfield32" mandatory="true" >
+      <point id="StateVnd" offset="21" type="enum16" len="1" />
+      <point id="WarrDt" offset="22" type="uint32" len="2" />
+      <point id="Evt1" offset="24" type="bitfield32" len="2" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="OVER_TEMP_WARNING">2</symbol>
@@ -88,51 +88,50 @@
         <symbol id="CONFIGURATION_ALARM">28</symbol>
         <symbol id="CONFIGURATION_WARNING">29</symbol>
       </point>
-      <point id="Evt2" offset="26" type="bitfield32" mandatory="true" />
-      <point id="EvtVnd1" offset="28" type="bitfield32" mandatory="true" />
-      <point id="EvtVnd2" offset="30" type="bitfield32" mandatory="true" />
-      <point id="V" offset="32" type="uint16" sf="V_SF" units="V" mandatory="true" />
-      <point id="VMax" offset="33" type="uint16" sf="V_SF" units="V" />
-      <point id="VMin" offset="34" type="uint16" sf="V_SF" units="V" />
-
-      <point id="CellVMax" offset="35" type="uint16" sf="CellV_SF" units="V" />
-      <point id="CellVMaxStr" offset="36" type="uint16" />
-      <point id="CellVMaxMod" offset="37" type="uint16" />
-      <point id="CellVMin" offset="38" type="uint16" sf="CellV_SF" units="V" />
-      <point id="CellVMinStr" offset="39" type="uint16" />
-      <point id="CellVMinMod" offset="40" type="uint16" />
-      <point id="CellVAvg" offset="41" type="uint16" sf="CellV_SF" units="V" />
-      <point id="A" offset="42" type="int16" sf="A_SF" units="A" mandatory="true" />
-      <point id="AChaMax" offset="43" type="uint16" sf="AMax_SF" units="A" />
-      <point id="ADisChaMax" offset="44" type="uint16" sf="AMax_SF" units="A" />
-      <point id="W" offset="45" type="int16" sf="W_SF" units="W" mandatory="true" />
-      <point id="ReqInvState" offset="46" type="enum16" >
+      <point id="Evt2" offset="26" type="bitfield32" len="2" mandatory="true" />
+      <point id="EvtVnd1" offset="28" type="bitfield32" len="2" mandatory="true" />
+      <point id="EvtVnd2" offset="30" type="bitfield32" len="2" mandatory="true" />
+      <point id="V" offset="32" type="uint16" len="1" sf="V_SF" units="V" mandatory="true" />
+      <point id="VMax" offset="33" type="uint16" len="1" sf="V_SF" units="V" />
+      <point id="VMin" offset="34" type="uint16" len="1" sf="V_SF" units="V" />
+      <point id="CellVMax" offset="35" type="uint16" len="1" sf="CellV_SF" units="V" />
+      <point id="CellVMaxStr" offset="36" type="uint16" len="1" />
+      <point id="CellVMaxMod" offset="37" type="uint16" len="1" />
+      <point id="CellVMin" offset="38" type="uint16" len="1" sf="CellV_SF" units="V" />
+      <point id="CellVMinStr" offset="39" type="uint16" len="1" />
+      <point id="CellVMinMod" offset="40" type="uint16" len="1" />
+      <point id="CellVAvg" offset="41" type="uint16" len="1" sf="CellV_SF" units="V" />
+      <point id="A" offset="42" type="int16" len="1" sf="A_SF" units="A" mandatory="true" />
+      <point id="AChaMax" offset="43" type="uint16" len="1" sf="AMax_SF" units="A" />
+      <point id="ADisChaMax" offset="44" type="uint16" len="1" sf="AMax_SF" units="A" />
+      <point id="W" offset="45" type="int16" len="1" sf="W_SF" units="W" mandatory="true" />
+      <point id="ReqInvState" offset="46" type="enum16" len="1" >
         <symbol id="NO REQUEST">0</symbol>
         <symbol id="START">1</symbol>
         <symbol id="STOP">2</symbol>
       </point>
-      <point id="ReqW" offset="47" type="int16" sf="W_SF" units="W" />
-      <point id="SetOp" offset="48" access="rw" type="enum16" mandatory="true" >
+      <point id="ReqW" offset="47" type="int16" len="1" sf="W_SF" units="W" />
+      <point id="SetOp" offset="48" type="enum16" len="1" access="rw" mandatory="true" >
         <symbol id="CONNECT">1</symbol>
         <symbol id="DISCONNECT">2</symbol>
       </point>
-      <point id="SetInvState" offset="49" access="rw" type="enum16" mandatory="true" >
+      <point id="SetInvState" offset="49" type="enum16" len="1" access="rw" mandatory="true" >
         <symbol id="INVERTER_STOPPED">1</symbol>
         <symbol id="INVERTER_STANDBY">2</symbol>
         <symbol id="INVERTER_STARTED">3</symbol>
       </point>
-      <point id="AHRtg_SF" offset="50" type="sunssf" mandatory="true" />
-      <point id="WHRtg_SF" offset="51" type="sunssf" mandatory="true" />
-      <point id="WChaDisChaMax_SF" offset="52" type="sunssf"  mandatory="true" />
-      <point id="DisChaRte_SF" offset="53" type="sunssf" />
-      <point id="SoC_SF" offset="54" type="sunssf" mandatory="true" />
-      <point id="DoD_SF" offset="55" type="sunssf" />
-      <point id="SoH_SF" offset="56" type="sunssf" />
-      <point id="V_SF" offset="57" type="sunssf" mandatory="true" />
-      <point id="CellV_SF" offset="58" type="sunssf" mandatory="true" />
-      <point id="A_SF" offset="59" type="sunssf" mandatory="true" />
-      <point id="AMax_SF" offset="60" type="sunssf" mandatory="true" />
-      <point id="W_SF" offset="61" type="sunssf" />
+      <point id="AHRtg_SF" offset="50" type="sunssf" len="1" mandatory="true" />
+      <point id="WHRtg_SF" offset="51" type="sunssf" len="1" mandatory="true" />
+      <point id="WChaDisChaMax_SF" offset="52" type="sunssf" len="1" mandatory="true" />
+      <point id="DisChaRte_SF" offset="53" type="sunssf" len="1" />
+      <point id="SoC_SF" offset="54" type="sunssf" len="1" mandatory="true" />
+      <point id="DoD_SF" offset="55" type="sunssf" len="1" />
+      <point id="SoH_SF" offset="56" type="sunssf" len="1" />
+      <point id="V_SF" offset="57" type="sunssf" len="1" mandatory="true" />
+      <point id="CellV_SF" offset="58" type="sunssf" len="1" mandatory="true" />
+      <point id="A_SF" offset="59" type="sunssf" len="1" mandatory="true" />
+      <point id="AMax_SF" offset="60" type="sunssf" len="1" mandatory="true" />
+      <point id="W_SF" offset="61" type="sunssf" len="1" />
     </block>
   </model>
   <strings id="802" locale="en">

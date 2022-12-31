@@ -1,33 +1,33 @@
 <sunSpecModels v="1">
   <!-- 220: secure ac_meter -->
   <model id="220" len="43" name="ac_meter">
-    <block len="42">
-      <point id="A" offset="0" type="int16" sf="A_SF" units="A" mandatory="true" />
-      <point id="A_SF" offset="1" type="sunssf" mandatory="true"/>
-      <point id="PhV" offset="2" type="int16" sf="V_SF" units="V" mandatory="false" />
-      <point id="V_SF" offset="3" type="sunssf" mandatory="true" />
-      <point id="Hz" offset="4" type="int16" sf="Hz_SF" units="Hz" mandatory="true" />
-      <point id="Hz_SF" offset="5" type="sunssf" />
-      <point id="W" offset="6" type="int16" sf="W_SF" units="W" mandatory="true" />
-      <point id="W_SF" offset="7" type="sunssf" mandatory="true" />
-      <point id="VA" offset="8" type="int16" sf="VA_SF" units="VA" />
-      <point id="VA_SF" offset="9" type="sunssf" />
-      <point id="VAR" offset="10" type="int16" sf="VAR_SF" units="var" />
-      <point id="VAR_SF" offset="11" type="sunssf" />
-      <point id="PF" offset="12" type="int16" sf="PF_SF" units="Pct" />
-      <point id="PF_SF" offset="13" type="sunssf" />
-      <point id="TotWhExp" offset="14" type="acc32" sf="TotWh_SF" units="Wh" mandatory="true" />
-      <point id="TotWhImp" offset="16" type="acc32" sf="TotWh_SF" units="Wh" mandatory="true" />
-      <point id="TotWh_SF" offset="18" type="sunssf" mandatory="true" />
-      <point id="TotVAhExp" offset="19" type="acc32" sf="TotVAh_SF" units="VAh" />
-      <point id="TotVAhImp" offset="21" type="acc32" sf="TotVAh_SF" units="VAh" />
-      <point id="TotVAh_SF" offset="23" type="sunssf" />
-      <point id="TotVArhImpQ1" offset="24" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhImpQ2" offset="26" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhExpQ3" offset="28" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhExpQ4" offset="30" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArh_SF" offset="32" type="sunssf" />
-      <point id="Evt" offset="33" type="bitfield32" mandatory="true" >
+    <block len="42" type="fixed">
+      <point id="A" offset="0" type="int16" len="1" sf="A_SF" units="A" mandatory="true" />
+      <point id="A_SF" offset="1" type="sunssf" len="1" mandatory="true" />
+      <point id="PhV" offset="2" type="int16" len="1" sf="V_SF" units="V" />
+      <point id="V_SF" offset="3" type="sunssf" len="1" mandatory="true" />
+      <point id="Hz" offset="4" type="int16" len="1" sf="Hz_SF" units="Hz" mandatory="true" />
+      <point id="Hz_SF" offset="5" type="sunssf" len="1" />
+      <point id="W" offset="6" type="int16" len="1" sf="W_SF" units="W" mandatory="true" />
+      <point id="W_SF" offset="7" type="sunssf" len="1" mandatory="true" />
+      <point id="VA" offset="8" type="int16" len="1" sf="VA_SF" units="VA" />
+      <point id="VA_SF" offset="9" type="sunssf" len="1" />
+      <point id="VAR" offset="10" type="int16" len="1" sf="VAR_SF" units="var" />
+      <point id="VAR_SF" offset="11" type="sunssf" len="1" />
+      <point id="PF" offset="12" type="int16" len="1" sf="PF_SF" units="Pct" />
+      <point id="PF_SF" offset="13" type="sunssf" len="1" />
+      <point id="TotWhExp" offset="14" type="acc32" len="2" sf="TotWh_SF" units="Wh" mandatory="true" />
+      <point id="TotWhImp" offset="16" type="acc32" len="2" sf="TotWh_SF" units="Wh" mandatory="true" />
+      <point id="TotWh_SF" offset="18" type="sunssf" len="1" mandatory="true" />
+      <point id="TotVAhExp" offset="19" type="acc32" len="2" sf="TotVAh_SF" units="VAh" />
+      <point id="TotVAhImp" offset="21" type="acc32" len="2" sf="TotVAh_SF" units="VAh" />
+      <point id="TotVAh_SF" offset="23" type="sunssf" len="1" />
+      <point id="TotVArhImpQ1" offset="24" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhImpQ2" offset="26" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhExpQ3" offset="28" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhExpQ4" offset="30" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArh_SF" offset="32" type="sunssf" len="1" />
+      <point id="Evt" offset="33" type="bitfield32" len="2" mandatory="true" >
         <symbol id="Power_Failure">2</symbol>
         <symbol id="Under_Voltage">3</symbol>
         <symbol id="Low_PF">4</symbol>
@@ -50,19 +50,19 @@
         <symbol id="OEM14">29</symbol>
         <symbol id="OEM15">30</symbol>
       </point>
-      <point id="Rsrvd"   offset="35" type="pad" access="r" mandatory="true" />
-      <point id="Ts"   offset="36" type="uint32" access="r" mandatory="true" />
-      <point id="Ms" offset="38" type="uint16" access="r" mandatory="true" />
-      <point id="Seq" offset="39" type="uint16" access="r" mandatory="true" />
-      <point id="Alg"   offset="40" type="enum16" access="r" mandatory="true">
+      <point id="Rsrvd" offset="35" type="pad" len="1" mandatory="true" />
+      <point id="Ts" offset="36" type="uint32" len="2" mandatory="true" />
+      <point id="Ms" offset="38" type="uint16" len="1" mandatory="true" />
+      <point id="Seq" offset="39" type="uint16" len="1" mandatory="true" />
+      <point id="Alg" offset="40" type="enum16" len="1" mandatory="true" >
         <symbol id="NONE">0</symbol>
         <symbol id="AES-GMAC-64">1</symbol>
         <symbol id="ECC-256">2</symbol>
       </point>
-      <point id="N" offset="41" type="uint16" access="r" mandatory="true" />
+      <point id="N" offset="41" type="uint16" len="1" mandatory="true" />
     </block>
-    <block type="repeating" len="1">
-      <point id="DS" offset="0" type="uint16" access="r" mandatory="true" />
+    <block len="1" type="repeating">
+      <point id="DS" offset="0" type="uint16" len="1" mandatory="true" />
     </block>
   </model>
   <strings id="220" locale="en">

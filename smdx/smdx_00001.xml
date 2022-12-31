@@ -1,14 +1,14 @@
 <sunSpecModels v="1">
   <!-- 1: common -->
   <model id="1" len="66" name="common">
-    <block len="66">
+    <block len="66" type="fixed">
       <point id="Mn" offset="0" type="string" len="16" mandatory="true" />
       <point id="Md" offset="16" type="string" len="16" mandatory="true" />
       <point id="Opt" offset="32" type="string" len="8" />
       <point id="Vr" offset="40" type="string" len="8" />
       <point id="SN" offset="48" type="string" len="16" mandatory="true" />
-      <point id="DA" offset="64" type="uint16" access="rw" />
-      <point id="Pad" offset="65" type="pad" access="r" />
+      <point id="DA" offset="64" type="uint16" len="1" access="rw" />
+      <point id="Pad" offset="65" type="pad" len="1" />
     </block>
   </model>
   <strings id="1" locale="en">

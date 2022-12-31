@@ -1,12 +1,12 @@
 <sunSpecModels v="1">
   <!-- 502: panel module integer -->
   <model id="502" len="28" name="solar_module">
-    <block len="28">
-      <point id="A_SF" offset="0" type="sunssf" />
-      <point id="V_SF" offset="1" type="sunssf" />
-      <point id="W_SF" offset="2" type="sunssf" />
-      <point id="Wh_SF" offset="3" type="sunssf" />
-      <point id="Stat" offset="4" type="enum16" mandatory="true">
+    <block len="28" type="fixed">
+      <point id="A_SF" offset="0" type="sunssf" len="1" />
+      <point id="V_SF" offset="1" type="sunssf" len="1" />
+      <point id="W_SF" offset="2" type="sunssf" len="1" />
+      <point id="Wh_SF" offset="3" type="sunssf" len="1" />
+      <point id="Stat" offset="4" type="enum16" len="1" mandatory="true" >
         <symbol id="OFF">1</symbol>
         <symbol id="SLEEPING">2</symbol>
         <symbol id="STARTING">3</symbol>
@@ -18,8 +18,8 @@
         <symbol id="TEST">9</symbol>
         <symbol id="OTHER">10</symbol>
       </point>
-      <point id="StatVend" offset="5" type="enum16" />
-      <point id="Evt" offset="6" type="bitfield32" mandatory="true">
+      <point id="StatVend" offset="5" type="enum16" len="1" />
+      <point id="Evt" offset="6" type="bitfield32" len="2" mandatory="true" >
         <symbol id="GROUND_FAULT">0</symbol>
         <symbol id="INPUT_OVER_VOLTAGE">1</symbol>
         <symbol id="RESERVED_2">2</symbol>
@@ -42,20 +42,20 @@
         <symbol id="OUTPUT_UNDER_VOLTAGE">19</symbol>
         <symbol id="TEST_FAILED">20</symbol>
       </point>
-      <point id="EvtVend" offset="8" type="bitfield32" />
-      <point id="Ctl" offset="10" type="enum16" access="rw" />
-      <point id="CtlVend" offset="11" type="enum32" access="rw" />
-      <point id="CtlVal" offset="13" type="int32" access="rw" />
-      <point id="Tms" offset="15" type="uint32" units="Secs" />
-      <point id="OutA" offset="17" type="int16" sf="A_SF" units="A" />
-      <point id="OutV" offset="18" type="int16" sf="V_SF" units="V" />
-      <point id="OutWh" offset="19" type="acc32" sf="Wh_SF" units="Wh" />
-      <point id="OutPw" offset="21" type="int16" sf="W_SF" units="W" />
-      <point id="Tmp" offset="22" type="int16" units="C" />
-      <point id="InA" offset="23" type="int16" sf="A_SF" units="A" />
-      <point id="InV" offset="24" type="int16" sf="V_SF" units="V" />
-      <point id="InWh" offset="25" type="acc32" sf="Wh_SF" units="Wh" />
-      <point id="InW" offset="27" type="int16" sf="W_SF" units="W" />
+      <point id="EvtVend" offset="8" type="bitfield32" len="2" />
+      <point id="Ctl" offset="10" type="enum16" len="1" access="rw" />
+      <point id="CtlVend" offset="11" type="enum32" len="2" access="rw" />
+      <point id="CtlVal" offset="13" type="int32" len="2" access="rw" />
+      <point id="Tms" offset="15" type="uint32" len="2" units="Secs" />
+      <point id="OutA" offset="17" type="int16" len="1" sf="A_SF" units="A" />
+      <point id="OutV" offset="18" type="int16" len="1" sf="V_SF" units="V" />
+      <point id="OutWh" offset="19" type="acc32" len="2" sf="Wh_SF" units="Wh" />
+      <point id="OutPw" offset="21" type="int16" len="1" sf="W_SF" units="W" />
+      <point id="Tmp" offset="22" type="int16" len="1" units="C" />
+      <point id="InA" offset="23" type="int16" len="1" sf="A_SF" units="A" />
+      <point id="InV" offset="24" type="int16" len="1" sf="V_SF" units="V" />
+      <point id="InWh" offset="25" type="acc32" len="2" sf="Wh_SF" units="Wh" />
+      <point id="InW" offset="27" type="int16" len="1" sf="W_SF" units="W" />
     </block>
   </model>
   <strings id="502" locale="en">

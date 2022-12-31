@@ -2,20 +2,20 @@
   <!-- 127: Parameterized Frequency-Watt  -->
   <model id="127" len="10" name="freq_watt_param">
     <block len="10" type="fixed">
-      <point id="WGra" offset="0" access="rw" type="uint16" len="1" mandatory="true" units="% PM/Hz" sf="WGra_SF"/>
-      <point id="HzStr" offset="1" access="rw" type="int16" len="1" mandatory="true" units="Hz" sf="HzStrStop_SF"/>
-      <point id="HzStop" offset="2" access="rw" type="int16" len="1" mandatory="true" units="Hz" sf="HzStrStop_SF"/>
-      <point id="HysEna" offset="3" access="rw" type="bitfield16" len="1" mandatory="true">
+      <point id="WGra" offset="0" type="uint16" len="1" sf="WGra_SF" access="rw" units="% PM/Hz" mandatory="true" />
+      <point id="HzStr" offset="1" type="int16" len="1" sf="HzStrStop_SF" access="rw" units="Hz" mandatory="true" />
+      <point id="HzStop" offset="2" type="int16" len="1" sf="HzStrStop_SF" access="rw" units="Hz" mandatory="true" />
+      <point id="HysEna" offset="3" type="bitfield16" len="1" access="rw" mandatory="true" >
         <symbol id="ENABLED">0</symbol>
       </point>
-      <point id="ModEna" offset="4" access="rw" type="bitfield16" len="1" mandatory="true">
+      <point id="ModEna" offset="4" type="bitfield16" len="1" access="rw" mandatory="true" >
         <symbol id="ENABLED">0</symbol>
       </point>
-      <point id="HzStopWGra" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="% WMax/min" sf="RmpIncDec_SF"/>
-      <point id="WGra_SF" offset="6" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="HzStrStop_SF" offset="7" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="RmpIncDec_SF" offset="8" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="Pad" offset="9" access="r" type="pad" len="1" mandatory="false"  />
+      <point id="HzStopWGra" offset="5" type="uint16" len="1" sf="RmpIncDec_SF" access="rw" units="% WMax/min" />
+      <point id="WGra_SF" offset="6" type="sunssf" len="1" />
+      <point id="HzStrStop_SF" offset="7" type="sunssf" len="1" />
+      <point id="RmpIncDec_SF" offset="8" type="sunssf" len="1" />
+      <point id="Pad" offset="9" type="pad" len="1" />
     </block>
   </model>
   <strings id="127" locale="en">

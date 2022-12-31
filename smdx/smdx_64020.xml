@@ -2,42 +2,42 @@
 
   <!-- 64020: Mersen GreenString -->
   <model id="64020" len="46">
-    <block len="30">
-      <point id="Aux0Tmp" offset="0" type="int16" units="C" />
-      <point id="Aux1Tmp" offset="1" type="int16" units="C" />
-      <point id="Aux2Tmp" offset="2" type="int16" units="C" />
-      <point id="Aux3Tmp" offset="3" type="int16" units="C" />
-      <point id="Aux4Tmp" offset="4" type="int16" units="C" />
-      <point id="ProbeTmp" offset="6" type="int16" units="C" mandatory="true" />
-      <point id="MainTmp" offset="5" type="int16" units="C" mandatory="true" />
-      <point id="SensorV_SF" offset="7" type="sunssf" mandatory="true" />
-      <point id="SensorA_SF" offset="8" type="sunssf" mandatory="true" />
-      <point id="SensorHz_SF" offset="9" type="sunssf" mandatory="true" />
-      <point id="Sensor1Voltage" offset="10" type="int16" sf="SensorV_SF" units="V" />
-      <point id="Sensor2Voltage" offset="11" type="int16" sf="SensorV_SF" units="V" />
-      <point id="Sensor3Voltage" offset="12" type="int16" sf="SensorV_SF" units="V" />
-      <point id="Sensor4Voltage" offset="13" type="int16" sf="SensorV_SF" units="V" />
-      <point id="Sensor5Voltage" offset="14" type="int16" sf="SensorV_SF" units="V" />
-      <point id="Sensor6Voltage" offset="15" type="int16" sf="SensorV_SF" units="V" />
-      <point id="Sensor7Voltage" offset="16" type="int16" sf="SensorV_SF" units="V" />
-      <point id="Sensor1Current" offset="17" type="int16" sf="SensorA_SF" units="A" />
-      <point id="Sensor2Current" offset="18" type="int16" sf="SensorA_SF" units="A" />
-      <point id="Sensor3Current" offset="19" type="int16" sf="SensorA_SF" units="A" />
-      <point id="Sensor4Current" offset="20" type="int16" sf="SensorA_SF" units="A" />
-      <point id="Sensor5Current" offset="21" type="int16" sf="SensorA_SF" units="A" />
-      <point id="Sensor6Current" offset="22" type="int16" sf="SensorA_SF" units="A" />
-      <point id="Sensor7Current" offset="23" type="int16" sf="SensorA_SF" units="A" />
-      <point id="Sensor8" offset="24" type="uint16" sf="SensorHz_SF" units="Hz" />
-      <point id="Relay1" offset="25" type="uint16"  />
-      <point id="Relay2" offset="26" type="uint16"  />
-      <point id="Relay3" offset="27" type="uint16"  />
-      <point id="ResetAccumulators" offset="28" type="uint16"  />
-      <point id="Reset" offset="29" type="uint16"  />
+    <block len="30" type="fixed">
+      <point id="Aux0Tmp" offset="0" type="int16" len="1" units="C" />
+      <point id="Aux1Tmp" offset="1" type="int16" len="1" units="C" />
+      <point id="Aux2Tmp" offset="2" type="int16" len="1" units="C" />
+      <point id="Aux3Tmp" offset="3" type="int16" len="1" units="C" />
+      <point id="Aux4Tmp" offset="4" type="int16" len="1" units="C" />
+      <point id="MainTmp" offset="5" type="int16" len="1" units="C" mandatory="true" />
+      <point id="ProbeTmp" offset="6" type="int16" len="1" units="C" mandatory="true" />
+      <point id="SensorV_SF" offset="7" type="sunssf" len="1" mandatory="true" />
+      <point id="SensorA_SF" offset="8" type="sunssf" len="1" mandatory="true" />
+      <point id="SensorHz_SF" offset="9" type="sunssf" len="1" mandatory="true" />
+      <point id="Sensor1Voltage" offset="10" type="int16" len="1" sf="SensorV_SF" units="V" />
+      <point id="Sensor2Voltage" offset="11" type="int16" len="1" sf="SensorV_SF" units="V" />
+      <point id="Sensor3Voltage" offset="12" type="int16" len="1" sf="SensorV_SF" units="V" />
+      <point id="Sensor4Voltage" offset="13" type="int16" len="1" sf="SensorV_SF" units="V" />
+      <point id="Sensor5Voltage" offset="14" type="int16" len="1" sf="SensorV_SF" units="V" />
+      <point id="Sensor6Voltage" offset="15" type="int16" len="1" sf="SensorV_SF" units="V" />
+      <point id="Sensor7Voltage" offset="16" type="int16" len="1" sf="SensorV_SF" units="V" />
+      <point id="Sensor1Current" offset="17" type="int16" len="1" sf="SensorA_SF" units="A" />
+      <point id="Sensor2Current" offset="18" type="int16" len="1" sf="SensorA_SF" units="A" />
+      <point id="Sensor3Current" offset="19" type="int16" len="1" sf="SensorA_SF" units="A" />
+      <point id="Sensor4Current" offset="20" type="int16" len="1" sf="SensorA_SF" units="A" />
+      <point id="Sensor5Current" offset="21" type="int16" len="1" sf="SensorA_SF" units="A" />
+      <point id="Sensor6Current" offset="22" type="int16" len="1" sf="SensorA_SF" units="A" />
+      <point id="Sensor7Current" offset="23" type="int16" len="1" sf="SensorA_SF" units="A" />
+      <point id="Sensor8" offset="24" type="uint16" len="1" sf="SensorHz_SF" units="Hz" />
+      <point id="Relay1" offset="25" type="uint16" len="1" />
+      <point id="Relay2" offset="26" type="uint16" len="1" />
+      <point id="Relay3" offset="27" type="uint16" len="1" />
+      <point id="ResetAccumulators" offset="28" type="uint16" len="1" />
+      <point id="Reset" offset="29" type="uint16" len="1" />
     </block>
-    <block type="repeating" len="16">
+    <block len="16" type="repeating">
       <point id="SerialNumber" offset="0" type="string" len="9" mandatory="true" />
       <point id="Firmware" offset="9" type="string" len="6" mandatory="true" />
-      <point id="Hardware" offset="15" type="uint16" mandatory="true" />
+      <point id="Hardware" offset="15" type="uint16" len="1" mandatory="true" />
     </block>
   </model>
   <strings id="64020" locale="en">
@@ -75,12 +75,12 @@
       <label>Probe Temperature</label>
       <description></description>
       <notes></notes>
-    </point>    
+    </point>
     <point id="MainTmp">
       <label>Main Temperature</label>
       <description></description>
       <notes></notes>
-    </point>    
+    </point>
     <point id="SensorV_SF">
       <label>Voltage scale factor for the sensors</label>
       <description></description>

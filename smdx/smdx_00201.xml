@@ -1,79 +1,79 @@
 <sunSpecModels v="1">
   <!-- 201: ac_meter -->
   <model id="201" len="105" name="ac_meter">
-    <block len="105">
-      <point id="A" offset="0" type="int16" sf="A_SF" units="A" mandatory="true" />
-      <point id="AphA" offset="1" type="int16" sf="A_SF" units="A" mandatory="true" />
-      <point id="AphB" offset="2" type="int16" sf="A_SF" units="A" />
-      <point id="AphC" offset="3" type="int16" sf="A_SF" units="A" mandatory="false" />
-      <point id="A_SF" offset="4" type="sunssf" mandatory="true"/>
-      <point id="PhV" offset="5" type="int16" sf="V_SF" units="V" mandatory="false" />
-      <point id="PhVphA" offset="6" type="int16" sf="V_SF" units="V" mandatory="false" />
-      <point id="PhVphB" offset="7" type="int16" sf="V_SF" units="V" />
-      <point id="PhVphC" offset="8" type="int16" sf="V_SF" units="V" />
-      <point id="PPV" offset="9" type="int16" sf="V_SF" units="V" mandatory="false" />
-      <point id="PPVphAB" offset="10" type="int16" sf="V_SF" units="V" />
-      <point id="PPVphBC" offset="11" type="int16" sf="V_SF" units="V" />
-      <point id="PPVphCA" offset="12" type="int16" sf="V_SF" units="V" />
-      <point id="V_SF" offset="13" type="sunssf" mandatory="true" />
-      <point id="Hz" offset="14" type="int16" sf="Hz_SF" units="Hz" mandatory="true" />
-      <point id="Hz_SF" offset="15" type="sunssf" />
-      <point id="W" offset="16" type="int16" sf="W_SF" units="W" mandatory="true" />
-      <point id="WphA" offset="17" type="int16" sf="W_SF" units="W" />
-      <point id="WphB" offset="18" type="int16" sf="W_SF" units="W" />
-      <point id="WphC" offset="19" type="int16" sf="W_SF" units="W" />
-      <point id="W_SF" offset="20" type="sunssf" mandatory="true" />
-      <point id="VA" offset="21" type="int16" sf="VA_SF" units="VA" />
-      <point id="VAphA" offset="22" type="int16" sf="VA_SF" units="VA" />
-      <point id="VAphB" offset="23" type="int16" sf="VA_SF" units="VA" />
-      <point id="VAphC" offset="24" type="int16" sf="VA_SF" units="VA" />
-      <point id="VA_SF" offset="25" type="sunssf" />
-      <point id="VAR" offset="26" type="int16" sf="VAR_SF" units="var" />
-      <point id="VARphA" offset="27" type="int16" sf="VAR_SF" units="var" />
-      <point id="VARphB" offset="28" type="int16" sf="VAR_SF" units="var" />
-      <point id="VARphC" offset="29" type="int16" sf="VAR_SF" units="var" />
-      <point id="VAR_SF" offset="30" type="sunssf" />
-      <point id="PF" offset="31" type="int16" sf="PF_SF" units="Pct" />
-      <point id="PFphA" offset="32" type="int16" sf="PF_SF" units="Pct" />
-      <point id="PFphB" offset="33" type="int16" sf="PF_SF" units="Pct" />
-      <point id="PFphC" offset="34" type="int16" sf="PF_SF" units="Pct" />
-      <point id="PF_SF" offset="35" type="sunssf" />
-      <point id="TotWhExp" offset="36" type="acc32" sf="TotWh_SF" units="Wh" mandatory="true" />
-      <point id="TotWhExpPhA" offset="38" type="acc32" sf="TotWh_SF" units="Wh" />
-      <point id="TotWhExpPhB" offset="40" type="acc32" sf="TotWh_SF" units="Wh" />
-      <point id="TotWhExpPhC" offset="42" type="acc32" sf="TotWh_SF" units="Wh" />
-      <point id="TotWhImp" offset="44" type="acc32" sf="TotWh_SF" units="Wh" mandatory="true" />
-      <point id="TotWhImpPhA" offset="46" type="acc32" sf="TotWh_SF" units="Wh" />
-      <point id="TotWhImpPhB" offset="48" type="acc32" sf="TotWh_SF" units="Wh" />
-      <point id="TotWhImpPhC" offset="50" type="acc32" sf="TotWh_SF" units="Wh" />
-      <point id="TotWh_SF" offset="52" type="sunssf" mandatory="true" />
-      <point id="TotVAhExp" offset="53" type="acc32" sf="TotVAh_SF" units="VAh" />
-      <point id="TotVAhExpPhA" offset="55" type="acc32" sf="TotVAh_SF" units="VAh" />
-      <point id="TotVAhExpPhB" offset="57" type="acc32" sf="TotVAh_SF" units="VAh" />
-      <point id="TotVAhExpPhC" offset="59" type="acc32" sf="TotVAh_SF" units="VAh" />
-      <point id="TotVAhImp" offset="61" type="acc32" sf="TotVAh_SF" units="VAh" />
-      <point id="TotVAhImpPhA" offset="63" type="acc32" sf="TotVAh_SF" units="VAh" />
-      <point id="TotVAhImpPhB" offset="65" type="acc32" sf="TotVAh_SF" units="VAh" />
-      <point id="TotVAhImpPhC" offset="67" type="acc32" sf="TotVAh_SF" units="VAh" />
-      <point id="TotVAh_SF" offset="69" type="sunssf" />
-      <point id="TotVArhImpQ1" offset="70" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhImpQ1PhA" offset="72" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhImpQ1PhB" offset="74" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhImpQ1PhC" offset="76" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhImpQ2" offset="78" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhImpQ2PhA" offset="80" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhImpQ2PhB" offset="82" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhImpQ2PhC" offset="84" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhExpQ3" offset="86" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhExpQ3PhA" offset="88" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhExpQ3PhB" offset="90" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhExpQ3PhC" offset="92" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhExpQ4" offset="94" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhExpQ4PhA" offset="96" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhExpQ4PhB" offset="98" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArhExpQ4PhC" offset="100" type="acc32" sf="TotVArh_SF" units="varh" />
-      <point id="TotVArh_SF" offset="102" type="sunssf" />
-      <point id="Evt" offset="103" type="bitfield32" mandatory="true" >
+    <block len="105" type="fixed">
+      <point id="A" offset="0" type="int16" len="1" sf="A_SF" units="A" mandatory="true" />
+      <point id="AphA" offset="1" type="int16" len="1" sf="A_SF" units="A" mandatory="true" />
+      <point id="AphB" offset="2" type="int16" len="1" sf="A_SF" units="A" />
+      <point id="AphC" offset="3" type="int16" len="1" sf="A_SF" units="A" />
+      <point id="A_SF" offset="4" type="sunssf" len="1" mandatory="true" />
+      <point id="PhV" offset="5" type="int16" len="1" sf="V_SF" units="V" />
+      <point id="PhVphA" offset="6" type="int16" len="1" sf="V_SF" units="V" />
+      <point id="PhVphB" offset="7" type="int16" len="1" sf="V_SF" units="V" />
+      <point id="PhVphC" offset="8" type="int16" len="1" sf="V_SF" units="V" />
+      <point id="PPV" offset="9" type="int16" len="1" sf="V_SF" units="V" />
+      <point id="PPVphAB" offset="10" type="int16" len="1" sf="V_SF" units="V" />
+      <point id="PPVphBC" offset="11" type="int16" len="1" sf="V_SF" units="V" />
+      <point id="PPVphCA" offset="12" type="int16" len="1" sf="V_SF" units="V" />
+      <point id="V_SF" offset="13" type="sunssf" len="1" mandatory="true" />
+      <point id="Hz" offset="14" type="int16" len="1" sf="Hz_SF" units="Hz" mandatory="true" />
+      <point id="Hz_SF" offset="15" type="sunssf" len="1" />
+      <point id="W" offset="16" type="int16" len="1" sf="W_SF" units="W" mandatory="true" />
+      <point id="WphA" offset="17" type="int16" len="1" sf="W_SF" units="W" />
+      <point id="WphB" offset="18" type="int16" len="1" sf="W_SF" units="W" />
+      <point id="WphC" offset="19" type="int16" len="1" sf="W_SF" units="W" />
+      <point id="W_SF" offset="20" type="sunssf" len="1" mandatory="true" />
+      <point id="VA" offset="21" type="int16" len="1" sf="VA_SF" units="VA" />
+      <point id="VAphA" offset="22" type="int16" len="1" sf="VA_SF" units="VA" />
+      <point id="VAphB" offset="23" type="int16" len="1" sf="VA_SF" units="VA" />
+      <point id="VAphC" offset="24" type="int16" len="1" sf="VA_SF" units="VA" />
+      <point id="VA_SF" offset="25" type="sunssf" len="1" />
+      <point id="VAR" offset="26" type="int16" len="1" sf="VAR_SF" units="var" />
+      <point id="VARphA" offset="27" type="int16" len="1" sf="VAR_SF" units="var" />
+      <point id="VARphB" offset="28" type="int16" len="1" sf="VAR_SF" units="var" />
+      <point id="VARphC" offset="29" type="int16" len="1" sf="VAR_SF" units="var" />
+      <point id="VAR_SF" offset="30" type="sunssf" len="1" />
+      <point id="PF" offset="31" type="int16" len="1" sf="PF_SF" units="Pct" />
+      <point id="PFphA" offset="32" type="int16" len="1" sf="PF_SF" units="Pct" />
+      <point id="PFphB" offset="33" type="int16" len="1" sf="PF_SF" units="Pct" />
+      <point id="PFphC" offset="34" type="int16" len="1" sf="PF_SF" units="Pct" />
+      <point id="PF_SF" offset="35" type="sunssf" len="1" />
+      <point id="TotWhExp" offset="36" type="acc32" len="2" sf="TotWh_SF" units="Wh" mandatory="true" />
+      <point id="TotWhExpPhA" offset="38" type="acc32" len="2" sf="TotWh_SF" units="Wh" />
+      <point id="TotWhExpPhB" offset="40" type="acc32" len="2" sf="TotWh_SF" units="Wh" />
+      <point id="TotWhExpPhC" offset="42" type="acc32" len="2" sf="TotWh_SF" units="Wh" />
+      <point id="TotWhImp" offset="44" type="acc32" len="2" sf="TotWh_SF" units="Wh" mandatory="true" />
+      <point id="TotWhImpPhA" offset="46" type="acc32" len="2" sf="TotWh_SF" units="Wh" />
+      <point id="TotWhImpPhB" offset="48" type="acc32" len="2" sf="TotWh_SF" units="Wh" />
+      <point id="TotWhImpPhC" offset="50" type="acc32" len="2" sf="TotWh_SF" units="Wh" />
+      <point id="TotWh_SF" offset="52" type="sunssf" len="1" mandatory="true" />
+      <point id="TotVAhExp" offset="53" type="acc32" len="2" sf="TotVAh_SF" units="VAh" />
+      <point id="TotVAhExpPhA" offset="55" type="acc32" len="2" sf="TotVAh_SF" units="VAh" />
+      <point id="TotVAhExpPhB" offset="57" type="acc32" len="2" sf="TotVAh_SF" units="VAh" />
+      <point id="TotVAhExpPhC" offset="59" type="acc32" len="2" sf="TotVAh_SF" units="VAh" />
+      <point id="TotVAhImp" offset="61" type="acc32" len="2" sf="TotVAh_SF" units="VAh" />
+      <point id="TotVAhImpPhA" offset="63" type="acc32" len="2" sf="TotVAh_SF" units="VAh" />
+      <point id="TotVAhImpPhB" offset="65" type="acc32" len="2" sf="TotVAh_SF" units="VAh" />
+      <point id="TotVAhImpPhC" offset="67" type="acc32" len="2" sf="TotVAh_SF" units="VAh" />
+      <point id="TotVAh_SF" offset="69" type="sunssf" len="1" />
+      <point id="TotVArhImpQ1" offset="70" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhImpQ1PhA" offset="72" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhImpQ1PhB" offset="74" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhImpQ1PhC" offset="76" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhImpQ2" offset="78" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhImpQ2PhA" offset="80" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhImpQ2PhB" offset="82" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhImpQ2PhC" offset="84" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhExpQ3" offset="86" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhExpQ3PhA" offset="88" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhExpQ3PhB" offset="90" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhExpQ3PhC" offset="92" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhExpQ4" offset="94" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhExpQ4PhA" offset="96" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhExpQ4PhB" offset="98" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArhExpQ4PhC" offset="100" type="acc32" len="2" sf="TotVArh_SF" units="varh" />
+      <point id="TotVArh_SF" offset="102" type="sunssf" len="1" />
+      <point id="Evt" offset="103" type="bitfield32" len="2" mandatory="true" >
         <symbol id="Power_Failure">2</symbol>
         <symbol id="Under_Voltage">3</symbol>
         <symbol id="Low_PF">4</symbol>

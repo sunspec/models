@@ -1,18 +1,18 @@
 <sunSpecModels v="1">
   <!-- 307: meteorological v1.1 -->
   <model id="307" len="11" name="base_met">
-    <block len="11">
-      <point id="TmpAmb" offset="0" type="int16" sf="-1" units="C" />
-      <point id="RH" offset="1" type="int16" units="Pct" />
-      <point id="Pres" offset="2" type="int16" units="HPa" />
-      <point id="WndSpd" offset="3" type="int16" units="mps" />
-      <point id="WndDir" offset="4" type="int16" units="deg" />
-      <point id="Rain" offset="5" type="int16" units="mm" />
-      <point id="Snw" offset="6" type="int16" units="mm" />
-      <point id="PPT" offset="7" type="int16" />
-      <point id="ElecFld" offset="8" type="int16" units="Vm" />
-      <point id="SurWet" offset="9" type="int16" units="kO" />
-      <point id="SoilWet" offset="10" type="int16" units="Pct" />
+    <block len="11" type="fixed">
+      <point id="TmpAmb" offset="0" type="int16" len="1" sf="-1" units="C" />
+      <point id="RH" offset="1" type="int16" len="1" units="Pct" />
+      <point id="Pres" offset="2" type="int16" len="1" units="HPa" />
+      <point id="WndSpd" offset="3" type="int16" len="1" units="mps" />
+      <point id="WndDir" offset="4" type="int16" len="1" units="deg" />
+      <point id="Rain" offset="5" type="int16" len="1" units="mm" />
+      <point id="Snw" offset="6" type="int16" len="1" units="mm" />
+      <point id="PPT" offset="7" type="int16" len="1" />
+      <point id="ElecFld" offset="8" type="int16" len="1" units="Vm" />
+      <point id="SurWet" offset="9" type="int16" len="1" units="kO" />
+      <point id="SoilWet" offset="10" type="int16" len="1" units="Pct" />
     </block>
   </model>
   <strings id="307" locale="en">

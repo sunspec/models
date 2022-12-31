@@ -1,30 +1,30 @@
 <sunSpecModels v="1">
   <!-- 17: Serial Interface -->
   <model id="17" len="12">
-    <block len="12">
+    <block len="12" type="fixed">
       <point id="Nam" offset="0" type="string" len="4" access="rw" />
-      <point id="Rte" offset="4" type="uint32" mandatory="true" access="rw" units="bps" />
-      <point id="Bits" offset="6" type="uint16" mandatory="true" access="rw" />
-      <point id="Pty" offset="7" type="enum16" mandatory="true" access="rw" >
+      <point id="Rte" offset="4" type="uint32" len="2" access="rw" units="bps" mandatory="true" />
+      <point id="Bits" offset="6" type="uint16" len="1" access="rw" mandatory="true" />
+      <point id="Pty" offset="7" type="enum16" len="1" access="rw" mandatory="true" >
         <symbol id="NONE">0</symbol>
         <symbol id="ODD">1</symbol>
         <symbol id="EVEN">2</symbol>
       </point>
-      <point id="Dup" offset="8" type="enum16" access="rw" >
+      <point id="Dup" offset="8" type="enum16" len="1" access="rw" >
         <symbol id="FULL">0</symbol>
         <symbol id="HALF">1</symbol>
       </point>
-      <point id="Flw" offset="9" type="enum16" access="rw" >
+      <point id="Flw" offset="9" type="enum16" len="1" access="rw" >
         <symbol id="NONE">0</symbol>
         <symbol id="HW">1</symbol>
         <symbol id="XONXOFF">2</symbol>
       </point>
-      <point id="Typ" offset="10" type="enum16" >
+      <point id="Typ" offset="10" type="enum16" len="1" >
         <symbol id="UNKNOWN">0</symbol>
         <symbol id="RS232">1</symbol>
         <symbol id="RS485">2</symbol>
       </point>
-      <point id="Pcol" offset="11" type="enum16" >
+      <point id="Pcol" offset="11" type="enum16" len="1" >
         <symbol id="UNKNOWN">0</symbol>
         <symbol id="MODBUS">1</symbol>
         <symbol id="VENDOR">2</symbol>

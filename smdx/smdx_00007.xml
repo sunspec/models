@@ -1,32 +1,32 @@
 <sunSpecModels v="1">
   <!-- 7: security write response model -->
   <model id="7" len="11">
-    <block len="10">
-      <point id="RqSeq" offset="0" type="uint16" access="r" mandatory="true"/>
-      <point id="Sts" offset="1" type="enum16" access="r" mandatory="true">
+    <block len="10" type="fixed">
+      <point id="RqSeq" offset="0" type="uint16" len="1" mandatory="true" />
+      <point id="Sts" offset="1" type="enum16" len="1" mandatory="true" >
         <symbol id="SUCCESS">0</symbol>
         <symbol id="DS">1</symbol>
         <symbol id="ACL">2</symbol>
         <symbol id="OFF">3</symbol>
         <symbol id="VAL">4</symbol>
       </point>
-      <point id="Ts"   offset="2" type="uint32" access="r" mandatory="true" />
-      <point id="Ms" offset="4" type="uint16" access="r" mandatory="true" />
-      <point id="Seq" offset="5" type="uint16" access="r" mandatory="true" />
-      <point id="Alm" offset="6" type="enum16" mandatory="true">
+      <point id="Ts" offset="2" type="uint32" len="2" mandatory="true" />
+      <point id="Ms" offset="4" type="uint16" len="1" mandatory="true" />
+      <point id="Seq" offset="5" type="uint16" len="1" mandatory="true" />
+      <point id="Alm" offset="6" type="enum16" len="1" mandatory="true" >
         <symbol id="NONE">0</symbol>
         <symbol id="ALM">1</symbol>
       </point>
-      <point id="Rsrvd" offset="7" type="pad" access="r" mandatory="true" />
-      <point id="Alg"   offset="8" type="enum16" access="r" mandatory="true">
+      <point id="Rsrvd" offset="7" type="pad" len="1" mandatory="true" />
+      <point id="Alg" offset="8" type="enum16" len="1" mandatory="true" >
         <symbol id="NONE">0</symbol>
         <symbol id="AES-GMAC-64">1</symbol>
         <symbol id="ECC-256">2</symbol>
       </point>
-      <point id="N" offset="9" type="uint16" access="rw" mandatory="true" />
+      <point id="N" offset="9" type="uint16" len="1" access="rw" mandatory="true" />
     </block>
-    <block type="repeating" len="1">
-      <point id="DS" offset="0" type="uint16" access="rw" mandatory="true" />
+    <block len="1" type="repeating">
+      <point id="DS" offset="0" type="uint16" len="1" access="rw" mandatory="true" />
     </block>
   </model>
   <strings id="7" locale="en">

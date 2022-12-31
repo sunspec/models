@@ -2,12 +2,12 @@
 
   <!-- 160: Multiple MPPT Inverter Extension Model -->
   <model id="160" len="28" name="mppt">
-    <block len="8">
-      <point id="DCA_SF" offset="0" type="sunssf" />
-      <point id="DCV_SF" offset="1" type="sunssf" />
-      <point id="DCW_SF" offset="2" type="sunssf" />
-      <point id="DCWH_SF" offset="3" type="sunssf" />
-      <point id="Evt" offset="4" type="bitfield32" >
+    <block len="8" type="fixed">
+      <point id="DCA_SF" offset="0" type="sunssf" len="1" />
+      <point id="DCV_SF" offset="1" type="sunssf" len="1" />
+      <point id="DCW_SF" offset="2" type="sunssf" len="1" />
+      <point id="DCWH_SF" offset="3" type="sunssf" len="1" />
+      <point id="Evt" offset="4" type="bitfield32" len="2" >
         <symbol id="GROUND_FAULT">0</symbol>
         <symbol id="INPUT_OVER_VOLTAGE">1</symbol>
         <symbol id="RESERVED_2">2</symbol>
@@ -32,20 +32,19 @@
         <symbol id="INPUT_UNDER_VOLTAGE">21</symbol>
         <symbol id="INPUT_OVER_CURRENT">22</symbol>
       </point>
-      <point id="N" offset="6" type="count" />
-      <point id="TmsPer" offset="7" type="uint16" />
+      <point id="N" offset="6" type="count" len="1" />
+      <point id="TmsPer" offset="7" type="uint16" len="1" />
     </block>
-    <block type="repeating" len="20" name="module">
-      <point id="ID" offset="0" type="uint16" />
+    <block len="20" type="repeating" name="module">
+      <point id="ID" offset="0" type="uint16" len="1" />
       <point id="IDStr" offset="1" type="string" len="8" />
-      <point id="DCA" offset="9" type="uint16" sf="DCA_SF" units="A"/>
-      <point id="DCV" offset="10" type="uint16" sf="DCV_SF" units="V"/>
-      <point id="DCW" offset="11" type="uint16" sf="DCW_SF" units="W"/>
-      <point id="DCWH" offset="12" type="acc32" sf="DCWH_SF" units="Wh"/>
-      <point id="Tms" offset="14" type="uint32" units="Secs" />
-      <point id="Tmp" offset="16" type="int16" units="C"/>
-
-      <point id="DCSt" offset="17" type="enum16" >
+      <point id="DCA" offset="9" type="uint16" len="1" sf="DCA_SF" units="A" />
+      <point id="DCV" offset="10" type="uint16" len="1" sf="DCV_SF" units="V" />
+      <point id="DCW" offset="11" type="uint16" len="1" sf="DCW_SF" units="W" />
+      <point id="DCWH" offset="12" type="acc32" len="2" sf="DCWH_SF" units="Wh" />
+      <point id="Tms" offset="14" type="uint32" len="2" units="Secs" />
+      <point id="Tmp" offset="16" type="int16" len="1" units="C" />
+      <point id="DCSt" offset="17" type="enum16" len="1" >
         <symbol id="OFF">1</symbol>
         <symbol id="SLEEPING">2</symbol>
         <symbol id="STARTING">3</symbol>
@@ -57,7 +56,7 @@
         <symbol id="TEST">9</symbol>
         <symbol id="RESERVED_10">10</symbol>
       </point>
-      <point id="DCEvt" offset="18" type="bitfield32" >
+      <point id="DCEvt" offset="18" type="bitfield32" len="2" >
         <symbol id="GROUND_FAULT">0</symbol>
         <symbol id="INPUT_OVER_VOLTAGE">1</symbol>
         <symbol id="RESERVED_2">2</symbol>

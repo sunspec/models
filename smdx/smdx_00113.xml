@@ -1,31 +1,31 @@
 <sunSpecModels v="1">
   <!-- 113: inverter (float) -->
   <model id="113" len="60" name="inverter">
-    <block len="60">
-      <point id="A" offset="0" type="float32" units="A" mandatory="true" />
-      <point id="AphA" offset="2" type="float32" units="A" mandatory="true" />
-      <point id="AphB" offset="4" type="float32" units="A" mandatory="true" />
-      <point id="AphC" offset="6" type="float32" units="A" mandatory="true" />
-      <point id="PPVphAB" offset="8" type="float32" units="V" />
-      <point id="PPVphBC" offset="10" type="float32" units="V" />
-      <point id="PPVphCA" offset="12" type="float32" units="V" />
-      <point id="PhVphA" offset="14" type="float32" units="V" mandatory="true" />
-      <point id="PhVphB" offset="16" type="float32" units="V" mandatory="true" />
-      <point id="PhVphC" offset="18" type="float32" units="V" mandatory="true" />
-      <point id="W" offset="20" type="float32" units="W" mandatory="true" />
-      <point id="Hz" offset="22" type="float32" units="Hz" mandatory="true" />
-      <point id="VA" offset="24" type="float32" units="VA" />
-      <point id="VAr" offset="26" type="float32" units="var" />
-      <point id="PF" offset="28" type="float32" units="Pct" />
-      <point id="WH" offset="30" type="float32" units="Wh" mandatory="true" />
-      <point id="DCA" offset="32" type="float32" units="A" />
-      <point id="DCV" offset="34" type="float32" units="V" />
-      <point id="DCW" offset="36" type="float32" units="W" />
-      <point id="TmpCab" offset="38" type="float32" units="C" mandatory="true" />
-      <point id="TmpSnk" offset="40" type="float32" units="C" />
-      <point id="TmpTrns" offset="42" type="float32" units="C" />
-      <point id="TmpOt" offset="44" type="float32" units="C" />
-      <point id="St" offset="46" type="enum16" mandatory="true" >
+    <block len="60" type="fixed">
+      <point id="A" offset="0" type="float32" len="2" units="A" mandatory="true" />
+      <point id="AphA" offset="2" type="float32" len="2" units="A" mandatory="true" />
+      <point id="AphB" offset="4" type="float32" len="2" units="A" mandatory="true" />
+      <point id="AphC" offset="6" type="float32" len="2" units="A" mandatory="true" />
+      <point id="PPVphAB" offset="8" type="float32" len="2" units="V" />
+      <point id="PPVphBC" offset="10" type="float32" len="2" units="V" />
+      <point id="PPVphCA" offset="12" type="float32" len="2" units="V" />
+      <point id="PhVphA" offset="14" type="float32" len="2" units="V" mandatory="true" />
+      <point id="PhVphB" offset="16" type="float32" len="2" units="V" mandatory="true" />
+      <point id="PhVphC" offset="18" type="float32" len="2" units="V" mandatory="true" />
+      <point id="W" offset="20" type="float32" len="2" units="W" mandatory="true" />
+      <point id="Hz" offset="22" type="float32" len="2" units="Hz" mandatory="true" />
+      <point id="VA" offset="24" type="float32" len="2" units="VA" />
+      <point id="VAr" offset="26" type="float32" len="2" units="var" />
+      <point id="PF" offset="28" type="float32" len="2" units="Pct" />
+      <point id="WH" offset="30" type="float32" len="2" units="Wh" mandatory="true" />
+      <point id="DCA" offset="32" type="float32" len="2" units="A" />
+      <point id="DCV" offset="34" type="float32" len="2" units="V" />
+      <point id="DCW" offset="36" type="float32" len="2" units="W" />
+      <point id="TmpCab" offset="38" type="float32" len="2" units="C" mandatory="true" />
+      <point id="TmpSnk" offset="40" type="float32" len="2" units="C" />
+      <point id="TmpTrns" offset="42" type="float32" len="2" units="C" />
+      <point id="TmpOt" offset="44" type="float32" len="2" units="C" />
+      <point id="St" offset="46" type="enum16" len="1" mandatory="true" >
         <symbol id="OFF">1</symbol>
         <symbol id="SLEEPING">2</symbol>
         <symbol id="STARTING">3</symbol>
@@ -35,8 +35,8 @@
         <symbol id="FAULT">7</symbol>
         <symbol id="STANDBY">8</symbol>
       </point>
-      <point id="StVnd" offset="47" type="enum16" />
-      <point id="Evt1" offset="48" type="bitfield32" mandatory="true" >
+      <point id="StVnd" offset="47" type="enum16" len="1" />
+      <point id="Evt1" offset="48" type="bitfield32" len="2" mandatory="true" >
         <symbol id="GROUND_FAULT">0</symbol>
         <symbol id="DC_OVER_VOLT">1</symbol>
         <symbol id="AC_DISCONNECT">2</symbol>
@@ -54,11 +54,11 @@
         <symbol id="MEMORY_LOSS">14</symbol>
         <symbol id="HW_TEST_FAILURE">15</symbol>
       </point>
-      <point id="Evt2" offset="50" type="bitfield32" mandatory="true" />
-      <point id="EvtVnd1" offset="52" type="bitfield32" />
-      <point id="EvtVnd2" offset="54" type="bitfield32" />
-      <point id="EvtVnd3" offset="56" type="bitfield32" />
-      <point id="EvtVnd4" offset="58" type="bitfield32" />
+      <point id="Evt2" offset="50" type="bitfield32" len="2" mandatory="true" />
+      <point id="EvtVnd1" offset="52" type="bitfield32" len="2" />
+      <point id="EvtVnd2" offset="54" type="bitfield32" len="2" />
+      <point id="EvtVnd3" offset="56" type="bitfield32" len="2" />
+      <point id="EvtVnd4" offset="58" type="bitfield32" len="2" />
     </block>
   </model>
   <strings id="113" locale="en">

@@ -2,11 +2,11 @@
 
   <!-- 308: Mini Met Model -->
   <model id="308" len="4" name="mini_met">
-    <block len="4">
-      <point id="GHI" offset="0" type="uint16" units="W/m2" mandatory="false"/>
-      <point id="TmpBOM" offset="1" type="int16" sf="-1" units="C" mandatory="false"/>
-      <point id="TmpAmb" offset="2" type="int16" sf="-1" units="C" mandatory="false"/>
-      <point id="WndSpd" offset="3" type="uint16" units="m/s" mandatory="false"/>
+    <block len="4" type="fixed">
+      <point id="GHI" offset="0" type="uint16" len="1" units="W/m2" />
+      <point id="TmpBOM" offset="1" type="int16" len="1" sf="-1" units="C" />
+      <point id="TmpAmb" offset="2" type="int16" len="1" sf="-1" units="C" />
+      <point id="WndSpd" offset="3" type="uint16" len="1" units="m/s" />
     </block>
   </model>
   <strings id="308" locale="en">

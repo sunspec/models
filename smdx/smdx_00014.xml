@@ -1,17 +1,17 @@
 <sunSpecModels v="1">
   <!-- 14: Proxy Server -->
   <model id="14" len="52">
-    <block len="52">
+    <block len="52" type="fixed">
       <point id="Nam" offset="0" type="string" len="4" access="rw" />
-      <point id="Cap" offset="4" type="bitfield16" mandatory="true" access="rw" >
+      <point id="Cap" offset="4" type="bitfield16" len="1" access="rw" mandatory="true" >
         <symbol id="NO_PROXY">0</symbol>
         <symbol id="IPV4_PROXY">1</symbol>
         <symbol id="IPV6_PROXY">2</symbol>
       </point>
-      <point id="Cfg" offset="5" type="enum16" mandatory="true" access="rw" />
-      <point id="Typ" offset="6" type="bitfield16" mandatory="true" access="rw" />
-      <point id="Addr" offset="7" type="string" len="20" mandatory="true" access="rw" />
-      <point id="Port" offset="27" type="uint16" mandatory="true" access="rw" />
+      <point id="Cfg" offset="5" type="enum16" len="1" access="rw" mandatory="true" />
+      <point id="Typ" offset="6" type="bitfield16" len="1" access="rw" mandatory="true" />
+      <point id="Addr" offset="7" type="string" len="20" access="rw" mandatory="true" />
+      <point id="Port" offset="27" type="uint16" len="1" access="rw" mandatory="true" />
       <point id="User" offset="28" type="string" len="12" access="rw" />
       <point id="Pw" offset="40" type="string" len="12" access="rw" />
     </block>

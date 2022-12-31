@@ -2,11 +2,11 @@
 
   <!-- 809: Flow Battery Stack Model -->
   <model id="809" len="2" name="flow_battery_stack">
-    <block len="1">
-      <point id="StackTBD" offset="0" type="uint16" mandatory="true" />
+    <block len="1" type="fixed">
+      <point id="StackTBD" offset="0" type="uint16" len="1" mandatory="true" />
     </block>
-    <block type="repeating" len="1" name="cell">
-      <point id="CellTBD" offset="0" type="uint16" mandatory="true" />
+    <block len="1" type="repeating" name="cell">
+      <point id="CellTBD" offset="0" type="uint16" len="1" mandatory="true" />
     </block>
   </model>
   <strings id="809" locale="en">

@@ -1,18 +1,18 @@
 <sunSpecModels v="1">
   <!-- 2: basic aggregator -->
   <model id="2" len="14" name="aggregator">
-    <block len="14">
-      <point id="AID" offset="0" type="uint16" mandatory="true" />
-      <point id="N" offset="1" type="uint16" mandatory="true" />
-      <point id="UN" offset="2" type="uint16" mandatory="true" />
-      <point id="St" offset="3" type="enum16" mandatory="true">
+    <block len="14" type="fixed">
+      <point id="AID" offset="0" type="uint16" len="1" mandatory="true" />
+      <point id="N" offset="1" type="uint16" len="1" mandatory="true" />
+      <point id="UN" offset="2" type="uint16" len="1" mandatory="true" />
+      <point id="St" offset="3" type="enum16" len="1" mandatory="true" >
         <symbol id="OFF">1</symbol>
         <symbol id="ON">2</symbol>
         <symbol id="FULL">3</symbol>
         <symbol id="FAULT">4</symbol>
       </point>
-      <point id="StVnd" offset="4" type="enum16" />
-      <point id="Evt" offset="5" type="bitfield32" mandatory="true" >
+      <point id="StVnd" offset="4" type="enum16" len="1" />
+      <point id="Evt" offset="5" type="bitfield32" len="2" mandatory="true" >
         <symbol id="GROUND_FAULT">0</symbol>
         <symbol id="INPUT_OVER_VOLTAGE">1</symbol>
         <symbol id="RESERVED_2">2</symbol>
@@ -35,16 +35,16 @@
         <symbol id="OUTPUT_UNDER_VOLTAGE">19</symbol>
         <symbol id="TEST_FAILED">20</symbol>
       </point>
-      <point id="EvtVnd" offset="7" type="bitfield32" />
-      <point id="Ctl" offset="9" type="enum16" >
+      <point id="EvtVnd" offset="7" type="bitfield32" len="2" />
+      <point id="Ctl" offset="9" type="enum16" len="1" >
         <symbol id="NONE">0</symbol>
         <symbol id="AUTOMATIC">1</symbol>
         <symbol id="FORCE_OFF">2</symbol>
         <symbol id="TEST">3</symbol>
         <symbol id="THROTTLE">4</symbol>
       </point>
-      <point id="CtlVnd" offset="10" type="enum32" />
-      <point id="CtlVl" offset="12" type="enum32" />
+      <point id="CtlVnd" offset="10" type="enum32" len="2" />
+      <point id="CtlVl" offset="12" type="enum32" len="2" />
     </block>
   </model>
   <strings id="2" locale="en">

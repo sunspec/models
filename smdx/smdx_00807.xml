@@ -2,28 +2,28 @@
 
   <!-- 807: Flow Battery String Model -->
   <model id="807" len="58" name="flow_battery_string">
-    <block len="34">
-      <point id="Idx" offset="0" type="uint16" mandatory="true" />
-      <point id="NMod" offset="1" type="uint16" mandatory="true" />
-      <point id="NModCon" offset="2" type="uint16" mandatory="true" />
-      <point id="ModVMax" offset="3" type="uint16" sf="ModV_SF" units="V" mandatory="true" />
-      <point id="ModVMaxMod" offset="4" type="uint16" />
-      <point id="ModVMin" offset="5" type="uint16" sf="ModV_SF" units="V" mandatory="true" />
-      <point id="ModVMinMod" offset="6" type="uint16" />
-      <point id="ModVAvg" offset="7" type="uint16" sf="ModV_SF" units="V" mandatory="true" />
-      <point id="CellVMax" offset="8" type="uint16" sf="CellV_SF" units="V" mandatory="false" />
-      <point id="CellVMaxMod" offset="9" type="uint16" />
-      <point id="CellVMaxStk" offset="10" type="uint16" />
-      <point id="CellVMin" offset="11" type="uint16" sf="CellV_SF" units="V" mandatory="false" />
-      <point id="CellVMinMod" offset="12" type="uint16" />
-      <point id="CellVMinStk" offset="13" type="uint16" />
-      <point id="CellVAvg" offset="14" type="uint16" sf="CellV_SF" units="V" mandatory="false" />
-      <point id="TmpMax" offset="15" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
-      <point id="TmpMaxMod" offset="16" type="uint16" />
-      <point id="TmpMin" offset="17" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
-      <point id="TmpMinMod" offset="18" type="uint16" />
-      <point id="TmpAvg" offset="19" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
-      <point id="Evt1" offset="20" type="bitfield32" mandatory="true" >
+    <block len="34" type="fixed">
+      <point id="Idx" offset="0" type="uint16" len="1" mandatory="true" />
+      <point id="NMod" offset="1" type="uint16" len="1" mandatory="true" />
+      <point id="NModCon" offset="2" type="uint16" len="1" mandatory="true" />
+      <point id="ModVMax" offset="3" type="uint16" len="1" sf="ModV_SF" units="V" mandatory="true" />
+      <point id="ModVMaxMod" offset="4" type="uint16" len="1" />
+      <point id="ModVMin" offset="5" type="uint16" len="1" sf="ModV_SF" units="V" mandatory="true" />
+      <point id="ModVMinMod" offset="6" type="uint16" len="1" />
+      <point id="ModVAvg" offset="7" type="uint16" len="1" sf="ModV_SF" units="V" mandatory="true" />
+      <point id="CellVMax" offset="8" type="uint16" len="1" sf="CellV_SF" units="V" />
+      <point id="CellVMaxMod" offset="9" type="uint16" len="1" />
+      <point id="CellVMaxStk" offset="10" type="uint16" len="1" />
+      <point id="CellVMin" offset="11" type="uint16" len="1" sf="CellV_SF" units="V" />
+      <point id="CellVMinMod" offset="12" type="uint16" len="1" />
+      <point id="CellVMinStk" offset="13" type="uint16" len="1" />
+      <point id="CellVAvg" offset="14" type="uint16" len="1" sf="CellV_SF" units="V" />
+      <point id="TmpMax" offset="15" type="int16" len="1" sf="Tmp_SF" units="C" mandatory="true" />
+      <point id="TmpMaxMod" offset="16" type="uint16" len="1" />
+      <point id="TmpMin" offset="17" type="int16" len="1" sf="Tmp_SF" units="C" mandatory="true" />
+      <point id="TmpMinMod" offset="18" type="uint16" len="1" />
+      <point id="TmpAvg" offset="19" type="int16" len="1" sf="Tmp_SF" units="C" mandatory="true" />
+      <point id="Evt1" offset="20" type="bitfield32" len="2" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="OVER_TEMP_WARNING">2</symbol>
@@ -55,7 +55,7 @@
         <symbol id="CONFIGURATION_ALARM">28</symbol>
         <symbol id="CONFIGURATION_WARNING">29</symbol>
       </point>
-      <point id="Evt2" offset="22" type="bitfield32" mandatory="true">
+      <point id="Evt2" offset="22" type="bitfield32" len="2" mandatory="true" >
         <symbol id="LEAK_ALARM">0</symbol>
         <symbol id="PUMP_ALARM">1</symbol>
         <symbol id="HIGH_PRESSURE_ALARM">2</symbol>
@@ -63,33 +63,33 @@
         <symbol id="LOW_FLOW_ALARM">4</symbol>
         <symbol id="LOW_FLOW_WARNING">5</symbol>
       </point>
-      <point id="EvtVnd1" offset="24" type="bitfield32" mandatory="true" />
-      <point id="EvtVnd2" offset="26" type="bitfield32" mandatory="true" />
-      <point id="ModV_SF" offset="28" type="sunssf" mandatory="true" />
-      <point id="CellV_SF" offset="29" type="sunssf" mandatory="true" />
-      <point id="Tmp_SF" offset="30" type="sunssf" mandatory="true" />
-      <point id="SoC_SF" offset="31" type="sunssf" mandatory="true" />
-      <point id="OCV_SF" offset="32" type="sunssf" mandatory="true" />
-      <point id="Pad1" offset="33" type="pad" mandatory="true" />
+      <point id="EvtVnd1" offset="24" type="bitfield32" len="2" mandatory="true" />
+      <point id="EvtVnd2" offset="26" type="bitfield32" len="2" mandatory="true" />
+      <point id="ModV_SF" offset="28" type="sunssf" len="1" mandatory="true" />
+      <point id="CellV_SF" offset="29" type="sunssf" len="1" mandatory="true" />
+      <point id="Tmp_SF" offset="30" type="sunssf" len="1" mandatory="true" />
+      <point id="SoC_SF" offset="31" type="sunssf" len="1" mandatory="true" />
+      <point id="OCV_SF" offset="32" type="sunssf" len="1" mandatory="true" />
+      <point id="Pad1" offset="33" type="pad" len="1" mandatory="true" />
     </block>
-    <block type="repeating" len="24" name="module">
-      <point id="ModIdx" offset="0" type="uint16" mandatory="true" />
-      <point id="ModNStk" offset="1" type="uint16" units="" mandatory="true" />
-      <point id="ModSt" offset="2" type="bitfield32" mandatory="true">
+    <block len="24" type="repeating" name="module">
+      <point id="ModIdx" offset="0" type="uint16" len="1" mandatory="true" />
+      <point id="ModNStk" offset="1" type="uint16" len="1" mandatory="true" />
+      <point id="ModSt" offset="2" type="bitfield32" len="2" mandatory="true" >
         <symbol id="MODULE_ENABLED">0</symbol>
         <symbol id="CONTACTOR_STATUS">1</symbol>
       </point>
-      <point id="ModSoC" offset="4" type="uint16" sf="SoC_SF" units="%" mandatory="true" />
-      <point id="ModOCV" offset="5" type="uint16" sf="OCV_SF" units="V" mandatory="true" />
-      <point id="ModV" offset="6" type="uint16" sf="ModV_SF" units="V" mandatory="true" />
-      <point id="ModCellVMax" offset="7" type="uint16" sf="CellV_SF" units="V" mandatory="false" />
-      <point id="ModCellVMaxCell" offset="8" type="uint16" units="" />
-      <point id="ModCellVMin" offset="9" type="uint16" sf="CellV_SF" units="V" mandatory="false" />
-      <point id="ModCellVMinCell" offset="10" type="uint16" units="" />
-      <point id="ModCellVAvg" offset="11" type="uint16" sf="CellV_SF" units="V" mandatory="false" />
-      <point id="ModAnoTmp" offset="12" type="uint16" sf="Tmp_SF" units="C" />
-      <point id="ModCatTmp" offset="13" type="uint16" sf="Tmp_SF" units="C" />
-      <point id="ModConSt" offset="14" type="bitfield32" units="" >
+      <point id="ModSoC" offset="4" type="uint16" len="1" sf="SoC_SF" units="%" mandatory="true" />
+      <point id="ModOCV" offset="5" type="uint16" len="1" sf="OCV_SF" units="V" mandatory="true" />
+      <point id="ModV" offset="6" type="uint16" len="1" sf="ModV_SF" units="V" mandatory="true" />
+      <point id="ModCellVMax" offset="7" type="uint16" len="1" sf="CellV_SF" units="V" />
+      <point id="ModCellVMaxCell" offset="8" type="uint16" len="1" />
+      <point id="ModCellVMin" offset="9" type="uint16" len="1" sf="CellV_SF" units="V" />
+      <point id="ModCellVMinCell" offset="10" type="uint16" len="1" />
+      <point id="ModCellVAvg" offset="11" type="uint16" len="1" sf="CellV_SF" units="V" />
+      <point id="ModAnoTmp" offset="12" type="uint16" len="1" sf="Tmp_SF" units="C" />
+      <point id="ModCatTmp" offset="13" type="uint16" len="1" sf="Tmp_SF" units="C" />
+      <point id="ModConSt" offset="14" type="bitfield32" len="2" >
         <symbol id="CONTACTOR_0">0</symbol>
         <symbol id="CONTACTOR_1">1</symbol>
         <symbol id="CONTACTOR_2">2</symbol>
@@ -122,7 +122,7 @@
         <symbol id="CONTACTOR_29">29</symbol>
         <symbol id="CONTACTOR_30">30</symbol>
       </point>
-      <point id="ModEvt1" offset="16" type="bitfield32" mandatory="true" >
+      <point id="ModEvt1" offset="16" type="bitfield32" len="2" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="OVER_TEMP_WARNING">2</symbol>
@@ -154,7 +154,7 @@
         <symbol id="MODULE_CONFIGURATION_ALARM">28</symbol>
         <symbol id="MODULE_CONFIGURATION_WARNING">29</symbol>
       </point>
-      <point id="ModEvt2" offset="18" type="bitfield32" mandatory="true" >
+      <point id="ModEvt2" offset="18" type="bitfield32" len="2" mandatory="true" >
         <symbol id="LEAK_ALARM">0</symbol>
         <symbol id="PUMP_ALARM">1</symbol>
         <symbol id="HIGH_PRESSURE_ALARM">2</symbol>
@@ -162,7 +162,7 @@
         <symbol id="LOW_FLOW_ALARM">4</symbol>
         <symbol id="LOW_FLOW_WARNING">5</symbol>
       </point>
-      <point id="ModConFail" offset="20" type="enum16" mandatory="false" >
+      <point id="ModConFail" offset="20" type="enum16" len="1" >
         <symbol id="NO_FAILURE">0</symbol>
         <symbol id="BUTTON_PUSHED">1</symbol>
         <symbol id="MODULE_GROUND_FAULT">2</symbol>
@@ -173,15 +173,15 @@
         <symbol id="PRECHARGE_FAILURE">7</symbol>
         <symbol id="MODULE_FAULT">8</symbol>
       </point>
-      <point id="ModSetEna" offset="21" access="rw" type="enum16" >
+      <point id="ModSetEna" offset="21" type="enum16" len="1" access="rw" >
         <symbol id="ENABLE_MODULE">1</symbol>
         <symbol id="DISABLE_MODULE">2</symbol>
       </point>
-      <point id="ModSetCon" offset="22" access="rw" type="enum16">
+      <point id="ModSetCon" offset="22" type="enum16" len="1" access="rw" >
         <symbol id="CONNECT_MODULE">1</symbol>
         <symbol id="DISCONNECT_MODULE">2</symbol>
       </point>
-      <point id="ModDisRsn" offset="23" type="enum16" mandatory="false">
+      <point id="ModDisRsn" offset="23" type="enum16" len="1" >
         <symbol id="NONE">0</symbol>
         <symbol id="FAULT">1</symbol>
         <symbol id="MAINTENANCE">2</symbol>
@@ -520,7 +520,7 @@
       <label>Pad</label>
       <description>Pad register.</description>
       <notes> </notes>
-    </point>    
+    </point>
 
     <!-- Repeating Block Strings -->
 
@@ -1058,7 +1058,7 @@
         <description>The module has been disabled for some other reason.</description>
         <notes></notes>
       </symbol>
-    </point>    
+    </point>
 
    </strings>
 </sunSpecModels>

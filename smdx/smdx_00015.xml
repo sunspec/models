@@ -1,20 +1,20 @@
 <sunSpecModels v="1">
   <!-- 15: Interface Counters -->
   <model id="15" len="24">
-    <block len="24">
-      <point id="Clr" offset="0" type="uint16" access="rw" />
-      <point id="InCnt" offset="1" type="acc32" />
-      <point id="InUcCnt" offset="3" type="acc32" />
-      <point id="InNUcCnt" offset="5" type="acc32" />
-      <point id="InDscCnt" offset="7" type="acc32" />
-      <point id="InErrCnt" offset="9" type="acc32" />
-      <point id="InUnkCnt" offset="11" type="acc32" />
-      <point id="OutCnt" offset="13" type="acc32" />
-      <point id="OutUcCnt" offset="15" type="acc32" />
-      <point id="OutNUcCnt" offset="17" type="acc32" />
-      <point id="OutDscCnt" offset="19" type="acc32" />
-      <point id="OutErrCnt" offset="21" type="acc32" />
-      <point id="Pad" offset="23" type="pad" />
+    <block len="24" type="fixed">
+      <point id="Clr" offset="0" type="uint16" len="1" access="rw" />
+      <point id="InCnt" offset="1" type="acc32" len="2" />
+      <point id="InUcCnt" offset="3" type="acc32" len="2" />
+      <point id="InNUcCnt" offset="5" type="acc32" len="2" />
+      <point id="InDscCnt" offset="7" type="acc32" len="2" />
+      <point id="InErrCnt" offset="9" type="acc32" len="2" />
+      <point id="InUnkCnt" offset="11" type="acc32" len="2" />
+      <point id="OutCnt" offset="13" type="acc32" len="2" />
+      <point id="OutUcCnt" offset="15" type="acc32" len="2" />
+      <point id="OutNUcCnt" offset="17" type="acc32" len="2" />
+      <point id="OutDscCnt" offset="19" type="acc32" len="2" />
+      <point id="OutErrCnt" offset="21" type="acc32" len="2" />
+      <point id="Pad" offset="23" type="pad" len="1" />
     </block>
   </model>
   <strings id="15" locale="en">

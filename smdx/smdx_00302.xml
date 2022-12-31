@@ -2,11 +2,11 @@
   <!-- 302: Irradiance Model -->
   <model id="302" len="5" name="irradiance">
     <block len="5" type="repeating">
-      <point id="GHI" offset="0" type="uint16" units="W/m2" mandatory="false"/>
-      <point id="POAI" offset="1" type="uint16" units="W/m2" mandatory="false"/>
-      <point id="DFI" offset="2" type="uint16" units="W/m2" mandatory="false"/>
-      <point id="DNI" offset="3" type="uint16" units="W/m2" mandatory="false"/>
-      <point id="OTI" offset="4" type="uint16" units="W/m2" mandatory="false"/>
+      <point id="GHI" offset="0" type="uint16" len="1" units="W/m2" />
+      <point id="POAI" offset="1" type="uint16" len="1" units="W/m2" />
+      <point id="DFI" offset="2" type="uint16" len="1" units="W/m2" />
+      <point id="DNI" offset="3" type="uint16" len="1" units="W/m2" />
+      <point id="OTI" offset="4" type="uint16" len="1" units="W/m2" />
     </block>
   </model>
   <strings id="302" locale="en">

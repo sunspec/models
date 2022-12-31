@@ -1,9 +1,9 @@
 <sunSpecModels v="1">
   <!-- 601: Tracker Controller -->
   <model id="601" len="48" name="tracker_controller">
-    <block len="26">
-      <point id="Nam" offset="0" type="string" len="8"  mandatory="false" />
-      <point id="Typ" offset="8" type="enum16" mandatory="true" >
+    <block len="26" type="fixed">
+      <point id="Nam" offset="0" type="string" len="8" />
+      <point id="Typ" offset="8" type="enum16" len="1" mandatory="true" >
         <symbol id="Unknown">0</symbol>
         <symbol id="Fixed">1</symbol>
         <symbol id="Horizontal">2</symbol>
@@ -12,38 +12,38 @@
         <symbol id="Dual">5</symbol>
         <symbol id="Other">99</symbol>
       </point>
-      <point id="DtLoc" offset="9" type="string" len="5" units="YYYYMMDD" mandatory="false"/>
-      <point id="TmLoc" offset="14" type="string" len="3" units="hhmmss" mandatory="false" />
-      <point id="Day" offset="17" type="uint16" mandatory="false" />
-      <point id="GlblElCtl" offset="18" type="int32" units="Degrees" sf="Dgr_SF" access="rw" mandatory="false" />
-      <point id="GlblAzCtl" offset="20" type="int32" units="Degrees" sf="Dgr_SF" access="rw" mandatory="false" />
-      <point id="GlblCtl" offset="22" type="enum16" access="rw" mandatory="false" >
+      <point id="DtLoc" offset="9" type="string" len="5" units="YYYYMMDD" />
+      <point id="TmLoc" offset="14" type="string" len="3" units="hhmmss" />
+      <point id="Day" offset="17" type="uint16" len="1" />
+      <point id="GlblElCtl" offset="18" type="int32" len="2" sf="Dgr_SF" access="rw" units="Degrees" />
+      <point id="GlblAzCtl" offset="20" type="int32" len="2" sf="Dgr_SF" access="rw" units="Degrees" />
+      <point id="GlblCtl" offset="22" type="enum16" len="1" access="rw" >
         <symbol id="Automatic">0</symbol>
         <symbol id="Manual">1</symbol>
         <symbol id="Calibrate">2</symbol>
       </point>
-      <point id="GlblAlm" offset="23" type="bitfield16"  mandatory="false">
+      <point id="GlblAlm" offset="23" type="bitfield16" len="1" >
         <symbol id="SetPoint">0</symbol>
         <symbol id="ObsEl">1</symbol>
         <symbol id="ObsAz">2</symbol>
       </point>
-      <point id="Dgr_SF" offset="24" type="sunssf"  mandatory="true" />
-      <point id="N" offset="25" type="uint16" mandatory="true" />
+      <point id="Dgr_SF" offset="24" type="sunssf" len="1" mandatory="true" />
+      <point id="N" offset="25" type="uint16" len="1" mandatory="true" />
     </block>
     <block len="22" type="repeating" name="tracker">
-      <point id="Id" offset="0" type="string" len="8"  mandatory="false" />
-      <point id="ElTrgt" offset="8" type="int32" units="Degrees" sf="Dgr_SF" mandatory="false" />
-      <point id="AzTrgt" offset="10" type="int32" units="Degrees" sf="Dgr_SF" mandatory="false" />
-      <point id="ElPos" offset="12" type="int32" units="Degrees" sf="Dgr_SF" mandatory="false" />
-      <point id="AzPos" offset="14" type="int32" units="Degrees" sf="Dgr_SF" mandatory="false" />
-      <point id="ElCtl" offset="16" type="int32" units="Degrees" sf="Dgr_SF" access="rw" mandatory="false" />
-      <point id="AzCtl" offset="18" type="int32" units="Degrees" sf="Dgr_SF" access="rw" mandatory="false" />
-      <point id="Ctl" offset="20" type="enum16" access="rw" mandatory="false" >
+      <point id="Id" offset="0" type="string" len="8" />
+      <point id="ElTrgt" offset="8" type="int32" len="2" sf="Dgr_SF" units="Degrees" />
+      <point id="AzTrgt" offset="10" type="int32" len="2" sf="Dgr_SF" units="Degrees" />
+      <point id="ElPos" offset="12" type="int32" len="2" sf="Dgr_SF" units="Degrees" />
+      <point id="AzPos" offset="14" type="int32" len="2" sf="Dgr_SF" units="Degrees" />
+      <point id="ElCtl" offset="16" type="int32" len="2" sf="Dgr_SF" access="rw" units="Degrees" />
+      <point id="AzCtl" offset="18" type="int32" len="2" sf="Dgr_SF" access="rw" units="Degrees" />
+      <point id="Ctl" offset="20" type="enum16" len="1" access="rw" >
         <symbol id="Automatic">0</symbol>
         <symbol id="Manual">1</symbol>
         <symbol id="Calibrate">2</symbol>
       </point>
-      <point id="Alm" offset="21" type="bitfield16"  mandatory="false">
+      <point id="Alm" offset="21" type="bitfield16" len="1" >
         <symbol id="SetPoint">0</symbol>
         <symbol id="ObsEl">1</symbol>
         <symbol id="ObsAz">2</symbol>

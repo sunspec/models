@@ -2,11 +2,11 @@
 
   <!-- 806: Flow Battery Model -->
   <model id="806" len="2" name="flow_battery">
-    <block len="1">
-      <point id="BatTBD" offset="0" type="uint16" mandatory="true" />
+    <block len="1" type="fixed">
+      <point id="BatTBD" offset="0" type="uint16" len="1" mandatory="true" />
     </block>
-    <block type="repeating" len="1" name="battery_string">
-      <point id="BatStTBD" offset="0" type="uint16" mandatory="true" />
+    <block len="1" type="repeating" name="battery_string">
+      <point id="BatStTBD" offset="0" type="uint16" len="1" mandatory="true" />
     </block>
   </model>
   <strings id="806" locale="en">

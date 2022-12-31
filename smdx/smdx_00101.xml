@@ -2,43 +2,43 @@
 
   <!-- 101: inverter -->
   <model id="101" len="50" name="inverter">
-    <block len="50">
-      <point id="A" offset="0" type="uint16" sf="A_SF" units="A" mandatory="true" />
-      <point id="AphA" offset="1" type="uint16" sf="A_SF" units="A" mandatory="true" />
-      <point id="AphB" offset="2" type="uint16" sf="A_SF" units="A" />
-      <point id="AphC" offset="3" type="uint16" sf="A_SF" units="A" />
-      <point id="A_SF" offset="4" type="sunssf" mandatory="true" />
-      <point id="PPVphAB" offset="5" type="uint16" sf="V_SF" units="V" />
-      <point id="PPVphBC" offset="6" type="uint16" sf="V_SF" units="V" />
-      <point id="PPVphCA" offset="7" type="uint16" sf="V_SF" units="V" />
-      <point id="PhVphA" offset="8" type="uint16" sf="V_SF" units="V" mandatory="true" />
-      <point id="PhVphB" offset="9" type="uint16" sf="V_SF" units="V" />
-      <point id="PhVphC" offset="10" type="uint16" sf="V_SF" units="V" />
-      <point id="V_SF" offset="11" type="sunssf" mandatory="true" />
-      <point id="W" offset="12" type="int16" sf="W_SF" units="W" mandatory="true" />
-      <point id="W_SF" offset="13" type="sunssf" mandatory="true" />
-      <point id="Hz" offset="14" type="uint16" sf="Hz_SF" units="Hz" mandatory="true" />
-      <point id="Hz_SF" offset="15" type="sunssf" mandatory="true" />
-      <point id="VA" offset="16" type="int16" sf="VA_SF" units="VA" />
-      <point id="VA_SF" offset="17" type="sunssf" />
-      <point id="VAr" offset="18" type="int16" sf="VAr_SF" units="var" />
-      <point id="VAr_SF" offset="19" type="sunssf" />
-      <point id="PF" offset="20" type="int16" sf="PF_SF" units="Pct" />
-      <point id="PF_SF" offset="21" type="sunssf" />
-      <point id="WH" offset="22" type="acc32" sf="WH_SF" units="Wh" mandatory="true" />
-      <point id="WH_SF" offset="24" type="sunssf" mandatory="true" />
-      <point id="DCA" offset="25" type="uint16" sf="DCA_SF" units="A" />
-      <point id="DCA_SF" offset="26" type="sunssf" />
-      <point id="DCV" offset="27" type="uint16" sf="DCV_SF" units="V" />
-      <point id="DCV_SF" offset="28" type="sunssf" />
-      <point id="DCW" offset="29" type="int16" sf="DCW_SF" units="W" />
-      <point id="DCW_SF" offset="30" type="sunssf" />
-      <point id="TmpCab" offset="31" type="int16" sf="Tmp_SF" units="C" mandatory="true" />
-      <point id="TmpSnk" offset="32" type="int16" sf="Tmp_SF" units="C" />
-      <point id="TmpTrns" offset="33" type="int16" sf="Tmp_SF" units="C" />
-      <point id="TmpOt" offset="34" type="int16" sf="Tmp_SF" units="C" />
-      <point id="Tmp_SF" offset="35" type="sunssf" mandatory="true" />
-      <point id="St" offset="36" type="enum16" mandatory="true" >
+    <block len="50" type="fixed">
+      <point id="A" offset="0" type="uint16" len="1" sf="A_SF" units="A" mandatory="true" />
+      <point id="AphA" offset="1" type="uint16" len="1" sf="A_SF" units="A" mandatory="true" />
+      <point id="AphB" offset="2" type="uint16" len="1" sf="A_SF" units="A" />
+      <point id="AphC" offset="3" type="uint16" len="1" sf="A_SF" units="A" />
+      <point id="A_SF" offset="4" type="sunssf" len="1" mandatory="true" />
+      <point id="PPVphAB" offset="5" type="uint16" len="1" sf="V_SF" units="V" />
+      <point id="PPVphBC" offset="6" type="uint16" len="1" sf="V_SF" units="V" />
+      <point id="PPVphCA" offset="7" type="uint16" len="1" sf="V_SF" units="V" />
+      <point id="PhVphA" offset="8" type="uint16" len="1" sf="V_SF" units="V" mandatory="true" />
+      <point id="PhVphB" offset="9" type="uint16" len="1" sf="V_SF" units="V" />
+      <point id="PhVphC" offset="10" type="uint16" len="1" sf="V_SF" units="V" />
+      <point id="V_SF" offset="11" type="sunssf" len="1" mandatory="true" />
+      <point id="W" offset="12" type="int16" len="1" sf="W_SF" units="W" mandatory="true" />
+      <point id="W_SF" offset="13" type="sunssf" len="1" mandatory="true" />
+      <point id="Hz" offset="14" type="uint16" len="1" sf="Hz_SF" units="Hz" mandatory="true" />
+      <point id="Hz_SF" offset="15" type="sunssf" len="1" mandatory="true" />
+      <point id="VA" offset="16" type="int16" len="1" sf="VA_SF" units="VA" />
+      <point id="VA_SF" offset="17" type="sunssf" len="1" />
+      <point id="VAr" offset="18" type="int16" len="1" sf="VAr_SF" units="var" />
+      <point id="VAr_SF" offset="19" type="sunssf" len="1" />
+      <point id="PF" offset="20" type="int16" len="1" sf="PF_SF" units="Pct" />
+      <point id="PF_SF" offset="21" type="sunssf" len="1" />
+      <point id="WH" offset="22" type="acc32" len="2" sf="WH_SF" units="Wh" mandatory="true" />
+      <point id="WH_SF" offset="24" type="sunssf" len="1" mandatory="true" />
+      <point id="DCA" offset="25" type="uint16" len="1" sf="DCA_SF" units="A" />
+      <point id="DCA_SF" offset="26" type="sunssf" len="1" />
+      <point id="DCV" offset="27" type="uint16" len="1" sf="DCV_SF" units="V" />
+      <point id="DCV_SF" offset="28" type="sunssf" len="1" />
+      <point id="DCW" offset="29" type="int16" len="1" sf="DCW_SF" units="W" />
+      <point id="DCW_SF" offset="30" type="sunssf" len="1" />
+      <point id="TmpCab" offset="31" type="int16" len="1" sf="Tmp_SF" units="C" mandatory="true" />
+      <point id="TmpSnk" offset="32" type="int16" len="1" sf="Tmp_SF" units="C" />
+      <point id="TmpTrns" offset="33" type="int16" len="1" sf="Tmp_SF" units="C" />
+      <point id="TmpOt" offset="34" type="int16" len="1" sf="Tmp_SF" units="C" />
+      <point id="Tmp_SF" offset="35" type="sunssf" len="1" mandatory="true" />
+      <point id="St" offset="36" type="enum16" len="1" mandatory="true" >
         <symbol id="OFF">1</symbol>
         <symbol id="SLEEPING">2</symbol>
         <symbol id="STARTING">3</symbol>
@@ -48,8 +48,8 @@
         <symbol id="FAULT">7</symbol>
         <symbol id="STANDBY">8</symbol>
       </point>
-      <point id="StVnd" offset="37" type="enum16" />
-      <point id="Evt1" offset="38" type="bitfield32" mandatory="true" >
+      <point id="StVnd" offset="37" type="enum16" len="1" />
+      <point id="Evt1" offset="38" type="bitfield32" len="2" mandatory="true" >
         <symbol id="GROUND_FAULT">0</symbol>
         <symbol id="DC_OVER_VOLT">1</symbol>
         <symbol id="AC_DISCONNECT">2</symbol>
@@ -67,11 +67,11 @@
         <symbol id="MEMORY_LOSS">14</symbol>
         <symbol id="HW_TEST_FAILURE">15</symbol>
       </point>
-      <point id="Evt2" offset="40" type="bitfield32" mandatory="true" />
-      <point id="EvtVnd1" offset="42" type="bitfield32" />
-      <point id="EvtVnd2" offset="44" type="bitfield32" />
-      <point id="EvtVnd3" offset="46" type="bitfield32" />
-      <point id="EvtVnd4" offset="48" type="bitfield32" />
+      <point id="Evt2" offset="40" type="bitfield32" len="2" mandatory="true" />
+      <point id="EvtVnd1" offset="42" type="bitfield32" len="2" />
+      <point id="EvtVnd2" offset="44" type="bitfield32" len="2" />
+      <point id="EvtVnd3" offset="46" type="bitfield32" len="2" />
+      <point id="EvtVnd4" offset="48" type="bitfield32" len="2" />
     </block>
   </model>
   <strings id="101" locale="en">

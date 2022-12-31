@@ -1,15 +1,15 @@
 <sunSpecModels v="1">
   <!-- 404: advanced string combiner -->
   <model id="404" len="39" name="string_combiner">
-    <block len="25">
-      <point id="DCA_SF" offset="0" type="sunssf" mandatory="true" />
-      <point id="DCAhr_SF" offset="1" type="sunssf" />
-      <point id="DCV_SF" offset="2" type="sunssf" />
-      <point id="DCW_SF" offset="3" type="sunssf" />
-      <point id="DCWh_SF" offset="4" type="sunssf" />
-      <point id="DCAMax" offset="5" type="uint16" sf="DCA_SF" units="A" mandatory="true" />
-      <point id="N" offset="6" type="count" mandatory="true" />
-      <point id="Evt" offset="7" type="bitfield32" mandatory="true">
+    <block len="25" type="fixed">
+      <point id="DCA_SF" offset="0" type="sunssf" len="1" mandatory="true" />
+      <point id="DCAhr_SF" offset="1" type="sunssf" len="1" />
+      <point id="DCV_SF" offset="2" type="sunssf" len="1" />
+      <point id="DCW_SF" offset="3" type="sunssf" len="1" />
+      <point id="DCWh_SF" offset="4" type="sunssf" len="1" />
+      <point id="DCAMax" offset="5" type="uint16" len="1" sf="DCA_SF" units="A" mandatory="true" />
+      <point id="N" offset="6" type="count" len="1" mandatory="true" />
+      <point id="Evt" offset="7" type="bitfield32" len="2" mandatory="true" >
         <symbol id="LOW_VOLTAGE">0</symbol>
         <symbol id="LOW_POWER">1</symbol>
         <symbol id="LOW_EFFICIENCY">2</symbol>
@@ -30,23 +30,23 @@
         <symbol id="THEFT">17</symbol>
         <symbol id="ARC_DETECTED">18</symbol>
       </point>
-      <point id="EvtVnd" offset="9" type="bitfield32" />
-      <point id="DCA" offset="11" type="int16" sf="DCA_SF" units="A" mandatory="true" />
-      <point id="DCAhr" offset="12" type="acc32" sf="DCAhr_SF" units="Ah" />
-      <point id="DCV" offset="14" type="int16" sf="DCV_SF" units="V" />
-      <point id="Tmp" offset="15" type="int16" units="C" />
-      <point id="DCW" offset="16" type="int16" sf="DCW_SF" units="W" />
-      <point id="DCPR" offset="17" type="int16" units="Pct" />
-      <point id="DCWh" offset="18" type="acc32" sf="DCWh_SF" units="Wh" />
-      <point id="InDCA_SF" offset="20" type="sunssf" />
-      <point id="InDCAhr_SF" offset="21" type="sunssf" />
-      <point id="InDCV_SF" offset="22" type="sunssf" />
-      <point id="InDCW_SF" offset="23" type="sunssf" />
-      <point id="InDCWh_SF" offset="24" type="sunssf" />
+      <point id="EvtVnd" offset="9" type="bitfield32" len="2" />
+      <point id="DCA" offset="11" type="int16" len="1" sf="DCA_SF" units="A" mandatory="true" />
+      <point id="DCAhr" offset="12" type="acc32" len="2" sf="DCAhr_SF" units="Ah" />
+      <point id="DCV" offset="14" type="int16" len="1" sf="DCV_SF" units="V" />
+      <point id="Tmp" offset="15" type="int16" len="1" units="C" />
+      <point id="DCW" offset="16" type="int16" len="1" sf="DCW_SF" units="W" />
+      <point id="DCPR" offset="17" type="int16" len="1" units="Pct" />
+      <point id="DCWh" offset="18" type="acc32" len="2" sf="DCWh_SF" units="Wh" />
+      <point id="InDCA_SF" offset="20" type="sunssf" len="1" />
+      <point id="InDCAhr_SF" offset="21" type="sunssf" len="1" />
+      <point id="InDCV_SF" offset="22" type="sunssf" len="1" />
+      <point id="InDCW_SF" offset="23" type="sunssf" len="1" />
+      <point id="InDCWh_SF" offset="24" type="sunssf" len="1" />
     </block>
-    <block type="repeating" len="14" name="string">
-      <point id="InID" offset="0" type="uint16" mandatory="true" />
-      <point id="InEvt" offset="1" type="bitfield32" mandatory="true">
+    <block len="14" type="repeating" name="string">
+      <point id="InID" offset="0" type="uint16" len="1" mandatory="true" />
+      <point id="InEvt" offset="1" type="bitfield32" len="2" mandatory="true" >
         <symbol id="LOW_VOLTAGE">0</symbol>
         <symbol id="LOW_POWER">1</symbol>
         <symbol id="LOW_EFFICIENCY">2</symbol>
@@ -67,14 +67,14 @@
         <symbol id="THEFT">17</symbol>
         <symbol id="ARC_DETECTED">18</symbol>
       </point>
-      <point id="InEvtVnd" offset="3" type="bitfield32" />
-      <point id="InDCA" offset="5" type="int16" sf="InDCA_SF" units="A" mandatory="true" />
-      <point id="InDCAhr" offset="6" type="acc32" sf="InDCAhr_SF" units="Ah" />
-      <point id="InDCV" offset="8" type="int16" sf="InDCV_SF" units="V" />
-      <point id="InDCW" offset="9" type="int16" sf="InDCW_SF" units="W" />
-      <point id="InDCWh" offset="10" type="acc32" sf="InDCWh_SF" units="Wh" />
-      <point id="InDCPR" offset="12" type="uint16" units="Pct" />
-      <point id="InN" offset="13" type="uint16" />
+      <point id="InEvtVnd" offset="3" type="bitfield32" len="2" />
+      <point id="InDCA" offset="5" type="int16" len="1" sf="InDCA_SF" units="A" mandatory="true" />
+      <point id="InDCAhr" offset="6" type="acc32" len="2" sf="InDCAhr_SF" units="Ah" />
+      <point id="InDCV" offset="8" type="int16" len="1" sf="InDCV_SF" units="V" />
+      <point id="InDCW" offset="9" type="int16" len="1" sf="InDCW_SF" units="W" />
+      <point id="InDCWh" offset="10" type="acc32" len="2" sf="InDCWh_SF" units="Wh" />
+      <point id="InDCPR" offset="12" type="uint16" len="1" units="Pct" />
+      <point id="InN" offset="13" type="uint16" len="1" />
     </block>
   </model>
   <strings id="404" locale="en">
