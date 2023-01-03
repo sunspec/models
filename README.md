@@ -1,4 +1,9 @@
-[![Build Status](https://travis-ci.org/sunspec/models.svg?branch=master)](https://travis-ci.org/sunspec/models)
+Specification
+=============
+The Json format of the specification is to be used for all applications.
+
+The XML format (smdx) is a legacy form that is deprecated and will not be extended with new models.
+
 
 Contribution
 ============

@@ -30,6 +30,15 @@ local.properties
 
 
 #################
+## IntelliJ IDEA / Java
+#################
+.idea
+*.iml
+target
+*.jar
+.attach_*
+
+#################
 ## Visual Studio
 #################
 

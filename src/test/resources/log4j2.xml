@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT" follow="true">
+      <PatternLayout disableAnsi="false" pattern="%highlight{%d{ABSOLUTE} [%-5p] %-40c{1}:%5L: %m%n%throwable}{FATAL=bright red reverse, ERROR=bright red, WARN=bright yellow, INFO=default, DEBUG=cyan, TRACE=magenta}"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="Console"/>
+    </Root>
+  </Loggers>
+</Configuration>

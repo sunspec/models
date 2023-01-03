@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+
+<project
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+  xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.sunspec.model</groupId>
+  <artifactId>sunspec-modbus</artifactId>
+  <version>0.1-SNAPSHOT</version>
+
+  <name>SunSpec modbus specification</name>
+  <description>The SunSpec modbus specification</description>
+  <url>https://github.com/sunspec/models</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.fasterxml.jackson</groupId>
+        <artifactId>jackson-bom</artifactId>
+        <version>2.14.1</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-bom</artifactId>
+        <version>2.19.0</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-framework-bom</artifactId>
+        <version>5.3.24</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>5.9.0</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.networknt</groupId>
+      <artifactId>json-schema-validator</artifactId>
+      <version>1.0.76</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-slf4j-impl</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.24</version>
+      <scope>provided</scope>
+    </dependency>
+
+  </dependencies>
+
+  <profiles>
+
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <!-- Description: https://github.com/git-commit-id/git-commit-id-maven-plugin -->
+            <groupId>io.github.git-commit-id</groupId>
+            <artifactId>git-commit-id-maven-plugin</artifactId>
+            <version>5.0.0</version>
+            <executions>
+              <execution>
+                <id>Validate-Revision-Information</id>
+                <phase>validate</phase>
+                <goals>
+                  <goal>validateRevision</goal>
+                </goals>
+                <configuration>
+                  <validationProperties>
+                    <!-- verify that the current repository is not dirty -->
+                    <validationProperty>
+                      <name>Don't try to release if something has not yet been committed.</name>
+                      <!--suppress UnresolvedMavenProperty -->
+                      <value>${git.dirty}</value>
+                      <shouldMatchTo>false</shouldMatchTo>
+                    </validationProperty>
+                    <!-- verify that the current commit has a tag -->
+                    <validationProperty>
+                      <name>validating current commit has a tag</name>
+                      <!--suppress UnresolvedMavenProperty -->
+                      <value>${git.closest.tag.commit.count}</value>
+                      <shouldMatchTo>0</shouldMatchTo>
+                    </validationProperty>
+                  </validationProperties>
+                  <validationShouldFailIfNoMatch>true</validationShouldFailIfNoMatch>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+  <build>
+    <defaultGoal>clean package</defaultGoal>
+
+    <resources>
+      <resource>
+        <directory>json</directory>
+        <targetPath>json</targetPath>
+      </resource>
+    </resources>
+
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>11</release>
+          <compilerArgs>
+            <!-- Enable almost all warnings.-->
+            <!-- Ignore the 'serial' warnings about not having a serialVersionUID -->
+            <arg>-Xlint:all,-serial</arg>
+            <!-- Silence warning "No processor claimed any of these annotations". One of the
+            annotations that would trigger it is org.junit.jupiter.api.Test -->
+            <arg>-Xlint:-processing</arg>
+            <arg>-Werror</arg>
+            <arg>-implicit:class</arg>
+          </compilerArgs>
+          <showWarnings>true</showWarnings>
+          <showDeprecation>true</showDeprecation>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M7</version>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+</project>
