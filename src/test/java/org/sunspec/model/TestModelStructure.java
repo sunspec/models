@@ -1,70 +1,38 @@
 package org.sunspec.model;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
-import org.apache.commons.lang3.tuple.Pair;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
-import org.springframework.core.io.Resource;
 import org.sunspec.model.entities.Group;
 import org.sunspec.model.entities.Point;
 import org.sunspec.model.entities.SunSpecModel;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.SortedMap;
 import java.util.TreeMap;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.sunspec.model.Utils.findAllResources;
 
 class TestModelStructure {
 
-    private final ObjectMapper mapper = new ObjectMapper();
-
-    private static final Pattern EXTRACT_NR = Pattern.compile("^model_([0-9]+).json$");
-
-    private static final Logger LOG = LogManager.getLogger();
-
     @Test
-    void testModels() throws IOException {
-        Map<String, Resource> models = findAllResources("file:json/model_*.json", false);
-
-        // Sort the models before checking.
-        SortedMap<Pair<Integer, String>, Resource> sortedModels = new TreeMap<>();
-        models.forEach((f,r) -> {
-            Matcher m = EXTRACT_NR.matcher(f);
-            assertTrue(m.find());
-            sortedModels.put(Pair.of(Integer.parseInt(m.group(1)), f), r);
-        });
-
-        for (Map.Entry<Pair<Integer, String>, Resource> modelEntry : sortedModels.entrySet()) {
-            Integer modelNr = modelEntry.getKey().getKey();
-
-            String modelLogName = String.format("Model %5d (%s)", modelNr, modelEntry.getKey().getValue());
-            LOG.info("Checking {}", modelLogName);
-
-            SunSpecModel sunSpecModel = mapper.readValue(modelEntry.getValue().getInputStream(), SunSpecModel.class);
-            assertEquals(modelNr, sunSpecModel.id);
-
-            checkAllScalingFactorsExist(modelLogName, sunSpecModel);
-            checkSizesOfPointsInModel(modelLogName, sunSpecModel);
-            checkRegisterCountPerType(modelLogName, sunSpecModel);
-        }
+    void checkModelId() {
+        SunSpec.getModels().forEach((id, model) -> assertEquals(id, model.id, "Index vs model id mismatch"));
     }
 
     // --------------------------------------------------
 
-    private void checkAllScalingFactorsExist(String modelLogName, SunSpecModel sunSpecModel) {
+    @Test
+    void checkAllScalingFactorsExist() {
+        SunSpec.getModels().values().forEach(this::checkAllScalingFactorsExist);
+    }
+
+    private void checkAllScalingFactorsExist(SunSpecModel sunSpecModel) {
         List<String> fixedBlockScalingFactorsNames = getScalingFactors(sunSpecModel.group.points);
+        String modelLogName = String.format("Model %5d", sunSpecModel.id);
 
         // Check all points in the fixed model
         checkPointsScalingFactor(modelLogName, sunSpecModel.group.points, fixedBlockScalingFactorsNames);
@@ -106,14 +74,20 @@ class TestModelStructure {
 
     // --------------------------------------------------
 
-    private void checkRegisterCountPerType(String modelLogName, SunSpecModel sunSpecModel) throws IOException {
+    @Test
+    void checkRegisterCountPerType() {
+        SunSpec.getModels().values().forEach(this::checkRegisterCountPerType);
+    }
+
+    private void checkRegisterCountPerType(SunSpecModel sunSpecModel) {
+        String modelLogName = String.format("Model %5d", sunSpecModel.id);
         checkRegisterCountPerType(modelLogName, sunSpecModel.group.points);
         for (Group group : sunSpecModel.group.groups) {
             checkRegisterCountPerType(modelLogName, group.points);
         }
     }
 
-    private void checkRegisterCountPerType(String modelLogName, List<Point> points) throws IOException {
+    private void checkRegisterCountPerType(String modelLogName, List<Point> points) {
         for (Point point : points) {
             Integer registerCount = point.type.getRegisterCount();
             if (registerCount == null) {
@@ -131,7 +105,12 @@ class TestModelStructure {
 
     // --------------------------------------------------
 
-    private void checkSizesOfPointsInModel(String modelLogName, SunSpecModel sunSpecModel) throws IOException {
+    @Test
+    void checkSizesOfPointsInModel() {
+        SunSpec.getModels().values().forEach(this::checkSizesOfPointsInModel);
+    }
+
+    private void checkSizesOfPointsInModel(SunSpecModel sunSpecModel) {
         Integer modelNr = sunSpecModel.id;
         ModelSize modelSize = modelSizes.get(modelNr);
         if (modelSize != null) {
@@ -139,7 +118,8 @@ class TestModelStructure {
                 .group
                 .points
                 .stream()
-                .filter(point -> !"ID".equals(point.name)) // Not part of the actual model
+                // Two fields that define the chain and are not part of the payload
+                .filter(point -> !"ID".equals(point.name))
                 .filter(point -> !"L".equals(point.name))
                 .map(point -> point.size).reduce(0, Integer::sum);
 
@@ -153,13 +133,13 @@ class TestModelStructure {
                 .reduce(0, Integer::sum);
 
             assertEquals(modelSize.fixedBlock, registersInFixedBlock,
-                String.format("%s: Invalid fixed block size", modelLogName));
+                String.format("Model %d: Invalid fixed block size", sunSpecModel.id));
 
             assertEquals(modelSize.repeatingBlock, registersInRepeatingBlock,
-                String.format("%s: Invalid repeating block size", modelLogName));
+                String.format("Model %d: Invalid repeating block size", sunSpecModel.id));
 
             assertEquals(modelSize.model, registersInFixedBlock + registersInRepeatingBlock,
-                String.format("%s: Invalid total model size", modelLogName));
+                String.format("Model %d: Invalid total model size", sunSpecModel.id));
         }
     }
 
