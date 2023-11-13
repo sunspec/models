@@ -526,7 +526,7 @@
             {
                 "access": "RW",
                 "comments": [
-                    "Set Reacitve Power Level"
+                    "Set Reactive Power Level"
                 ],
                 "desc": "Set reactive power enable.",
                 "label": "Set Reactive Power Enable",
