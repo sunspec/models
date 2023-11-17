@@ -1,16 +1,16 @@
 <sunSpecModels v="1">
   <!-- 8: get device security certificate  -->
   <model id="8" len="3">
-    <block len="2">
-      <point id="Fmt"   offset="0" type="enum16" access="r" mandatory="true">
+    <block len="2" type="fixed">
+      <point id="Fmt" offset="0" type="enum16" len="1" mandatory="true" >
         <symbol id="NONE">0</symbol>
         <symbol id="X509_PEM">1</symbol>
         <symbol id="X509_DER">2</symbol>
       </point>
-      <point id="N" offset="1" type="uint16" access="r" mandatory="true" />
+      <point id="N" offset="1" type="uint16" len="1" mandatory="true" />
     </block>
-    <block type="repeating" len="1">
-      <point id="Cert" offset="0" type="uint16" access="r" mandatory="true" />
+    <block len="1" type="repeating">
+      <point id="Cert" offset="0" type="uint16" len="1" mandatory="true" />
     </block>
   </model>
   <strings id="8" locale="en">

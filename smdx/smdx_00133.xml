@@ -2,7 +2,7 @@
   <!-- 133: Basic Scheduling  -->
   <model id="133" len="66" name="schedule">
     <block len="6" type="fixed">
-      <point id="ActSchd" offset="0" access="rw" type="bitfield32" len="2" mandatory="true">
+      <point id="ActSchd" offset="0" type="bitfield32" len="2" access="rw" mandatory="true" >
         <symbol id="SCHED1">0</symbol>
         <symbol id="SCHED2">1</symbol>
         <symbol id="SCHED3">2</symbol>
@@ -35,18 +35,18 @@
         <symbol id="SCHED31">30</symbol>
         <symbol id="SCHED32">31</symbol>
       </point>
-      <point id="ModEna" offset="2" access="rw" type="bitfield16" len="1" mandatory="true">
+      <point id="ModEna" offset="2" type="bitfield16" len="1" access="rw" mandatory="true" >
         <symbol id="ENABLED">0</symbol>
       </point>
-      <point id="NSchd" offset="3" access="r" type="uint16" len="1" mandatory="true"  />
-      <point id="NPts" offset="4" access="r" type="uint16" len="1" mandatory="true"  />
-      <point id="Pad" offset="5" access="r" type="pad" len="1" mandatory="false" />
+      <point id="NSchd" offset="3" type="uint16" len="1" mandatory="true" />
+      <point id="NPts" offset="4" type="uint16" len="1" mandatory="true" />
+      <point id="Pad" offset="5" type="pad" len="1" />
     </block>
     <block len="60" type="repeating">
-      <point id="ActPts" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
-      <point id="StrTms" offset="1" access="rw" type="uint32" len="2" mandatory="true" units="Secs" />
-      <point id="RepPer" offset="3" access="rw" type="uint16" len="1" mandatory="true"  />
-      <point id="IntvTyp" offset="4" access="rw" type="enum16" len="1" mandatory="true">
+      <point id="ActPts" offset="0" type="uint16" len="1" access="rw" mandatory="true" />
+      <point id="StrTms" offset="1" type="uint32" len="2" access="rw" units="Secs" mandatory="true" />
+      <point id="RepPer" offset="3" type="uint16" len="1" access="rw" mandatory="true" />
+      <point id="IntvTyp" offset="4" type="enum16" len="1" access="rw" mandatory="true" >
         <symbol id="ONETIME">0</symbol>
         <symbol id="DAILY">1</symbol>
         <symbol id="WEEKLY">2</symbol>
@@ -56,15 +56,15 @@
         <symbol id="WEEKEND">6</symbol>
         <symbol id="YEARLY">7</symbol>
       </point>
-      <point id="XTyp" offset="5" access="rw" type="enum16" len="1" mandatory="true">
+      <point id="XTyp" offset="5" type="enum16" len="1" access="rw" mandatory="true" >
         <symbol id="UNSET">0</symbol>
         <symbol id="TIME">1</symbol>
         <symbol id="TEMP">2</symbol>
         <symbol id="PRICE">3</symbol>
         <symbol id="OTHER">99</symbol>
       </point>
-      <point id="X_SF" offset="6" access="rw" type="sunssf" len="1" mandatory="true"  />
-      <point id="YTyp" offset="7" access="rw" type="enum16" len="1" mandatory="true">
+      <point id="X_SF" offset="6" type="sunssf" len="1" access="rw" mandatory="true" />
+      <point id="YTyp" offset="7" type="enum16" len="1" access="rw" mandatory="true" >
         <symbol id="UNSET">0</symbol>
         <symbol id="WMax">1</symbol>
         <symbol id="RSRVD2">2</symbol>
@@ -80,31 +80,31 @@
         <symbol id="Schedule">12</symbol>
         <symbol id="OTHER">99</symbol>
       </point>
-      <point id="Y_SF" offset="8" access="rw" type="sunssf" len="1" mandatory="true"  />
-      <point id="X1" offset="9" access="rw" type="int32" len="2" mandatory="true"  sf="X_SF"/>
-      <point id="Y1" offset="11" access="rw" type="int32" len="2" mandatory="true"  sf="Y_SF"/>
-      <point id="X2" offset="13" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
-      <point id="Y2" offset="15" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
-      <point id="X3" offset="17" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
-      <point id="Y3" offset="19" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
-      <point id="X4" offset="21" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
-      <point id="Y4" offset="23" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
-      <point id="X5" offset="25" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
-      <point id="Y5" offset="27" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
-      <point id="X6" offset="29" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
-      <point id="Y6" offset="31" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
-      <point id="X7" offset="33" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
-      <point id="Y7" offset="35" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
-      <point id="X8" offset="37" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
-      <point id="Y8" offset="39" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
-      <point id="X9" offset="41" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
-      <point id="Y9" offset="43" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
-      <point id="X10" offset="45" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
-      <point id="Y10" offset="47" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
-      <point id="Nam" offset="49" access="rw" type="string" len="8" mandatory="false"  />
-      <point id="WinTms" offset="57" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="RmpTms" offset="58" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="ActIndx" offset="59" access="r" type="uint16" len="1" mandatory="true"  />
+      <point id="Y_SF" offset="8" type="sunssf" len="1" access="rw" mandatory="true" />
+      <point id="X1" offset="9" type="int32" len="2" sf="X_SF" access="rw" mandatory="true" />
+      <point id="Y1" offset="11" type="int32" len="2" sf="Y_SF" access="rw" mandatory="true" />
+      <point id="X2" offset="13" type="int32" len="2" sf="X_SF" access="rw" />
+      <point id="Y2" offset="15" type="int32" len="2" sf="Y_SF" access="rw" />
+      <point id="X3" offset="17" type="int32" len="2" sf="X_SF" access="rw" />
+      <point id="Y3" offset="19" type="int32" len="2" sf="Y_SF" access="rw" />
+      <point id="X4" offset="21" type="int32" len="2" sf="X_SF" access="rw" />
+      <point id="Y4" offset="23" type="int32" len="2" sf="Y_SF" access="rw" />
+      <point id="X5" offset="25" type="int32" len="2" sf="X_SF" access="rw" />
+      <point id="Y5" offset="27" type="int32" len="2" sf="Y_SF" access="rw" />
+      <point id="X6" offset="29" type="int32" len="2" sf="X_SF" access="rw" />
+      <point id="Y6" offset="31" type="int32" len="2" sf="Y_SF" access="rw" />
+      <point id="X7" offset="33" type="int32" len="2" sf="X_SF" access="rw" />
+      <point id="Y7" offset="35" type="int32" len="2" sf="Y_SF" access="rw" />
+      <point id="X8" offset="37" type="int32" len="2" sf="X_SF" access="rw" />
+      <point id="Y8" offset="39" type="int32" len="2" sf="Y_SF" access="rw" />
+      <point id="X9" offset="41" type="int32" len="2" sf="X_SF" access="rw" />
+      <point id="Y9" offset="43" type="int32" len="2" sf="Y_SF" access="rw" />
+      <point id="X10" offset="45" type="int32" len="2" sf="X_SF" access="rw" />
+      <point id="Y10" offset="47" type="int32" len="2" sf="Y_SF" access="rw" />
+      <point id="Nam" offset="49" type="string" len="8" access="rw" />
+      <point id="WinTms" offset="57" type="uint16" len="1" access="rw" units="Secs" />
+      <point id="RmpTms" offset="58" type="uint16" len="1" access="rw" units="Secs" />
+      <point id="ActIndx" offset="59" type="uint16" len="1" mandatory="true" />
     </block>
   </model>
   <strings id="133" locale="en">

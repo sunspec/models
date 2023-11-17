@@ -2,35 +2,35 @@
   <!-- 120: Inverter Controls Nameplate Ratings  -->
   <model id="120" len="26" name="nameplate">
     <block len="26" type="fixed">
-      <point id="DERTyp" offset="0" access="r" type="enum16" len="1" mandatory="true">
+      <point id="DERTyp" offset="0" type="enum16" len="1" mandatory="true" >
         <symbol id="PV">4</symbol>
         <symbol id="PV_STOR">82</symbol>
       </point>
-      <point id="WRtg" offset="1" access="r" type="uint16" len="1" mandatory="true" units="W" sf="WRtg_SF"/>
-      <point id="WRtg_SF" offset="2" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="VARtg" offset="3" access="r" type="uint16" len="1" mandatory="true" units="VA" sf="VARtg_SF"/>
-      <point id="VARtg_SF" offset="4" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="VArRtgQ1" offset="5" access="r" type="int16" len="1" mandatory="true" units="var" sf="VArRtg_SF"/>
-      <point id="VArRtgQ2" offset="6" access="r" type="int16" len="1" mandatory="true" units="var" sf="VArRtg_SF"/>
-      <point id="VArRtgQ3" offset="7" access="r" type="int16" len="1" mandatory="true" units="var" sf="VArRtg_SF"/>
-      <point id="VArRtgQ4" offset="8" access="r" type="int16" len="1" mandatory="true" units="var" sf="VArRtg_SF"/>
-      <point id="VArRtg_SF" offset="9" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="ARtg" offset="10" access="r" type="uint16" len="1" mandatory="true" units="A" sf="ARtg_SF"/>
-      <point id="ARtg_SF" offset="11" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="PFRtgQ1" offset="12" access="r" type="int16" len="1" mandatory="true" units="cos()" sf="PFRtg_SF"/>
-      <point id="PFRtgQ2" offset="13" access="r" type="int16" len="1" mandatory="true" units="cos()" sf="PFRtg_SF"/>
-      <point id="PFRtgQ3" offset="14" access="r" type="int16" len="1" mandatory="true" units="cos()" sf="PFRtg_SF"/>
-      <point id="PFRtgQ4" offset="15" access="r" type="int16" len="1" mandatory="true" units="cos()" sf="PFRtg_SF"/>
-      <point id="PFRtg_SF" offset="16" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="WHRtg" offset="17" access="r" type="uint16" len="1" mandatory="false" units="Wh" sf="WHRtg_SF"/>
-      <point id="WHRtg_SF" offset="18" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="AhrRtg" offset="19" access="r" type="uint16" len="1" mandatory="false" units="AH" sf="AhrRtg_SF"/>
-      <point id="AhrRtg_SF" offset="20" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="MaxChaRte" offset="21" access="r" type="uint16" len="1" mandatory="false" units="W" sf="MaxChaRte_SF"/>
-      <point id="MaxChaRte_SF" offset="22" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="MaxDisChaRte" offset="23" access="r" type="uint16" len="1" mandatory="false" units="W" sf="MaxDisChaRte_SF"/>
-      <point id="MaxDisChaRte_SF" offset="24" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="Pad" offset="25" access="r" type="pad" len="1" mandatory="false"  />
+      <point id="WRtg" offset="1" type="uint16" len="1" sf="WRtg_SF" units="W" mandatory="true" />
+      <point id="WRtg_SF" offset="2" type="sunssf" len="1" mandatory="true" />
+      <point id="VARtg" offset="3" type="uint16" len="1" sf="VARtg_SF" units="VA" mandatory="true" />
+      <point id="VARtg_SF" offset="4" type="sunssf" len="1" mandatory="true" />
+      <point id="VArRtgQ1" offset="5" type="int16" len="1" sf="VArRtg_SF" units="var" mandatory="true" />
+      <point id="VArRtgQ2" offset="6" type="int16" len="1" sf="VArRtg_SF" units="var" mandatory="true" />
+      <point id="VArRtgQ3" offset="7" type="int16" len="1" sf="VArRtg_SF" units="var" mandatory="true" />
+      <point id="VArRtgQ4" offset="8" type="int16" len="1" sf="VArRtg_SF" units="var" mandatory="true" />
+      <point id="VArRtg_SF" offset="9" type="sunssf" len="1" mandatory="true" />
+      <point id="ARtg" offset="10" type="uint16" len="1" sf="ARtg_SF" units="A" mandatory="true" />
+      <point id="ARtg_SF" offset="11" type="sunssf" len="1" mandatory="true" />
+      <point id="PFRtgQ1" offset="12" type="int16" len="1" sf="PFRtg_SF" units="cos()" mandatory="true" />
+      <point id="PFRtgQ2" offset="13" type="int16" len="1" sf="PFRtg_SF" units="cos()" mandatory="true" />
+      <point id="PFRtgQ3" offset="14" type="int16" len="1" sf="PFRtg_SF" units="cos()" mandatory="true" />
+      <point id="PFRtgQ4" offset="15" type="int16" len="1" sf="PFRtg_SF" units="cos()" mandatory="true" />
+      <point id="PFRtg_SF" offset="16" type="sunssf" len="1" mandatory="true" />
+      <point id="WHRtg" offset="17" type="uint16" len="1" sf="WHRtg_SF" units="Wh" />
+      <point id="WHRtg_SF" offset="18" type="sunssf" len="1" />
+      <point id="AhrRtg" offset="19" type="uint16" len="1" sf="AhrRtg_SF" units="AH" />
+      <point id="AhrRtg_SF" offset="20" type="sunssf" len="1" />
+      <point id="MaxChaRte" offset="21" type="uint16" len="1" sf="MaxChaRte_SF" units="W" />
+      <point id="MaxChaRte_SF" offset="22" type="sunssf" len="1" />
+      <point id="MaxDisChaRte" offset="23" type="uint16" len="1" sf="MaxDisChaRte_SF" units="W" />
+      <point id="MaxDisChaRte_SF" offset="24" type="sunssf" len="1" />
+      <point id="Pad" offset="25" type="pad" len="1" />
     </block>
   </model>
   <strings id="120" locale="en">

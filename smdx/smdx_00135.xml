@@ -2,63 +2,63 @@
   <!-- 135: LFRT -->
   <model id="135" len="60" name="lfrt">
     <block len="10" type="fixed">
-      <point id="ActCrv" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
-      <point id="ModEna" offset="1" access="rw" type="bitfield16" len="1" mandatory="true">
+      <point id="ActCrv" offset="0" type="uint16" len="1" access="rw" mandatory="true" />
+      <point id="ModEna" offset="1" type="bitfield16" len="1" access="rw" mandatory="true" >
         <symbol id="ENABLED">0</symbol>
       </point>
-      <point id="WinTms" offset="2" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="RvrtTms" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="RmpTms" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="NCrv" offset="5" access="r" type="uint16" len="1" mandatory="true"  />
-      <point id="NPt" offset="6" access="r" type="uint16" len="1" mandatory="true"  />
-      <point id="Tms_SF" offset="7" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="Hz_SF" offset="8" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="Pad" offset="9" access="r" type="pad" len="1" mandatory="false" />
+      <point id="WinTms" offset="2" type="uint16" len="1" access="rw" units="Secs" />
+      <point id="RvrtTms" offset="3" type="uint16" len="1" access="rw" units="Secs" />
+      <point id="RmpTms" offset="4" type="uint16" len="1" access="rw" units="Secs" />
+      <point id="NCrv" offset="5" type="uint16" len="1" mandatory="true" />
+      <point id="NPt" offset="6" type="uint16" len="1" mandatory="true" />
+      <point id="Tms_SF" offset="7" type="sunssf" len="1" mandatory="true" />
+      <point id="Hz_SF" offset="8" type="sunssf" len="1" mandatory="true" />
+      <point id="Pad" offset="9" type="pad" len="1" />
     </block>
     <block len="50" type="repeating" name="curve">
-      <point id="ActPt" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
-      <point id="Tms1" offset="1" access="rw" type="uint16" len="1" mandatory="true" units="Secs" sf="Tms_SF"/>
-      <point id="Hz1" offset="2" access="rw" type="uint16" len="1" mandatory="true" units="Hz" sf="Hz_SF"/>
-      <point id="Tms2" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz2" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms3" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz3" offset="6" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms4" offset="7" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz4" offset="8" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms5" offset="9" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz5" offset="10" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms6" offset="11" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz6" offset="12" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms7" offset="13" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz7" offset="14" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms8" offset="15" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz8" offset="16" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms9" offset="17" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz9" offset="18" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms10" offset="19" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz10" offset="20" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms11" offset="21" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz11" offset="22" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms12" offset="23" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz12" offset="24" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms13" offset="25" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz13" offset="26" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms14" offset="27" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz14" offset="28" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms15" offset="29" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz15" offset="30" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms16" offset="31" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz16" offset="32" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms17" offset="33" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz17" offset="34" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms18" offset="35" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz18" offset="36" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms19" offset="37" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz19" offset="38" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="Tms20" offset="39" access="rw" type="uint16" len="1" mandatory="false" units="Secs" sf="Tms_SF"/>
-      <point id="Hz20" offset="40" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="Hz_SF"/>
-      <point id="CrvNam" offset="41" access="rw" type="string" len="8" mandatory="false"  />
-      <point id="ReadOnly" offset="49" access="r" type="enum16" len="1" mandatory="true" >
+      <point id="ActPt" offset="0" type="uint16" len="1" access="rw" mandatory="true" />
+      <point id="Tms1" offset="1" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" mandatory="true" />
+      <point id="Hz1" offset="2" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" mandatory="true" />
+      <point id="Tms2" offset="3" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz2" offset="4" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms3" offset="5" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz3" offset="6" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms4" offset="7" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz4" offset="8" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms5" offset="9" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz5" offset="10" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms6" offset="11" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz6" offset="12" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms7" offset="13" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz7" offset="14" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms8" offset="15" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz8" offset="16" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms9" offset="17" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz9" offset="18" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms10" offset="19" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz10" offset="20" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms11" offset="21" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz11" offset="22" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms12" offset="23" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz12" offset="24" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms13" offset="25" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz13" offset="26" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms14" offset="27" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz14" offset="28" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms15" offset="29" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz15" offset="30" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms16" offset="31" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz16" offset="32" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms17" offset="33" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz17" offset="34" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms18" offset="35" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz18" offset="36" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms19" offset="37" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz19" offset="38" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="Tms20" offset="39" type="uint16" len="1" sf="Tms_SF" access="rw" units="Secs" />
+      <point id="Hz20" offset="40" type="uint16" len="1" sf="Hz_SF" access="rw" units="Hz" />
+      <point id="CrvNam" offset="41" type="string" len="8" access="rw" />
+      <point id="ReadOnly" offset="49" type="enum16" len="1" mandatory="true" >
         <symbol id="READWRITE">0</symbol>
         <symbol id="READONLY">1</symbol>
       </point>

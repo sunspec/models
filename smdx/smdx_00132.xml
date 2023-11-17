@@ -2,70 +2,70 @@
   <!-- 132: Volt-Watt  -->
   <model id="132" len="64" name="volt_watt">
     <block len="10" type="fixed">
-      <point id="ActCrv" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
-      <point id="ModEna" offset="1" access="rw" type="bitfield16" len="1" mandatory="true">
+      <point id="ActCrv" offset="0" type="uint16" len="1" access="rw" mandatory="true" />
+      <point id="ModEna" offset="1" type="bitfield16" len="1" access="rw" mandatory="true" >
         <symbol id="ENABLED">0</symbol>
       </point>
-      <point id="WinTms" offset="2" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="RvrtTms" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="RmpTms" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="NCrv" offset="5" access="r" type="uint16" len="1" mandatory="true"  />
-      <point id="NPt" offset="6" access="r" type="uint16" len="1" mandatory="true"  />
-      <point id="V_SF" offset="7" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="DeptRef_SF" offset="8" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="RmpIncDec_SF" offset="9" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="WinTms" offset="2" type="uint16" len="1" access="rw" units="Secs" />
+      <point id="RvrtTms" offset="3" type="uint16" len="1" access="rw" units="Secs" />
+      <point id="RmpTms" offset="4" type="uint16" len="1" access="rw" units="Secs" />
+      <point id="NCrv" offset="5" type="uint16" len="1" mandatory="true" />
+      <point id="NPt" offset="6" type="uint16" len="1" mandatory="true" />
+      <point id="V_SF" offset="7" type="sunssf" len="1" mandatory="true" />
+      <point id="DeptRef_SF" offset="8" type="sunssf" len="1" mandatory="true" />
+      <point id="RmpIncDec_SF" offset="9" type="sunssf" len="1" />
     </block>
     <block len="54" type="repeating" name="curve">
-      <point id="ActPt" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
-      <point id="DeptRef" offset="1" access="rw" type="enum16" len="1" mandatory="true">
+      <point id="ActPt" offset="0" type="uint16" len="1" access="rw" mandatory="true" />
+      <point id="DeptRef" offset="1" type="enum16" len="1" access="rw" mandatory="true" >
         <symbol id="%WMax">1</symbol>
         <symbol id="%WAval">2</symbol>
       </point>
-      <point id="V1" offset="2" access="rw" type="uint16" len="1" mandatory="true" units="% VRef" sf="V_SF"/>
-      <point id="W1" offset="3" access="rw" type="int16" len="1" mandatory="true" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V2" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W2" offset="5" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V3" offset="6" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W3" offset="7" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V4" offset="8" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W4" offset="9" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V5" offset="10" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W5" offset="11" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V6" offset="12" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W6" offset="13" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V7" offset="14" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W7" offset="15" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V8" offset="16" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W8" offset="17" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V9" offset="18" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W9" offset="19" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V10" offset="20" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W10" offset="21" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V11" offset="22" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W11" offset="23" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V12" offset="24" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W12" offset="25" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V13" offset="26" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W13" offset="27" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V14" offset="28" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W14" offset="29" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V15" offset="30" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W15" offset="31" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V16" offset="32" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W16" offset="33" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V17" offset="34" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W17" offset="35" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V18" offset="36" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W18" offset="37" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V19" offset="38" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W19" offset="39" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="V20" offset="40" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="V_SF"/>
-      <point id="W20" offset="41" access="rw" type="int16" len="1" mandatory="false" units="% VRef" sf="DeptRef_SF"/>
-      <point id="CrvNam" offset="42" access="rw" type="string" len="8" mandatory="false"  />
-      <point id="RmpPt1Tms" offset="50" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="RmpDecTmm" offset="51" access="rw" type="uint16" len="1" mandatory="false" units="% WMax/min" sf="RmpIncDec_SF"/>
-      <point id="RmpIncTmm" offset="52" access="rw" type="uint16" len="1" mandatory="false" units="% WMax/min" sf="RmpIncDec_SF"/>
-      <point id="ReadOnly" offset="53" access="r" type="enum16" len="1" mandatory="true" >
+      <point id="V1" offset="2" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" mandatory="true" />
+      <point id="W1" offset="3" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" mandatory="true" />
+      <point id="V2" offset="4" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W2" offset="5" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V3" offset="6" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W3" offset="7" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V4" offset="8" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W4" offset="9" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V5" offset="10" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W5" offset="11" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V6" offset="12" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W6" offset="13" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V7" offset="14" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W7" offset="15" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V8" offset="16" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W8" offset="17" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V9" offset="18" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W9" offset="19" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V10" offset="20" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W10" offset="21" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V11" offset="22" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W11" offset="23" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V12" offset="24" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W12" offset="25" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V13" offset="26" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W13" offset="27" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V14" offset="28" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W14" offset="29" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V15" offset="30" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W15" offset="31" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V16" offset="32" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W16" offset="33" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V17" offset="34" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W17" offset="35" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V18" offset="36" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W18" offset="37" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V19" offset="38" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W19" offset="39" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="V20" offset="40" type="uint16" len="1" sf="V_SF" access="rw" units="% VRef" />
+      <point id="W20" offset="41" type="int16" len="1" sf="DeptRef_SF" access="rw" units="% VRef" />
+      <point id="CrvNam" offset="42" type="string" len="8" access="rw" />
+      <point id="RmpPt1Tms" offset="50" type="uint16" len="1" access="rw" units="Secs" />
+      <point id="RmpDecTmm" offset="51" type="uint16" len="1" sf="RmpIncDec_SF" access="rw" units="% WMax/min" />
+      <point id="RmpIncTmm" offset="52" type="uint16" len="1" sf="RmpIncDec_SF" access="rw" units="% WMax/min" />
+      <point id="ReadOnly" offset="53" type="enum16" len="1" mandatory="true" >
         <symbol id="READWRITE">0</symbol>
         <symbol id="READONLY">1</symbol>
       </point>

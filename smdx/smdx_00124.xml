@@ -2,19 +2,19 @@
   <!-- 124: Basic Storage Controls  -->
   <model id="124" len="24" name="storage">
     <block len="24" type="fixed">
-      <point id="WChaMax" offset="0" access="rw" type="uint16" len="1" mandatory="true" units="W" sf="WChaMax_SF"/>
-      <point id="WChaGra" offset="1" access="rw" type="uint16" len="1" mandatory="true" units="% WChaMax/sec" sf="WChaDisChaGra_SF"/>
-      <point id="WDisChaGra" offset="2" access="rw" type="uint16" len="1" mandatory="true" units="% WChaMax/sec" sf="WChaDisChaGra_SF"/>
-      <point id="StorCtl_Mod" offset="3" access="rw" type="bitfield16" len="1" mandatory="true">
+      <point id="WChaMax" offset="0" type="uint16" len="1" sf="WChaMax_SF" access="rw" units="W" mandatory="true" />
+      <point id="WChaGra" offset="1" type="uint16" len="1" sf="WChaDisChaGra_SF" access="rw" units="% WChaMax/sec" mandatory="true" />
+      <point id="WDisChaGra" offset="2" type="uint16" len="1" sf="WChaDisChaGra_SF" access="rw" units="% WChaMax/sec" mandatory="true" />
+      <point id="StorCtl_Mod" offset="3" type="bitfield16" len="1" access="rw" mandatory="true" >
         <symbol id="CHARGE">0</symbol>
         <symbol id="DiSCHARGE">1</symbol>
       </point>
-      <point id="VAChaMax" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="VA" sf="VAChaMax_SF"/>
-      <point id="MinRsvPct" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="% WChaMax" sf="MinRsvPct_SF"/>
-      <point id="ChaState" offset="6" access="r" type="uint16" len="1" mandatory="false" units="% AhrRtg" sf="ChaState_SF"/>
-      <point id="StorAval" offset="7" access="r" type="uint16" len="1" mandatory="false" units="AH" sf="StorAval_SF"/>
-      <point id="InBatV" offset="8" access="r" type="uint16" len="1" mandatory="false" units="V" sf="InBatV_SF"/>
-      <point id="ChaSt" offset="9" access="r" type="enum16" len="1" mandatory="false">
+      <point id="VAChaMax" offset="4" type="uint16" len="1" sf="VAChaMax_SF" access="rw" units="VA" />
+      <point id="MinRsvPct" offset="5" type="uint16" len="1" sf="MinRsvPct_SF" access="rw" units="% WChaMax" />
+      <point id="ChaState" offset="6" type="uint16" len="1" sf="ChaState_SF" units="% AhrRtg" />
+      <point id="StorAval" offset="7" type="uint16" len="1" sf="StorAval_SF" units="AH" />
+      <point id="InBatV" offset="8" type="uint16" len="1" sf="InBatV_SF" units="V" />
+      <point id="ChaSt" offset="9" type="enum16" len="1" >
         <symbol id="OFF">1</symbol>
         <symbol id="EMPTY">2</symbol>
         <symbol id="DISCHARGING">3</symbol>
@@ -23,23 +23,23 @@
         <symbol id="HOLDING">6</symbol>
         <symbol id="TESTING">7</symbol>
       </point>
-      <point id="OutWRte" offset="10" access="rw" type="int16" len="1" mandatory="false" units="% WDisChaMax" sf="InOutWRte_SF"/>
-      <point id="InWRte" offset="11" access="rw" type="int16" len="1" mandatory="false" units=" % WChaMax" sf="InOutWRte_SF"/>
-      <point id="InOutWRte_WinTms" offset="12" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="InOutWRte_RvrtTms" offset="13" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="InOutWRte_RmpTms" offset="14" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
-      <point id="ChaGriSet" offset="15" access="rw" type="enum16" len="1" mandatory="false">
+      <point id="OutWRte" offset="10" type="int16" len="1" sf="InOutWRte_SF" access="rw" units="% WDisChaMax" />
+      <point id="InWRte" offset="11" type="int16" len="1" sf="InOutWRte_SF" access="rw" units=" % WChaMax" />
+      <point id="InOutWRte_WinTms" offset="12" type="uint16" len="1" access="rw" units="Secs" />
+      <point id="InOutWRte_RvrtTms" offset="13" type="uint16" len="1" access="rw" units="Secs" />
+      <point id="InOutWRte_RmpTms" offset="14" type="uint16" len="1" access="rw" units="Secs" />
+      <point id="ChaGriSet" offset="15" type="enum16" len="1" access="rw" >
         <symbol id="PV">0</symbol>
         <symbol id="GRID">1</symbol>
       </point>
-      <point id="WChaMax_SF" offset="16" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="WChaDisChaGra_SF" offset="17" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="VAChaMax_SF" offset="18" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="MinRsvPct_SF" offset="19" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="ChaState_SF" offset="20" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="StorAval_SF" offset="21" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="InBatV_SF" offset="22" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="InOutWRte_SF" offset="23" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="WChaMax_SF" offset="16" type="sunssf" len="1" mandatory="true" />
+      <point id="WChaDisChaGra_SF" offset="17" type="sunssf" len="1" mandatory="true" />
+      <point id="VAChaMax_SF" offset="18" type="sunssf" len="1" />
+      <point id="MinRsvPct_SF" offset="19" type="sunssf" len="1" />
+      <point id="ChaState_SF" offset="20" type="sunssf" len="1" />
+      <point id="StorAval_SF" offset="21" type="sunssf" len="1" />
+      <point id="InBatV_SF" offset="22" type="sunssf" len="1" />
+      <point id="InOutWRte_SF" offset="23" type="sunssf" len="1" />
     </block>
   </model>
   <strings id="124" locale="en">

@@ -1,21 +1,21 @@
 <sunSpecModels v="1">
   <!-- 802: Battery Base Model -->
   <model id="802" len="62" name="battery">
-    <block len="62">
-      <point id="AHRtg" offset="0" type="uint16" sf="AHRtg_SF" units="Ah" mandatory="true" />
-      <point id="WHRtg" offset="1" type="uint16" sf="WHRtg_SF" units="Wh" mandatory="true" />
-      <point id="WChaRteMax" offset="2" type="uint16" sf="WChaDisChaMax_SF" units="W" mandatory="true" />
-      <point id="WDisChaRteMax" offset="3" type="uint16" sf="WChaDisChaMax_SF" units="W" mandatory="true" />
-      <point id="DisChaRte" offset="4" type="uint16" sf="DisChaRte_SF" units="%WHRtg" />
-      <point id="SoCMax" offset="5" type="uint16" sf="SoC_SF" units="%WHRtg" />
-      <point id="SoCMin" offset="6" type="uint16" sf="SoC_SF" units="%WHRtg" />
-      <point id="SocRsvMax" offset="7" access="rw" type="uint16" sf="SoC_SF" units="%WHRtg" />
-      <point id="SoCRsvMin" offset="8" access="rw" type="uint16" sf="SoC_SF" units="%WHRtg" />
-      <point id="SoC" offset="9" type="uint16" sf="SoC_SF" units="%WHRtg" mandatory="true" />
-      <point id="DoD" offset="10" type="uint16" sf="DoD_SF" units="%" />
-      <point id="SoH" offset="11" type="uint16" sf="SoH_SF" units="%" />
-      <point id="NCyc" offset="12" type="uint32" />
-      <point id="ChaSt" offset="14" type="enum16" >
+    <block len="62" type="fixed">
+      <point id="AHRtg" offset="0" type="uint16" len="1" sf="AHRtg_SF" units="Ah" mandatory="true" />
+      <point id="WHRtg" offset="1" type="uint16" len="1" sf="WHRtg_SF" units="Wh" mandatory="true" />
+      <point id="WChaRteMax" offset="2" type="uint16" len="1" sf="WChaDisChaMax_SF" units="W" mandatory="true" />
+      <point id="WDisChaRteMax" offset="3" type="uint16" len="1" sf="WChaDisChaMax_SF" units="W" mandatory="true" />
+      <point id="DisChaRte" offset="4" type="uint16" len="1" sf="DisChaRte_SF" units="%WHRtg" />
+      <point id="SoCMax" offset="5" type="uint16" len="1" sf="SoC_SF" units="%WHRtg" />
+      <point id="SoCMin" offset="6" type="uint16" len="1" sf="SoC_SF" units="%WHRtg" />
+      <point id="SocRsvMax" offset="7" type="uint16" len="1" sf="SoC_SF" access="rw" units="%WHRtg" />
+      <point id="SoCRsvMin" offset="8" type="uint16" len="1" sf="SoC_SF" access="rw" units="%WHRtg" />
+      <point id="SoC" offset="9" type="uint16" len="1" sf="SoC_SF" units="%WHRtg" mandatory="true" />
+      <point id="DoD" offset="10" type="uint16" len="1" sf="DoD_SF" units="%" />
+      <point id="SoH" offset="11" type="uint16" len="1" sf="SoH_SF" units="%" />
+      <point id="NCyc" offset="12" type="uint32" len="2" />
+      <point id="ChaSt" offset="14" type="enum16" len="1" >
         <symbol id="OFF">1</symbol>
         <symbol id="EMPTY">2</symbol>
         <symbol id="DISCHARGING">3</symbol>
@@ -24,14 +24,14 @@
         <symbol id="HOLDING">6</symbol>
         <symbol id="TESTING">7</symbol>
       </point>
-      <point id="LocRemCtl" offset="15" type="enum16" mandatory="true" >
+      <point id="LocRemCtl" offset="15" type="enum16" len="1" mandatory="true" >
         <symbol id="REMOTE">0</symbol>
         <symbol id="LOCAL">1</symbol>
       </point>
-      <point id="Hb" offset="16" type="uint16" />
-      <point id="CtrlHb" offset="17" access="rw" type="uint16" />
-      <point id="AlmRst" offset="18" access="rw" type="uint16" mandatory="true" />
-      <point id="Typ" offset="19" type="enum16" mandatory="true" >
+      <point id="Hb" offset="16" type="uint16" len="1" />
+      <point id="CtrlHb" offset="17" type="uint16" len="1" access="rw" />
+      <point id="AlmRst" offset="18" type="uint16" len="1" access="rw" mandatory="true" />
+      <point id="Typ" offset="19" type="enum16" len="1" mandatory="true" >
         <symbol id="NOT APPLICABLE_UNKNOWN">0</symbol>
         <symbol id="LEAD_ACID">1</symbol>
         <symbol id="NICKEL_METAL_HYDRATE">2</symbol>
@@ -45,7 +45,7 @@
         <symbol id="FLOW">10</symbol>
         <symbol id="OTHER">99</symbol>
       </point>
-      <point id="State" offset="20" type="enum16" mandatory="true" >
+      <point id="State" offset="20" type="enum16" len="1" mandatory="true" >
         <symbol id="DISCONNECTED">1</symbol>
         <symbol id="INITIALIZING">2</symbol>
         <symbol id="CONNECTED">3</symbol>
@@ -54,9 +54,9 @@
         <symbol id="SUSPENDING">6</symbol>
         <symbol id="FAULT">99</symbol>
       </point>
-      <point id="StateVnd" offset="21" type="enum16" mandatory="false" />
-      <point id="WarrDt" offset="22" type="uint32" />
-      <point id="Evt1" offset="24" type="bitfield32" mandatory="true" >
+      <point id="StateVnd" offset="21" type="enum16" len="1" />
+      <point id="WarrDt" offset="22" type="uint32" len="2" />
+      <point id="Evt1" offset="24" type="bitfield32" len="2" mandatory="true" >
         <symbol id="COMMUNICATION_ERROR">0</symbol>
         <symbol id="OVER_TEMP_ALARM">1</symbol>
         <symbol id="OVER_TEMP_WARNING">2</symbol>
@@ -88,103 +88,102 @@
         <symbol id="CONFIGURATION_ALARM">28</symbol>
         <symbol id="CONFIGURATION_WARNING">29</symbol>
       </point>
-      <point id="Evt2" offset="26" type="bitfield32" mandatory="true" />
-      <point id="EvtVnd1" offset="28" type="bitfield32" mandatory="true" />
-      <point id="EvtVnd2" offset="30" type="bitfield32" mandatory="true" />
-      <point id="V" offset="32" type="uint16" sf="V_SF" units="V" mandatory="true" />
-      <point id="VMax" offset="33" type="uint16" sf="V_SF" units="V" />
-      <point id="VMin" offset="34" type="uint16" sf="V_SF" units="V" />
-
-      <point id="CellVMax" offset="35" type="uint16" sf="CellV_SF" units="V" />
-      <point id="CellVMaxStr" offset="36" type="uint16" />
-      <point id="CellVMaxMod" offset="37" type="uint16" />
-      <point id="CellVMin" offset="38" type="uint16" sf="CellV_SF" units="V" />
-      <point id="CellVMinStr" offset="39" type="uint16" />
-      <point id="CellVMinMod" offset="40" type="uint16" />
-      <point id="CellVAvg" offset="41" type="uint16" sf="CellV_SF" units="V" />
-      <point id="A" offset="42" type="int16" sf="A_SF" units="A" mandatory="true" />
-      <point id="AChaMax" offset="43" type="uint16" sf="AMax_SF" units="A" />
-      <point id="ADisChaMax" offset="44" type="uint16" sf="AMax_SF" units="A" />
-      <point id="W" offset="45" type="int16" sf="W_SF" units="W" mandatory="true" />
-      <point id="ReqInvState" offset="46" type="enum16" >
+      <point id="Evt2" offset="26" type="bitfield32" len="2" mandatory="true" />
+      <point id="EvtVnd1" offset="28" type="bitfield32" len="2" mandatory="true" />
+      <point id="EvtVnd2" offset="30" type="bitfield32" len="2" mandatory="true" />
+      <point id="V" offset="32" type="uint16" len="1" sf="V_SF" units="V" mandatory="true" />
+      <point id="VMax" offset="33" type="uint16" len="1" sf="V_SF" units="V" />
+      <point id="VMin" offset="34" type="uint16" len="1" sf="V_SF" units="V" />
+      <point id="CellVMax" offset="35" type="uint16" len="1" sf="CellV_SF" units="V" />
+      <point id="CellVMaxStr" offset="36" type="uint16" len="1" />
+      <point id="CellVMaxMod" offset="37" type="uint16" len="1" />
+      <point id="CellVMin" offset="38" type="uint16" len="1" sf="CellV_SF" units="V" />
+      <point id="CellVMinStr" offset="39" type="uint16" len="1" />
+      <point id="CellVMinMod" offset="40" type="uint16" len="1" />
+      <point id="CellVAvg" offset="41" type="uint16" len="1" sf="CellV_SF" units="V" />
+      <point id="A" offset="42" type="int16" len="1" sf="A_SF" units="A" mandatory="true" />
+      <point id="AChaMax" offset="43" type="uint16" len="1" sf="AMax_SF" units="A" />
+      <point id="ADisChaMax" offset="44" type="uint16" len="1" sf="AMax_SF" units="A" />
+      <point id="W" offset="45" type="int16" len="1" sf="W_SF" units="W" mandatory="true" />
+      <point id="ReqInvState" offset="46" type="enum16" len="1" >
         <symbol id="NO REQUEST">0</symbol>
         <symbol id="START">1</symbol>
         <symbol id="STOP">2</symbol>
       </point>
-      <point id="ReqW" offset="47" type="int16" sf="W_SF" units="W" />
-      <point id="SetOp" offset="48" access="rw" type="enum16" mandatory="true" >
+      <point id="ReqW" offset="47" type="int16" len="1" sf="W_SF" units="W" />
+      <point id="SetOp" offset="48" type="enum16" len="1" access="rw" mandatory="true" >
         <symbol id="CONNECT">1</symbol>
         <symbol id="DISCONNECT">2</symbol>
       </point>
-      <point id="SetInvState" offset="49" access="rw" type="enum16" mandatory="true" >
+      <point id="SetInvState" offset="49" type="enum16" len="1" access="rw" mandatory="true" >
         <symbol id="INVERTER_STOPPED">1</symbol>
         <symbol id="INVERTER_STANDBY">2</symbol>
         <symbol id="INVERTER_STARTED">3</symbol>
       </point>
-      <point id="AHRtg_SF" offset="50" type="sunssf" mandatory="true" />
-      <point id="WHRtg_SF" offset="51" type="sunssf" mandatory="true" />
-      <point id="WChaDisChaMax_SF" offset="52" type="sunssf"  mandatory="true" />
-      <point id="DisChaRte_SF" offset="53" type="sunssf" />
-      <point id="SoC_SF" offset="54" type="sunssf" mandatory="true" />
-      <point id="DoD_SF" offset="55" type="sunssf" />
-      <point id="SoH_SF" offset="56" type="sunssf" />
-      <point id="V_SF" offset="57" type="sunssf" mandatory="true" />
-      <point id="CellV_SF" offset="58" type="sunssf" mandatory="true" />
-      <point id="A_SF" offset="59" type="sunssf" mandatory="true" />
-      <point id="AMax_SF" offset="60" type="sunssf" mandatory="true" />
-      <point id="W_SF" offset="61" type="sunssf" />
+      <point id="AHRtg_SF" offset="50" type="sunssf" len="1" mandatory="true" />
+      <point id="WHRtg_SF" offset="51" type="sunssf" len="1" mandatory="true" />
+      <point id="WChaDisChaMax_SF" offset="52" type="sunssf" len="1" mandatory="true" />
+      <point id="DisChaRte_SF" offset="53" type="sunssf" len="1" />
+      <point id="SoC_SF" offset="54" type="sunssf" len="1" mandatory="true" />
+      <point id="DoD_SF" offset="55" type="sunssf" len="1" />
+      <point id="SoH_SF" offset="56" type="sunssf" len="1" />
+      <point id="V_SF" offset="57" type="sunssf" len="1" mandatory="true" />
+      <point id="CellV_SF" offset="58" type="sunssf" len="1" mandatory="true" />
+      <point id="A_SF" offset="59" type="sunssf" len="1" mandatory="true" />
+      <point id="AMax_SF" offset="60" type="sunssf" len="1" mandatory="true" />
+      <point id="W_SF" offset="61" type="sunssf" len="1" />
     </block>
   </model>
   <strings id="802" locale="en">
     <model>
       <label>Battery Base Model</label>
-      <description></description>
-      <notes></notes>
+      <description/>
+      <notes/>
     </model>
     <point id="AHRtg">
       <label>Nameplate Charge Capacity</label>
       <description>Nameplate charge capacity in amp-hours.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="WHRtg">
       <label>Nameplate Energy Capacity</label>
       <description>Nameplate energy capacity in DC watt-hours.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="WChaRteMax">
       <label>Nameplate Max Charge Rate</label>
       <description>Maximum rate of energy transfer into the storage device in DC watts.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="WDisChaRteMax">
       <label>Nameplate Max Discharge Rate</label>
       <description>Maximum rate of energy transfer out of the storage device in DC watts.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="DisChaRte">
       <label>Self Discharge Rate</label>
       <description>Self discharge rate.  Percentage of capacity (WHRtg) discharged per day.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="SoCMax">
       <label>Nameplate Max SoC</label>
       <description>Manufacturer maximum state of charge, expressed as a percentage.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="SoCMin">
       <label>Nameplate Min SoC</label>
       <description>Manufacturer minimum state of charge, expressed as a percentage.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="SocRsvMax">
       <label>Max Reserve Percent</label>
       <description>Setpoint for maximum reserve for storage as a percentage of the nominal maximum storage.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="SoCRsvMin">
       <label>Min Reserve Percent</label>
       <description>Setpoint for maximum reserve for storage as a percentage of the nominal maximum storage.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="SoC">
       <label>State of Charge</label>
@@ -199,41 +198,41 @@
     <point id="ChaSt">
       <label>Charge Status</label>
       <description>Charge status of storage device. Enumeration.</description>
-      <notes></notes>
+      <notes/>
       <symbol id="OFF">
-        <label></label>
-        <description></description>
-        <notes></notes>
+        <label/>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="EMPTY">
-        <label></label>
-        <description></description>
-        <notes></notes>
+        <label/>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="DISCHARGING">
-        <label></label>
-        <description></description>
-        <notes></notes>
+        <label/>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="CHARGING">
-        <label></label>
-        <description></description>
-        <notes></notes>
+        <label/>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="FULL">
-        <label></label>
-        <description></description>
-        <notes></notes>
+        <label/>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="HOLDING">
-        <label></label>
-        <description></description>
-        <notes></notes>
+        <label/>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="TESTING">
-        <label></label>
-        <description></description>
-        <notes></notes>
+        <label/>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="LocRemCtl">
@@ -254,12 +253,12 @@
     <point id="Hb">
       <label>Battery Heartbeat</label>
       <description>Value is incremented every second with periodic resets to zero.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="CtrlHb">
       <label>Controller Heartbeat</label>
       <description>Value is incremented every second with periodic resets to zero.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="AlmRst">
       <label>Alarm Reset</label>
@@ -273,62 +272,62 @@
       <symbol id="NOT APPLICABLE_UNKNOWN">
         <label>Not Applicable or Unknown</label>
         <description>Battery type is not applicable or unknown.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="LEAD_ACID">
         <label>Lead-Acid</label>
         <description>Lead-acid battery type.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="NICKEL_METAL_HYDRATE">
         <label>Nickel-Metal Hydrate</label>
         <description>Nickel-metal hydrate battery type.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="NICKEL_CADMIUM">
         <label>Nickel-Cadmium</label>
         <description>Nickel-cadmium battery type.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="LITHIUM_ION">
         <label>Lithium-Ion</label>
         <description>Lithium-ion battery type.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="CARBON_ZINC">
         <label>Carbon-Zinc</label>
         <description>Carbon-zinc battery type.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="ZINC_CHLORIDE">
         <label>Zinc Chloride</label>
         <description>Zinc chloride battery type.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="ALKALINE">
         <label>Alkaline</label>
         <description>Alkaline battery type.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="RECHARGEABLE_ALKALINE">
         <label>Rechargeable Alkaline</label>
         <description>Rechargeable alkaline battery type.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="SODIUM_SULFUR">
         <label>Sodium-Sulfur</label>
         <description>Sodium-sulfur battery type.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="FLOW">
         <label>Flow</label>
         <description>Flow battery type.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OTHER">
         <label>Other</label>
         <description>Other battery type.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
     <point id="State">
@@ -338,53 +337,53 @@
       <symbol id="DISCONNECTED">
         <label>Disconnected</label>
         <description>Battery bank is disconnected. All contactors are open.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="INITIALIZING">
         <label>Initializing</label>
         <description>Battery bank is initializing but not ready for operating. String balancing may occur.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="CONNECTED">
         <label>Connected</label>
         <description>Battery bank is ready for operation. All enabled contactors are closed.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="STANDBY">
         <label>Standby</label>
         <description>Battery bank is connected and in standby/power saving mode.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="SOC PROTECTION">
         <label>SoC Protection</label>
         <description>Battery bank is connected but SoC is too low. Battery should be considered "offline".</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="SUSPENDING">
         <label>Suspending</label>
         <description>Battery bank is suspending operation and will disconnect.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="FAULT">
         <label>Fault</label>
         <description>The battery has experienced a critical failure and may not be operated.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
     <point id="StateVnd">
       <label>Vendor Battery Bank State</label>
       <description>Vendor specific battery bank state.  Enumeration.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="NCyc">
       <label>Cycle Count</label>
       <description>Number of cycles executed in the battery.</description>
-      <notes></notes>
+      <notes/>
      </point>
     <point id="SoH">
       <label>State of Health</label>
       <description>Percentage of battery life remaining.</description>
-      <notes></notes>
+      <notes/>
      </point>
     <point id="WarrDt">
       <label>Warranty Date</label>
@@ -394,31 +393,31 @@
     <point id="Evt1">
       <label>Battery Event 1 Bitfield</label>
       <description>Alarms and warnings.  Bit flags.</description>
-      <notes></notes>
+      <notes/>
       <symbol id="COMMUNICATION_ERROR">
         <label>Communication Error</label>
         <description>Unable to communicate with BMS or BMS is unable to communicate with battery strings.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OVER_TEMP_ALARM">
         <label>Over Temperature Alarm</label>
         <description>Battery has exceeded maximum operating temperature</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OVER_TEMP_WARNING">
         <label>Over Temperature  Warning</label>
         <description>Battery is approaching maximum operating temperature.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="UNDER_TEMP_ALARM">
         <label>Under Temperature Alarm</label>
         <description>Battery has exceeded minimum operating temperature</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="UNDER_TEMP_WARNING">
         <label>Under Temperature Warning</label>
         <description>Battery is approaching minimum operating temperature.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OVER_CHARGE_CURRENT_ALARM">
         <label>Over Charge Current Alarm</label>
@@ -443,82 +442,82 @@
       <symbol id="OVER_VOLT_ALARM">
         <label>Over Voltage Alarm</label>
         <description>Battery voltage has exceeded maximum limit.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OVER_VOLT_WARNING">
         <label>Over Voltage Warning</label>
         <description>Battery voltage is approaching maximum limit.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="UNDER_VOLT_ALARM">
         <label>Under Voltage Alarm</label>
         <description>Battery voltage has exceeded minimum limit.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="UNDER_VOLT_WARNING">
         <label>Under Voltage Warning</label>
         <description>Battery voltage is approaching minimum limit.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="UNDER_SOC_MIN_ALARM">
         <label>Under State of Charge Min Alarm</label>
         <description>Battery state of charge has reached or exceeded SoCMin</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="UNDER_SOC_MIN_WARNING">
         <label>Under State of Charge Min Warning</label>
         <description>Battery state of charge is approaching SoCMin</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OVER_SOC_MAX_ALARM">
         <label>Over State of Charge Max Alarm</label>
         <description>Battery state of charge has reached or exceeded SoCMax</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OVER_SOC_MAX_WARNING">
         <label>Over State of Charge Max Warning</label>
         <description>Battery state of charge is approaching SoCMax</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="VOLTAGE_IMBALANCE_WARNING">
         <label>Voltage Imbalance Warning</label>
         <description>A voltage imbalance exists between the strings in the battery bank.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="TEMPERATURE_IMBALANCE_ALARM">
         <label>Temperature Imbalance Alarm</label>
         <description>A temperature imbalance exists between the strings in the battery bank.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="TEMPERATURE_IMBALANCE_WARNING">
         <label>Temperature Imbalance Warning</label>
         <description>A temperature imbalance is developing between the strings in the battery bank.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="CONTACTOR_ERROR">
         <label>Contactor Error</label>
         <description>A contactor failed to open or close as requested.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="FAN_ERROR">
         <label>Fan Error</label>
         <description>One or more battery fans has failed.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="GROUND_FAULT">
         <label>Ground Fault Error</label>
         <description>Ground fault detected.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OPEN_DOOR_ERROR">
         <label>Open Door Error</label>
         <description>One or more doors are open.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="CURRENT_IMBALANCE_WARNING">
         <label>Current Imbalance Warning</label>
         <description>A current imbalance exists between the strings in the battery bank.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="OTHER_ALARM">
         <label>Other Battery Alarm</label>
@@ -538,12 +537,12 @@
       <symbol id="CONFIGURATION_ALARM">
         <label>Configuration Alarm</label>
         <description>The battery bank has been configured incorrectly and will not operate.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="CONFIGURATION_WARNING">
         <label>Configuration Warning</label>
         <description>The battery bank has been configured incorrectly and may not operated as expected.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
     <point id="Evt2">
@@ -554,12 +553,12 @@
     <point id="EvtVnd1">
       <label>Vendor Event Bitfield 1</label>
       <description>Vendor defined events.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="EvtVnd2">
       <label>Vendor Event Bitfield 2</label>
       <description>Vendor defined events.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="V">
       <label>External Battery Voltage</label>
@@ -584,12 +583,12 @@
     <point id="CellVMaxStr">
       <label>Max Cell Voltage String</label>
       <description>String containing the cell with maximum voltage.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="CellVMaxMod">
       <label>Max Cell Voltage Module</label>
       <description>Module containing the cell with maximum voltage.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="CellVMin">
       <label>Min Cell Voltage</label>
@@ -599,12 +598,12 @@
     <point id="CellVMinStr">
       <label>Min Cell Voltage String</label>
       <description>String containing the cell with minimum voltage.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="CellVMinMod">
       <label>Min Cell Voltage Module</label>
       <description>Module containing the cell with minimum voltage.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="CellVAvg">
       <label>Average Cell Voltage</label>
@@ -638,7 +637,7 @@
       <symbol id="NO REQUEST">
         <label>No Request</label>
         <description>Battery has no requests of the inverter.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="START">
         <label>Start Inverter</label>
@@ -659,16 +658,16 @@
     <point id="SetOp">
       <label>Set Operation</label>
       <description>Instruct the battery bank to perform an operation such as connecting.  Enumeration.</description>
-      <notes></notes>
+      <notes/>
       <symbol id="CONNECT">
         <label>Connect the Battery Bank</label>
         <description>Initialize the battery bank and close contactors for all enabled strings.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
       <symbol id="DISCONNECT">
         <label>Disconnect the Battery Bank</label>
         <description>Open contactors for all strings.</description>
-        <notes></notes>
+        <notes/>
       </symbol>
     </point>
     <point id="SetInvState">
@@ -677,79 +676,79 @@
       <notes>Information needed by battery for some operations.</notes>
       <symbol id="INVERTER_STOPPED">
         <label>Inverter is Stopped</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="INVERTER_STANDBY">
         <label>Inverter is in Standby</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
       <symbol id="INVERTER_STARTED">
         <label>Inverter is Started</label>
-        <description></description>
-        <notes></notes>
+        <description/>
+        <notes/>
       </symbol>
     </point>
     <point id="AHRtg_SF">
-      <label></label>
+      <label/>
       <description>Scale factor for charge capacity.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="WHRtg_SF">
-      <label></label>
+      <label/>
       <description>Scale factor for energy capacity.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="WChaDisChaMax_SF">
-      <label></label>
+      <label/>
       <description>Scale factor for maximum charge and discharge rate.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="DisChaRte_SF">
-      <label></label>
+      <label/>
       <description>Scale factor for self discharge rate.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="SoC_SF">
-      <label></label>
+      <label/>
       <description>Scale factor for state of charge values.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="DoD_SF">
-      <label></label>
+      <label/>
       <description>Scale factor for depth of discharge.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="SoH_SF">
-      <label></label>
+      <label/>
       <description>Scale factor for state of health.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="V_SF">
-      <label></label>
+      <label/>
       <description>Scale factor for DC bus voltage.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="CellV_SF">
-      <label></label>
+      <label/>
       <description>Scale factor for cell voltage.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="A_SF">
-      <label></label>
+      <label/>
       <description>Scale factor for DC current.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="AMax_SF">
-      <label></label>
+      <label/>
       <description>Scale factor for instantaneous DC charge/discharge current.</description>
-      <notes></notes>
+      <notes/>
     </point>
     <point id="W_SF">
-      <label></label>
+      <label/>
       <description>Scale factor for AC power request.</description>
-      <notes></notes>
+      <notes/>
     </point>
   </strings>
 </sunSpecModels>
