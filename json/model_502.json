@@ -318,7 +318,8 @@
                 "units": "W"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "notes": "Integer"
     },
     "id": 502
 }

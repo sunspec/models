@@ -563,7 +563,8 @@
                 "mandatory": "M",
                 "name": "Idx",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "Indices are one-based."
             },
             {
                 "desc": "Number of modules in this string.",
@@ -589,7 +590,8 @@
                 "sf": "ModV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Measurement."
             },
             {
                 "desc": "Module with the maximum voltage.",
@@ -606,7 +608,8 @@
                 "sf": "ModV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Measurement."
             },
             {
                 "desc": "Module with the minimum voltage.",
@@ -623,7 +626,8 @@
                 "sf": "ModV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Calculation based on measurements."
             },
             {
                 "desc": "Maximum voltage for all cells in the string.",
@@ -632,7 +636,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Measurement."
             },
             {
                 "desc": "Module containing the cell with the maximum voltage.",
@@ -655,7 +660,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Measurement."
             },
             {
                 "desc": "Module containing the cell with the minimum voltage.",
@@ -678,7 +684,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Calculation based on measurements."
             },
             {
                 "desc": "Maximum electrolyte temperature for all modules in the string.",
@@ -688,7 +695,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "notes": "Measurement."
             },
             {
                 "desc": "Module with the maximum temperature.",
@@ -705,7 +713,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "notes": "Measurement."
             },
             {
                 "desc": "Module with the minimum temperature.",
@@ -722,7 +731,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "notes": "Calculation based on measurements."
             },
             {
                 "desc": "Alarms, warnings and status values.  Bit flags.",

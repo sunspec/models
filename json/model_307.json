@@ -102,7 +102,8 @@
                 "units": "Pct"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "notes": "This model supersedes model 301"
     },
     "id": 307
 }

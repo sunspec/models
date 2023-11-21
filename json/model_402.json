@@ -397,7 +397,8 @@
                 "units": "Wh"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "notes": "This model is SUPERSEDED by model 404"
     },
     "id": 402
 }

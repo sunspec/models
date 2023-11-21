@@ -364,7 +364,8 @@
                 "mandatory": "M",
                 "name": "Seq",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "Shall be advanced for each request"
             },
             {
                 "desc": "Algorithm used to compute the digital signature",
@@ -386,7 +387,8 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "notes": "For future proof"
             },
             {
                 "desc": "Number of registers comprising the digital signature.",
@@ -394,7 +396,8 @@
                 "mandatory": "M",
                 "name": "N",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "The value of N must be at least 4 (64 bits)"
             }
         ],
         "type": "group"

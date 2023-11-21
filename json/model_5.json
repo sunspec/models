@@ -48,7 +48,8 @@
                 "mandatory": "M",
                 "name": "X",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "A max of 50 (offset, value) pairs are allocated"
             },
             {
                 "access": "RW",
@@ -639,7 +640,8 @@
                 "mandatory": "M",
                 "name": "Seq",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "Shall be advanced for each request"
             },
             {
                 "access": "RW",
@@ -648,7 +650,8 @@
                 "mandatory": "M",
                 "name": "Role",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "Each controller is assigned a key index that maps to their access control role"
             },
             {
                 "access": "RW",
@@ -671,7 +674,8 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "notes": "For future proof"
             },
             {
                 "access": "RW",
@@ -680,7 +684,8 @@
                 "mandatory": "M",
                 "name": "N",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "The value of N must be at least 4 (64 bits)"
             }
         ],
         "type": "group"

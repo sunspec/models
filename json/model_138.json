@@ -500,7 +500,8 @@
                 "name": "WinTms",
                 "size": 1,
                 "type": "uint16",
-                "units": "Secs"
+                "units": "Secs",
+                "notes": "Setting is ignored for HVRT controls."
             },
             {
                 "access": "RW",
@@ -509,7 +510,8 @@
                 "name": "RvrtTms",
                 "size": 1,
                 "type": "uint16",
-                "units": "Secs"
+                "units": "Secs",
+                "notes": "Setting is ignored for HVRT controls."
             },
             {
                 "access": "RW",
@@ -518,7 +520,8 @@
                 "name": "RmpTms",
                 "size": 1,
                 "type": "uint16",
-                "units": "Secs"
+                "units": "Secs",
+                "notes": "Setting is ignored for HVRT controls."
             },
             {
                 "desc": "Number of curves supported (recommend 4).",
@@ -558,7 +561,8 @@
                 "type": "pad"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "notes": "Ref 4: 11"
     },
     "id": 138
 }

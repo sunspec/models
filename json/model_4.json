@@ -80,7 +80,8 @@
                 "mandatory": "M",
                 "name": "X",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "A max of 50 values are allocated"
             },
             {
                 "desc": "Copy of value from register Off1.",
@@ -88,7 +89,8 @@
                 "mandatory": "M",
                 "name": "Val1",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "Unused values shall return 0xFFFF (unimplemented)"
             },
             {
                 "mandatory": "M",
@@ -406,7 +408,8 @@
                 "mandatory": "M",
                 "name": "Seq",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "Shall be advanced for each response"
             },
             {
                 "desc": "Bitmask alarm code",
@@ -446,7 +449,8 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "notes": "For future proof"
             },
             {
                 "desc": "Number of registers comprising the digital signature.",
@@ -454,7 +458,8 @@
                 "mandatory": "M",
                 "name": "N",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "The value of N must be at least 4 (64 bits)"
             }
         ],
         "type": "group"

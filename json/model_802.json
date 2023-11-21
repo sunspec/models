@@ -117,7 +117,8 @@
                 "sf": "SoC_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "%WHRtg"
+                "units": "%WHRtg",
+                "notes": "Measurement."
             },
             {
                 "desc": "Depth of discharge, expressed as a percentage.",
@@ -126,7 +127,8 @@
                 "sf": "DoD_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "%"
+                "units": "%",
+                "notes": "Measurement."
             },
             {
                 "desc": "Percentage of battery life remaining.",
@@ -197,7 +199,8 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "notes": "Maps to DRCC.LocRemCtl in IEC 61850."
             },
             {
                 "desc": "Value is incremented every second with periodic resets to zero.",
@@ -221,7 +224,8 @@
                 "mandatory": "M",
                 "name": "AlmRst",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "Battery should reset to 0 when reset is complete."
             },
             {
                 "desc": "Type of battery. Enumeration.",
@@ -279,7 +283,8 @@
                         "value": 99
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "notes": "Maps to DBAT.BatTyp in 61850."
             },
             {
                 "desc": "State of the battery bank.  Enumeration.",
@@ -317,7 +322,8 @@
                         "value": 99
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "notes": "Must be reconciled with State in IEC 61850."
             },
             {
                 "desc": "Vendor specific battery bank state.  Enumeration.",
@@ -331,7 +337,8 @@
                 "label": "Warranty Date",
                 "name": "WarrDt",
                 "size": 2,
-                "type": "uint32"
+                "type": "uint32",
+                "notes": "Number of days since 1/1/2000."
             },
             {
                 "desc": "Alarms and warnings.  Bit flags.",
@@ -469,7 +476,8 @@
                 "mandatory": "M",
                 "name": "Evt2",
                 "size": 2,
-                "type": "bitfield32"
+                "type": "bitfield32",
+                "notes": "Reserved for future use."
             },
             {
                 "desc": "Vendor defined events.",
@@ -495,7 +503,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Maps to ZBAT.V in IEC 61850."
             },
             {
                 "desc": "Instantaneous maximum battery voltage.",
@@ -504,7 +513,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "If not implemented, must implement AChaMax and ADisChaMax."
             },
             {
                 "desc": "Instantaneous minimum battery voltage.",
@@ -513,7 +523,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "If not implemented, must implement AChaMax and ADisChaMax."
             },
             {
                 "desc": "Maximum voltage for all cells in the bank.",
@@ -522,7 +533,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Measurement."
             },
             {
                 "desc": "String containing the cell with maximum voltage.",
@@ -545,7 +557,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Measurement."
             },
             {
                 "desc": "String containing the cell with minimum voltage.",
@@ -568,7 +581,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Calculation based on measurements."
             },
             {
                 "desc": "Total DC current flowing to/from the battery bank.",
@@ -578,7 +592,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "A"
+                "units": "A",
+                "notes": "Measurement."
             },
             {
                 "desc": "Instantaneous maximum DC charge current.",
@@ -587,7 +602,8 @@
                 "sf": "AMax_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "A"
+                "units": "A",
+                "notes": "Calculation which is always unsigned (i.e. magnitude only). If not implemented, must implement VMax and VMin."
             },
             {
                 "desc": "Instantaneous maximum DC discharge current.",
@@ -596,7 +612,8 @@
                 "sf": "AMax_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "A"
+                "units": "A",
+                "notes": "Calculation which is always unsigned (i.e. magnitude only). If not implemented, must implement VMax and VMin."
             },
             {
                 "desc": "Total power flowing to/from the battery bank.",
@@ -606,7 +623,8 @@
                 "sf": "W_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "W"
+                "units": "W",
+                "notes": "Measurement."
             },
             {
                 "desc": "Request from battery to start or stop the inverter.  Enumeration.",
@@ -627,7 +645,8 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "notes": "Used in special states such as manual battery charging."
             },
             {
                 "desc": "AC Power requested by battery.",
@@ -636,7 +655,8 @@
                 "sf": "W_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "W"
+                "units": "W",
+                "notes": "Used in special states such as string balancing."
             },
             {
                 "access": "RW",
@@ -678,7 +698,8 @@
                         "value": 3
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "notes": "Information needed by battery for some operations."
             },
             {
                 "desc": "Scale factor for charge capacity.",

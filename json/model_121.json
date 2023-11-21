@@ -144,7 +144,8 @@
                 "sf": "PFMin_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "cos()"
+                "units": "cos()",
+                "notes": "EEI sign convention."
             },
             {
                 "access": "RW",
@@ -154,7 +155,8 @@
                 "sf": "PFMin_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "cos()"
+                "units": "cos()",
+                "notes": "EEI sign convention."
             },
             {
                 "access": "RW",
@@ -164,7 +166,8 @@
                 "sf": "PFMin_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "cos()"
+                "units": "cos()",
+                "notes": "EEI sign convention."
             },
             {
                 "access": "RW",
@@ -174,7 +177,8 @@
                 "sf": "PFMin_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "cos()"
+                "units": "cos()",
+                "notes": "EEI sign convention."
             },
             {
                 "access": "RW",
@@ -328,7 +332,8 @@
                 "type": "sunssf"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "notes": "Ref 3: 8.4.2.1, Ref 4: 17"
     },
     "id": 121
 }

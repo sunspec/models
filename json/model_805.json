@@ -70,7 +70,8 @@
                 "mandatory": "M",
                 "name": "StrIdx",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "Indices are one-based."
             },
             {
                 "desc": "Index of the module within the string.",
@@ -78,7 +79,8 @@
                 "mandatory": "M",
                 "name": "ModIdx",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "Indices are one-based."
             },
             {
                 "desc": "Count of all cells in the module.",
@@ -104,7 +106,8 @@
                 "sf": "DoD_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "%"
+                "units": "%",
+                "notes": "Measurement."
             },
             {
                 "desc": "Module state of health, expressed as a percentage.",
@@ -130,7 +133,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Measurement."
             },
             {
                 "desc": "Maximum voltage for all cells in the module.",
@@ -140,7 +144,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Measurement."
             },
             {
                 "desc": "Cell with the maximum voltage.",
@@ -157,7 +162,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Measurement."
             },
             {
                 "desc": "Cell with the minimum voltage.",
@@ -174,7 +180,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "notes": "Calculation based on measurements."
             },
             {
                 "desc": "Maximum temperature for all cells in the module.",
@@ -184,7 +191,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "notes": "Measurement."
             },
             {
                 "desc": "Cell with the maximum cell temperature.",
@@ -201,7 +209,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "notes": "Measurement."
             },
             {
                 "desc": "Cell with the minimum cell temperature.",
@@ -218,7 +227,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "notes": "Calculation based on measurements."
             },
             {
                 "desc": "Number of cells currently being balanced in the module.",

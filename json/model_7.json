@@ -101,7 +101,8 @@
                 "mandatory": "M",
                 "name": "Seq",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "Shall be advanced for each response"
             },
             {
                 "desc": "Bitmask alarm code",
@@ -147,7 +148,8 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "notes": "For future proof"
             },
             {
                 "access": "RW",
@@ -156,10 +158,12 @@
                 "mandatory": "M",
                 "name": "N",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "notes": "The value of N must be at least 4 (64 bits)"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "notes": "Used in conjunction with a Secure Write Request"
     },
     "id": 7
 }

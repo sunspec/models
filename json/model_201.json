@@ -75,7 +75,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "V"
+                "units": "V",
+                "notes": "Conditional AN connection"
             },
             {
                 "desc": "Phase Voltage AN",
@@ -84,7 +85,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "V"
+                "units": "V",
+                "notes": "Conditional AN connection"
             },
             {
                 "desc": "Phase Voltage BN",
@@ -120,7 +122,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "V"
+                "units": "V",
+                "notes": "Conditional AB connection"
             },
             {
                 "desc": "Phase Voltage BC",
