@@ -763,19 +763,23 @@
                     },
                     {
                         "name": "OVER_CHARGE_CURRENT_ALARM",
-                        "value": 5
+                        "value": 5,
+                        "notes": "See AChaMax in model S 802."
                     },
                     {
                         "name": "OVER_CHARGE_CURRENT_WARNING",
-                        "value": 6
+                        "value": 6,
+                        "notes": "See AChaMax in model S 802."
                     },
                     {
                         "name": "OVER_DISCHARGE_CURRENT_ALARM",
-                        "value": 7
+                        "value": 7,
+                        "notes": "See ADisChaMax in model S 802."
                     },
                     {
                         "name": "OVER_DISCHARGE_CURRENT_WARNING",
-                        "value": 8
+                        "value": 8,
+                        "notes": "See ADisChaMax in model S 802."
                     },
                     {
                         "name": "OVER_VOLT_ALARM",
@@ -815,11 +819,13 @@
                     },
                     {
                         "name": "RESERVED_1",
-                        "value": 18
+                        "value": 18,
+                        "notes": "Do not implement."
                     },
                     {
                         "name": "RESERVED_2",
-                        "value": 19
+                        "value": 19,
+                        "notes": "Do not implement."
                     },
                     {
                         "name": "CONTACTOR_ERROR",
@@ -839,15 +845,18 @@
                     },
                     {
                         "name": "RESERVED_3",
-                        "value": 24
+                        "value": 24,
+                        "notes": "Do not implement."
                     },
                     {
                         "name": "OTHER_ALARM",
-                        "value": 25
+                        "value": 25,
+                        "notes": "See EvtVnd1 and EvtVnd2 for more information."
                     },
                     {
                         "name": "OTHER_WARNING",
-                        "value": 26
+                        "value": 26,
+                        "notes": "See EvtVnd1 and EvtVnd2 for more information."
                     },
                     {
                         "name": "FIRE_ALARM",

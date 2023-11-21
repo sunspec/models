@@ -376,7 +376,8 @@
                 "symbols": [
                     {
                         "name": "NONE",
-                        "value": 0
+                        "value": 0,
+                        "notes": "For test purposes only"
                     },
                     {
                         "name": "AES-GMAC-64",

@@ -192,11 +192,13 @@
                 "symbols": [
                     {
                         "name": "REMOTE",
-                        "value": 0
+                        "value": 0,
+                        "notes": "Value of 0 matches LocRemCtl in IEC 61850."
                     },
                     {
                         "name": "LOCAL",
-                        "value": 1
+                        "value": 1,
+                        "notes": "Value of 1 matches LocRemCtl in IEC 61850."
                     }
                 ],
                 "type": "enum16",
@@ -369,19 +371,23 @@
                     },
                     {
                         "name": "OVER_CHARGE_CURRENT_ALARM",
-                        "value": 5
+                        "value": 5,
+                        "notes": "See AChaMax."
                     },
                     {
                         "name": "OVER_CHARGE_CURRENT_WARNING",
-                        "value": 6
+                        "value": 6,
+                        "notes": "See AChaMax."
                     },
                     {
                         "name": "OVER_DISCHARGE_CURRENT_ALARM",
-                        "value": 7
+                        "value": 7,
+                        "notes": "See ADisChaMax."
                     },
                     {
                         "name": "OVER_DISCHARGE_CURRENT_WARNING",
-                        "value": 8
+                        "value": 8,
+                        "notes": "See ADisChaMax."
                     },
                     {
                         "name": "OVER_VOLT_ALARM",
@@ -449,15 +455,18 @@
                     },
                     {
                         "name": "OTHER_ALARM",
-                        "value": 25
+                        "value": 25,
+                        "notes": "See EvtVnd1 and EvtVnd2 for more information."
                     },
                     {
                         "name": "OTHER_WARNING",
-                        "value": 26
+                        "value": 26,
+                        "notes": "See EvtVnd1 and EvtVnd2 for more information."
                     },
                     {
                         "name": "RESERVED_1",
-                        "value": 27
+                        "value": 27,
+                        "notes": "Do not implement."
                     },
                     {
                         "name": "CONFIGURATION_ALARM",
@@ -638,11 +647,13 @@
                     },
                     {
                         "name": "START",
-                        "value": 1
+                        "value": 1,
+                        "notes": "Battery is notified of inverter state change through SetInvState."
                     },
                     {
                         "name": "STOP",
-                        "value": 2
+                        "value": 2,
+                        "notes": "Battery is notified of inverter state change through SetInvState."
                     }
                 ],
                 "type": "enum16",
