@@ -1,403 +1,1333 @@
 {
     "group": {
-        "label": "OutBack AXS device",
+        "label": "TBD",
         "name": "model_64110",
         "points": [
             {
-                "desc": "Model identifier",
-                "label": "Model ID",
+                "label": "OutBack_DID",
+                "desc": "Uniquely identifies this as a SunSpec Outback Interface",
                 "mandatory": "M",
-                "name": "ID",
-                "size": 1,
-                "static": "S",
-                "type": "uint16",
-                "value": 64110
-            },
-            {
-                "desc": "Model length",
-                "label": "Model Length",
-                "mandatory": "M",
-                "name": "L",
-                "size": 1,
-                "static": "S",
-                "type": "uint16"
-            },
-            {
-                "label": "AXS Major Firmware Number",
-                "mandatory": "M",
-                "name": "MajorFWRev",
+                "name": "OutBack_DID",
                 "size": 1,
                 "type": "uint16"
             },
             {
-                "label": "AXS Mid Firmware Number",
+                "label": "OutBack_Length",
+                "desc": "Length of block in 16-bit registers",
                 "mandatory": "M",
-                "name": "MidFWRev",
+                "name": "OutBack_Length",
                 "size": 1,
                 "type": "uint16"
             },
             {
-                "label": "AXS Minor Firmware Number",
+                "label": "OutBack_Major_Firmware_Number",
+                "desc": "OutBack Major firmware revision",
                 "mandatory": "M",
-                "name": "MinorFWRev",
+                "name": "OutBack_Major_Firmware_Number",
                 "size": 1,
                 "type": "uint16"
             },
             {
-                "label": "Encryption Key",
+                "label": "OutBack_Mid_Firmware_Number",
+                "desc": "OutBack Mid firmware revision",
                 "mandatory": "M",
-                "name": "EncrypKey",
+                "name": "OutBack_Mid_Firmware_Number",
                 "size": 1,
                 "type": "uint16"
             },
             {
-                "label": "MAC Address",
+                "label": "OutBack_Minor_Firmware_Number",
+                "desc": "OutBack Minor firmware revision",
                 "mandatory": "M",
-                "name": "MAC_Address",
+                "name": "OutBack_Minor_Firmware_Number",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Encryption_Key",
+                "desc": "Encryption key for current session (0 = Encryption not enabled)",
+                "mandatory": "M",
+                "name": "OutBack_Encryption_Key",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_MAC_Address",
+                "desc": "Ethernet MAC address",
+                "mandatory": "M",
+                "name": "OutBack_MAC_Address",
                 "size": 7,
                 "type": "string"
             },
             {
-                "label": "Write Password",
+                "label": "OutBack_Write_Password",
+                "desc": "Password required to write to any register",
                 "mandatory": "M",
-                "name": "WritePassword",
+                "name": "OutBack_Write_Password",
                 "size": 8,
                 "type": "string"
             },
             {
-                "label": "Enable DHCP",
+                "label": "OutBack_Enable_DHCP",
+                "desc": "0 = DHCP Disabled, use configured network parameter; 1 = DHCP Enabled",
                 "mandatory": "M",
-                "name": "EnableDHCP",
+                "name": "OutBack_Enable_DHCP",
                 "size": 1,
                 "type": "enum16"
             },
             {
-                "label": "TCPIP Address",
+                "label": "OutBack_TCP/IP_Address",
+                "desc": "TCP/IP Address xxx.xxx.xxx.xxx",
                 "mandatory": "M",
-                "name": "TCPIP_address",
+                "name": "OutBack_TCP/IP_Address",
                 "size": 2,
                 "type": "ipaddr"
             },
             {
-                "label": "TCPIP Gateway",
+                "label": "OutBack_TCP/IP_Gateway_MSW",
+                "desc": "TCP/IP Gateway xxx.xxx.xxx.xxx",
                 "mandatory": "M",
-                "name": "Gateway_address",
+                "name": "OutBack_TCP/IP_Gateway_MSW",
                 "size": 2,
                 "type": "ipaddr"
             },
             {
-                "label": "TCPIP Netmask",
+                "label": "OutBack_TCP/IP_Netmask_MSW",
+                "desc": "TCP/IP Netmask xxx.xxx.xxx.xxx",
                 "mandatory": "M",
-                "name": "TCPIP_Netmask",
+                "name": "OutBack_TCP/IP_Netmask_MSW",
                 "size": 2,
                 "type": "ipaddr"
             },
             {
-                "label": "TCPIP DNS1",
+                "label": "OutBack_TCP/IP_DNS_1_MSW",
+                "desc": "TCP/IP DNS 1 xxx.xxx.xxx.xxx",
                 "mandatory": "M",
-                "name": "DNS1_address",
+                "name": "OutBack_TCP/IP_DNS_1_MSW",
                 "size": 2,
                 "type": "ipaddr"
             },
             {
-                "label": "TCPIP DNS2",
+                "label": "OutBack_TCP/IP_DNS_2_MSW",
+                "desc": "TCP/IP DNS 2 xxx.xxx.xxx.xxx",
                 "mandatory": "M",
-                "name": "DNS2_address",
+                "name": "OutBack_TCP/IP_DNS_2_MSW",
                 "size": 2,
                 "type": "ipaddr"
             },
             {
-                "label": "ModBus Port",
+                "label": "OutBack_Modbus_Port",
+                "desc": "Outback MODBUS IP port, default 502",
                 "mandatory": "M",
-                "name": "Modbus_port",
+                "name": "OutBack_Modbus_Port",
                 "size": 1,
                 "type": "uint16"
             },
             {
-                "label": "SMTP Server Name",
+                "label": "OutBack_SMTP_Server_Name",
+                "desc": "Email server name",
                 "mandatory": "M",
-                "name": "SMTP_server_nm",
+                "name": "OutBack_SMTP_Server_Name",
                 "size": 20,
                 "type": "string"
             },
             {
-                "label": "SMTP Account Name",
+                "label": "OutBack_SMTP_Account_Name",
+                "desc": "Email account name",
                 "mandatory": "M",
-                "name": "SMTP_account_nm",
+                "name": "OutBack_SMTP_Account_Name",
                 "size": 16,
                 "type": "string"
             },
             {
-                "label": "Enable SMTP SSL",
+                "label": "OutBack_SMTP_SSL_Enable",
+                "desc": "0 = SSL Disabled; 1 = SSL Enabled (not implemented)",
                 "mandatory": "M",
-                "name": "SMTP_enable_SSL",
+                "name": "OutBack_SMTP_SSL_Enable",
                 "size": 1,
-                "symbols": [
-                    {
-                        "name": "ASX_DISABLED",
-                        "value": 0
-                    },
-                    {
-                        "name": "ASX_ENABLED",
-                        "value": 1
-                    }
-                ],
                 "type": "enum16"
             },
             {
-                "label": "SMTP Password",
+                "label": "OutBack_SMTP_Email_Password",
+                "desc": "Email account password",
                 "mandatory": "M",
-                "name": "SMTP_password",
+                "name": "OutBack_SMTP_Email_Password",
                 "size": 8,
                 "type": "string"
             },
             {
-                "label": "SMTP User Name",
+                "label": "OutBack_SMTP_Email_User_Name",
+                "desc": "Email account User Name",
                 "mandatory": "M",
-                "name": "SMTP_user_nm",
+                "name": "OutBack_SMTP_Email_User_Name",
                 "size": 20,
                 "type": "string"
             },
             {
-                "label": "Status Email Interval",
+                "label": "OutBack_Status_Email_Interval",
+                "desc": "0 = Status Email Disabled, 1-23 Status Email every n hours",
                 "mandatory": "M",
-                "name": "Stat_email_int",
+                "name": "OutBack_Status_Email_Interval",
                 "size": 1,
                 "type": "uint16"
             },
             {
-                "label": "Status Email Start Hour",
+                "label": "OutBack_Status_Email_Status_Time",
+                "desc": "Hour of first status email of the day",
                 "mandatory": "M",
-                "name": "Stat_start_HR",
+                "name": "OutBack_Status_Email_Status_Time",
                 "size": 1,
                 "type": "uint16"
             },
             {
-                "label": "Status Email Subject",
+                "label": "OutBack_Status_Email_Subject_Line",
+                "desc": "Status Email Subject Line",
                 "mandatory": "M",
-                "name": "Stat_email_sub",
+                "name": "OutBack_Status_Email_Subject_Line",
                 "size": 25,
                 "type": "string"
             },
             {
-                "label": "Status Email to Address 1",
+                "label": "OutBack_Status_Email_To_Address_1",
+                "desc": "Status Email to Address 1",
                 "mandatory": "M",
-                "name": "Stat_email_addr1",
+                "name": "OutBack_Status_Email_To_Address_1",
                 "size": 20,
                 "type": "string"
             },
             {
-                "label": "Status Email to Address 2",
+                "label": "OutBack_Status_Email_To_Address_2",
+                "desc": "Status Email to Address 2",
                 "mandatory": "M",
-                "name": "Stat_email_addr2",
+                "name": "OutBack_Status_Email_To_Address_2",
                 "size": 20,
                 "type": "string"
             },
             {
-                "label": "Enable Alarm Email",
+                "label": "OutBack_Alarm_Email_Enable",
+                "desc": "0 = Disabled; 1 = Enabled",
                 "mandatory": "M",
-                "name": "Alarm_email_en",
+                "name": "OutBack_Alarm_Email_Enable",
                 "size": 1,
-                "symbols": [
-                    {
-                        "name": "ASX_DISABLED",
-                        "value": 0
-                    },
-                    {
-                        "name": "ASX_ENABLED",
-                        "value": 1
-                    }
-                ],
                 "type": "enum16"
             },
             {
-                "label": "Alarm Email Subject",
+                "label": "OutBack_Alarm_Email_Subject_Line",
+                "desc": "Status Alarm_Subject Line",
                 "mandatory": "M",
-                "name": "Alarm_email_sub",
+                "name": "OutBack_Alarm_Email_Subject_Line",
                 "size": 25,
                 "type": "string"
             },
             {
-                "label": "Alarm Email to Address 1",
+                "label": "OutBack_Alarm_Email_To_Address_1",
+                "desc": "Status Alarm to Address 1",
                 "mandatory": "M",
-                "name": "Alarm_email_addr1",
+                "name": "OutBack_Alarm_Email_To_Address_1",
                 "size": 20,
                 "type": "string"
             },
             {
-                "label": "Alarm Email to Address 2",
+                "label": "OutBack_Alarm_Email_To_Address_2",
+                "desc": "Status Alarm to Address 2",
                 "mandatory": "M",
-                "name": "Alarm_email_addr2",
+                "name": "OutBack_Alarm_Email_To_Address_2",
                 "size": 20,
                 "type": "string"
             },
             {
-                "label": "FTP Password",
+                "label": "OutBack_FTP_Password",
+                "desc": "FTP password",
                 "mandatory": "M",
-                "name": "FTP_password",
+                "name": "OutBack_FTP_Password",
                 "size": 8,
                 "type": "string"
             },
             {
-                "label": "Telnet Password",
+                "label": "OutBack_Telnet_Password",
+                "desc": "Telnet password (not implemented)",
                 "mandatory": "M",
-                "name": "TELNET_password",
+                "name": "OutBack_Telnet_Password",
                 "size": 8,
                 "type": "string"
             },
             {
-                "label": "SD-Card Datalog Write Interval",
+                "label": "OutBack_SD_Card_Data_Log_Write_Interval",
+                "desc": "0 = SD-Card Data Logging disabled, 1-60 seconds",
                 "mandatory": "M",
-                "name": "Log_write_int",
+                "name": "OutBack_SD_Card_Data_Log_Write_Interval",
                 "size": 1,
-                "type": "uint16",
-                "units": "Tms"
+                "type": "uint16"
             },
             {
-                "label": "SD-Card Datalog Retain",
+                "label": "OutBack_SD_Card_Data_Log_Retain_Days",
+                "desc": "0 = Log until SD-Card is full then erase oldest, 1-731 Number of days to retain data logs",
                 "mandatory": "M",
-                "name": "Log_retain",
+                "name": "OutBack_SD_Card_Data_Log_Retain_Days",
                 "size": 1,
-                "type": "uint16",
-                "units": "Tmd"
+                "type": "uint16"
             },
             {
-                "label": "SD-Card Datalog Mode",
+                "label": "OutBack_SD_Card_Data_Logging_Mode",
+                "desc": "0 = Disabled; 1 = Excel Format; \n2 = Compact Format",
                 "mandatory": "M",
-                "name": "Log_mode",
+                "name": "OutBack_SD_Card_Data_Logging_Mode",
                 "size": 1,
-                "symbols": [
-                    {
-                        "name": "LOG_DISABLED",
-                        "value": 0
-                    },
-                    {
-                        "name": "LOG_EXCEL",
-                        "value": 1
-                    },
-                    {
-                        "name": "LOG_COMPACT",
-                        "value": 2
-                    }
-                ],
                 "type": "enum16"
             },
             {
-                "label": "NTP Timer Server Name",
+                "label": "OutBack_Time_Server_Name",
+                "desc": "Timeserver domain name",
                 "mandatory": "M",
-                "name": "NTP_server_nm",
+                "name": "OutBack_Time_Server_Name",
                 "size": 20,
                 "type": "string"
             },
             {
-                "label": "Enable Network Time",
+                "label": "OutBack_Enable_Time_Server",
+                "desc": "0 = Time Server Disabled, use configured time parameters; 1 = Time Server Enabled",
                 "mandatory": "M",
-                "name": "NTP_enable",
+                "name": "OutBack_Enable_Time_Server",
                 "size": 1,
-                "symbols": [
-                    {
-                        "name": "ASX_DISABLED",
-                        "value": 0
-                    },
-                    {
-                        "name": "ASX_ENABLED",
-                        "value": 1
-                    }
-                ],
                 "type": "enum16"
             },
             {
-                "label": "Time Zone",
+                "label": "OutBack_Set_Time_Zone",
+                "desc": "Time Zone -12-11",
                 "mandatory": "M",
-                "name": "TimeZone",
+                "name": "OutBack_Set_Time_Zone",
                 "size": 1,
-                "type": "int16",
-                "units": "Tmh"
+                "type": "int16"
             },
             {
-                "label": "Year",
+                "label": "OutBack_Enable_Float_Coordination",
+                "desc": "0=Disabled, 1=Enabled",
                 "mandatory": "M",
-                "name": "Date_year",
-                "size": 1,
-                "type": "uint16"
-            },
-            {
-                "label": "Month",
-                "mandatory": "M",
-                "name": "Date_month",
+                "name": "OutBack_Enable_Float_Coordination",
                 "size": 1,
                 "type": "uint16"
             },
             {
-                "label": "Day",
+                "label": "OutBack_Enable_FNDC_Charge_Termination",
+                "desc": "0=Disabled, 1=Enabled",
                 "mandatory": "M",
-                "name": "Date_Day",
+                "name": "OutBack_Enable_FNDC_Charge_Termination",
                 "size": 1,
                 "type": "uint16"
             },
             {
-                "label": "Hour",
+                "label": "OutBack_Enable_FNDC_Grid_Tie_Control",
+                "desc": "0=Disabled, 1=Enabled",
                 "mandatory": "M",
-                "name": "Time_hour",
+                "name": "OutBack_Enable_FNDC_Grid_Tie_Control",
                 "size": 1,
                 "type": "uint16"
             },
             {
-                "label": "Minute",
+                "label": "OutBack_Voltage_SF",
+                "desc": "DC Voltage Scale Factor",
                 "mandatory": "M",
-                "name": "Time_minute",
+                "name": "OutBack_Voltage_SF",
+                "size": 1,
+                "type": "int16"
+            },
+            {
+                "label": "OutBack_Hour_SF",
+                "desc": "Hours Scale Factor",
+                "mandatory": "M",
+                "name": "OutBack_Hour_SF",
+                "size": 1,
+                "type": "int16"
+            },
+            {
+                "label": "OutBack_AGS_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_Port",
+                "desc": "AGS device port number 0-10",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Port",
                 "size": 1,
                 "type": "uint16"
             },
             {
-                "label": "Second",
+                "label": "OutBack_AGS_Port_Type",
+                "desc": "0=Radian AUX Relay, 1=Radian AUX Output",
                 "mandatory": "M",
-                "name": "Time_second",
+                "name": "OutBack_AGS_Port_Type",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_Generator_Type",
+                "desc": "0=AC Gen, 1=DC Gen, 2=No Gen",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Generator_Type",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_DC_Gen_Absorb_Voltage",
+                "desc": "DC Generator Absorb Voltage",
+                "mandatory": "M",
+                "name": "OutBack_AGS_DC_Gen_Absorb_Voltage",
                 "size": 1,
                 "type": "uint16"
             },
             {
-                "label": "Battery Temperature",
+                "label": "OutBack_AGS_DC_Gen_Absorb_Time",
+                "desc": "DC Generator Absorb Time",
                 "mandatory": "M",
-                "name": "Battery_temp",
-                "sf": "Temp_SF",
+                "name": "OutBack_AGS_DC_Gen_Absorb_Time",
                 "size": 1,
-                "type": "int16",
-                "units": "C"
+                "type": "uint16"
             },
             {
-                "label": "Ambient Temperature",
+                "label": "OutBack_AGS_Fault_Time",
+                "desc": "AGS Generator fault time delay",
                 "mandatory": "M",
-                "name": "Ambient_temp",
-                "sf": "Temp_SF",
+                "name": "OutBack_AGS_Fault_Time",
                 "size": 1,
-                "type": "int16",
-                "units": "C"
+                "type": "uint16"
             },
             {
+                "label": "OutBack_AGS_Gen_Cool_Down_Time",
+                "desc": "AGS Generator Cool Down Time",
                 "mandatory": "M",
-                "name": "Temp_SF",
+                "name": "OutBack_AGS_Gen_Cool_Down_Time",
                 "size": 1,
-                "type": "sunssf"
+                "type": "uint16"
             },
             {
-                "label": "AXS Error",
+                "label": "OutBack_AGS_Gen_Warm_Up_Time",
+                "desc": "AGS Generator Warm Up Time",
                 "mandatory": "M",
-                "name": "AXS_Error",
+                "name": "OutBack_AGS_Gen_Warm_Up_Time",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Generator_Exercise_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Generator_Exercise_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_Exercise_Start_Hour",
+                "desc": "Exercise Start Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Exercise_Start_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Exercise_Start_Minute",
+                "desc": "Exercise Start Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Exercise_Start_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Exercise_Day",
+                "desc": "0=Sun, 1=Mon, 2=Tue, 3=Wed, 4=Thr, 5=Fri, 6=Sat",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Exercise_Day",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_Exercise_Period",
+                "desc": "Exercise Period 1-240 minutes",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Exercise_Period",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Exercise_Interval",
+                "desc": "Exercise interval 1-8 Weeks",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Exercise_Interval",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Sell_Mode",
+                "desc": "Sell During Generator Exercise Period, 0=Selling Enabled, 1=Selling Disabled",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Sell_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_2_Min_Start_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_AGS_2_Min_Start_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_2_Min_Start_Voltage",
+                "desc": "Two Minute AGS Start Voltage",
+                "mandatory": "M",
+                "name": "OutBack_AGS_2_Min_Start_Voltage",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_2_Hour_Start_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_AGS_2_Hour_Start_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_2_Hour_Start_Voltage",
+                "desc": "Two Hour AGS Start Voltage",
+                "mandatory": "M",
+                "name": "OutBack_AGS_2_Hour_Start_Voltage",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_24_Hour_Start_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_AGS_24_Hour_Start_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_24_Hour_Start_Voltage",
+                "desc": "Twenty Four Hour AGS Start Voltage",
+                "mandatory": "M",
+                "name": "OutBack_AGS_24_Hour_Start_Voltage",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Load_Start_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Load_Start_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_Load_Start_kW",
+                "desc": "Load Start kWatts",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Load_Start_kW",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Load_Start_Delay",
+                "desc": "Load Start Delay",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Load_Start_Delay",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Load_Stop_kW",
+                "desc": "Load Stop kWatts",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Load_Stop_kW",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Load_Stop_Delay",
+                "desc": "Load Stop Delay",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Load_Stop_Delay",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_SOC_Start_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_AGS_SOC_Start_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_SOC_Start_Percentage",
+                "desc": "AGS SOC Start Percentage",
+                "mandatory": "M",
+                "name": "OutBack_AGS_SOC_Start_Percentage",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_SOC_Stop_Percentage",
+                "desc": "AGS SOC Stop Percentage",
+                "mandatory": "M",
+                "name": "OutBack_AGS_SOC_Stop_Percentage",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Enable_Full_Charge_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Enable_Full_Charge_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_Full_Charge_Interval",
+                "desc": "AGS SOC Full Charge Interval",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Full_Charge_Interval",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Must_Run_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Must_Run_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_Must_Run_Weekday_Start_Hour",
+                "desc": "AGS Must Run Weekday Start Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Must_Run_Weekday_Start_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Must_Run_Weekday_Start_Minute",
+                "desc": "AGS Must Run Weekday Start Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Must_Run_Weekday_Start_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Must_Run_Weekday_Stop_Hour",
+                "desc": "AGS Must Run Weekday Stop Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Must_Run_Weekday_Stop_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Must_Run_Weekday_Stop_Minute",
+                "desc": "AGS Must Run Weekday Stop Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Must_Run_Weekday_Stop_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Must_Run_Weekend_Start_Hour",
+                "desc": "AGS Must Run Weekend Start Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Must_Run_Weekend_Start_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Must_Run_Weekend_Start_Minute",
+                "desc": "AGS Must Run Weekend Start Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Must_Run_Weekend_Start_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Must_Run_Weekend_Stop_Hour",
+                "desc": "AGS Must Run Weekend Stop Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Must_Run_Weekend_Stop_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Must_Run_Weekend_Stop_Minute",
+                "desc": "AGS Must Run Weekend Stop Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Must_Run_Weekend_Stop_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Quiet_Time_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Quiet_Time_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_AGS_Quiet_Time_Weekday_Start_Hour",
+                "desc": "AGS Quiet Time Weekday Start Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Quiet_Time_Weekday_Start_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Quiet_Time_Weekday_Start_Minute",
+                "desc": "AGS Quiet Time Weekday Start Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Quiet_Time_Weekday_Start_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Quiet_Time_Weekday_Stop_Hour",
+                "desc": "AGS Quiet Time Weekday Stop Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Quiet_Time_Weekday_Stop_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Quiet_Time_Weekday_Stop_Minute",
+                "desc": "AGS Quiet Time Weekday Stop Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Quiet_Time_Weekday_Stop_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Quiet_Time_Weekend_Start_Hour",
+                "desc": "AGS Quiet Time Weekend Start Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Quiet_Time_Weekend_Start_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Quiet_Time_Weekend_Start_Minute",
+                "desc": "AGS Quiet Time Weekend Start Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Quiet_Time_Weekend_Start_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Quiet_Time_Weekend_Stop_Hour",
+                "desc": "AGS Quiet Time Weekend Stop Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Quiet_Time_Weekend_Stop_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Quiet_Time_Weekend_Stop_Minute",
+                "desc": "AGS Quiet Time Weekend Stop Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Quiet_Time_Weekend_Stop_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_Total_Generator_Run_Time",
+                "desc": "AGS Generator Total Run Time in Seconds",
+                "mandatory": "M",
+                "name": "OutBack_AGS_Total_Generator_Run_Time",
+                "size": 2,
+                "type": "uint32"
+            },
+            {
+                "label": "OutBack_HBX_Mode",
+                "desc": "0=Disabled, 1=Voltage Only, 2=SOC Only, 3=Both",
+                "mandatory": "M",
+                "name": "OutBack_HBX_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_HBX_Grid_Connect_Voltage",
+                "desc": "HBX Grid Connect Voltage",
+                "mandatory": "M",
+                "name": "OutBack_HBX_Grid_Connect_Voltage",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_HBX_Grid_Connect_Delay",
+                "desc": "HBX Grid Connect Delay",
+                "mandatory": "M",
+                "name": "OutBack_HBX_Grid_Connect_Delay",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_HBX_Grid_Disconnect_Voltage",
+                "desc": "HBX Grid Disconnect Voltage",
+                "mandatory": "M",
+                "name": "OutBack_HBX_Grid_Disconnect_Voltage",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_HBX_Grid_Disconnect_Delay",
+                "desc": "HBX Grid Disconnect Delay",
+                "mandatory": "M",
+                "name": "OutBack_HBX_Grid_Disconnect_Delay",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_HBX_Grid_Connect_SOC",
+                "desc": "HBX Grid Connect SOC Percentage",
+                "mandatory": "M",
+                "name": "OutBack_HBX_Grid_Connect_SOC",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_HBX_Grid_Disconnect_SOC",
+                "desc": "HBX Grid Disconnect SOC Percentage",
+                "mandatory": "M",
+                "name": "OutBack_HBX_Grid_Disconnect_SOC",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_1_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_1_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_1_Weekday_Start_Hour",
+                "desc": "Grid Use Interval 1 Weekday Start Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_1_Weekday_Start_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_1_Weekday_Start_Minute",
+                "desc": "Grid Use Interval 1 Weekday Start Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_1_Weekday_Start_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_1_Weekday_Stop_Hour",
+                "desc": "Grid Use Interval 1 Weekday Stop Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_1_Weekday_Stop_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_1_Weekday_Stop_Minute",
+                "desc": "Grid Use Interval 1 Weekday Stop Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_1_Weekday_Stop_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_1_Weekend_Start_Hour",
+                "desc": "Grid Use Interval 1 Weekend Start Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_1_Weekend_Start_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_1_Weekend_Start_Minute",
+                "desc": "Grid Use Interval 1 Weekend Start Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_1_Weekend_Start_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_1_Weekend_Stop_Hour",
+                "desc": "Grid Use Interval 1 Weekend Stop Hour | 0-23",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_1_Weekend_Stop_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_1_Weekend_Stop_Minute",
+                "desc": "Grid Use Interval 1 Weekend Stop Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_1_Weekend_Stop_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_2_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_2_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_2_Weekday_Start_Hour",
+                "desc": "Grid Use Interval 2 Weekday Start Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_2_Weekday_Start_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_2_Weekday_Start_Minute",
+                "desc": "Grid Use Interval 2 Weekday Start Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_2_Weekday_Start_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_2_Weekday_Stop_Hour",
+                "desc": "Grid Use Interval 2 Weekday Stop Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_2_Weekday_Stop_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_2_Weekday_Stop_Minute",
+                "desc": "Grid Use Interval 2 Weekday Stop Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_2_Weekday_Stop_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_3_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_3_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_3_Weekday_Start_Hour",
+                "desc": "Grid Use Interval 3 Weekday Start Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_3_Weekday_Start_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_3_Weekday_Start_Minute",
+                "desc": "Grid Use Interval 3 Weekday Start Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_3_Weekday_Start_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_3_Weekday_Stop_Hour",
+                "desc": "Grid Use Interval 3 Weekday Stop Hour 0-23",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_3_Weekday_Stop_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Grid_Use_Interval_3_Weekday_Stop_Minute",
+                "desc": "Grid Use Interval 3 Weekday Stop Minute 0-59",
+                "mandatory": "M",
+                "name": "OutBack_Grid_Use_Interval_3_Weekday_Stop_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Load_Grid_Transfer_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_Load_Grid_Transfer_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_Load_Grid_Transfer_Threshold",
+                "desc": "Load Grid Transfer Threshold kW",
+                "mandatory": "M",
+                "name": "OutBack_Load_Grid_Transfer_Threshold",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Load_Grid_Transfer_Connect_Delay",
+                "desc": "Load Grid Transfer Connect Delay Seconds",
+                "mandatory": "M",
+                "name": "OutBack_Load_Grid_Transfer_Connect_Delay",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Load_Grid_Transfer_Disconnect_Delay",
+                "desc": "Load Grid Transfer Disconnect Delay Seconds",
+                "mandatory": "M",
+                "name": "OutBack_Load_Grid_Transfer_Disconnect_Delay",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Load_Grid_Transfer_Connect_Battery_Voltage",
+                "desc": "Load Grid Transfer Low Battery Connect Voltage",
+                "mandatory": "M",
+                "name": "OutBack_Load_Grid_Transfer_Connect_Battery_Voltage",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Load_Grid_Transfer_Re_Connect_Battery_Voltage",
+                "desc": "Load Grid Transfer Low Battery Re-Connect Voltage",
+                "mandatory": "M",
+                "name": "OutBack_Load_Grid_Transfer_Re_Connect_Battery_Voltage",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Global_Charger_Control_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_Global_Charger_Control_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_Global_Charger_Control_Output_Limit",
+                "desc": "Global Charger Output Limit Amps",
+                "mandatory": "M",
+                "name": "OutBack_Global_Charger_Control_Output_Limit",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Radian_AC_Coupled_Control_Mode",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_Radian_AC_Coupled_Control_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_Radian_AC_Coupled_AUX_Port",
+                "desc": "Radian Inverter Port Number for AUX Control 0-10",
+                "mandatory": "M",
+                "name": "OutBack_Radian_AC_Coupled_AUX_Port",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_URL_Update_Lock",
+                "desc": "Unlock Key",
+                "mandatory": "M",
+                "name": "OutBack_URL_Update_Lock",
+                "size": 2,
+                "type": "uint32"
+            },
+            {
+                "label": "OutBack_Web_Reporting_Base_URL",
+                "desc": "WEB Reporting Base URL",
+                "mandatory": "M",
+                "name": "OutBack_Web_Reporting_Base_URL",
+                "size": 20,
+                "type": "string"
+            },
+            {
+                "label": "OutBack_WEB_User_Logged_In_Status",
+                "desc": "0=WEB User NOT logged in, 1=WEB user logged in",
+                "mandatory": "M",
+                "name": "OutBack_WEB_User_Logged_In_Status",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_HUB_Type",
+                "desc": "0=Legacy HUB, 4= HUB4, 10=HUB10.3, 11=HUB3PH",
+                "mandatory": "M",
+                "name": "OutBack_HUB_Type",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_HUB_Major_Firmware_Number",
+                "desc": "HUB Major firmware revision",
+                "mandatory": "M",
+                "name": "OutBack_HUB_Major_Firmware_Number",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_HUB_Mid_Firmware_Number",
+                "desc": "HUB Mid firmware revision",
+                "mandatory": "M",
+                "name": "OutBack_HUB_Mid_Firmware_Number",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_HUB_Minor_Firmware_Number",
+                "desc": "HUB Minor firmware revision",
+                "mandatory": "M",
+                "name": "OutBack_HUB_Minor_Firmware_Number",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Year",
+                "desc": "Clock year (4 digit)",
+                "mandatory": "M",
+                "name": "OutBack_Year",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "Outback_Month",
+                "desc": "Clock Month (1 - 12)",
+                "mandatory": "M",
+                "name": "Outback_Month",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Day",
+                "desc": "Clock Day (1 - 31)",
+                "mandatory": "M",
+                "name": "OutBack_Day",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Hour",
+                "desc": "Clock Hour (0 - 23)",
+                "mandatory": "M",
+                "name": "OutBack_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "Outback_Minute",
+                "desc": "Clock Minute (0 - 59)",
+                "mandatory": "M",
+                "name": "Outback_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Second",
+                "desc": "Clock Second (0 - 59)",
+                "mandatory": "M",
+                "name": "OutBack_Second",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Temp_Batt",
+                "desc": "Battery temp in degrees C",
+                "mandatory": "M",
+                "name": "OutBack_Temp_Batt",
+                "size": 1,
+                "type": "int16"
+            },
+            {
+                "label": "OutBack_Temp_Ambient",
+                "desc": "Ambient temp from temp sensor \nconnected to device, in degrees C",
+                "mandatory": "M",
+                "name": "OutBack_Temp_Ambient",
+                "size": 1,
+                "type": "int16"
+            },
+            {
+                "label": "OutBack_Temp_SF",
+                "desc": "Temperature Scale Factor",
+                "mandatory": "M",
+                "name": "OutBack_Temp_SF",
+                "size": 1,
+                "type": "int16"
+            },
+            {
+                "label": "OutBack_Error",
+                "desc": "Bit field for errors. See Outback_Error Table",
+                "mandatory": "M",
+                "name": "OutBack_Error",
                 "size": 1,
                 "type": "bitfield16"
             },
             {
-                "label": "AXS Status",
+                "label": "OutBack_Status",
+                "desc": "Bit field for status. See Outback_Status Table",
                 "mandatory": "M",
-                "name": "AXS_Status",
+                "name": "OutBack_Status",
                 "size": 1,
                 "type": "bitfield16"
             },
             {
-                "label": "Spare",
+                "label": "OutBack_Update_Device_Firmware_Port",
+                "desc": "Device Firmware update See \nDevice_FW_Update",
                 "mandatory": "M",
-                "name": "AXS_Spare",
+                "name": "OutBack_Update_Device_Firmware_Port",
+                "size": 1,
+                "type": "bitfield16"
+            },
+            {
+                "label": "OutBack_Gateway_Type",
+                "desc": "1=AXS Port, 2= MATE3",
+                "mandatory": "M",
+                "name": "OutBack_Gateway_Type",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_System_Voltage",
+                "desc": "12, 24, 26, 48 or 60 VDC",
+                "mandatory": "M",
+                "name": "OutBack_System_Voltage",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Measured_System_Voltage",
+                "desc": "Current system battery voltage computed by gateway",
+                "mandatory": "M",
+                "name": "OutBack_Measured_System_Voltage",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_AGS_AC_Reconnect_Delay",
+                "desc": "AGS AC Reconnect Delay",
+                "mandatory": "M",
+                "name": "OutBack_AGS_AC_Reconnect_Delay",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Multi_Phase_Coordination",
+                "desc": "0=Disabled, 1=Enabled",
+                "mandatory": "M",
+                "name": "OutBack_Multi_Phase_Coordination",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_Sched_1_AC_Mode",
+                "desc": "Scheduled Input Mode: -1=Disable, 0=Generator, 1=Support, 2=Grid Tied, 3=UPS, 4=Backup, 5=Mini Grid, 6=Grid Zero",
+                "mandatory": "M",
+                "name": "OutBack_Sched_1_AC_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_Sched_1_AC_Mode_Hour",
+                "desc": "Start Hour for AC Input Mode schedule 1",
+                "mandatory": "M",
+                "name": "OutBack_Sched_1_AC_Mode_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Sched_1_AC_Mode_Minute",
+                "desc": "Start Minute for AC Input Mode schedule 1",
+                "mandatory": "M",
+                "name": "OutBack_Sched_1_AC_Mode_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Sched_2_AC_Mode",
+                "desc": "Scheduled Input Mode: -1=Disable, 0=Generator, 1=Support, 2=Grid Tied, 3=UPS, 4=Backup, 5=Mini Grid, 6=Grid Zero",
+                "mandatory": "M",
+                "name": "OutBack_Sched_2_AC_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_Sched_2_AC_Mode_Hour",
+                "desc": "Start Hour for AC Input Mode schedule 2",
+                "mandatory": "M",
+                "name": "OutBack_Sched_2_AC_Mode_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Sched_2_AC_Mode_Minute",
+                "desc": "Start Minute for AC Input Mode schedule 2",
+                "mandatory": "M",
+                "name": "OutBack_Sched_2_AC_Mode_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Sched_3_AC_Mode",
+                "desc": "Scheduled Input Mode: -1=Disable, 0=Generator, 1=Support, 2=Grid Tied, 3=UPS, 4=Backup, 5=Mini Grid, 6=Grid Zero",
+                "mandatory": "M",
+                "name": "OutBack_Sched_3_AC_Mode",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_Sched_3_AC_Mode_Hour",
+                "desc": "Start Hour for AC Input Mode schedule 3",
+                "mandatory": "M",
+                "name": "OutBack_Sched_3_AC_Mode_Hour",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Sched_3_AC_Mode_Minute",
+                "desc": "Start Minute for AC Input Mode schedule 3",
+                "mandatory": "M",
+                "name": "OutBack_Sched_3_AC_Mode_Minute",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Auto_reboot",
+                "desc": "OPTICS auto reboot every 24 hours 0=Disable, 1=24, 2=20, 3=16, 4=12, 5=8, 6=4 (hours)",
+                "mandatory": "M",
+                "name": "OutBack_Auto_reboot",
+                "size": 1,
+                "type": "enum16"
+            },
+            {
+                "label": "OutBack_Spare_Reg_2",
+                "desc": "Spare Register 2",
+                "mandatory": "M",
+                "name": "OutBack_Spare_Reg_2",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Spare_Reg_3",
+                "desc": "Spare Register 3",
+                "mandatory": "M",
+                "name": "OutBack_Spare_Reg_3",
+                "size": 1,
+                "type": "uint16"
+            },
+            {
+                "label": "OutBack_Spare_Reg_4",
+                "desc": "Spare Register 4",
+                "mandatory": "M",
+                "name": "OutBack_Spare_Reg_4",
                 "size": 1,
                 "type": "uint16"
             }

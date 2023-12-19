@@ -1,0 +1,490 @@
+{
+  "group": {
+      "label": "TBD",
+      "name": "model_64115",
+      "points": [
+          {
+              "label": "GS_Split_DID",
+              "desc": "Vendor Extension for OutBack Radian Series Split Phase Inverter Status Block",
+              "mandatory": "M",
+              "name": "GS_Split_DID",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_Length",
+              "desc": "Length of block in 16-bit registers",
+              "mandatory": "M",
+              "name": "GS_Split_Length",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_Port_number",
+              "desc": "Port number on Outback network",
+              "mandatory": "M",
+              "name": "GS_Split_Port_number",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_DC_Voltage_SF",
+              "desc": "DC Voltage Scale Factor",
+              "mandatory": "M",
+              "name": "GS_Split_DC_Voltage_SF",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_AC_Current_SF",
+              "desc": "AC Current Scale Factor",
+              "mandatory": "M",
+              "name": "GS_Split_AC_Current_SF",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_AC_Voltage_SF",
+              "desc": "AC Voltage Scale Factor",
+              "mandatory": "M",
+              "name": "GS_Split_AC_Voltage_SF",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_AC_Frequency_SF",
+              "desc": "AC Frequency Scale Factor",
+              "mandatory": "M",
+              "name": "GS_Split_AC_Frequency_SF",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L1_Inverter_Output_Current",
+              "desc": "L1 inverter output current",
+              "mandatory": "M",
+              "name": "GS_Split_L1_Inverter_Output_Current",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L1_Inverter_Charge_Current",
+              "desc": "L1 inverter charger current",
+              "mandatory": "M",
+              "name": "GS_Split_L1_Inverter_Charge_Current",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L1_Inverter_Buy_Current",
+              "desc": "L1 inverter buy current",
+              "mandatory": "M",
+              "name": "GS_Split_L1_Inverter_Buy_Current",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L1_Inverter_Sell_Current",
+              "desc": "L1 inverter sell current",
+              "mandatory": "M",
+              "name": "GS_Split_L1_Inverter_Sell_Current",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L1_Grid_Input_AC_Voltage",
+              "desc": "L1 Grid Input AC Voltage",
+              "mandatory": "M",
+              "name": "GS_Split_L1_Grid_Input_AC_Voltage",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L1_Gen_Input_AC_Voltage",
+              "desc": "L1 Gen Input AC Voltage",
+              "mandatory": "M",
+              "name": "GS_Split_L1_Gen_Input_AC_Voltage",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L1_Output_AC_Voltage",
+              "desc": "L1 Output AC Voltage",
+              "mandatory": "M",
+              "name": "GS_Split_L1_Output_AC_Voltage",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L2_Inverter_Output_Current",
+              "desc": "L2 inverter output current",
+              "mandatory": "M",
+              "name": "GS_Split_L2_Inverter_Output_Current",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L2_Inverter_Charge_Current",
+              "desc": "L2 inverter charger current",
+              "mandatory": "M",
+              "name": "GS_Split_L2_Inverter_Charge_Current",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L2_Inverter_Buy_Current",
+              "desc": "L2 inverter buy current",
+              "mandatory": "M",
+              "name": "GS_Split_L2_Inverter_Buy_Current",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L2_Inverter_Sell_Current",
+              "desc": "L2 inverter sell current",
+              "mandatory": "M",
+              "name": "GS_Split_L2_Inverter_Sell_Current",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L2_Grid_Input_AC_Voltage",
+              "desc": "L2 Grid Input AC Voltage",
+              "mandatory": "M",
+              "name": "GS_Split_L2_Grid_Input_AC_Voltage",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L2_Gen_Input_AC_Voltage",
+              "desc": "L2 Gen Input AC Voltage",
+              "mandatory": "M",
+              "name": "GS_Split_L2_Gen_Input_AC_Voltage",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L2_Output_AC_Voltage",
+              "desc": "L2 Output AC Voltage",
+              "mandatory": "M",
+              "name": "GS_Split_L2_Output_AC_Voltage",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_Inverter_Operating_mode",
+              "desc": "0=Off, 1=Searching, 2=Inverting, \n3=Charging, 4=Silent, 5=Float, 6=EQ, 7=Charger Off, 8=Support, 9=Selling, 10=Pass through, 14=Offsetting",
+              "mandatory": "M",
+              "name": "GS_Split_Inverter_Operating_mode",
+              "size": 1,
+              "type": "enum16"
+          },
+          {
+              "label": "GS_Split_Error_Flags",
+              "desc": "Bit field for errors. See GS_Error table",
+              "mandatory": "M",
+              "name": "GS_Split_Error_Flags",
+              "size": 1,
+              "type": "bitfield16"
+          },
+          {
+              "label": "GS_Split_Warning_Flags",
+              "desc": "Bit field for warnings See GS_Warning table",
+              "mandatory": "M",
+              "name": "GS_Split_Warning_Flags",
+              "size": 1,
+              "type": "bitfield16"
+          },
+          {
+              "label": "GS_Split_Battery_Voltage",
+              "desc": "Battery Voltage",
+              "mandatory": "M",
+              "name": "GS_Split_Battery_Voltage",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_Temp_Compensated_Target_Voltage",
+              "desc": "Temperature compensated target battery voltage",
+              "mandatory": "M",
+              "name": "GS_Split_Temp_Compensated_Target_Voltage",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_AUX_Output_State",
+              "desc": "0 = Disabled; 1 = Enabled",
+              "mandatory": "M",
+              "name": "GS_Split_AUX_Output_State",
+              "size": 1,
+              "type": "enum16"
+          },
+          {
+              "label": "GS_Split_AUX_Relay_Output_State",
+              "desc": "0 = Disabled; 1 = Enabled",
+              "mandatory": "M",
+              "name": "GS_Split_AUX_Relay_Output_State",
+              "size": 1,
+              "type": "enum16"
+          },
+          {
+              "label": "GS_Split_L_Module_Transformer_Temperature",
+              "desc": "Left module transformer temp in degrees C",
+              "mandatory": "M",
+              "name": "GS_Split_L_Module_Transformer_Temperature",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L_Module_Capacitor_Temperature",
+              "desc": "Left module capacitor temp in degrees C",
+              "mandatory": "M",
+              "name": "GS_Split_L_Module_Capacitor_Temperature",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_L_Module_FET_Temperature",
+              "desc": "Left module FET temp in degrees C",
+              "mandatory": "M",
+              "name": "GS_Split_L_Module_FET_Temperature",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_R_Module_Transformer_Temperature",
+              "desc": "Right module transformer temp in degrees C",
+              "mandatory": "M",
+              "name": "GS_Split_R_Module_Transformer_Temperature",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_R_Module_Capacitor_Temperature",
+              "desc": "Right module capacitor temp in degrees C",
+              "mandatory": "M",
+              "name": "GS_Split_R_Module_Capacitor_Temperature",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_R_Module_FET_Temperature",
+              "desc": "Right module FET temp in degrees C",
+              "mandatory": "M",
+              "name": "GS_Split_R_Module_FET_Temperature",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_Battery_Temperature",
+              "desc": "Battery temp in degrees C",
+              "mandatory": "M",
+              "name": "GS_Split_Battery_Temperature",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_AC_Input_Selection",
+              "desc": "0=Grid, 1=Gen",
+              "mandatory": "M",
+              "name": "GS_Split_AC_Input_Selection",
+              "size": 1,
+              "type": "enum16"
+          },
+          {
+              "label": "GS_Split_AC_Input_Frequency",
+              "desc": "Selected AC Input frequency HZ",
+              "mandatory": "M",
+              "name": "GS_Split_AC_Input_Frequency",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_AC_Input_Voltage",
+              "desc": "Selected Input AC Voltage",
+              "mandatory": "M",
+              "name": "GS_Split_AC_Input_Voltage",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_AC_Input_State",
+              "desc": "1=AC Use, 0=AC_Drop",
+              "mandatory": "M",
+              "name": "GS_Split_AC_Input_State",
+              "size": 1,
+              "type": "enum16"
+          },
+          {
+              "label": "GS_Split_Minimum_AC_Input_Voltage",
+              "desc": "Minimum Input AC Voltage (Write to clear stored value)",
+              "mandatory": "M",
+              "name": "GS_Split_Minimum_AC_Input_Voltage",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_Maximum_AC_Input_Voltage",
+              "desc": "Maximum Input AC Voltage (Write to clear stored value)",
+              "mandatory": "M",
+              "name": "GS_Split_Maximum_AC_Input_Voltage",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_Sell_Status",
+              "desc": "Bit field for sell status \n(See GS_Sell_Status table)",
+              "mandatory": "M",
+              "name": "GS_Split_Sell_Status",
+              "size": 1,
+              "type": "bitfield16"
+          },
+          {
+              "label": "GS_Split_kWh_SF",
+              "desc": "AC kWh scale factor",
+              "mandatory": "M",
+              "name": "GS_Split_kWh_SF",
+              "size": 1,
+              "type": "int16"
+          },
+          {
+              "label": "GS_Split_AC1_L1_Buy_kWh",
+              "desc": "Daily AC1 Buy L1 kWh",
+              "mandatory": "M",
+              "name": "GS_Split_AC1_L1_Buy_kWh",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_AC2_L1_Buy_kWh",
+              "desc": "Daily AC2 Buy L1 kWh",
+              "mandatory": "M",
+              "name": "GS_Split_AC2_L1_Buy_kWh",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_AC1_L1_Sell_kWh",
+              "desc": "Daily AC1 Sell L1 kWh",
+              "mandatory": "M",
+              "name": "GS_Split_AC1_L1_Sell_kWh",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_AC2_L1_Sell_kWh",
+              "desc": "Daily AC2 Sell L1 kWh",
+              "mandatory": "M",
+              "name": "GS_Split_AC2_L1_Sell_kWh",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_L1_Output_kWh",
+              "desc": "Daily Output L1 kWh",
+              "mandatory": "M",
+              "name": "GS_Split_L1_Output_kWh",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_AC1_L2_Buy_kWh",
+              "desc": "Daily AC1 Buy L2 kWh",
+              "mandatory": "M",
+              "name": "GS_Split_AC1_L2_Buy_kWh",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_AC2_L2_Buy_kWh",
+              "desc": "Daily AC1 Sell L2 kWh",
+              "mandatory": "M",
+              "name": "GS_Split_AC2_L2_Buy_kWh",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_AC1_L2_Sell_kWh",
+              "desc": "Daily AC1 Sell L2 kWh",
+              "mandatory": "M",
+              "name": "GS_Split_AC1_L2_Sell_kWh",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_AC2_L2_Sell_kWh",
+              "desc": "Daily AC2 Sell L2 kWh",
+              "mandatory": "M",
+              "name": "GS_Split_AC2_L2_Sell_kWh",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_L2_Output_kWh",
+              "desc": "Daily Output L2 kWh",
+              "mandatory": "M",
+              "name": "GS_Split_L2_Output_kWh",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_Charger_kWh",
+              "desc": "Daily Charger kWh",
+              "mandatory": "M",
+              "name": "GS_Split_Charger_kWh",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_Output_kW",
+              "desc": "Output kW",
+              "mandatory": "M",
+              "name": "GS_Split_Output_kW",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_Buy_kW",
+              "desc": "Buy kW",
+              "mandatory": "M",
+              "name": "GS_Split_Buy_kW",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_Sell_kW",
+              "desc": "Sell kW",
+              "mandatory": "M",
+              "name": "GS_Split_Sell_kW",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_Charge_kW",
+              "desc": "Charge kW",
+              "mandatory": "M",
+              "name": "GS_Split_Charge_kW",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_Load_kW",
+              "desc": "Load kW",
+              "mandatory": "M",
+              "name": "GS_Split_Load_kW",
+              "size": 1,
+              "type": "uint16"
+          },
+          {
+              "label": "GS_Split_AC_Couple_kW",
+              "desc": "AC Coupled kW",
+              "mandatory": "M",
+              "name": "GS_Split_AC_Couple_kW",
+              "size": 1,
+              "type": "uint16"
+          }
+      ],
+      "type": "group"
+  },
+  "id": 64115
+}
