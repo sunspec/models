@@ -39,7 +39,8 @@
                 "name": "AphA",
                 "size": 2,
                 "type": "float32",
-                "units": "A"
+                "units": "A",
+                "notes": "Connected Phase"
             },
             {
                 "desc": "Phase B Current",
