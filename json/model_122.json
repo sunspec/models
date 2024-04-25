@@ -83,8 +83,12 @@
                 "size": 1,
                 "symbols": [
                     {
-                        "name": "CONNECTED",
+                        "name": "DISCONNECTED",
                         "value": 0
+                    },
+                    {
+                        "name": "CONNECTED",
+                        "value": 1
                     }
                 ],
                 "type": "bitfield16"
