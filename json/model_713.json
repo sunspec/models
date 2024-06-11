@@ -14,8 +14,6 @@
                 "type": "uint16",
                 "value": 713,
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -29,8 +27,6 @@
                 "type": "uint16",
                 "value": 7,
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -63,8 +59,6 @@
                 "type": "uint16",
                 "units": "Pct",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },

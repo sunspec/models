@@ -14,8 +14,6 @@
                 "type": "uint16",
                 "value": 702,
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -29,8 +27,6 @@
                 "type": "uint16",
                 "value": 50,
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -47,8 +43,6 @@
                 "type": "uint16",
                 "units": "W",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -62,8 +56,6 @@
                 "type": "uint16",
                 "units": "W",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -76,8 +68,6 @@
                 "static": "S",
                 "type": "uint16",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -91,8 +81,6 @@
                 "type": "uint16",
                 "units": "W",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -105,8 +93,6 @@
                 "static": "S",
                 "type": "uint16",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -120,8 +106,6 @@
                 "type": "uint16",
                 "units": "VA",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -135,8 +119,6 @@
                 "type": "uint16",
                 "units": "Var",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -150,8 +132,6 @@
                 "type": "uint16",
                 "units": "Var",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -165,8 +145,6 @@
                 "type": "uint16",
                 "units": "W",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -191,8 +169,6 @@
                 "type": "uint16",
                 "units": "VA",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -217,8 +193,6 @@
                 "type": "uint16",
                 "units": "V",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -232,8 +206,6 @@
                 "type": "uint16",
                 "units": "V",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -247,8 +219,6 @@
                 "type": "uint16",
                 "units": "V",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -293,8 +263,6 @@
                 "type": "uint16",
                 "units": "S",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -318,8 +286,6 @@
                 ],
                 "type": "enum16",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -348,8 +314,6 @@
                 ],
                 "type": "enum16",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -433,8 +397,6 @@
                 ],
                 "type": "bitfield32",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },

@@ -94,8 +94,12 @@ def point_parser(points, name, tabs=0):
         if point['name'] == 'ID' or point['name'] == 'L' or mandatory:
             if point.get('standards') is None:
                 point['standards'] = [STD_NAME]
-            else:
+            elif STD_NAME not in point['standards']:
                 point['standards'].append(STD_NAME)
+            else:
+                # check for duplicates and remove them
+                point['standards'] = list(set(point['standards']))
+
             print('\t' * tabs + '%s.%s (+)' % (name, point['name']))
         else:
             if point.get('standards') is None:

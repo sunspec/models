@@ -19,8 +19,6 @@
                         "size": 1,
                         "type": "uint16",
                         "standards": [
-                            "IEEE 1547-2018",
-                            "IEEE 1547-2018",
                             "IEEE 1547-2018"
                         ]
                     },
@@ -46,8 +44,6 @@
                         ],
                         "type": "enum16",
                         "standards": [
-                            "IEEE 1547-2018",
-                            "IEEE 1547-2018",
                             "IEEE 1547-2018"
                         ]
                     }
@@ -191,8 +187,6 @@
                 "type": "uint16",
                 "value": 704,
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -206,8 +200,6 @@
                 "type": "uint16",
                 "value": 65,
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -236,8 +228,6 @@
                 ],
                 "type": "enum16",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -376,8 +366,6 @@
                 ],
                 "type": "enum16",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -391,8 +379,6 @@
                 "type": "uint16",
                 "units": "Pct",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -609,8 +595,6 @@
                 ],
                 "type": "enum16",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -654,8 +638,6 @@
                 ],
                 "type": "enum16",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -687,8 +669,6 @@
                 ],
                 "type": "enum16",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -724,8 +704,6 @@
                 "type": "int16",
                 "units": "Pct",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -862,8 +840,6 @@
                 "static": "S",
                 "type": "sunssf",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -875,8 +851,6 @@
                 "static": "S",
                 "type": "sunssf",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             },
@@ -915,8 +889,6 @@
                 "static": "S",
                 "type": "sunssf",
                 "standards": [
-                    "IEEE 1547-2018",
-                    "IEEE 1547-2018",
                     "IEEE 1547-2018"
                 ]
             }
