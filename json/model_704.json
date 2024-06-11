@@ -17,7 +17,12 @@
                         "name": "PF",
                         "sf": "PF_SF",
                         "size": 1,
-                        "type": "uint16"
+                        "type": "uint16",
+                        "standards": [
+                            "IEEE 1547-2018",
+                            "IEEE 1547-2018",
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "access": "RW",
@@ -39,7 +44,12 @@
                                 "value": 1
                             }
                         ],
-                        "type": "enum16"
+                        "type": "enum16",
+                        "standards": [
+                            "IEEE 1547-2018",
+                            "IEEE 1547-2018",
+                            "IEEE 1547-2018"
+                        ]
                     }
                 ],
                 "type": "sync"
@@ -56,7 +66,8 @@
                         "name": "PF",
                         "sf": "PF_SF",
                         "size": 1,
-                        "type": "uint16"
+                        "type": "uint16",
+                        "standards": []
                     },
                     {
                         "access": "RW",
@@ -78,7 +89,8 @@
                                 "value": 1
                             }
                         ],
-                        "type": "enum16"
+                        "type": "enum16",
+                        "standards": []
                     }
                 ],
                 "type": "sync"
@@ -95,7 +107,8 @@
                         "name": "PF",
                         "sf": "PF_SF",
                         "size": 1,
-                        "type": "uint16"
+                        "type": "uint16",
+                        "standards": []
                     },
                     {
                         "access": "RW",
@@ -117,7 +130,8 @@
                                 "value": 1
                             }
                         ],
-                        "type": "enum16"
+                        "type": "enum16",
+                        "standards": []
                     }
                 ],
                 "type": "sync"
@@ -134,7 +148,8 @@
                         "name": "PF",
                         "sf": "PF_SF",
                         "size": 1,
-                        "type": "uint16"
+                        "type": "uint16",
+                        "standards": []
                     },
                     {
                         "access": "RW",
@@ -156,7 +171,8 @@
                                 "value": 1
                             }
                         ],
-                        "type": "enum16"
+                        "type": "enum16",
+                        "standards": []
                     }
                 ],
                 "type": "sync"
@@ -173,7 +189,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 704
+                "value": 704,
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "DER AC controls model length.",
@@ -183,7 +204,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 65
+                "value": 65,
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -208,7 +234,12 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -230,7 +261,8 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -239,7 +271,8 @@
                 "name": "PFWInjRvrtTms",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "desc": "Power factor reversion time remaining when injecting active power.",
@@ -247,7 +280,8 @@
                 "name": "PFWInjRvrtRem",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -272,7 +306,8 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -294,7 +329,8 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -303,7 +339,8 @@
                 "name": "PFWAbsRvrtTms",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "desc": "Power factor reversion time remaining when absorbing active power.",
@@ -311,7 +348,8 @@
                 "name": "PFWAbsRvrtRem",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -336,7 +374,12 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -346,7 +389,12 @@
                 "sf": "WMaxLimPct_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "Pct"
+                "units": "Pct",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -356,7 +404,8 @@
                 "sf": "WMaxLimPct_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "Pct"
+                "units": "Pct",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -378,7 +427,8 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -387,7 +437,8 @@
                 "name": "WMaxLimPctRvrtTms",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "desc": "Limit maximum active power percent reversion time remaining.",
@@ -395,7 +446,8 @@
                 "name": "WMaxLimPctRvrtRem",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -420,7 +472,8 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -442,7 +495,8 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -452,7 +506,8 @@
                 "sf": "WSet_SF",
                 "size": 2,
                 "type": "int32",
-                "units": "W"
+                "units": "W",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -462,7 +517,8 @@
                 "sf": "WSet_SF",
                 "size": 2,
                 "type": "int32",
-                "units": "W"
+                "units": "W",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -472,7 +528,8 @@
                 "sf": "WSetPct_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "Pct"
+                "units": "Pct",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -482,7 +539,8 @@
                 "sf": "WSetPct_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "Pct"
+                "units": "Pct",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -504,7 +562,8 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -513,7 +572,8 @@
                 "name": "WSetRvrtTms",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "desc": "Set active power reversion time remaining.",
@@ -521,7 +581,8 @@
                 "name": "WSetRvrtRem",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -546,7 +607,12 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -586,7 +652,12 @@
                         "value": 4
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -614,7 +685,12 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -624,7 +700,8 @@
                 "sf": "VarSet_SF",
                 "size": 2,
                 "type": "int32",
-                "units": "Var"
+                "units": "Var",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -634,7 +711,8 @@
                 "sf": "VarSet_SF",
                 "size": 2,
                 "type": "int32",
-                "units": "Var"
+                "units": "Var",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -644,7 +722,12 @@
                 "sf": "VarSetPct_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "Pct"
+                "units": "Pct",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -654,7 +737,8 @@
                 "sf": "VarSetPct_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "Pct"
+                "units": "Pct",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -676,7 +760,8 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -685,7 +770,8 @@
                 "name": "VarSetRvrtTms",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "desc": "Set reactive power reversion time remaining.",
@@ -693,7 +779,8 @@
                 "name": "VarSetRvrtRem",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -705,7 +792,8 @@
                 "name": "WRmp",
                 "size": 1,
                 "type": "uint16",
-                "units": "%Max/Sec"
+                "units": "%Max/Sec",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -727,7 +815,8 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -736,7 +825,8 @@
                 "name": "VarRmp",
                 "size": 1,
                 "type": "uint16",
-                "units": "%Max/Sec"
+                "units": "%Max/Sec",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -758,7 +848,8 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": []
             },
             {
                 "comments": [
@@ -769,7 +860,12 @@
                 "name": "PF_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Limit maximum power scale factor.",
@@ -777,7 +873,12 @@
                 "name": "WMaxLimPct_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Active power scale factor.",
@@ -785,7 +886,8 @@
                 "name": "WSet_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Active power pct scale factor.",
@@ -793,7 +895,8 @@
                 "name": "WSetPct_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Reactive power scale factor.",
@@ -801,7 +904,8 @@
                 "name": "VarSet_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Reactive power pct scale factor.",
@@ -809,7 +913,12 @@
                 "name": "VarSetPct_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             }
         ],
         "type": "group"

@@ -12,7 +12,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 702
+                "value": 702,
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "DER capacity model length.",
@@ -22,7 +27,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 50
+                "value": 50,
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "comments": [
@@ -35,7 +45,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "W"
+                "units": "W",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Active power rating at specified over-excited power factor in watts.",
@@ -45,7 +60,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "W"
+                "units": "W",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Specified over-excited power factor.",
@@ -54,7 +74,12 @@
                 "sf": "PF_SF",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Active power rating at specified under-excited power factor in watts.",
@@ -64,7 +89,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "W"
+                "units": "W",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Specified under-excited power factor.",
@@ -73,7 +103,12 @@
                 "sf": "PF_SF",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Maximum apparent power rating in voltamperes.",
@@ -83,7 +118,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "VA"
+                "units": "VA",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Maximum injected reactive power rating in vars.",
@@ -93,7 +133,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "Var"
+                "units": "Var",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Maximum absorbed reactive power rating in vars.",
@@ -103,7 +148,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "Var"
+                "units": "Var",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Maximum active power charge rate in watts.",
@@ -113,7 +163,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "W"
+                "units": "W",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Maximum active power discharge rate in watts.",
@@ -123,7 +178,8 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "W"
+                "units": "W",
+                "standards": []
             },
             {
                 "desc": "Maximum apparent power charge rate in voltamperes.",
@@ -133,7 +189,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "VA"
+                "units": "VA",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Maximum apparent power discharge rate in voltamperes.",
@@ -143,7 +204,8 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "VA"
+                "units": "VA",
+                "standards": []
             },
             {
                 "desc": "AC voltage nominal rating.",
@@ -153,7 +215,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "AC voltage maximum rating.",
@@ -163,7 +230,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "AC voltage minimum rating.",
@@ -173,7 +245,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "AC current maximum rating in amps.",
@@ -183,7 +260,8 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "A"
+                "units": "A",
+                "standards": []
             },
             {
                 "desc": "Power factor over-excited rating.",
@@ -192,7 +270,8 @@
                 "sf": "PF_SF",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": []
             },
             {
                 "desc": "Power factor under-excited rating.",
@@ -201,7 +280,8 @@
                 "sf": "PF_SF",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": []
             },
             {
                 "desc": "Reactive susceptance that remains connected to the Area EPS in the cease to energize and trip state.",
@@ -211,7 +291,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "units": "S"
+                "units": "S",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Normal operating performance category as specified in IEEE 1547-2018.",
@@ -231,7 +316,12 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Abnormal operating performance category as specified in IEEE 1547-2018.",
@@ -256,7 +346,12 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Supported control mode functions.",
@@ -336,7 +431,12 @@
                         "value": 13
                     }
                 ],
-                "type": "bitfield32"
+                "type": "bitfield32",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Intentional island categories.",
@@ -366,7 +466,8 @@
                         "value": 3
                     }
                 ],
-                "type": "bitfield16"
+                "type": "bitfield16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -379,7 +480,8 @@
                 "sf": "W_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "W"
+                "units": "W",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -389,7 +491,8 @@
                 "sf": "W_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "W"
+                "units": "W",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -398,7 +501,8 @@
                 "name": "WOvrExtPF",
                 "sf": "PF_SF",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -408,7 +512,8 @@
                 "sf": "W_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "W"
+                "units": "W",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -417,7 +522,8 @@
                 "name": "WUndExtPF",
                 "sf": "PF_SF",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -427,7 +533,8 @@
                 "sf": "VA_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "VA"
+                "units": "VA",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -437,7 +544,8 @@
                 "sf": "Var_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "Var"
+                "units": "Var",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -447,7 +555,8 @@
                 "sf": "Var_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "Var"
+                "units": "Var",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -457,7 +566,8 @@
                 "sf": "W_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "W"
+                "units": "W",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -467,7 +577,8 @@
                 "sf": "W_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "W"
+                "units": "W",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -477,7 +588,8 @@
                 "sf": "VA_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "VA"
+                "units": "VA",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -487,7 +599,8 @@
                 "sf": "VA_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "VA"
+                "units": "VA",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -497,7 +610,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -507,7 +621,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -517,7 +632,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -527,7 +643,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "A"
+                "units": "A",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -536,7 +653,8 @@
                 "name": "PFOvrExt",
                 "sf": "PF_SF",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -545,7 +663,8 @@
                 "name": "PFUndExt",
                 "sf": "PF_SF",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -575,7 +694,8 @@
                         "value": 3
                     }
                 ],
-                "type": "bitfield16"
+                "type": "bitfield16",
+                "standards": []
             },
             {
                 "comments": [
@@ -586,7 +706,8 @@
                 "name": "W_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Power factor scale factor.",
@@ -594,7 +715,8 @@
                 "name": "PF_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Apparent power scale factor.",
@@ -602,7 +724,8 @@
                 "name": "VA_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Reactive power scale factor.",
@@ -610,7 +733,8 @@
                 "name": "Var_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Voltage scale factor.",
@@ -618,7 +742,8 @@
                 "name": "V_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Current scale factor.",
@@ -626,7 +751,8 @@
                 "name": "A_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Susceptance scale factor.",
@@ -634,7 +760,8 @@
                 "name": "S_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             }
         ],
         "type": "group"

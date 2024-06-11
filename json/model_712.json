@@ -26,7 +26,12 @@
                                 "sf": "W_SF",
                                 "size": 1,
                                 "type": "int16",
-                                "units": "WMaxPct"
+                                "units": "WMaxPct",
+                                "standards": [
+                                    "IEEE 1547-2018",
+                                    "IEEE 1547-2018",
+                                    "IEEE 1547-2018"
+                                ]
                             },
                             {
                                 "access": "RW",
@@ -36,7 +41,12 @@
                                 "sf": "DeptRef_SF",
                                 "size": 1,
                                 "type": "int16",
-                                "units": "VarPct"
+                                "units": "VarPct",
+                                "standards": [
+                                    "IEEE 1547-2018",
+                                    "IEEE 1547-2018",
+                                    "IEEE 1547-2018"
+                                ]
                             }
                         ],
                         "type": "group"
@@ -52,7 +62,12 @@
                         "mandatory": "M",
                         "name": "ActPt",
                         "size": 1,
-                        "type": "uint16"
+                        "type": "uint16",
+                        "standards": [
+                            "IEEE 1547-2018",
+                            "IEEE 1547-2018",
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "access": "RW",
@@ -83,7 +98,12 @@
                                 "value": 3
                             }
                         ],
-                        "type": "enum16"
+                        "type": "enum16",
+                        "standards": [
+                            "IEEE 1547-2018",
+                            "IEEE 1547-2018",
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "access": "RW",
@@ -105,7 +125,12 @@
                                 "value": 1
                             }
                         ],
-                        "type": "enum16"
+                        "type": "enum16",
+                        "standards": [
+                            "IEEE 1547-2018",
+                            "IEEE 1547-2018",
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "desc": "Curve read-write access.",
@@ -128,7 +153,12 @@
                                 "value": 1
                             }
                         ],
-                        "type": "enum16"
+                        "type": "enum16",
+                        "standards": [
+                            "IEEE 1547-2018",
+                            "IEEE 1547-2018",
+                            "IEEE 1547-2018"
+                        ]
                     }
                 ],
                 "type": "group"
@@ -145,7 +175,12 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 712
+                "value": 712,
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "DER Watt-Var model length.",
@@ -154,7 +189,12 @@
                 "name": "L",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -177,7 +217,12 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -187,7 +232,12 @@
                 "name": "AdptCrvReq",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Result of last set active curve operation.",
@@ -216,7 +266,12 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Number of curve points supported.",
@@ -225,7 +280,12 @@
                 "name": "NPt",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Number of stored curves supported.",
@@ -234,7 +294,12 @@
                 "name": "NCrv",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -243,7 +308,8 @@
                 "name": "RvrtTms",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "desc": "Reversion time remaining in seconds.",
@@ -251,7 +317,8 @@
                 "name": "RvrtRem",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -259,7 +326,8 @@
                 "label": "Reversion Curve",
                 "name": "RvrtCrv",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "standards": []
             },
             {
                 "desc": "Scale factor for curve active power points.",
@@ -268,7 +336,12 @@
                 "name": "W_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Scale factor for curve var points.",
@@ -277,7 +350,12 @@
                 "name": "DeptRef_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018",
+                    "IEEE 1547-2018"
+                ]
             }
         ],
         "type": "group"
