@@ -6,7 +6,7 @@ import os
 
 
 STD_NAME = 'IEEE 1547-2018'
-MANDATORY_1547_POINTS = {  # Beyond those that are mandatory per SunSpec (e.g. ID, L)
+MANDATORY_1547_POINTS = {  # ID and L are added by default
     1: ['Mn', 'Md', 'SN', 'Vr'],
     701: ['W', 'Var', 'Hz', 'St', 'ConnSt', 'Alrm', 'LLV', 'LNV', 'VL1L2', 'VL1', 'VL2L3', 'VL2', 'VL3L1', 'VL3'],
     702: ['WMaxRtg', 'WOvrExtRtg', 'WOvrExtRtgPF', 'WUndExtRtg', 'WUndExtRtgPF', 'VAMaxRtg', 'NorOpCatRtg',
@@ -99,14 +99,12 @@ def point_parser(points, name, tabs=0):
             else:
                 # check for duplicates and remove them
                 point['standards'] = list(set(point['standards']))
-
             print('\t' * tabs + '%s.%s (+)' % (name, point['name']))
         else:
             if point.get('standards') is None:
                 point['standards'] = []
             elif STD_NAME in point['standards']:
                 point['standards'].remove(STD_NAME)
-
             print('\t' * tabs + '%s.%s (-)' % (name, point['name']))
 
     return points
@@ -114,7 +112,7 @@ def point_parser(points, name, tabs=0):
 
 def main():
     """
-    Scan each of the json and smdx/xml files in the associated directories and add any new fields to the dataset
+    Scan json files and add new fields to the dataset
 
     :return: None
     """
