@@ -24,7 +24,7 @@
       <point id="VAr_SF" offset="19" type="sunssf" />
       <point id="PF" offset="20" type="int16" sf="PF_SF" units="Pct" />
       <point id="PF_SF" offset="21" type="sunssf" />
-      <point id="WH" offset="22" type="acc32" sf="WH_SF" units="Wh" mandatory="true" />
+      <point id="WH" offset="22" type="acc32" len="2" sf="WH_SF" units="Wh" mandatory="true" />
       <point id="WH_SF" offset="24" type="sunssf" mandatory="true" />
       <point id="DCA" offset="25" type="uint16" sf="DCA_SF" units="A" />
       <point id="DCA_SF" offset="26" type="sunssf" />
