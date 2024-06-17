@@ -287,7 +287,7 @@
             },
             {
                 "comments": [
-                    "Summary"
+                    "Scale Factors"
                 ],
                 "desc": "Total active power. Active power is positive for DER generation and negative for absorption.",
                 "label": "Active Power",
