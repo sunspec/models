@@ -31,7 +31,8 @@
                                     "IEEE 1547-2018"
                                 ],
                                 "comment": [
-                                    "Internal curve conformance checks should be conducted when AdptCrvReq is set to 1, not on point writes."
+                                    "Internal curve conformance checks should be conducted when AdptCrvReq is set to 1, not on point writes.",
+                                    "IEEE 1547 implementations must allow 0 values for all three load points"
                                 ]
                             },
                             {
@@ -47,7 +48,8 @@
                                     "IEEE 1547-2018"
                                 ],
                                 "comment": [
-                                    "Internal curve conformance checks should be conducted when AdptCrvReq is set to 1, not on point writes."
+                                    "Internal curve conformance checks should be conducted when AdptCrvReq is set to 1, not on point writes.",
+                                    "IEEE 1547 implementations must allow 0 values for all three load points"
                                 ]
                             }
                         ],
