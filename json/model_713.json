@@ -52,6 +52,7 @@
             },
             {
                 "desc": "State of charge of the DER storage.",
+                "detail": "SOC shall be fixed to 0% for DER without storage capabilities.",
                 "label": "State of Charge",
                 "name": "SoC",
                 "sf": "Pct_SF",
