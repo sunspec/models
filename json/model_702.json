@@ -194,6 +194,9 @@
                 "units": "V",
                 "standards": [
                     "IEEE 1547-2018"
+                ],
+                "comment": [
+                    "Voltages are LN for single phase DER (e.g. 120 V nominal), LL for split phase DER (e.g. 240 V nominal), and LL for three phase DER (e.g., 480 V nominal)."
                 ]
             },
             {
@@ -207,6 +210,9 @@
                 "units": "V",
                 "standards": [
                     "IEEE 1547-2018"
+                ],
+                "comment": [
+                    "Voltages are LN for single phase DER (e.g. 120 V nominal), LL for split phase DER (e.g. 240 V nominal), and LL for three phase DER (e.g., 480 V nominal)."
                 ]
             },
             {
@@ -220,6 +226,9 @@
                 "units": "V",
                 "standards": [
                     "IEEE 1547-2018"
+                ],
+                "comment": [
+                    "Voltages are LN for single phase DER (e.g. 120 V nominal), LL for split phase DER (e.g. 240 V nominal), and LL for three phase DER (e.g., 480 V nominal)."
                 ]
             },
             {
@@ -575,7 +584,10 @@
                 "size": 1,
                 "type": "uint16",
                 "units": "V",
-                "standards": []
+                "standards": [],
+                "comment": [
+                    "Voltages are LN for single phase DER (e.g. 120 V nominal), LL for split phase DER (e.g. 240 V nominal), and LL for three phase DER (e.g., 480 V nominal)."
+                ]
             },
             {
                 "access": "RW",
@@ -586,7 +598,10 @@
                 "size": 1,
                 "type": "uint16",
                 "units": "V",
-                "standards": []
+                "standards": [],
+                "comment": [
+                    "Voltages are LN for single phase DER (e.g. 120 V nominal), LL for split phase DER (e.g. 240 V nominal), and LL for three phase DER (e.g., 480 V nominal)."
+                ]
             },
             {
                 "access": "RW",
@@ -597,7 +612,10 @@
                 "size": 1,
                 "type": "uint16",
                 "units": "V",
-                "standards": []
+                "standards": [],
+                "comment": [
+                    "Voltages are LN for single phase DER (e.g. 120 V nominal), LL for split phase DER (e.g. 240 V nominal), and LL for three phase DER (e.g., 480 V nominal)."
+                ]
             },
             {
                 "access": "RW",

@@ -16,15 +16,10 @@ import os
 #     712: ['Crv.Pt.W', 'Crv.Pt.Var'],
 # }
 
-COMMENT = "Phase voltages should be ."
+COMMENT = ("Voltages are LN for single phase DER (e.g. 120 V nominal), LL for split phase DER "
+           "(e.g. 240 V nominal), and LL for three phase DER (e.g., 480 V nominal).")
 COMMENT_POINTS = {
-    705: ['Crv.Pt.V', 'Crv.Pt.Var'],
-    706: ['Crv.Pt.V', 'Crv.Pt.W'],
-    707: ['Crv.MustTrip.Pt.V', 'Crv.MustTrip.Pt.Tms'],
-    708: ['Crv.MustTrip.Pt.V', 'Crv.MustTrip.Pt.Tms'],
-    709: ['Crv.MustTrip.Pt.Hz', 'Crv.MustTrip.Pt.Tms'],
-    710: ['Crv.MustTrip.Pt.Hz', 'Crv.MustTrip.Pt.Tms'],
-    712: ['Crv.Pt.W', 'Crv.Pt.Var'],
+    702: ['VNomRtg', 'VMaxRtg', 'VMinRtg', 'VNom', 'VMax', 'VMin'],
 }
 
 
