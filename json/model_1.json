@@ -88,6 +88,9 @@
             {
                 "access": "RW",
                 "desc": "Modbus device address",
+                "comment": [
+                    "This point is mandatory for all SunSpec RTU devices and, for those devices, they must support values from 1-247."
+                ],
                 "label": "Device Address",
                 "name": "DA",
                 "size": 1,
