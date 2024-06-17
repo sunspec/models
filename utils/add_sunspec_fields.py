@@ -1,5 +1,5 @@
 """
-This script updates the SunSpec Models with new fields
+This script updates the SunSpec Models with new standards
 """
 import json
 import os

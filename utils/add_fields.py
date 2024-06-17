@@ -6,7 +6,7 @@ import os
 
 
 COMMENT = "Internal curve conformance checks should be conducted when AdptCrvReq is set to 1, not on point writes."
-COMMENT_POINTS = {  # ID and L are added by default
+COMMENT_POINTS = {
     705: ['Crv.Pt.V', 'Crv.Pt.Var'],
     706: ['Crv.Pt.V', 'Crv.Pt.W'],
     707: ['Crv.MustTrip.Pt.V', 'Crv.MustTrip.Pt.Tms'],
@@ -72,20 +72,18 @@ def point_parser(points, name, tabs=0):
             if pt == '.'.join(name.split('.')[2:] + [point['name']]):
                 mandatory = True
                 break
-        if point['name'] == 'ID' or point['name'] == 'L' or mandatory:
-            if point.get('standards') is None:
-                point['standards'] = [COMMENT]
-            elif COMMENT not in point['standards']:
-                point['standards'].append(COMMENT)
+        if mandatory:
+            if point.get('comment') is None:
+                point['comment'] = [COMMENT]
+            elif COMMENT not in point['comment']:
+                point['comment'].append(COMMENT)
             else:
                 # check for duplicates and remove them
-                point['standards'] = list(set(point['standards']))
+                point['comment'] = list(set(point['comment']))
             print('\t' * tabs + '%s.%s (+)' % (name, point['name']))
         else:
-            if point.get('standards') is None:
-                point['standards'] = []
-            elif COMMENT in point['standards']:
-                point['standards'].remove(COMMENT)
+            # if COMMENT in point['comment']:
+            #     point['standards'].remove(COMMENT)
             print('\t' * tabs + '%s.%s (-)' % (name, point['name']))
 
     return points
