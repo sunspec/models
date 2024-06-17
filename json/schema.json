@@ -30,7 +30,6 @@
                 "type": "string"
             }
         }
-
     },
     "definitions": {
         "group": {
@@ -146,6 +145,12 @@
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/symbol"
+                    }
+                },
+                "standards": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
                     }
                 }
             }

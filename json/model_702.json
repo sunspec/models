@@ -235,6 +235,7 @@
             },
             {
                 "desc": "Unused. Please use WOvrExtRtgPF.",
+                "detail": "This point is duplicative of WOvrExtRtgPF.",
                 "label": "PF Over-Excited Rating (Unused)",
                 "name": "PFOvrExtRtg",
                 "sf": "PF_SF",
@@ -245,6 +246,7 @@
             },
             {
                 "desc": "Unused. Please use WUndExtRtgPF.",
+                "detail": "This point is duplicative of WUndExtRtgPF.",
                 "label": "PF Under-Excited Rating (Unused)",
                 "name": "PFUndExtRtg",
                 "sf": "PF_SF",
@@ -611,6 +613,7 @@
             {
                 "access": "RW",
                 "desc": "Unused. Please use WOvrExtPF.",
+                "detail": "This point is duplicative of WOvrExtPF.",
                 "label": "PF Over-Excited Setting (Unused)",
                 "name": "PFOvrExt",
                 "sf": "PF_SF",
@@ -621,6 +624,7 @@
             {
                 "access": "RW",
                 "desc": "Unused. Please use WUndExtPF.",
+                "detail": "This point is duplicative of WUndExtPF.",
                 "label": "PF Under-Excited Setting (Unused)",
                 "name": "PFUndExt",
                 "sf": "PF_SF",
