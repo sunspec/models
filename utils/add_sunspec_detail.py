@@ -72,24 +72,16 @@ def point_parser(points, name, tabs=0):
     """
 
     for point in points:
-        mandatory = False
+        mandatory = False  # flag to update point data
         model = name.split('.')[0]  # get model number
         for pt in COMMENT_POINTS.get(int(model), []):
             if pt == '.'.join(name.split('.')[2:] + [point['name']]):
                 mandatory = True
                 break
         if mandatory:
-            if point.get('detail') is None:
-                point['detail'] = [COMMENT]
-            elif COMMENT not in point['detail']:
-                point['detail'].append(COMMENT)
-            else:
-                # check for duplicates and remove them
-                point['detail'] = list(set(point['detail']))
+            point['detail'] = COMMENT
             print('\t' * tabs + '%s.%s (+)' % (name, point['name']))
         else:
-            # if COMMENT in point['comments']:
-            #     point['standards'].remove(COMMENT)
             print('\t' * tabs + '%s.%s (-)' % (name, point['name']))
 
     return points
