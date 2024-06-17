@@ -79,16 +79,16 @@ def point_parser(points, name, tabs=0):
                 mandatory = True
                 break
         if mandatory:
-            if point.get('comment') is None:
-                point['comment'] = [COMMENT]
-            elif COMMENT not in point['comment']:
-                point['comment'].append(COMMENT)
+            if point.get('comments') is None:
+                point['comments'] = [COMMENT]
+            elif COMMENT not in point['comments']:
+                point['comments'].append(COMMENT)
             else:
                 # check for duplicates and remove them
-                point['comment'] = list(set(point['comment']))
+                point['comments'] = list(set(point['comments']))
             print('\t' * tabs + '%s.%s (+)' % (name, point['name']))
         else:
-            # if COMMENT in point['comment']:
+            # if COMMENT in point['comments']:
             #     point['standards'].remove(COMMENT)
             print('\t' * tabs + '%s.%s (-)' % (name, point['name']))
 

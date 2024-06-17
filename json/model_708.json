@@ -33,7 +33,7 @@
                                         "standards": [
                                             "IEEE 1547-2018"
                                         ],
-                                        "comment": [
+                                        "comments": [
                                             "Internal curve conformance checks should be conducted when AdptCrvReq is set to 1, not on point writes."
                                         ]
                                     },
@@ -49,7 +49,7 @@
                                         "standards": [
                                             "IEEE 1547-2018"
                                         ],
-                                        "comment": [
+                                        "comments": [
                                             "Internal curve conformance checks should be conducted when AdptCrvReq is set to 1, not on point writes."
                                         ]
                                     }
