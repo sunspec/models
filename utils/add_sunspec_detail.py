@@ -1,8 +1,5 @@
 """
-This script updates the SunSpec Models with new comments
-
-Comments are used to annotate the SunSpec Models with groupings or other information.
-These appear at gray rows in the SunSpec Excel sheets.
+This script updates the SunSpec Models with new Detailed Descriptions
 """
 import json
 import os
@@ -82,13 +79,13 @@ def point_parser(points, name, tabs=0):
                 mandatory = True
                 break
         if mandatory:
-            if point.get('comments') is None:
-                point['comments'] = [COMMENT]
-            elif COMMENT not in point['comments']:
-                point['comments'].append(COMMENT)
+            if point.get('detail') is None:
+                point['detail'] = [COMMENT]
+            elif COMMENT not in point['detail']:
+                point['detail'].append(COMMENT)
             else:
                 # check for duplicates and remove them
-                point['comments'] = list(set(point['comments']))
+                point['detail'] = list(set(point['detail']))
             print('\t' * tabs + '%s.%s (+)' % (name, point['name']))
         else:
             # if COMMENT in point['comments']:
