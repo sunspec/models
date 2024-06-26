@@ -36,26 +36,17 @@ def xml_indent(elem, level=0):
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
 
-<<<<<<< HEAD
-class ManifestError(Exception):
-    pass
-
-=======
 
 class ManifestError(Exception):
     pass
 
 
->>>>>>> parent of 0187897 (remove the unsupported XML format)
 class File(object):
     def __init__(self, name=None, md5=None):
         self.name = name
         self.md5 = md5
 
-<<<<<<< HEAD
-=======
 
->>>>>>> parent of 0187897 (remove the unsupported XML format)
 class Manifest(object):
     def __init__(self, path='.', filename=None):
         self.path = path
@@ -176,13 +167,8 @@ class Manifest(object):
                 if name and md5:
                     self.files[name] = md5
 
-<<<<<<< HEAD
-if __name__ == "__main__":
-
-=======
 
 if __name__ == "__main__":
->>>>>>> parent of 0187897 (remove the unsupported XML format)
 
     path = os.path.dirname(os.path.realpath(__file__))
     a = Manifest(path)
