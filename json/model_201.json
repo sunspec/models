@@ -1,8 +1,8 @@
 {
     "group": {
         "desc": "Include this model for single phase (AN or AB) metering",
-        "label": "Meter (Single Phase)single phase (AN or AB) meter",
-        "name": "ac_meter",
+        "label": "Meter (Single Phase) single phase (AN or AB) meter",
+        "name": "ac_meter_an_or_ab",
         "points": [
             {
                 "desc": "Model identifier",

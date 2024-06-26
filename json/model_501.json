@@ -2,7 +2,7 @@
     "group": {
         "desc": "A solar module model supporting DC-DC converter",
         "label": "Solar Module",
-        "name": "solar_module",
+        "name": "solar_module_float",
         "points": [
             {
                 "desc": "Model identifier",

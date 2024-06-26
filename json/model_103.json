@@ -2,7 +2,7 @@
     "group": {
         "desc": "Include this model for three phase inverter monitoring",
         "label": "Inverter (Three Phase)",
-        "name": "inverter",
+        "name": "inverter_three_phase",
         "points": [
             {
                 "desc": "Model identifier",

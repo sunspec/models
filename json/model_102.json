@@ -2,7 +2,7 @@
     "group": {
         "desc": "Include this model for split phase inverter monitoring",
         "label": "Inverter (Split-Phase)",
-        "name": "inverter",
+        "name": "inverter_split_phase",
         "points": [
             {
                 "desc": "Model identifier",

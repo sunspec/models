@@ -2,7 +2,7 @@
     "group": {
         "desc": "Basic Storage Controls ",
         "label": "Storage",
-        "name": "storage",
+        "name": "storage_basic",
         "points": [
             {
                 "desc": "Model identifier",

@@ -1,7 +1,7 @@
 {
     "group": {
         "label": "delta-connect three phase (abc) meter",
-        "name": "ac_meter",
+        "name": "ac_meter_abc_float",
         "points": [
             {
                 "desc": "Model identifier",

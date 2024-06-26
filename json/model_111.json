@@ -2,7 +2,7 @@
     "group": {
         "desc": "Include this model for single phase inverter monitoring using float values",
         "label": "Inverter (Single Phase) FLOAT",
-        "name": "inverter",
+        "name": "inverter_single_phase_float",
         "points": [
             {
                 "desc": "Model identifier",

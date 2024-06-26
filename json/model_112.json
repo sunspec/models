@@ -2,7 +2,7 @@
     "group": {
         "desc": "Include this model for split phase inverter monitoring using float values",
         "label": "Inverter (Split Phase) FLOAT",
-        "name": "inverter",
+        "name": "inverter_split_phase_float",
         "points": [
             {
                 "desc": "Model identifier",
