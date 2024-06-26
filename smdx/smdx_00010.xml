@@ -1,0 +1,83 @@
+<sunSpecModels v="1">
+  <!-- 10: Communication Interface Header -->
+  <model id="10" len="4">
+    <block len="4">
+      <point id="St" offset="0" type="enum16" mandatory="true" >
+        <symbol id="DOWN">0</symbol>
+        <symbol id="UP">1</symbol>
+        <symbol id="FAULT">2</symbol>
+      </point>
+      <point id="Ctl" offset="1" type="uint16" access="rw" />
+      <point id="Typ" offset="2" type="enum16" >
+        <symbol id="UNKNOWN">0</symbol>
+        <symbol id="INTERNAL">1</symbol>
+        <symbol id="TWISTED_PAIR">2</symbol>
+        <symbol id="FIBER">3</symbol>
+        <symbol id="WIRELESS">4</symbol>
+      </point>
+      <point id="Pad" offset="3" type="pad" />
+    </block>
+  </model>
+  <strings id="10" locale="en">
+    <model>
+      <label>Communication Interface Header</label>
+      <description>To be included first for a complete interface description</description>
+      <notes></notes>
+    </model>
+    <point id="St">
+      <label>Interface Status</label>
+      <description>Overall interface status</description>
+      <notes></notes>
+      <symbol id="DOWN">
+        <label>down</label>
+        <description>Interface is down</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UP">
+        <label>up</label>
+        <description>Interface is up</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAULT">
+        <label>fault</label>
+        <description>Interface is in a fault state</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Ctl">
+      <label>Interface Control</label>
+      <description>Overall interface control (TBD)</description>
+      <notes></notes>
+    </point>
+    <point id="Typ">
+      <label>Physical Access Type</label>
+      <description>Enumerated value.  Type of physical media</description>
+      <notes></notes>
+      <symbol id="UNKNOWN">
+        <label>unknown</label>
+        <description>Unknown media</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="INTERNAL">
+        <label>internal</label>
+        <description>Internal e.g. embedded switch</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="TWISTED_PAIR">
+        <label>twisted pair</label>
+        <description>Twisted Pair</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FIBER">
+        <label>fiber</label>
+        <description>Fiber</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="WIFI">
+        <label>wifi</label>
+        <description>WIFI</description>
+        <notes></notes>
+      </symbol>
+    </point>
+  </strings>
+</sunSpecModels>

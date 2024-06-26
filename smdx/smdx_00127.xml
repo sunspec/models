@@ -1,0 +1,73 @@
+<sunSpecModels v="1">
+  <!-- 127: Parameterized Frequency-Watt  -->
+  <model id="127" len="10" name="freq_watt_param">
+    <block len="10" type="fixed">
+      <point id="WGra" offset="0" access="rw" type="uint16" len="1" mandatory="true" units="% PM/Hz" sf="WGra_SF"/>
+      <point id="HzStr" offset="1" access="rw" type="int16" len="1" mandatory="true" units="Hz" sf="HzStrStop_SF"/>
+      <point id="HzStop" offset="2" access="rw" type="int16" len="1" mandatory="true" units="Hz" sf="HzStrStop_SF"/>
+      <point id="HysEna" offset="3" access="rw" type="bitfield16" len="1" mandatory="true">
+        <symbol id="ENABLED">0</symbol>
+      </point>
+      <point id="ModEna" offset="4" access="rw" type="bitfield16" len="1" mandatory="true">
+        <symbol id="ENABLED">0</symbol>
+      </point>
+      <point id="HzStopWGra" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="% WMax/min" sf="RmpIncDec_SF"/>
+      <point id="WGra_SF" offset="6" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="HzStrStop_SF" offset="7" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="RmpIncDec_SF" offset="8" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="Pad" offset="9" access="r" type="pad" len="1" mandatory="false"  />
+    </block>
+  </model>
+  <strings id="127" locale="en">
+    <model>
+      <label>Freq-Watt Param</label>
+      <description>Parameterized Frequency-Watt </description>
+      <notes>Ref 3: 8.9.1.2, 8.9.4.2</notes>
+    </model>
+    <point id="ModEna">
+      <label>ModEna</label>
+      <description>Is Parameterized Frequency-Watt control active.</description>
+      <notes> </notes>
+    </point>
+    <point id="WGra">
+      <label>WGra</label>
+      <description>The slope of the reduction in the maximum allowed watts output as a function of frequency.</description>
+      <notes> </notes>
+    </point>
+    <point id="WGra_SF">
+      <label>WGra_SF</label>
+      <description>Scale factor for output gradient.</description>
+      <notes> </notes>
+    </point>
+    <point id="HzStr">
+      <label>HzStr</label>
+      <description>The frequency deviation from nominal frequency (ECPNomHz) at which a snapshot of the instantaneous power output is taken to act as the CAPPED power level (PM) and above which reduction in power output occurs.</description>
+      <notes> </notes>
+    </point>
+    <point id="HzStop">
+      <label>HzStop</label>
+      <description>The frequency deviation from nominal frequency (ECPNomHz) at which curtailed power output may return to normal and the cap on the power level value is removed.</description>
+      <notes> </notes>
+    </point>
+    <point id="HzStrStop_SF">
+      <label>HzStrStop_SF</label>
+      <description>Scale factor for frequency deviations.</description>
+      <notes> </notes>
+    </point>
+    <point id="HysEna">
+      <label>HysEna</label>
+      <description>Enable hysteresis</description>
+      <notes> </notes>
+    </point>
+    <point id="HzStopWGra">
+      <label>HzStopWGra</label>
+      <description>The maximum time-based rate of change at which power output returns to normal after having been capped by an over frequency event.</description>
+      <notes> </notes>
+    </point>
+    <point id="RmpIncDec_SF">
+      <label>RmpIncDec_SF</label>
+      <description>Scale factor for increment and decrement ramps.</description>
+      <notes> </notes>
+    </point>
+  </strings>
+</sunSpecModels>

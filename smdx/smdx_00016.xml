@@ -1,0 +1,132 @@
+<sunSpecModels v="1">
+  <!-- 16: Simple IP Network -->
+  <model id="16" len="52">
+    <block len="52">
+      <point id="Nam" offset="0" type="string" len="4" access="rw" />
+      <point id="Cfg" offset="4" type="enum16" mandatory="true" >
+        <symbol id="STATIC">0</symbol>
+        <symbol id="DHCP">1</symbol>
+      </point>
+      <point id="Ctl" offset="5" type="bitfield16" mandatory="true" access="rw" >
+        <symbol id="ENABLE_DNS">0</symbol>
+        <symbol id="ENABLE_NTP">1</symbol>
+      </point>
+      <point id="Addr" offset="6" type="string" len="8" mandatory="true" access="rw" />
+      <point id="Msk" offset="14" type="string" len="8" mandatory="true" access="rw" />
+      <point id="Gw" offset="22" type="string" len="8" access="rw" />
+      <point id="DNS1" offset="30" type="string" len="8" access="rw" />
+      <point id="DNS2" offset="38" type="string" len="8" access="rw" />
+      <point id="MAC" offset="46" type="eui48" access="r" />
+      <point id="LnkCtl" offset="50" type="bitfield16" access="rw" >
+        <symbol id="AUTONEGOTIATE">0</symbol>
+        <symbol id="FULL_DUPLEX">1</symbol>
+        <symbol id="FORCE_10MB">2</symbol>
+        <symbol id="FORCE_100MB">3</symbol>
+        <symbol id="FORCE_1GB">4</symbol>
+      </point>
+      <point id="Pad" offset="51" type="pad" />
+    </block>
+  </model>
+  <strings id="16" locale="en">
+    <model>
+      <label>Simple IP Network</label>
+      <description>Include this model for a simple IPv4 network stack</description>
+      <notes></notes>
+    </model>
+    <point id="Nam">
+      <label>Name</label>
+      <description>Interface name.  (8 chars)</description>
+      <notes></notes>
+    </point>
+    <point id="Cfg">
+      <label>Config</label>
+      <description>Enumerated value.  Force IPv4 configuration method</description>
+      <notes></notes>
+      <symbol id="STATIC">
+        <label>static</label>
+        <description>A static IP address is assigned</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DHCP">
+        <label>DHCP</label>
+        <description>Use DHCP to acquire an IP address</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Ctl">
+      <label>Control</label>
+      <description>Bitmask value Configure use of services</description>
+      <notes></notes>
+      <symbol id="ENABLE_DNS">
+        <label>DNS</label>
+        <description>Enable DNS use</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLE_NTP">
+        <label>NTP</label>
+        <description>Enable NTP use</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Addr">
+      <label>Address</label>
+      <description>IP address</description>
+      <notes></notes>
+    </point>
+    <point id="Msk">
+      <label>Netmask</label>
+      <description>Netmask</description>
+      <notes></notes>
+    </point>
+    <point id="Gw">
+      <label>Gateway</label>
+      <description>Gateway IP address</description>
+      <notes></notes>
+    </point>
+    <point id="DNS1">
+      <label>DNS1</label>
+      <description>32 bit IP address of DNS server</description>
+      <notes></notes>
+    </point>
+    <point id="DNS2">
+      <label>DNS2</label>
+      <description>32 bit IP address of DNS server</description>
+      <notes></notes>
+    </point>
+    <point id="MAC">
+      <label>MAC</label>
+      <description>IEEE MAC address of this interface</description>
+      <notes></notes>
+    </point>
+    <point id="LnkCtl">
+      <label>Link Control</label>
+      <description>Bitmask value.  Link control flags</description>
+      <notes></notes>
+      <symbol id="AUTONEGOTIATE">
+        <label>auto-negotiate</label>
+        <description>Enable auto-negotiation</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FULL_DUPLEX">
+        <label>full duplex</label>
+        <description>Force full duplex operation</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FORCE_10MB">
+        <label>10Mbs</label>
+        <description>Force 10 Mb/s link speed</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FORCE_100MB">
+        <label>100Mbs</label>
+        <description>Force 100 Mb/s link speed</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FORCE_1GB">
+        <label>1Gbs</label>
+        <description>Force 1 Gb/s link speed</description>
+        <notes></notes>
+      </symbol>
+    </point>
+  </strings>
+</sunSpecModels>

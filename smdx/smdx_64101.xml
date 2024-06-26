@@ -1,0 +1,22 @@
+<sunSpecModels v="1">
+
+  <!-- 64101: eltek -->
+  <model id="64101" len="7">
+    <block len="7">
+      <point id="Eltek_Country_Code" offset="0" type="uint16" />
+      <point id="Eltek_Feeding_Phase" offset="1" type="uint16" />
+      <point id="Eltek_APD_Method" offset="2" type="uint16" />
+      <point id="Eltek_APD_Power_Ref" offset="3" type="uint16" />
+      <point id="Eltek_RPS_Method" offset="4" type="uint16" />
+      <point id="Eltek_RPS_Q_Ref" offset="5" type="uint16" />
+      <point id="Eltek_RPS_CosPhi_Ref" offset="6" type="int16" />
+    </block>
+  </model>
+  <strings id="64101" locale="en">
+    <model>
+      <label>Eltek Inverter Extension</label>
+      <description></description>
+      <notes></notes>
+    </model>
+  </strings>
+</sunSpecModels>

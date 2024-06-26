@@ -1,0 +1,167 @@
+<sunSpecModels v="1">
+  <!-- 124: Basic Storage Controls  -->
+  <model id="124" len="24" name="storage">
+    <block len="24" type="fixed">
+      <point id="WChaMax" offset="0" access="rw" type="uint16" len="1" mandatory="true" units="W" sf="WChaMax_SF"/>
+      <point id="WChaGra" offset="1" access="rw" type="uint16" len="1" mandatory="true" units="% WChaMax/sec" sf="WChaDisChaGra_SF"/>
+      <point id="WDisChaGra" offset="2" access="rw" type="uint16" len="1" mandatory="true" units="% WChaMax/sec" sf="WChaDisChaGra_SF"/>
+      <point id="StorCtl_Mod" offset="3" access="rw" type="bitfield16" len="1" mandatory="true">
+        <symbol id="CHARGE">0</symbol>
+        <symbol id="DiSCHARGE">1</symbol>
+      </point>
+      <point id="VAChaMax" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="VA" sf="VAChaMax_SF"/>
+      <point id="MinRsvPct" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="% WChaMax" sf="MinRsvPct_SF"/>
+      <point id="ChaState" offset="6" access="r" type="uint16" len="1" mandatory="false" units="% AhrRtg" sf="ChaState_SF"/>
+      <point id="StorAval" offset="7" access="r" type="uint16" len="1" mandatory="false" units="AH" sf="StorAval_SF"/>
+      <point id="InBatV" offset="8" access="r" type="uint16" len="1" mandatory="false" units="V" sf="InBatV_SF"/>
+      <point id="ChaSt" offset="9" access="r" type="enum16" len="1" mandatory="false">
+        <symbol id="OFF">1</symbol>
+        <symbol id="EMPTY">2</symbol>
+        <symbol id="DISCHARGING">3</symbol>
+        <symbol id="CHARGING">4</symbol>
+        <symbol id="FULL">5</symbol>
+        <symbol id="HOLDING">6</symbol>
+        <symbol id="TESTING">7</symbol>
+      </point>
+      <point id="OutWRte" offset="10" access="rw" type="int16" len="1" mandatory="false" units="% WDisChaMax" sf="InOutWRte_SF"/>
+      <point id="InWRte" offset="11" access="rw" type="int16" len="1" mandatory="false" units=" % WChaMax" sf="InOutWRte_SF"/>
+      <point id="InOutWRte_WinTms" offset="12" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="InOutWRte_RvrtTms" offset="13" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="InOutWRte_RmpTms" offset="14" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="ChaGriSet" offset="15" access="rw" type="enum16" len="1" mandatory="false">
+        <symbol id="PV">0</symbol>
+        <symbol id="GRID">1</symbol>
+      </point>
+      <point id="WChaMax_SF" offset="16" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="WChaDisChaGra_SF" offset="17" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="VAChaMax_SF" offset="18" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="MinRsvPct_SF" offset="19" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="ChaState_SF" offset="20" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="StorAval_SF" offset="21" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="InBatV_SF" offset="22" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="InOutWRte_SF" offset="23" access="r" type="sunssf" len="1" mandatory="false"  />
+    </block>
+  </model>
+  <strings id="124" locale="en">
+    <model>
+      <label>Storage</label>
+      <description>Basic Storage Controls </description>
+      <notes>Ref 3: 8.7.4.2</notes>
+    </model>
+    <point id="WChaMax">
+      <label>WChaMax</label>
+      <description>Setpoint for maximum charge.</description>
+      <notes> </notes>
+    </point>
+    <point id="WChaMax_SF">
+      <label>WChaMax_SF</label>
+      <description>Scale factor for maximum charge.</description>
+      <notes> </notes>
+    </point>
+    <point id="VAChaMax">
+      <label>VAChaMax</label>
+      <description>Setpoint for maximum charging VA.</description>
+      <notes> </notes>
+    </point>
+    <point id="VAChaMax_SF">
+      <label>VAChaMax_SF</label>
+      <description>Scale factor for maximum charging VA.</description>
+      <notes> </notes>
+    </point>
+    <point id="WChaGra">
+      <label>WChaGra</label>
+      <description>Setpoint for maximum charging rate. Default is MaxChaRte.</description>
+      <notes> </notes>
+    </point>
+    <point id="WDisChaGra">
+      <label>WDisChaGra</label>
+      <description>Setpoint for maximum discharge rate. Default is MaxDisChaRte.</description>
+      <notes> </notes>
+    </point>
+    <point id="WChaDisChaGra_SF">
+      <label>WChaDisChaGra_SF</label>
+      <description>Scale factor for maximum charge and discharge rate.</description>
+      <notes> </notes>
+    </point>
+    <point id="MinRsvPct">
+      <label>MinRsvPct</label>
+      <description>Setpoint for minimum reserve for storage as a percentage of the nominal maximum storage.</description>
+      <notes> </notes>
+    </point>
+    <point id="MinRsvPct_SF">
+      <label>MinRsvPct_SF</label>
+      <description>Scale factor for minimum reserve percentage.</description>
+      <notes> </notes>
+    </point>
+    <point id="ChaState">
+      <label>ChaState</label>
+      <description>Currently available energy as a percent of the capacity rating.</description>
+      <notes> </notes>
+    </point>
+    <point id="ChaState_SF">
+      <label>ChaState_SF</label>
+      <description>Scale factor for available energy percent.</description>
+      <notes> </notes>
+    </point>
+    <point id="StorAval">
+      <label>StorAval</label>
+      <description>State of charge (ChaState) minus storage reserve (MinRsvPct) times capacity rating (AhrRtg).</description>
+      <notes> </notes>
+    </point>
+    <point id="StorAval_SF">
+      <label>StorAval_SF</label>
+      <description>Scale factor for state of charge.</description>
+      <notes> </notes>
+    </point>
+    <point id="InBatV">
+      <label>InBatV</label>
+      <description>Internal battery voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="InBatV_SF">
+      <label>InBatV_SF</label>
+      <description>Scale factor for battery voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="ChaSt">
+      <label>ChaSt</label>
+      <description>Charge status of storage device. Enumerated value.</description>
+      <notes> </notes>
+    </point>
+    <point id="StorCtl_Mod">
+      <label>StorCtl_Mod</label>
+      <description>Activate hold/discharge/charge storage control mode. Bitfield value.</description>
+      <notes> </notes>
+    </point>
+    <point id="OutWRte">
+      <label>OutWRte</label>
+      <description>Percent of max discharge rate.</description>
+      <notes> </notes>
+    </point>
+    <point id="InWRte">
+      <label>InWRte</label>
+      <description>Percent of max charging rate.</description>
+      <notes> </notes>
+    </point>
+    <point id="InOutWRte_SF">
+      <label>InOutWRte_SF</label>
+      <description>Scale factor for percent charge/discharge rate.</description>
+      <notes> </notes>
+    </point>
+    <point id="InOutWRte_WinTms">
+      <label>InOutWRte_WinTms</label>
+      <description>Time window for charge/discharge rate change.</description>
+      <notes> </notes>
+    </point>
+    <point id="InOutWRte_RvrtTms">
+      <label>InOutWRte_RvrtTms</label>
+      <description>Timeout period for charge/discharge rate.</description>
+      <notes> </notes>
+    </point>
+    <point id="InOutWRte_RmpTms">
+      <label>InOutWRte_RmpTms</label>
+      <description>Ramp time for moving from current setpoint to new setpoint.</description>
+      <notes> </notes>
+    </point>
+  </strings>
+</sunSpecModels>

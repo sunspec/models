@@ -1,0 +1,56 @@
+<sunSpecModels v="1">
+  <!-- 1: common -->
+  <model id="1" len="66" name="common">
+    <block len="66">
+      <point id="Mn" offset="0" type="string" len="16" mandatory="true" />
+      <point id="Md" offset="16" type="string" len="16" mandatory="true" />
+      <point id="Opt" offset="32" type="string" len="8" />
+      <point id="Vr" offset="40" type="string" len="8" />
+      <point id="SN" offset="48" type="string" len="16" mandatory="true" />
+      <point id="DA" offset="64" type="uint16" access="rw" />
+      <point id="Pad" offset="65" type="pad" access="r" />
+    </block>
+  </model>
+  <strings id="1" locale="en">
+    <model>
+      <label>Common</label>
+      <description>All SunSpec compliant devices must include this as the first model</description>
+      <notes></notes>
+    </model>
+    <point id="Mn">
+      <label>Manufacturer</label>
+      <description>Well known value registered with SunSpec for compliance</description>
+      <notes></notes>
+    </point>
+    <point id="Md">
+      <label>Model</label>
+      <description>Manufacturer specific value (32 chars)</description>
+      <notes></notes>
+    </point>
+    <point id="Opt">
+      <label>Options</label>
+      <description>Manufacturer specific value (16 chars)</description>
+      <notes></notes>
+    </point>
+    <point id="Vr">
+      <label>Version</label>
+      <description>Manufacturer specific value (16 chars)</description>
+      <notes></notes>
+    </point>
+    <point id="SN">
+      <label>Serial Number</label>
+      <description>Manufacturer specific value (32 chars)</description>
+      <notes></notes>
+    </point>
+    <point id="DA">
+      <label>Device Address</label>
+      <description>Modbus device address</description>
+      <notes></notes>
+    </point>
+    <point id="Pad">
+      <label></label>
+      <description>Force even alignment</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

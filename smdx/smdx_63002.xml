@@ -1,0 +1,16 @@
+<sunSpecModels v="1">
+  <!-- 1: common -->
+  <model id="63002" len="4">
+    <block type="repeating" len="4">
+      <point id="sunssf_1"      offset="0"    type="sunssf" />
+      <point id="int16_1"       offset="1"    type="int16"   sf="sunssf_1"  access="rw"/>
+      <point id="int16_2"       offset="2"    type="int16"   sf="sunssf_2" />
+      <point id="sunssf_2"      offset="3"    type="sunssf" />
+    </block>
+  </model>
+  <strings id="63002" locale="en">
+    <model>
+      <label>SunSpec Test Model 2</label>
+    </model>
+  </strings>
+</sunSpecModels>

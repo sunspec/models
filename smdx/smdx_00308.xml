@@ -1,0 +1,40 @@
+<sunSpecModels v="1">
+
+  <!-- 308: Mini Met Model -->
+  <model id="308" len="4" name="mini_met">
+    <block len="4">
+      <point id="GHI" offset="0" type="uint16" units="W/m2" mandatory="false"/>
+      <point id="TmpBOM" offset="1" type="int16" sf="-1" units="C" mandatory="false"/>
+      <point id="TmpAmb" offset="2" type="int16" sf="-1" units="C" mandatory="false"/>
+      <point id="WndSpd" offset="3" type="uint16" units="m/s" mandatory="false"/>
+    </block>
+  </model>
+  <strings id="308" locale="en">
+    <model>
+      <label>Mini Met Model</label>
+      <description>Include to support a few basic measurements</description>
+      <notes></notes>
+    </model>
+    <point id="GHI">
+      <label>GHI</label>
+      <description>Global Horizontal Irradiance</description>
+      <notes></notes>
+    </point>
+    <point id="TmpBOM">
+      <label>Temp</label>
+      <description>Back of module temperature measurement</description>
+      <notes></notes>
+    </point>
+    <point id="TmpAmb">
+      <label>Ambient Temperature</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="WndSpd">
+      <label>Wind Speed</label>
+      <description></description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>
+

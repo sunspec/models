@@ -1,0 +1,178 @@
+<sunSpecModels v="1">
+  <!-- 122: Inverter Controls Extended Measurements and Status  -->
+  <model id="122" len="44" name="status">
+    <block len="44" type="fixed">
+      <point id="PVConn" offset="0" access="r" type="bitfield16" len="1" mandatory="true">
+        <symbol id="CONNECTED">0</symbol>
+        <symbol id="AVAILABLE">1</symbol>
+        <symbol id="OPERATING">2</symbol>
+        <symbol id="TEST">3</symbol>
+      </point>
+      <point id="StorConn" offset="1" access="r" type="bitfield16" len="1" mandatory="true">
+        <symbol id="CONNECTED">0</symbol>
+        <symbol id="AVAILABLE">1</symbol>
+        <symbol id="OPERATING">2</symbol>
+        <symbol id="TEST">3</symbol>
+      </point>
+      <point id="ECPConn" offset="2" access="r" type="bitfield16" len="1" mandatory="true">
+        <symbol id="CONNECTED">0</symbol>
+      </point>
+      <point id="ActWh" offset="3" access="r" type="acc64" len="4" mandatory="false" units="Wh" />
+      <point id="ActVAh" offset="7" access="r" type="acc64" len="4" mandatory="false" units="VAh" />
+      <point id="ActVArhQ1" offset="11" access="r" type="acc64" len="4" mandatory="false" units="varh" />
+      <point id="ActVArhQ2" offset="15" access="r" type="acc64" len="4" mandatory="false" units="varh" />
+      <point id="ActVArhQ3" offset="19" access="r" type="acc64" len="4" mandatory="false" units="varh" />
+      <point id="ActVArhQ4" offset="23" access="r" type="acc64" len="4" mandatory="false" units="varh" />
+      <point id="VArAval" offset="27" access="r" type="int16" len="1" mandatory="false" units="var" sf="VArAval_SF"/>
+      <point id="VArAval_SF" offset="28" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="WAval" offset="29" access="r" type="uint16" len="1" mandatory="false" units="var" sf="WAval_SF"/>
+      <point id="WAval_SF" offset="30" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="StSetLimMsk" offset="31" access="r" type="bitfield32" len="2" mandatory="false">
+        <symbol id="WMax">0</symbol>
+        <symbol id="VAMax">1</symbol>
+        <symbol id="VArAval">2</symbol>
+        <symbol id="VArMaxQ1">3</symbol>
+        <symbol id="VArMaxQ2">4</symbol>
+        <symbol id="VArMaxQ3">5</symbol>
+        <symbol id="VArMaxQ4">6</symbol>
+        <symbol id="PFMinQ1">7</symbol>
+        <symbol id="PFMinQ2">8</symbol>
+        <symbol id="PFMinQ3">9</symbol>
+        <symbol id="PFMinQ4">10</symbol>
+      </point>
+      <point id="StActCtl" offset="33" access="r" type="bitfield32" len="2" mandatory="false">
+        <symbol id="FixedW">0</symbol>
+        <symbol id="FixedVAR">1</symbol>
+        <symbol id="FixedPF">2</symbol>
+        <symbol id="Volt-VAr">3</symbol>
+        <symbol id="Freq-Watt-Param">4</symbol>
+        <symbol id="Freq-Watt-Curve">5</symbol>
+        <symbol id="Dyn-Reactive-Current">6</symbol>
+        <symbol id="LVRT">7</symbol>
+        <symbol id="HVRT">8</symbol>
+        <symbol id="Watt-PF">9</symbol>
+        <symbol id="Volt-Watt">10</symbol>
+        <symbol id="Scheduled">12</symbol>
+        <symbol id="LFRT">13</symbol>
+        <symbol id="HFRT">14</symbol>
+      </point>
+      <point id="TmSrc" offset="35" access="r" type="string" len="4" mandatory="false"  />
+      <point id="Tms" offset="39" access="r" type="uint32" len="2" mandatory="false" units="Secs" />
+      <point id="RtSt" offset="41" access="r" type="bitfield16" len="1" mandatory="false">
+        <symbol id="LVRT_ACTIVE">0</symbol>
+        <symbol id="HVRT_ACTIVE">1</symbol>
+        <symbol id="LFRT_ACTIVE">2</symbol>
+        <symbol id="HFRT_ACTIVE">3</symbol>
+      </point>
+      <point id="Ris" offset="42" access="r" type="uint16" len="1" mandatory="false" units="ohms" sf="Ris_SF"/>
+      <point id="Ris_SF" offset="43" access="r" type="sunssf" len="1" mandatory="false"  />
+    </block>
+  </model>
+  <strings id="122" locale="en">
+    <model>
+      <label>Measurements_Status</label>
+      <description>Inverter Controls Extended Measurements and Status </description>
+      <notes>Ref 3: 8.14.3.2, Ref 4: 17</notes>
+    </model>
+    <point id="PVConn">
+      <label>PVConn</label>
+      <description>PV inverter present/available status. Enumerated value.</description>
+      <notes> </notes>
+    </point>
+    <point id="StorConn">
+      <label>StorConn</label>
+      <description>Storage inverter present/available status. Enumerated value.</description>
+      <notes> </notes>
+    </point>
+    <point id="ECPConn">
+      <label>ECPConn</label>
+      <description>ECP connection status: disconnected=0  connected=1.</description>
+      <notes> </notes>
+    </point>
+    <point id="ActWh">
+      <label>ActWh</label>
+      <description>AC lifetime active (real) energy output.</description>
+      <notes> </notes>
+    </point>
+    <point id="ActVAh">
+      <label>ActVAh</label>
+      <description>AC lifetime apparent energy output.</description>
+      <notes> </notes>
+    </point>
+    <point id="ActVArhQ1">
+      <label>ActVArhQ1</label>
+      <description>AC lifetime reactive energy output in quadrant 1.</description>
+      <notes> </notes>
+    </point>
+    <point id="ActVArhQ2">
+      <label>ActVArhQ2</label>
+      <description>AC lifetime reactive energy output in quadrant 2.</description>
+      <notes> </notes>
+    </point>
+    <point id="ActVArhQ3">
+      <label>ActVArhQ3</label>
+      <description>AC lifetime negative energy output  in quadrant 3.</description>
+      <notes> </notes>
+    </point>
+    <point id="ActVArhQ4">
+      <label>ActVArhQ4</label>
+      <description>AC lifetime reactive energy output  in quadrant 4.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArAval">
+      <label>VArAval</label>
+      <description>Amount of VARs available without impacting watts output.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArAval_SF">
+      <label>VArAval_SF</label>
+      <description>Scale factor for available VARs.</description>
+      <notes> </notes>
+    </point>
+    <point id="WAval">
+      <label>WAval</label>
+      <description>Amount of Watts available.</description>
+      <notes> </notes>
+    </point>
+    <point id="WAval_SF">
+      <label>WAval_SF</label>
+      <description>Scale factor for available Watts.</description>
+      <notes> </notes>
+    </point>
+    <point id="StSetLimMsk">
+      <label>StSetLimMsk</label>
+      <description>Bit Mask indicating setpoint limit(s) reached.</description>
+      <notes>Bits shall be automatically cleared on read.</notes>
+    </point>
+    <point id="StActCtl">
+      <label>StActCtl</label>
+      <description>Bit Mask indicating which inverter controls are currently active.</description>
+      <notes> </notes>
+    </point>
+    <point id="TmSrc">
+      <label>TmSrc</label>
+      <description>Source of time synchronization.</description>
+      <notes> </notes>
+    </point>
+    <point id="Tms">
+      <label>Tms</label>
+      <description>Seconds since 01-01-2000 00:00 UTC</description>
+      <notes> </notes>
+    </point>
+    <point id="RtSt">
+      <label>RtSt</label>
+      <description>Bit Mask indicating active ride-through status.</description>
+      <notes> </notes>
+    </point>
+    <point id="Ris">
+      <label>Ris</label>
+      <description>Isolation resistance.</description>
+      <notes> </notes>
+    </point>
+    <point id="Ris_SF">
+      <label>Ris_SF</label>
+      <description>Scale factor for isolation resistance.</description>
+      <notes> </notes>
+    </point>
+  </strings>
+</sunSpecModels>

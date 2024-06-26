@@ -1,0 +1,39 @@
+<sunSpecModels v="1">
+  <!-- 302: Reference Point Model -->
+  <model id="306" len="4" name="ref_point">
+    <block len="4">
+      <point id="GHI" offset="0" type="uint16" units="W/m2" mandatory="false"/>
+      <point id="A" offset="1" type="uint16" units="W/m2" mandatory="false"/>
+      <point id="V" offset="2" type="uint16" units="W/m2" mandatory="false"/>
+      <point id="Tmp" offset="3" type="uint16" units="W/m2" mandatory="false"/>
+    </block>
+  </model>
+  <strings id="306" locale="en">
+    <model>
+      <label>Reference Point Model</label>
+      <description>Include to support a standard reference point</description>
+      <notes></notes>
+    </model>
+    <point id="GHI">
+      <label>GHI</label>
+      <description>Global Horizontal Irradiance</description>
+      <notes></notes>
+    </point>
+    <point id="A">
+      <label>Amps</label>
+      <description>Current measurement at reference point</description>
+      <notes></notes>
+    </point>
+    <point id="V">
+      <label>Voltage</label>
+      <description>Voltage  measurement at reference point</description>
+      <notes></notes>
+    </point>
+    <point id="Tmp">
+      <label>Temperature</label>
+      <description>Temperature measurement at reference point</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>
+

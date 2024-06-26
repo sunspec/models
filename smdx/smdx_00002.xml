@@ -1,0 +1,107 @@
+<sunSpecModels v="1">
+  <!-- 2: basic aggregator -->
+  <model id="2" len="14" name="aggregator">
+    <block len="14">
+      <point id="AID" offset="0" type="uint16" mandatory="true" />
+      <point id="N" offset="1" type="uint16" mandatory="true" />
+      <point id="UN" offset="2" type="uint16" mandatory="true" />
+      <point id="St" offset="3" type="enum16" mandatory="true">
+        <symbol id="OFF">1</symbol>
+        <symbol id="ON">2</symbol>
+        <symbol id="FULL">3</symbol>
+        <symbol id="FAULT">4</symbol>
+      </point>
+      <point id="StVnd" offset="4" type="enum16" />
+      <point id="Evt" offset="5" type="bitfield32" mandatory="true" >
+        <symbol id="GROUND_FAULT">0</symbol>
+        <symbol id="INPUT_OVER_VOLTAGE">1</symbol>
+        <symbol id="RESERVED_2">2</symbol>
+        <symbol id="DC_DISCONNECT">3</symbol>
+        <symbol id="RESERVED_4">4</symbol>
+        <symbol id="RESERVED_5">5</symbol>
+        <symbol id="MANUAL_SHUTDOWN">6</symbol>
+        <symbol id="OVER_TEMPERATURE">7</symbol>
+        <symbol id="RESERVED_8">8</symbol>
+        <symbol id="RESERVED_9">9</symbol>
+        <symbol id="RESERVED_10">10</symbol>
+        <symbol id="RESERVED_11">11</symbol>
+        <symbol id="BLOWN_FUSE">12</symbol>
+        <symbol id="UNDER_TEMPERATURE">13</symbol>
+        <symbol id="MEMORY_LOSS">14</symbol>
+        <symbol id="ARC_DETECTION">15</symbol>
+        <symbol id="THEFT_DETECTION">16</symbol>
+        <symbol id="OUTPUT_OVER_CURRENT">17</symbol>
+        <symbol id="OUTPUT_OVER_VOLTAGE">18</symbol>
+        <symbol id="OUTPUT_UNDER_VOLTAGE">19</symbol>
+        <symbol id="TEST_FAILED">20</symbol>
+      </point>
+      <point id="EvtVnd" offset="7" type="bitfield32" />
+      <point id="Ctl" offset="9" type="enum16" >
+        <symbol id="NONE">0</symbol>
+        <symbol id="AUTOMATIC">1</symbol>
+        <symbol id="FORCE_OFF">2</symbol>
+        <symbol id="TEST">3</symbol>
+        <symbol id="THROTTLE">4</symbol>
+      </point>
+      <point id="CtlVnd" offset="10" type="enum32" />
+      <point id="CtlVl" offset="12" type="enum32" />
+    </block>
+  </model>
+  <strings id="2" locale="en">
+    <model>
+      <label>Basic Aggregator</label>
+      <description>Aggregates a collection of models for a given model id</description>
+      <notes></notes>
+    </model>
+    <point id="AID">
+      <label>AID</label>
+      <description>Aggregated model id</description>
+      <notes></notes>
+    </point>
+    <point id="N">
+      <label>N</label>
+      <description>Number of aggregated models</description>
+      <notes></notes>
+    </point>
+    <point id="UN">
+      <label>UN</label>
+      <description>Update Number.  Incrementing number each time the mapping is changed.  If the number is not changed from the last reading the direct access to a specific offset will result in reading the same logical model as before.  Otherwise the entire model must be read to refresh the changes</description>
+      <notes></notes>
+    </point>
+    <point id="St">
+      <label>Status</label>
+      <description>Enumerated status code</description>
+      <notes></notes>
+    </point>
+    <point id="StVnd">
+      <label>Vendor Status</label>
+      <description>Vendor specific status code</description>
+      <notes></notes>
+    </point>
+    <point id="Evt">
+      <label>Event Code</label>
+      <description>Bitmask event code</description>
+      <notes></notes>
+    </point>
+    <point id="EvtVnd">
+      <label>Vendor Event Code</label>
+      <description>Vendor specific event code</description>
+      <notes></notes>
+    </point>
+    <point id="Ctl">
+      <label>Control</label>
+      <description>Control register for all aggregated devices</description>
+      <notes></notes>
+    </point>
+    <point id="CtlVnd">
+      <label>Vendor Control</label>
+      <description>Vendor control register for all aggregated devices</description>
+      <notes></notes>
+    </point>
+    <point id="CtlVl">
+      <label>Control Value</label>
+      <description>Numerical value used as a parameter to the control</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

@@ -1,0 +1,80 @@
+<sunSpecModels v="1">
+  <!-- 307: meteorological v1.1 -->
+  <model id="307" len="11" name="base_met">
+    <block len="11">
+      <point id="TmpAmb" offset="0" type="int16" sf="-1" units="C" />
+      <point id="RH" offset="1" type="int16" units="Pct" />
+      <point id="Pres" offset="2" type="int16" units="HPa" />
+      <point id="WndSpd" offset="3" type="int16" units="mps" />
+      <point id="WndDir" offset="4" type="int16" units="deg" />
+      <point id="Rain" offset="5" type="int16" units="mm" />
+      <point id="Snw" offset="6" type="int16" units="mm" />
+      <point id="PPT" offset="7" type="int16" />
+      <point id="ElecFld" offset="8" type="int16" units="Vm" />
+      <point id="SurWet" offset="9" type="int16" units="kO" />
+      <point id="SoilWet" offset="10" type="int16" units="Pct" />
+    </block>
+  </model>
+  <strings id="307" locale="en">
+    <model>
+      <label>Base Met</label>
+      <description>Base Meteorological Model</description>
+      <notes>This model supersedes model 301</notes>
+    </model>
+    <point id="TmpAmb">
+      <label>Ambient Temperature</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="RH">
+      <label>Relative Humidity</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Pres">
+      <label>Barometric Pressure</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="WndSpd">
+      <label>Wind Speed</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="WndDir">
+      <label>Wind Direction</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Rain">
+      <label>Rainfall</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Snw">
+      <label>Snow Depth</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="PPT">
+      <label>Precipitation Type</label>
+      <description> Precipitation Type (WMO 4680 SYNOP code reference)</description>
+      <notes></notes>
+    </point>
+    <point id="ElecFld">
+      <label>Electric Field</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="SurWet">
+      <label>Surface Wetness</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="SoilWet">
+      <label>Soil Wetness</label>
+      <description></description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

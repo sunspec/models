@@ -1,0 +1,22 @@
+<sunSpecModels v="1">
+
+  <!-- 303: Back of Module Temperature Model -->
+  <model id="303" len="1" name="bom_temp">
+    <block type="repeating" len="1" name="temp">
+      <point id="TmpBOM" offset="0" type="int16" units="C" sf="-1"  mandatory="true"/>
+    </block>
+  </model>
+  <strings id="303" locale="en">
+    <model>
+      <label>Back of Module Temperature Model</label>
+      <description>Include to support variable number of  back of module temperature measurements</description>
+      <notes></notes>
+    </model>
+    <point id="TmpBOM">
+      <label>Temp</label>
+      <description>Back of module temperature measurement</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>
+

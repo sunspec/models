@@ -1,0 +1,37 @@
+<sunSpecModels v="1">
+  <!-- 8: get device security certificate  -->
+  <model id="8" len="3">
+    <block len="2">
+      <point id="Fmt"   offset="0" type="enum16" access="r" mandatory="true">
+        <symbol id="NONE">0</symbol>
+        <symbol id="X509_PEM">1</symbol>
+        <symbol id="X509_DER">2</symbol>
+      </point>
+      <point id="N" offset="1" type="uint16" access="r" mandatory="true" />
+    </block>
+    <block type="repeating" len="1">
+      <point id="Cert" offset="0" type="uint16" access="r" mandatory="true" />
+    </block>
+  </model>
+  <strings id="8" locale="en">
+    <model>
+      <label>Get Device Security Certificate</label>
+      <description>Security model for PKI</description>
+    </model>
+    <point id="Fmt">
+      <label>Format</label>
+      <description>X.509 format of the certificate. DER or PEM.</description>
+      <symbol id="NONE"><label>NONE</label></symbol>
+      <symbol id="X509_PEM"><label>PEM</label></symbol>
+      <symbol id="X509_DER"><label>DER</label></symbol>
+    </point>
+    <point id="N">
+      <label>N</label>
+      <description>Number of registers to follow for the certificate</description>
+    </point>
+    <point id="Cert">
+      <label>Cert</label>
+      <description>X.509 Certificate of the device</description>
+    </point>
+  </strings>
+</sunSpecModels>

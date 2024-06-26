@@ -1,0 +1,32 @@
+<sunSpecModels v="1">
+  <!-- 304: Inclinometer Model -->
+  <model id="304" len="6" name="inclinometer">
+    <block len="6" type="repeating" name="incl">
+      <point id="Inclx" offset="0" type="int32" sf="-2" units="Degrees" mandatory="true"/>
+      <point id="Incly" offset="2" type="int32" sf="-2" units="Degrees" mandatory="false"/>
+      <point id="Inclz" offset="4" type="int32" sf="-2" units="Degrees" mandatory="false"/>
+    </block>
+  </model>
+  <strings id="304" locale="en">
+    <model>
+      <label>Inclinometer Model</label>
+      <description>Include to support orientation measurements</description>
+      <notes></notes>
+    </model>
+    <point id="Inclx">
+      <label>X</label>
+      <description>X-Axis inclination</description>
+      <notes></notes>
+    </point>
+    <point id="Incly">
+      <label>Y</label>
+      <description>Y-Axis inclination</description>
+      <notes></notes>
+    </point>
+    <point id="Inclz">
+      <label>Z</label>
+      <description>Z-Axis inclination</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

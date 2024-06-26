@@ -1,0 +1,84 @@
+<sunSpecModels v="1">
+  <!-- 1: common -->
+  <model id="63001" len="152">
+    <block len="134">
+      <point id="sunssf_1"      offset="0"    type="sunssf" />
+      <point id="sunssf_2"      offset="1"    type="sunssf" />
+      <point id="sunssf_3"      offset="2"    type="sunssf" />
+      <point id="sunssf_4"      offset="3"    type="sunssf" />
+      <point id="int16_1"       offset="4"    type="int16"   sf="sunssf_1" />
+      <point id="int16_2"       offset="5"    type="int16"   sf="sunssf_2" />
+      <point id="int16_3"       offset="6"    type="int16"   sf="sunssf_3" />
+      <point id="int16_4"       offset="7"    type="int16"   sf="sunssf_4"  access="rw"/>
+      <point id="int16_5"       offset="8"    type="int16" />
+      <point id="int16_u"       offset="9"    type="int16" />
+      <point id="uint16_1"      offset="10"   type="uint16"  sf="sunssf_1" />
+      <point id="uint16_2"      offset="11"   type="uint16"  sf="sunssf_2" />
+      <point id="uint16_3"      offset="12"   type="uint16"  sf="sunssf_3" />
+      <point id="uint16_4"      offset="13"   type="uint16"  sf="sunssf_4"  access="rw"/>
+      <point id="uint16_5"      offset="14"   type="uint16" />
+      <point id="uint16_u"      offset="15"   type="uint16" />
+      <point id="acc16"         offset="16"   type="acc16" />
+      <point id="acc16_u"       offset="17"   type="acc16" />
+      <point id="enum16"        offset="18"   type="enum16" />
+      <point id="enum16_u"      offset="19"   type="enum16" />
+      <point id="bitfield16"    offset="20"   type="bitfield16" />
+      <point id="bitfield16_u"  offset="21"   type="bitfield16" />
+      <point id="int32_1"       offset="22"   type="int32"   sf="sunssf_5" />
+      <point id="int32_2"       offset="24"   type="int32"   sf="sunssf_6" />
+      <point id="int32_3"       offset="26"   type="int32"   sf="sunssf_7"  access="rw"/>
+      <point id="int32_4"       offset="28"   type="int32" />
+      <point id="int32_5"       offset="30"   type="int32" />
+      <point id="int32_u"       offset="32"   type="int32" />
+      <point id="uint32_1"      offset="34"   type="uint32"  sf="sunssf_5" />
+      <point id="uint32_2"      offset="36"   type="uint32"  sf="sunssf_6" />
+      <point id="uint32_3"      offset="38"   type="uint32"  sf="sunssf_7"  access="rw"/>
+      <point id="uint32_4"      offset="40"   type="uint32"  sf="1" />
+      <point id="uint32_5"      offset="42"   type="uint32" />
+      <point id="uint32_u"      offset="44"   type="uint32" />
+      <point id="acc32"         offset="46"   type="acc32" />
+      <point id="acc32_u"       offset="48"   type="acc32" />
+      <point id="enum32"        offset="50"   type="enum32" />
+      <point id="enum32_u"      offset="52"   type="enum32" />
+      <point id="bitfield32"    offset="54"   type="bitfield32" />
+      <point id="bitfield32_u"  offset="56"   type="bitfield32" />
+      <point id="ipaddr"        offset="58"   type="ipaddr"  access="rw"/>
+      <point id="ipaddr_u"      offset="60"   type="ipaddr" />
+      <point id="int64"         offset="62"   type="int64"  access="rw"/>
+      <point id="int64_u"       offset="66"   type="int64" />
+      <point id="acc64"         offset="70"   type="acc64" />
+      <point id="acc64_u"       offset="74"   type="acc64" />
+      <point id="ipv6addr"      offset="78"   type="ipv6addr" />
+      <point id="ipv6addr_u"    offset="86"   type="ipv6addr" />
+      <point id="float32"       offset="94"   type="float32"  access="rw"/>
+      <point id="float32_u"     offset="96"   type="float32" />
+      <point id="string"        offset="98"   type="string"  len="16"  access="rw"/>
+      <point id="string_u"      offset="114"  type="string"  len="16"/>
+      <point id="sunssf_5"      offset="130"  type="sunssf" />
+      <point id="sunssf_6"      offset="131"  type="sunssf" />
+      <point id="sunssf_7"      offset="132"  type="sunssf" />
+      <point id="pad_1"         offset="133"  type="pad" />
+    </block>
+    <block type="repeating" len="18">
+      <point id="sunssf_8"      offset="0"    type="sunssf" />
+      <point id="int16_11"      offset="1"    type="int16"   sf="sunssf_8"  access="rw"/>
+      <point id="int16_12"      offset="2"    type="int16"   sf="sunssf_9" />
+      <point id="int16_u"       offset="3"    type="int16" />
+      <point id="uint16_11"     offset="4"    type="uint16"  sf="sunssf_8"  access="rw"/>
+      <point id="uint16_12"     offset="5"    type="uint16"  sf="sunssf_9" />
+      <point id="uint16_13"     offset="6"    type="uint16" />
+      <point id="uint16_u"      offset="7"    type="uint16" />
+      <point id="int32"         offset="8"    type="int32"   sf="sunssf_1"  access="rw"/>
+      <point id="int32_u"       offset="10"   type="int32" />
+      <point id="uint32"        offset="12"   type="uint32"  sf="sunssf_9"  access="rw"/>
+      <point id="uint32_u"      offset="14"   type="uint32" />
+      <point id="sunssf_9"      offset="16"   type="sunssf" />
+      <point id="pad_2"         offset="17"   type="pad" />
+    </block>
+  </model>
+  <strings id="63001" locale="en">
+    <model>
+      <label>SunSpec Test Model 1</label>
+    </model>
+  </strings>
+</sunSpecModels>

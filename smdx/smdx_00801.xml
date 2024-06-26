@@ -1,0 +1,20 @@
+<sunSpecModels v="1">
+  <!-- 801: Energy Storage Base Model (DEPRECATED) -->
+  <model id="801" len="1" name="storage">
+    <block len="1">
+      <point id="DEPRECATED" offset="0" type="enum16" mandatory="true" />
+    </block>
+  </model>
+  <strings id="801" locale="en">
+    <model>
+      <label>Energy Storage Base Model (DEPRECATED)</label>
+      <description>This model has been deprecated.</description>
+      <notes></notes>
+    </model>
+    <point id="DEPRECATED">
+      <label>Deprecated Model</label>
+      <description>This model has been deprecated.</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

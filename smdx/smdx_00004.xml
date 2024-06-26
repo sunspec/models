@@ -1,0 +1,188 @@
+<sunSpecModels v="1">
+  <!-- 4: secure dataset read response model -->
+  <model id="4" len="61">
+    <block len="60">
+      <point id="RqSeq" offset="0" type="uint16" access="r" mandatory="true"/>
+      <point id="Sts" offset="1" type="enum16" access="r" mandatory="true">
+        <symbol id="SUCCESS">0</symbol>
+        <symbol id="DS">1</symbol>
+        <symbol id="ACL">2</symbol>
+        <symbol id="OFF">3</symbol>
+      </point>
+      <point id="X" offset="2" type="uint16" access="r" mandatory="true"/>
+      <point id="Val1" offset="3" type="uint16" access="r" mandatory="true" />
+      <point id="Val2" offset="4" type="uint16" access="r" mandatory="true" />
+      <point id="Val3" offset="5" type="uint16" access="r" mandatory="true" />
+      <point id="Val4" offset="6" type="uint16" access="r" mandatory="true" />
+      <point id="Val5" offset="7" type="uint16" access="r" mandatory="true" />
+      <point id="Val6" offset="8" type="uint16" access="r" mandatory="true" />
+      <point id="Val7" offset="9" type="uint16" access="r" mandatory="true" />
+      <point id="Val8" offset="10" type="uint16" access="r" mandatory="true" />
+      <point id="Val9" offset="11" type="uint16" access="r" mandatory="true" />
+      <point id="Val10" offset="12" type="uint16" access="r" mandatory="true" />
+      <point id="Val11" offset="13" type="uint16" access="r" mandatory="true" />
+      <point id="Val12" offset="14" type="uint16" access="r" mandatory="true" />
+      <point id="Val13" offset="15" type="uint16" access="r" mandatory="true" />
+      <point id="Val14" offset="16" type="uint16" access="r" mandatory="true" />
+      <point id="Val15" offset="17" type="uint16" access="r" mandatory="true" />
+      <point id="Val16" offset="18" type="uint16" access="r" mandatory="true" />
+      <point id="Val17" offset="19" type="uint16" access="r" mandatory="true" />
+      <point id="Val18" offset="20" type="uint16" access="r" mandatory="true" />
+      <point id="Val19" offset="21" type="uint16" access="r" mandatory="true" />
+      <point id="Val20" offset="22" type="uint16" access="r" mandatory="true" />
+      <point id="Val21" offset="23" type="uint16" access="r" mandatory="true" />
+      <point id="Val22" offset="24" type="uint16" access="r" mandatory="true" />
+      <point id="Val23" offset="25" type="uint16" access="r" mandatory="true" />
+      <point id="Val24" offset="26" type="uint16" access="r" mandatory="true" />
+      <point id="Val25" offset="27" type="uint16" access="r" mandatory="true" />
+      <point id="Val26" offset="28" type="uint16" access="r" mandatory="true" />
+      <point id="Val27" offset="29" type="uint16" access="r" mandatory="true" />
+      <point id="Val28" offset="30" type="uint16" access="r" mandatory="true" />
+      <point id="Val29" offset="31" type="uint16" access="r" mandatory="true" />
+      <point id="Val30" offset="32" type="uint16" access="r" mandatory="true" />
+      <point id="Val31" offset="33" type="uint16" access="r" mandatory="true" />
+      <point id="Val32" offset="34" type="uint16" access="r" mandatory="true" />
+      <point id="Val33" offset="35" type="uint16" access="r" mandatory="true" />
+      <point id="Val34" offset="36" type="uint16" access="r" mandatory="true" />
+      <point id="Val35" offset="37" type="uint16" access="r" mandatory="true" />
+      <point id="Val36" offset="38" type="uint16" access="r" mandatory="true" />
+      <point id="Val37" offset="39" type="uint16" access="r" mandatory="true" />
+      <point id="Val38" offset="40" type="uint16" access="r" mandatory="true" />
+      <point id="Val39" offset="41" type="uint16" access="r" mandatory="true" />
+      <point id="Val40" offset="42" type="uint16" access="r" mandatory="true" />
+      <point id="Val41" offset="43" type="uint16" access="r" mandatory="true" />
+      <point id="Val42" offset="44" type="uint16" access="r" mandatory="true" />
+      <point id="Val43" offset="45" type="uint16" access="r" mandatory="true" />
+      <point id="Val44" offset="46" type="uint16" access="r" mandatory="true" />
+      <point id="Val45" offset="47" type="uint16" access="r" mandatory="true" />
+      <point id="Val46" offset="48" type="uint16" access="r" mandatory="true" />
+      <point id="Val47" offset="49" type="uint16" access="r" mandatory="true" />
+      <point id="Val48" offset="50" type="uint16" access="r" mandatory="true" />
+      <point id="Val49" offset="51" type="uint16" access="r" mandatory="true" />
+      <point id="Val50" offset="52" type="uint16" access="r" mandatory="true" />
+      <point id="Ts"   offset="53" type="uint32" access="r" mandatory="true" />
+      <point id="Ms" offset="55" type="uint16" access="r" mandatory="true" />
+      <point id="Seq" offset="56" type="uint16" access="r" mandatory="true" />
+      <point id="Alm" offset="57" type="enum16" mandatory="true">
+        <symbol id="NONE">0</symbol>
+        <symbol id="ALM">1</symbol>
+      </point>
+      <point id="Alg"   offset="58" type="enum16" access="r" mandatory="true">
+        <symbol id="NONE">0</symbol>
+        <symbol id="AES-GMAC-64">1</symbol>
+        <symbol id="ECC-256">2</symbol>
+      </point>
+      <point id="N" offset="59" type="uint16" access="r" mandatory="true" />
+    </block>
+    <block type="repeating" len="1">
+      <point id="DS" offset="0" type="uint16" access="r" mandatory="true" />
+    </block>
+  </model>
+  <strings id="4" locale="en">
+    <model>
+      <label>Secure Dataset Read Response</label>
+      <description>Compute a digital signature over a specified set of data registers</description>
+      <notes></notes>
+    </model>
+    <point id="Alm">
+      <label>Alarm</label>
+      <description>Bitmask alarm code</description>
+      <notes></notes>
+      <symbol id="NONE">
+        <label>NONE</label>
+        <description>No Alarms</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ALM">
+        <label>ALARM</label>
+        <description>Security Alarm</description>
+        <notes>Tampered</notes>
+      </symbol>
+    </point>
+    <point id="Ts">
+      <label>Timestamp</label>
+      <description>Timestamp value is the number of seconds since January 1, 2000</description>
+      <notes></notes>
+    </point>
+    <point id="Ms">
+      <label>Milliseconds</label>
+      <description>Millisecond counter 0-999</description>
+      <notes></notes>
+    </point>
+    <point id="Alg">
+      <label>Algorithm</label>
+      <description>Algorithm used to compute the digital signature</description>
+      <notes>For future proof</notes>
+      <symbol id="NONE">
+        <label>NONE</label>
+        <description>No digital signature</description>
+        <notes>For test purposes only</notes>
+      </symbol>
+      <symbol id="AES-GMAC-64">
+        <label>AES-GMAC-64</label>
+        <description>64 bit AES signature algorithm is used</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ECC-256">
+        <label>ECC-256</label>
+        <description>256 bit ECC signature algorithm is used</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Sts">
+      <label>Status</label>
+      <description>Status of last read operation</description>
+      <notes></notes>
+      <symbol id="SUCCESS">
+        <label>SUCCESS</label>
+        <description>Operation succeeded</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DS">
+        <label>DS</label>
+        <description>Operation failed digital signature check</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ACL">
+        <label>ACL</label>
+        <description>Operation failed access control check</description>
+        <notes>One or more registers were not writable by this role</notes>
+      </symbol>
+      <symbol id="OFF">
+        <label>OFF</label>
+        <description>Operation failed offset check</description>
+        <notes>Offset out of range or missing from multi-register value</notes>
+      </symbol>
+    </point>
+    <point id="N">
+      <label>N</label>
+      <description>Number of registers comprising the digital signature.</description>
+      <notes>The value of N must be at least 4 (64 bits)</notes>
+    </point>
+    <point id="X">
+      <label>X</label>
+      <description>Number of values from the request</description>
+      <notes>A max of 50 values are allocated</notes>
+    </point>
+    <point id="Val1">
+      <label>Value1</label>
+      <description>Copy of value from register Off1.</description>
+      <notes>Unused values shall return 0xFFFF (unimplemented)</notes>
+    </point>
+    <point id="DS">
+      <label>DS</label>
+      <description>Digital Signature</description>
+      <notes>The DS covers all registers from X to N and is N registers in length</notes>
+    </point>
+    <point id="RqSeq">
+      <label>Request Sequence</label>
+      <description>Sequence number from the request</description>
+      <notes></notes>
+    </point>
+    <point id="Seq">
+      <label>Sequence</label>
+      <description>Sequence number of response</description>
+      <notes>Shall be advanced for each response</notes>
+    </point>
+  </strings>
+</sunSpecModels>

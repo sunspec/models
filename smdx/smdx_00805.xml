@@ -1,0 +1,204 @@
+<sunSpecModels v="1">
+
+  <!-- 805: Lithium-Ion Module Model -->
+  <model id="805" len="46" name="lithium-ion-module">
+    <block len="42">
+      <point id="StrIdx" offset="0" type="uint16" mandatory="true" />
+      <point id="ModIdx" offset="1" type="uint16" mandatory="true" />
+      <point id="NCell" offset="2" type="uint16" mandatory="true" />
+      <point id="SoC" offset="3" type="uint16" sf="SoC_SF" units="%" />
+      <point id="DoD" offset="4" type="uint16" sf="DoD_SF" units="%" />
+      <point id="SoH" offset="5" type="uint16" sf="SoH_SF" units="%" />
+      <point id="NCyc" offset="6" type="uint32" />
+      <point id="V" offset="8" sf="V_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellVMax" offset="9" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellVMaxCell" offset="10" type="uint16" />
+      <point id="CellVMin" offset="11" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellVMinCell" offset="12" type="uint16" />
+      <point id="CellVAvg" offset="13" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellTmpMax" offset="14" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="CellTmpMaxCell" offset="15" type="uint16" />
+      <point id="CellTmpMin" offset="16" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="CellTmpMinCell" offset="17" type="uint16" />
+      <point id="CellTmpAvg" offset="18" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="NCellBal" offset="19" type="uint16" />
+      <point id="SN" offset="20" len="16" type="string" />
+      <point id="SoC_SF" offset="36" type="sunssf" />
+      <point id="SoH_SF" offset="37" type="sunssf" />
+      <point id="DoD_SF" offset="38" type="sunssf" />
+      <point id="V_SF" offset="39" type="sunssf" mandatory="true" />
+      <point id="CellV_SF" offset="40" type="sunssf" mandatory="true" />
+      <point id="Tmp_SF" offset="41" type="sunssf" mandatory="true" />
+    </block>
+    <block type="repeating" len="4" name="lithium-ion-module-cell">
+      <point id="CellV" offset="0" sf="CellV_SF" units="V" type="uint16" mandatory="true" />
+      <point id="CellTmp" offset="1" sf="Tmp_SF" units="C" type="int16" mandatory="true" />
+      <point id="CellSt" offset="2" type="bitfield32">
+        <symbol id="CELL_IS_BALANCING">0</symbol>
+      </point>
+    </block>
+  </model>
+
+  <strings id="805" locale="en">
+
+    <model>
+      <label>Lithium-Ion Module Model</label>
+      <description></description>
+      <notes></notes>
+    </model>
+
+    <!-- Fixed Block Strings -->
+
+    <point id="StrIdx">
+      <label>String Index</label>
+      <description>Index of the string containing the module.</description>
+      <notes>Indices are one-based.</notes>
+    </point>
+    <point id="ModIdx">
+      <label>Module Index</label>
+      <description>Index of the module within the string.</description>
+      <notes>Indices are one-based.</notes>
+    </point>
+    <point id="NCell">
+      <label>Module Cell Count</label>
+      <description>Count of all cells in the module.</description>
+      <notes></notes>
+    </point>
+    <point id="SoC">
+      <label>Module SoC</label>
+      <description>Module state of charge, expressed as a percentage.</description>
+      <notes></notes>
+    </point>
+    <point id="SoH">
+      <label>Module SoH</label>
+      <description>Module state of health, expressed as a percentage.</description>
+      <notes></notes>
+    </point>
+    <point id="V">
+      <label>Module Voltage</label>
+      <description>Voltage of the module.</description>
+      <notes>Measurement.</notes>
+    </point>
+    <point id="DoD">
+      <label>Depth of Discharge</label>
+      <description>Depth of discharge for the module.</description>
+      <notes>Measurement.</notes>
+    </point>
+    <point id="CellVMax">
+      <label>Max Cell Voltage</label>
+      <description>Maximum voltage for all cells in the module.</description>
+      <notes>Measurement.</notes>
+    </point>
+    <point id="CellVMaxCell">
+      <label>Max Cell Voltage Cell</label>
+      <description>Cell with the maximum voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="CellVMin">
+      <label>Min Cell Voltage</label>
+      <description>Minimum voltage for all cells in the module.</description>
+      <notes>Measurement.</notes>
+    </point>
+    <point id="CellVMinCell">
+      <label>Min Cell Voltage Cell</label>
+      <description>Cell with the minimum voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="CellVAvg">
+      <label>Average Cell Voltage</label>
+      <description>Average voltage for all cells in the module.</description>
+      <notes>Calculation based on measurements.</notes>
+    </point>
+    <point id="CellTmpMax">
+      <label>Max Cell Temperature</label>
+      <description>Maximum temperature for all cells in the module.</description>
+      <notes>Measurement.</notes>
+    </point>
+    <point id="CellTmpMaxCell">
+      <label>Max Cell Temperature Cell</label>
+      <description>Cell with the maximum cell temperature.</description>
+      <notes></notes>
+    </point>
+    <point id="CellTmpMin">
+      <label>Min Cell Temperature</label>
+      <description>Minimum temperature for all cells in the module.</description>
+      <notes>Measurement.</notes>
+    </point>
+    <point id="CellTmpMinCell">
+      <label>Min Cell Temperature Cell</label>
+      <description>Cell with the minimum cell temperature.</description>
+      <notes></notes>
+    </point>
+    <point id="CellTmpAvg">
+      <label>Average Cell Temperature</label>
+      <description>Average temperature for all cells in the module.</description>
+      <notes>Calculation based on measurements.</notes>
+    </point>
+    <point id="SN">
+      <label>Serial Number</label>
+      <description>Serial number for the module.</description>
+    </point>
+    <point id="NCellBal">
+      <label>Balanced Cell Count</label>
+      <description>Number of cells currently being balanced in the module.</description>
+    </point>
+    <point id="NCyc">
+      <label>Cycle Count</label>
+      <description>Count of cycles executed.</description>
+    </point>
+    <point id="V_SF">
+      <label></label>
+      <description>Scale factor for module voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="SoC_SF">
+      <label></label>
+      <description>Scale factor for module state of charge.</description>
+      <notes></notes>
+    </point>
+    <point id="SoH_SF">
+      <label></label>
+      <description>Scale factor for module state of health.</description>
+      <notes></notes>
+    </point>
+    <point id="DoD_SF">
+      <label></label>
+      <description>Scale factor for module depth of discharge.</description>
+      <notes></notes>
+    </point>
+    <point id="CellV_SF">
+      <label></label>
+      <description>Scale factor for cell voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="Tmp_SF">
+      <label></label>
+      <description>Scale factor for module temperature.</description>
+      <notes></notes>
+    </point>
+
+    <!-- Repeating Block Strings -->
+
+    <point id="CellV">
+      <label>Cell Voltage</label>
+      <description>Cell terminal voltage.</description>
+      <notes>Measurement.</notes>
+    </point>
+    <point id="CellTmp">
+      <label>Cell Temperature</label>
+      <description>Cell temperature.</description>
+      <notes>Measurement.</notes>
+    </point>
+    <point id="CellSt">
+      <label>Cell Status</label>
+      <description>Status of the cell.</description>
+      <notes></notes>
+      <symbol id="CELL_IS_BALANCING">
+        <label>Cell Is Balancing</label>
+        <description>Cell is currently being balanced.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+
+   </strings>
+</sunSpecModels>

@@ -1,0 +1,45 @@
+<sunSpecModels v="1">
+  <!-- 302: Irradiance Model -->
+  <model id="302" len="5" name="irradiance">
+    <block len="5" type="repeating">
+      <point id="GHI" offset="0" type="uint16" units="W/m2" mandatory="false"/>
+      <point id="POAI" offset="1" type="uint16" units="W/m2" mandatory="false"/>
+      <point id="DFI" offset="2" type="uint16" units="W/m2" mandatory="false"/>
+      <point id="DNI" offset="3" type="uint16" units="W/m2" mandatory="false"/>
+      <point id="OTI" offset="4" type="uint16" units="W/m2" mandatory="false"/>
+    </block>
+  </model>
+  <strings id="302" locale="en">
+    <model>
+      <label>Irradiance Model</label>
+      <description>Include to support various irradiance measurements</description>
+      <notes></notes>
+    </model>
+    <point id="GHI">
+      <label>GHI</label>
+      <description>Global Horizontal Irradiance</description>
+      <notes></notes>
+    </point>
+    <point id="POAI">
+      <label>POAI</label>
+      <description>Plane-of-Array Irradiance</description>
+      <notes></notes>
+    </point>
+    <point id="DFI">
+      <label>DFI</label>
+      <description>Diffuse Irradiance</description>
+      <notes></notes>
+    </point>
+    <point id="DNI">
+      <label>DNI</label>
+      <description>Direct Normal Irradiance</description>
+      <notes></notes>
+    </point>
+    <point id="OTI">
+      <label>OTI</label>
+      <description>Other Irradiance</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>
+

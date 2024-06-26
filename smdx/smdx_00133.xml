@@ -1,0 +1,302 @@
+<sunSpecModels v="1">
+  <!-- 133: Basic Scheduling  -->
+  <model id="133" len="66" name="schedule">
+    <block len="6" type="fixed">
+      <point id="ActSchd" offset="0" access="rw" type="bitfield32" len="2" mandatory="true">
+        <symbol id="SCHED1">0</symbol>
+        <symbol id="SCHED2">1</symbol>
+        <symbol id="SCHED3">2</symbol>
+        <symbol id="SCHED4">3</symbol>
+        <symbol id="SCHED5">4</symbol>
+        <symbol id="SCHED6">5</symbol>
+        <symbol id="SCHED7">6</symbol>
+        <symbol id="SCHED8">7</symbol>
+        <symbol id="SCHED9">8</symbol>
+        <symbol id="SCHED10">9</symbol>
+        <symbol id="SCHED12">10</symbol>
+        <symbol id="SCHED13">11</symbol>
+        <symbol id="SCHED14">12</symbol>
+        <symbol id="SCHED15">13</symbol>
+        <symbol id="SCHED16">14</symbol>
+        <symbol id="SCHED17">15</symbol>
+        <symbol id="SCHED18">16</symbol>
+        <symbol id="SCHED19">17</symbol>
+        <symbol id="SCHED20">18</symbol>
+        <symbol id="SCHED21">19</symbol>
+        <symbol id="SCHED22">21</symbol>
+        <symbol id="SCHED23">22</symbol>
+        <symbol id="SCHED24">23</symbol>
+        <symbol id="SCHED25">24</symbol>
+        <symbol id="SCHED26">25</symbol>
+        <symbol id="SCHED27">26</symbol>
+        <symbol id="SCHED28">27</symbol>
+        <symbol id="SCHED29">28</symbol>
+        <symbol id="SCHED30">29</symbol>
+        <symbol id="SCHED31">30</symbol>
+        <symbol id="SCHED32">31</symbol>
+      </point>
+      <point id="ModEna" offset="2" access="rw" type="bitfield16" len="1" mandatory="true">
+        <symbol id="ENABLED">0</symbol>
+      </point>
+      <point id="NSchd" offset="3" access="r" type="uint16" len="1" mandatory="true"  />
+      <point id="NPts" offset="4" access="r" type="uint16" len="1" mandatory="true"  />
+      <point id="Pad" offset="5" access="r" type="pad" len="1" mandatory="false" />
+    </block>
+    <block len="60" type="repeating">
+      <point id="ActPts" offset="0" access="rw" type="uint16" len="1" mandatory="true"  />
+      <point id="StrTms" offset="1" access="rw" type="uint32" len="2" mandatory="true" units="Secs" />
+      <point id="RepPer" offset="3" access="rw" type="uint16" len="1" mandatory="true"  />
+      <point id="IntvTyp" offset="4" access="rw" type="enum16" len="1" mandatory="true">
+        <symbol id="ONETIME">0</symbol>
+        <symbol id="DAILY">1</symbol>
+        <symbol id="WEEKLY">2</symbol>
+        <symbol id="MONTHLY">3</symbol>
+        <symbol id="WEEKDAY">4</symbol>
+        <symbol id="HOLIDAY">5</symbol>
+        <symbol id="WEEKEND">6</symbol>
+        <symbol id="YEARLY">7</symbol>
+      </point>
+      <point id="XTyp" offset="5" access="rw" type="enum16" len="1" mandatory="true">
+        <symbol id="UNSET">0</symbol>
+        <symbol id="TIME">1</symbol>
+        <symbol id="TEMP">2</symbol>
+        <symbol id="PRICE">3</symbol>
+        <symbol id="OTHER">99</symbol>
+      </point>
+      <point id="X_SF" offset="6" access="rw" type="sunssf" len="1" mandatory="true"  />
+      <point id="YTyp" offset="7" access="rw" type="enum16" len="1" mandatory="true">
+        <symbol id="UNSET">0</symbol>
+        <symbol id="WMax">1</symbol>
+        <symbol id="RSRVD2">2</symbol>
+        <symbol id="PF">3</symbol>
+        <symbol id="RSRVD4">4</symbol>
+        <symbol id="WATT_PRICE">5</symbol>
+        <symbol id="VAR_PRICE">6</symbol>
+        <symbol id="RSRVD7">7</symbol>
+        <symbol id="VOLT_VAR_ARRAY">8</symbol>
+        <symbol id="WChaGra">9</symbol>
+        <symbol id="WDisChaGra">10</symbol>
+        <symbol id="VArAval">11</symbol>
+        <symbol id="Schedule">12</symbol>
+        <symbol id="OTHER">99</symbol>
+      </point>
+      <point id="Y_SF" offset="8" access="rw" type="sunssf" len="1" mandatory="true"  />
+      <point id="X1" offset="9" access="rw" type="int32" len="2" mandatory="true"  sf="X_SF"/>
+      <point id="Y1" offset="11" access="rw" type="int32" len="2" mandatory="true"  sf="Y_SF"/>
+      <point id="X2" offset="13" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
+      <point id="Y2" offset="15" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
+      <point id="X3" offset="17" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
+      <point id="Y3" offset="19" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
+      <point id="X4" offset="21" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
+      <point id="Y4" offset="23" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
+      <point id="X5" offset="25" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
+      <point id="Y5" offset="27" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
+      <point id="X6" offset="29" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
+      <point id="Y6" offset="31" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
+      <point id="X7" offset="33" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
+      <point id="Y7" offset="35" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
+      <point id="X8" offset="37" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
+      <point id="Y8" offset="39" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
+      <point id="X9" offset="41" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
+      <point id="Y9" offset="43" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
+      <point id="X10" offset="45" access="rw" type="int32" len="2" mandatory="false"  sf="X_SF"/>
+      <point id="Y10" offset="47" access="rw" type="int32" len="2" mandatory="false"  sf="Y_SF"/>
+      <point id="Nam" offset="49" access="rw" type="string" len="8" mandatory="false"  />
+      <point id="WinTms" offset="57" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="RmpTms" offset="58" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="ActIndx" offset="59" access="r" type="uint16" len="1" mandatory="true"  />
+    </block>
+  </model>
+  <strings id="133" locale="en">
+    <model>
+      <label>Basic Scheduling</label>
+      <description>Basic Scheduling </description>
+      <notes>Ref 2: 2.2.8</notes>
+    </model>
+    <point id="NSchd">
+      <label>NSchd</label>
+      <description>Number of schedules supported (recommend min. 4, max 32)</description>
+      <notes> </notes>
+    </point>
+    <point id="NPts">
+      <label>NPts</label>
+      <description>Number of schedule entries supported (maximum of 10).</description>
+      <notes> </notes>
+    </point>
+    <point id="ModEna">
+      <label>ModEna</label>
+      <description>Is basic scheduling active.</description>
+      <notes> </notes>
+    </point>
+    <point id="ActSchd">
+      <label>ActSchd</label>
+      <description>Bitfield of active schedules</description>
+      <notes> </notes>
+    </point>
+    <point id="Nam">
+      <label>Nam</label>
+      <description>Optional description for schedule.</description>
+      <notes> </notes>
+    </point>
+    <point id="ActPts">
+      <label>ActPts</label>
+      <description>Number of active entries in schedule.</description>
+      <notes> </notes>
+    </point>
+    <point id="ActIndx">
+      <label>ActIndx</label>
+      <description>Index of active entry in the active schedule.</description>
+      <notes> </notes>
+    </point>
+    <point id="StrTms">
+      <label>StrTms</label>
+      <description>Schedule start in seconds since 2000 JAN 01 00:00:00 UTC.</description>
+      <notes> </notes>
+    </point>
+    <point id="RepPer">
+      <label>RepPer</label>
+      <description>The repetition count for time-based schedules (0=repeat forever)</description>
+      <notes> </notes>
+    </point>
+    <point id="IntvTyp">
+      <label>SchdTyp</label>
+      <description>The repetition frequency for time-based schedules: no repeat=0</description>
+      <notes> </notes>
+    </point>
+    <point id="XTyp">
+      <label>XTyp</label>
+      <description>The meaning of the X-values in the array. </description>
+      <notes> </notes>
+    </point>
+    <point id="X_SF">
+      <label>X_SF</label>
+      <description>Scale factor for schedule range values.</description>
+      <notes> </notes>
+    </point>
+    <point id="YTyp">
+      <label>YTyp</label>
+      <description>The meaning of the Y-values in the array.</description>
+      <notes> </notes>
+    </point>
+    <point id="Y_SF">
+      <label>Y_SF</label>
+      <description>Scale factor for schedule target values.</description>
+      <notes> </notes>
+    </point>
+    <point id="WinTms">
+      <label>WinTms</label>
+      <description>Time window for schedule entry change.</description>
+      <notes> </notes>
+    </point>
+    <point id="RmpTms">
+      <label>RmpTms</label>
+      <description>Ramp time for moving from current target to new target.</description>
+      <notes> </notes>
+    </point>
+    <point id="Pad">
+      <label>Pad</label>
+      <description>Pad register.</description>
+      <notes> </notes>
+    </point>
+    <point id="X1">
+      <label>X1</label>
+      <description>Entry 1 range.</description>
+      <notes> </notes>
+    </point>
+    <point id="Y1">
+      <label>Y1</label>
+      <description>Entry 1 target.</description>
+      <notes> </notes>
+    </point>
+    <point id="X2">
+      <label>X2</label>
+      <description>Entry 2 range.</description>
+      <notes> </notes>
+    </point>
+    <point id="Y2">
+      <label>Y2</label>
+      <description>Entry 2 target.</description>
+      <notes> </notes>
+    </point>
+    <point id="X3">
+      <label>X3</label>
+      <description>Entry 3 range.</description>
+      <notes> </notes>
+    </point>
+    <point id="Y3">
+      <label>Y3</label>
+      <description>Entry 3 target.</description>
+      <notes> </notes>
+    </point>
+    <point id="X4">
+      <label>X4</label>
+      <description>Entry 4 range.</description>
+      <notes> </notes>
+    </point>
+    <point id="Y4">
+      <label>Y4</label>
+      <description>Entry 4 target.</description>
+      <notes> </notes>
+    </point>
+    <point id="X5">
+      <label>X5</label>
+      <description>Entry 15range.</description>
+      <notes> </notes>
+    </point>
+    <point id="Y5">
+      <label>Y5</label>
+      <description>Entry 5 target.</description>
+      <notes> </notes>
+    </point>
+    <point id="X6">
+      <label>X6</label>
+      <description>Entry 6 range.</description>
+      <notes> </notes>
+    </point>
+    <point id="Y6">
+      <label>Y6</label>
+      <description>Entry 6 target.</description>
+      <notes> </notes>
+    </point>
+    <point id="X7">
+      <label>X7</label>
+      <description>Entry 7 range.</description>
+      <notes> </notes>
+    </point>
+    <point id="Y7">
+      <label>Y7</label>
+      <description>Entry 7 target.</description>
+      <notes> </notes>
+    </point>
+    <point id="X8">
+      <label>X8</label>
+      <description>Entry 8 range.</description>
+      <notes> </notes>
+    </point>
+    <point id="Y8">
+      <label>Y8</label>
+      <description>Entry 8 target.</description>
+      <notes> </notes>
+    </point>
+    <point id="X9">
+      <label>X9</label>
+      <description>Entry 9 range.</description>
+      <notes> </notes>
+    </point>
+    <point id="Y9">
+      <label>Y9</label>
+      <description>Entry 9 target.</description>
+      <notes> </notes>
+    </point>
+    <point id="X10">
+      <label>X10</label>
+      <description>Entry 10 range.</description>
+      <notes> </notes>
+    </point>
+    <point id="Y10">
+      <label>Y10</label>
+      <description>Entry 10 target.</description>
+      <notes> </notes>
+    </point>
+  </strings>
+</sunSpecModels>

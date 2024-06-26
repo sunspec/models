@@ -1,0 +1,71 @@
+2012 October 2 : Torben Mueller, Weidmueller DE reported String Combiner event 10 "Combiner Cabinet Open" as missing from the SMDX/PICS.  Added back in for points Evt and InEvt.  Models affected: All String Combiner models 401,402,403,404.
+
+2012 October 2 : Bill Randle, AEI reported an incorrect entry for Inverter Control Scheduling.  StrTms has a type of uint16 that should be uint32.  Type and offests updated.  Models affected: IC 133.
+
+2012 October 2 : Bill Randle, AEI reported an incorrect symbol name in the Inverter Control Basic Settings.  A recent 61850 change for the PFSign symbols of EEI .vs. IEEE was not picked up in the SMDX.  Models affected: IC 121.
+
+2012 October 3 : Bill Randle, AEI reported incorrect register names in the Inverter Control Basic Settings.  Register 4 named VAMax_SF should be named WMax_SF. Register 14 name VAMax_SF should be VRef_SF   Models affected: IC 121.
+
+2012 Octoboer 23 : Flo Yee, Solectria renewables reported incorrect type of TmpAmb.  uint16 should be int16.   Models affected: E 308.
+
+2012 October 26: Bill Randle, AEI reported incorrect type for PF in the Watt-PF function.  PF should be a signed value (int16), not unsigned (unit16).  Models affected: IC 131
+
+2012 November 1: Bob Fox, Loggerware reported use of the degree symbol problematic to denote °C.  It was agreed to use just "C" to denote degrees centrigrade in the units.  Models affected: E 303, 308
+
+2012 November 1: Bob Fox, Loggerware reported missing fixed scalefactors in environmental models.  Models affected: E 303, 304, 308
+
+2012 November 2: Bob Fox, Loggerware reported pad register not needed in E 302 model.  Removed pad.  Models affected E 302
+
+2012 November 8: Bill Randle, AEI.  Updates to incorporate changes from SEP2.0 and IEC 61850-90-7, other errata. Models affected IC 120-134
+
+2012 Matthieue Laroche, Mersen.  Contributed new vendor extension model for Mersen string monitor.  Model affected V 64020.
+
+2012 December 4: Bob Fox, Loggerware reported typos in the meter models for the TotWhImp measurements.  These should be A, B, C.  Models affected M 201,202,203,204,211,212,213,214
+
+2012 December 6: Phillip Windisch, Fronius.  Change request was lost.  Readded the DeptRef and DeptRef_SF to the Volt-Watt curve to give more flexibilty to the meaning of DeptRef.  Models affected IC 126,132.
+
+2012 December 7: John Nunneley, SunSpec.  Transcription error in SC 402 missing InN.  Models affected SC 402.
+
+2013 February 5: Bob Fox, Loggerware.  Change request was lost.  Readded 2012 October 3 : Bill Randle, AEI reported incorrect register names in the Inverter Control Basic Settings.  Register 4 named VAMax_SF should be named WMax_SF. Models affected IC 121.
+
+2013 February 6: Andrew Murray, Array Technology. Contributed DRAFT 2 of Tracker Model.  Models affected T 601.
+
+2013 March, April: Bill Randle, AEI.  Contributed many corrections and improvements to the IC models.  Models affected all IC.
+
+2013 April 8: Bill Randle, AEI.  Contribute DRAFT frequency ride through and voltage ride through models.  Models affected IC 135-138
+
+2013 April 25: John Blair, Power-One, Contributed Test 1 of MPPT Model.  Models affected I 160.
+
+2013 April 29: Philipp Windisch, Fronius, Bill Randle AEI.  Contributed fixes to IC models.  Models affected all IC.
+
+2013 April 29: John Nunneley, SunSpec.  Corrected offsets in models.  Models affected C 1, NC 16, M 305
+
+2013 April 29: John Nunneley, SunSpec.  Contributed DRAFT secure read and write models.  Models affected SEC 3-4.
+
+------------------------------------------
+Models moved to SunSpec models repository
+------------------------------------------
+
+2014 January 9: Bob Fox, Loggerware. Updates from the last SunSpec official release not previously checked in; correction of some model lengths; addition of model/repeating block name attributes; addition of test models 6300x.
+
+2015 April 7: Bob Fox, SunSpec. Updated model 11 to correct MAC address point; added new point type of eui48. Added storage models 801, 802, and 803.
+
+2015 June 3: Bob Fox, SunSpec. Updated model 63001. Added a constant scale factor to point uint32_4. Added label information.
+
+2015 June 3: Bob Fox, SunSpec. Updated model 63002 to include label information.
+
+2016 February 4: Bob Fox SunSpec. Corrected acc32 to float32 in models 211, 212, 213, 214.
+
+2016 February 4: Bob Fox SunSpec. Removed scale factor definition from DeptRef definition in model 126.
+
+2016 April 20: Bob Fox, SunSpec. Corrected model length to the convention of fixed block + one repeating block.
+
+2016 April 20: Bob Fox SunSpec. Corrected units for model 121 WGra to be per second rather per minute to be consistent with previous correction to IEC 61850-7-420.
+
+2016 July 14: Andrew Miller, Doosan GridTech. Updated models 801, 802, 803, 804, 805, 806, 807, 808, 809 reflecting changes for the draft 4 revision of the SunSpec storage models.
+
+2016 Oct 16: Andrew Miller, Doosan GridTech. Updated model 803 correcting miscellaneous issues found in first publication of Draft 4
+
+2016 Oct 16: Bob Fox SunSpec. Added proposed models 139-145 in test status.
+
+

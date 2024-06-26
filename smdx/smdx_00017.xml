@@ -1,0 +1,151 @@
+<sunSpecModels v="1">
+  <!-- 17: Serial Interface -->
+  <model id="17" len="12">
+    <block len="12">
+      <point id="Nam" offset="0" type="string" len="4" access="rw" />
+      <point id="Rte" offset="4" type="uint32" mandatory="true" access="rw" units="bps" />
+      <point id="Bits" offset="6" type="uint16" mandatory="true" access="rw" />
+      <point id="Pty" offset="7" type="enum16" mandatory="true" access="rw" >
+        <symbol id="NONE">0</symbol>
+        <symbol id="ODD">1</symbol>
+        <symbol id="EVEN">2</symbol>
+      </point>
+      <point id="Dup" offset="8" type="enum16" access="rw" >
+        <symbol id="FULL">0</symbol>
+        <symbol id="HALF">1</symbol>
+      </point>
+      <point id="Flw" offset="9" type="enum16" access="rw" >
+        <symbol id="NONE">0</symbol>
+        <symbol id="HW">1</symbol>
+        <symbol id="XONXOFF">2</symbol>
+      </point>
+      <point id="Typ" offset="10" type="enum16" >
+        <symbol id="UNKNOWN">0</symbol>
+        <symbol id="RS232">1</symbol>
+        <symbol id="RS485">2</symbol>
+      </point>
+      <point id="Pcol" offset="11" type="enum16" >
+        <symbol id="UNKNOWN">0</symbol>
+        <symbol id="MODBUS">1</symbol>
+        <symbol id="VENDOR">2</symbol>
+      </point>
+    </block>
+  </model>
+  <strings id="17" locale="en">
+    <model>
+      <label>Serial Interface</label>
+      <description>Include this model for serial interface configuration support</description>
+      <notes></notes>
+    </model>
+    <point id="Nam">
+      <label>Name</label>
+      <description>Interface name (8 chars)</description>
+      <notes></notes>
+    </point>
+    <point id="Rte">
+      <label>Rate</label>
+      <description>Interface baud rate in bits per second</description>
+      <notes></notes>
+    </point>
+    <point id="Bits">
+      <label>Bits</label>
+      <description>Number of data bits per character</description>
+      <notes></notes>
+    </point>
+    <point id="Pty">
+      <label>Parity</label>
+      <description>Bitmask value.  Parity setting</description>
+      <notes></notes>
+      <symbol id="NONE">
+        <label>none</label>
+        <description>No Parity</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ODD">
+        <label>odd</label>
+        <description>Odd Parity</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="EVEN">
+        <label>even</label>
+        <description>Even Parity</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Dup">
+      <label>Duplex</label>
+      <description>Enumerated value.  Duplex mode</description>
+      <notes></notes>
+      <symbol id="FULL">
+        <label>full</label>
+        <description>Full Duplex</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="HALF">
+        <label>half</label>
+        <description>Half Duplex</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Flw">
+      <label>Flow Control</label>
+      <description>Flow Control Method</description>
+      <notes></notes>
+      <symbol id="NONE">
+        <label>none</label>
+        <description>No flow control</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="HW">
+        <label>hardware</label>
+        <description>Hardware flow control</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="XONXOFF">
+        <label>software</label>
+        <description>Soft (XON/XOFF) flow control</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Typ">
+      <label>Interface Type</label>
+      <description>Enumerated value.  Interface type</description>
+      <notes></notes>
+      <symbol id="UNKNOWN">
+        <label>unknown</label>
+        <description>Unknown interface type</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="RS232">
+        <label>RS232</label>
+        <description>RS232 interface type</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="RS485">
+        <label>RS485</label>
+        <description>RS485 interface type</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Pcol">
+      <label>Protocol</label>
+      <description>Enumerated value. Serial protocol selection</description>
+      <notes></notes>
+      <symbol id="UNKNOWN">
+        <label>unknown</label>
+        <description>Unknown protocol</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="MODBUS">
+        <label>Modbus</label>
+        <description>Modbus protocol</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VENDOR">
+        <label>vendor specific</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+    </point>
+  </strings>
+</sunSpecModels>

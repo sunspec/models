@@ -1,0 +1,80 @@
+<sunSpecModels v="1">
+  <!-- 125: Pricing Signal   -->
+  <model id="125" len="8" name="pricing">
+    <block len="8" type="fixed">
+      <point id="ModEna" offset="0" access="rw" type="bitfield16" len="1" mandatory="true">
+        <symbol id="ENABLE">0</symbol>
+      </point>
+      <point id="SigType" offset="1" access="rw" type="enum16" len="1" mandatory="false">
+        <symbol id="UNKNOWN">0</symbol>
+        <symbol id="ABSOLUTE">1</symbol>
+        <symbol id="RELATIVE">2</symbol>
+        <symbol id="MULTIPLIER">3</symbol>
+        <symbol id="LEVEL">4</symbol>
+      </point>
+      <point id="Sig" offset="2" access="rw" type="int16" len="1" mandatory="true"  sf="Sig_SF"/>
+      <point id="WinTms" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="RvtTms" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="RmpTms" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="Sig_SF" offset="6" access="r" type="sunssf" len="1" mandatory="true" />
+      <point id="Pad" offset="7" access="r" type="pad" len="1" mandatory="false"  />
+    </block>
+  </model>
+  <strings id="125" locale="en">
+    <model>
+      <label>Pricing</label>
+      <description>Pricing Signal  </description>
+      <notes>Ref 3: 8.7.5.1; Ref 4: 6</notes>
+    </model>
+    <point id="ModEna">
+      <label>ModEna</label>
+      <description>Is price-based charge/discharge mode active?</description>
+      <notes> </notes>
+    </point>
+    <point id="SigType">
+      <label>SigType</label>
+      <description>Meaning of the pricing signal. When a Price schedule is used, type must match the schedule range variable description.</description>
+      <notes> </notes>
+        <symbol id="UNKNOWN">
+          <description>Signal type is unknown or other type of  value</description>
+        </symbol>
+        <symbol id="ABSOLUTE">
+          <description>Signal is an absolute price value in local rate. E.g. 23 (cents/kWh)</description>
+        </symbol>
+        <symbol id="RELATIVE">
+          <description>Signal is a relative price in local rate. E.g. -5 (cents/kWh)</description>
+        </symbol>
+        <symbol id="MULTIPLIER">
+          <description>Signal is a price multiplier (percentage).  E.g. 15 % uplift in the rate</description>
+        </symbol>
+        <symbol id="LEVEL">
+          <description>Signal is a price level.  E.g. 0=lowest 1=low 2=normal 3=high 4=highest</description>
+        </symbol>
+    </point>
+    <point id="Sig">
+      <label>Sig</label>
+      <description>Utility/ESP specific pricing signal. Content depends on pricing signal type. When H/M/L type is specified. Low=0; Med=1; High=2.</description>
+      <notes> </notes>
+    </point>
+    <point id="Sig_SF">
+      <label>Sig_SF</label>
+      <description>Pricing signal scale factor.</description>
+      <notes> </notes>
+    </point>
+    <point id="WinTms">
+      <label>WinTms</label>
+      <description>Time window for charge/discharge pricing change.</description>
+      <notes> </notes>
+    </point>
+    <point id="RvtTms">
+      <label>RvtTms</label>
+      <description>Timeout period for charge/discharge pricing change.</description>
+      <notes> </notes>
+    </point>
+    <point id="RmpTms">
+      <label>RmpTms</label>
+      <description>Ramp time for moving from current charge or discharge level to new level.</description>
+      <notes> </notes>
+    </point>
+  </strings>
+</sunSpecModels>

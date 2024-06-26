@@ -1,0 +1,137 @@
+<sunSpecModels v="1">
+  <!-- 11: ethernet link layer -->
+  <model id="11" len="13">
+    <block len="13">
+      <point id="Spd" offset="0" type="uint16" mandatory="true" units="Mbps" />
+      <point id="CfgSt" offset="1" type="bitfield16" mandatory="true" >
+        <symbol id="LINK">0</symbol>
+        <symbol id="FULL_DUPLEX">1</symbol>
+        <symbol id="AUTO_NEG1">2</symbol>
+        <symbol id="AUTO_NEG2">3</symbol>
+        <symbol id="AUTO_NEG3">4</symbol>
+        <symbol id="RESET_REQUIRED">5</symbol>
+        <symbol id="HW_FAULT">6</symbol>
+      </point>
+      <point id="St" offset="2" type="enum16" mandatory="true" >
+        <symbol id="UNKNOWN">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+        <symbol id="DISABLED">2</symbol>
+        <symbol id="TESTING">3</symbol>
+      </point>
+      <point id="MAC" offset="3" type="eui48" />
+      <point id="Nam" offset="7" type="string" len="4" access="rw" />
+      <point id="Ctl" offset="11" type="bitfield16" access="rw" >
+        <symbol id="AUTO">0</symbol>
+        <symbol id="FULL_DUPLEX">1</symbol>
+      </point>
+      <point id="FrcSpd" offset="12" type="uint16" access="rw" units="Mbps" />
+    </block>
+  </model>
+  <strings id="11" locale="en">
+    <model>
+      <label>Ethernet Link Layer</label>
+      <description>Include to support a wired ethernet port</description>
+      <notes></notes>
+    </model>
+    <point id="Spd">
+      <label>Ethernet Link Speed</label>
+      <description>Interface speed in Mb/s</description>
+      <notes></notes>
+    </point>
+    <point id="CfgSt">
+      <label>Interface Status Flags</label>
+      <description>Bitmask values Interface flags.</description>
+      <notes></notes>
+      <symbol id="LINK">
+        <label>link status</label>
+        <description>link is up</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FULL_DUPLEX">
+        <label>full duplex</label>
+        <description>link is in full duplex mode</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="AUTO_NEG1">
+        <label>auto negotiation 1</label>
+        <description>Auto-negotiation bits are encoded as: 000 - in progress.  001 - speed detection has failed.  010 - negotiation has failed.  011 - negotiated speed and duplex.  100 - negotiation not attempted.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="AUTO_NEG2">
+        <label>auto negotiation 2</label>
+        <description>See AUTO_NEG1</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="AUTO_NEG3">
+        <label>auto negotiation 3</label>
+        <description>See AUTO_NEG1</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="RESET_REQUIRED">
+        <label>reset required</label>
+        <description>Setting requires reset</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="HW_FAULT">
+        <label>hw fault</label>
+        <description>Hardware fault</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="St">
+      <label>Link State</label>
+      <description>Enumerated value. State information for this interface</description>
+      <notes></notes>
+      <symbol id="UNKNOWN">
+        <label>unknown</label>
+        <description>Unknown state</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>enabled</label>
+        <description>Link is enabled and read</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DISABLED">
+        <label>disabled</label>
+        <description>Link is disabled</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="TESTING">
+        <label>testing</label>
+        <description>Link is in test</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="MAC">
+      <label>MAC</label>
+      <description>IEEE MAC address of this interface</description>
+      <notes></notes>
+    </point>
+    <point id="Nam">
+      <label>Name</label>
+      <description>Interface name (8 chars)</description>
+      <notes></notes>
+    </point>
+    <point id="Ctl">
+      <label>Control</label>
+      <description>Control flags</description>
+      <notes></notes>
+      <symbol id="AUTO">
+        <label>auto</label>
+        <description>Enable auto-negotiation</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FULL_DUPLEX">
+        <label>duplex</label>
+        <description>Force full duplex</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="FrcSpd">
+      <label>Forced Speed</label>
+      <description>Forced interface speed in Mb/s when AUTO is disabled</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

@@ -1,0 +1,346 @@
+<sunSpecModels v="1">
+  <!-- 112: inverter (float) -->
+  <model id="112" len="60" name="inverter">
+    <block len="60">
+      <point id="A" offset="0" type="float32" units="A" mandatory="true" />
+      <point id="AphA" offset="2" type="float32" units="A" mandatory="true" />
+      <point id="AphB" offset="4" type="float32" units="A" mandatory="true" />
+      <point id="AphC" offset="6" type="float32" units="A" />
+      <point id="PPVphAB" offset="8" type="float32" units="V" />
+      <point id="PPVphBC" offset="10" type="float32" units="V" />
+      <point id="PPVphCA" offset="12" type="float32" units="V" />
+      <point id="PhVphA" offset="14" type="float32" units="V" mandatory="true" />
+      <point id="PhVphB" offset="16" type="float32" units="V" mandatory="true" />
+      <point id="PhVphC" offset="18" type="float32" units="V" />
+      <point id="W" offset="20" type="float32" units="W" mandatory="true" />
+      <point id="Hz" offset="22" type="float32" units="Hz" mandatory="true" />
+      <point id="VA" offset="24" type="float32" units="VA" />
+      <point id="VAr" offset="26" type="float32" units="var" />
+      <point id="PF" offset="28" type="float32" units="Pct" />
+      <point id="WH" offset="30" type="float32" units="Wh" mandatory="true" />
+      <point id="DCA" offset="32" type="float32" units="A" />
+      <point id="DCV" offset="34" type="float32" units="V" />
+      <point id="DCW" offset="36" type="float32" units="W" />
+      <point id="TmpCab" offset="38" type="float32" units="C" mandatory="true" />
+      <point id="TmpSnk" offset="40" type="float32" units="C" />
+      <point id="TmpTrns" offset="42" type="float32" units="C" />
+      <point id="TmpOt" offset="44" type="float32" units="C" />
+      <point id="St" offset="46" type="enum16" mandatory="true" >
+        <symbol id="OFF">1</symbol>
+        <symbol id="SLEEPING">2</symbol>
+        <symbol id="STARTING">3</symbol>
+        <symbol id="MPPT">4</symbol>
+        <symbol id="THROTTLED">5</symbol>
+        <symbol id="SHUTTING_DOWN">6</symbol>
+        <symbol id="FAULT">7</symbol>
+        <symbol id="STANDBY">8</symbol>
+      </point>
+      <point id="StVnd" offset="47" type="enum16" />
+      <point id="Evt1" offset="48" type="bitfield32" mandatory="true" >
+        <symbol id="GROUND_FAULT">0</symbol>
+        <symbol id="DC_OVER_VOLT">1</symbol>
+        <symbol id="AC_DISCONNECT">2</symbol>
+        <symbol id="DC_DISCONNECT">3</symbol>
+        <symbol id="GRID_DISCONNECT">4</symbol>
+        <symbol id="CABINET_OPEN">5</symbol>
+        <symbol id="MANUAL_SHUTDOWN">6</symbol>
+        <symbol id="OVER_TEMP">7</symbol>
+        <symbol id="OVER_FREQUENCY">8</symbol>
+        <symbol id="UNDER_FREQUENCY">9</symbol>
+        <symbol id="AC_OVER_VOLT">10</symbol>
+        <symbol id="AC_UNDER_VOLT">11</symbol>
+        <symbol id="BLOWN_STRING_FUSE">12</symbol>
+        <symbol id="UNDER_TEMP">13</symbol>
+        <symbol id="MEMORY_LOSS">14</symbol>
+        <symbol id="HW_TEST_FAILURE">15</symbol>
+      </point>
+      <point id="Evt2" offset="50" type="bitfield32" mandatory="true" />
+      <point id="EvtVnd1" offset="52" type="bitfield32" />
+      <point id="EvtVnd2" offset="54" type="bitfield32" />
+      <point id="EvtVnd3" offset="56" type="bitfield32" />
+      <point id="EvtVnd4" offset="58" type="bitfield32" />
+    </block>
+  </model>
+  <strings id="112" locale="en">
+    <model>
+      <label>Inverter (Split Phase) FLOAT</label>
+      <description>Include this model for split phase inverter monitoring using float values</description>
+      <notes></notes>
+    </model>
+    <point id="A">
+      <label>Amps</label>
+      <description>AC Current</description>
+      <notes></notes>
+    </point>
+    <point id="AphA">
+      <label>Amps PhaseA</label>
+      <description>Phase A Current</description>
+      <notes>Connected Phase</notes>
+    </point>
+    <point id="AphB">
+      <label>Amps PhaseB</label>
+      <description>Phase B Current</description>
+      <notes>Connected Phase</notes>
+    </point>
+    <point id="AphC">
+      <label>Amps PhaseC</label>
+      <description>Phase C Current</description>
+      <notes></notes>
+    </point>
+    <point id="PPVphAB">
+      <label>Phase Voltage AB</label>
+      <description>Phase Voltage AB</description>
+      <notes></notes>
+    </point>
+    <point id="PPVphBC">
+      <label>Phase Voltage BC</label>
+      <description>Phase Voltage BC</description>
+      <notes></notes>
+    </point>
+    <point id="PPVphCA">
+      <label>Phase Voltage CA</label>
+      <description>Phase Voltage CA</description>
+      <notes></notes>
+    </point>
+    <point id="PhVphA">
+      <label>Phase Voltage AN</label>
+      <description>Phase Voltage AN</description>
+      <notes></notes>
+    </point>
+    <point id="PhVphB">
+      <label>Phase Voltage BN</label>
+      <description>Phase Voltage BN</description>
+      <notes></notes>
+    </point>
+    <point id="PhVphC">
+      <label>Phase Voltage CN</label>
+      <description>Phase Voltage CN</description>
+      <notes></notes>
+    </point>
+    <point id="W">
+      <label>Watts</label>
+      <description>AC Power</description>
+      <notes></notes>
+    </point>
+    <point id="Hz">
+      <label>Hz</label>
+      <description>Line Frequency</description>
+      <notes></notes>
+    </point>
+    <point id="VA">
+      <label>VA</label>
+      <description>AC Apparent Power</description>
+      <notes></notes>
+    </point>
+    <point id="VAr">
+      <label>VAr</label>
+      <description>AC Reactive Power</description>
+      <notes></notes>
+    </point>
+    <point id="PF">
+      <label>PF</label>
+      <description>AC Power Factor</description>
+      <notes></notes>
+    </point>
+    <point id="WH">
+      <label>WattHours</label>
+      <description>AC Energy</description>
+      <notes></notes>
+    </point>
+    <point id="DCA">
+      <label>DC Amps</label>
+      <description>DC Current</description>
+      <notes></notes>
+    </point>
+    <point id="DCV">
+      <label>DC Voltage</label>
+      <description>DC Voltage</description>
+      <notes></notes>
+    </point>
+    <point id="DCW">
+      <label>DC Watts</label>
+      <description>DC Power</description>
+      <notes></notes>
+    </point>
+    <point id="TmpCab">
+      <label>Cabinet Temperature</label>
+      <description>Cabinet Temperature</description>
+      <notes></notes>
+    </point>
+    <point id="TmpSnk">
+      <label>Heat Sink Temperature</label>
+      <description>Heat Sink Temperature</description>
+      <notes></notes>
+    </point>
+    <point id="TmpTrns">
+      <label>Transformer Temperature</label>
+      <description>Transformer Temperature</description>
+      <notes></notes>
+    </point>
+    <point id="TmpOt">
+      <label>Other Temperature</label>
+      <description>Other Temperature</description>
+      <notes></notes>
+    </point>
+    <point id="St">
+      <label>Operating State</label>
+      <description>Enumerated value.  Operating state</description>
+      <notes></notes>
+      <symbol id="OFF">
+        <label>Off</label>
+        <description>Device is not operating</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="SLEEPING">
+        <label>Sleeping</label>
+        <description>Device is sleeping / auto-shutdown</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="STARTING">
+        <label>Starting</label>
+        <description>Device is staring up</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="MPPT">
+        <label>MPPT</label>
+        <description>Device is auto tracking maximum power point</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="THROTTLED">
+        <label>Throttled</label>
+        <description>Device is operating at reduced power output</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="SHUTTING_DOWN">
+        <label>Shutting down</label>
+        <description>Device is shutting down</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAULT">
+        <label>Fault</label>
+        <description>One or more faults exist</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="STANDBY">
+        <label>Standby</label>
+        <description>Device is in standby mode</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="StVnd">
+      <label>Vendor Operating State</label>
+      <description>Vendor specific operating state code</description>
+      <notes></notes>
+    </point>
+    <point id="Evt1">
+      <label>Event1</label>
+      <description>Bitmask value. Event fields</description>
+      <notes></notes>
+      <symbol id="GROUND_FAULT">
+        <label>Ground fault</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DC_OVER_VOLT">
+        <label>DC over voltage</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="AC_DISCONNECT">
+        <label>AC disconnect open</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="DC_DISCONNECT">
+        <label>DC disconnect open</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="GRID_DISCONNECT">
+        <label>Grid shutdown</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="CABINET_OPEN">
+        <label>Cabinet open</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="MANUAL_SHUTDOWN">
+        <label>Manual shutdown</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_TEMP">
+        <label>Over temperature</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_FREQUENCY">
+        <label>Frequency above limit</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_FREQUENCY">
+        <label>Frequency under limit</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="AC_OVER_VOLT">
+        <label>AC Voltage above limit</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="AC_UNDER_VOLT">
+        <label>AC Voltage under limit</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="BLOWN_STRING_FUSE">
+        <label>Blown String fuse on input</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_TEMP">
+        <label>Under temperature</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="MEMORY_LOSS">
+        <label>Generic Memory or Communication error (internal)</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+      <symbol id="HW_TEST_FAILURE">
+        <label>Hardware test failure</label>
+        <description></description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Evt2">
+      <label>Event Bitfield 2</label>
+      <description>Reserved for future use</description>
+      <notes></notes>
+    </point>
+    <point id="EvtVnd1">
+      <label>Vendor Event Bitfield 1</label>
+      <description>Vendor defined events</description>
+      <notes></notes>
+    </point>
+    <point id="EvtVnd2">
+      <label>Vendor Event Bitfield 2</label>
+      <description>Vendor defined events</description>
+      <notes></notes>
+    </point>
+    <point id="EvtVnd3">
+      <label>Vendor Event Bitfield 3</label>
+      <description>Vendor defined events</description>
+      <notes></notes>
+    </point>
+    <point id="EvtVnd4">
+      <label>Vendor Event Bitfield 4</label>
+      <description>Vendor defined events</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

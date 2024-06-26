@@ -1,0 +1,187 @@
+<sunSpecModels v="1">
+  <!-- 123: Immediate Inverter Controls  -->
+  <model id="123" len="24" name="controls">
+    <block len="24" type="fixed">
+      <point id="Conn_WinTms" offset="0" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="Conn_RvrtTms" offset="1" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="Conn" offset="2" access="rw" type="enum16" len="1" mandatory="true">
+        <symbol id="DISCONNECT">0</symbol>
+        <symbol id="CONNECT">1</symbol>
+      </point>
+      <point id="WMaxLimPct" offset="3" access="rw" type="uint16" len="1" mandatory="true" units="% WMax" sf="WMaxLimPct_SF"/>
+      <point id="WMaxLimPct_WinTms" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="WMaxLimPct_RvrtTms" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="WMaxLimPct_RmpTms" offset="6" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="WMaxLim_Ena" offset="7" access="rw" type="enum16" len="1" mandatory="true">
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="OutPFSet" offset="8" access="rw" type="int16" len="1" mandatory="true" units="cos()" sf="OutPFSet_SF"/>
+      <point id="OutPFSet_WinTms" offset="9" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="OutPFSet_RvrtTms" offset="10" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="OutPFSet_RmpTms" offset="11" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="OutPFSet_Ena" offset="12" access="rw" type="enum16" len="1" mandatory="true">
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="VArWMaxPct" offset="13" access="rw" type="int16" len="1" mandatory="false" units="% WMax" sf="VArPct_SF"/>
+      <point id="VArMaxPct" offset="14" access="rw" type="int16" len="1" mandatory="false" units="% VArMax" sf="VArPct_SF"/>
+      <point id="VArAvalPct" offset="15" access="rw" type="int16" len="1" mandatory="false" units="% VArAval" sf="VArPct_SF"/>
+      <point id="VArPct_WinTms" offset="16" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="VArPct_RvrtTms" offset="17" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="VArPct_RmpTms" offset="18" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="VArPct_Mod" offset="19" access="rw" type="enum16" len="1" mandatory="false">
+        <symbol id="NONE">0</symbol>
+        <symbol id="WMax">1</symbol>
+        <symbol id="VArMax">2</symbol>
+        <symbol id="VArAval">3</symbol>
+      </point>
+      <point id="VArPct_Ena" offset="20" access="rw" type="enum16" len="1" mandatory="true">
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="WMaxLimPct_SF" offset="21" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="OutPFSet_SF" offset="22" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="VArPct_SF" offset="23" access="r" type="sunssf" len="1" mandatory="false"  />
+    </block>
+  </model>
+  <strings id="123" locale="en">
+    <model>
+      <label>Immediate Controls</label>
+      <description>Immediate Inverter Controls </description>
+      <notes>Ref 3: 8.7.1.2, 8.7.2.2, 8.7.3.2</notes>
+    </model>
+    <point id="Conn">
+      <label>Conn</label>
+      <description>Enumerated valued.  Connection control.</description>
+      <notes> </notes>
+    </point>
+    <point id="Conn_WinTms">
+      <label>Conn_WinTms</label>
+      <description>Time window for connect/disconnect.</description>
+      <notes> </notes>
+    </point>
+    <point id="Conn_RvrtTms">
+      <label>Conn_RvrtTms</label>
+      <description>Timeout period for connect/disconnect.</description>
+      <notes> </notes>
+    </point>
+    <point id="WMaxLimPct">
+      <label>WMaxLimPct</label>
+      <description>Set power output to specified level.</description>
+      <notes> </notes>
+    </point>
+    <point id="WMaxLimPct_SF">
+      <label>WMaxLimPct_SF</label>
+      <description>Scale factor for power output percent.</description>
+      <notes> </notes>
+    </point>
+    <point id="WMaxLimPct_WinTms">
+      <label>WMaxLimPct_WinTms</label>
+      <description>Time window for power limit change.</description>
+      <notes> </notes>
+    </point>
+    <point id="WMaxLimPct_RvrtTms">
+      <label>WMaxLimPct_RvrtTms</label>
+      <description>Timeout period for power limit.</description>
+      <notes> </notes>
+    </point>
+    <point id="WMaxLimPct_RmpTms">
+      <label>WMaxLimPct_RmpTms</label>
+      <description>Ramp time for moving from current setpoint to new setpoint.</description>
+      <notes> </notes>
+    </point>
+    <point id="WMaxLim_Ena">
+      <label>WMaxLim_Ena</label>
+      <description>Enumerated valued.  Throttle enable/disable control.</description>
+      <notes> </notes>
+    </point>
+    <point id="OutPFSet">
+      <label>OutPFSet</label>
+      <description>Set power factor to specific value - cosine of angle.</description>
+      <notes> </notes>
+    </point>
+    <point id="OutPFSet_SF">
+      <label>OutPFSet_SF</label>
+      <description>Scale factor for power factor.</description>
+      <notes> </notes>
+    </point>
+    <point id="OutPFSet_WinTms">
+      <label>OutPFSet_WinTms</label>
+      <description>Time window for power factor change.</description>
+      <notes> </notes>
+    </point>
+    <point id="OutPFSet_RvrtTms">
+      <label>OutPFSet_RvrtTms</label>
+      <description>Timeout period for power factor.</description>
+      <notes> </notes>
+    </point>
+    <point id="OutPFSet_RmpTms">
+      <label>OutPFSet_RmpTms</label>
+      <description>Ramp time for moving from current setpoint to new setpoint.</description>
+      <notes> </notes>
+    </point>
+    <point id="OutPFSet_Ena">
+      <label>OutPFSet_Ena</label>
+      <description>Enumerated valued.  Fixed power factor enable/disable control.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArPct_Mod">
+      <label>VArPct_Mod</label>
+      <description>Enumerated value. VAR percent limit mode.</description>
+      <notes> </notes>
+      <symbol id="NONE">
+        <description>No VAR limit</description>
+      </symbol>
+      <symbol id="WMax">
+        <description>VAR limit as a % of Wmax</description>
+      </symbol>
+      <symbol id="VArMax">
+        <description>VAR limit as a % of VArMax</description>
+      </symbol>
+      <symbol id="VArAval">
+        <description>VAR limit as a % of VArAval</description>
+      </symbol>
+    </point>
+    <point id="VArWMaxPct">
+      <label>VArWMaxPct</label>
+      <description>Reactive power in percent of WMax.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArMaxPct">
+      <label>VArMaxPct</label>
+      <description>Reactive power in percent of VArMax.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArAvalPct">
+      <label>VArAvalPct</label>
+      <description>Reactive power in percent of VArAval.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArPct_SF">
+      <label>VArPct_SF</label>
+      <description>Scale factor for reactive power percent.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArPct_WinTms">
+      <label>VArPct_WinTms</label>
+      <description>Time window for VAR limit change.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArPct_RvrtTms">
+      <label>VArPct_RvrtTms</label>
+      <description>Timeout period for VAR limit.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArPct_RmpTms">
+      <label>VArPct_RmpTms</label>
+      <description>Ramp time for moving from current setpoint to new setpoint.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArPct_Ena">
+      <label>VArPct_Ena</label>
+      <description>Enumerated valued.  Percent limit VAr enable/disable control.</description>
+      <notes> </notes>
+    </point>
+  </strings>
+</sunSpecModels>

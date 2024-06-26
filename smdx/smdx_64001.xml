@@ -1,0 +1,220 @@
+<sunSpecModels v="1">
+
+  <!-- 64001: Veris Status and Configuration -->
+  <model id="64001" len="71">
+    <block len="71">
+      <point id="Cmd" offset="0" type="enum16" access="rw" />
+      <point id="HWRev" offset="1" type="uint16" />
+      <point id="RSFWRev" offset="2" type="uint16" />
+      <point id="OSFWRev" offset="3" type="uint16" />
+      <point id="ProdRev" offset="4" type="string" len="2" />
+      <point id="Boots" offset="6" type="uint16" />
+      <point id="Switch" offset="7" type="bitfield16" />
+      <point id="Sensors" offset="8" type="uint16" />
+      <point id="Talking" offset="9" type="uint16" />
+      <point id="Status" offset="10" type="bitfield16" />
+      <point id="Config" offset="11" type="bitfield16" />
+      <point id="LEDblink" offset="12" type="uint16" units="Pct" />
+      <point id="LEDon" offset="13" type="uint16" units="Pct" />
+      <point id="Reserved" offset="14" type="uint16" />
+      <point id="Loc" offset="15" type="string" len="16" />
+      <point id="S1ID" offset="31" type="enum16" />
+      <point id="S1Addr" offset="32" type="uint16" />
+      <point id="S1OSVer" offset="33" type="uint16" />
+      <point id="S1Ver" offset="34" type="string" len="2" />
+      <point id="S1Serial" offset="36" type="string" len="5" />
+      <point id="S2ID" offset="41" type="enum16" />
+      <point id="S2Addr" offset="42" type="uint16" />
+      <point id="S2OSVer" offset="43" type="uint16" />
+      <point id="S2Ver" offset="44" type="string" len="2" />
+      <point id="S2Serial" offset="46" type="string" len="5" />
+      <point id="S3ID" offset="51" type="enum16" />
+      <point id="S3Addr" offset="52" type="uint16" />
+      <point id="S3OSVer" offset="53" type="uint16" />
+      <point id="S3Ver" offset="54" type="string" len="2" />
+      <point id="S3Serial" offset="56" type="string" len="5" />
+      <point id="S4ID" offset="61" type="enum16" />
+      <point id="S4Addr" offset="62" type="uint16" />
+      <point id="S4OSVer" offset="63" type="uint16" />
+      <point id="S4Ver" offset="64" type="string" len="2" />
+      <point id="S4Serial" offset="66" type="string" len="5" />
+    </block>
+  </model>
+  <strings id="64001" locale="en">
+    <model>
+      <label>Veris Status and Configuration</label>
+      <description></description>
+      <notes></notes>
+    </model>
+    <point id="Cmd">
+      <label>Command Code</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="HWRev">
+      <label>Hardware Revision</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="RSFWRev">
+      <label>RS FW Revision</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="OSFWRev">
+      <label>OS FW Revision</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="ProdRev">
+      <label>Product Revision</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Boots">
+      <label>Boot Count</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Switch">
+      <label>DIP Switches</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Sensors">
+      <label>Num Detected Sensors</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Talking">
+      <label>Num Communicating Sensors</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Status">
+      <label>System Status</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Config">
+      <label>System Configuration</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="LEDblink">
+      <label>LED Blink Threshold</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="LEDon">
+      <label>LED On Threshold</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="Loc">
+      <label>Location String</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S1ID">
+      <label>Sensor 1 Unit ID</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S1Addr">
+      <label>Sensor 1 Address</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S1OSVer">
+      <label>Sensor 1 OS Version</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S1Ver">
+      <label>Sensor 1 Product Version</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S1Serial">
+      <label>Sensor 1 Serial Num</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S2ID">
+      <label>Sensor 2 Unit ID</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S2Addr">
+      <label>Sensor 2 Address</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S2OSVer">
+      <label>Sensor 2 OS Version</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S2Ver">
+      <label>Sensor 2 Product Version</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S2Serial">
+      <label>Sensor 2 Serial Num</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S3ID">
+      <label>Sensor 3 Unit ID</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S3Addr">
+      <label>Sensor 3 Address</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S3OSVer">
+      <label>Sensor 3 OS Version</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S3Ver">
+      <label>Sensor 3 Product Version</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S3Serial">
+      <label>Sensor 3 Serial Num</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S4ID">
+      <label>Sensor 4 Unit ID</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S4Addr">
+      <label>Sensor 4 Address</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S4OSVer">
+      <label>Sensor 4 OS Version</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S4Ver">
+      <label>Sensor 4 Product Version</label>
+      <description></description>
+      <notes></notes>
+    </point>
+    <point id="S4Serial">
+      <label>Sensor 4 Serial Num</label>
+      <description></description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

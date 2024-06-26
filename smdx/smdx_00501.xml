@@ -1,0 +1,304 @@
+<sunSpecModels v="1">
+  <!-- 501: panel module float -->
+  <model id="501" len="31" name="solar_module">
+    <block len="31">
+      <point id="Stat" offset="0" type="enum16" mandatory="true" >
+        <symbol id="OFF">1</symbol>
+        <symbol id="SLEEPING">2</symbol>
+        <symbol id="STARTING">3</symbol>
+        <symbol id="MPPT">4</symbol>
+        <symbol id="THROTTLED">5</symbol>
+        <symbol id="SHUTTING_DOWN">6</symbol>
+        <symbol id="FAULT">7</symbol>
+        <symbol id="STANDBY">8</symbol>
+        <symbol id="TEST">9</symbol>
+        <symbol id="OTHER">10</symbol>
+      </point>
+      <point id="StatVend" offset="1" type="enum16" />
+      <point id="Evt" offset="2" type="bitfield32" mandatory="true" >
+        <symbol id="GROUND_FAULT">0</symbol>
+        <symbol id="INPUT_OVER_VOLTAGE">1</symbol>
+        <symbol id="RESERVED_2">2</symbol>
+        <symbol id="DC_DISCONNECT">3</symbol>
+        <symbol id="RESERVED_4">4</symbol>
+        <symbol id="RESERVED_5">5</symbol>
+        <symbol id="MANUAL_SHUTDOWN">6</symbol>
+        <symbol id="OVER_TEMPERATURE">7</symbol>
+        <symbol id="RESERVED_8">8</symbol>
+        <symbol id="RESERVED_9">9</symbol>
+        <symbol id="RESERVED_10">10</symbol>
+        <symbol id="RESERVED_11">11</symbol>
+        <symbol id="BLOWN_FUSE">12</symbol>
+        <symbol id="UNDER_TEMPERATURE">13</symbol>
+        <symbol id="MEMORY_LOSS">14</symbol>
+        <symbol id="ARC_DETECTION">15</symbol>
+        <symbol id="THEFT_DETECTION">16</symbol>
+        <symbol id="OUTPUT_OVER_CURRENT">17</symbol>
+        <symbol id="OUTPUT_OVER_VOLTAGE">18</symbol>
+        <symbol id="OUTPUT_UNDER_VOLTAGE">19</symbol>
+        <symbol id="TEST_FAILED">20</symbol>
+      </point>
+      <point id="EvtVend" offset="4" type="bitfield32" />
+      <point id="Ctl" offset="6" type="enum16" access="rw" />
+      <point id="CtlVend" offset="7" type="enum32" access="rw" />
+      <point id="CtlVal" offset="9" type="int32" access="rw" />
+      <point id="Tms" offset="11" type="uint32" units="Secs" />
+      <point id="OutA" offset="13" type="float32" units="A" />
+      <point id="OutV" offset="15" type="float32" units="V" />
+      <point id="OutWh" offset="17" type="float32" units="Wh" />
+      <point id="OutW" offset="19" type="float32" units="W" />
+      <point id="Tmp" offset="21" type="float32" units="C" />
+      <point id="InA" offset="23" type="float32" units="A" />
+      <point id="InV" offset="25" type="float32" units="V" />
+      <point id="InWh" offset="27" type="float32" units="Wh" />
+      <point id="InW" offset="29" type="float32" units="W" />
+    </block>
+  </model>
+  <strings id="501" locale="en">
+    <model>
+      <label>Solar Module</label>
+      <description>A solar module model supporting DC-DC converter</description>
+      <notes>Float</notes>
+    </model>
+    <point id="Stat">
+      <label>Status</label>
+      <description>Enumerated value.  Module Status Code</description>
+      <notes></notes>
+      <symbol id="OFF">
+        <label>Off</label>
+        <description>Module is in the OFF state</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="SLEEPING">
+        <label>SLEEPING</label>
+        <description>Sleeping (auto-shutdown) or panel is at low/safe output power/voltage</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="STARTING">
+        <label>STARTING</label>
+        <description>Starting up or ON but not producing power; panel might have high voltage but is not producing power</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="MPPT">
+        <label>MPPT</label>
+        <description>Tracking MPPT power point</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="THROTTLED">
+        <label>THROTTLED</label>
+        <description>Forced power reduction / power de-rating</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="SHUTTING_DOWN">
+        <label>SHUTTING_DOWN</label>
+        <description>Shutting down</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAULT">
+        <label>FAULT</label>
+        <description>One or more faults exist</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="STANDBY">
+        <label>STANDBY</label>
+        <description>Standby (service or unit) - unlike SLEEPING in this mode the module might be at a high (unsafe) output voltage or power</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="TEST">
+        <label>TEST</label>
+        <description>Test mode</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OTHER">
+        <label>OTHER</label>
+        <description>As defined in vendor specific status</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="StatVend">
+      <label>Vendor Status</label>
+      <description>Module Vendor Status Code</description>
+      <notes></notes>
+    </point>
+    <point id="Evt">
+      <label>Events</label>
+      <description>Bitmask value.  Module Event Flags</description>
+      <notes></notes>
+      <symbol id="GROUND_FAULT">
+        <label>Ground Fault</label>
+        <description>Ground Fault</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="INPUT_OVER_VOLTAGE">
+        <label>Over Voltage</label>
+        <description>DC input over-voltage</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="RESERVED">
+        <label>Reserved</label>
+        <description>Reserved</description>
+        <notes>Reserved for u-inverter compatibility</notes>
+      </symbol>
+      <symbol id="DC_DISCONNECT">
+        <label>Disconnect</label>
+        <description>DC disconnect open</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="RESERVED">
+        <label>Reserved</label>
+        <description>Reserved</description>
+        <notes>Reserved for u-inverter compatibility</notes>
+      </symbol>
+      <symbol id="RESERVED">
+        <label>Reserved</label>
+        <description>Reserved</description>
+        <notes>Reserved for u-inverter compatibility</notes>
+      </symbol>
+      <symbol id="MANUAL_SHUTDOWN">
+        <label>Manual shutdown</label>
+        <description>Manual shutdown</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OVER_TEMPERATURE">
+        <label>Over Temperature</label>
+        <description>Over Temperature</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="RESERVED">
+        <label>Reserved</label>
+        <description>Reserved</description>
+        <notes>Reserved for u-inverter compatibility</notes>
+      </symbol>
+      <symbol id="RESERVED">
+        <label>Reserved</label>
+        <description>Reserved</description>
+        <notes>Reserved for u-inverter compatibility</notes>
+      </symbol>
+      <symbol id="RESERVED">
+        <label>Reserved</label>
+        <description>Reserved</description>
+        <notes>Reserved for u-inverter compatibility</notes>
+      </symbol>
+      <symbol id="RESERVED">
+        <label>Reserved</label>
+        <description>Reserved</description>
+        <notes>Reserved for u-inverter compatibility</notes>
+      </symbol>
+      <symbol id="BLOWN_FUSE">
+        <label>Blown Fuse</label>
+        <description>Input fuse is blown</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_TEMPERATURE">
+        <label>Under Temperature</label>
+        <description>Under Temperature</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="MEMORY_LOSS">
+        <label>Memory Loss</label>
+        <description>Generic Memory or Communication Error</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ARC_DETECTION">
+        <label>Arc Detection</label>
+        <description>Arc Detection</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="THEFT_DETECTION">
+        <label>Theft Detection</label>
+        <description>Theft Detection</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OUTPUT_OVER_CURRENT">
+        <label>Over Current</label>
+        <description>Output Over Current</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OUTPUT_OVER_VOLTAGE">
+        <label>Output Over Voltage</label>
+        <description>DC Output Over Voltage</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="OUTPUT_UNDER_VOLTAGE">
+        <label>Output Under Voltage</label>
+        <description>DC Output Under Voltage</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="TEST_FAILED">
+        <label>Test Failed</label>
+        <description>Last Self Test failed; see vendor event for details</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="EvtVend">
+      <label>Vendor Module Event Flags</label>
+      <description>Vendor specific flags</description>
+      <notes></notes>
+    </point>
+    <point id="Ctl">
+      <label>Control</label>
+      <description>Module Control</description>
+      <notes></notes>
+    </point>
+    <point id="CtlVend">
+      <label>Vendor Control</label>
+      <description>Vendor Module Control</description>
+      <notes></notes>
+    </point>
+    <point id="CtlVal">
+      <label>Control Value</label>
+      <description>Module Control Value</description>
+      <notes></notes>
+    </point>
+    <point id="Tms">
+      <label>Timestamp</label>
+      <description>Time in seconds since 2000 epoch</description>
+      <notes></notes>
+    </point>
+    <point id="OutA">
+      <label>Output Current</label>
+      <description>Output Current</description>
+      <notes></notes>
+    </point>
+    <point id="OutV">
+      <label>Output Voltage</label>
+      <description>Output Voltage</description>
+      <notes></notes>
+    </point>
+    <point id="OutWh">
+      <label>Output Energy</label>
+      <description>Output Energy</description>
+      <notes></notes>
+    </point>
+    <point id="OutW">
+      <label>Output Power</label>
+      <description>Output Power</description>
+      <notes></notes>
+    </point>
+    <point id="Tmp">
+      <label>Temp</label>
+      <description>Module Temperature</description>
+      <notes></notes>
+    </point>
+    <point id="InA">
+      <label>Input Current</label>
+      <description>Input Current</description>
+      <notes></notes>
+    </point>
+    <point id="InV">
+      <label>Input Voltage</label>
+      <description>Input Voltage</description>
+      <notes></notes>
+    </point>
+    <point id="InWh">
+      <label>Input Energy</label>
+      <description>Input Energy</description>
+      <notes></notes>
+    </point>
+    <point id="InW">
+      <label>Input Power</label>
+      <description>Input Power</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

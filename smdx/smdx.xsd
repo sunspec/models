@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+Copyright (c) 2012, John D. Blair <jdb@moship.net>
+Copyright (c) 2012, Bob Fox <bob@loggerware.com>
+Copyright (c) SunSpec Alliance 2012. All Rights Reserved.
+
+   This document and the information contained herein is provided on an "AS IS" basis and the SunSpec Alliance DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY OWNERSHIP RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.    
+
+This document may be used, copied, and furnished to others, without restrictions of any kind, provided that this document itself may not be modified in anyway, except as needed by the SunSpec Technical Committee and as governed by the SunSpec IPR Policy.  The complete policy of the SunSpec Alliance can be found at www.sunspec.org.
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:element name="sunSpecModels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="modelgroup" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute name="v" type="xs:string" default="1" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="modelgroup">
+    <xs:sequence>
+      <xs:element name="model" type="ModelDefinition" minOccurs="0" maxOccurs="1" />
+      <xs:element name="strings" type="StringsDefinition" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:group>
+
+  <xs:complexType name="ModelDefinition">
+    <xs:sequence>
+      <xs:element name="block" type="BlockDefinition" maxOccurs="2" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:integer" />
+    <xs:attribute name="len" type="xs:integer" />
+    <xs:attribute name="name" type="xs:string" />
+    <xs:attribute name="status" type="LifecycleStatusDefinition" default="approved" />
+  </xs:complexType>
+
+  <xs:complexType name="BlockDefinition">
+    <xs:sequence>
+      <xs:element name="point" type="PointDefinition" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="len" type="xs:integer" />
+    <xs:attribute name="type" type="BlockTypeDefinition" default="fixed" />
+    <xs:attribute name="name" type="xs:string" />
+  </xs:complexType>
+
+  <xs:complexType name="PointDefinition">
+    <xs:sequence>
+      <xs:element name="symbol" type="SymbolDefinition" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required" />
+    <xs:attribute name="len" type="xs:integer" />
+    <xs:attribute name="offset" type="xs:integer" />
+    <xs:attribute name="type" type="PointTypeDefinition" />
+    <xs:attribute name="sf" type="xs:string" />
+    <xs:attribute name="units" type="xs:string" />
+    <xs:attribute name="access" type="PointAccessDefinition" default="r" />
+    <xs:attribute name="mandatory" type="xs:boolean" default="false"/>
+    <xs:attribute name="category" type="CategoryDefinition" default="measurement"/>
+  </xs:complexType>
+
+  <xs:complexType name="SymbolDefinition">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="id" type="xs:string" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="StringsDefinition">
+    <xs:sequence>
+      <xs:element name="model" type="StringsModelDefinition" minOccurs="0" maxOccurs="1" />
+      <xs:element name="point" type="StringsPointDefinition" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:integer" use="required" />
+    <xs:attribute name="locale" type="xs:string" />
+  </xs:complexType>
+
+  <xs:complexType name="StringsModelDefinition">
+    <xs:sequence>
+      <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="notes" type="xs:string" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="StringsPointDefinition">
+    <xs:sequence>
+      <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="notes" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="symbol" type="StringsSymbolDefinition" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="StringsSymbolDefinition">
+    <xs:sequence>
+      <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="notes" type="xs:string" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required" />
+  </xs:complexType>
+
+  <xs:simpleType name="PointTypeDefinition">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="int16"/>
+      <xs:enumeration value="uint16"/>
+      <xs:enumeration value="count"/>
+      <xs:enumeration value="acc16"/>
+      <xs:enumeration value="int32"/>
+      <xs:enumeration value="uint32"/>
+      <xs:enumeration value="float32"/>
+      <xs:enumeration value="acc32"/>
+      <xs:enumeration value="int64"/>
+      <xs:enumeration value="uint64"/>
+      <xs:enumeration value="float64"/>
+      <xs:enumeration value="acc64"/>
+      <xs:enumeration value="enum16"/>
+      <xs:enumeration value="enum32"/>
+      <xs:enumeration value="bitfield16"/>
+      <xs:enumeration value="bitfield32"/>
+      <xs:enumeration value="sunssf"/>
+      <xs:enumeration value="string"/>
+      <xs:enumeration value="pad"/>
+      <xs:enumeration value="ipaddr"/>
+      <xs:enumeration value="ipv6addr"/>
+      <xs:enumeration value="eui48"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PointAccessDefinition">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="r"/>
+      <xs:enumeration value="rw"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CategoryDefinition">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="none"/>
+      <xs:enumeration value="measurement"/>
+      <xs:enumeration value="metered"/>
+      <xs:enumeration value="status"/>
+      <xs:enumeration value="event"/>
+      <xs:enumeration value="setting"/>
+      <xs:enumeration value="control"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="BlockTypeDefinition">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="fixed"/>
+      <xs:enumeration value="repeating"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="LifecycleStatusDefinition">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="draft"/>
+      <xs:enumeration value="test"/>
+      <xs:enumeration value="approved"/>
+      <xs:enumeration value="superseded"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

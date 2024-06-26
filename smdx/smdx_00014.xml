@@ -1,0 +1,81 @@
+<sunSpecModels v="1">
+  <!-- 14: Proxy Server -->
+  <model id="14" len="52">
+    <block len="52">
+      <point id="Nam" offset="0" type="string" len="4" access="rw" />
+      <point id="Cap" offset="4" type="bitfield16" mandatory="true" access="rw" >
+        <symbol id="NO_PROXY">0</symbol>
+        <symbol id="IPV4_PROXY">1</symbol>
+        <symbol id="IPV6_PROXY">2</symbol>
+      </point>
+      <point id="Cfg" offset="5" type="enum16" mandatory="true" access="rw" />
+      <point id="Typ" offset="6" type="bitfield16" mandatory="true" access="rw" />
+      <point id="Addr" offset="7" type="string" len="20" mandatory="true" access="rw" />
+      <point id="Port" offset="27" type="uint16" mandatory="true" access="rw" />
+      <point id="User" offset="28" type="string" len="12" access="rw" />
+      <point id="Pw" offset="40" type="string" len="12" access="rw" />
+    </block>
+  </model>
+  <strings id="14" locale="en">
+    <model>
+      <label>Proxy Server</label>
+      <description>Include this block to allow for a proxy server</description>
+      <notes></notes>
+    </model>
+    <point id="Nam">
+      <label>name</label>
+      <description>Interface name (8 chars)</description>
+      <notes></notes>
+    </point>
+    <point id="Cap">
+      <label>Capabilities</label>
+      <description>Bitmask value.  Proxy configuration capabilities</description>
+      <notes></notes>
+      <symbol id="NO_PROXY">
+        <label>No Proxy</label>
+        <description>Turn off the proxy</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="IPV4_PROXY">
+        <label>IPv4 Proxy</label>
+        <description>Can proxy IPv4</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="IPV6_PROXY">
+        <label>IPv6 Proxy</label>
+        <description>Can proxy IPv6</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="Cfg">
+      <label>Config</label>
+      <description>Enumerated value.  Set proxy address type</description>
+      <notes></notes>
+    </point>
+    <point id="Typ">
+      <label>Type</label>
+      <description>Enumerate value.  Proxy server type</description>
+      <notes></notes>
+    </point>
+    <point id="Addr">
+      <label>Address</label>
+      <description>IPv4 or IPv6 proxy hostname or dotted address (40 chars)</description>
+      <notes></notes>
+    </point>
+    <point id="Port">
+      <label>Port</label>
+      <description>Proxy port number</description>
+      <notes></notes>
+    </point>
+    <point id="User">
+      <label>Username</label>
+      <description>Proxy user name</description>
+      <notes></notes>
+    </point>
+    <point id="Pw">
+      <label>Password</label>
+      <description>Proxy password</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

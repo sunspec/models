@@ -1,0 +1,98 @@
+<sunSpecModels v="1">
+  <!-- 128: Dynamic Reactive Current  -->
+  <model id="128" len="14" name="reactive_current">
+    <block len="14" type="fixed">
+      <point id="ArGraMod" offset="0" access="rw" type="enum16" len="1" mandatory="true">
+        <symbol id="EDGE">0</symbol>
+        <symbol id="CENTER">1</symbol>
+      </point>
+      <point id="ArGraSag" offset="1" access="rw" type="uint16" len="1" mandatory="true" units="%ARtg/%dV" sf="ArGra_SF"/>
+      <point id="ArGraSwell" offset="2" access="rw" type="uint16" len="1" mandatory="true" units="%ARtg/%dV" sf="ArGra_SF"/>
+      <point id="ModEna" offset="3" access="rw" type="bitfield16" len="1" mandatory="true">
+        <symbol id="ENABLED">0</symbol>
+      </point>
+      <point id="FilTms" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="Secs" />
+      <point id="DbVMin" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="VRefPct_SF"/>
+      <point id="DbVMax" offset="6" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="VRefPct_SF"/>
+      <point id="BlkZnV" offset="7" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="VRefPct_SF"/>
+      <point id="HysBlkZnV" offset="8" access="rw" type="uint16" len="1" mandatory="false" units="% VRef" sf="VRefPct_SF"/>
+      <point id="BlkZnTmms" offset="9" access="rw" type="uint16" len="1" mandatory="false" units="mSecs" />
+      <point id="HoldTmms" offset="10" access="rw" type="uint16" len="1" mandatory="false" units="mSecs" />
+      <point id="ArGra_SF" offset="11" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="VRefPct_SF" offset="12" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="Pad" offset="13" access="r" type="pad" len="1" mandatory="false"  />
+    </block>
+  </model>
+  <strings id="128" locale="en">
+    <model>
+      <label>Dynamic Reactive Current</label>
+      <description>Dynamic Reactive Current </description>
+      <notes>Ref 3: 8.10.1.2; Ref 4: 12</notes>
+    </model>
+    <point id="ModEna">
+      <label>ModEna</label>
+      <description>Activate dynamic reactive current model</description>
+      <notes> </notes>
+    </point>
+    <point id="ArGraMod">
+      <label>ArGraMod</label>
+      <description>Indicates if gradients trend toward zero at the edges of the deadband or trend toward zero at the center of the deadband.</description>
+      <notes> </notes>
+    </point>
+    <point id="ArGraSag">
+      <label>ArGraSag</label>
+      <description>The gradient used to increase capacitive dynamic current. A value of 0 indicates no additional reactive current support.</description>
+      <notes> </notes>
+    </point>
+    <point id="ArGraSwell">
+      <label>ArGraSwell</label>
+      <description>The gradient used to increase inductive dynamic current.  A value of 0 indicates no additional reactive current support.</description>
+      <notes> </notes>
+    </point>
+    <point id="ArGra_SF">
+      <label>ArGra_SF</label>
+      <description>Scale factor for the gradients.</description>
+      <notes> </notes>
+    </point>
+    <point id="FilTms">
+      <label>FilTms</label>
+      <description>The time window used to calculate the moving average voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="DbVMin">
+      <label>DbVMin</label>
+      <description>The lower delta voltage limit for which negative voltage deviations less than this value no dynamic vars are produced.</description>
+      <notes> </notes>
+    </point>
+    <point id="DbVMax">
+      <label>DbVMax</label>
+      <description>The upper delta voltage limit for which positive voltage deviations less than this value no dynamic current produced.</description>
+      <notes> </notes>
+    </point>
+    <point id="VRefPct_SF">
+      <label>VRefPct_SF</label>
+      <description>Scale factor for the voltage zone and limit settings.</description>
+      <notes> </notes>
+    </point>
+    <point id="BlkZnV">
+      <label>BlkZnV</label>
+      <description>Block zone voltage which defines a lower voltage boundary below which no dynamic current is produced.</description>
+      <notes> </notes>
+    </point>
+    <point id="HysBlkZnV">
+      <label>HysBlkZnV</label>
+      <description>Hysteresis voltage used with BlkZnV.</description>
+      <notes> </notes>
+    </point>
+    <point id="BlkZnTmms">
+      <label>BlkZnTmms</label>
+      <description>Block zone time the time before which reactive current support remains active regardless of how low the voltage drops.</description>
+      <notes> </notes>
+    </point>
+    <point id="HoldTmms">
+      <label>HoldTmms</label>
+      <description>Hold time during which reactive current support continues after the average voltage has entered the dead zone.</description>
+      <notes> </notes>
+    </point>
+  </strings>
+</sunSpecModels>

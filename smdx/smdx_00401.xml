@@ -1,0 +1,140 @@
+<sunSpecModels v="1">
+  <!-- 401: string combiner -->
+  <model id="401" len="22" name="string_combiner">
+    <block len="14">
+      <point id="DCA_SF" offset="0" type="sunssf" mandatory="true" />
+      <point id="DCAhr_SF" offset="1" type="sunssf" />
+      <point id="DCV_SF" offset="2" type="sunssf" />
+      <point id="DCAMax" offset="3" type="uint16" sf="DCA_SF" units="A" mandatory="true" />
+      <point id="N" offset="4" type="count" mandatory="true" />
+      <point id="Evt" offset="5" type="bitfield32" mandatory="true">
+        <symbol id="LOW_VOLTAGE">0</symbol>
+        <symbol id="LOW_POWER">1</symbol>
+        <symbol id="LOW_EFFICIENCY">2</symbol>
+        <symbol id="CURRENT">3</symbol>
+        <symbol id="VOLTAGE">4</symbol>
+        <symbol id="POWER">5</symbol>
+        <symbol id="PR">6</symbol>
+        <symbol id="DISCONNECTED">7</symbol>
+        <symbol id="FUSE_FAULT">8</symbol>
+        <symbol id="COMBINER_FUSE_FAULT">9</symbol>
+        <symbol id="COMBINER_CABINET_OPEN">10</symbol>
+        <symbol id="TEMP">11</symbol>
+        <symbol id="GROUNDFAULT">12</symbol>
+        <symbol id="REVERSED_POLARITY">13</symbol>
+        <symbol id="INCOMPATIBLE">14</symbol>
+        <symbol id="COMM_ERROR">15</symbol>
+        <symbol id="INTERNAL_ERROR">16</symbol>
+        <symbol id="THEFT">17</symbol>
+        <symbol id="ARC_DETECTED">18</symbol>
+      </point>
+      <point id="EvtVnd" offset="7" type="bitfield32" />
+      <point id="DCA" offset="9" type="int16" sf="DCA_SF" units="A" mandatory="true" />
+      <point id="DCAhr" offset="10" type="uint32" sf="DCAhr_SF" units="Ah" />
+      <point id="DCV" offset="12" type="uint16" sf="DCV_SF" units="V" />
+      <point id="Tmp" offset="13" type="int16" units="C" />
+    </block>
+    <block type="repeating" len="8" name="string">
+      <point id="InID" offset="0" type="uint16" mandatory="true" />
+      <point id="InEvt" offset="1" type="bitfield32" mandatory="true">
+        <symbol id="LOW_VOLTAGE">0</symbol>
+        <symbol id="LOW_POWER">1</symbol>
+        <symbol id="LOW_EFFICIENCY">2</symbol>
+        <symbol id="CURRENT">3</symbol>
+        <symbol id="VOLTAGE">4</symbol>
+        <symbol id="POWER">5</symbol>
+        <symbol id="PR">6</symbol>
+        <symbol id="DISCONNECTED">7</symbol>
+        <symbol id="FUSE_FAULT">8</symbol>
+        <symbol id="COMBINER_FUSE_FAULT">9</symbol>
+        <symbol id="COMBINER_CABINET_OPEN">10</symbol>
+        <symbol id="TEMP">11</symbol>
+        <symbol id="GROUNDFAULT">12</symbol>
+        <symbol id="REVERSED_POLARITY">13</symbol>
+        <symbol id="INCOMPATIBLE">14</symbol>
+        <symbol id="COMM_ERROR">15</symbol>
+        <symbol id="INTERNAL_ERROR">16</symbol>
+        <symbol id="THEFT">17</symbol>
+        <symbol id="ARC_DETECTED">18</symbol>
+      </point>
+      <point id="InEvtVnd" offset="3" type="bitfield32" />
+      <point id="InDCA" offset="5" type="int16" sf="DCA_SF" units="A" mandatory="true" />
+      <point id="InDCAhr" offset="6" type="uint32" sf="DCAhr_SF" units="Ah" />
+    </block>
+  </model>
+  <strings id="401" locale="en">
+    <model>
+      <label>String Combiner (Current)</label>
+      <description>A basic string combiner</description>
+      <notes>This model is SUPERSEDED by model 403</notes>
+    </model>
+    <point id="DCA_SF"><description>Current scale factor</description></point>
+    <point id="DCAhr_SF"><description>Amp-hour scale factor</description></point>
+    <point id="DCV_SF"><description>Voltage scale factor</description></point>
+    <point id="DCAMax">
+      <label>Rating</label>
+      <description>Maximum DC Current Rating</description>
+      <notes></notes>
+    </point>
+    <point id="N">
+      <label>N</label>
+      <description>Number of Inputs</description>
+      <notes></notes>
+    </point>
+    <point id="Evt">
+      <label>Event</label>
+      <description>Bitmask value.  Events</description>
+      <notes></notes>
+    </point>
+    <point id="EvtVnd">
+      <label>Vendor Event</label>
+      <description>Bitmask value.  Vendor defined events</description>
+      <notes></notes>
+    </point>
+    <point id="DCA">
+      <label>Amps</label>
+      <description>Total measured current</description>
+      <notes></notes>
+    </point>
+    <point id="DCAhr">
+      <label>Amp-hours</label>
+      <description>Total metered Amp-hours</description>
+      <notes></notes>
+    </point>
+    <point id="DCV">
+      <label>Voltage</label>
+      <description>Output Voltage</description>
+      <notes></notes>
+    </point>
+    <point id="Tmp">
+      <label>Temp</label>
+      <description>Internal operating temperature</description>
+      <notes></notes>
+    </point>
+    <point id="InID">
+      <label>ID</label>
+      <description>Uniquely identifies this input set</description>
+      <notes></notes>
+    </point>
+    <point id="InEvt">
+      <label>Input Event</label>
+      <description>String Input Event Flags</description>
+      <notes></notes>
+    </point>
+    <point id="InEvtVnd">
+      <label>Input Event Vendor</label>
+      <description>String Input Vendor Event Flags</description>
+      <notes></notes>
+    </point>
+    <point id="InDCA">
+      <label>Amps</label>
+      <description>String Input Current</description>
+      <notes></notes>
+    </point>
+    <point id="InDCAhr">
+      <label>Amp-hours</label>
+      <description>String Input Amp-Hours</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

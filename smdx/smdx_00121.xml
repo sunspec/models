@@ -1,0 +1,204 @@
+<sunSpecModels v="1">
+  <!-- 121: Inverter Controls Basic Settings  -->
+  <model id="121" len="30" name="settings">
+    <block len="30" type="fixed">
+      <point id="WMax" offset="0" access="rw" type="uint16" len="1" mandatory="true" units="W" sf="WMax_SF"/>
+      <point id="VRef" offset="1" access="rw" type="uint16" len="1" mandatory="true" units="V" sf="VRef_SF"/>
+      <point id="VRefOfs" offset="2" access="rw" type="int16" len="1" mandatory="true" units="V" sf="VRefOfs_SF"/>
+      <point id="VMax" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="V" sf="VMinMax_SF"/>
+      <point id="VMin" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="V" sf="VMinMax_SF"/>
+      <point id="VAMax" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="VA" sf="VAMax_SF"/>
+      <point id="VArMaxQ1" offset="6" access="rw" type="int16" len="1" mandatory="false" units="var" sf="VArMax_SF"/>
+      <point id="VArMaxQ2" offset="7" access="rw" type="int16" len="1" mandatory="false" units="var" sf="VArMax_SF"/>
+      <point id="VArMaxQ3" offset="8" access="rw" type="int16" len="1" mandatory="false" units="var" sf="VArMax_SF"/>
+      <point id="VArMaxQ4" offset="9" access="rw" type="int16" len="1" mandatory="false" units="var" sf="VArMax_SF"/>
+      <point id="WGra" offset="10" access="rw" type="uint16" len="1" mandatory="false" units="% WMax/sec" sf="WGra_SF"/>
+      <point id="PFMinQ1" offset="11" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
+      <point id="PFMinQ2" offset="12" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
+      <point id="PFMinQ3" offset="13" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
+      <point id="PFMinQ4" offset="14" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
+      <point id="VArAct" offset="15" access="rw" type="enum16" len="1" mandatory="false"  >
+        <symbol id="SWITCH">1</symbol>
+        <symbol id="MAINTAIN">2</symbol>
+      </point>
+      <point id="ClcTotVA" offset="16" access="rw" type="enum16" len="1" mandatory="false">
+        <symbol id="VECTOR">1</symbol>
+        <symbol id="ARITHMETIC">2</symbol>
+      </point>
+      <point id="MaxRmpRte" offset="17" access="rw" type="uint16" len="1" mandatory="false" units="% WGra" sf="MaxRmpRte_SF"/>
+      <point id="ECPNomHz" offset="18" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="ECPNomHz_SF"/>
+      <point id="ConnPh" offset="19" access="rw" type="enum16" len="1" mandatory="false">
+        <symbol id="A">1</symbol>
+        <symbol id="B">2</symbol>
+        <symbol id="C">3</symbol>
+      </point>
+      <point id="WMax_SF" offset="20" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="VRef_SF" offset="21" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="VRefOfs_SF" offset="22" access="r" type="sunssf" len="1" mandatory="true"  />
+      <point id="VMinMax_SF" offset="23" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="VAMax_SF" offset="24" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="VArMax_SF" offset="25" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="WGra_SF" offset="26" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="PFMin_SF" offset="27" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="MaxRmpRte_SF" offset="28" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="ECPNomHz_SF" offset="29" access="r" type="sunssf" len="1" mandatory="false"  />
+    </block>
+  </model>
+  <strings id="121" locale="en">
+    <model>
+      <label>Basic Settings</label>
+      <description>Inverter Controls Basic Settings </description>
+      <notes>Ref 3: 8.4.2.1, Ref 4: 17</notes>
+    </model>
+    <point id="WMax">
+      <label>WMax</label>
+      <description>Setting for maximum power output. Default to WRtg.</description>
+      <notes> </notes>
+    </point>
+    <point id="WMax_SF">
+      <label>WMax_SF</label>
+      <description>Scale factor for real power.</description>
+      <notes> </notes>
+    </point>
+    <point id="VMax">
+      <label>VMax</label>
+      <description>Setpoint for maximum voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="VMin">
+      <label>VMin</label>
+      <description>Setpoint for minimum voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="VMinMax_SF">
+      <label>VMinMax_SF</label>
+      <description>Scale factor for min/max voltages.</description>
+      <notes> </notes>
+    </point>
+    <point id="VAMax">
+      <label>VAMax</label>
+      <description>Setpoint for maximum apparent power. Default to VARtg.</description>
+      <notes> </notes>
+    </point>
+    <point id="VAMax_SF">
+      <label>VAMax_SF</label>
+      <description>Scale factor for apparent power.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArMaxQ1">
+      <label>VArMaxQ1</label>
+      <description>Setting for maximum reactive power in quadrant 1. Default to VArRtgQ1.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArMaxQ2">
+      <label>VArMaxQ2</label>
+      <description>Setting for maximum reactive power in quadrant 2. Default to VArRtgQ2.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArMaxQ3">
+      <label>VArMaxQ3</label>
+      <description>Setting for maximum reactive power in quadrant 3. Default to VArRtgQ3.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArMaxQ4">
+      <label>VArMaxQ4</label>
+      <description>Setting for maximum reactive power in quadrant 4. Default to VArRtgQ4.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArMax_SF">
+      <label>VArMax_SF</label>
+      <description>Scale factor for reactive power.</description>
+      <notes> </notes>
+    </point>
+    <point id="VRef">
+      <label>VRef</label>
+      <description>Voltage at the PCC.</description>
+      <notes> </notes>
+    </point>
+    <point id="VRef_SF">
+      <label>VRef_SF</label>
+      <description>Scale factor for voltage at the PCC.</description>
+      <notes> </notes>
+    </point>
+    <point id="VRefOfs">
+      <label>VRefOfs</label>
+      <description>Offset  from PCC to inverter.</description>
+      <notes> </notes>
+    </point>
+    <point id="VRefOfs_SF">
+      <label>VRefOfs_SF</label>
+      <description>Scale factor for offset voltage.</description>
+      <notes> </notes>
+    </point>
+    <point id="WGra">
+      <label>WGra</label>
+      <description>Default ramp rate of change of active power due to command or internal action.</description>
+      <notes> </notes>
+    </point>
+    <point id="WGra_SF">
+      <label>WGra_SF</label>
+      <description>Scale factor for default ramp rate.</description>
+      <notes> </notes>
+    </point>
+    <point id="PFMinQ1">
+      <label>PFMinQ1</label>
+      <description>Setpoint for minimum power factor value in quadrant 1. Default to PFRtgQ1.</description>
+      <notes>EEI sign convention.</notes>
+    </point>
+    <point id="PFMinQ2">
+      <label>PFMinQ2</label>
+      <description>Setpoint for minimum power factor value in quadrant 2. Default to PFRtgQ2.</description>
+      <notes>EEI sign convention. </notes>
+    </point>
+    <point id="PFMinQ3">
+      <label>PFMinQ3</label>
+      <description>Setpoint for minimum power factor value in quadrant 3. Default to PFRtgQ3.</description>
+      <notes>EEI sign convention. </notes>
+    </point>
+    <point id="PFMinQ4">
+      <label>PFMinQ4</label>
+      <description>Setpoint for minimum power factor value in quadrant 4. Default to PFRtgQ4.</description>
+      <notes>EEI sign convention. </notes>
+    </point>
+    <point id="PFMin_SF">
+      <label>PFMin_SF</label>
+      <description>Scale factor for minimum power factor.</description>
+      <notes> </notes>
+    </point>
+    <point id="VArAct">
+      <label>VArAct</label>
+      <description>VAR action on change between charging and discharging: 1=switch 2=maintain VAR characterization.</description>
+      <notes> </notes>
+    </point>
+    <point id="ClcTotVA">
+      <label>ClcTotVA</label>
+      <description>Calculation method for total apparent power. 1=vector 2=arithmetic.</description>
+      <notes> </notes>
+    </point>
+    <point id="MaxRmpRte">
+      <label>MaxRmpRte</label>
+      <description>Setpoint for maximum ramp rate as percentage of nominal maximum ramp rate. This setting will limit the rate that watts delivery to the grid can increase or decrease in response to intermittent PV generation.</description>
+      <notes> </notes>
+    </point>
+    <point id="MaxRmpRte_SF">
+      <label>MaxRmpRte_SF</label>
+      <description>Scale factor for maximum ramp percentage.</description>
+      <notes> </notes>
+    </point>
+    <point id="ECPNomHz">
+      <label>ECPNomHz</label>
+      <description>Setpoint for nominal frequency at the ECP.</description>
+      <notes> </notes>
+    </point>
+    <point id="ECPNomHz_SF">
+      <label>ECPNomHz_SF</label>
+      <description>Scale factor for nominal frequency.</description>
+      <notes> </notes>
+    </point>
+    <point id="ConnPh">
+      <label>ConnPh</label>
+      <description>Identity of connected phase for single phase inverters. A=1 B=2 C=3.</description>
+      <notes> </notes>
+    </point>
+  </strings>
+</sunSpecModels>
