@@ -21,8 +21,7 @@
                 "name": "L",
                 "size": 1,
                 "static": "S",
-                "type": "uint16",
-                "value": 50
+                "type": "uint16"
             },
             {
                 "comments": [
