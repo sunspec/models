@@ -19,8 +19,7 @@
                 "mandatory": "M",
                 "name": "L",
                 "size": 1,
-                "type": "uint16",
-                "value": 7
+                "type": "uint16"
             },
             {
                 "comments": [

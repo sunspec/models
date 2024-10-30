@@ -182,8 +182,7 @@
                 "name": "L",
                 "size": 1,
                 "static": "S",
-                "type": "uint16",
-                "value": 65
+                "type": "uint16"
             },
             {
                 "access": "RW",
