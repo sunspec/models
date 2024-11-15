@@ -12,7 +12,10 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 703
+                "value": 703,
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Enter service model length.",
@@ -22,7 +25,10 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 17
+                "value": 17,
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -40,7 +46,10 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -50,7 +59,10 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "Pct"
+                "units": "Pct",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -60,7 +72,10 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "Pct"
+                "units": "Pct",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -70,7 +85,10 @@
                 "sf": "Hz_SF",
                 "size": 2,
                 "type": "uint32",
-                "units": "Hz"
+                "units": "Hz",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -80,7 +98,10 @@
                 "sf": "Hz_SF",
                 "size": 2,
                 "type": "uint32",
-                "units": "Hz"
+                "units": "Hz",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -89,7 +110,10 @@
                 "name": "ESDlyTms",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -98,7 +122,8 @@
                 "name": "ESRndTms",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -107,7 +132,8 @@
                 "name": "ESRmpTms",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "desc": "Enter service delay time remaining in seconds.",
@@ -115,7 +141,8 @@
                 "name": "ESDlyRemTms",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "desc": "Voltage percentage scale factor.",
@@ -123,7 +150,10 @@
                 "name": "V_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Frequency scale factor.",
@@ -131,7 +161,10 @@
                 "name": "Hz_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             }
         ],
         "type": "group"

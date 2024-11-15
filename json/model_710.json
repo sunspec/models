@@ -29,7 +29,11 @@
                                         "sf": "Hz_SF",
                                         "size": 2,
                                         "type": "uint32",
-                                        "units": "Hz"
+                                        "units": "Hz",
+                                        "standards": [
+                                            "IEEE 1547-2018"
+                                        ],
+                                        "detail": "Internal curve conformance checks should be conducted when AdptCrvReq is set to 1, not on point writes."
                                     },
                                     {
                                         "access": "RW",
@@ -39,7 +43,11 @@
                                         "sf": "Tms_SF",
                                         "size": 2,
                                         "type": "uint32",
-                                        "units": "Secs"
+                                        "units": "Secs",
+                                        "standards": [
+                                            "IEEE 1547-2018"
+                                        ],
+                                        "detail": "Internal curve conformance checks should be conducted when AdptCrvReq is set to 1, not on point writes."
                                     }
                                 ],
                                 "type": "group"
@@ -54,7 +62,10 @@
                                 "label": "Number Of Active Points",
                                 "name": "ActPt",
                                 "size": 1,
-                                "type": "uint16"
+                                "type": "uint16",
+                                "standards": [
+                                    "IEEE 1547-2018"
+                                ]
                             }
                         ],
                         "type": "group"
@@ -76,7 +87,8 @@
                                         "sf": "Hz_SF",
                                         "size": 2,
                                         "type": "uint32",
-                                        "units": "Hz"
+                                        "units": "Hz",
+                                        "standards": []
                                     },
                                     {
                                         "access": "RW",
@@ -86,7 +98,8 @@
                                         "sf": "Tms_SF",
                                         "size": 2,
                                         "type": "uint32",
-                                        "units": "Secs"
+                                        "units": "Secs",
+                                        "standards": []
                                     }
                                 ],
                                 "type": "group"
@@ -101,7 +114,8 @@
                                 "label": "Number Of Active Points",
                                 "name": "ActPt",
                                 "size": 1,
-                                "type": "uint16"
+                                "type": "uint16",
+                                "standards": []
                             }
                         ],
                         "type": "group"
@@ -123,7 +137,8 @@
                                         "sf": "Hz_SF",
                                         "size": 2,
                                         "type": "uint32",
-                                        "units": "Hz"
+                                        "units": "Hz",
+                                        "standards": []
                                     },
                                     {
                                         "access": "RW",
@@ -133,7 +148,8 @@
                                         "sf": "Tms_SF",
                                         "size": 2,
                                         "type": "uint32",
-                                        "units": "Secs"
+                                        "units": "Secs",
+                                        "standards": []
                                     }
                                 ],
                                 "type": "group"
@@ -148,7 +164,8 @@
                                 "label": "Number Of Active Points",
                                 "name": "ActPt",
                                 "size": 1,
-                                "type": "uint16"
+                                "type": "uint16",
+                                "standards": []
                             }
                         ],
                         "type": "group"
@@ -178,7 +195,10 @@
                                 "value": 1
                             }
                         ],
-                        "type": "enum16"
+                        "type": "enum16",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     }
                 ],
                 "type": "group"
@@ -195,7 +215,10 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 710
+                "value": 710,
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "DER high frequency trip model length.",
@@ -204,7 +227,10 @@
                 "name": "L",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -227,7 +253,10 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -236,7 +265,10 @@
                 "mandatory": "M",
                 "name": "AdptCrvReq",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Result of last adopt curve operation.",
@@ -264,7 +296,10 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Number of curve points supported.",
@@ -273,7 +308,10 @@
                 "name": "NPt",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Number of stored curves supported.",
@@ -282,7 +320,10 @@
                 "name": "NCrvSet",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Scale factor for curve frequency points.",
@@ -291,7 +332,10 @@
                 "name": "Hz_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Scale factor for curve time points.",
@@ -300,7 +344,10 @@
                 "name": "Tms_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             }
         ],
         "type": "group"

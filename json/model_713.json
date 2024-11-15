@@ -12,7 +12,10 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 713
+                "value": 713,
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "DER storage capacity model length.",
@@ -22,7 +25,10 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 7
+                "value": 7,
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Energy rating of the DER storage.",
@@ -31,7 +37,8 @@
                 "sf": "WH_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "WH"
+                "units": "WH",
+                "standards": []
             },
             {
                 "desc": "Energy available of the DER storage (WHAvail = WHRtg * SoC * SoH)",
@@ -40,16 +47,21 @@
                 "sf": "WH_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "WH"
+                "units": "WH",
+                "standards": []
             },
             {
                 "desc": "State of charge of the DER storage.",
+                "detail": "SOC shall be fixed to 0% for DER without storage capabilities.",
                 "label": "State of Charge",
                 "name": "SoC",
                 "sf": "Pct_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "Pct"
+                "units": "Pct",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "State of health of the DER storage.",
@@ -58,7 +70,8 @@
                 "sf": "Pct_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "Pct"
+                "units": "Pct",
+                "standards": []
             },
             {
                 "desc": "Storage status.",
@@ -85,7 +98,8 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": []
             },
             {
                 "desc": "Scale factor for energy capacity.",
@@ -93,7 +107,8 @@
                 "name": "WH_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Scale factor for percentage.",
@@ -101,7 +116,8 @@
                 "name": "Pct_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             }
         ],
         "type": "group"

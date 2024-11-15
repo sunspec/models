@@ -1,6 +1,8 @@
 {
     "group": {
         "desc": "A basic string combiner",
+        "label": "String Combiner (Current)",
+        "name": "string_combiner_current",
         "groups": [
             {
                 "count": 0,
@@ -130,8 +132,6 @@
                 "type": "group"
             }
         ],
-        "label": "String Combiner (Current)",
-        "name": "string_combiner",
         "points": [
             {
                 "desc": "Model identifier",

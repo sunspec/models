@@ -12,7 +12,10 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 701
+                "value": 701,
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "DER AC measurement model length.",
@@ -22,7 +25,10 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 153
+                "value": 153,
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "comments": [
@@ -50,7 +56,8 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": []
             },
             {
                 "comments": [
@@ -72,7 +79,10 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "comments": [
@@ -116,7 +126,8 @@
                         "value": 7
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": []
             },
             {
                 "comments": [
@@ -140,7 +151,10 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "comments": [
@@ -238,7 +252,10 @@
                         "value": 16
                     }
                 ],
-                "type": "bitfield32"
+                "type": "bitfield32",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Current operational characteristics of the DER.",
@@ -265,11 +282,12 @@
                         "value": 2
                     }
                 ],
-                "type": "bitfield32"
+                "type": "bitfield32",
+                "standards": []
             },
             {
                 "comments": [
-                    "Summary"
+                    "Scale Factors"
                 ],
                 "desc": "Total active power. Active power is positive for DER generation and negative for absorption.",
                 "label": "Active Power",
@@ -277,7 +295,10 @@
                 "sf": "W_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "W"
+                "units": "W",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Total apparent power.",
@@ -286,7 +307,8 @@
                 "sf": "VA_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "VA"
+                "units": "VA",
+                "standards": []
             },
             {
                 "desc": "Total reactive power.",
@@ -295,7 +317,10 @@
                 "sf": "Var_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "Var"
+                "units": "Var",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Power factor. The sign of power factor should be the sign of active power.",
@@ -303,7 +328,8 @@
                 "name": "PF",
                 "sf": "PF_SF",
                 "size": 1,
-                "type": "int16"
+                "type": "int16",
+                "standards": []
             },
             {
                 "desc": "Total AC current.",
@@ -312,7 +338,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "A"
+                "units": "A",
+                "standards": []
             },
             {
                 "desc": "Line to line AC voltage as an average of active phases.",
@@ -321,7 +348,10 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Line to neutral AC voltage as an average of active phases.",
@@ -330,7 +360,10 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "AC frequency.",
@@ -339,7 +372,10 @@
                 "sf": "Hz_SF",
                 "size": 2,
                 "type": "uint32",
-                "units": "Hz"
+                "units": "Hz",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Total active energy injected (Quadrants 1 & 4).",
@@ -348,7 +384,8 @@
                 "sf": "TotWh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Wh"
+                "units": "Wh",
+                "standards": []
             },
             {
                 "desc": "Total active energy absorbed (Quadrants 2 & 3).",
@@ -357,7 +394,8 @@
                 "sf": "TotWh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Wh"
+                "units": "Wh",
+                "standards": []
             },
             {
                 "desc": "Total reactive energy injected (Quadrants 1 & 2).",
@@ -366,7 +404,8 @@
                 "sf": "TotVarh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Varh"
+                "units": "Varh",
+                "standards": []
             },
             {
                 "desc": "Total reactive energy absorbed (Quadrants 3 & 4).",
@@ -375,7 +414,8 @@
                 "sf": "TotVarh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Varh"
+                "units": "Varh",
+                "standards": []
             },
             {
                 "comments": [
@@ -387,7 +427,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "standards": []
             },
             {
                 "desc": "Cabinet temperature.",
@@ -396,7 +437,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "standards": []
             },
             {
                 "desc": "Heat sink temperature.",
@@ -405,7 +447,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "standards": []
             },
             {
                 "desc": "Transformer temperature.",
@@ -414,7 +457,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "standards": []
             },
             {
                 "desc": "IGBT/MOSFET temperature.",
@@ -423,7 +467,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "standards": []
             },
             {
                 "desc": "Other temperature.",
@@ -432,7 +477,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "standards": []
             },
             {
                 "comments": [
@@ -444,7 +490,8 @@
                 "sf": "W_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "W"
+                "units": "W",
+                "standards": []
             },
             {
                 "desc": "Apparent power L1.",
@@ -453,7 +500,8 @@
                 "sf": "VA_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "VA"
+                "units": "VA",
+                "standards": []
             },
             {
                 "desc": "Reactive power L1.",
@@ -462,7 +510,8 @@
                 "sf": "Var_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "Var"
+                "units": "Var",
+                "standards": []
             },
             {
                 "desc": "Power factor phase L1.",
@@ -470,7 +519,8 @@
                 "name": "PFL1",
                 "sf": "PF_SF",
                 "size": 1,
-                "type": "int16"
+                "type": "int16",
+                "standards": []
             },
             {
                 "desc": "Current phase L1.",
@@ -479,7 +529,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "A"
+                "units": "A",
+                "standards": []
             },
             {
                 "desc": "Phase voltage L1-L2.",
@@ -488,7 +539,10 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Phase voltage L1-N.",
@@ -497,7 +551,10 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Total active energy injected L1.",
@@ -506,7 +563,8 @@
                 "sf": "TotWh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Wh"
+                "units": "Wh",
+                "standards": []
             },
             {
                 "desc": "Total active energy absorbed L1.",
@@ -515,7 +573,8 @@
                 "sf": "TotWh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Wh"
+                "units": "Wh",
+                "standards": []
             },
             {
                 "desc": "Total reactive energy injected L1.",
@@ -524,7 +583,8 @@
                 "sf": "TotVarh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Varh"
+                "units": "Varh",
+                "standards": []
             },
             {
                 "desc": "Total reactive energy absorbed L1.",
@@ -533,7 +593,8 @@
                 "sf": "TotVarh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Varh"
+                "units": "Varh",
+                "standards": []
             },
             {
                 "comments": [
@@ -545,7 +606,8 @@
                 "sf": "W_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "W"
+                "units": "W",
+                "standards": []
             },
             {
                 "desc": "Apparent power L2.",
@@ -554,7 +616,8 @@
                 "sf": "VA_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "VA"
+                "units": "VA",
+                "standards": []
             },
             {
                 "desc": "Reactive power L2.",
@@ -563,7 +626,8 @@
                 "sf": "Var_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "Var"
+                "units": "Var",
+                "standards": []
             },
             {
                 "desc": "Power factor L2.",
@@ -571,7 +635,8 @@
                 "name": "PFL2",
                 "sf": "PF_SF",
                 "size": 1,
-                "type": "int16"
+                "type": "int16",
+                "standards": []
             },
             {
                 "desc": "Current L2.",
@@ -580,7 +645,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "A"
+                "units": "A",
+                "standards": []
             },
             {
                 "desc": "Phase voltage L2-L3.",
@@ -589,7 +655,10 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Phase voltage L2-N.",
@@ -598,7 +667,10 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Total active energy injected L2.",
@@ -607,7 +679,8 @@
                 "sf": "TotWh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Wh"
+                "units": "Wh",
+                "standards": []
             },
             {
                 "desc": "Total active energy absorbed L2.",
@@ -616,7 +689,8 @@
                 "sf": "TotWh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Wh"
+                "units": "Wh",
+                "standards": []
             },
             {
                 "desc": "Total reactive energy injected L2.",
@@ -625,7 +699,8 @@
                 "sf": "TotVarh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Varh"
+                "units": "Varh",
+                "standards": []
             },
             {
                 "desc": "Total reactive energy absorbed L2.",
@@ -634,7 +709,8 @@
                 "sf": "TotVarh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Varh"
+                "units": "Varh",
+                "standards": []
             },
             {
                 "comments": [
@@ -646,7 +722,8 @@
                 "sf": "W_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "W"
+                "units": "W",
+                "standards": []
             },
             {
                 "desc": "Apparent power L3.",
@@ -655,7 +732,8 @@
                 "sf": "VA_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "VA"
+                "units": "VA",
+                "standards": []
             },
             {
                 "desc": "Reactive power L3.",
@@ -664,7 +742,8 @@
                 "sf": "Var_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "Var"
+                "units": "Var",
+                "standards": []
             },
             {
                 "desc": "Power factor L3.",
@@ -672,7 +751,8 @@
                 "name": "PFL3",
                 "sf": "PF_SF",
                 "size": 1,
-                "type": "int16"
+                "type": "int16",
+                "standards": []
             },
             {
                 "desc": "Current L3.",
@@ -681,7 +761,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "A"
+                "units": "A",
+                "standards": []
             },
             {
                 "desc": "Phase voltage L3-L1.",
@@ -690,7 +771,10 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Phase voltage L3-N.",
@@ -699,7 +783,10 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Total active energy injected L3.",
@@ -708,7 +795,8 @@
                 "sf": "TotWh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Wh"
+                "units": "Wh",
+                "standards": []
             },
             {
                 "desc": "Total active energy absorbed L3.",
@@ -717,7 +805,8 @@
                 "sf": "TotWh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Wh"
+                "units": "Wh",
+                "standards": []
             },
             {
                 "desc": "Total reactive energy injected L3.",
@@ -726,7 +815,8 @@
                 "sf": "TotVarh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Varh"
+                "units": "Varh",
+                "standards": []
             },
             {
                 "desc": "Total reactive energy absorbed L3.",
@@ -735,7 +825,8 @@
                 "sf": "TotVarh_SF",
                 "size": 4,
                 "type": "uint64",
-                "units": "Varh"
+                "units": "Varh",
+                "standards": []
             },
             {
                 "comments": [
@@ -746,7 +837,8 @@
                 "name": "ThrotPct",
                 "size": 1,
                 "type": "uint16",
-                "units": "Pct"
+                "units": "Pct",
+                "standards": []
             },
             {
                 "desc": "Active throttling source.",
@@ -815,7 +907,8 @@
                         "value": 14
                     }
                 ],
-                "type": "bitfield32"
+                "type": "bitfield32",
+                "standards": []
             },
             {
                 "comments": [
@@ -826,7 +919,8 @@
                 "name": "A_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Voltage scale factor.",
@@ -834,7 +928,8 @@
                 "name": "V_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Frequency scale factor.",
@@ -842,7 +937,8 @@
                 "name": "Hz_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Active power scale factor.",
@@ -850,7 +946,8 @@
                 "name": "W_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Power factor scale factor.",
@@ -858,7 +955,8 @@
                 "name": "PF_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Apparent power scale factor.",
@@ -866,7 +964,8 @@
                 "name": "VA_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Reactive power scale factor.",
@@ -874,7 +973,8 @@
                 "name": "Var_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Active energy scale factor.",
@@ -882,7 +982,8 @@
                 "name": "TotWh_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Reactive energy scale factor.",
@@ -890,7 +991,8 @@
                 "name": "TotVarh_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "desc": "Temperature scale factor.",
@@ -898,7 +1000,8 @@
                 "name": "Tmp_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": []
             },
             {
                 "comments": [
@@ -908,7 +1011,8 @@
                 "label": "Manufacturer Alarm Info",
                 "name": "MnAlrmInfo",
                 "size": 32,
-                "type": "string"
+                "type": "string",
+                "standards": []
             }
         ],
         "type": "group"

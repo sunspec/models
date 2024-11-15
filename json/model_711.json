@@ -20,7 +20,10 @@
                         "sf": "Db_SF",
                         "size": 2,
                         "type": "uint32",
-                        "units": "Hz"
+                        "units": "Hz",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "access": "RW",
@@ -31,7 +34,10 @@
                         "sf": "Db_SF",
                         "size": 2,
                         "type": "uint32",
-                        "units": "Hz"
+                        "units": "Hz",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "access": "RW",
@@ -41,7 +47,10 @@
                         "name": "KOf",
                         "sf": "K_SF",
                         "size": 1,
-                        "type": "uint16"
+                        "type": "uint16",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "access": "RW",
@@ -51,7 +60,10 @@
                         "name": "KUf",
                         "sf": "K_SF",
                         "size": 1,
-                        "type": "uint16"
+                        "type": "uint16",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "access": "RW",
@@ -62,7 +74,10 @@
                         "sf": "RspTms_SF",
                         "size": 2,
                         "type": "uint32",
-                        "units": "Secs"
+                        "units": "Secs",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "access": "RW",
@@ -71,7 +86,8 @@
                         "name": "PMin",
                         "size": 1,
                         "type": "int16",
-                        "units": "Pct"
+                        "units": "Pct",
+                        "standards": []
                     },
                     {
                         "desc": "Control read-write access.",
@@ -94,7 +110,10 @@
                                 "value": 1
                             }
                         ],
-                        "type": "enum16"
+                        "type": "enum16",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     }
                 ],
                 "type": "group"
@@ -111,7 +130,10 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 711
+                "value": 711,
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "DER Frequency Droop model length.",
@@ -120,7 +142,10 @@
                 "name": "L",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -143,7 +168,10 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -152,7 +180,10 @@
                 "mandatory": "M",
                 "name": "AdptCtlReq",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Result of last set active control operation.",
@@ -180,7 +211,10 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Number of stored controls supported.",
@@ -189,7 +223,10 @@
                 "name": "NCtl",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -198,7 +235,8 @@
                 "name": "RvrtTms",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "desc": "Reversion time remaining in seconds.",
@@ -206,7 +244,8 @@
                 "name": "RvrtRem",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -214,7 +253,8 @@
                 "label": "Reversion Control",
                 "name": "RvrtCtl",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "standards": []
             },
             {
                 "desc": "Deadband scale factor.",
@@ -223,7 +263,10 @@
                 "name": "Db_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Frequency change scale factor.",
@@ -232,7 +275,10 @@
                 "name": "K_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Open loop response time scale factor.",
@@ -241,7 +287,10 @@
                 "name": "RspTms_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             }
         ],
         "type": "group"

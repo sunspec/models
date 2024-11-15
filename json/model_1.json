@@ -12,7 +12,10 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 1
+                "value": 1,
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Model length",
@@ -21,7 +24,10 @@
                 "name": "L",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Well known value registered with SunSpec for compliance",
@@ -30,7 +36,10 @@
                 "name": "Mn",
                 "size": 16,
                 "static": "S",
-                "type": "string"
+                "type": "string",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Manufacturer specific value (32 chars)",
@@ -39,7 +48,10 @@
                 "name": "Md",
                 "size": 16,
                 "static": "S",
-                "type": "string"
+                "type": "string",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Manufacturer specific value (16 chars)",
@@ -47,7 +59,8 @@
                 "name": "Opt",
                 "size": 8,
                 "static": "S",
-                "type": "string"
+                "type": "string",
+                "standards": []
             },
             {
                 "desc": "Manufacturer specific value (16 chars)",
@@ -55,7 +68,10 @@
                 "name": "Vr",
                 "size": 8,
                 "static": "S",
-                "type": "string"
+                "type": "string",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Manufacturer specific value (32 chars)",
@@ -64,22 +80,28 @@
                 "name": "SN",
                 "size": 16,
                 "static": "S",
-                "type": "string"
+                "type": "string",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
                 "desc": "Modbus device address",
+                "detail": "This point is mandatory for all SunSpec RTU devices and, for those devices, they must support values from 1-247.",
                 "label": "Device Address",
                 "name": "DA",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "standards": []
             },
             {
                 "desc": "Force even alignment",
                 "name": "Pad",
                 "size": 1,
                 "static": "S",
-                "type": "pad"
+                "type": "pad",
+                "standards": []
             }
         ],
         "type": "group"

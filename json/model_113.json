@@ -2,7 +2,7 @@
     "group": {
         "desc": "Include this model for three phase inverter monitoring using float values",
         "label": "Inverter (Three Phase) FLOAT",
-        "name": "inverter",
+        "name": "inverter_three_phase_float",
         "points": [
             {
                 "desc": "Model identifier",

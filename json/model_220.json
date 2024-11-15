@@ -17,7 +17,7 @@
             }
         ],
         "label": "Secure AC Meter Selected Readings",
-        "name": "ac_meter",
+        "name": "ac_meter_secure",
         "points": [
             {
                 "desc": "Model identifier",

@@ -2,7 +2,7 @@
     "group": {
         "desc": "Include this model for single phase inverter monitoring",
         "label": "Inverter (Single Phase)",
-        "name": "inverter",
+        "name": "inverter_single_phase",
         "points": [
             {
                 "desc": "Model identifier",

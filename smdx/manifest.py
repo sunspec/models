@@ -17,10 +17,11 @@ MANIFEST_MD5_EXT = '.md5'
 
 manifest_files = ['CHANGELOG', 'smdx.xsd']
 
-""" Simple XML pretty print support function
 
-"""
 def xml_indent(elem, level=0):
+    """
+    Simple XML pretty print support function
+    """
     i = "\n" + level*"  "
     if len(elem):
         if not elem.text or not elem.text.strip():
@@ -35,13 +36,16 @@ def xml_indent(elem, level=0):
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
 
+
 class ManifestError(Exception):
     pass
+
 
 class File(object):
     def __init__(self, name=None, md5=None):
         self.name = name
         self.md5 = md5
+
 
 class Manifest(object):
     def __init__(self, path='.', filename=None):
@@ -163,8 +167,8 @@ class Manifest(object):
                 if name and md5:
                     self.files[name] = md5
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
 
     path = os.path.dirname(os.path.realpath(__file__))
     a = Manifest(path)

@@ -26,7 +26,11 @@
                                 "sf": "V_SF",
                                 "size": 1,
                                 "type": "uint16",
-                                "units": "VNomPct"
+                                "units": "VNomPct",
+                                "standards": [
+                                    "IEEE 1547-2018"
+                                ],
+                                "detail": "Internal curve conformance checks should be conducted when AdptCrvReq is set to 1, not on point writes."
                             },
                             {
                                 "access": "RW",
@@ -36,7 +40,11 @@
                                 "sf": "DeptRef_SF",
                                 "size": 1,
                                 "type": "int16",
-                                "units": "DeptRef"
+                                "units": "DeptRef",
+                                "standards": [
+                                    "IEEE 1547-2018"
+                                ],
+                                "detail": "Internal curve conformance checks should be conducted when AdptCrvReq is set to 1, not on point writes."
                             }
                         ],
                         "type": "group"
@@ -52,7 +60,10 @@
                         "mandatory": "M",
                         "name": "ActPt",
                         "size": 1,
-                        "type": "uint16"
+                        "type": "uint16",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "access": "RW",
@@ -83,7 +94,10 @@
                                 "value": 3
                             }
                         ],
-                        "type": "enum16"
+                        "type": "enum16",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "access": "RW",
@@ -111,7 +125,10 @@
                                 "value": 2
                             }
                         ],
-                        "type": "enum16"
+                        "type": "enum16",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "access": "RW",
@@ -121,7 +138,10 @@
                         "sf": "V_SF",
                         "size": 1,
                         "type": "uint16",
-                        "units": "VNomPct"
+                        "units": "VNomPct",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "desc": "Autonomous vref value as a percentage of nominal voltage.",
@@ -130,7 +150,8 @@
                         "sf": "V_SF",
                         "size": 1,
                         "type": "uint16",
-                        "units": "VNomPct"
+                        "units": "VNomPct",
+                        "standards": []
                     },
                     {
                         "access": "RW",
@@ -152,7 +173,10 @@
                                 "value": 1
                             }
                         ],
-                        "type": "enum16"
+                        "type": "enum16",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "access": "RW",
@@ -161,7 +185,10 @@
                         "name": "VRefAutoTms",
                         "size": 1,
                         "type": "uint16",
-                        "units": "Secs"
+                        "units": "Secs",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "access": "RW",
@@ -171,7 +198,10 @@
                         "sf": "RspTms_SF",
                         "size": 2,
                         "type": "uint32",
-                        "units": "Secs"
+                        "units": "Secs",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     },
                     {
                         "desc": "Curve read-write access.",
@@ -194,7 +224,10 @@
                                 "value": 1
                             }
                         ],
-                        "type": "enum16"
+                        "type": "enum16",
+                        "standards": [
+                            "IEEE 1547-2018"
+                        ]
                     }
                 ],
                 "type": "group"
@@ -211,7 +244,10 @@
                 "size": 1,
                 "static": "S",
                 "type": "uint16",
-                "value": 705
+                "value": 705,
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "DER Volt-Var model length.",
@@ -220,7 +256,10 @@
                 "name": "L",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -243,7 +282,10 @@
                         "value": 1
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -252,7 +294,10 @@
                 "mandatory": "M",
                 "name": "AdptCrvReq",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Result of last adopt curve operation.",
@@ -280,7 +325,10 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Number of curve points supported.",
@@ -289,7 +337,10 @@
                 "name": "NPt",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Number of stored curves supported.",
@@ -298,7 +349,10 @@
                 "name": "NCrv",
                 "size": 1,
                 "static": "S",
-                "type": "uint16"
+                "type": "uint16",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "access": "RW",
@@ -307,7 +361,8 @@
                 "name": "RvrtTms",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "desc": "Reversion time remaining in seconds.",
@@ -315,7 +370,8 @@
                 "name": "RvrtRem",
                 "size": 2,
                 "type": "uint32",
-                "units": "Secs"
+                "units": "Secs",
+                "standards": []
             },
             {
                 "access": "RW",
@@ -323,7 +379,8 @@
                 "label": "Reversion Curve",
                 "name": "RvrtCrv",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "standards": []
             },
             {
                 "desc": "Scale factor for curve voltage points.",
@@ -332,7 +389,10 @@
                 "name": "V_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Scale factor for curve var points.",
@@ -341,7 +401,10 @@
                 "name": "DeptRef_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Open loop response time scale factor.",
@@ -350,7 +413,10 @@
                 "name": "RspTms_SF",
                 "size": 1,
                 "static": "S",
-                "type": "sunssf"
+                "type": "sunssf",
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             }
         ],
         "type": "group"

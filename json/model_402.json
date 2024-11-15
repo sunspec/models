@@ -1,6 +1,8 @@
 {
     "group": {
         "desc": "An advanced string combiner",
+        "label": "String Combiner (Advanced)",
+        "name": "string_combiner_advanced",
         "groups": [
             {
                 "count": 0,
@@ -171,8 +173,6 @@
                 "type": "group"
             }
         ],
-        "label": "String Combiner (Advanced)",
-        "name": "string_combiner",
         "points": [
             {
                 "desc": "Model identifier",
