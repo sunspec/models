@@ -167,7 +167,8 @@
                 "type": "pad"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "notes": "Ref 3: 8.10.1.2; Ref 4: 12"
     },
     "id": 128
 }
