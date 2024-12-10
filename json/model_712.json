@@ -215,7 +215,6 @@
                 "mandatory": "M",
                 "name": "AdptCrvReq",
                 "size": 1,
-                "static": "S",
                 "type": "uint16",
                 "standards": [
                     "IEEE 1547-2018"
@@ -227,7 +226,6 @@
                 "mandatory": "M",
                 "name": "AdptCrvRslt",
                 "size": 1,
-                "static": "S",
                 "symbols": [
                     {
                         "desc": "Curve update in progress.",
