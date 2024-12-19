@@ -8,8 +8,8 @@
       <point id="Aux2Tmp" offset="2" type="int16" units="C" />
       <point id="Aux3Tmp" offset="3" type="int16" units="C" />
       <point id="Aux4Tmp" offset="4" type="int16" units="C" />
-      <point id="ProbeTmp" offset="6" type="int16" units="C" mandatory="true" />
       <point id="MainTmp" offset="5" type="int16" units="C" mandatory="true" />
+      <point id="ProbeTmp" offset="6" type="int16" units="C" mandatory="true" />
       <point id="SensorV_SF" offset="7" type="sunssf" mandatory="true" />
       <point id="SensorA_SF" offset="8" type="sunssf" mandatory="true" />
       <point id="SensorHz_SF" offset="9" type="sunssf" mandatory="true" />
@@ -75,12 +75,12 @@
       <label>Probe Temperature</label>
       <description></description>
       <notes></notes>
-    </point>    
+    </point>
     <point id="MainTmp">
       <label>Main Temperature</label>
       <description></description>
       <notes></notes>
-    </point>    
+    </point>
     <point id="SensorV_SF">
       <label>Voltage scale factor for the sensors</label>
       <description></description>
