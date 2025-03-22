@@ -1,0 +1,599 @@
+<sunSpecModels v="1">
+  <!-- 704: DER AC Controls -->
+  <model id="704" len="65" name="DERCtlAC">
+    <block len="65">
+   	  <point id="PFWInjEna" offset="0" type="enum16" access="rw" mandatory="true" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="PFWInjEnaRvrt" offset="1" type="enum16" access="rw" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="PFWInjRvrtTms" offset="2" type="uint32" access="rw" units="Secs" />
+      <point id="PFWInjRvrtRem" offset="4" type="uint32" units="Secs" />
+      <point id="PFWAbsEna" offset="6" type="enum16" access="rw" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="PFWAbsEnaRvrt" offset="7" type="enum16" access="rw" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="PFWAbsRvrtTms" offset="8" type="uint32" access="rw" units="Secs" />
+      <point id="PFWAbsRvrtRem" offset="10" type="uint32" units="Secs" />
+      <point id="WMaxLimPctEna" offset="12" type="enum16" access="rw" mandatory="true" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="WMaxLimPct" offset="13" type="uint16" access="rw" units="Pct" sf="WMaxLimPct_SF" mandatory="true" />
+      <point id="WMaxLimPctRvrt" offset="14" type="uint16" access="rw" units="Pct" sf="WMaxLimPct_SF" />
+      <point id="WMaxLimPctEnaRvrt" offset="15" type="enum16" access="rw" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="WMaxLimPctRvrtTms" offset="16" type="uint32" access="rw" units="Secs" />
+      <point id="WMaxLimPctRvrtRem" offset="18" type="uint32" units="Secs" />
+      <point id="WSetEna" offset="20" type="enum16" access="rw" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="WSetMod" offset="21" type="enum16" access="rw" >
+        <symbol id="W_MAX_PCT">0</symbol>
+        <symbol id="WATTS">1</symbol>
+      </point>
+      <point id="WSet" offset="22" type="int32" access="rw" units="W" sf="WSet_SF" />
+      <point id="WSetRvrt" offset="24" type="int32" access="rw" units="W" sf="WSet_SF" />
+      <point id="WSetPct" offset="26" type="int16" access="rw" units="Pct" sf="WSetPct_SF" />
+      <point id="WSetPctRvrt" offset="27" type="int16" access="rw" units="Pct" sf="WSetPct_SF" />
+      <point id="WSetEnaRvrt" offset="28" type="enum16" access="rw" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="WSetRvrtTms" offset="29" type="uint32" access="rw" units="Secs" />
+      <point id="WSetRvrtRem" offset="31" type="uint32" units="Secs" />
+      <point id="VarSetEna" offset="33" type="enum16" access="rw" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="VarSetMod" offset="34" type="enum16" access="rw" >
+        <symbol id="W_MAX_PCT">0</symbol>
+        <symbol id="VAR_MAX_PCT">1</symbol>
+        <symbol id="VAR_AVAIL_PCT">2</symbol>
+        <symbol id="VARS">3</symbol>
+      </point>
+      <point id="VarSetPri" offset="35" type="enum16" access="rw" >
+        <symbol id="ACTIVE">0</symbol>
+        <symbol id="REACTIVE">1</symbol>
+        <symbol id="IEEE_1547">2</symbol>
+        <symbol id="PF">3</symbol>
+        <symbol id="VENDOR">4</symbol>
+      </point>
+      <point id="VarSet" offset="36" type="int32" access="rw" units="Var" sf="VarSet_SF" />
+      <point id="VarSetRvrt" offset="38" type="int32" access="rw" units="Var" sf="VarSet_SF" />
+      <point id="VarSetPct" offset="40" type="int16" access="rw" units="Pct" sf="VarSetPct_SF" />
+      <point id="VarSetPctRvrt" offset="41" type="int16" access="rw" units="Pct" sf="VarSetPct_SF" />
+      <point id="VarSetEnaRvrt" offset="42" type="enum16" access="rw" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="VarSetRvrtTms" offset="43" type="uint32" access="rw" units="Secs" />
+      <point id="VarSetRvrtRem" offset="45" type="uint32" units="Secs" />
+      <point id="WRmp" offset="47" type="uint16" access="rw" units="%Max/Sec" />
+      <point id="WRmpRef" offset="48" type="enum16" access="rw" >
+        <symbol id="A_MAX">0</symbol>
+        <symbol id="V_MAX">1</symbol>
+      </point>
+      <point id="VarRmp" offset="49" type="uint16" access="rw" units="%Max/Sec" />
+      <point id="AntiIslEna" offset="50" type="enum16" access="rw" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="PF_SF" offset="51" type="sunssf" mandatory="true" />
+      <point id="WMaxLimPct_SF" offset="52" type="sunssf" mandatory="true" />
+      <point id="WSet_SF" offset="53" type="sunssf" />
+      <point id="WSetPct_SF" offset="54" type="sunssf" />
+      <point id="VarSet_SF" offset="55" type="sunssf" />
+      <point id="VarSetPct_SF" offset="56" type="sunssf" />
+      <point id="DERCtlAC.PFWInj.PF" offset="57" type="uint16" access="rw" sf="PF_SF" mandatory="true" />
+      <point id="DERCtlAC.PFWInj.Ext" offset="58" type="enum16" access="rw" mandatory="true" >
+        <symbol id="OVER_EXCITED">0</symbol>
+        <symbol id="UNDER_EXCITED">1</symbol>
+      </point>
+      <point id="DERCtlAC.PFWInjRvrt.PF" offset="59" type="uint16" access="rw" sf="PF_SF" />
+      <point id="DERCtlAC.PFWInjRvrt.Ext" offset="60" type="enum16" access="rw" >
+        <symbol id="OVER_EXCITED">0</symbol>
+        <symbol id="UNDER_EXCITED">1</symbol>
+      </point>
+      <point id="DERCtlAC.PFWAbs.PF" offset="61" type="uint16" access="rw" sf="PF_SF" />
+      <point id="DERCtlAC.PFWAbs.Ext" offset="62" type="enum16" access="rw" >
+        <symbol id="OVER_EXCITED">0</symbol>
+        <symbol id="UNDER_EXCITED">1</symbol>
+      </point>
+      <point id="DERCtlAC.PFWAbsRvrt.PF" offset="63" type="uint16" access="rw" sf="PF_SF" />
+      <point id="DERCtlAC.PFWAbsRvrt.Ext" offset="64" type="enum16" access="rw" >
+        <symbol id="OVER_EXCITED">0</symbol>
+        <symbol id="UNDER_EXCITED">1</symbol>
+      </point>
+    </block>
+  </model>
+  <strings id="704" locale="en">
+    <model>
+      <label>DER AC Controls</label>
+      <description>DER AC controls model.</description>
+    </model>
+    <point id="PFWInjEna">
+      <label>Power Factor Enable (W Inj) Enable</label>
+      <description>Power factor enable when injecting active power.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="PFWInjEnaRvrt">
+      <label>Power Factor Reversion Enable (W Inj)</label>
+      <description>Power factor reversion timer when injecting active power enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="PFWInjRvrtTms">
+      <label>PF Reversion Time (W Inj)</label>
+      <description>Power factor reversion timer when injecting active power.</description>
+      <notes></notes>
+    </point>
+    <point id="PFWInjRvrtRem">
+      <label>PF Reversion Time Rem (W Inj)</label>
+      <description>Power factor reversion time remaining when injecting active power.</description>
+      <notes></notes>
+    </point>
+    <point id="PFWAbsEna">
+      <label>Power Factor Enable (W Abs) Enable</label>
+      <description>Power factor enable when absorbing active power.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>  
+    <point id="PFWAbsEnaRvrt">
+      <label>Power Factor Reversion Enable (W Abs)</label>
+      <description>Power factor reversion timer when absorbing active power enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="PFWAbsRvrtTms">
+      <label>PF Reversion Time (W Abs)</label>
+      <description>Power factor reversion timer when absorbing active power.</description>
+      <notes></notes>
+    </point>
+    <point id="PFWAbsRvrtRem">
+      <label>PF Reversion Time Rem (W Abs)</label>
+      <description>Power factor reversion time remaining when absorbing active power.</description>
+      <notes></notes>
+    </point>
+    <point id="WMaxLimPctEna">
+      <label>Limit Max Power Pct Enable</label>
+      <description>Limit maximum active power percent enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="WMaxLimPct">
+      <label>Limit Max Power Pct Setpoint</label>
+      <description>Limit maximum active power percent value.</description>
+      <notes></notes>
+    </point>
+    <point id="WMaxLimPctRvrt">
+      <label>Reversion Limit Max Power Pct</label>
+      <description>Reversion limit maximum active power percent value.</description>
+      <notes></notes>
+    </point>
+    <point id="WMaxLimPctEnaRvrt">
+      <label>Reversion Limit Max Power Pct Enable</label>
+      <description>Reversion limit maximum active power percent value enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="WMaxLimPctRvrtTms">
+      <label>Limit Max Power Pct Reversion Time</label>
+      <description>Limit maximum active power percent reversion time.</description>
+      <notes></notes>
+    </point>
+    <point id="WMaxLimPctRvrtRem">
+      <label>Limit Max Power Pct Rev Time Rem</label>
+      <description>Limit maximum active power percent reversion time remaining.</description>
+      <notes></notes>
+    </point>
+    <point id="WSetEna">
+      <label>Set Active Power Enable</label>
+      <description>Set active power enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="WSetMod">
+      <label>Set Active Power Mode</label>
+      <description>Set active power mode.</description>
+      <notes></notes>
+      <symbol id="W_MAX_PCT">
+        <label>Active Power As Max Percent</label>
+        <description>Active power setting is percentage of maximum active power.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="WATTS">
+        <label>Active Power As Watts</label>
+        <description>Active power setting is in watts.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="WSet">
+      <label>Active Power Setpoint (W)</label>
+      <description>Active power setting value in watts.</description>
+      <notes></notes>
+    </point>
+    <point id="WSetRvrt">
+      <label>Reversion Active Power (W)</label>
+      <description>Reversion active power setting value in watts.</description>
+      <notes></notes>
+    </point>
+    <point id="WSetPct">
+      <label>Active Power Setpoint (Pct)</label>
+      <description>Active power setting value as percent.</description>
+      <notes></notes>
+    </point>
+    <point id="WSetPctRvrt">
+      <label>Reversion Active Power (Pct)</label>
+      <description>Reversion active power setting value as percent.</description>
+      <notes></notes>
+    </point>
+    <point id="WSetEnaRvrt">
+      <label>Reversion Active Power Enable</label>
+      <description>Reversion active power function enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="WSetRvrtTms">
+      <label>Active Power Reversion Time</label>
+      <description>Set active power reversion time.</description>
+      <notes></notes>
+    </point>
+    <point id="WSetRvrtRem">
+      <label>Active Power Rev Time Rem</label>
+      <description>Set active power reversion time remaining.</description>
+      <notes></notes>
+    </point>
+    <point id="VarSetEna">
+      <label>Set Reactive Power Enable</label>
+      <description>Set reactive power enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="VarSetMod">
+      <label>Set Reactive Power Mode</label>
+      <description>Set reactive power mode.</description>
+      <notes></notes>
+      <symbol id="W_MAX_PCT">
+        <label>Reactive Power As Watt Max Pct</label>
+        <description>Reactive power setting is percent of maximum active power.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VAR_MAX_PCT">
+        <label>Reactive Power As Var Max Pct</label>
+        <description>Reactive power setting is percent of maximum reactive power.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VAR_AVAIL_PCT">
+        <label>Reactive Power As Var Avail Pct</label>
+        <description>Reactive power setting is percent of available reactive  power.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VARS">
+        <label>Reactive Power As Vars</label>
+        <description>Reactive power is in vars.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="VarSetPri">
+      <label>Reactive Power Priority</label>
+      <description>Reactive power priority.</description>
+      <notes></notes>
+      <symbol id="ACTIVE">
+        <label>Active Power Priority</label>
+        <description>Active power priority.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="REACTIVE">
+        <label>Reactive Power Priority</label>
+        <description>Reactive power priority.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="IEEE_1547">
+        <label>IEEE 1547 Power Priority</label>
+        <description>IEEE 1547-2018 power priority mode.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="PF">
+        <label>PF Power Priority</label>
+        <description>Track PF setting derived from current active and reactive power settings.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VENDOR">
+        <label>Vendor Power Priority</label>
+        <description>Power priority is vendor specific mode.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="VarSet">
+      <label>Reactive Power Setpoint (Vars)</label>
+      <description>Reactive power setting value in vars.</description>
+      <notes></notes>
+    </point>
+    <point id="VarSetRvrt">
+      <label>Reversion Reactive Power (Vars)</label>
+      <description>Reversion reactive power setting value in vars.</description>
+      <notes></notes>
+    </point>
+    <point id="VarSetPct">
+      <label>Reactive Power Setpoint (Pct)</label>
+      <description>Reactive power setting value as percent.</description>
+      <notes></notes>
+    </point>
+    <point id="VarSetPctRvrt">
+      <label>Reversion Reactive Power (Pct)</label>
+      <description>Reversion reactive power setting value as percent.</description>
+      <notes></notes>
+    </point>
+    <point id="VarSetEnaRvrt">
+      <label>Reversion Reactive Power Enable</label>
+      <description>Reversion reactive power function enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="VarSetRvrtTms">
+      <label>Reactive Power Reversion Time</label>
+      <description>Set reactive power reversion time.</description>
+      <notes></notes>
+    </point>
+    <point id="VarSetRvrtRem">
+      <label>Reactive Power Rev Time Rem</label>
+      <description>Set reactive power reversion time remaining.</description>
+      <notes></notes>
+    </point>
+    <point id="WRmp">
+      <label>Normal Ramp Rate</label>
+      <description>Ramp rate for increases in active power during normal generation.</description>
+      <notes></notes>
+    </point>
+    <point id="WRmpRef">
+      <label>Normal Ramp Rate Reference</label>
+      <description>Ramp rate reference unit for increases in active power or current during normal generation.</description>
+      <notes></notes>
+      <symbol id="A_MAX">
+        <label>Max Current Ramp</label>
+        <description>Ramp based on percent of max current per second.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="W_MAX">
+        <label>Max Active Power Ramp</label>
+        <description>Ramp based on percent of max active power per second.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="VarRmp">
+      <label>Reactive Power Ramp Rate</label>
+      <description>Ramp rate based on max reactive power per second.</description>
+      <notes></notes>
+    </point>
+    <point id="AntiIslEna">
+      <label>Anti-Islanding Enable</label>
+      <description>Anti-islanding enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Anti-islanding is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Anti-islanding is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="PF_SF">
+      <label>Power Factor Scale Factor</label>
+      <description>Power factor scale factor.</description>
+      <notes></notes>
+    </point>
+    <point id="WMaxLimPct_SF">
+      <label>Limit Max Power Scale Factor</label>
+      <description>Limit maximum power scale factor.</description>
+      <notes></notes>
+    </point>
+    <point id="WSet_SF">
+      <label>Active Power Scale Factor</label>
+      <description>Active power scale factor.</description>
+      <notes></notes>
+    </point>
+    <point id="WSetPct_SF">
+      <label>Active Power Pct Scale Factor</label>
+      <description>Active power pct scale factor.</description>
+      <notes></notes>
+    </point>
+    <point id="VarSet_SF">
+      <label>Reactive Power Scale Factor</label>
+      <description>Reactive power scale factor.</description>
+      <notes></notes>
+    </point>
+    <point id="VarSetPct_SF">
+      <label>Reactive Power Pct Scale Factor</label>
+      <description>Reactive power pct scale factor.</description>
+      <notes></notes>
+    </point>
+
+    %Falta as linhas 91 até 110 do excel, não sei como inserir!%
+    
+    <point id="DERCtlAC.PFWInj.PF">
+      <label>Power Factor (W Inj)</label>
+      <description>Power factor setpoint when injecting active power.</description>
+      <notes></notes>
+    </point>
+    <point id="DERCtlAC.PFWInj.Ext">
+      <label>Power Factor Excitation (W Inj)</label>
+      <description>Power factor excitation setpoint when injecting active power.</description>
+      <notes></notes>
+      <symbol id="OVER_EXCITED">
+        <label>Over-Excited</label>
+        <description>Power factor over-excited excitation.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_EXCITED">
+        <label>Under-Excited</label>
+        <description>Power factor under-excited excitation.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="DERCtlAC.PFWInjRvrt.PF">
+      <label>Reversion Power Factor (W Inj)</label>
+      <description>Reversion power factor setpoint when injecting active power.</description>
+      <notes></notes>
+    </point>
+    <point id="DERCtlAC.PFWInj.Ext">
+      <label>Reversion PF Excitation (W Inj)</label>
+      <description>Reversion power factor excitation setpoint when injecting active power.</description>
+      <notes></notes>
+      <symbol id="OVER_EXCITED">
+        <label>Over-Excited</label>
+        <description>Power factor over-excited excitation.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_EXCITED">
+        <label>Under-Excited</label>
+        <description>Power factor under-excited excitation.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="DERCtlAC.PFWAbs.PF">
+      <label>Power Factor (W Abs)</label>
+      <description>Power factor setpoint when absorbing active power.</description>
+      <notes></notes>
+    </point>
+    <point id="DERCtlAC.PFWAbs.Ext">
+      <label>Power Factor Excitation (W Abs)</label>
+      <description>Power factor excitation setpoint when absorbing active power.</description>
+      <notes></notes>
+      <symbol id="OVER_EXCITED">
+        <label>Over-Excited</label>
+        <description>Power factor over-excited excitation.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_EXCITED">
+        <label>Under-Excited</label>
+        <description>Power factor under-excited excitation.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="DERCtlAC.PFWAbsRvrt.PF">
+      <label>Reversion Power Factor (W Abs)</label>
+      <description>Reversion power factor setpoint when absorbing active power.</description>
+      <notes></notes>
+    </point>
+    <point id="DERCtlAC.PFWAbsRvrt.Ext">
+      <label>Reversion PF Excitation (W Abs)</label>
+      <description>Reversion power factor excitation setpoint when absorbing active power.</description>
+      <notes></notes>
+      <symbol id="OVER_EXCITED">
+        <label>Over-Excited</label>
+        <description>Power factor over-excited excitation.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="UNDER_EXCITED">
+        <label>Under-Excited</label>
+        <description>Power factor under-excited excitation.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+  </strings>
+</sunSpecModels>

@@ -1,0 +1,192 @@
+<sunSpecModels v="1">
+  <!-- 712: DER Watt-Var -->
+  <model id="712" len="18" name="DERWattVar" >
+    <block len="18">
+   	  <point id="Ena" offset="0" type="enum16" access="rw" mandatory="true" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="AdptCrvReq" offset="1" type="uint16" access="rw" mandatory="true" />
+      <point id="AdptCrvRslt" offset="2" type="enum16" mandatory="true" >
+        <symbol id="IN_PROGRESS">0</symbol>
+        <symbol id="COMPLETED">1</symbol>
+        <symbol id="FAILED">2</symbol>
+      </point>
+      <point id="NPt" offset="3" type="uint16" mandatory="true" />
+      <point id="NCrv" offset="4" type="uint16" mandatory="true" />
+      <point id="RvrtTms" offset="5" type="uint32" access="rw" units="Secs" />
+      <point id="RvrtRem" offset="7" type="uint32" units="Secs" />      
+      <point id="RvrtCrv" offset="9" type="uint16" access="rw" />   
+      <point id="W_SF" offset="10" type="sunssf" mandatory="true" />
+      <point id="DeptRef_SF" offset="11" type="sunssf" mandatory="true" /> 
+      <point id="DERWattVar.Crv.ActPt" offset="12" type="uint16" access="rw" mandatory="true" />
+   	  <point id="DERWattVar.Crv.DeptRef" offset="13" type="enum16" access="rw" mandatory="true" >
+        <symbol id="W_MAX_PCT">0</symbol>
+        <symbol id="VAR_MAX_PCT">1</symbol>
+        <symbol id="VAR_AVAL_PCT">2</symbol>        
+        <symbol id="VA_MAX_PCT">3</symbol>        
+      </point>      
+   	  <point id="DERWattVar.Crv.Pri" offset="14" type="enum16" access="rw" >
+        <symbol id="ACTIVE">0</symbol>
+        <symbol id="REACTIVE">1</symbol>
+      </point>
+   	  <point id="DERWattVar.Crv.ReadOnly" offset="15" type="enum16" mandatory="true" >
+        <symbol id="RW">0</symbol>
+        <symbol id="R">1</symbol>
+      </point>               
+      <point id="DERWattVar.Crv.Pt.W" offset="16" type="int16" access="rw" units="WMaxPct" sf="W_SF" mandatory="true" />   
+      <point id="DERWattVar.Crv.Pt.Var" offset="17" type="int16" access="rw" units="VarPct" sf="DeptRef_SF" mandatory="true" />         
+    </block>
+  </model>
+  <strings id="712" locale="en">
+    <model>
+      <label>DER Watt-Var</label>
+      <description>DER Watt-Var model.</description>
+    </model>
+    <point id="Ena">
+      <label>DER Watt-Var Module Enable</label>
+      <description>DER Watt-Var control enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="AdptCrvReq">
+      <label>Set Active Curve Request</label>
+      <description>Set active curve. 0 = No active curve.</description>
+      <notes></notes>
+    </point>
+	<point id="AdptCrvRslt">
+      <label>Set Active Curve Result</label>
+      <description>Result of last set active curve operation.</description>
+      <notes></notes>
+      <symbol id="IN_PROGRESS">
+        <label>Update In Progress</label>
+        <description>Curve update in progress.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="COMPLETED">
+        <label>Update Complete</label>
+        <description>Curve update completed successfully.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAILED">
+        <label>Update Failed</label>
+        <description>Curve update failed.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="NPt">
+      <label>Number Of Points</label>
+      <description>Number of curve points supported.</description>
+      <notes></notes>
+    </point>
+    <point id="NCrv">
+      <label>Stored Curve Count</label>
+      <description>Number of stored curves supported.</description>
+      <notes></notes>
+    </point>
+    <point id="RvrtTms">
+      <label>Reversion Timeout</label>
+      <description>Reversion time in seconds.  0 = No reversion time.</description>
+      <notes></notes>
+    </point>
+    <point id="RvrtRem">
+      <label>Reversion Time Left</label>
+      <description>Reversion time remaining in seconds.</description>
+      <notes></notes>
+    </point>
+    <point id="RvrtCrv">
+      <label>Reversion Curve</label>
+      <description>Default curve after reversion timeout.</description>
+      <notes></notes>
+    </point>    
+    <point id="W_SF">
+      <label>Active Power Scale Factor</label>
+      <description>Scale factor for curve active power points.</description>
+      <notes></notes>
+    </point>       
+    <point id="DeptRef_SF">
+      <label>Var Scale Factor</label>
+      <description>Scale factor for curve var points.</description>
+      <notes></notes>
+    </point>       
+    <point id="DERWattVar.Crv.ActPt">
+      <label>Active Points</label>
+      <description>Number of active points.</description>
+      <notes></notes>
+    </point>
+    <point id="DERWattVar.Crv.DeptRef">
+      <label>Dependent Reference</label>
+      <description>Curve dependent reference.</description>
+      <notes></notes>
+      <symbol id="W_MAX_PCT">
+        <label>Percent Max Watts</label>
+        <description>Percent max watts.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VAR_MAX_PCT">
+        <label>Percent Max Vars</label>
+        <description>Percent max vars.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VAR_AVAL_PCT">
+        <label>Percent Available Vars</label>
+        <description>Percent available vars.</description>
+        <notes></notes>
+      </symbol>      
+       <symbol id="VA_MAX_PCT">
+        <label>Percent Max Apparent Power</label>
+        <description>Percent max apparent power.</description>
+        <notes></notes>
+      </symbol>     
+    </point> 
+    <point id="DERWattVar.Crv.Pri">
+      <label>Power Priority</label>
+      <description>Power priority.</description>
+      <notes></notes>
+      <symbol id="ACTIVE">
+        <label>Active Power Priority</label>
+        <description>Active power priority.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="REACTIVE">
+        <label>Reactive Power Priority</label>
+        <description>Reactive power priority.</description>
+        <notes></notes>
+      </symbol>
+    </point> 
+    <point id="DERWattVar.Crv.ReadOnly">
+      <label>Curve Access</label>
+      <description>Curve read-write access.</description>
+      <notes></notes>
+      <symbol id="RW">
+        <label>Read-Write Access</label>
+        <description>Curve has read-write access.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="R">
+        <label>Read-Only Access</label>
+        <description>Curve has read-only access.</description>
+        <notes></notes>
+      </symbol>
+    </point>         
+    <point id="DERWattVar.Crv.Pt.W">
+      <label>Active Power Point</label>
+      <description>Curve active power point as percentage.</description>
+      <notes></notes>
+    </point>  
+    <point id="DERWattVar.Crv.Pt.Var">
+      <label>Reactive Power Point</label>
+      <description>Curve reactive power point as set in DeptRef point.</description>
+      <notes></notes>
+    </point>           
+  </strings>
+</sunSpecModels>

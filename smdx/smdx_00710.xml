@@ -1,0 +1,160 @@
+<sunSpecModels v="1">
+  <!-- 710: DER Trip HF -->
+  <model id="710" len="23" name="DERTripHF" >
+    <block len="23">
+   	  <point id="Ena" offset="0" type="enum16" access="rw" mandatory="true" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="AdptCrvReq" offset="1" type="uint16" access="rw" mandatory="true" />
+      <point id="AdptCrvRslt" offset="2" type="enum16" mandatory="true" >
+        <symbol id="IN_PROGRESS">0</symbol>
+        <symbol id="COMPLETED">1</symbol>
+        <symbol id="FAILED">2</symbol>
+      </point>
+      <point id="NPt" offset="3" type="uint16" mandatory="true" />
+      <point id="NCrvSet" offset="4" type="uint16" mandatory="true" />
+      <point id="Hz_SF" offset="5" type="sunssf" mandatory="true" />  
+      <point id="Tms_SF" offset="6" type="sunssf" mandatory="true" />
+      <point id="DERTripHF.Crv.ReadOnly" offset="7" type="enum16" mandatory="true">
+        <symbol id="RW">0</symbol>
+        <symbol id="R">1</symbol>
+      </point> 
+      <point id="DERTripHF.Crv.MustTrip.ActPt" offset="8" type="uint16" access="rw" mandatory="true" />
+      <point id="DERTripHF.Crv.MustTrip.Pt.Hz" offset="9" type="uint32" access="rw" units="Hz" sf="Hz_SF" mandatory="true" /> 
+      <point id="DERTripHF.Crv.MustTrip.Pt.Tms" offset="11" type="uint32" access="rw" units="Secs" sf="Tms_SF" mandatory="true" />  
+      <point id="DERTripHF.Crv.MayTrip.ActPt" offset="13" type="uint16" access="rw" />
+      <point id="DERTripHF.Crv.MayTrip.Pt.Hz" offset="14" type="uint32" access="rw" units="Hz" sf="Hz_SF" /> 
+      <point id="DERTripHF.Crv.MayTrip.Pt.Tms" offset="16" type="uint32" access="rw" units="Secs" sf="Tms_SF" />
+      <point id="DERTripHF.Crv.MomCess.ActPt" offset="18" type="uint16" access="rw" />
+	  <point id="DERTripHF.Crv.MomCess.Pt.Hz" offset="19" type="uint32" access="rw" units="Hz" sf="Hz_SF" /> 
+      <point id="DERTripHF.Crv.MomCess.Pt.Tms" offset="21" type="uint32" access="rw" units="Secs" sf="Tms_SF" />
+    </block>
+  </model>
+  <strings id="710" locale="en">
+    <model>
+      <label>DER Trip LF</label>
+      <description>DER high frequency trip model.</description>
+    </model>
+    <point id="Ena">
+      <label>DER Trip HF Module Enable</label>
+      <description>DER high frequency trip control enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="AdptCrvReq">
+      <label>Adopt Curve Request</label>
+      <description>Index of curve points to adopt. First curve index is 1.</description>
+      <notes></notes>
+    </point>
+	<point id="AdptCrvRslt">
+      <label>Adopt Curve Result</label>
+      <description>Result of last adopt curve operation.</description>
+      <notes></notes>
+      <symbol id="IN_PROGRESS">
+        <label>Update In Progress</label>
+        <description>Curve update in progress.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="COMPLETED">
+        <label>Update Complete</label>
+        <description>Curve update completed successfully.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAILED">
+        <label>Update Failed</label>
+        <description>Curve update failed.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="NPt">
+      <label>Number Of Points</label>
+      <description>Number of curve points supported.</description>
+      <notes></notes>
+    </point>
+    <point id="NCrvSet">
+      <label>Stored Curve Count</label>
+      <description>Number of stored curves supported.</description>
+      <notes></notes>
+    </point>
+    <point id="Hz_SF">
+      <label>Frequency Scale Factor</label>
+      <description>Scale factor for curve frequency points.</description>
+      <notes></notes>
+    </point>
+    <point id="Tms_SF">
+      <label>Time Point Scale Factor</label>
+      <description>Scale factor for curve time points.</description>
+      <notes></notes>
+    </point>
+    <point id="DERTripHF.Crv.ReadOnly">
+      <label>Curve Access</label>
+      <description>Curve read-write access.</description>
+      <notes></notes>
+      <symbol id="RW">
+        <label>Read-Write Access</label>
+        <description>Curve has read-write access.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="R">
+        <label>Read-Only Access</label>
+        <description>Curve has read-only access.</description>
+        <notes></notes>
+      </symbol>
+    </point>     
+    <point id="DERTripHF.Crv.MustTrip.ActPt">
+      <label>Number Of Active Points</label>
+      <description>Number of active points in must trip curve.</description>
+      <notes></notes>
+    </point>
+    <point id="DERTripHF.Crv.MustTrip.Pt.Hz">
+      <label>Frequency Point</label>
+      <description>Curve frequency point.</description>
+      <notes></notes>
+    </point>    
+    <point id="DERTripHF.Crv.MustTrip.Pt.Tms">
+      <label>Time Point</label>
+      <description>Curve time point in seconds.</description>
+      <notes></notes>
+    </point>
+    <point id="DERTripHF.Crv.MayTrip.ActPt">
+      <label>Number Of Active Points</label>
+      <description>Number of active points in may trip curve.</description>
+      <notes></notes>
+    </point>
+    <point id="DERTripHF.Crv.MayTrip.Pt.Hz">
+      <label>Frequency Point</label>
+      <description>Curve frequency point.</description>
+      <notes></notes>
+    </point>    
+    <point id="DERTripHF.Crv.MayTrip.Pt.Tms">
+      <label>Time Point</label>
+      <description>Curve time point in seconds.</description>
+      <notes></notes>
+    </point>  
+    <point id="DERTripHF.Crv.MomCess.ActPt">
+      <label>Number Of Active Points</label>
+      <description>Number of active points in the momentary cessation curve.</description>
+      <notes></notes>
+    </point>
+    <point id="DERTripHF.Crv.MomCess.Pt.Hz">
+      <label>Frequency Point</label>
+      <description>Curve frequency point.</description>
+      <notes></notes>
+    </point>    
+    <point id="DERTripHF.Crv.MomCess.Pt.Tms">
+      <label>Time Point</label>
+      <description>Curve time point in seconds.</description>
+      <notes></notes>
+    </point> 
+  </strings>
+</sunSpecModels>

@@ -1,0 +1,160 @@
+<sunSpecModels v="1">
+  <!-- 708: DER Trip HV -->
+  <model id="708" len="20" name="DERTripHV" >
+    <block len="20">
+   	  <point id="Ena" offset="0" type="enum16" access="rw" mandatory="true" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="AdptCrvReq" offset="1" type="uint16" access="rw" mandatory="true" />
+      <point id="AdptCrvRslt" offset="2" type="enum16" mandatory="true" >
+        <symbol id="IN_PROGRESS">0</symbol>
+        <symbol id="COMPLETED">1</symbol>
+        <symbol id="FAILED">2</symbol>
+      </point>
+      <point id="NPt" offset="3" type="uint16" mandatory="true" />
+      <point id="NCrvSet" offset="4" type="uint16" mandatory="true" />
+      <point id="V_SF" offset="5" type="sunssf" mandatory="true" />  
+      <point id="Tms_SF" offset="6" type="sunssf" mandatory="true" />
+      <point id="DERTripHV.Crv.ReadOnly" offset="7" type="enum16" mandatory="true">
+        <symbol id="RW">0</symbol>
+        <symbol id="R">1</symbol>
+      </point>
+      <point id="DERTripHV.Crv.MustTrip.ActPt" offset="8" type="uint16" access="rw" mandatory="true" />
+      <point id="DERTripHV.Crv.MustTrip.Pt.V" offset="9" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" /> 
+      <point id="DERTripLV.Crv.MustTrip.Pt.Tms" offset="10" type="uint32" access="rw" units="Secs" sf="Tms_SF" mandatory="true" />  
+      <point id="DERTripHV.Crv.MayTrip.ActPt" offset="12" type="uint16" access="rw" />
+      <point id="DERTripHV.Crv.MayTrip.Pt.V" offset="13" type="uint16" access="rw" units="VRefPct" sf="V_SF" /> 
+      <point id="DERTripHV.Crv.MayTrip.Pt.Tms" offset="14" type="uint32" access="rw" units="Secs" sf="Tms_SF" />
+      <point id="DERTripHV.Crv.MomCess.ActPt" offset="16" type="uint16" access="rw" mandatory="true" />
+	  <point id="DERTripHV.Crv.MomCess.Pt.V" offset="17" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" /> 
+      <point id="DERTripHV.Crv.MomCess.Pt.Tms" offset="18" type="uint32" access="rw" units="Secs" sf="Tms_SF" mandatory="true" />
+    </block>
+  </model>
+  <strings id="708" locale="en">
+    <model>
+      <label>DER Trip HV</label>
+      <description>DER high voltage trip model.</description>
+    </model>
+    <point id="Ena">
+      <label>DER Trip HV Module Enable</label>
+      <description>DER high voltage trip control enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="AdptCrvReq">
+      <label>Adopt Curve Request</label>
+      <description>Index of curve points to adopt. First curve index is 1.</description>
+      <notes></notes>
+    </point>
+	<point id="AdptCrvRslt">
+      <label>Adopt Curve Result</label>
+      <description>Result of last adopt curve operation.</description>
+      <notes></notes>
+      <symbol id="IN_PROGRESS">
+        <label>Update In Progress</label>
+        <description>Curve update in progress.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="COMPLETED">
+        <label>Update Complete</label>
+        <description>Curve update completed successfully.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAILED">
+        <label>Update Failed</label>
+        <description>Curve update failed.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="NPt">
+      <label>Number Of Points</label>
+      <description>Number of curve points supported.</description>
+      <notes></notes>
+    </point>
+    <point id="NCrvSet">
+      <label>Stored Curve Count</label>
+      <description>Number of stored curves supported.</description>
+      <notes></notes>
+    </point>
+    <point id="V_SF">
+      <label>Voltage Scale Factor</label>
+      <description>Scale factor for curve voltage points.</description>
+      <notes></notes>
+    </point>
+    <point id="Tms_SF">
+      <label>Time Point Scale Factor</label>
+      <description>Scale factor for curve time points.</description>
+      <notes></notes>
+    </point>
+    <point id="DERTripHV.Crv.ReadOnly">
+      <label>Curve Access</label>
+      <description>Curve read-write access.</description>
+      <notes></notes>
+      <symbol id="RW">
+        <label>Read-Write Access</label>
+        <description>Curve has read-write access.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="R">
+        <label>Read-Only Access</label>
+        <description>Curve has read-only access.</description>
+        <notes></notes>
+      </symbol>
+    </point>     
+    <point id="DERTripHV.Crv.MustTrip.ActPt">
+      <label>Number Of Active Points</label>
+      <description>Number of active points in must trip curve.</description>
+      <notes></notes>
+    </point>
+    <point id="DERTripHV.Crv.MustTrip.Pt.V">
+      <label>Voltage Point</label>
+      <description>Curve voltage point as percentage.</description>
+      <notes></notes>
+    </point>    
+    <point id="DERTripHV.Crv.MustTrip.Pt.Tms">
+      <label>Time Point</label>
+      <description>Curve time point in seconds.</description>
+      <notes></notes>
+    </point>
+    <point id="DERTripHV.Crv.MayTrip.ActPt">
+      <label>Number Of Active Points</label>
+      <description>Number of active points in may trip curve.</description>
+      <notes></notes>
+    </point>
+    <point id="DERTripHV.Crv.MayTrip.Pt.V">
+      <label>Voltage Point</label>
+      <description>Curve voltage point as percentage.</description>
+      <notes></notes>
+    </point>    
+    <point id="DERTripHV.Crv.MayTrip.Pt.Tms">
+      <label>Time Point</label>
+      <description>Curve time point in seconds.</description>
+      <notes></notes>
+    </point>  
+    <point id="DERTripHV.Crv.MomCess.ActPt">
+      <label>Number Of Active Points</label>
+      <description>Number of active points in the momentary cessation curve.</description>
+      <notes></notes>
+    </point>
+    <point id="DERTripHV.Crv.MomCess.Pt.V">
+      <label>Voltage Point</label>
+      <description>Curve voltage point as percentage.</description>
+      <notes></notes>
+    </point>    
+    <point id="DERTripHV.Crv.MomCess.Pt.Tms">
+      <label>Time Point</label>
+      <description>Curve time point in seconds.</description>
+      <notes></notes>
+    </point> 
+  </strings>
+</sunSpecModels>

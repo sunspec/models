@@ -1,0 +1,367 @@
+<sunSpecModels v="1">
+  <!-- 705: DER Volt-Var -->
+  <model id="705" len="43" name="DERVoltVar" >
+    <block len="43">
+   	  <point id="Ena" offset="0" type="enum16" access="rw" mandatory="true" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="AdptCrvReq" offset="1" type="uint16" access="rw" mandatory="true" />
+      <point id="AdptCrvRslt" offset="2" type="enum16" mandatory="true" >
+        <symbol id="IN_PROGRESS">0</symbol>
+        <symbol id="COMPLETED">1</symbol>
+        <symbol id="FAILED">2</symbol>
+      </point>
+      <point id="NPt" offset="3" type="uint16" mandatory="true" />
+      <point id="NCrv" offset="4" type="uint16" mandatory="true" />
+      <point id="RvrtTms" offset="5" type="uint32" access="rw" units="Secs" />
+      <point id="RvrtRem" offset="7" type="uint32" units="Secs" />
+      <point id="RvrtCrv" offset="9" type="uint16" access="rw" />
+      <point id="V_SF" offset="10" type="sunssf" mandatory="true" />
+      <point id="DeptRef_SF" offset="11" type="sunssf" mandatory="true" />
+      <point id="RspTms_SF" offset="12" type="sunssf" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.ActPt" offset="13" type="uint16" access="rw" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.DeptRef" offset="14" type="enum16" access="rw" mandatory="true" >
+        <symbol id="W_MAX_PCT">0</symbol>
+        <symbol id="VAR_MAX_PCT">1</symbol>
+        <symbol id="VAR_AVAL_PCT">2</symbol>
+        <symbol id="VA_MAX_PCT">3</symbol>
+      </point>
+      <point id="DERVoltVar.Crv.Pt.Pri" offset="15" type="enum16" access="rw" mandatory="true" >
+        <symbol id="ACTIVE">0</symbol>
+        <symbol id="REACTIVE">1</symbol>
+        <symbol id="IEEE_1547">2</symbol>
+        <symbol id="PF">3</symbol>
+        <symbol id="VENDOR">4</symbol>
+      </point>
+      <point id="DERVoltVar.Crv.Pt.VRef" offset="16" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.VRefAuto" offset="17" type="uint16" units="VRefPct" sf="V_SF" />
+      <point id="DERVoltVar.Crv.Pt.VRefAutoEna" offset="18" type="enum16" access="rw" mandatory="true" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="DERVoltVar.Crv.Pt.VRefAutoTms" offset="19" type="uint16" access="rw" units="Secs" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.RspTms" offset="20" type="uint32" access="rw" units="Secs" sf="RspTms_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.ReadOnly" offset="22" type="enum16" mandatory="true" >
+        <symbol id="RW">0</symbol>
+        <symbol id="R">1</symbol>
+      </point>
+      <point id="DERVoltVar.Crv.Pt.V_P1" offset="23" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.Var_P1" offset="24" type="int16" access="rw" units="DeptRef" sf="DeptRef_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.V_P2" offset="25" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.Var_P2" offset="26" type="int16" access="rw" units="DeptRef" sf="DeptRef_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.V_P3" offset="27" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.Var_P3" offset="28" type="int16" access="rw" units="DeptRef" sf="DeptRef_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.V_P4" offset="29" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.Var_P4" offset="30" type="int16" access="rw" units="DeptRef" sf="DeptRef_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.V_P5" offset="31" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.Var_P5" offset="32" type="int16" access="rw" units="DeptRef" sf="DeptRef_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.V_P6" offset="33" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.Var_P6" offset="34" type="int16" access="rw" units="DeptRef" sf="DeptRef_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.V_P7" offset="35" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.Var_P7" offset="36" type="int16" access="rw" units="DeptRef" sf="DeptRef_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.V_P8" offset="37" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.Var_P8" offset="38" type="int16" access="rw" units="DeptRef" sf="DeptRef_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.V_P9" offset="39" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.Var_P9" offset="40" type="int16" access="rw" units="DeptRef" sf="DeptRef_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.V_P10" offset="41" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" />
+      <point id="DERVoltVar.Crv.Pt.Var_P10" offset="42" type="int16" access="rw" units="DeptRef" sf="DeptRef_SF" mandatory="true" />   
+    </block>
+  </model>
+  <strings id="705" locale="en">
+    <model>
+      <label>DER Volt-Var</label>
+      <description>DER Volt-Var model.</description>
+    </model>
+    <point id="Ena">
+      <label>DER Volt-Var Module Enable</label>
+      <description>Volt-Var control enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="AdptCrvReq">
+      <label>Adopt Curve Request</label>
+      <description>Index of curve points to adopt. First curve index is 1.</description>
+      <notes></notes>
+    </point>
+	<point id="AdptCrvRslt">
+      <label>Adopt Curve Result</label>
+      <description>Result of last adopt curve operation.</description>
+      <notes></notes>
+      <symbol id="IN_PROGRESS">
+        <label>Update In Progress</label>
+        <description>Curve update in progress.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="COMPLETED">
+        <label>Update Complete</label>
+        <description>Curve update completed successfully.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAILED">
+        <label>Update Failed</label>
+        <description>Curve update failed.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="NPt">
+      <label>Number Of Points</label>
+      <description>Number of curve points supported.</description>
+      <notes></notes>
+    </point>
+    <point id="NCrv">
+      <label>Stored Curve Count</label>
+      <description>Number of stored curves supported.</description>
+      <notes></notes>
+    </point>
+    <point id="RvrtTms">
+      <label>Reversion Timeout</label>
+      <description>Reversion time in seconds.  0 = No reversion time.</description>
+      <notes></notes>
+    </point>
+    <point id="RvrtRem">
+      <label>Reversion Time Remaining</label>
+      <description>Reversion time remaining in seconds.</description>
+      <notes></notes>
+    </point>
+    <point id="RvrtCrv">
+      <label>Reversion Curve</label>
+      <description>Default curve after reversion timeout.</description>
+      <notes></notes>
+    </point>
+    <point id="V_SF">
+      <label>Voltage Scale Factor</label>
+      <description>Scale factor for curve voltage points.</description>
+      <notes></notes>
+    </point>
+    <point id="DeptRef_SF">
+      <label>Var Scale Factor</label>
+      <description>Scale factor for curve var points.</description>
+      <notes></notes>
+    </point>
+    <point id="RspTms_SF">
+      <label>Open-Loop Scale Factor</label>
+      <description>Open loop response time scale factor.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.ActPt">
+      <label>Active Points</label>
+      <description>Number of active points.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.DeptRef">
+      <label>Dependent Reference</label>
+      <description>Curve dependent reference.</description>
+      <notes></notes>
+      <symbol id="W_MAX_PCT">
+        <label>Percent Max Watts</label>
+        <description>Percent Max Watts.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VAR_MAX_PCT">
+        <label>Percent Max Vars</label>
+        <description>Percent Max Vars.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VAR_AVAL_PCT">
+        <label>Percent Available Vars</label>
+        <description>Percent Available Vars.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VA_MAX_PCT">
+        <label>Percent Max Apparent Power</label>
+        <description>Percent max apparent power.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.Pri">
+      <label>Power Priority</label>
+      <description>Power priority.</description>
+      <notes></notes>
+      <symbol id="ACTIVE">
+        <label>Active Power Priority</label>
+        <description>Active power priority.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="REACTIVE">
+        <label>Reactive Power Priority</label>
+        <description>Reactive power priority.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="IEEE_1547">
+        <label>IEEE 1547 Power Priority</label>
+        <description>IEEE 1547-2018 power priority mode.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="PF">
+        <label>PF Power Priority</label>
+        <description>Track PF setting derived from current active and reactive power settings.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="VENDOR">
+        <label>Vendor Power Priority</label>
+        <description>Power priority is vendor specific mode.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.VRef">
+      <label>Vref Adjustment</label>
+      <description>Vref adjustment as percentage of nominal voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.VRefAuto">
+      <label>Current Autonomous Vref</label>
+      <description>Autonomous vref value as a percentage of nominal voltage.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.VRefAutoEna">
+      <label>Autonomous Vref Enable</label>
+      <description>Enable autonomous vref.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled Flag</label>
+        <description>Disabled flag (Disabled = 0, Enabled = 1).</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled Flag</label>
+        <description>Enabled flag (Disabled = 0, Enabled = 1).</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.VRefAutoTms">
+      <label>Auto Vref Time Constant</label>
+      <description>Autonomous vref time constant.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.RspTms">
+      <label>Open Loop Response Time</label>
+      <description>Open loop response time.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.ReadOnly">
+      <label>Curve Access</label>
+      <description>Curve read-write access.</description>
+      <notes></notes>
+      <symbol id="RW">
+        <label>Read-Write Access</label>
+        <description>Curve has read-write access.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="R">
+        <label>Read-Only Access</label>
+        <description>Curve has read-only access.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.V_P1">
+      <label>Voltage Point P1</label>
+      <description>Curve voltage point as percentage P1.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.Var_P1">
+      <label>Reactive Power Point P1</label>
+      <description>Curve reactive power point as set in DeptRef point P1.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.V_P2">
+      <label>Voltage Point P2</label>
+      <description>Curve voltage point as percentage P2.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.Var_P2">
+      <label>Reactive Power Point P2</label>
+      <description>Curve reactive power point as set in DeptRef point P2.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.V_P3">
+      <label>Voltage Point P3</label>
+      <description>Curve voltage point as percentage P3.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.Var_P3">
+      <label>Reactive Power Point P3</label>
+      <description>Curve reactive power point as set in DeptRef point P3.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.V_P4">
+      <label>Voltage Point P4</label>
+      <description>Curve voltage point as percentage P4.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.Var_P4">
+      <label>Reactive Power Point P4</label>
+      <description>Curve reactive power point as set in DeptRef point P4.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.V_P5">
+      <label>Voltage Point P5</label>
+      <description>Curve voltage point as percentage P5.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.Var_P5">
+      <label>Reactive Power Point P5</label>
+      <description>Curve reactive power point as set in DeptRef point P5.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.V_P6">
+      <label>Voltage Point P6</label>
+      <description>Curve voltage point as percentage P6.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.Var_P6">
+      <label>Reactive Power Point P6</label>
+      <description>Curve reactive power point as set in DeptRef point P6.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.V_P7">
+      <label>Voltage Point P7</label>
+      <description>Curve voltage point as percentage P7.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.Var_P7">
+      <label>Reactive Power Point P7</label>
+      <description>Curve reactive power point as set in DeptRef point P7.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.V_P8">
+      <label>Voltage Point P8</label>
+      <description>Curve voltage point as percentage P8.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.Var_P8">
+      <label>Reactive Power Point P8</label>
+      <description>Curve reactive power point as set in DeptRef point P8.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.V_P9">
+      <label>Voltage Point P9</label>
+      <description>Curve voltage point as percentage P9.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.Var_P9">
+      <label>Reactive Power Point P9</label>
+      <description>Curve reactive power point as set in DeptRef point P9.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.V_P10">
+      <label>Voltage Point P10</label>
+      <description>Curve voltage point as percentage P10.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltVar.Crv.Pt.Var_P10">
+      <label>Reactive Power Point P10</label>
+      <description>Curve reactive power point as set in DeptRef point P10.</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>

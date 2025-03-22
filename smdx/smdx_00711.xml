@@ -1,0 +1,160 @@
+<sunSpecModels v="1">
+  <!-- 711: DER Freq Droop -->
+  <model id="711" len="22" name="DERFreqDroop" >
+    <block len="22">
+   	  <point id="Ena" offset="0" type="enum16" access="rw" mandatory="true" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="AdptCtlReq" offset="1" type="uint16" access="rw" mandatory="true" />
+      <point id="AdptCtlRslt" offset="2" type="enum16" mandatory="true" >
+        <symbol id="IN_PROGRESS">0</symbol>
+        <symbol id="COMPLETED">1</symbol>
+        <symbol id="FAILED">2</symbol>
+      </point>
+      <point id="NCtl" offset="3" type="uint16" mandatory="true" />
+      <point id="RvrtTms" offset="4" type="uint32" access="rw" units="Secs" />
+      <point id="RvrtRem" offset="6" type="uint32" units="Secs" />
+      <point id="RvrtCtl" offset="8" type="uint16" access="rw" />  
+      <point id="Db_SF" offset="9" type="sunssf" mandatory="true" />
+      <point id="K_SF" offset="10" type="sunssf" mandatory="true" />
+      <point id="RspTms_SF" offset="11" type="sunssf" mandatory="true" />      
+      <point id="DERFreqDroop.Ctl.DbOf" offset="12" type="uint32" access="rw" units="Hz" sf="Db_SF" mandatory="true" />   
+      <point id="DERFreqDroop.Ctl.DbUf" offset="14" type="uint32" access="rw" units="Hz" sf="Db_SF" mandatory="true" />        
+      <point id="DERFreqDroop.Ctl.KOf" offset="16" type="uint16" access="rw" sf="K_SF" mandatory="true" />
+      <point id="DERFreqDroop.Ctl.KUf" offset="17" type="uint16" access="rw"  sf="K_SF" mandatory="true" />      
+      <point id="DERFreqDroop.Ctl.RspTms" offset="18" type="uint32" access="rw" units="Secs" sf="RspTms_SF" mandatory="true" />      
+      <point id="DERFreqDroop.Ctl.PMin" offset="20" type="int16" access="rw" units="Pct" />        
+   	  <point id="DERFreqDroop.Ctl.ReadOnly" offset="21" type="enum16" mandatory="true" >
+        <symbol id="RW">0</symbol>
+        <symbol id="R">1</symbol>
+      </point>
+    </block>
+  </model>
+  <strings id="711" locale="en">
+    <model>
+      <label>DER Frequency Droop</label>
+      <description>DER Frequency Droop model.</description>
+    </model>
+    <point id="Ena">
+      <label>DER Frequency Droop Module Enable</label>
+      <description>DER Frequency-Watt (Frequency-Droop) control enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="AdptCtlReq">
+      <label>Set Active Control Request</label>
+      <description>Set active control. 0 = No active control.</description>
+      <notes></notes>
+    </point>
+	<point id="AdptCtlRslt">
+      <label>Set Active Control Result</label>
+      <description>Result of last set active control operation.</description>
+      <notes></notes>
+      <symbol id="IN_PROGRESS">
+        <label>Update In Progress</label>
+        <description>Curve update in progress.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="COMPLETED">
+        <label>Update Complete</label>
+        <description>Curve update completed successfully.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAILED">
+        <label>Update Failed</label>
+        <description>Curve update failed.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="NCtl">
+      <label>Stored Control Count</label>
+      <description>Number of stored controls supported.</description>
+      <notes></notes>
+    </point>
+    <point id="RvrtTms">
+      <label>Reversion Timeout</label>
+      <description>Reversion time in seconds.  0 = No reversion time.</description>
+      <notes></notes>
+    </point>
+    <point id="RvrtRem">
+      <label>Reversion Time Left</label>
+      <description>Reversion time remaining in seconds.</description>
+      <notes></notes>
+    </point>
+    <point id="RvrtCtl">
+      <label>Reversion Control</label>
+      <description>Default control after reversion timeout.</description>
+      <notes></notes>
+    </point>
+    <point id="Db_SF">
+      <label>Deadband Scale Factor</label>
+      <description>Deadband scale factor.</description>
+      <notes></notes>
+    </point>    
+    <point id="K_SF">
+      <label>Frequency Change Scale Factor</label>
+      <description>Frequency change scale factor.</description>
+      <notes></notes>
+    </point>       
+    <point id="RspTms_SF">
+      <label>Open-Loop Scale Factor</label>
+      <description>Open loop response time scale factor.</description>
+      <notes></notes>
+    </point>       
+    <point id="DERFreqDroop.Ctl.DbOf">
+      <label>Over-Frequency Deadband</label>
+      <description>The deadband value for over-frequency conditions in Hz.</description>
+      <notes></notes>
+    </point>
+    <point id="DERFreqDroop.Ctl.DbUf">
+      <label>Under-Frequency Deadband</label>
+      <description>The deadband value for under-frequency conditions in Hz.</description>
+      <notes></notes>
+    </point>    
+    <point id="DERFreqDroop.Ctl.KOf">
+      <label>Over-Frequency Change Ratio</label>
+      <description>Frequency droop per-unit frequency change for over-frequency conditions corresponding to 1 per-unit power output change.</description>
+      <notes></notes>
+    </point>
+    <point id="DERFreqDroop.Ctl.KUf">
+      <label>Under-Frequency Change Ratio</label>
+      <description>Frequency droop per-unit frequency change for under-frequency conditions corresponding to 1 per-unit power output change.</description>
+      <notes></notes>
+    </point>
+    <point id="DERFreqDroop.Ctl.RspTms">
+      <label>Open-Loop Response Time</label>
+      <description>The open-loop response time in seconds.</description>
+      <notes></notes>
+    </point>    
+    <point id="DERFreqDroop.Ctl.PMin">
+      <label>Minimum Active Power</label>
+      <description>The minimum active power output due to DER prime mover constraints, in percent of the DER active power rating. The valid range is -100 to 100. This setting applies only to the frequency droop control.</description>
+      <notes></notes>
+    </point>
+    <point id="DERFreqDroop.Ctl.ReadOnly">
+      <label>Control Access</label>
+      <description>Control read-write access.</description>
+      <notes></notes>
+      <symbol id="RW">
+        <label>Read-Write Access</label>
+        <description>Control has read-write access.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="R">
+        <label>Read-Only Access</label>
+        <description>Control has read-only access.</description>
+        <notes></notes>
+      </symbol>
+    </point>     
+  </strings>
+</sunSpecModels>

@@ -1,0 +1,173 @@
+<sunSpecModels v="1">
+  <!-- 706: DER Volt-Watt -->
+  <model id="706" len="20" name="DERVoltWatt" >
+    <block len="20">
+   	  <point id="Ena" offset="0" type="enum16" access="rw" mandatory="true" >
+        <symbol id="DISABLED">0</symbol>
+        <symbol id="ENABLED">1</symbol>
+      </point>
+      <point id="AdptCrvReq" offset="1" type="uint16" access="rw" mandatory="true" />
+      <point id="AdptCrvRslt" offset="2" type="enum16" mandatory="true" >
+        <symbol id="IN_PROGRESS">0</symbol>
+        <symbol id="COMPLETED">1</symbol>
+        <symbol id="FAILED">2</symbol>
+      </point>
+      <point id="NPt" offset="3" type="uint16" mandatory="true" />
+      <point id="NCrv" offset="4" type="uint16" mandatory="true" />
+      <point id="RvrtTms" offset="5" type="uint32" access="rw" units="Secs" />
+      <point id="RvrtRem" offset="7" type="uint32" units="Secs" />
+      <point id="RvrtCrv" offset="9" type="uint16" access="rw" />
+      <point id="V_SF" offset="10" type="sunssf" mandatory="true" />
+      <point id="DeptRef_SF" offset="11" type="sunssf" mandatory="true" />
+      <point id="RspTms_SF" offset="12" type="sunssf" mandatory="true" />
+      <point id="DERVoltWatt.Crv.ActPt" offset="13" type="uint16" access="rw" mandatory="true" />
+      <point id="DERVoltWatt.Crv.DeptRef" offset="14" type="enum16" access="rw" mandatory="true" >
+        <symbol id="W_MAX_PCT">0</symbol>
+        <symbol id="W_AVAL_PCT">1</symbol>
+      </point>
+      <point id="DERVoltWatt.Crv.RspTms" offset="15" type="uint32" access="rw" units="Secs" sf="RspTms_SF" mandatory="true" />
+      <point id="DERVoltWatt.Crv.ReadOnly" offset="17" type="enum16" mandatory="true" >
+        <symbol id="RW">0</symbol>
+        <symbol id="R">1</symbol>
+      </point>
+      <point id="DERVoltWatt.Crv.Pt.V" offset="18" type="uint16" access="rw" units="VRefPct" sf="V_SF" mandatory="true" />
+      <point id="DERVoltWatt.Crv.Pt.W" offset="19" type="int16" access="rw" units="DeptRef" sf="DeptRef_SF" mandatory="true" />
+    </block>
+  </model>
+  <strings id="706" locale="en">
+    <model>
+      <label>DER Volt-Watt</label>
+      <description>DER Volt-Watt model.</description>
+    </model>
+    <point id="Ena">
+      <label>DER Volt-Watt Module Enable</label>
+      <description>Volt-Watt control enable.</description>
+      <notes></notes>
+      <symbol id="DISABLED">
+        <label>Disabled</label>
+        <description>Function is disabled.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="ENABLED">
+        <label>Enabled</label>
+        <description>Function is enabled.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="AdptCrvReq">
+      <label>Adopt Curve Request</label>
+      <description>Index of curve points to adopt. First curve index is 1.</description>
+      <notes></notes>
+    </point>
+	<point id="AdptCrvRslt">
+      <label>Adopt Curve Result</label>
+      <description>Result of last adopt curve operation.</description>
+      <notes></notes>
+      <symbol id="IN_PROGRESS">
+        <label>Update In Progress</label>
+        <description>Curve update in progress.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="COMPLETED">
+        <label>Update Complete</label>
+        <description>Curve update completed successfully.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="FAILED">
+        <label>Update Failed</label>
+        <description>Curve update failed.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="NPt">
+      <label>Number Of Points</label>
+      <description>Number of curve points supported.</description>
+      <notes></notes>
+    </point>
+    <point id="NCrv">
+      <label>Stored Curve Count</label>
+      <description>Number of stored curves supported.</description>
+      <notes></notes>
+    </point>
+    <point id="RvrtTms">
+      <label>Reversion Timeout</label>
+      <description>Reversion time in seconds.  0 = No reversion time.</description>
+      <notes></notes>
+    </point>
+    <point id="RvrtRem">
+      <label>Reversion Time Remaining</label>
+      <description>Reversion time remaining in seconds.</description>
+      <notes></notes>
+    </point>
+    <point id="RvrtCrv">
+      <label>Reversion Curve</label>
+      <description>Default curve after reversion timeout.</description>
+      <notes></notes>
+    </point>  
+    <point id="V_SF">
+      <label>Voltage Scale Factor</label>
+      <description>Scale factor for curve voltage points.</description>
+      <notes></notes>
+    </point>
+    <point id="DeptRef_SF">
+      <label>Watt Scale Factor</label>
+      <description>Scale factor for curve watt points.</description>
+      <notes></notes>
+    </point>
+    <point id="RspTms_SF">
+      <label>Open-Loop Scale Factor</label>
+      <description>Open loop response time scale factor.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltWatt.Crv.ActPt">
+      <label>Active Points</label>
+      <description>Number of active points.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltWatt.Crv.DeptRef">
+      <label>Dependent Reference</label>
+      <description>Curve dependent reference.</description>
+      <notes></notes>
+      <symbol id="W_MAX_PCT">
+        <label>Percent Max Watts</label>
+        <description>Percent Max Watts.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="W_AVAL_PCT">
+        <label>Percent Max Vars</label>
+        <description>Percent Max Vars.</description>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="DERVoltWatt.Crv.RspTms">
+      <label>Open Loop Response Time</label>
+      <description>Open loop response time.</description>
+      <notes></notes>
+    </point>
+    <point id="DERVoltWatt.Crv.ReadOnly">
+      <label>Curve Access</label>
+      <description>Curve read-write access.</description>
+      <notes></notes>
+      <symbol id="RW">
+        <label>Read-Write Access</label>
+        <description>Curve has read-write access.</description>
+        <notes></notes>
+      </symbol>
+      <symbol id="R">
+        <label>Read-Only Access</label>
+        <description>Curve has read-only access.</description>
+        <notes></notes>
+      </symbol>
+    </point>    
+    <point id="DERVoltWatt.Crv.Pt.V">
+      <label>Voltage Point</label>
+      <description>Curve voltage point as percentage.</description>
+      <notes></notes>
+    </point>    
+    <point id="DERVoltWatt.Crv.Pt.W">
+      <label>Dependent Reference</label>
+      <description>Active power in percent of rated active power.</description>
+      <notes></notes>
+    </point>    
+  </strings>
+</sunSpecModels>

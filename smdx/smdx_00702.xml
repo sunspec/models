@@ -1,0 +1,452 @@
+<sunSpecModels v="1">
+  <!-- 702: DER Capacity -->
+  <model id="702" len="50" name="DERCapacity">
+    <block len="50">
+      <point id="WMaxRtg" offset="0" type="uint16" units="W" sf="W_SF" mandatory="true" />
+      <point id="WOvrExtRtg" offset="1" type="uint16" units="W" sf="W_SF" mandatory="true" />
+      <point id="WOvrExtRtgPF" offset="2" type="uint16" sf="PF_SF" mandatory="true" />
+      <point id="WUndExtRtg" offset="3" type="uint16" units="W" sf="W_SF" mandatory="true" />
+      <point id="WUndExtRtgPF" offset="4" type="uint16" sf="PF_SF" mandatory="true" />
+      <point id="VAMaxRtg" offset="5" type="uint16" units="VA" sf="VA_SF" mandatory="true" />
+      <point id="VarMaxInjRtg" offset="6" type="uint16" units="VAr" sf="Var_SF" mandatory="true" />
+      <point id="VarMaxAbsRtg" offset="7" type="uint16" units="VAr" sf="Var_SF" mandatory="true" />
+      <point id="WChaRteMaxRtg" offset="8" type="uint16" units="W" sf="W_SF" mandatory="true" />
+      <point id="WDisChaRteMaxRtg" offset="9" type="uint16" units="W" sf="W_SF" />
+      <point id="VAChaRteMaxRtg" offset="10" type="uint16" units="VA" sf="VA_SF" mandatory="true" />
+      <point id="VADisChaRteMaxRtg" offset="11" type="uint16" units="VA" sf="VA_SF" mandatory="true" />
+      <point id="VNomRtg" offset="12" type="uint16" units="V" sf="V_SF" mandatory="true" />
+      <point id="VMaxRtg" offset="13" type="uint16" units="V" sf="V_SF" mandatory="true" />
+      <point id="VMinRtg" offset="14" type="uint16" units="V" sf="V_SF" mandatory="true" />
+      <point id="AMaxRtg" offset="15" type="uint16" units="A" sf="A_SF" />
+      <point id="PFOvrExtRtg" offset="16" type="uint16" sf="PF_SF" />
+      <point id="PFUndExtRtg" offset="17" type="uint16" sf="PF_SF" />
+      <point id="ReactSusceptRtg" offset="18" type="uint16" units="S" sf="S_SF" mandatory="true" />
+      <point id="NorOpCatRtg" offset="19" type="enum16" mandatory="true" >
+        <symbol id="CAT_A">0</symbol>
+        <symbol id="CAT_B">1</symbol>
+      </point>
+      <point id="AbnOpCatRtg" offset="20" type="enum16" mandatory="true" >
+        <symbol id="CAT_1">0</symbol>
+        <symbol id="CAT_2">1</symbol>
+        <symbol id="CAT_3">2</symbol>
+      </point>
+      <point id="CtrlModes" offset="21" type="bitfield32" mandatory="true" >
+        <symbol id="MAX_W">0</symbol>
+        <symbol id="FIXED_W">1</symbol>
+        <symbol id="FIXED_VAR">2</symbol>
+        <symbol id="FIXED_PF">3</symbol>
+        <symbol id="VOLT_VAR">4</symbol>
+        <symbol id="FREQ_WATT">5</symbol>
+        <symbol id="DYN_REACT_CURR">6</symbol>
+        <symbol id="LV_TRIP">7</symbol>
+        <symbol id="HV_TRIP">8</symbol>
+        <symbol id="WATT_VAR">9</symbol>
+        <symbol id="VOLT_WATT">10</symbol>
+        <symbol id="SCHEDULED">11</symbol>
+        <symbol id="LF_TRIP">12</symbol>
+        <symbol id="HF_TRIP">13</symbol>
+      </point>
+      <point id="IntIslandCatRtg" offset="23" type="bitfield16" >
+        <symbol id="UNCATEGORIZED">0</symbol>
+        <symbol id="INT_ISL_CAPABLE">1</symbol>
+        <symbol id="BLACK_START_CAPABLE">2</symbol>
+        <symbol id="ISOCH_CAPABLE">3</symbol>
+      </point>
+      <point id="WMax" offset="24" type="uint16" access="rw" units="W" sf="W_SF" />
+      <point id="WMaxOvrExt" offset="25" type="uint16" access="rw" units="W" sf="W_SF" />
+      <point id="WOvrExtPF" offset="26" type="uint16" access="rw" sf="PF_SF" />
+      <point id="WMaxUndExt" offset="27" type="uint16" access="rw" units="W" sf="W_SF" />
+      <point id="WUndExtPF" offset="28" type="uint16" access="rw" sf="PF_SF" />
+      <point id="VAMax" offset="29" type="uint16" access="rw" units="VA" sf="VA_SF" />
+      <point id="VarMaxInj" offset="30" type="uint16" access="rw" units="Var" sf="Var_SF" />
+      <point id="VarMaxAbs" offset="31" type="uint16" access="rw" units="Var" sf="Var_SF" />
+      <point id="WChaRteMax" offset="32" type="uint16" access="rw" units="W" sf="W_SF" />
+      <point id="WDisChaRteMax" offset="33" type="uint16" access="rw" units="W" sf="W_SF" />
+      <point id="VAChaRteMax" offset="34" type="uint16" access="rw" units="VA" sf="VA_SF" />
+      <point id="VADisChaRteMax" offset="35" type="uint16" access="rw" units="VA" sf="VA_SF" />
+      <point id="VNom" offset="36" type="uint16" access="rw" units="V" sf="V_SF" />
+      <point id="VMax" offset="37" type="uint16" access="rw" units="V" sf="V_SF" />
+      <point id="VMin" offset="38" type="uint16" access="rw" units="V" sf="V_SF" />
+      <point id="AMax" offset="39" type="uint16" access="rw" units="A" sf="A_SF" />
+      <point id="PFOvrExt" offset="40" type="uint16" access="rw" sf="PF_SF" />
+      <point id="PFUndExt" offset="41" type="uint16" access="rw" sf="PF_SF" />
+      <point id="IntIslandCat" offset="42" type="bitfield16" access="rw" >
+        <symbol id="UNCATEGORIZED">0</symbol>
+        <symbol id="INT_ISL_CAPABLE">1</symbol>
+        <symbol id="BLACK_START_CAPABLE">2</symbol>
+        <symbol id="ISOCH_CAPABLE">3</symbol>
+      </point>
+      <point id="W_SF" offset="43" access="r" type="sunssf" len="1" mandatory="true" />
+      <point id="PF_SF" offset="44" access="r" type="sunssf" len="1" mandatory="false" />
+      <point id="VA_SF" offset="45" access="r" type="sunssf" len="1" mandatory="true" />
+      <point id="Var_SF" offset="46" access="r" type="sunssf" len="1" mandatory="true" />
+      <point id="V_SF" offset="47" access="r" type="sunssf" len="1" mandatory="true" />
+      <point id="A_SF" offset="48" access="r" type="sunssf" len="1" mandatory="false" />
+      <point id="S_SF" offset="49" access="r" type="sunssf" len="1" mandatory="true" />
+    </block>
+  </model>
+  <strings id="702" locale="en">
+    <model>
+      <label>DER Capacity</label>
+      <description>DER Capacity model.</description>
+    </model>
+    <point id="WMaxRtg">
+      <label>Active Power Max Rating</label>
+      <description>Maximum active power rating at unity power factor in watts.</description>
+      <notes></notes>
+    </point>
+    <point id="WOvrExtRtg">
+      <label>Active Power (Over-Excited) Rating</label>
+      <description>Active power rating at specified over-excited power factor in watts.</description>
+      <notes></notes>
+    </point>
+    <point id="WOvrExtRtgPF">
+      <label>Specified Over-Excited PF</label>
+      <description>Specified over-excited power factor.</description>
+      <notes></notes>
+    </point>
+    <point id="WUndExtRtg">
+      <label>Active Power (Under-Excited) Rating</label>
+      <description>Active power rating at specified under-excited power factor in watts.</description>
+      <notes></notes>
+    </point>
+    <point id="WUndExtRtgPF">
+      <label>Specified Under-Excited PF</label>
+      <description>Specified under-excited power factor.</description>
+      <notes></notes>
+    </point>
+    <point id="VAMaxRtg">
+      <label>Apparent Power Max Rating</label>
+      <description>Maximum apparent power rating in voltamperes.</description>
+      <notes></notes>
+    </point>
+    <point id="VarMaxInjRtg">
+      <label>Reactive Power Injected Rating</label>
+      <description>Maximum injected reactive power rating in vars.</description>
+      <notes></notes>
+    </point>
+    <point id="VarMaxAbsRtg">
+      <label>Reactive Power Absorbed Rating</label>
+      <description>Maximum absorbed reactive power rating in vars.</description>
+      <notes></notes>
+    </point>
+    <point id="WChaRteMaxRtg">
+      <label>Charge Rate Max Rating</label>
+      <description>Maximum active power charge rate in watts.</description>
+      <notes></notes>
+    </point>
+    <point id="WDisChaRteMaxRtg">
+      <label>Discharge Rate Max Rating</label>
+      <description>Maximum active power discharge rate in watts.</description>
+      <notes></notes>
+    </point>
+    <point id="VAChaRteMaxRtg">
+      <label>Charge Rate Max VA Rating</label>
+      <description>Maximum apparent power charge rate in voltamperes.</description>
+      <notes></notes>
+    </point>
+    <point id="VADisChaRteMaxRtg">
+      <label>Discharge Rate Max VA Rating</label>
+      <description>Maximum apparent power discharge rate in voltamperes.</description>
+      <notes></notes>
+    </point>
+    <point id="VNomRtg">
+      <label>AC Voltage Nominal Rating</label>
+      <description>AC voltage nominal rating.</description>
+      <notes></notes>
+    </point>
+    <point id="VMaxRtg">
+      <label>AC Voltage Max Rating</label>
+      <description>AC voltage maximum rating.</description>
+      <notes></notes>
+    </point>
+    <point id="VMinRtg">
+      <label>AC Voltage Min Rating</label>
+      <description>AC voltage minimum rating.</description>
+      <notes></notes>
+    </point>
+    <point id="AMaxRtg">
+      <label>AC Current Max Rating</label>
+      <description>AC current maximum rating in amps.</description>
+      <notes></notes>
+    </point>
+    <point id="PFOvrExtRtg">
+      <label>PF Over-Excited Rating</label>
+      <description>Power factor over-excited rating.</description>
+      <notes></notes>
+    </point>
+    <point id="PFUndExtRtg">
+      <label>PF Under-Excited Rating</label>
+      <description>Power factor under-excited rating.</description>
+      <notes></notes>
+    </point>
+    <point id="ReactSusceptRtg">
+      <label>Reactive Susceptance</label>
+      <description>Reactive susceptance that remains connected to the Area EPS in the cease to energize and trip state.</description>
+      <notes></notes>
+    </point>
+     <point id="NorOpCatRtg">
+      <label>Normal Operating Category</label>
+      <description>Normal operating performance category as specified in IEEE 1547-2018.</description>
+      <notes></notes>
+      <symbol id="CAT_A">
+        <label>Category A</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="CAT_B">
+        <label>Category B</label>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="AbnOpCatRtg">
+      <label>Abnormal Operating Category</label>
+      <description>Abnormal operating performance category as specified in IEEE 1547-2018.</description>
+      <notes></notes>
+      <symbol id="CAT_1">
+        <label>Category I</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="CAT_2">
+        <label>Category II</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="CAT_3">
+        <label>Category III</label>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="CtrlModes">
+      <label>Supported Control Modes</label>
+      <description>Supported control mode functions.</description>
+      <notes></notes>
+      <symbol id="MAX_W">
+        <label>Limit Maximum Active Power</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="FIXED_W">
+        <label>Fixed Active Power</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="FIXED_VAR">
+        <label>Fixed Reactive Power</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="FIXED_PF">
+        <label>Fixed Power Factor</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="VOLT_VAR">
+        <label>Volt-Var Function</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="FREQ_WATT">
+        <label>Freq-Watt Function</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="DYN_REACT_CURR">
+        <label>Dynamic Reactive Current Function</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="LV_TRIP">
+        <label>Low-Voltage Trip</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="HV_TRIP">
+        <label>High-Voltage Trip</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="WATT_VAR">
+        <label>Watt-Var Function</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="VOLT_WATT">
+        <label>Volt-Watt Function</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="SCHEDULED">
+        <label>Scheduling</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="LF_TRIP">
+        <label>Low-Frequency Trip</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="HF_TRIP">
+        <label>High-Frequency Trip</label>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="IntIslandCatRtg">
+      <label>Intentional Island Categories</label>
+      <description>Intentional island categories.</description>
+      <notes></notes>
+      <symbol id="UNCATEGORIZED">
+        <label>Uncategorized</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="INT_ISL_CAPABLE">
+        <label>Intentional Island-Capable</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="BLACK_START_CAPABLE">
+        <label>Black Start-Capable</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="ISOCH_CAPABLE">
+        <label>Isochronous-Capable</label>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="WMax">
+      <label>Active Power Max Setting</label>
+      <description>Maximum active power setting used to adjust maximum active power setting.</description>
+      <notes></notes>
+    </point>
+    <point id="WMax">
+      <label>Active Power Max Setting</label>
+      <description>Maximum active power setting used to adjust maximum active power setting.</description>
+      <notes></notes>
+    </point>
+    <point id="WMaxOvrExt">
+      <label>Active Power (Over-Excited) Setting</label>
+      <description>Active power setting at specified over-excited power factor in watts.</description>
+      <notes></notes>
+    </point>
+    <point id="WOvrExtPF">
+      <label>Specified Over-Excited PF</label>
+      <description>Specified over-excited power factor.</description>
+      <notes></notes>
+    </point>
+    <point id="WMaxUndExt">
+      <label>Active Power (Under-Excited) Setting</label>
+      <description>Active power setting at specified under-excited power factor in watts.</description>
+      <notes></notes>
+    </point>
+    <point id="WUndExtPF">
+      <label>Specified Under-Excited PF</label>
+      <description>Specified under-excited power factor.</description>
+      <notes></notes>
+    </point>
+    <point id="VAMax">
+      <label>Apparent Power Max Setting</label>
+      <description>Maximum apparent power setting used to adjust maximum apparent power rating.</description>
+      <notes></notes>
+    </point>
+    <point id="VarMaxInj">
+      <label>Reactive Power Injected Setting</label>
+      <description>Maximum injected reactive power setting used to adjust maximum injected reactive power rating.</description>
+      <notes></notes>
+    </point>
+    <point id="VarMaxAbs">
+      <label>Reactive Power Absorbed Setting</label>
+      <description>Maximum absorbed reactive power setting used to adjust maximum absorbed reactive power rating.</description>
+      <notes></notes>
+    </point>
+    <point id="WChaRteMax">
+      <label>Charge Rate Max Setting</label>
+      <description>Maximum active power charge rate setting used to adjust maximum active power charge rate rating.</description>
+      <notes></notes>
+    </point>
+    <point id="WDisChaRteMax">
+      <label>Discharge Rate Max Setting</label>
+      <description>Maximum active power discharge rate setting used to adjust maximum active power discharge rate rating.</description>
+      <notes></notes>
+    </point>
+    <point id="VAChaRteMax">
+      <label>Charge Rate Max VA Setting</label>
+      <description>Maximum apparent power charge rate setting used to adjust maximum apparent power charge rate rating.</description>
+      <notes></notes>
+    </point>
+    <point id="VADisChaRteMax">
+      <label>Discharge Rate Max VA Setting</label>
+      <description>Maximum apparent power discharge rate setting used to adjust maximum apparent power discharge rate rating.</description>
+      <notes></notes>
+    </point>
+    <point id="VNom">
+      <label>Nominal AC Voltage Setting</label>
+      <description>Nominal AC voltage setting.</description>
+      <notes></notes>
+    </point>
+    <point id="VMax">
+      <label>AC Voltage Max Setting</label>
+      <description>AC voltage maximum setting used to adjust AC voltage maximum rating.</description>
+      <notes></notes>
+    </point>
+    <point id="VMin">
+      <label>AC Voltage Min Setting</label>
+      <description>AC voltage minimum setting used to adjust AC voltage minimum rating.</description>
+      <notes></notes>
+    </point>
+    <point id="AMax">
+      <label>AC Current Max Setting</label>
+      <description>Maximum AC current setting used to adjust maximum AC current rating.</description>
+      <notes></notes>
+    </point>
+    <point id="PFOvrExt">
+      <label>PF Over-Excited Setting</label>
+      <description>Power factor over-excited setting.</description>
+      <notes></notes>
+    </point>
+    <point id="PFUndExt">
+      <label>PF Under-Excited Setting</label>
+      <description>Power factor under-excited setting.</description>
+      <notes></notes>
+    </point>
+    <point id="IntIslandCat">
+      <label>Intentional Island Categories</label>
+      <description>Intentional island categories.</description>
+      <notes></notes>
+      <symbol id="UNCATEGORIZED">
+        <label>Uncategorized</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="INT_ISL_CAPABLE">
+        <label>Intentional Island-Capable</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="BLACK_START_CAPABLE">
+        <label>Black Start-Capable</label>
+        <notes></notes>
+      </symbol>
+      <symbol id="ISOCH_CAPABLE">
+        <label>Isochronous-Capable</label>
+        <notes></notes>
+      </symbol>
+    </point>
+    <point id="W_SF">
+      <label>Active Power Scale Factor</label>
+      <description>Active Power Scale Factor.</description>
+      <notes></notes>
+    </point>
+    <point id="PF_SF">
+      <label>Power factor scale factor</label>
+      <description>Power factor scale factor.</description>
+      <notes></notes>
+    </point>
+    <point id="VA_SF">
+      <label>Apparent power scale factor</label>
+      <description>Apparent power scale factor.</description>
+      <notes></notes>
+    </point>
+    <point id="Var_SF">
+      <label>Reactive power scale factor</label>
+      <description>Reactive power scale factor.</description>
+      <notes></notes>
+    </point>
+    <point id="V_SF">
+      <label>Voltage scale factor</label>
+      <description>Voltage scale factor.</description>
+      <notes></notes>
+    </point>
+    <point id="A_SF">
+      <label>Current Scale Factor</label>
+      <description>Current scale factor.</description>
+      <notes></notes>
+    </point>
+    <point id="S_SF">
+      <label>Susceptance Scale Factor</label>
+      <description>Susceptance Scale Factor.</description>
+      <notes></notes>
+    </point>
+  </strings>
+</sunSpecModels>
