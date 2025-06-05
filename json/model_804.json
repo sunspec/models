@@ -2,7 +2,7 @@
     "group": {
         "groups": [
             {
-                "count": 0,
+                "count": "NMod", 
                 "name": "lithium_ion_string_module",
                 "points": [
                     {
