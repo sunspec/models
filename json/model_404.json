@@ -429,7 +429,8 @@
                 "type": "sunssf"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "notes": "This model supersedes model 402"
     },
     "id": 404
 }
