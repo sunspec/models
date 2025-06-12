@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+      - development
+  pull_request:
+    branches:
+      - "*"
+
+jobs:
+  xml:
+    name: Check XML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          sudo apt-get update --yes
+          sudo apt-get install --yes libxml2-utils
+      - name: Check
+        run: make -C smdx
+  json:
+    name: Check JSON
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          sudo apt-get update --yes
+          sudo apt-get install --yes python3-jsonschema
+      - name: Check
+        run: make -C json
