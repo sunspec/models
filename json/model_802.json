@@ -93,7 +93,7 @@
                 "access": "RW",
                 "desc": "Setpoint for maximum reserve for storage as a percentage of the nominal maximum storage.",
                 "label": "Max Reserve Percent",
-                "name": "SocRsvMax",
+                "name": "SoCRsvMax",
                 "sf": "SoC_SF",
                 "size": 1,
                 "type": "uint16",
