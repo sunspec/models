@@ -80,7 +80,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "Point 2 Volts.",
+                        "desc": "Point 3 Volts.",
                         "label": "V3",
                         "name": "V3",
                         "sf": "V_SF",
