@@ -607,7 +607,8 @@
                 "sf": "ModTmp_SF",
                 "size": 1,
                 "type": "int16",
-                "detail": "Measurement."
+                "detail": "Measurement.",
+                "units": "C"
             },
             {
                 "desc": "String containing the module with maximum temperature.",
@@ -652,10 +653,12 @@
                 "desc": "Average temperature for all modules in the bank.",
                 "label": "Average Module Temperature",
                 "name": "ModTmpAvg",
+                "sf": "ModTmp_SF",
                 "size": 1,
                 "type": "int16",
-                "detail": "Calculation based on measurements."
-            },
+                "detail": "Calculation based on measurements.",
+                "units": "C"
+            },    
             {
                 "desc": "Maximum string voltage for all strings in the bank.",
                 "label": "Max String Voltage",
