@@ -1,0 +1,551 @@
+{
+  "group": {
+    "name": "DCSimInterface",
+    "label": "DC Simulator Control Interface",
+    "desc": "A generic DC simulator/power supply control interface for DER electrical testing.",
+    "points": [
+      {
+        "desc": "Model identifier",
+        "label": "Model ID",
+        "mandatory": "M",
+        "name": "ID",
+        "size": 1,
+        "static": "S",
+        "type": "uint16",
+        "value": 64410
+      },
+      {
+        "desc": "Model length.",
+        "label": "Model Length",
+        "mandatory": "M",
+        "name": "L",
+        "size": 1,
+        "static": "S",
+        "type": "uint16"
+      },
+      {
+        "label": "Maximum Voltage",
+        "desc": "Upper Voltage Protection Limit",
+        "name": "VMaxLim",
+        "type": "uint16",
+        "size": 1,
+        "sf": "V_SF",
+        "units": "V",
+        "access": "RW"
+      },
+      {
+        "label": "Maximum Power",
+        "desc": "Upper Power Protection Limit",
+        "name": "PMaxLim",
+        "type": "uint16",
+        "size": 1,
+        "sf": "W_SF",
+        "units": "W",
+        "access": "RW"
+      },
+      {
+        "label": "Maximum Current",
+        "desc": "Upper Current Protection Limit",
+        "name": "IMaxLim",
+        "type": "uint16",
+        "size": 1,
+        "sf": "A_SF",
+        "units": "A",
+        "access": "RW"
+      },
+      {
+        "label": "CV or CC Mode",
+        "desc": "Constant Voltage (CV) or Constant Current (CC) Mode",
+        "name": "Mode",
+        "type": "enum16",
+        "size": 1,
+        "access": "RW",
+        "symbols": [
+          {
+            "desc": "Constant Voltage (CV) Mode",
+            "label": "CV Mode",
+            "name": "CV",
+            "value": 0
+          },
+          {
+            "desc": "Constant Current (CC) Mode.",
+            "label": "CC Mode",
+            "name": "CC",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "label": "Power On/Off",
+        "desc": "Power On/Off",
+        "name": "Ena",
+        "type": "enum16",
+        "size": 1,
+        "symbols": [
+          {
+            "desc": "Power On",
+            "label": "Power On",
+            "name": "ON",
+            "value": 1
+          },
+          {
+            "desc": "Power Off",
+            "label": "Power Off",
+            "name": "OFF",
+            "value": 0
+          }
+        ],
+        "access": "RW"
+      },
+      {
+        "label": "Reset Device",
+        "desc": "Reset Device",
+        "name": "Reset",
+        "type": "enum16",
+        "size": 1,
+        "symbols": [
+          {
+            "desc": "Reset Device",
+            "label": "Reset Device",
+            "name": "RESET",
+            "value": 1
+          },
+          {
+            "desc": "Do Not Reset Device",
+            "label": "Do Not Reset Device",
+            "name": "DO_NOT_RESET",
+            "value": 0
+          }
+        ],
+        "access": "RW"
+      },
+      {
+        "label": "Voltage Setpoint",
+        "desc": "Voltage Setpoint",
+        "name": "VSet",
+        "type": "uint16",
+        "size": 1,
+        "access": "RW",
+        "sf": "V_SF",
+        "units": "V"
+      },
+      {
+        "label": "Power Setpoint",
+        "desc": "Power Setpoint",
+        "name": "PSet",
+        "type": "uint16",
+        "size": 1,
+        "access": "RW",
+        "sf": "W_SF",
+        "units": "W"
+      },
+      {
+        "label": "Current Setpoint",
+        "desc": "Current Setpoint",
+        "name": "ISet",
+        "type": "uint16",
+        "size": 1,
+        "access": "RW",
+        "sf": "A_SF",
+        "units": "A"
+      },
+      {
+        "label": "EN50530 Mode",
+        "desc": "EN50530 Mode - Enable or disable EN50530 profile mode",
+        "name": "EN50530",
+        "type": "enum16",
+        "size": 1,
+        "access": "RW",
+        "symbols": [
+          {
+            "desc": "EN50530 Mode",
+            "label": "EN50530 Mode",
+            "name": "EN50530",
+            "value": 1
+          },
+          {
+            "desc": "Do Not Use EN50530 Mode",
+            "label": "Do Not Use EN50530 Mode",
+            "name": "DO_NOT_EN50530",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "label": "EN50530 MPP Voltage",
+        "desc": "EN50530 MPP Voltage",
+        "name": "Vmpp",
+        "type": "uint16",
+        "size": 1,
+        "access": "RW",
+        "sf": "V_SF",
+        "units": "V"
+      },
+      {
+        "label": "EN50530 MPP Power",
+        "desc": "EN50530 MPP Power",
+        "name": "Pmpp",
+        "type": "uint16",
+        "size": 1,
+        "access": "RW",
+        "sf": "W_SF",
+        "units": "W"
+      },
+      {
+        "label": "Irradiance Setpoint",
+        "desc": "Irradiance Setpoint",
+        "name": "GSet",
+        "type": "uint16",
+        "size": 1,
+        "access": "RW",
+        "sf": "G_SF",
+        "units": "W/m^2"
+      },
+      {
+        "label": "Voltage Slew Rate",
+        "desc": "Voltage Slew Rate",
+        "name": "VSlewRate",
+        "type": "uint16",
+        "size": 1,
+        "access": "RW",
+        "sf": "VSlew_SF",
+        "units": "V/s"
+      },
+      {
+        "label": "Power Slew Rate",
+        "desc": "Power Slew Rate",
+        "name": "PSlewRate",
+        "type": "uint16",
+        "size": 1,
+        "access": "RW",
+        "sf": "PSlew_SF",
+        "units": "W/s"
+      },
+      {
+        "label": "Current Slew Rate",
+        "desc": "Current Slew Rate",
+        "name": "ISlewRate",
+        "type": "uint16",
+        "size": 1,
+        "access": "RW",
+        "sf": "ISlew_SF",
+        "units": "A/s"
+      },
+      {
+        "label": "Enable Profile",
+        "desc": "Start/Stop the Profile",
+        "name": "EnaProf",
+        "type": "enum16",
+        "size": 1,
+        "access": "RW",
+        "symbols": [
+          {
+            "desc": "Start the Profile",
+            "label": "Start Profile",
+            "name": "START",
+            "value": 1
+          },
+          {
+            "desc": "Stop the Profile",
+            "label": "Stop Profile",
+            "name": "STOP",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "label": "Profile Adoption Request",
+        "desc": "Index of profile points to adopt. First curve index is 1.",
+        "name": "AdptProfReq",
+        "type": "uint16",
+        "size": 1,
+        "access": "RW"
+      },
+      {
+        "desc": "Result of last adopt profile operation.",
+        "label": "Adopt Profile Result",
+        "mandatory": "M",
+        "name": "AdptProfRslt",
+        "size": 1,
+        "symbols": [
+          {
+            "desc": "Profile update in progress.",
+            "label": "Update In Progress",
+            "name": "IN_PROGRESS",
+            "value": 0
+          },
+          {
+            "desc": "Profile update completed successfully.",
+            "label": "Update Complete",
+            "name": "COMPLETED",
+            "value": 1
+          },
+          {
+            "desc": "Profile update failed.",
+            "label": "Update Failed",
+            "name": "FAILED",
+            "value": 2
+          }
+        ],
+        "type": "enum16"
+      },
+      {
+        "label": "Measured Voltage",
+        "desc": "Measured Voltage",
+        "name": "V",
+        "type": "int32",
+        "size": 2
+      },
+      {
+        "label": "Measured Power",
+        "desc": "Measured Power",
+        "name": "P",
+        "type": "int32",
+        "size": 2
+      },
+      {
+        "label": "Measured Current",
+        "desc": "Measured Current",
+        "name": "I",
+        "type": "int32",
+        "size": 2
+      },
+      {
+        "label": "Errors",
+        "desc": "Error States",
+        "name": "Errors",
+        "type": "string",
+        "size": 32,
+        "access": "R"
+      },
+      {
+        "desc": "Number of profile points supported.",
+        "label": "Number Of Points",
+        "mandatory": "M",
+        "name": "NPt",
+        "size": 1,
+        "static": "S",
+        "type": "uint16"
+      },
+      {
+        "desc": "Number of stored profiles supported.",
+        "label": "Stored Profile Count",
+        "mandatory": "M",
+        "name": "NProf",
+        "size": 1,
+        "static": "S",
+        "type": "uint16"
+      },
+      {
+        "desc": "Scale factor for power points.",
+        "label": "Power Scale Factor",
+        "mandatory": "M",
+        "name": "W_SF",
+        "size": 1,
+        "static": "S",
+        "type": "sunssf",
+        "access": "RW"
+      },
+      {
+        "desc": "Scale factor for voltage points.",
+        "label": "Voltage Scale Factor",
+        "mandatory": "M",
+        "name": "V_SF",
+        "size": 1,
+        "static": "S",
+        "type": "sunssf",
+        "access": "RW"
+      },
+      {
+        "desc": "Scale factor for current points.",
+        "label": "Current Scale Factor",
+        "mandatory": "M",
+        "name": "A_SF",
+        "size": 1,
+        "static": "S",
+        "type": "sunssf",
+        "access": "RW"
+      },
+      {
+        "desc": "Scale factor for irradiance.",
+        "label": "Irradiance Scale Factor",
+        "mandatory": "M",
+        "name": "G_SF",
+        "size": 1,
+        "static": "S",
+        "type": "sunssf",
+        "access": "RW"
+      },
+      {
+        "desc": "Scale factor for time points.",
+        "label": "Time Scale Factor",
+        "mandatory": "M",
+        "name": "Tms_SF",
+        "size": 1,
+        "static": "S",
+        "type": "sunssf",
+        "access": "RW"
+      },
+      {
+        "desc": "Scale factor for voltage slew rate.",
+        "label": "Voltage Slew Rate Scale Factor",
+        "mandatory": "M",
+        "name": "VSlew_SF",
+        "size": 1,
+        "static": "S",
+        "type": "sunssf",
+        "access": "RW"
+      },
+      {
+        "desc": "Scale factor for power slew rate.",
+        "label": "Power Slew Rate Scale Factor",
+        "mandatory": "M",
+        "name": "PSlew_SF",
+        "size": 1,
+        "static": "S",
+        "type": "sunssf",
+        "access": "RW"
+      },
+      {
+        "desc": "Scale factor for current slew rate.",
+        "label": "Current Slew Rate Scale Factor",
+        "mandatory": "M",
+        "name": "ISlew_SF",
+        "size": 1,
+        "static": "S",
+        "type": "sunssf",
+        "access": "RW"
+      },
+      {
+        "desc": "Scale factor for percentages.",
+        "label": "Percent Scale Factor",
+        "mandatory": "M",
+        "name": "Pct_SF",
+        "size": 1,
+        "static": "S",
+        "type": "sunssf",
+        "access": "RW"
+      }
+    ],
+    "groups": [
+      {
+        "comments": [
+          "Stored Pofile Sets - Number of profile sets = NProf - The first set is read-only and indicates the current settings."
+        ],
+        "count": "NProf",
+        "desc": "Stored profile sets.",
+        "label": "Stored Profiles",
+        "name": "Prof",
+        "points": [
+          {
+            "access": "RW",
+            "desc": "Number of active points.",
+            "label": "Active Points",
+            "mandatory": "M",
+            "name": "ActPt",
+            "size": 1,
+            "type": "uint16"
+          },
+          {
+            "access": "RW",
+            "desc": "Profile references.",
+            "label": "Dependent References",
+            "mandatory": "M",
+            "name": "DeptRef",
+            "size": 1,
+            "type": "bitfield32",
+            "symbols": [
+              {
+                "label": "Voltage",
+                "name": "VOLTAGE",
+                "value": 0
+              },
+              {
+                "label": "Power",
+                "name": "POWER",
+                "value": 1
+              },
+              {
+                "label": "Current",
+                "name": "CURRENT",
+                "value": 2
+              },
+              {
+                "label": "Irradiance",
+                "name": "IRRADIANCE",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "groups": [
+          {
+            "comments": [
+              "Stored Profile Sets - Profile points for each stored profile - Number of profile points contained in NPt"
+            ],
+            "count": "NPt",
+            "desc": "Stored profile points.",
+            "label": "Stored Profile Points",
+            "name": "Pt",
+            "points": [
+              {
+                "access": "RW",
+                "desc": "Profile time.",
+                "label": "Profile Time",
+                "name": "Tms",
+                "size": 1,
+                "type": "uint16",
+                "units": "Sec",
+                "sf": "Tms_SF"
+              },
+              {
+                "access": "RW",
+                "desc": "Profile voltage point in Volts.",
+                "label": "Voltage Point",
+                "name": "V",
+                "sf": "V_SF",
+                "size": 1,
+                "type": "uint16",
+                "units": "V"
+              },
+              {
+                "access": "RW",
+                "desc": "Profile power point in Watts.",
+                "label": "Power Point",
+                "name": "P",
+                "sf": "W_SF",
+                "size": 1,
+                "type": "uint16",
+                "units": "W"
+              },
+              {
+                "access": "RW",
+                "desc": "Profile current point in Amps.",
+                "label": "Current Point",
+                "name": "I",
+                "sf": "A_SF",
+                "size": 1,
+                "type": "uint16",
+                "units": "A"
+              },
+              {
+                "access": "RW",
+                "desc": "Profile irradiance point as percentage.",
+                "label": "Irradiance Point",
+                "name": "G",
+                "sf": "Pct_SF",
+                "size": 1,
+                "type": "uint16",
+                "units": "Pct"
+              }
+            ],
+            "type": "group"
+          }
+        ],
+        "type": "group"
+      }
+    ],
+    "type": "group"
+  },
+  "id": 64410
+}

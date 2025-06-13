@@ -1,0 +1,89 @@
+{
+    "group": {
+        "name": "PVSimCurves",
+        "label": "PV Curves",
+        "desc": "Current-Voltage and Power-Voltage Profiles for PV Simulation.",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "size": 1,
+                "static": "S",
+                "type": "uint16",
+                "value": 64413
+            },
+            {
+                "desc": "Model length.",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "size": 1,
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Number of points in the IV curve.",
+                "label": "IV length",
+                "name": "IVLen",
+                "size": 1,
+                "static": "D",
+                "type": "count"
+            },
+            {
+                "desc": "Plane of Array Irradiance",
+                "label": "POA Irradiance",
+                "name": "Irr",
+				"sf": "Irr_SF",
+                "size": 1,
+                "static": "S",
+                "type": "uint16",
+				"units": "W/m^2"
+            },
+            {
+                "name": "Irr_SF",
+                "size": 1,
+                "type": "sunssf"
+            }
+        ],
+        "type": "group",
+        "groups": [
+            {
+                "comments": [
+                    "IV Curve Points"
+                ],
+                "count": "IVLen",
+                "name": "IV",
+                "points": [
+                    {
+                        "label": "Power",
+                        "desc": "Power",
+                        "name": "P",
+                        "size": 2,
+                        "type": "float32",
+                        "units": "W"
+                    },
+                    {
+                        "label": "Current",
+                        "desc": "Current",
+                        "name": "I",
+                        "size": 2,
+                        "type": "float32",
+                        "units": "A"
+                    },
+                    {
+                        "label": "Voltage",
+                        "desc": "Voltage",
+                        "name": "V",
+                        "size": 2,
+                        "type": "float32",
+                        "units": "V"
+                    }
+                ],
+                "type": "group"
+            }
+        ]
+    },
+    "id": 64413
+}

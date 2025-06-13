@@ -2,46 +2,46 @@
   <!-- 121: Inverter Controls Basic Settings  -->
   <model id="121" len="30" name="settings">
     <block len="30" type="fixed">
-      <point id="WMax" offset="0" access="rw" type="uint16" len="1" mandatory="true" units="W" sf="WMax_SF"/>
-      <point id="VRef" offset="1" access="rw" type="uint16" len="1" mandatory="true" units="V" sf="VRef_SF"/>
-      <point id="VRefOfs" offset="2" access="rw" type="int16" len="1" mandatory="true" units="V" sf="VRefOfs_SF"/>
-      <point id="VMax" offset="3" access="rw" type="uint16" len="1" mandatory="false" units="V" sf="VMinMax_SF"/>
-      <point id="VMin" offset="4" access="rw" type="uint16" len="1" mandatory="false" units="V" sf="VMinMax_SF"/>
-      <point id="VAMax" offset="5" access="rw" type="uint16" len="1" mandatory="false" units="VA" sf="VAMax_SF"/>
-      <point id="VArMaxQ1" offset="6" access="rw" type="int16" len="1" mandatory="false" units="var" sf="VArMax_SF"/>
-      <point id="VArMaxQ2" offset="7" access="rw" type="int16" len="1" mandatory="false" units="var" sf="VArMax_SF"/>
-      <point id="VArMaxQ3" offset="8" access="rw" type="int16" len="1" mandatory="false" units="var" sf="VArMax_SF"/>
-      <point id="VArMaxQ4" offset="9" access="rw" type="int16" len="1" mandatory="false" units="var" sf="VArMax_SF"/>
-      <point id="WGra" offset="10" access="rw" type="uint16" len="1" mandatory="false" units="% WMax/sec" sf="WGra_SF"/>
-      <point id="PFMinQ1" offset="11" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
-      <point id="PFMinQ2" offset="12" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
-      <point id="PFMinQ3" offset="13" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
-      <point id="PFMinQ4" offset="14" access="rw" type="int16" len="1" mandatory="false" units="cos()" sf="PFMin_SF"/>
-      <point id="VArAct" offset="15" access="rw" type="enum16" len="1" mandatory="false"  >
+      <point id="WMax" offset="0" type="uint16" len="1" sf="WMax_SF" access="rw" units="W" mandatory="true" />
+      <point id="VRef" offset="1" type="uint16" len="1" sf="VRef_SF" access="rw" units="V" mandatory="true" />
+      <point id="VRefOfs" offset="2" type="int16" len="1" sf="VRefOfs_SF" access="rw" units="V" mandatory="true" />
+      <point id="VMax" offset="3" type="uint16" len="1" sf="VMinMax_SF" access="rw" units="V" />
+      <point id="VMin" offset="4" type="uint16" len="1" sf="VMinMax_SF" access="rw" units="V" />
+      <point id="VAMax" offset="5" type="uint16" len="1" sf="VAMax_SF" access="rw" units="VA" />
+      <point id="VArMaxQ1" offset="6" type="int16" len="1" sf="VArMax_SF" access="rw" units="var" />
+      <point id="VArMaxQ2" offset="7" type="int16" len="1" sf="VArMax_SF" access="rw" units="var" />
+      <point id="VArMaxQ3" offset="8" type="int16" len="1" sf="VArMax_SF" access="rw" units="var" />
+      <point id="VArMaxQ4" offset="9" type="int16" len="1" sf="VArMax_SF" access="rw" units="var" />
+      <point id="WGra" offset="10" type="uint16" len="1" sf="WGra_SF" access="rw" units="% WMax/sec" />
+      <point id="PFMinQ1" offset="11" type="int16" len="1" sf="PFMin_SF" access="rw" units="cos()" />
+      <point id="PFMinQ2" offset="12" type="int16" len="1" sf="PFMin_SF" access="rw" units="cos()" />
+      <point id="PFMinQ3" offset="13" type="int16" len="1" sf="PFMin_SF" access="rw" units="cos()" />
+      <point id="PFMinQ4" offset="14" type="int16" len="1" sf="PFMin_SF" access="rw" units="cos()" />
+      <point id="VArAct" offset="15" type="enum16" len="1" access="rw" >
         <symbol id="SWITCH">1</symbol>
         <symbol id="MAINTAIN">2</symbol>
       </point>
-      <point id="ClcTotVA" offset="16" access="rw" type="enum16" len="1" mandatory="false">
+      <point id="ClcTotVA" offset="16" type="enum16" len="1" access="rw" >
         <symbol id="VECTOR">1</symbol>
         <symbol id="ARITHMETIC">2</symbol>
       </point>
-      <point id="MaxRmpRte" offset="17" access="rw" type="uint16" len="1" mandatory="false" units="% WGra" sf="MaxRmpRte_SF"/>
-      <point id="ECPNomHz" offset="18" access="rw" type="uint16" len="1" mandatory="false" units="Hz" sf="ECPNomHz_SF"/>
-      <point id="ConnPh" offset="19" access="rw" type="enum16" len="1" mandatory="false">
+      <point id="MaxRmpRte" offset="17" type="uint16" len="1" sf="MaxRmpRte_SF" access="rw" units="% WGra" />
+      <point id="ECPNomHz" offset="18" type="uint16" len="1" sf="ECPNomHz_SF" access="rw" units="Hz" />
+      <point id="ConnPh" offset="19" type="enum16" len="1" access="rw" >
         <symbol id="A">1</symbol>
         <symbol id="B">2</symbol>
         <symbol id="C">3</symbol>
       </point>
-      <point id="WMax_SF" offset="20" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="VRef_SF" offset="21" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="VRefOfs_SF" offset="22" access="r" type="sunssf" len="1" mandatory="true"  />
-      <point id="VMinMax_SF" offset="23" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="VAMax_SF" offset="24" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="VArMax_SF" offset="25" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="WGra_SF" offset="26" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="PFMin_SF" offset="27" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="MaxRmpRte_SF" offset="28" access="r" type="sunssf" len="1" mandatory="false"  />
-      <point id="ECPNomHz_SF" offset="29" access="r" type="sunssf" len="1" mandatory="false"  />
+      <point id="WMax_SF" offset="20" type="sunssf" len="1" mandatory="true" />
+      <point id="VRef_SF" offset="21" type="sunssf" len="1" mandatory="true" />
+      <point id="VRefOfs_SF" offset="22" type="sunssf" len="1" mandatory="true" />
+      <point id="VMinMax_SF" offset="23" type="sunssf" len="1" />
+      <point id="VAMax_SF" offset="24" type="sunssf" len="1" />
+      <point id="VArMax_SF" offset="25" type="sunssf" len="1" />
+      <point id="WGra_SF" offset="26" type="sunssf" len="1" />
+      <point id="PFMin_SF" offset="27" type="sunssf" len="1" />
+      <point id="MaxRmpRte_SF" offset="28" type="sunssf" len="1" />
+      <point id="ECPNomHz_SF" offset="29" type="sunssf" len="1" />
     </block>
   </model>
   <strings id="121" locale="en">

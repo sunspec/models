@@ -133,7 +133,8 @@
                 "sf": "ARtg_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "A"
+                "units": "A",
+                "detail": "Sum of all connected phases.  Current rating under nominal voltage under nominal power factor."
             },
             {
                 "desc": "Scale factor",
@@ -151,7 +152,8 @@
                 "sf": "PFRtg_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "cos()"
+                "units": "cos()",
+                "detail": "EEI sign convention."
             },
             {
                 "desc": "Minimum power factor capability of the inverter in quadrant 2.",
@@ -161,7 +163,8 @@
                 "sf": "PFRtg_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "cos()"
+                "units": "cos()",
+                "detail": "EEI sign convention."
             },
             {
                 "desc": "Minimum power factor capability of the inverter in quadrant 3.",
@@ -171,7 +174,8 @@
                 "sf": "PFRtg_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "cos()"
+                "units": "cos()",
+                "detail": "EEI sign convention."
             },
             {
                 "desc": "Minimum power factor capability of the inverter in quadrant 4.",
@@ -181,7 +185,8 @@
                 "sf": "PFRtg_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "cos()"
+                "units": "cos()",
+                "detail": "EEI sign convention."
             },
             {
                 "desc": "Scale factor",
@@ -263,7 +268,8 @@
                 "type": "pad"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "Ref 3: 8.14.3.2, Ref 4: 17"
     },
     "id": 120
 }

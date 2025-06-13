@@ -1,0 +1,622 @@
+{
+    "group": {
+        "name": "ACSimInterface",
+        "label": "AC Simulator Control Interface",
+        "desc": "A generic AC simulator/power supply control interface for DER electrical testing.",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "size": 1,
+                "static": "S",
+                "type": "uint16",
+                "value": 64411
+            },
+            {
+                "desc": "Model length.",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "size": 1,
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "label": "Active Phases",
+                "desc": "Set the number of active phases for the power supply",
+                "name": "Phases",
+                "type": "uint16",
+                "size": 1,
+                "access": "RW"
+            },
+            {
+                "label": "Phase Angle",
+                "desc": "Phase angle (deg) between phases. 0 for signle phase, 120 for two phase, 120 for three phase.",
+                "name": "PhaseAngle",
+                "type": "uint16",
+                "size": 1,
+                "access": "RW"
+            },
+            {
+                "label": "Nominal Voltage",
+                "desc": "Nominal L-N Voltage",
+                "name": "VNom",
+                "type": "uint16",
+                "size": 1,
+                "sf": "V_SF",
+                "units": "V",
+                "access": "RW"
+            },
+            {
+                "label": "Maximum Voltage",
+                "desc": "Maximum Voltage Protection Level",
+                "name": "VMax",
+                "type": "uint16",
+                "size": 1,
+                "sf": "V_SF",
+                "units": "V",
+                "access": "RW"
+            },
+            {
+                "label": "Maximum Current",
+                "desc": "Maximum Current Protection Level",
+                "name": "IMax",
+                "type": "uint16",
+                "size": 1,
+                "sf": "A_SF",
+                "units": "A",
+                "access": "RW"
+            },
+            {
+                "label": "Frequency",
+                "desc": "Frequency Setpoint",
+                "name": "Freq",
+                "type": "uint16",
+                "size": 1,
+                "sf": "Hz_SF",
+                "units": "Hz",
+                "access": "RW"
+            },
+            {
+                "label": "Output State",
+                "desc": "AC Output State",
+                "name": "Output",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    { "label": "Output Off", "name": "OFF", "value": 0 },
+                    { "label": "Output On", "name": "ON", "value": 1 }
+                ]
+            },
+            {
+                "label": "Relay State",
+                "desc": "AC Relay State",
+                "name": "Relay",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    { "label": "Relay Open", "name": "OPEN", "value": 0 },
+                    { "label": "Relay Closed", "name": "CLOSED", "value": 1 }
+                ]
+            },
+            {
+                "label": "Regeneration State",
+                "desc": "Regeneration State",
+                "name": "Regen",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    { "label": "Regen Off", "name": "OFF", "value": 0 },
+                    { "label": "Regen On", "name": "ON", "value": 1 }
+                ]
+            },
+            {
+                "label": "Voltage Setpoint",
+                "desc": "Voltage Setpoint (all phases)",
+                "name": "VSet",
+                "type": "uint16",
+                "size": 1,
+                "sf": "V_SF",
+                "units": "V",
+                "access": "RW"
+            },
+            {
+                "label": "Voltage Setpoint Phase A",
+                "desc": "Voltage Setpoint Phase A",
+                "name": "VSetA",
+                "type": "uint16",
+                "size": 1,
+                "sf": "V_SF",
+                "units": "V",
+                "access": "RW"
+            },
+            {
+                "label": "Voltage Setpoint Phase B",
+                "desc": "Voltage Setpoint Phase B",
+                "name": "VSetB",
+                "type": "uint16",
+                "size": 1,
+                "sf": "V_SF",
+                "units": "V",
+                "access": "RW"
+            },
+            {
+                "label": "Voltage Setpoint Phase C",
+                "desc": "Voltage Setpoint Phase C",
+                "name": "VSetC",
+                "type": "uint16",
+                "size": 1,
+                "sf": "V_SF",
+                "units": "V",
+                "access": "RW"
+            },
+            {
+                "label": "Frequency Slew Rate",
+                "desc": "Frequency Slew Rate",
+                "name": "FreqSlew",
+                "type": "uint16",
+                "size": 1,
+                "sf": "HzSlew_SF",
+                "units": "Hz/s",
+                "access": "RW"
+            },
+            {
+                "label": "Voltage Slew Rate",
+                "desc": "Voltage Slew Rate",
+                "name": "VSlew",
+                "type": "uint16",
+                "size": 1,
+                "sf": "VSlew_SF",
+                "units": "V/s",
+                "access": "RW"
+            },
+            {
+                "label": "Measured Voltage Phase A",
+                "desc": "Measured Voltage Phase A",
+                "name": "VA",
+                "type": "int32",
+                "size": 2,
+                "sf": "V_SF",
+                "units": "V"
+            },
+            {
+                "label": "Measured Voltage Phase B",
+                "desc": "Measured Voltage Phase B",
+                "name": "VB",
+                "type": "int32",
+                "size": 2,
+                "sf": "V_SF",
+                "units": "V"
+            },
+            {
+                "label": "Measured Voltage Phase C",
+                "desc": "Measured Voltage Phase C",
+                "name": "VC",
+                "type": "int32",
+                "size": 2,
+                "sf": "V_SF",
+                "units": "V"
+            },
+            {
+                "label": "Measured Frequency",
+                "desc": "Measured Frequency",
+                "name": "Hz",
+                "type": "int32",
+                "size": 2,
+                "sf": "Hz_SF",
+                "units": "Hz"
+            },
+            {
+                "label": "Measured Current Phase A",
+                "desc": "Measured Current Phase A",
+                "name": "IA",
+                "type": "int32",
+                "size": 2,
+                "sf": "A_SF",
+                "units": "A"
+            },
+            {
+                "label": "Measured Current Phase B",
+                "desc": "Measured Current Phase B",
+                "name": "IB",
+                "type": "int32",
+                "size": 2,
+                "sf": "A_SF",
+                "units": "A"
+            },
+            {
+                "label": "Measured Current Phase C",
+                "desc": "Measured Current Phase C",
+                "name": "IC",
+                "type": "int32",
+                "size": 2,
+                "sf": "A_SF",
+                "units": "A"
+            },
+            {
+                "label": "Voltage Harmonics Phase A",
+                "desc": "Voltage Harmonics Pct, Phase A (comma seperated string for harmonics 1-50)",
+                "name": "VHarA",
+                "type": "string",
+                "size": 150,
+                "units": "V",
+                "access": "R"
+            },
+            {
+                "label": "Voltage Harmonics Phase B",
+                "desc": "Voltage Harmonics Pct, Phase B (comma seperated string for harmonics 1-50)",
+                "name": "VHarB",
+                "type": "string",
+                "size": 150,
+                "units": "V",
+                "access": "R"
+            },
+            {
+                "label": "Voltage Harmonics Phase C",
+                "desc": "Voltage Harmonics Pct, Phase C (comma seperated string for harmonics 1-50)",
+                "name": "VHarC",
+                "type": "string",
+                "size": 150,
+                "units": "V",
+                "access": "R"
+            },
+            {
+                "label": "Current Harmonics Phase A",
+                "desc": "Current Harmonics Pct, Phase A (comma seperated string for harmonics 1-50)",
+                "name": "IHarA",
+                "type": "string",
+                "size": 150,
+                "units": "A",
+                "access": "R"
+            },
+            {
+                "label": "Current Harmonics Phase B",
+                "desc": "Current Harmonics Pct, Phase B (comma seperated string for harmonics 1-50)",
+                "name": "IHarB",
+                "type": "string",
+                "size": 150,
+                "units": "A",
+                "access": "R"
+            },
+            {
+                "label": "Current Harmonics Phase C",
+                "desc": "Current Harmonics Pct, Phase C (comma seperated string for harmonics 1-50)",
+                "name": "IHarC",
+                "type": "string",
+                "size": 150,
+                "units": "A",
+                "access": "R"
+            },
+            {
+                "label": "Current Interharmonics Phase A",
+                "desc": "Current Interharmonics Pct, Phase A (comma seperated string for interharmonics 1-50)",
+                "name": "IIntHarA",
+                "type": "string",
+                "size": 150,
+                "units": "A",
+                "access": "R"
+            },
+            {
+                "label": "Current Interharmonics Phase B",
+                "desc": "Current Interharmonics Pct, Phase B (comma seperated string for interharmonics 1-50)",
+                "name": "IIntHarB",
+                "type": "string",
+                "size": 150,
+                "units": "A",
+                "access": "R"
+            },
+            {
+                "label": "Current Interharmonics Phase C",
+                "desc": "Current Interharmonics Pct, Phase C (comma seperated string for interharmonics 1-50)",
+                "name": "IIntHarC",
+                "type": "string",
+                "size": 150,
+                "units": "A",
+                "access": "R"
+            },
+            {
+                "label": "Voltage THD Phase A",
+                "desc": "Voltage THD Phase A",
+                "name": "VThdA",
+                "type": "uint16",
+                "size": 1,
+                "sf": "THD_SF",
+                "units": "%",
+                "access": "R"
+            },
+            {
+                "label": "Voltage THD Phase B",
+                "desc": "Voltage THD Phase B",
+                "name": "VThdB",
+                "type": "uint16",
+                "size": 1,
+                "sf": "THD_SF",
+                "units": "%",
+                "access": "R"
+            },
+            {
+                "label": "Voltage THD Phase C",
+                "desc": "Voltage THD Phase C",
+                "name": "VThdC",
+                "type": "uint16",
+                "size": 1,
+                "sf": "THD_SF",
+                "units": "%",
+                "access": "R"
+            },
+            {
+                "label": "Current THD Phase A",
+                "desc": "Current THD Phase A",
+                "name": "IThdA",
+                "type": "uint16",
+                "size": 1,
+                "sf": "THD_SF",
+                "units": "%",
+                "access": "R"
+            },
+            {
+                "label": "Current THD Phase B",
+                "desc": "Current THD Phase B",
+                "name": "IThdB",
+                "type": "uint16",
+                "size": 1,
+                "sf": "THD_SF",
+                "units": "%",
+                "access": "R"
+            },
+            {
+                "label": "Current THD Phase C",
+                "desc": "Current THD Phase C",
+                "name": "IThdC",
+                "type": "uint16",
+                "size": 1,
+                "sf": "THD_SF",
+                "units": "%",
+                "access": "R"
+            },
+            {
+                "label": "Enable Profile",
+                "desc": "Start/Stop the AC Profile",
+                "name": "EnaProf",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    { "label": "Stop Profile", "name": "STOP", "value": 0 },
+                    { "label": "Start Profile Immediately", "name": "START", "value": 1 },
+                    { "label": "Start Profile via External Trigger Signal", "name": "TRIGGER", "value": 2 }
+                ]
+            },
+            {
+                "desc": "Result of last profile operation.",
+                "label": "Profile Result",
+                "mandatory": "M",
+                "name": "ProfRslt",
+                "size": 1,
+                "symbols": [
+                    { "label": "Profile update in progress.", "name": "IN_PROGRESS", "value": 0 },
+                    { "label": "Profile update completed successfully.", "name": "COMPLETED", "value": 1 },
+                    { "label": "Profile update failed.", "name": "FAILED", "value": 2 }
+                ],
+                "type": "enum16"
+            },
+            {
+                "desc": "Number of stored profiles supported.",
+                "label": "Stored Profile Count",
+                "mandatory": "M",
+                "name": "NProf",
+                "size": 1,
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Max profile points in the profiles.",
+                "label": "Max Profile Point Count",
+                "mandatory": "M",
+                "name": "NPt",
+                "size": 1,
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "desc": "Scale factor for voltage points.",
+                "label": "Voltage Scale Factor",
+                "mandatory": "M",
+                "name": "V_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for current points.",
+                "label": "Current Scale Factor",
+                "mandatory": "M",
+                "name": "A_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for time points.",
+                "label": "Time Scale Factor",
+                "mandatory": "M",
+                "name": "Tms_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for frequency points.",
+                "label": "Frequency Scale Factor",
+                "mandatory": "M",
+                "name": "Hz_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for frequency slew rate.",
+                "label": "Frequency Slew Rate Scale Factor",
+                "mandatory": "M",
+                "name": "HzSlew_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for voltage slew rate.",
+                "label": "Voltage Slew Rate Scale Factor",
+                "mandatory": "M",
+                "name": "VSlew_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for THD values.",
+                "label": "THD Scale Factor",
+                "mandatory": "M",
+                "name": "THD_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            }
+        ],
+        "groups": [
+            {
+                "comments": [
+                    "Stored AC Profile Sets - Number of profile sets = NProf"
+                ],
+                "count": "NProf",
+                "desc": "Stored AC profile sets.",
+                "label": "Stored AC Profiles",
+                "name": "Prof",
+                "points": [
+                    {
+                        "access": "RW",
+                        "desc": "Profile name.",
+                        "label": "Profile Name",
+                        "name": "Name",
+                        "size": 32,
+                        "type": "string"
+                    },
+                    {
+                        "access": "RW",
+                        "desc": "Number of active points.",
+                        "label": "Active Points",
+                        "mandatory": "M",
+                        "name": "ActPt",
+                        "size": 1,
+                        "type": "uint16"
+                    }
+                ],
+                "groups": [
+                    {
+                        "comments": [
+                            "Stored AC Profile Sets - Profile points for each stored profile - Number of profile points contained in NPt"
+                        ],
+                        "count": "NPt",
+                        "desc": "Stored AC profile points.",
+                        "label": "Stored AC Profile Points",
+                        "name": "Pt",
+                        "points": [
+                            {
+                                "access": "RW",
+                                "desc": "Profile time.",
+                                "label": "Profile Time",
+                                "name": "Tms",
+                                "size": 1,
+                                "type": "uint16",
+                                "units": "Sec",
+                                "sf": "Tms_SF"
+                            },
+                            {
+                                "access": "RW",
+                                "desc": "Profile voltage phase A point in Volts.",
+                                "label": "Voltage Point",
+                                "name": "VA",
+                                "sf": "V_SF",
+                                "size": 1,
+                                "type": "uint16",
+                                "units": "V"
+                            },
+                            {
+                                "access": "RW",
+                                "desc": "Profile voltage phase B point in Volts.",
+                                "label": "Voltage Point Phase B",
+                                "name": "VB",
+                                "sf": "V_SF",
+                                "size": 1,
+                                "type": "uint16",
+                                "units": "V"
+                            },
+                            {
+                                "access": "RW",
+                                "desc": "Profile voltage phase C point in Volts.",
+                                "label": "Voltage Point Phase C",
+                                "name": "VC",
+                                "sf": "V_SF",
+                                "size": 1,
+                                "type": "uint16",
+                                "units": "V"
+                            },
+                            {
+                                "access": "RW",
+                                "desc": "Profile frequency point in Hz.",
+                                "label": "Frequency Point",
+                                "name": "Hz",
+                                "sf": "Hz_SF",
+                                "size": 1,
+                                "type": "uint16",
+                                "units": "Hz"
+                            }, 
+                            {
+                                "access": "RW",
+                                "desc": "Profile phase A angle in degrees.",
+                                "label": "Phase Angle A",
+                                "name": "PhaseAngleA",
+                                "size": 1,
+                                "type": "uint16",
+                                "units": "Degrees"
+                            },
+                            {
+                                "access": "RW",
+                                "desc": "Profile phase B angle in degrees.",
+                                "label": "Phase Angle B",
+                                "name": "PhaseAngleB",
+                                "size": 1,
+                                "type": "uint16",
+                                "units": "Degrees"
+                            },
+                            {
+                                "access": "RW",
+                                "desc": "Profile phase C angle in degrees.",
+                                "label": "Phase Angle C",
+                                "name": "PhaseAngleC",
+                                "size": 1,
+                                "type": "uint16",
+                                "units": "Degrees"
+                            }
+                        ],
+                        "type": "group"
+                    }
+                ],
+                "type": "group"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 64411
+}

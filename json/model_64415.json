@@ -1,0 +1,132 @@
+{
+    "id": 64415,
+    "group": {
+        "name": "CSIPControl",
+        "label": "CSIP Client Control",
+        "desc": "CSIP Client Control for Alarms and Error tests",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "size": 1,
+                "static": "S",
+                "type": "uint16",
+                "value": 64415
+            },
+            {
+                "desc": "Model length.",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "size": 1,
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "label": "LogEvent Mode Enable",
+                "desc": "Enable or disable the LogEvent mode",
+                "name": "LogEventEna",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "LogEvent Mode Disabled",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "value": 0
+                    },
+                    {
+                        "desc": "LogEvent Mode Enabled",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "HTTP Message Mode Enable",
+                "desc": "Enable or disable the HTTP Message mode",
+                "name": "HTTPMsg",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "HTTP Message Mode Disabled",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "value": 0
+                    },
+                    {
+                        "desc": "HTTP Message Mode Enabled",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "COMM-004 Certificate",
+                "desc": "Select COMM-004 certificate type",
+                "name": "COMM004Cert",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Default Certificate",
+                        "label": "DEFAULT",
+                        "name": "Default Certificate",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Chain Length Two Certificate",
+                        "label": "COMM-004A",
+                        "name": "COMM_004A",
+                        "value": 1
+                    },
+                    {
+                        "desc": "Chain Length Three Certificate",
+                        "label": "COMM-004B",
+                        "name": "COMM_004B",
+                        "value": 2
+                    },
+                    {
+                        "desc": "Chain Length Four Certificate",
+                        "label": "COMM-004C",
+                        "name": "COMM_004C",
+                        "value": 3
+                    },
+                    {
+                        "desc": "Invalid MICA Extended Key Critical Value",
+                        "label": "COMM-004D",
+                        "name": "COMM_004D",
+                        "value": 4
+                    },
+                    {
+                        "desc": "Invalid MICA Name Non-Critical Value",
+                        "label": "COMM-004E",
+                        "name": "COMM_004E",
+                        "value": 5
+                    },
+                    {
+                        "desc": "Invalid MICA Policy Mapping Non-Critical Value",
+                        "label": "COMM-004F",
+                        "name": "COMM_004F",
+                        "value": 6
+                    },
+                    {
+                        "desc": "Self-signed device certificate",
+                        "label": "COMM-004G",
+                        "name": "COMM_004G",
+                        "value": 7
+                    }
+                ]
+            }
+        ],
+        "type": "group"
+    }
+}

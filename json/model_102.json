@@ -31,7 +31,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "A"
+                "units": "A",
+                "detail": "Sum of active phases"
             },
             {
                 "desc": "Phase A Current",
@@ -41,7 +42,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "A"
+                "units": "A",
+                "detail": "Connected Phase"
             },
             {
                 "desc": "Phase B Current",
@@ -51,7 +53,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "A"
+                "units": "A",
+                "detail": "Connected Phase"
             },
             {
                 "desc": "Phase C Current",

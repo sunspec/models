@@ -12,7 +12,7 @@
                         "type": "uint16"
                     },
                     {
-                        "label": "Input ID Sting",
+                        "label": "Input ID String",
                         "name": "IDStr",
                         "size": 8,
                         "type": "string"

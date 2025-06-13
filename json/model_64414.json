@@ -1,0 +1,93 @@
+{
+    "group": {
+        "name": "DERSimControls",
+        "label": "DER Simulation Controls",
+        "desc": "Configuration parameters for the DER device simulator.",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "size": 1,
+                "static": "S",
+                "type": "uint16",
+                "value": 64414
+            },
+            {
+                "desc": "Model length.",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "size": 1,
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "label": "Time offset",
+                "desc": "Time offset for simulation formatted 'HH:MM:SS'",
+                "name": "Time",
+                "type": "string",
+                "size": 10
+            },
+            {
+                "access": "RW",
+                "name": "Temperature",
+                "desc": "Ambient temperature (degrees Celsius)",
+                "type": "float32",
+                "size": 2
+            },
+            {
+                "access": "RW",
+                "name": "GridModelSource",
+                "desc": "The data source for the grid model. 'csv' or 'const'",
+                "type": "string",
+                "size": 32
+            },
+            {
+                "access": "RW",
+                "name": "IrradianceModelSource",
+                "desc": "The data source for the irradiance model. 'csv' or 'const'",
+                "type": "string",
+                "size": 32
+            },
+            {
+                "access": "RW",
+                "name": "Irradiance",
+                "desc": "The irradiance on the DER device (W/m^2) for the 'const' irradiance model",
+                "type": "float32",
+                "size": 2
+            },
+            {
+                "access": "RW",
+                "name": "GridVoltageA",
+                "desc": "Phase A RMS Voltage (pu) for the 'const' grid model",
+                "type": "float32",
+                "size": 2
+            },
+            {
+                "access": "RW",
+                "name": "GridVoltageB",
+                "desc": "Phase B RMS Voltage (pu) for the 'const' grid model",
+                "type": "float32",
+                "size": 2
+            },
+            {
+                "access": "RW",
+                "name": "GridVoltageC",
+                "desc": "Phase C RMS Voltage (pu) for the 'const' grid model",
+                "type": "float32",
+                "size": 2
+            },
+            {
+                "access": "RW",
+                "name": "GridFrequency",
+                "desc": "Grid frequency (Hz) for the 'const' grid model",
+                "type": "float32",
+                "size": 2
+            }
+        ],
+        "type": "group"
+    },
+    "id": 64414
+}

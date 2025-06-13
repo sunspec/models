@@ -65,11 +65,13 @@
                     },
                     {
                         "name": "ACL",
-                        "value": 2
+                        "value": 2,
+                        "detail": "One or more registers were not writable by this role"
                     },
                     {
                         "name": "OFF",
-                        "value": 3
+                        "value": 3,
+                        "detail": "Offset out of range or missing from multi-register value"
                     }
                 ],
                 "type": "enum16"
@@ -80,7 +82,8 @@
                 "mandatory": "M",
                 "name": "X",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "detail": "A max of 50 values are allocated"
             },
             {
                 "desc": "Copy of value from register Off1.",
@@ -88,7 +91,8 @@
                 "mandatory": "M",
                 "name": "Val1",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "detail": "Unused values shall return 0xFFFF (unimplemented)"
             },
             {
                 "mandatory": "M",
@@ -406,7 +410,8 @@
                 "mandatory": "M",
                 "name": "Seq",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "detail": "Shall be advanced for each response"
             },
             {
                 "desc": "Bitmask alarm code",
@@ -421,7 +426,8 @@
                     },
                     {
                         "name": "ALM",
-                        "value": 1
+                        "value": 1,
+                        "detail": "Tampered"
                     }
                 ],
                 "type": "enum16"
@@ -435,7 +441,8 @@
                 "symbols": [
                     {
                         "name": "NONE",
-                        "value": 0
+                        "value": 0,
+                        "detail": "For test purposes only"
                     },
                     {
                         "name": "AES-GMAC-64",
@@ -446,7 +453,8 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "detail": "For future proof"
             },
             {
                 "desc": "Number of registers comprising the digital signature.",
@@ -454,7 +462,8 @@
                 "mandatory": "M",
                 "name": "N",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "detail": "The value of N must be at least 4 (64 bits)"
             }
         ],
         "type": "group"

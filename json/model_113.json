@@ -30,7 +30,8 @@
                 "name": "A",
                 "size": 2,
                 "type": "float32",
-                "units": "A"
+                "units": "A",
+                "detail": "Sum of active phases"
             },
             {
                 "desc": "Phase A Current",
@@ -39,7 +40,8 @@
                 "name": "AphA",
                 "size": 2,
                 "type": "float32",
-                "units": "A"
+                "units": "A",
+                "detail": "Connected Phase"
             },
             {
                 "desc": "Phase B Current",
@@ -48,7 +50,8 @@
                 "name": "AphB",
                 "size": 2,
                 "type": "float32",
-                "units": "A"
+                "units": "A",
+                "detail": "Connected Phase"
             },
             {
                 "desc": "Phase C Current",
@@ -57,7 +60,8 @@
                 "name": "AphC",
                 "size": 2,
                 "type": "float32",
-                "units": "A"
+                "units": "A",
+                "detail": "Connected Phase"
             },
             {
                 "desc": "Phase Voltage AB",

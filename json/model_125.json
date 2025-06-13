@@ -119,7 +119,8 @@
                 "type": "pad"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "Ref 3: 8.7.5.1; Ref 4: 6"
     },
     "id": 125
 }

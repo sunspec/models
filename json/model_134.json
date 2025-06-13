@@ -607,7 +607,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Number of curve points supported (maximum of 10).",
+                "desc": "Number of curve points supported (maximum of 20).",
                 "label": "NPt",
                 "mandatory": "M",
                 "name": "NPt",
@@ -641,7 +641,8 @@
                 "units": "SF"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "Ref 3: 8.9.1.2, 8.9.4.2"
     },
     "id": 134
 }

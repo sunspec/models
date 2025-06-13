@@ -48,7 +48,8 @@
                 "mandatory": "M",
                 "name": "X",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "detail": "A max of 50 (offset, value) pairs are allocated"
             },
             {
                 "access": "RW",
@@ -57,7 +58,8 @@
                 "mandatory": "M",
                 "name": "Off",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "detail": "X values to follow"
             },
             {
                 "access": "RW",
@@ -646,7 +648,8 @@
                 "mandatory": "M",
                 "name": "Seq",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "detail": "Shall be advanced for each request"
             },
             {
                 "access": "RW",
@@ -655,7 +658,8 @@
                 "mandatory": "M",
                 "name": "Role",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "detail": "Each controller is assigned a key index that maps to their access control role"
             },
             {
                 "access": "RW",
@@ -674,7 +678,8 @@
                 "symbols": [
                     {
                         "name": "NONE",
-                        "value": 0
+                        "value": 0,
+                        "detail": "For test purposes only"
                     },
                     {
                         "name": "AES-GMAC-64",
@@ -685,7 +690,8 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "detail": "For future proof"
             },
             {
                 "access": "RW",
@@ -694,7 +700,8 @@
                 "mandatory": "M",
                 "name": "N",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "detail": "The value of N must be at least 4 (64 bits)"
             }
         ],
         "type": "group"

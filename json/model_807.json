@@ -563,7 +563,8 @@
                 "mandatory": "M",
                 "name": "Idx",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "detail": "Indices are one-based."
             },
             {
                 "desc": "Number of modules in this string.",
@@ -589,7 +590,8 @@
                 "sf": "ModV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "detail": "Measurement."
             },
             {
                 "desc": "Module with the maximum voltage.",
@@ -606,7 +608,8 @@
                 "sf": "ModV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "detail": "Measurement."
             },
             {
                 "desc": "Module with the minimum voltage.",
@@ -623,7 +626,8 @@
                 "sf": "ModV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "detail": "Calculation based on measurements."
             },
             {
                 "desc": "Maximum voltage for all cells in the string.",
@@ -632,7 +636,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "detail": "Measurement."
             },
             {
                 "desc": "Module containing the cell with the maximum voltage.",
@@ -655,7 +660,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "detail": "Measurement."
             },
             {
                 "desc": "Module containing the cell with the minimum voltage.",
@@ -678,7 +684,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "detail": "Calculation based on measurements."
             },
             {
                 "desc": "Maximum electrolyte temperature for all modules in the string.",
@@ -688,7 +695,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "detail": "Measurement."
             },
             {
                 "desc": "Module with the maximum temperature.",
@@ -705,7 +713,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "detail": "Measurement."
             },
             {
                 "desc": "Module with the minimum temperature.",
@@ -722,7 +731,8 @@
                 "sf": "Tmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "detail": "Calculation based on measurements."
             },
             {
                 "desc": "Alarms, warnings and status values.  Bit flags.",
@@ -753,19 +763,23 @@
                     },
                     {
                         "name": "OVER_CHARGE_CURRENT_ALARM",
-                        "value": 5
+                        "value": 5,
+                        "detail": "See AChaMax in model S 802."
                     },
                     {
                         "name": "OVER_CHARGE_CURRENT_WARNING",
-                        "value": 6
+                        "value": 6,
+                        "detail": "See AChaMax in model S 802."
                     },
                     {
                         "name": "OVER_DISCHARGE_CURRENT_ALARM",
-                        "value": 7
+                        "value": 7,
+                        "detail": "See ADisChaMax in model S 802."
                     },
                     {
                         "name": "OVER_DISCHARGE_CURRENT_WARNING",
-                        "value": 8
+                        "value": 8,
+                        "detail": "See ADisChaMax in model S 802."
                     },
                     {
                         "name": "OVER_VOLT_ALARM",
@@ -805,11 +819,13 @@
                     },
                     {
                         "name": "RESERVED_1",
-                        "value": 18
+                        "value": 18,
+                        "detail": "Do not implement."
                     },
                     {
                         "name": "RESERVED_2",
-                        "value": 19
+                        "value": 19,
+                        "detail": "Do not implement."
                     },
                     {
                         "name": "CONTACTOR_ERROR",
@@ -829,15 +845,18 @@
                     },
                     {
                         "name": "RESERVED_3",
-                        "value": 24
+                        "value": 24,
+                        "detail": "Do not implement."
                     },
                     {
                         "name": "OTHER_ALARM",
-                        "value": 25
+                        "value": 25,
+                        "detail": "See EvtVnd1 and EvtVnd2 for more information."
                     },
                     {
                         "name": "OTHER_WARNING",
-                        "value": 26
+                        "value": 26,
+                        "detail": "See EvtVnd1 and EvtVnd2 for more information."
                     },
                     {
                         "name": "FIRE_ALARM",
