@@ -1,0 +1,976 @@
+{
+    "id": 64412,
+    "group": {
+        "name": "DERExploitation",
+        "label": "DER Cyber Exploitation",
+        "desc": "Operations that represent a hacked DER device",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "size": 1,
+                "static": "S",
+                "type": "uint16",
+                "value": 64412
+            },
+            {
+                "desc": "Model length.",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "size": 1,
+                "static": "S",
+                "type": "uint16"
+            },
+            {
+                "label": "DA Manipulation",
+                "desc": "Modify the device ID of the DER",
+                "name": "DAManipulation",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Falsify Device Identity",
+                "desc": "Change the DER manufacturer and model",
+                "name": "FalsifyDeviceIdentity",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas P Always Nameplate",
+                "desc": "Set the DER meas to always be at nameplate power",
+                "name": "MeasPAlwaysNameplate",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas Q Always Minimum",
+                "desc": "Set the DER to always be at minimum reactive power",
+                "name": "MeasQAlwaysMinimum",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas Q Always Maximum",
+                "desc": "Set the DER to always be at maximum reactive power",
+                "name": "MeasQAlwaysMaximum",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas Q Always Zero",
+                "desc": "Set the DER to always be at zero reactive power",
+                "name": "MeasQAlwaysZero",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas Zero P",
+                "desc": "Set the DER to always be at zero P, Q, and S",
+                "name": "MeasZeroP",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas Invert Q",
+                "desc": "Set the DER to reverse the Q measurement data",
+                "name": "MeasInvertQ",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas Low V",
+                "desc": "Set the DER to always measure low voltage",
+                "name": "MeasLowV",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas High V",
+                "desc": "Set the DER to always measure high voltage",
+                "name": "MeasHighV",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas Low L1 V",
+                "desc": "Set the DER to always measure low line 1 voltage",
+                "name": "MeasLowL1V",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas High L1 V",
+                "desc": "Set the DER to always measure high line 1 voltage",
+                "name": "MeasHighL1V",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas Low F",
+                "desc": "Set the DER to always measure low frequency",
+                "name": "MeasLowF",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas High F",
+                "desc": "Set the DER to always measure high frequency",
+                "name": "MeasHighF",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas Low Amps",
+                "desc": "Set the DER to always measure low current",
+                "name": "MeasLowAmps",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas High Amps",
+                "desc": "Set the DER to always measure high current",
+                "name": "MeasHighAmps",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas High S",
+                "desc": "Set the DER to always measure high apparent power",
+                "name": "MeasHighS",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas Low S",
+                "desc": "Set the DER to always measure low apparent power",
+                "name": "MeasLowS",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas High Q",
+                "desc": "Set the DER to always measure high reactive power",
+                "name": "MeasHighQ",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas Low Q",
+                "desc": "Set the DER to always measure low reactive power",
+                "name": "MeasLowQ",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas Low PF",
+                "desc": "Set the DER to always measure low power factor",
+                "name": "MeasLowPF",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Meas Low Reversed PF",
+                "desc": "Set the DER to always measure low reversed power factor",
+                "name": "MeasLowReversedPF",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Nameplate High P",
+                "desc": "Set the DER nameplate power to be high",
+                "name": "NameplateHighP",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Nameplate Low P",
+                "desc": "Set the DER nameplate power to be low",
+                "name": "NameplateLowP",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Nameplate High S",
+                "desc": "Set the DER nameplate apparent power to be high",
+                "name": "NameplateHighS",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Nameplate Low S",
+                "desc": "Set the DER nameplate apparent power to be low",
+                "name": "NameplateLowS",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Nameplate High Q",
+                "desc": "Set the DER nameplate reactive power to be high",
+                "name": "NameplateHighQ",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Nameplate Low Q",
+                "desc": "Set the DER nameplate reactive power to be low",
+                "name": "NameplateLowQ",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Nameplate High Nom V",
+                "desc": "Set the DER nameplate voltage to be high",
+                "name": "NameplateHighNomV",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Nameplate Low Nom V",
+                "desc": "Set the DER nameplate voltage to be low",
+                "name": "NameplateLowNomV",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Nameplate Low Amps",
+                "desc": "Set the DER nameplate current to be low",
+                "name": "NameplateLowAmps",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Nameplate Low Varmaxinj",
+                "desc": "Set the DER nameplate VarMaxInj to be low",
+                "name": "NameplateLowVarmaxinj",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Nameplate Low Varmaxabs",
+                "desc": "Set the DER nameplate VarMaxAbs to be low",
+                "name": "NameplateLowVarmaxabs",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Nameplate Low PF",
+                "desc": "Set the DER nameplate power factor to be low",
+                "name": "NameplateLowPF",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Settings High Nom V",
+                "desc": "Set the DER settings voltage to be high",
+                "name": "SettingsHighNomV",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Settings Low Amps",
+                "desc": "Set the DER settings current to be low",
+                "name": "SettingsLowAmps",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Settings High P",
+                "desc": "Set the DER settings power to be high",
+                "name": "SettingsHighP",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Settings Low P",
+                "desc": "Set the DER settings power to be low",
+                "name": "SettingsLowP",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Settings High VAMax",
+                "desc": "Set the DER settings VAMax to be high",
+                "name": "SettingsHighVAMax",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Settings High Varmaxinj",
+                "desc": "Set the DER settings VarMaxInj to be high",
+                "name": "SettingsHighVarmaxinj",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Settings High Varmaxabs",
+                "desc": "Set the DER settings VarMaxAbs to be high",
+                "name": "SettingsHighVarmaxabs",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Change Common Model ID",
+                "desc": "Change the common model ID",
+                "name": "ChangeCommonModelID",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "label": "Change Common Model Length",
+                "desc": "Change the common model length",
+                "name": "ChangeCommonModelLength",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Modbus Falsification Disabled",
+                        "label": "Data Unaffected",
+                        "name": "OFF",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Modbus Falsification Enabled",
+                        "label": "Data Falsification",
+                        "name": "ON",
+                        "value": 1
+                    }
+                ]
+            }
+        ],
+        "type": "group"
+    }
+}
