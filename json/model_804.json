@@ -177,7 +177,8 @@
                 "mandatory": "M",
                 "name": "Idx",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "detail": "Indices are one-based."
             },
             {
                 "desc": "Count of modules in the string.",
@@ -200,7 +201,8 @@
                     },
                     {
                         "name": "CONTACTOR_STATUS",
-                        "value": 1
+                        "value": 1,
+                        "detail": "If string has multiple contactors, indicates that all contactors are closed."
                     }
                 ],
                 "type": "bitfield32"
@@ -244,7 +246,8 @@
                     },
                     {
                         "name": "STRING_FAULT",
-                        "value": 8
+                        "value": 8,
+                        "detail": "See Evt1 for more information."
                     }
                 ],
                 "type": "enum16"
@@ -264,7 +267,8 @@
                 "sf": "SoC_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "%"
+                "units": "%",
+                "detail": "Measurement."
             },
             {
                 "desc": "Depth of discharge for the string, expressed as a percentage.",
@@ -273,7 +277,8 @@
                 "sf": "DoD_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "%"
+                "units": "%",
+                "detail": "Measurement."
             },
             {
                 "desc": "Number of discharge cycles executed upon the string.",
@@ -289,7 +294,8 @@
                 "sf": "SoH_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "%"
+                "units": "%",
+                "detail": "Measurement."
             },
             {
                 "desc": "String current measurement.",
@@ -299,7 +305,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "A"
+                "units": "A",
+                "detail": "Measurement."
             },
             {
                 "desc": "String voltage measurement.",
@@ -308,7 +315,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "detail": "Measurement."
             },
             {
                 "desc": "Maximum voltage for all cells in the string.",
@@ -318,7 +326,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "detail": "Measurement."
             },
             {
                 "desc": "Module containing the cell with maximum cell voltage.",
@@ -335,7 +344,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "detail": "Measurement."
             },
             {
                 "desc": "Module containing the cell with minimum cell voltage.",
@@ -352,7 +362,8 @@
                 "sf": "CellV_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "detail": "Calculation based on measurements."
             },
             {
                 "desc": "Maximum temperature for all modules in the string.",
@@ -362,7 +373,8 @@
                 "sf": "ModTmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "detail": "Measurement."
             },
             {
                 "desc": "Module with the maximum temperature.",
@@ -380,7 +392,8 @@
                 "sf": "ModTmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "detail": "Measurement."
             },
             {
                 "desc": "Module with the minimum temperature.",
@@ -398,7 +411,8 @@
                 "sf": "ModTmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "detail": "Calculation based on measurements."
             },
             {
                 "desc": "Pad register.",
@@ -570,19 +584,23 @@
                     },
                     {
                         "name": "OVER_CHARGE_CURRENT_ALARM",
-                        "value": 5
+                        "value": 5,
+                        "detail": "See AChaMax in model S 802."
                     },
                     {
                         "name": "OVER_CHARGE_CURRENT_WARNING",
-                        "value": 6
+                        "value": 6,
+                        "detail": "See AChaMax in model S 802."
                     },
                     {
                         "name": "OVER_DISCHARGE_CURRENT_ALARM",
-                        "value": 7
+                        "value": 7,
+                        "detail": "See ADisChaMax in model S 802."
                     },
                     {
                         "name": "OVER_DISCHARGE_CURRENT_WARNING",
-                        "value": 8
+                        "value": 8,
+                        "detail": "See ADisChaMax in model S 802."
                     },
                     {
                         "name": "OVER_VOLT_ALARM",
@@ -646,19 +664,23 @@
                     },
                     {
                         "name": "RESERVED_1",
-                        "value": 24
+                        "value": 24,
+                        "detail": "Do not implement."
                     },
                     {
                         "name": "OTHER_ALARM",
-                        "value": 25
+                        "value": 25,
+                        "detail": "See EvtVnd1 and EvtVnd2 for more information."
                     },
                     {
                         "name": "OTHER_WARNING",
-                        "value": 26
+                        "value": 26,
+                        "detail": "See EvtVnd1 and EvtVnd2 for more information."
                     },
                     {
                         "name": "RESERVED_2",
-                        "value": 27
+                        "value": 27,
+                        "detail": "Do not implement."
                     },
                     {
                         "name": "CONFIGURATION_ALARM",
@@ -676,7 +698,8 @@
                 "label": "String Event 2",
                 "name": "Evt2",
                 "size": 2,
-                "type": "bitfield32"
+                "type": "bitfield32",
+                "detail": "Reserved for future use."
             },
             {
                 "desc": "Vendor defined events.",
@@ -716,7 +739,8 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "detail": "Should reset to 0 upon completion."
             },
             {
                 "desc": "Scale factor for string state of charge.",

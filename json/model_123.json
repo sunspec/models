@@ -300,7 +300,8 @@
                 "type": "sunssf"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "Ref 3: 8.7.1.2, 8.7.2.2, 8.7.3.2"
     },
     "id": 123
 }

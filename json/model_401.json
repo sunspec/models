@@ -319,7 +319,8 @@
                 "units": "C"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "This model is SUPERSEDED by model 403"
     },
     "id": 401
 }

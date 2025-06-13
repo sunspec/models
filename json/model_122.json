@@ -224,7 +224,8 @@
                         "value": 10
                     }
                 ],
-                "type": "bitfield32"
+                "type": "bitfield32",
+                "detail": "Bits shall be automatically cleared on read."
             },
             {
                 "desc": "Bit Mask indicating which inverter controls are currently active.",
@@ -348,7 +349,8 @@
                 "type": "sunssf"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "Ref 3: 8.14.3.2, Ref 4: 17"
     },
     "id": 122
 }

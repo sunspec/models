@@ -607,7 +607,8 @@
                 "type": "bitfield32"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "Float"
     },
     "id": 211
 }

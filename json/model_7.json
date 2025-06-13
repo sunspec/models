@@ -62,19 +62,23 @@
                     },
                     {
                         "name": "DS",
-                        "value": 1
+                        "value": 1,
+                        "detail": "The signature was not valid"
                     },
                     {
                         "name": "ACL",
-                        "value": 2
+                        "value": 2,
+                        "detail": "One or more registers were not writable by this role"
                     },
                     {
                         "name": "OFF",
-                        "value": 3
+                        "value": 3,
+                        "detail": "Offset out of range or missing from multi-register value"
                     },
                     {
                         "name": "VAL",
-                        "value": 4
+                        "value": 4,
+                        "detail": "Value is out of acceptable range"
                     }
                 ],
                 "type": "enum16"
@@ -101,7 +105,8 @@
                 "mandatory": "M",
                 "name": "Seq",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "detail": "Shall be advanced for each response"
             },
             {
                 "desc": "Bitmask alarm code",
@@ -116,7 +121,8 @@
                     },
                     {
                         "name": "ALM",
-                        "value": 1
+                        "value": 1,
+                        "detail": "Tampered"
                     }
                 ],
                 "type": "enum16"
@@ -136,7 +142,8 @@
                 "symbols": [
                     {
                         "name": "NONE",
-                        "value": 0
+                        "value": 0,
+                        "detail": "For test purposes only"
                     },
                     {
                         "name": "AES-GMAC-64",
@@ -147,7 +154,8 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "detail": "For future proof"
             },
             {
                 "access": "RW",
@@ -156,10 +164,12 @@
                 "mandatory": "M",
                 "name": "N",
                 "size": 1,
-                "type": "uint16"
+                "type": "uint16",
+                "detail": "The value of N must be at least 4 (64 bits)"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "Used in conjunction with a Secure Write Request"
     },
     "id": 7
 }

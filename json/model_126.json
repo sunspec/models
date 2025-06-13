@@ -590,7 +590,8 @@
                 "type": "sunssf"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "Ref 3: 8.8.1.2"
     },
     "id": 126
 }

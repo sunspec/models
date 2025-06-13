@@ -500,7 +500,8 @@
                 "name": "WinTms",
                 "size": 1,
                 "type": "uint16",
-                "units": "Secs"
+                "units": "Secs",
+                "detail": "Setting is ignored for LFRT controls."
             },
             {
                 "access": "RW",
@@ -509,7 +510,8 @@
                 "name": "RvrtTms",
                 "size": 1,
                 "type": "uint16",
-                "units": "Secs"
+                "units": "Secs",
+                "detail": "Setting is ignored for LFRT controls."
             },
             {
                 "access": "RW",
@@ -518,7 +520,8 @@
                 "name": "RmpTms",
                 "size": 1,
                 "type": "uint16",
-                "units": "Secs"
+                "units": "Secs",
+                "detail": "Setting is ignored for LFRT controls."
             },
             {
                 "desc": "Number of curves supported (recommend 4).",
@@ -565,7 +568,8 @@
                 "type": "enum16"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "Ref 4: 11"
     },
     "id": 144
 }

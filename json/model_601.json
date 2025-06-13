@@ -246,7 +246,8 @@
                         "value": 2
                     }
                 ],
-                "type": "enum16"
+                "type": "enum16",
+                "detail": "The global controls all trackers"
             },
             {
                 "desc": "Global tracker alarm conditions",
@@ -267,7 +268,8 @@
                         "value": 2
                     }
                 ],
-                "type": "bitfield16"
+                "type": "bitfield16",
+                "detail": "Combined tracker alarm conditions.  See individual trackers for alarms"
             },
             {
                 "desc": "Scale Factor for targets and position measurements in degrees",
@@ -286,7 +288,8 @@
                 "type": "uint16"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "Trackers may include GPS model 305 for location information"
     },
     "id": 601
 }

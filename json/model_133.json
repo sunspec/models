@@ -609,7 +609,8 @@
                 "type": "pad"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "Ref 2: 2.2.8"
     },
     "id": 133
 }

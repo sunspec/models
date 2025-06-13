@@ -606,7 +606,8 @@
                 "name": "ModTmpMax",
                 "sf": "ModTmp_SF",
                 "size": 1,
-                "type": "int16"
+                "type": "int16",
+                "detail": "Measurement."
             },
             {
                 "desc": "String containing the module with maximum temperature.",
@@ -630,7 +631,8 @@
                 "sf": "ModTmp_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "C"
+                "units": "C",
+                "detail": "Measurement."
             },
             {
                 "desc": "String containing the module with minimum temperature.",
@@ -651,7 +653,8 @@
                 "label": "Average Module Temperature",
                 "name": "ModTmpAvg",
                 "size": 1,
-                "type": "int16"
+                "type": "int16",
+                "detail": "Calculation based on measurements."
             },
             {
                 "desc": "Maximum string voltage for all strings in the bank.",
@@ -660,7 +663,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "detail": "Measurement."
             },
             {
                 "desc": "String with maximum voltage.",
@@ -676,7 +680,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "detail": "Measurement."
             },
             {
                 "desc": "String with minimum voltage.",
@@ -692,7 +697,8 @@
                 "sf": "V_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "V"
+                "units": "V",
+                "detail": "Calculation based on measurements."
             },
             {
                 "desc": "Maximum current of any string in the bank.",
@@ -701,7 +707,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "A"
+                "units": "A",
+                "detail": "Measurement."
             },
             {
                 "desc": "String with the maximum current.",
@@ -717,7 +724,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "A"
+                "units": "A",
+                "detail": "Measurement."
             },
             {
                 "desc": "String with the minimum current.",
@@ -733,7 +741,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "int16",
-                "units": "A"
+                "units": "A",
+                "detail": "Calculation based on measurements."
             },
             {
                 "desc": "Total number of cells that are currently being balanced.",

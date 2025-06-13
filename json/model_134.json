@@ -641,7 +641,8 @@
                 "units": "SF"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "Ref 3: 8.9.1.2, 8.9.4.2"
     },
     "id": 134
 }

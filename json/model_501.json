@@ -286,7 +286,8 @@
                 "units": "W"
             }
         ],
-        "type": "group"
+        "type": "group",
+        "detail": "Float"
     },
     "id": 501
 }

@@ -41,7 +41,8 @@
                 "sf": "A_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "A"
+                "units": "A",
+                "detail": "Connected Phase"
             },
             {
                 "desc": "Phase B Current",
