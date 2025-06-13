@@ -1,7 +1,7 @@
 #!/bin/python3
 
 """
-Script adapted from @bikeshredder
+Script adapted from @bikeshedder
 
 This script reads the XML files in the smdx directory, extracts notes for models, points, and symbols,
 and updates the corresponding JSON files in the json directory with this information. The information is added
@@ -11,6 +11,8 @@ Why 'detail' and not 'notes'?
 As of SunSpec Device Information Model Specification v1.2, Detailed Description (detail) is Mandatory
 for the CSV encodings but Notes (notes) are Optional. Technically, Notes are "used for draft models"
 and "not included in approved models"
+
+Detail also shows up in the XLSX representation of the models.
 """
 
 import json
