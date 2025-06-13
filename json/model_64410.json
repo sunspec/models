@@ -316,7 +316,7 @@
         "name": "Errors",
         "type": "string",
         "size": 32,
-        "access": "RO"
+        "access": "R"
       },
       {
         "desc": "Number of profile points supported.",

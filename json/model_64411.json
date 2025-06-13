@@ -522,7 +522,6 @@
                         "type": "uint16"
                     }
                 ],
-
                 "groups": [
                     {
                         "comments": [
@@ -613,7 +612,8 @@
                         ],
                         "type": "group"
                     }
-                ]
+                ],
+                "type": "group"
             }
         ],
         "type": "group"
