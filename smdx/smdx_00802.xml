@@ -9,7 +9,7 @@
       <point id="DisChaRte" offset="4" type="uint16" len="1" sf="DisChaRte_SF" units="%WHRtg" />
       <point id="SoCMax" offset="5" type="uint16" len="1" sf="SoC_SF" units="%WHRtg" />
       <point id="SoCMin" offset="6" type="uint16" len="1" sf="SoC_SF" units="%WHRtg" />
-      <point id="SocRsvMax" offset="7" type="uint16" len="1" sf="SoC_SF" access="rw" units="%WHRtg" />
+      <point id="SoCRsvMax" offset="7" type="uint16" len="1" sf="SoC_SF" access="rw" units="%WHRtg" />
       <point id="SoCRsvMin" offset="8" type="uint16" len="1" sf="SoC_SF" access="rw" units="%WHRtg" />
       <point id="SoC" offset="9" type="uint16" len="1" sf="SoC_SF" units="%WHRtg" mandatory="true" />
       <point id="DoD" offset="10" type="uint16" len="1" sf="DoD_SF" units="%" />
@@ -175,7 +175,7 @@
       <description>Manufacturer minimum state of charge, expressed as a percentage.</description>
       <notes/>
     </point>
-    <point id="SocRsvMax">
+    <point id="SoCRsvMax">
       <label>Max Reserve Percent</label>
       <description>Setpoint for maximum reserve for storage as a percentage of the nominal maximum storage.</description>
       <notes/>

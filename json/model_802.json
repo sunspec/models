@@ -633,7 +633,7 @@
                 "size": 1,
                 "type": "int16",
                 "units": "W",
-                "detail": "Measurement."
+                "detail": "DC Measurement."
             },
             {
                 "desc": "Request from battery to start or stop the inverter.  Enumeration.",
