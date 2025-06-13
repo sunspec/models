@@ -541,7 +541,8 @@
             ],
             "type": "group"
           }
-        ]
+        ],
+        "type": "group"
       }
     ],
     "type": "group"
