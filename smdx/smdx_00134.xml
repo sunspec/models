@@ -85,7 +85,7 @@
     </point>
     <point id="NPt">
       <label>NPt</label>
-      <description>Number of curve points supported (maximum of 10).</description>
+      <description>Number of curve points supported (maximum of 20).</description>
       <notes> </notes>
     </point>
     <point id="ModEna">
