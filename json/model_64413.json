@@ -32,8 +32,8 @@
                 "type": "count"
             },
             {
-                "desc": "Plane of Array Irradiance (W/m^2).",
-                "label": "POA Irradiance (W/m^2)",
+                "desc": "Plane of Array Irradiance",
+                "label": "POA Irradiance",
                 "name": "Irr",
 				"sf": "Irr_SF",
                 "size": 1,
@@ -58,24 +58,27 @@
                 "points": [
                     {
                         "label": "Power",
-                        "desc": "Power (Watts)",
+                        "desc": "Power",
                         "name": "P",
                         "size": 2,
-                        "type": "float32"
+                        "type": "float32",
+                        "units": "W"
                     },
                     {
                         "label": "Current",
-                        "desc": "Current (Amperes)",
+                        "desc": "Current",
                         "name": "I",
                         "size": 2,
-                        "type": "float32"
+                        "type": "float32",
+                        "units": "A"
                     },
                     {
                         "label": "Voltage",
-                        "desc": "Voltage (Volts)",
+                        "desc": "Voltage",
                         "name": "V",
                         "size": 2,
-                        "type": "float32"
+                        "type": "float32",
+                        "units": "V"
                     }
                 ],
                 "type": "group"
