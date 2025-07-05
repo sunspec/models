@@ -474,7 +474,7 @@
                         "units": "% WMax/min"
                     },
                     {
-                        "desc": "Enumerated value indicates if curve is read-only or can be modified.",
+                        "desc": "Curve is read-only or can be modified.",
                         "label": "ReadOnly",
                         "mandatory": "M",
                         "name": "ReadOnly",

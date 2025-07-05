@@ -554,7 +554,7 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Alarms, warnings and status values.  Bit flags.",
+                "desc": "Alarms, warnings and status values.",
                 "label": "String Event 1",
                 "mandatory": "M",
                 "name": "Evt1",
@@ -692,7 +692,7 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Alarms, warnings and status values.  Bit flags.",
+                "desc": "Alarms, warnings and status values.",
                 "label": "String Event 2",
                 "name": "Evt2",
                 "size": 2,

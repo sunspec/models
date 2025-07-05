@@ -259,7 +259,7 @@
                         "type": "bitfield32"
                     },
                     {
-                        "desc": "Alarms, warnings and status values.  Bit flags.",
+                        "desc": "Alarms, warnings and status values.",
                         "label": "Module Event 1",
                         "mandatory": "M",
                         "name": "ModEvt1",
@@ -389,7 +389,7 @@
                         "type": "bitfield32"
                     },
                     {
-                        "desc": "Alarms, warnings and status values.  Bit flags.",
+                        "desc": "Alarms, warnings and status values.",
                         "label": "Module Event 2",
                         "mandatory": "M",
                         "name": "ModEvt2",
@@ -735,7 +735,7 @@
                 "detail": "Calculation based on measurements."
             },
             {
-                "desc": "Alarms, warnings and status values.  Bit flags.",
+                "desc": "Alarms, warnings and status values.",
                 "label": "String Event 1",
                 "mandatory": "M",
                 "name": "Evt1",
@@ -874,7 +874,7 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Alarms, warnings and status values.  Bit flags.",
+                "desc": "Alarms, warnings and status values.",
                 "label": "String Event 2",
                 "mandatory": "M",
                 "name": "Evt2",

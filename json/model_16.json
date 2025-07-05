@@ -32,7 +32,7 @@
                 "type": "string"
             },
             {
-                "desc": "Enumerated value.  Force IPv4 configuration method",
+                "desc": "Force IPv4 configuration method",
                 "label": "Config",
                 "mandatory": "M",
                 "name": "Cfg",
@@ -51,7 +51,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Bitmask value Configure use of services",
+                "desc": "Configure use of services",
                 "label": "Control",
                 "mandatory": "M",
                 "name": "Ctl",
@@ -119,7 +119,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Bitmask value.  Link control flags",
+                "desc": "Link control flags",
                 "label": "Link Control",
                 "name": "LnkCtl",
                 "size": 1,

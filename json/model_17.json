@@ -52,7 +52,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Bitmask value.  Parity setting",
+                "desc": "Parity setting",
                 "label": "Parity",
                 "mandatory": "M",
                 "name": "Pty",
@@ -75,7 +75,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Enumerated value.  Duplex mode",
+                "desc": "Duplex mode",
                 "label": "Duplex",
                 "name": "Dup",
                 "size": 1,
@@ -114,7 +114,7 @@
                 "type": "enum16"
             },
             {
-                "desc": "Enumerated value.  Interface type",
+                "desc": "Interface type",
                 "label": "Interface Type",
                 "name": "Typ",
                 "size": 1,
@@ -135,7 +135,7 @@
                 "type": "enum16"
             },
             {
-                "desc": "Enumerated value. Serial protocol selection",
+                "desc": "Serial protocol selection",
                 "label": "Protocol",
                 "name": "Pcol",
                 "size": 1,

@@ -289,7 +289,7 @@
                 "detail": "Maps to DBAT.BatTyp in 61850."
             },
             {
-                "desc": "State of the battery bank.  Enumeration.",
+                "desc": "State of the battery bank. Enumeration.",
                 "label": "State of the Battery Bank",
                 "mandatory": "M",
                 "name": "State",
@@ -328,7 +328,7 @@
                 "detail": "Must be reconciled with State in IEC 61850."
             },
             {
-                "desc": "Vendor specific battery bank state.  Enumeration.",
+                "desc": "Vendor specific battery bank state. Enumeration.",
                 "label": "Vendor Battery Bank State",
                 "name": "StateVnd",
                 "size": 1,
@@ -343,7 +343,7 @@
                 "detail": "Number of days since 1/1/2000."
             },
             {
-                "desc": "Alarms and warnings.  Bit flags.",
+                "desc": "Alarms and warnings.",
                 "label": "Battery Event 1 Bitfield",
                 "mandatory": "M",
                 "name": "Evt1",
@@ -480,7 +480,7 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Alarms and warnings.  Bit flags.",
+                "desc": "Alarms and warnings.",
                 "label": "Battery Event 2 Bitfield",
                 "mandatory": "M",
                 "name": "Evt2",
@@ -636,7 +636,7 @@
                 "detail": "DC Measurement."
             },
             {
-                "desc": "Request from battery to start or stop the inverter.  Enumeration.",
+                "desc": "Request from battery to start or stop the inverter. Enumeration.",
                 "label": "Inverter State Request",
                 "name": "ReqInvState",
                 "size": 1,
@@ -671,7 +671,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Instruct the battery bank to perform an operation such as connecting.  Enumeration.",
+                "desc": "Instruct the battery bank to perform an operation such as connecting. Enumeration.",
                 "label": "Set Operation",
                 "mandatory": "M",
                 "name": "SetOp",

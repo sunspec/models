@@ -72,7 +72,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Commands to PCS. Enumerated value.",
+                "desc": "Commands to PCS.",
                 "label": "Set Operation",
                 "name": "OpCtl",
                 "size": 1,

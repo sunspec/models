@@ -24,7 +24,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "PV inverter present/available status. Enumerated value.",
+                "desc": "PV inverter present/available status.",
                 "label": "PVConn",
                 "mandatory": "M",
                 "name": "PVConn",
@@ -50,7 +50,7 @@
                 "type": "bitfield16"
             },
             {
-                "desc": "Storage inverter present/available status. Enumerated value.",
+                "desc": "Storage inverter present/available status.",
                 "label": "StorConn",
                 "mandatory": "M",
                 "name": "StorConn",
@@ -76,8 +76,8 @@
                 "type": "bitfield16"
             },
             {
-                "desc": "ECP connection status: disconnected=0  connected=1.",
                 "label": "ECPConn",
+                "desc": "ECP connection status: disconnected=0 connected=1.",
                 "mandatory": "M",
                 "name": "ECPConn",
                 "size": 1,
@@ -174,7 +174,7 @@
                 "type": "sunssf"
             },
             {
-                "desc": "Bit Mask indicating setpoint limit(s) reached.",
+                "desc": "Setpoint limit(s) reached.",
                 "label": "StSetLimMsk",
                 "name": "StSetLimMsk",
                 "size": 2,
@@ -228,8 +228,8 @@
                 "detail": "Bits shall be automatically cleared on read."
             },
             {
-                "desc": "Bit Mask indicating which inverter controls are currently active.",
                 "label": "StActCtl",
+                "desc": "Which inverter controls are currently active.",
                 "name": "StActCtl",
                 "size": 2,
                 "symbols": [
@@ -308,7 +308,7 @@
                 "units": "Secs"
             },
             {
-                "desc": "Bit Mask indicating active ride-through status.",
+                "desc": "Active ride-through status.",
                 "label": "RtSt",
                 "name": "RtSt",
                 "size": 1,
