@@ -63,7 +63,7 @@
                 "units": "W"
             },
             {
-                "desc": "Self discharge rate.  Percentage of capacity (WHRtg) discharged per day.",
+                "desc": "Self discharge rate. Percentage of capacity (WHRtg) discharged per day.",
                 "label": "Self Discharge Rate",
                 "name": "DisChaRte",
                 "sf": "DisChaRte_SF",
@@ -221,7 +221,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Used to reset any latched alarms.  1 = Reset.",
+                "desc": "Used to reset any latched alarms. 1 = Reset.",
                 "label": "Alarm Reset",
                 "mandatory": "M",
                 "name": "AlmRst",

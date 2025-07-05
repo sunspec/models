@@ -456,7 +456,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "The maximum rate at which the power may be increased after releasing the frozen value of snap shot function. ",
+                        "desc": "The maximum rate at which the power may be increased after releasing the frozen value of snap shot function.",
                         "label": "RmpRsUp",
                         "name": "RmpRsUp",
                         "sf": "RmpIncDec_SF",

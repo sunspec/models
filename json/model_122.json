@@ -126,7 +126,7 @@
                 "units": "varh"
             },
             {
-                "desc": "AC lifetime negative energy output  in quadrant 3.",
+                "desc": "AC lifetime negative energy output in quadrant 3.",
                 "label": "ActVArhQ3",
                 "name": "ActVArhQ3",
                 "size": 4,
@@ -134,7 +134,7 @@
                 "units": "varh"
             },
             {
-                "desc": "AC lifetime reactive energy output  in quadrant 4.",
+                "desc": "AC lifetime reactive energy output in quadrant 4.",
                 "label": "ActVArhQ4",
                 "name": "ActVArhQ4",
                 "size": 4,

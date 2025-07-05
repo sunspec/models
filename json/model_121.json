@@ -47,7 +47,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Offset  from PCC to inverter.",
+                "desc": "Offset from PCC to inverter.",
                 "label": "VRefOfs",
                 "mandatory": "M",
                 "name": "VRefOfs",

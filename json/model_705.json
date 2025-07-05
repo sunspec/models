@@ -356,7 +356,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Reversion time in seconds.  0 = No reversion time.",
+                "desc": "Reversion time in seconds. 0 = No reversion time.",
                 "label": "Reversion Timeout",
                 "name": "RvrtTms",
                 "size": 2,

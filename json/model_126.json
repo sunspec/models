@@ -577,7 +577,7 @@
                 "type": "sunssf"
             },
             {
-                "desc": "scale factor for dependent variable.",
+                "desc": "Scale factor for dependent variable.",
                 "label": "DeptRef_SF",
                 "mandatory": "M",
                 "name": "DeptRef_SF",

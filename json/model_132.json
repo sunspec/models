@@ -17,7 +17,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "Defines the meaning of the Watts DeptRef.  1=% WMax 2=% WAvail",
+                        "desc": "Defines the meaning of the Watts DeptRef. 1=% WMax 2=% WAvail",
                         "label": "DeptRef",
                         "mandatory": "M",
                         "name": "DeptRef",

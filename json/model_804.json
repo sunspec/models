@@ -715,7 +715,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Enables and disables the string.  Should reset to 0 upon completion.",
+                "desc": "Enables and disables the string. Should reset to 0 upon completion.",
                 "label": "Enable/Disable String",
                 "name": "SetEna",
                 "size": 1,
