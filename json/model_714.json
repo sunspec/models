@@ -7,7 +7,7 @@
                     "DC Port"
                 ],
                 "count": "NPrt",
-                "name": "Prt",
+                "name": "Port",
                 "points": [
                     {
                         "desc": "Port type.",

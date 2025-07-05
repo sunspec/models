@@ -19,7 +19,7 @@
                                 "count": "NPt",
                                 "desc": "Must trip curve points.",
                                 "label": "Must Trip Curve Points",
-                                "name": "Pt",
+                                "name": "Point",
                                 "points": [
                                     {
                                         "access": "RW",
@@ -77,7 +77,7 @@
                                 "count": "NPt",
                                 "desc": "May trip curve points.",
                                 "label": "May Trip Curve Points",
-                                "name": "Pt",
+                                "name": "Point",
                                 "points": [
                                     {
                                         "access": "RW",
@@ -127,7 +127,7 @@
                                 "count": "NPt",
                                 "desc": "Momentary cessation curve points.",
                                 "label": "Mom Cessation Curve Points",
-                                "name": "Pt",
+                                "name": "Point",
                                 "points": [
                                     {
                                         "access": "RW",
@@ -172,7 +172,7 @@
                     }
                 ],
                 "label": "Stored Curves",
-                "name": "Crv",
+                "name": "Curve",
                 "points": [
                     {
                         "desc": "Curve read-write access.",
