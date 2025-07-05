@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Include to support an IPv6 protocol stack on this interface",
+        "desc": "Include to support an IPv6 protocol stack on this interface.",
         "label": "IPv6",
         "name": "model_13",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 13
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -25,14 +25,14 @@
             },
             {
                 "access": "RW",
-                "desc": "Interface name",
+                "desc": "Interface name.",
                 "label": "Name",
                 "name": "Nam",
                 "size": 4,
                 "type": "string"
             },
             {
-                "desc": "Configuration status",
+                "desc": "Configuration status.",
                 "label": "Config Status",
                 "mandatory": "M",
                 "name": "CfgSt",
@@ -54,7 +54,7 @@
                 "type": "enum16"
             },
             {
-                "desc": "A configuration change is pending",
+                "desc": "A configuration change is pending.",
                 "label": "Change Status",
                 "mandatory": "M",
                 "name": "ChgSt",
@@ -68,7 +68,7 @@
                 "type": "bitfield16"
             },
             {
-                "desc": "Identify capable sources of configuration",
+                "desc": "Identify capable sources of configuration.",
                 "label": "Config Capability",
                 "mandatory": "M",
                 "name": "Cap",
@@ -138,7 +138,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Configure use of services",
+                "desc": "Configure use of services.",
                 "label": "Control",
                 "mandatory": "M",
                 "name": "Ctl",
@@ -157,7 +157,7 @@
             },
             {
                 "access": "RW",
-                "desc": "IPv6 numeric address as a dotted string xxxx.xxxx.xxxx.xxxx",
+                "desc": "IPv6 numeric address as a dotted string xxxx.xxxx.xxxx.xxxx.",
                 "label": "IP",
                 "mandatory": "M",
                 "name": "Addr",
@@ -166,7 +166,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Classless Inter-Domain Routing Number",
+                "desc": "Classless Inter-Domain Routing Number.",
                 "label": "CIDR",
                 "name": "CIDR",
                 "size": 20,
@@ -174,7 +174,7 @@
             },
             {
                 "access": "RW",
-                "desc": "IPv6 numeric address as a dotted string xxxx.xxxx.xxxx.xxxx",
+                "desc": "IPv6 numeric address as a dotted string xxxx.xxxx.xxxx.xxxx.",
                 "label": "Gateway",
                 "name": "Gw",
                 "size": 20,
@@ -182,7 +182,7 @@
             },
             {
                 "access": "RW",
-                "desc": "IPv6 numeric DNS address as a dotted string xxxx.xxxx.xxxx.xxxx",
+                "desc": "IPv6 numeric DNS address as a dotted string xxxx.xxxx.xxxx.xxxx.",
                 "label": "DNS1",
                 "name": "DNS1",
                 "size": 20,
@@ -190,7 +190,7 @@
             },
             {
                 "access": "RW",
-                "desc": "IPv6 numeric DNS address as a dotted string xxxx.xxxx.xxxx.xxxx",
+                "desc": "IPv6 numeric DNS address as a dotted string xxxx.xxxx.xxxx.xxxx.",
                 "label": "DNS2",
                 "name": "DNS2",
                 "size": 20,
@@ -198,7 +198,7 @@
             },
             {
                 "access": "RW",
-                "desc": "IPv6 numeric NTP address as a name or dotted string xxxx.xxxx.xxxx.xxxx",
+                "desc": "IPv6 numeric NTP address as a name or dotted string xxxx.xxxx.xxxx.xxxx.",
                 "label": "NTP1",
                 "name": "NTP1",
                 "size": 20,
@@ -206,7 +206,7 @@
             },
             {
                 "access": "RW",
-                "desc": "IPv6 numeric NTP address as a name or dotted string xxxx.xxxx.xxxx.xxxx",
+                "desc": "IPv6 numeric NTP address as a name or dotted string xxxx.xxxx.xxxx.xxxx.",
                 "label": "NTP2",
                 "name": "NTP2",
                 "size": 20,
@@ -214,7 +214,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Domain name (24 chars max)",
+                "desc": "Domain name (24 chars max).",
                 "label": "Domain",
                 "name": "DomNam",
                 "size": 12,
@@ -222,7 +222,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Host name (24 chars max)",
+                "desc": "Host name (24 chars max).",
                 "label": "Host Name",
                 "name": "HostNam",
                 "size": 12,

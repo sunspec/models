@@ -151,7 +151,7 @@
         "name": "lithium_ion_string",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -161,7 +161,7 @@
                 "value": 804
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",

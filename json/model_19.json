@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Include this model to configure a Point-to-Point Protocol link",
+        "desc": "Include this model to configure a Point-to-Point Protocol link.",
         "label": "PPP Link",
         "name": "model_19",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 19
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -25,7 +25,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Interface name",
+                "desc": "Interface name.",
                 "label": "Name",
                 "name": "Nam",
                 "size": 4,
@@ -33,7 +33,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Interface baud rate in bits per second",
+                "desc": "Interface baud rate in bits per second.",
                 "label": "Rate",
                 "mandatory": "M",
                 "name": "Rte",
@@ -43,7 +43,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Number of data bits per character",
+                "desc": "Number of data bits per character.",
                 "label": "Bits",
                 "mandatory": "M",
                 "name": "Bits",
@@ -52,7 +52,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Parity setting",
+                "desc": "Parity setting.",
                 "label": "Parity",
                 "mandatory": "M",
                 "name": "Pty",
@@ -75,7 +75,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Duplex mode",
+                "desc": "Duplex mode.",
                 "label": "Duplex",
                 "name": "Dup",
                 "size": 1,
@@ -93,7 +93,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Flow Control Method",
+                "desc": "Flow Control Method.",
                 "label": "Flow Control",
                 "name": "Flw",
                 "size": 1,
@@ -114,7 +114,7 @@
                 "type": "enum16"
             },
             {
-                "desc": "Authentication method",
+                "desc": "Authentication method.",
                 "label": "Authentication",
                 "name": "Auth",
                 "size": 1,
@@ -135,14 +135,14 @@
                 "type": "enum16"
             },
             {
-                "desc": "Username for authentication",
+                "desc": "Username for authentication.",
                 "label": "Username",
                 "name": "UsrNam",
                 "size": 12,
                 "type": "string"
             },
             {
-                "desc": "Password for authentication",
+                "desc": "Password for authentication.",
                 "label": "Password",
                 "name": "Pw",
                 "size": 6,

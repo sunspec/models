@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Dynamic Reactive Current ",
+        "desc": "Dynamic Reactive Current.",
         "label": "Dynamic Reactive Current",
         "name": "reactive_current",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 128
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -66,7 +66,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Activate dynamic reactive current model",
+                "desc": "Activate dynamic reactive current model.",
                 "label": "ModEna",
                 "mandatory": "M",
                 "name": "ModEna",

@@ -36,7 +36,7 @@
         "name": "model_63002",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -46,7 +46,7 @@
                 "value": 63002
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",

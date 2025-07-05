@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "A solar module model supporting DC-DC converter",
+        "desc": "A solar module model supporting DC-DC converter.",
         "label": "Solar Module",
         "name": "solar_module",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 502
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -24,31 +24,31 @@
                 "type": "uint16"
             },
             {
-                "desc": "Current scale factor",
+                "desc": "Current scale factor.",
                 "name": "A_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Voltage scale factor",
+                "desc": "Voltage scale factor.",
                 "name": "V_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Power scale factor",
+                "desc": "Power scale factor.",
                 "name": "W_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Energy scale factor",
+                "desc": "Energy scale factor.",
                 "name": "Wh_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Module Status Code",
+                "desc": "Module Status Code.",
                 "label": "Status",
                 "mandatory": "M",
                 "name": "Stat",
@@ -98,14 +98,14 @@
                 "type": "enum16"
             },
             {
-                "desc": "Module Vendor Status Code",
+                "desc": "Module Vendor Status Code.",
                 "label": "Vendor Status",
                 "name": "StatVend",
                 "size": 1,
                 "type": "enum16"
             },
             {
-                "desc": "Module Event Flags",
+                "desc": "Module Event Flags.",
                 "label": "Events",
                 "mandatory": "M",
                 "name": "Evt",
@@ -199,7 +199,7 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Vendor specific flags",
+                "desc": "Vendor specific flags.",
                 "label": "Vendor Module Event Flags",
                 "name": "EvtVend",
                 "size": 2,
@@ -207,7 +207,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Module Control",
+                "desc": "Module Control.",
                 "label": "Control",
                 "name": "Ctl",
                 "size": 1,
@@ -215,7 +215,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Vendor Module Control",
+                "desc": "Vendor Module Control.",
                 "label": "Vendor Control",
                 "name": "CtlVend",
                 "size": 2,
@@ -223,14 +223,14 @@
             },
             {
                 "access": "RW",
-                "desc": "Module Control Value",
+                "desc": "Module Control Value.",
                 "label": "Control Value",
                 "name": "CtlVal",
                 "size": 2,
                 "type": "int32"
             },
             {
-                "desc": "Time in seconds since 2000 epoch",
+                "desc": "Time in seconds since 2000 epoch.",
                 "label": "Timestamp",
                 "name": "Tms",
                 "size": 2,
@@ -238,7 +238,7 @@
                 "units": "Secs"
             },
             {
-                "desc": "Output Current",
+                "desc": "Output Current.",
                 "label": "Output Current",
                 "name": "OutA",
                 "sf": "A_SF",
@@ -247,7 +247,7 @@
                 "units": "A"
             },
             {
-                "desc": "Output Voltage",
+                "desc": "Output Voltage.",
                 "label": "Output Voltage",
                 "name": "OutV",
                 "sf": "V_SF",
@@ -256,7 +256,7 @@
                 "units": "V"
             },
             {
-                "desc": "Output Energy",
+                "desc": "Output Energy.",
                 "label": "Output Energy",
                 "name": "OutWh",
                 "sf": "Wh_SF",
@@ -265,7 +265,7 @@
                 "units": "Wh"
             },
             {
-                "desc": "Output Power",
+                "desc": "Output Power.",
                 "label": "Output Power",
                 "name": "OutPw",
                 "sf": "W_SF",
@@ -274,7 +274,7 @@
                 "units": "W"
             },
             {
-                "desc": "Module Temperature",
+                "desc": "Module Temperature.",
                 "label": "Temp",
                 "name": "Tmp",
                 "size": 1,
@@ -282,7 +282,7 @@
                 "units": "C"
             },
             {
-                "desc": "Input Current",
+                "desc": "Input Current.",
                 "label": "Input Current",
                 "name": "InA",
                 "sf": "A_SF",
@@ -291,7 +291,7 @@
                 "units": "A"
             },
             {
-                "desc": "Input Voltage",
+                "desc": "Input Voltage.",
                 "label": "Input Voltage",
                 "name": "InV",
                 "sf": "V_SF",
@@ -300,7 +300,7 @@
                 "units": "V"
             },
             {
-                "desc": "Input Energy",
+                "desc": "Input Energy.",
                 "label": "Input Energy",
                 "name": "InWh",
                 "sf": "Wh_SF",
@@ -309,7 +309,7 @@
                 "units": "Wh"
             },
             {
-                "desc": "Input Power",
+                "desc": "Input Power.",
                 "label": "Input Power",
                 "name": "InW",
                 "sf": "W_SF",

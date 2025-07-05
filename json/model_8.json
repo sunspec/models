@@ -1,13 +1,13 @@
 {
     "group": {
-        "desc": "Security model for PKI",
+        "desc": "Security model for PKI.",
         "groups": [
             {
                 "count": 0,
                 "name": "repeating",
                 "points": [
                     {
-                        "desc": "X.509 Certificate of the device",
+                        "desc": "X.509 Certificate of the device.",
                         "label": "Cert",
                         "mandatory": "M",
                         "name": "Cert",
@@ -22,7 +22,7 @@
         "name": "model_8",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -32,7 +32,7 @@
                 "value": 8
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -63,7 +63,7 @@
                 "type": "enum16"
             },
             {
-                "desc": "Number of registers to follow for the certificate",
+                "desc": "Number of registers to follow for the certificate.",
                 "label": "N",
                 "mandatory": "M",
                 "name": "N",

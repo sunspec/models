@@ -1,13 +1,13 @@
 {
     "group": {
-        "desc": "Request a digital signature over a specified set of data registers",
+        "desc": "Request a digital signature over a specified set of data registers.",
         "groups": [
             {
                 "count": 0,
                 "name": "repeating",
                 "points": [
                     {
-                        "desc": "Digital Signature",
+                        "desc": "Digital Signature.",
                         "label": "DS",
                         "mandatory": "M",
                         "name": "DS",
@@ -22,7 +22,7 @@
         "name": "model_3",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -32,7 +32,7 @@
                 "value": 3
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -42,7 +42,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Number of registers being requested",
+                "desc": "Number of registers being requested.",
                 "label": "X",
                 "mandatory": "M",
                 "name": "X",
@@ -52,7 +52,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Offset of value to read",
+                "desc": "Offset of value to read.",
                 "label": "Offset1",
                 "mandatory": "M",
                 "name": "Off1",
@@ -404,7 +404,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Timestamp value is the number of seconds since January 1, 2000",
+                "desc": "Timestamp value is the number of seconds since January 1, 2000.",
                 "label": "Timestamp",
                 "mandatory": "M",
                 "name": "Ts",
@@ -413,7 +413,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Millisecond counter 0-999",
+                "desc": "Millisecond counter 0-999.",
                 "label": "Milliseconds",
                 "mandatory": "M",
                 "name": "Ms",
@@ -422,7 +422,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Sequence number of request",
+                "desc": "Sequence number of request.",
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
@@ -432,7 +432,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Digital Signature ID",
+                "desc": "Digital Signature ID.",
                 "label": "Role",
                 "mandatory": "M",
                 "name": "Role",
@@ -441,7 +441,7 @@
                 "detail": "User's role id 0-5"
             },
             {
-                "desc": "Algorithm used to compute the digital signature",
+                "desc": "Algorithm used to compute the digital signature.",
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",

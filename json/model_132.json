@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "Volt-Watt ",
+        "desc": "Volt-Watt.",
         "groups": [
             {
                 "count": 0,
@@ -17,7 +17,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "Defines the meaning of the Watts DeptRef. 1=% WMax 2=% WAvail",
+                        "desc": "Defines the meaning of the Watts DeptRef. 1=% WMax 2=% WAvail.",
                         "label": "DeptRef",
                         "mandatory": "M",
                         "name": "DeptRef",
@@ -499,7 +499,7 @@
         "name": "volt_watt",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -509,7 +509,7 @@
                 "value": 132
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -593,7 +593,7 @@
                 "type": "sunssf"
             },
             {
-                "desc": "Scale Factor for % DeptRef",
+                "desc": "Scale Factor for % DeptRef.",
                 "label": "DeptRef_SF",
                 "mandatory": "M",
                 "name": "DeptRef_SF",

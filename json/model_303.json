@@ -1,13 +1,13 @@
 {
     "group": {
-        "desc": "Include to support variable number of  back of module temperature measurements",
+        "desc": "Include to support variable number of  back of module temperature measurements.",
         "groups": [
             {
                 "count": 0,
                 "name": "temp",
                 "points": [
                     {
-                        "desc": "Back of module temperature measurement",
+                        "desc": "Back of module temperature measurement.",
                         "label": "Temp",
                         "mandatory": "M",
                         "name": "TmpBOM",
@@ -24,7 +24,7 @@
         "name": "bom_temp",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -34,7 +34,7 @@
                 "value": 303
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",

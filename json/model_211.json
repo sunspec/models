@@ -4,7 +4,7 @@
         "name": "ac_meter_an_or_ab_float",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -14,7 +14,7 @@
                 "value": 211
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -23,7 +23,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Total AC Current",
+                "desc": "Total AC Current.",
                 "label": "Amps",
                 "mandatory": "M",
                 "name": "A",
@@ -32,7 +32,7 @@
                 "units": "A"
             },
             {
-                "desc": "Phase A Current",
+                "desc": "Phase A Current.",
                 "label": "Amps PhaseA",
                 "mandatory": "M",
                 "name": "AphA",
@@ -41,7 +41,7 @@
                 "units": "A"
             },
             {
-                "desc": "Phase B Current",
+                "desc": "Phase B Current.",
                 "label": "Amps PhaseB",
                 "name": "AphB",
                 "size": 2,
@@ -49,7 +49,7 @@
                 "units": "A"
             },
             {
-                "desc": "Phase C Current",
+                "desc": "Phase C Current.",
                 "label": "Amps PhaseC",
                 "name": "AphC",
                 "size": 2,
@@ -57,7 +57,7 @@
                 "units": "A"
             },
             {
-                "desc": "Line to Neutral AC Voltage (average of active phases)",
+                "desc": "Line to Neutral AC Voltage (average of active phases).",
                 "label": "Voltage LN",
                 "name": "PhV",
                 "size": 2,
@@ -65,7 +65,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage AN",
+                "desc": "Phase Voltage AN.",
                 "label": "Phase Voltage AN",
                 "name": "PhVphA",
                 "size": 2,
@@ -73,7 +73,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage BN",
+                "desc": "Phase Voltage BN.",
                 "label": "Phase Voltage BN",
                 "name": "PhVphB",
                 "size": 2,
@@ -81,7 +81,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage CN",
+                "desc": "Phase Voltage CN.",
                 "label": "Phase Voltage CN",
                 "name": "PhVphC",
                 "size": 2,
@@ -89,7 +89,7 @@
                 "units": "V"
             },
             {
-                "desc": "Line to Line AC Voltage (average of active phases)",
+                "desc": "Line to Line AC Voltage (average of active phases).",
                 "label": "Voltage LL",
                 "name": "PPV",
                 "size": 2,
@@ -97,7 +97,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage AB",
+                "desc": "Phase Voltage AB.",
                 "label": "Phase Voltage AB",
                 "name": "PPVphAB",
                 "size": 2,
@@ -105,7 +105,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage BC",
+                "desc": "Phase Voltage BC.",
                 "label": "Phase Voltage BC",
                 "name": "PPVphBC",
                 "size": 2,
@@ -113,7 +113,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage CA",
+                "desc": "Phase Voltage CA.",
                 "label": "Phase Voltage CA",
                 "name": "PPVphCA",
                 "size": 2,
@@ -121,7 +121,7 @@
                 "units": "V"
             },
             {
-                "desc": "Frequency",
+                "desc": "Frequency.",
                 "label": "Hz",
                 "mandatory": "M",
                 "name": "Hz",
@@ -130,7 +130,7 @@
                 "units": "Hz"
             },
             {
-                "desc": "Total Real Power",
+                "desc": "Total Real Power.",
                 "label": "Watts",
                 "mandatory": "M",
                 "name": "W",
@@ -160,7 +160,7 @@
                 "units": "W"
             },
             {
-                "desc": "AC Apparent Power",
+                "desc": "AC Apparent Power.",
                 "label": "VA",
                 "name": "VA",
                 "size": 2,
@@ -189,7 +189,7 @@
                 "units": "VA"
             },
             {
-                "desc": "Reactive Power",
+                "desc": "Reactive Power.",
                 "label": "VAR",
                 "name": "VAR",
                 "size": 2,
@@ -218,7 +218,7 @@
                 "units": "var"
             },
             {
-                "desc": "Power Factor",
+                "desc": "Power Factor.",
                 "label": "PF",
                 "name": "PF",
                 "size": 2,
@@ -247,7 +247,7 @@
                 "units": "PF"
             },
             {
-                "desc": "Total Real Energy Exported",
+                "desc": "Total Real Energy Exported.",
                 "label": "Total Watt-hours Exported",
                 "mandatory": "M",
                 "name": "TotWhExp",
@@ -277,7 +277,7 @@
                 "units": "Wh"
             },
             {
-                "desc": "Total Real Energy Imported",
+                "desc": "Total Real Energy Imported.",
                 "label": "Total Watt-hours Imported",
                 "mandatory": "M",
                 "name": "TotWhImp",
@@ -307,7 +307,7 @@
                 "units": "Wh"
             },
             {
-                "desc": "Total Apparent Energy Exported",
+                "desc": "Total Apparent Energy Exported.",
                 "label": "Total VA-hours Exported",
                 "name": "TotVAhExp",
                 "size": 2,
@@ -336,7 +336,7 @@
                 "units": "VAh"
             },
             {
-                "desc": "Total Apparent Energy Imported",
+                "desc": "Total Apparent Energy Imported.",
                 "label": "Total VA-hours Imported",
                 "name": "TotVAhImp",
                 "size": 2,
@@ -365,7 +365,7 @@
                 "units": "VAh"
             },
             {
-                "desc": "Total Reactive Energy Imported Quadrant 1",
+                "desc": "Total Reactive Energy Imported Quadrant 1.",
                 "label": "Total VAR-hours Imported Q1",
                 "name": "TotVArhImpQ1",
                 "size": 2,
@@ -394,7 +394,7 @@
                 "units": "varh"
             },
             {
-                "desc": "Total Reactive Power Imported Quadrant 2",
+                "desc": "Total Reactive Power Imported Quadrant 2.",
                 "label": "Total VAr-hours Imported Q2",
                 "name": "TotVArhImpQ2",
                 "size": 2,
@@ -423,7 +423,7 @@
                 "units": "varh"
             },
             {
-                "desc": "Total Reactive Power Exported Quadrant 3",
+                "desc": "Total Reactive Power Exported Quadrant 3.",
                 "label": "Total VAr-hours Exported Q3",
                 "name": "TotVArhExpQ3",
                 "size": 2,
@@ -452,7 +452,7 @@
                 "units": "varh"
             },
             {
-                "desc": "Total Reactive Power Exported Quadrant 4",
+                "desc": "Total Reactive Power Exported Quadrant 4.",
                 "label": "Total VAr-hours Exported Q4",
                 "name": "TotVArhExpQ4",
                 "size": 2,
@@ -481,7 +481,7 @@
                 "units": "varh"
             },
             {
-                "desc": "Meter Event Flags",
+                "desc": "Meter Event Flags.",
                 "label": "Events",
                 "mandatory": "M",
                 "name": "Evt",

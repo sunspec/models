@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "Include a digital signature along with the control data",
+        "desc": "Include a digital signature along with the control data.",
         "groups": [
             {
                 "count": 0,
@@ -8,7 +8,7 @@
                 "points": [
                     {
                         "access": "RW",
-                        "desc": "Digital Signature",
+                        "desc": "Digital Signature.",
                         "label": "DS",
                         "mandatory": "M",
                         "name": "DS",
@@ -23,7 +23,7 @@
         "name": "model_5",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -33,7 +33,7 @@
                 "value": 5
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -43,7 +43,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Number of (offset, value) pairs being written",
+                "desc": "Number of (offset, value) pairs being written.",
                 "label": "X",
                 "mandatory": "M",
                 "name": "X",
@@ -53,7 +53,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Offset of control register to write value to",
+                "desc": "Offset of control register to write value to.",
                 "label": "Offset1",
                 "mandatory": "M",
                 "name": "Off1",
@@ -62,7 +62,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Value to write to control register at offset",
+                "desc": "Value to write to control register at offset.",
                 "label": "Value1",
                 "mandatory": "M",
                 "name": "Val1",
@@ -617,7 +617,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Timestamp value is the number of seconds since January 1, 2000",
+                "desc": "Timestamp value is the number of seconds since January 1, 2000.",
                 "label": "Timestamp",
                 "mandatory": "M",
                 "name": "Ts",
@@ -626,7 +626,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Millisecond counter 0-999",
+                "desc": "Millisecond counter 0-999.",
                 "label": "Milliseconds",
                 "mandatory": "M",
                 "name": "Ms",
@@ -635,7 +635,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Sequence number of request",
+                "desc": "Sequence number of request.",
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
@@ -645,7 +645,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Signing key used 0-5",
+                "desc": "Signing key used 0-5.",
                 "label": "Role",
                 "mandatory": "M",
                 "name": "Role",
@@ -655,7 +655,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Algorithm used to compute the digital signature",
+                "desc": "Algorithm used to compute the digital signature.",
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",

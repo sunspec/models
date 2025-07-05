@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "A solar module model supporting DC-DC converter",
+        "desc": "A solar module model supporting DC-DC converter.",
         "label": "Solar Module",
         "name": "solar_module_float",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 501
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -24,7 +24,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Module Status Code",
+                "desc": "Module Status Code.",
                 "label": "Status",
                 "mandatory": "M",
                 "name": "Stat",
@@ -74,14 +74,14 @@
                 "type": "enum16"
             },
             {
-                "desc": "Module Vendor Status Code",
+                "desc": "Module Vendor Status Code.",
                 "label": "Vendor Status",
                 "name": "StatVend",
                 "size": 1,
                 "type": "enum16"
             },
             {
-                "desc": "Module Event Flags",
+                "desc": "Module Event Flags.",
                 "label": "Events",
                 "mandatory": "M",
                 "name": "Evt",
@@ -175,7 +175,7 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Vendor specific flags",
+                "desc": "Vendor specific flags.",
                 "label": "Vendor Module Event Flags",
                 "name": "EvtVend",
                 "size": 2,
@@ -183,7 +183,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Module Control",
+                "desc": "Module Control.",
                 "label": "Control",
                 "name": "Ctl",
                 "size": 1,
@@ -191,7 +191,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Vendor Module Control",
+                "desc": "Vendor Module Control.",
                 "label": "Vendor Control",
                 "name": "CtlVend",
                 "size": 2,
@@ -199,14 +199,14 @@
             },
             {
                 "access": "RW",
-                "desc": "Module Control Value",
+                "desc": "Module Control Value.",
                 "label": "Control Value",
                 "name": "CtlVal",
                 "size": 2,
                 "type": "int32"
             },
             {
-                "desc": "Time in seconds since 2000 epoch",
+                "desc": "Time in seconds since 2000 epoch.",
                 "label": "Timestamp",
                 "name": "Tms",
                 "size": 2,
@@ -214,7 +214,7 @@
                 "units": "Secs"
             },
             {
-                "desc": "Output Current",
+                "desc": "Output Current.",
                 "label": "Output Current",
                 "name": "OutA",
                 "size": 2,
@@ -222,7 +222,7 @@
                 "units": "A"
             },
             {
-                "desc": "Output Voltage",
+                "desc": "Output Voltage.",
                 "label": "Output Voltage",
                 "name": "OutV",
                 "size": 2,
@@ -230,7 +230,7 @@
                 "units": "V"
             },
             {
-                "desc": "Output Energy",
+                "desc": "Output Energy.",
                 "label": "Output Energy",
                 "name": "OutWh",
                 "size": 2,
@@ -238,7 +238,7 @@
                 "units": "Wh"
             },
             {
-                "desc": "Output Power",
+                "desc": "Output Power.",
                 "label": "Output Power",
                 "name": "OutW",
                 "size": 2,
@@ -246,7 +246,7 @@
                 "units": "W"
             },
             {
-                "desc": "Module Temperature",
+                "desc": "Module Temperature.",
                 "label": "Temp",
                 "name": "Tmp",
                 "size": 2,
@@ -254,7 +254,7 @@
                 "units": "C"
             },
             {
-                "desc": "Input Current",
+                "desc": "Input Current.",
                 "label": "Input Current",
                 "name": "InA",
                 "size": 2,
@@ -262,7 +262,7 @@
                 "units": "A"
             },
             {
-                "desc": "Input Voltage",
+                "desc": "Input Voltage.",
                 "label": "Input Voltage",
                 "name": "InV",
                 "size": 2,
@@ -270,7 +270,7 @@
                 "units": "V"
             },
             {
-                "desc": "Input Energy",
+                "desc": "Input Energy.",
                 "label": "Input Energy",
                 "name": "InWh",
                 "size": 2,
@@ -278,7 +278,7 @@
                 "units": "Wh"
             },
             {
-                "desc": "Input Power",
+                "desc": "Input Power.",
                 "label": "Input Power",
                 "name": "InW",
                 "size": 2,

@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Pricing Signal  ",
+        "desc": "Pricing Signal .",
         "label": "Pricing",
         "name": "pricing",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 125
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -25,7 +25,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Is price-based charge/discharge mode active?",
+                "desc": "Is price-based charge/discharge mode active?.",
                 "label": "ModEna",
                 "mandatory": "M",
                 "name": "ModEna",

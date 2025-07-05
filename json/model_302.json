@@ -1,13 +1,13 @@
 {
     "group": {
-        "desc": "Include to support various irradiance measurements",
+        "desc": "Include to support various irradiance measurements.",
         "groups": [
             {
                 "count": 0,
                 "name": "repeating",
                 "points": [
                     {
-                        "desc": "Global Horizontal Irradiance",
+                        "desc": "Global Horizontal Irradiance.",
                         "label": "GHI",
                         "name": "GHI",
                         "size": 1,
@@ -15,7 +15,7 @@
                         "units": "W/m2"
                     },
                     {
-                        "desc": "Plane-of-Array Irradiance",
+                        "desc": "Plane-of-Array Irradiance.",
                         "label": "POAI",
                         "name": "POAI",
                         "size": 1,
@@ -23,7 +23,7 @@
                         "units": "W/m2"
                     },
                     {
-                        "desc": "Diffuse Irradiance",
+                        "desc": "Diffuse Irradiance.",
                         "label": "DFI",
                         "name": "DFI",
                         "size": 1,
@@ -31,7 +31,7 @@
                         "units": "W/m2"
                     },
                     {
-                        "desc": "Direct Normal Irradiance",
+                        "desc": "Direct Normal Irradiance.",
                         "label": "DNI",
                         "name": "DNI",
                         "size": 1,
@@ -39,7 +39,7 @@
                         "units": "W/m2"
                     },
                     {
-                        "desc": "Other Irradiance",
+                        "desc": "Other Irradiance.",
                         "label": "OTI",
                         "name": "OTI",
                         "size": 1,
@@ -54,7 +54,7 @@
         "name": "irradiance",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -64,7 +64,7 @@
                 "value": 302
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",

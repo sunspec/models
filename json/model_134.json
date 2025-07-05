@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "Curve-Based Frequency-Watt ",
+        "desc": "Curve-Based Frequency-Watt.",
         "groups": [
             {
                 "count": 0,
@@ -419,7 +419,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "Optional description for curve. (Max 16 chars)",
+                        "desc": "Optional description for curve. (Max 16 chars).",
                         "label": "CrvNam",
                         "name": "CrvNam",
                         "size": 8,
@@ -466,7 +466,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "1=enable snapshot/capture mode",
+                        "desc": "1=enable snapshot/capture mode.",
                         "label": "SnptW",
                         "mandatory": "M",
                         "name": "SnptW",
@@ -529,7 +529,7 @@
         "name": "freq_watt",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -539,7 +539,7 @@
                 "value": 134
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",

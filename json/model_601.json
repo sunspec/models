@@ -1,20 +1,20 @@
 {
     "group": {
-        "desc": "Monitors and controls multiple trackers",
+        "desc": "Monitors and controls multiple trackers.",
         "groups": [
             {
                 "count": 0,
                 "name": "tracker",
                 "points": [
                     {
-                        "desc": "Descriptive name for this tracker unit",
+                        "desc": "Descriptive name for this tracker unit.",
                         "label": "Tracker",
                         "name": "Id",
                         "size": 8,
                         "type": "string"
                     },
                     {
-                        "desc": "Auto target elevation in degrees from horizontal. Unimplemented for single axis azimuth tracker type",
+                        "desc": "Auto target elevation in degrees from horizontal. Unimplemented for single axis azimuth tracker type.",
                         "label": "Target Elevation",
                         "name": "ElTrgt",
                         "sf": "Dgr_SF",
@@ -23,7 +23,7 @@
                         "units": "Degrees"
                     },
                     {
-                        "desc": "Auto target azimuth in degrees from true north towards east. Unimplemented for single axis horizontal tracker type",
+                        "desc": "Auto target azimuth in degrees from true north towards east. Unimplemented for single axis horizontal tracker type.",
                         "label": "Target Azimuth",
                         "name": "AzTrgt",
                         "sf": "Dgr_SF",
@@ -32,7 +32,7 @@
                         "units": "Degrees"
                     },
                     {
-                        "desc": "Actual elevation position in degrees from horizontal. Unimplemented for single axis azimuth tracker type",
+                        "desc": "Actual elevation position in degrees from horizontal. Unimplemented for single axis azimuth tracker type.",
                         "label": "Elevation",
                         "name": "ElPos",
                         "sf": "Dgr_SF",
@@ -41,7 +41,7 @@
                         "units": "Degrees"
                     },
                     {
-                        "desc": "Actual azimuth position in degrees from true north towards east. Unimplemented for single axis horizontal tracker type",
+                        "desc": "Actual azimuth position in degrees from true north towards east. Unimplemented for single axis horizontal tracker type.",
                         "label": "Azimuth",
                         "name": "AzPos",
                         "sf": "Dgr_SF",
@@ -51,7 +51,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "Manual override target position of elevation in degrees from horizontal. Unimplemented for single axis azimuth tracker type",
+                        "desc": "Manual override target position of elevation in degrees from horizontal. Unimplemented for single axis azimuth tracker type.",
                         "label": "Manual Elevation",
                         "name": "ElCtl",
                         "sf": "Dgr_SF",
@@ -61,7 +61,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "Manual override target position of azimuth in degrees from true north towards east. Unimplemented for single axis azimuth tracker type",
+                        "desc": "Manual override target position of azimuth in degrees from true north towards east. Unimplemented for single axis azimuth tracker type.",
                         "label": "Manual Azimuth",
                         "name": "AzCtl",
                         "sf": "Dgr_SF",
@@ -92,7 +92,7 @@
                         "type": "enum16"
                     },
                     {
-                        "desc": "Tracker alarm conditions",
+                        "desc": "Tracker alarm conditions.",
                         "label": "Alarm",
                         "name": "Alm",
                         "size": 1,
@@ -120,7 +120,7 @@
         "name": "tracker_controller",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -130,7 +130,7 @@
                 "value": 601
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -139,14 +139,14 @@
                 "type": "uint16"
             },
             {
-                "desc": "Descriptive name for this control unit",
+                "desc": "Descriptive name for this control unit.",
                 "label": "Controller",
                 "name": "Nam",
                 "size": 8,
                 "type": "string"
             },
             {
-                "desc": "Type of tracker",
+                "desc": "Type of tracker.",
                 "label": "Type",
                 "mandatory": "M",
                 "name": "Typ",
@@ -184,7 +184,7 @@
                 "type": "enum16"
             },
             {
-                "desc": "Local date in YYYYMMDD format",
+                "desc": "Local date in YYYYMMDD format.",
                 "label": "Date",
                 "name": "DtLoc",
                 "size": 5,
@@ -192,7 +192,7 @@
                 "units": "YYYYMMDD"
             },
             {
-                "desc": "24 hour local time stamp to second",
+                "desc": "24 hour local time stamp to second.",
                 "label": "Time",
                 "name": "TmLoc",
                 "size": 3,
@@ -200,7 +200,7 @@
                 "units": "hhmmss"
             },
             {
-                "desc": "Number of the day in the year (1-366)",
+                "desc": "Number of the day in the year (1-366).",
                 "label": "Day",
                 "name": "Day",
                 "size": 1,
@@ -208,7 +208,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Global manual override target position of elevation in degrees from horizontal. Unimplemented for single axis azimuth tracker type",
+                "desc": "Global manual override target position of elevation in degrees from horizontal. Unimplemented for single axis azimuth tracker type.",
                 "label": "Manual Elevation",
                 "name": "GlblElCtl",
                 "sf": "Dgr_SF",
@@ -218,7 +218,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Global manual override target position of azimuth in degrees from true north towards east. Unimplemented for single axis azimuth tracker type",
+                "desc": "Global manual override target position of azimuth in degrees from true north towards east. Unimplemented for single axis azimuth tracker type.",
                 "label": "Manual Azimuth",
                 "name": "GlblAzCtl",
                 "sf": "Dgr_SF",
@@ -250,7 +250,7 @@
                 "detail": "The global controls all trackers"
             },
             {
-                "desc": "Global tracker alarm conditions",
+                "desc": "Global tracker alarm conditions.",
                 "label": "Global Alarm",
                 "name": "GlblAlm",
                 "size": 1,
@@ -272,7 +272,7 @@
                 "detail": "Combined tracker alarm conditions.  See individual trackers for alarms"
             },
             {
-                "desc": "Scale Factor for targets and position measurements in degrees",
+                "desc": "Scale Factor for targets and position measurements in degrees.",
                 "label": "SF",
                 "mandatory": "M",
                 "name": "Dgr_SF",

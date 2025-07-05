@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Basic Storage Controls ",
+        "desc": "Basic Storage Controls.",
         "label": "Storage",
         "name": "storage_basic",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 124
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",

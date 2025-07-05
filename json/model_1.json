@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "All SunSpec compliant devices must include this as the first model",
+        "desc": "All SunSpec compliant devices must include this as the first model.",
         "label": "Common",
         "name": "common",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -18,7 +18,7 @@
                 ]
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -30,7 +30,7 @@
                 ]
             },
             {
-                "desc": "Well known value registered with SunSpec for compliance",
+                "desc": "Well known value registered with SunSpec for compliance.",
                 "label": "Manufacturer",
                 "mandatory": "M",
                 "name": "Mn",
@@ -42,7 +42,7 @@
                 ]
             },
             {
-                "desc": "Manufacturer specific value (32 chars)",
+                "desc": "Manufacturer specific value (32 chars).",
                 "label": "Model",
                 "mandatory": "M",
                 "name": "Md",
@@ -54,7 +54,7 @@
                 ]
             },
             {
-                "desc": "Manufacturer specific value (16 chars)",
+                "desc": "Manufacturer specific value (16 chars).",
                 "label": "Options",
                 "name": "Opt",
                 "size": 8,
@@ -63,7 +63,7 @@
                 "standards": []
             },
             {
-                "desc": "Manufacturer specific value (16 chars)",
+                "desc": "Manufacturer specific value (16 chars).",
                 "label": "Version",
                 "name": "Vr",
                 "size": 8,
@@ -74,7 +74,7 @@
                 ]
             },
             {
-                "desc": "Manufacturer specific value (32 chars)",
+                "desc": "Manufacturer specific value (32 chars).",
                 "label": "Serial Number",
                 "mandatory": "M",
                 "name": "SN",
@@ -87,7 +87,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Modbus device address",
+                "desc": "Modbus device address.",
                 "detail": "This point is mandatory for all SunSpec RTU devices and, for those devices, they must support values from 1-247.",
                 "label": "Device Address",
                 "name": "DA",
@@ -96,7 +96,7 @@
                 "standards": []
             },
             {
-                "desc": "Force even alignment",
+                "desc": "Force even alignment.",
                 "name": "Pad",
                 "size": 1,
                 "static": "S",

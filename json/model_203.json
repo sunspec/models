@@ -4,7 +4,7 @@
         "name": "ac_meter_abcn",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -14,7 +14,7 @@
                 "value": 203
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -23,7 +23,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Total AC Current",
+                "desc": "Total AC Current.",
                 "label": "Amps",
                 "mandatory": "M",
                 "name": "A",
@@ -33,7 +33,7 @@
                 "units": "A"
             },
             {
-                "desc": "Phase A Current",
+                "desc": "Phase A Current.",
                 "label": "Amps PhaseA",
                 "mandatory": "M",
                 "name": "AphA",
@@ -43,7 +43,7 @@
                 "units": "A"
             },
             {
-                "desc": "Phase B Current",
+                "desc": "Phase B Current.",
                 "label": "Amps PhaseB",
                 "mandatory": "M",
                 "name": "AphB",
@@ -53,7 +53,7 @@
                 "units": "A"
             },
             {
-                "desc": "Phase C Current",
+                "desc": "Phase C Current.",
                 "label": "Amps PhaseC",
                 "mandatory": "M",
                 "name": "AphC",
@@ -63,14 +63,14 @@
                 "units": "A"
             },
             {
-                "desc": "Current scale factor",
+                "desc": "Current scale factor.",
                 "mandatory": "M",
                 "name": "A_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Line to Neutral AC Voltage (average of active phases)",
+                "desc": "Line to Neutral AC Voltage (average of active phases).",
                 "label": "Voltage LN",
                 "mandatory": "M",
                 "name": "PhV",
@@ -80,7 +80,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage AN",
+                "desc": "Phase Voltage AN.",
                 "label": "Phase Voltage AN",
                 "mandatory": "M",
                 "name": "PhVphA",
@@ -90,7 +90,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage BN",
+                "desc": "Phase Voltage BN.",
                 "label": "Phase Voltage BN",
                 "mandatory": "M",
                 "name": "PhVphB",
@@ -100,7 +100,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage CN",
+                "desc": "Phase Voltage CN.",
                 "label": "Phase Voltage CN",
                 "mandatory": "M",
                 "name": "PhVphC",
@@ -110,7 +110,7 @@
                 "units": "V"
             },
             {
-                "desc": "Line to Line AC Voltage (average of active phases)",
+                "desc": "Line to Line AC Voltage (average of active phases).",
                 "label": "Voltage LL",
                 "mandatory": "M",
                 "name": "PPV",
@@ -120,7 +120,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage AB",
+                "desc": "Phase Voltage AB.",
                 "label": "Phase Voltage AB",
                 "mandatory": "M",
                 "name": "PhVphAB",
@@ -130,7 +130,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage BC",
+                "desc": "Phase Voltage BC.",
                 "label": "Phase Voltage BC",
                 "mandatory": "M",
                 "name": "PhVphBC",
@@ -140,7 +140,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage CA",
+                "desc": "Phase Voltage CA.",
                 "label": "Phase Voltage CA",
                 "mandatory": "M",
                 "name": "PhVphCA",
@@ -150,14 +150,14 @@
                 "units": "V"
             },
             {
-                "desc": "Voltage scale factor",
+                "desc": "Voltage scale factor.",
                 "mandatory": "M",
                 "name": "V_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Frequency",
+                "desc": "Frequency.",
                 "label": "Hz",
                 "mandatory": "M",
                 "name": "Hz",
@@ -167,13 +167,13 @@
                 "units": "Hz"
             },
             {
-                "desc": "Frequency scale factor",
+                "desc": "Frequency scale factor.",
                 "name": "Hz_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Total Real Power",
+                "desc": "Total Real Power.",
                 "label": "Watts",
                 "mandatory": "M",
                 "name": "W",
@@ -207,14 +207,14 @@
                 "units": "W"
             },
             {
-                "desc": "Real Power scale factor",
+                "desc": "Real Power scale factor.",
                 "mandatory": "M",
                 "name": "W_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "AC Apparent Power",
+                "desc": "AC Apparent Power.",
                 "label": "VA",
                 "name": "VA",
                 "sf": "VA_SF",
@@ -247,13 +247,13 @@
                 "units": "VA"
             },
             {
-                "desc": "Apparent Power scale factor",
+                "desc": "Apparent Power scale factor.",
                 "name": "VA_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Reactive Power",
+                "desc": "Reactive Power.",
                 "label": "VAR",
                 "name": "VAR",
                 "sf": "VAR_SF",
@@ -286,13 +286,13 @@
                 "units": "var"
             },
             {
-                "desc": "Reactive Power scale factor",
+                "desc": "Reactive Power scale factor.",
                 "name": "VAR_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Power Factor",
+                "desc": "Power Factor.",
                 "label": "PF",
                 "name": "PF",
                 "sf": "PF_SF",
@@ -325,13 +325,13 @@
                 "units": "Pct"
             },
             {
-                "desc": "Power Factor scale factor",
+                "desc": "Power Factor scale factor.",
                 "name": "PF_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Total Real Energy Exported",
+                "desc": "Total Real Energy Exported.",
                 "label": "Total Watt-hours Exported",
                 "mandatory": "M",
                 "name": "TotWhExp",
@@ -365,7 +365,7 @@
                 "units": "Wh"
             },
             {
-                "desc": "Total Real Energy Imported",
+                "desc": "Total Real Energy Imported.",
                 "label": "Total Watt-hours Imported",
                 "mandatory": "M",
                 "name": "TotWhImp",
@@ -399,14 +399,14 @@
                 "units": "Wh"
             },
             {
-                "desc": "Real Energy scale factor",
+                "desc": "Real Energy scale factor.",
                 "mandatory": "M",
                 "name": "TotWh_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Total Apparent Energy Exported",
+                "desc": "Total Apparent Energy Exported.",
                 "label": "Total VA-hours Exported",
                 "name": "TotVAhExp",
                 "sf": "TotVAh_SF",
@@ -439,7 +439,7 @@
                 "units": "VAh"
             },
             {
-                "desc": "Total Apparent Energy Imported",
+                "desc": "Total Apparent Energy Imported.",
                 "label": "Total VA-hours Imported",
                 "name": "TotVAhImp",
                 "sf": "TotVAh_SF",
@@ -472,13 +472,13 @@
                 "units": "VAh"
             },
             {
-                "desc": "Apparent Energy scale factor",
+                "desc": "Apparent Energy scale factor.",
                 "name": "TotVAh_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Total Reactive Energy Imported Quadrant 1",
+                "desc": "Total Reactive Energy Imported Quadrant 1.",
                 "label": "Total VAR-hours Imported Q1",
                 "name": "TotVArhImpQ1",
                 "sf": "TotVArh_SF",
@@ -511,7 +511,7 @@
                 "units": "varh"
             },
             {
-                "desc": "Total Reactive Power Imported Quadrant 2",
+                "desc": "Total Reactive Power Imported Quadrant 2.",
                 "label": "Total VAr-hours Imported Q2",
                 "name": "TotVArhImpQ2",
                 "sf": "TotVArh_SF",
@@ -544,7 +544,7 @@
                 "units": "varh"
             },
             {
-                "desc": "Total Reactive Power Exported Quadrant 3",
+                "desc": "Total Reactive Power Exported Quadrant 3.",
                 "label": "Total VAr-hours Exported Q3",
                 "name": "TotVArhExpQ3",
                 "sf": "TotVArh_SF",
@@ -577,7 +577,7 @@
                 "units": "varh"
             },
             {
-                "desc": "Total Reactive Power Exported Quadrant 4",
+                "desc": "Total Reactive Power Exported Quadrant 4.",
                 "label": "Total VAr-hours Exported Q4",
                 "name": "TotVArhExpQ4",
                 "sf": "TotVArh_SF",
@@ -610,13 +610,13 @@
                 "units": "varh"
             },
             {
-                "desc": "Reactive Energy scale factor",
+                "desc": "Reactive Energy scale factor.",
                 "name": "TotVArh_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Meter Event Flags",
+                "desc": "Meter Event Flags.",
                 "label": "Events",
                 "mandatory": "M",
                 "name": "Evt",

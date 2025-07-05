@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "LFRT extended curve",
+        "desc": "LFRT extended curve.",
         "groups": [
             {
                 "count": 0,
@@ -451,7 +451,7 @@
         "name": "lfrtx",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -461,7 +461,7 @@
                 "value": 143
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",

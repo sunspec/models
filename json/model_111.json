@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Include this model for single phase inverter monitoring using float values",
+        "desc": "Include this model for single phase inverter monitoring using float values.",
         "label": "Inverter (Single Phase) FLOAT",
         "name": "inverter_single_phase_float",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 111
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -24,7 +24,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "AC Current",
+                "desc": "AC Current.",
                 "label": "Amps",
                 "mandatory": "M",
                 "name": "A",
@@ -33,7 +33,7 @@
                 "units": "A"
             },
             {
-                "desc": "Phase A Current",
+                "desc": "Phase A Current.",
                 "label": "Amps PhaseA",
                 "mandatory": "M",
                 "name": "AphA",
@@ -43,7 +43,7 @@
                 "detail": "Connected Phase"
             },
             {
-                "desc": "Phase B Current",
+                "desc": "Phase B Current.",
                 "label": "Amps PhaseB",
                 "name": "AphB",
                 "size": 2,
@@ -51,7 +51,7 @@
                 "units": "A"
             },
             {
-                "desc": "Phase C Current",
+                "desc": "Phase C Current.",
                 "label": "Amps PhaseC",
                 "name": "AphC",
                 "size": 2,
@@ -59,7 +59,7 @@
                 "units": "A"
             },
             {
-                "desc": "Phase Voltage AB",
+                "desc": "Phase Voltage AB.",
                 "label": "Phase Voltage AB",
                 "name": "PPVphAB",
                 "size": 2,
@@ -67,7 +67,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage BC",
+                "desc": "Phase Voltage BC.",
                 "label": "Phase Voltage BC",
                 "name": "PPVphBC",
                 "size": 2,
@@ -75,7 +75,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage CA",
+                "desc": "Phase Voltage CA.",
                 "label": "Phase Voltage CA",
                 "name": "PPVphCA",
                 "size": 2,
@@ -83,7 +83,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage AN",
+                "desc": "Phase Voltage AN.",
                 "label": "Phase Voltage AN",
                 "mandatory": "M",
                 "name": "PhVphA",
@@ -92,7 +92,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage BN",
+                "desc": "Phase Voltage BN.",
                 "label": "Phase Voltage BN",
                 "name": "PhVphB",
                 "size": 2,
@@ -100,7 +100,7 @@
                 "units": "V"
             },
             {
-                "desc": "Phase Voltage CN",
+                "desc": "Phase Voltage CN.",
                 "label": "Phase Voltage CN",
                 "name": "PhVphC",
                 "size": 2,
@@ -108,7 +108,7 @@
                 "units": "V"
             },
             {
-                "desc": "AC Power",
+                "desc": "AC Power.",
                 "label": "Watts",
                 "mandatory": "M",
                 "name": "W",
@@ -117,7 +117,7 @@
                 "units": "W"
             },
             {
-                "desc": "Line Frequency",
+                "desc": "Line Frequency.",
                 "label": "Hz",
                 "mandatory": "M",
                 "name": "Hz",
@@ -126,7 +126,7 @@
                 "units": "Hz"
             },
             {
-                "desc": "AC Apparent Power",
+                "desc": "AC Apparent Power.",
                 "label": "VA",
                 "name": "VA",
                 "size": 2,
@@ -134,7 +134,7 @@
                 "units": "VA"
             },
             {
-                "desc": "AC Reactive Power",
+                "desc": "AC Reactive Power.",
                 "label": "VAr",
                 "name": "VAr",
                 "size": 2,
@@ -142,7 +142,7 @@
                 "units": "var"
             },
             {
-                "desc": "AC Power Factor",
+                "desc": "AC Power Factor.",
                 "label": "PF",
                 "name": "PF",
                 "size": 2,
@@ -150,7 +150,7 @@
                 "units": "Pct"
             },
             {
-                "desc": "AC Energy",
+                "desc": "AC Energy.",
                 "label": "WattHours",
                 "mandatory": "M",
                 "name": "WH",
@@ -159,7 +159,7 @@
                 "units": "Wh"
             },
             {
-                "desc": "DC Current",
+                "desc": "DC Current.",
                 "label": "DC Amps",
                 "name": "DCA",
                 "size": 2,
@@ -167,7 +167,7 @@
                 "units": "A"
             },
             {
-                "desc": "DC Voltage",
+                "desc": "DC Voltage.",
                 "label": "DC Voltage",
                 "name": "DCV",
                 "size": 2,
@@ -175,7 +175,7 @@
                 "units": "V"
             },
             {
-                "desc": "DC Power",
+                "desc": "DC Power.",
                 "label": "DC Watts",
                 "name": "DCW",
                 "size": 2,
@@ -183,7 +183,7 @@
                 "units": "W"
             },
             {
-                "desc": "Cabinet Temperature",
+                "desc": "Cabinet Temperature.",
                 "label": "Cabinet Temperature",
                 "mandatory": "M",
                 "name": "TmpCab",
@@ -192,7 +192,7 @@
                 "units": "C"
             },
             {
-                "desc": "Heat Sink Temperature",
+                "desc": "Heat Sink Temperature.",
                 "label": "Heat Sink Temperature",
                 "name": "TmpSnk",
                 "size": 2,
@@ -200,7 +200,7 @@
                 "units": "C"
             },
             {
-                "desc": "Transformer Temperature",
+                "desc": "Transformer Temperature.",
                 "label": "Transformer Temperature",
                 "name": "TmpTrns",
                 "size": 2,
@@ -208,7 +208,7 @@
                 "units": "C"
             },
             {
-                "desc": "Other Temperature",
+                "desc": "Other Temperature.",
                 "label": "Other Temperature",
                 "name": "TmpOt",
                 "size": 2,
@@ -216,7 +216,7 @@
                 "units": "C"
             },
             {
-                "desc": "Operating state",
+                "desc": "Operating state.",
                 "label": "Operating State",
                 "mandatory": "M",
                 "name": "St",
@@ -258,14 +258,14 @@
                 "type": "enum16"
             },
             {
-                "desc": "Vendor specific operating state code",
+                "desc": "Vendor specific operating state code.",
                 "label": "Vendor Operating State",
                 "name": "StVnd",
                 "size": 1,
                 "type": "enum16"
             },
             {
-                "desc": "Event fields",
+                "desc": "Event fields.",
                 "label": "Event1",
                 "mandatory": "M",
                 "name": "Evt1",
@@ -339,7 +339,7 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Reserved for future use",
+                "desc": "Reserved for future use.",
                 "label": "Event Bitfield 2",
                 "mandatory": "M",
                 "name": "Evt2",
@@ -347,28 +347,28 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Vendor defined events",
+                "desc": "Vendor defined events.",
                 "label": "Vendor Event Bitfield 1",
                 "name": "EvtVnd1",
                 "size": 2,
                 "type": "bitfield32"
             },
             {
-                "desc": "Vendor defined events",
+                "desc": "Vendor defined events.",
                 "label": "Vendor Event Bitfield 2",
                 "name": "EvtVnd2",
                 "size": 2,
                 "type": "bitfield32"
             },
             {
-                "desc": "Vendor defined events",
+                "desc": "Vendor defined events.",
                 "label": "Vendor Event Bitfield 3",
                 "name": "EvtVnd3",
                 "size": 2,
                 "type": "bitfield32"
             },
             {
-                "desc": "Vendor defined events",
+                "desc": "Vendor defined events.",
                 "label": "Vendor Event Bitfield 4",
                 "name": "EvtVnd4",
                 "size": 2,

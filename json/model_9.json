@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "Security model for PKI",
+        "desc": "Security model for PKI.",
         "groups": [
             {
                 "count": 0,
@@ -21,7 +21,7 @@
         "name": "model_9",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -31,7 +31,7 @@
                 "value": 9
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -41,7 +41,7 @@
             },
             {
                 "access": "RW",
-                "desc": "User ID for this certificate",
+                "desc": "User ID for this certificate.",
                 "label": "Cert_UID",
                 "mandatory": "M",
                 "name": "CertUID",
@@ -50,7 +50,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Role for this certificate",
+                "desc": "Role for this certificate.",
                 "label": "Cert_Role",
                 "mandatory": "M",
                 "name": "CertRole",
@@ -59,7 +59,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Format of this certificate",
+                "desc": "Format of this certificate.",
                 "label": "Format",
                 "mandatory": "M",
                 "name": "Fmt",
@@ -82,7 +82,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Type of this certificate",
+                "desc": "Type of this certificate.",
                 "label": "Type",
                 "mandatory": "M",
                 "name": "Typ",
@@ -113,7 +113,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Total Length of the Certificate",
+                "desc": "Total Length of the Certificate.",
                 "label": "Total Length",
                 "mandatory": "M",
                 "name": "TotLn",
@@ -123,7 +123,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Length of this fragment",
+                "desc": "Length of this fragment.",
                 "label": "Fragment length",
                 "mandatory": "M",
                 "name": "FrgLn",
@@ -133,7 +133,7 @@
             },
             {
                 "access": "RW",
-                "desc": "First word of this fragment",
+                "desc": "First word of this fragment.",
                 "label": "Frag1",
                 "mandatory": "M",
                 "name": "Frg1",
@@ -674,7 +674,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Last word of this fragment",
+                "desc": "Last word of this fragment.",
                 "label": "Frag80",
                 "mandatory": "M",
                 "name": "Frg80",
@@ -683,7 +683,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Timestamp value is the number of seconds since January 1, 2000",
+                "desc": "Timestamp value is the number of seconds since January 1, 2000.",
                 "label": "Timestamp",
                 "mandatory": "M",
                 "name": "Ts",
@@ -692,7 +692,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Millisecond counter 0-999",
+                "desc": "Millisecond counter 0-999.",
                 "label": "Milliseconds",
                 "mandatory": "M",
                 "name": "Ms",
@@ -701,7 +701,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Sequence number of request",
+                "desc": "Sequence number of request.",
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
@@ -711,7 +711,7 @@
             },
             {
                 "access": "RW",
-                "desc": "User ID for the request signature",
+                "desc": "User ID for the request signature.",
                 "label": "UID",
                 "mandatory": "M",
                 "name": "UID",
@@ -720,7 +720,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Signing key used 0-5",
+                "desc": "Signing key used 0-5.",
                 "label": "Role",
                 "mandatory": "M",
                 "name": "Role",
@@ -730,7 +730,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Algorithm used to compute the digital signature",
+                "desc": "Algorithm used to compute the digital signature.",
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",
@@ -755,7 +755,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Number of registers to follow for the certificate",
+                "desc": "Number of registers to follow for the certificate.",
                 "label": "N",
                 "mandatory": "M",
                 "name": "N",

@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "Include this model for secure metering",
+        "desc": "Include this model for secure metering.",
         "groups": [
             {
                 "count": 0,
@@ -20,7 +20,7 @@
         "name": "ac_meter_secure",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -30,7 +30,7 @@
                 "value": 220
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -39,7 +39,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Total AC Current",
+                "desc": "Total AC Current.",
                 "label": "Amps",
                 "mandatory": "M",
                 "name": "A",
@@ -49,14 +49,14 @@
                 "units": "A"
             },
             {
-                "desc": "Current scale factor",
+                "desc": "Current scale factor.",
                 "mandatory": "M",
                 "name": "A_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Average phase or line voltage",
+                "desc": "Average phase or line voltage.",
                 "label": "Voltage",
                 "name": "PhV",
                 "sf": "V_SF",
@@ -65,14 +65,14 @@
                 "units": "V"
             },
             {
-                "desc": "Voltage scale factor",
+                "desc": "Voltage scale factor.",
                 "mandatory": "M",
                 "name": "V_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Frequency",
+                "desc": "Frequency.",
                 "label": "Hz",
                 "mandatory": "M",
                 "name": "Hz",
@@ -82,13 +82,13 @@
                 "units": "Hz"
             },
             {
-                "desc": "Frequency scale factor",
+                "desc": "Frequency scale factor.",
                 "name": "Hz_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Total Real Power",
+                "desc": "Total Real Power.",
                 "label": "Watts",
                 "mandatory": "M",
                 "name": "W",
@@ -98,14 +98,14 @@
                 "units": "W"
             },
             {
-                "desc": "Real Power scale factor",
+                "desc": "Real Power scale factor.",
                 "mandatory": "M",
                 "name": "W_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "AC Apparent Power",
+                "desc": "AC Apparent Power.",
                 "label": "VA",
                 "name": "VA",
                 "sf": "VA_SF",
@@ -114,13 +114,13 @@
                 "units": "VA"
             },
             {
-                "desc": "Apparent Power scale factor",
+                "desc": "Apparent Power scale factor.",
                 "name": "VA_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Reactive Power",
+                "desc": "Reactive Power.",
                 "label": "VAR",
                 "name": "VAR",
                 "sf": "VAR_SF",
@@ -129,13 +129,13 @@
                 "units": "var"
             },
             {
-                "desc": "Reactive Power scale factor",
+                "desc": "Reactive Power scale factor.",
                 "name": "VAR_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Power Factor",
+                "desc": "Power Factor.",
                 "label": "PF",
                 "name": "PF",
                 "sf": "PF_SF",
@@ -144,13 +144,13 @@
                 "units": "Pct"
             },
             {
-                "desc": "Power Factor scale factor",
+                "desc": "Power Factor scale factor.",
                 "name": "PF_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Total Real Energy Exported",
+                "desc": "Total Real Energy Exported.",
                 "label": "Total Watt-hours Exported",
                 "mandatory": "M",
                 "name": "TotWhExp",
@@ -160,7 +160,7 @@
                 "units": "Wh"
             },
             {
-                "desc": "Total Real Energy Imported",
+                "desc": "Total Real Energy Imported.",
                 "label": "Total Watt-hours Imported",
                 "mandatory": "M",
                 "name": "TotWhImp",
@@ -170,14 +170,14 @@
                 "units": "Wh"
             },
             {
-                "desc": "Real Energy scale factor",
+                "desc": "Real Energy scale factor.",
                 "mandatory": "M",
                 "name": "TotWh_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Total Apparent Energy Exported",
+                "desc": "Total Apparent Energy Exported.",
                 "label": "Total VA-hours Exported",
                 "name": "TotVAhExp",
                 "sf": "TotVAh_SF",
@@ -186,7 +186,7 @@
                 "units": "VAh"
             },
             {
-                "desc": "Total Apparent Energy Imported",
+                "desc": "Total Apparent Energy Imported.",
                 "label": "Total VA-hours Imported",
                 "name": "TotVAhImp",
                 "sf": "TotVAh_SF",
@@ -195,13 +195,13 @@
                 "units": "VAh"
             },
             {
-                "desc": "Apparent Energy scale factor",
+                "desc": "Apparent Energy scale factor.",
                 "name": "TotVAh_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Total Reactive Energy Imported Quadrant 1",
+                "desc": "Total Reactive Energy Imported Quadrant 1.",
                 "label": "Total VAR-hours Imported Q1",
                 "name": "TotVArhImpQ1",
                 "sf": "TotVArh_SF",
@@ -210,7 +210,7 @@
                 "units": "varh"
             },
             {
-                "desc": "Total Reactive Power Imported Quadrant 2",
+                "desc": "Total Reactive Power Imported Quadrant 2.",
                 "label": "Total VAr-hours Imported Q2",
                 "name": "TotVArhImpQ2",
                 "sf": "TotVArh_SF",
@@ -219,7 +219,7 @@
                 "units": "varh"
             },
             {
-                "desc": "Total Reactive Power Exported Quadrant 3",
+                "desc": "Total Reactive Power Exported Quadrant 3.",
                 "label": "Total VAr-hours Exported Q3",
                 "name": "TotVArhExpQ3",
                 "sf": "TotVArh_SF",
@@ -228,7 +228,7 @@
                 "units": "varh"
             },
             {
-                "desc": "Total Reactive Power Exported Quadrant 4",
+                "desc": "Total Reactive Power Exported Quadrant 4.",
                 "label": "Total VAr-hours Exported Q4",
                 "name": "TotVArhExpQ4",
                 "sf": "TotVArh_SF",
@@ -237,13 +237,13 @@
                 "units": "varh"
             },
             {
-                "desc": "Reactive Energy scale factor",
+                "desc": "Reactive Energy scale factor.",
                 "name": "TotVArh_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Meter Event Flags",
+                "desc": "Meter Event Flags.",
                 "label": "Events",
                 "mandatory": "M",
                 "name": "Evt",
@@ -343,7 +343,7 @@
                 "type": "pad"
             },
             {
-                "desc": "Timestamp value is the number of seconds since January 1, 2000",
+                "desc": "Timestamp value is the number of seconds since January 1, 2000.",
                 "label": "Timestamp",
                 "mandatory": "M",
                 "name": "Ts",
@@ -351,7 +351,7 @@
                 "type": "uint32"
             },
             {
-                "desc": "Millisecond counter 0-999",
+                "desc": "Millisecond counter 0-999.",
                 "label": "Milliseconds",
                 "mandatory": "M",
                 "name": "Ms",
@@ -359,7 +359,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Sequence number of request",
+                "desc": "Sequence number of request.",
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
@@ -368,7 +368,7 @@
                 "detail": "Shall be advanced for each request"
             },
             {
-                "desc": "Algorithm used to compute the digital signature",
+                "desc": "Algorithm used to compute the digital signature.",
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",

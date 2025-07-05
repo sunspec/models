@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Immediate Inverter Controls ",
+        "desc": "Immediate Inverter Controls.",
         "label": "Immediate Controls",
         "name": "controls",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 123
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
