@@ -74,7 +74,7 @@
                 "units": "mm"
             },
             {
-                "desc": "\u00a0Precipitation Type (WMO 4680 SYNOP code reference)",
+                "desc": "Precipitation Type (WMO 4680 SYNOP code reference)",
                 "label": "Precipitation Type",
                 "name": "PPT",
                 "size": 1,
