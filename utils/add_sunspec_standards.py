@@ -12,7 +12,7 @@ MANDATORY_1547_POINTS = {  # ID and L are added by default
     702: ['WMaxRtg', 'WOvrExtRtg', 'WOvrExtRtgPF', 'WUndExtRtg', 'WUndExtRtgPF', 'VAMaxRtg', 'NorOpCatRtg',
           'AbnOpCatRtg', 'VarMaxInjRtg', 'VarMaxAbsRtg', 'WChaRteMaxRtg', 'VAChaRteMaxRtg', 'VNomRtg', 'VMaxRtg',
           'VMinRtg', 'CtrlModes', 'ReactSusceptRtg'],
-    703: ['ES', 'ESVHi', 'ESVLo', 'ESHzHi', 'ESHzLo', 'ESDlyTms', 'ESRmpRem', 'V_SF', 'Hz_SF'],
+    703: ['ES', 'ESVHi', 'ESVLo', 'ESHzHi', 'ESHzLo', 'ESDlyTms', 'ESRmpTms', 'V_SF', 'Hz_SF'],
     704: ['PFWInjEna', 'PF_SF', 'PFWInj.PF', 'PFWInj.Ext', 'VarSetEna', 'VarSetMod', 'VarSetPri', 'VarSetPct',
           'VarSetPct_SF', 'WMaxLimPctEna', 'WMaxLimPct', 'WMaxLimPct_SF'],
     705: ['Ena', 'AdptCrvReq', 'AdptCrvRslt', 'NPt', 'NCrv', 'V_SF', 'DeptRef_SF', 'RspTms_SF', 'Crv.ActPt',

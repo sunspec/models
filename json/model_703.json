@@ -133,7 +133,9 @@
                 "size": 2,
                 "type": "uint32",
                 "units": "Secs",
-                "standards": []
+                "standards": [
+                    "IEEE 1547-2018"
+                ]
             },
             {
                 "desc": "Enter service delay time remaining in seconds.",
