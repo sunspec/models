@@ -16,7 +16,7 @@
                         "count": "NPt",
                         "desc": "Stored curve points.",
                         "label": "Stored Curve Points",
-                        "name": "Pt",
+                        "name": "Point",
                         "points": [
                             {
                                 "access": "RW",
@@ -51,7 +51,7 @@
                     }
                 ],
                 "label": "Stored Curves",
-                "name": "Crv",
+                "name": "Curve",
                 "points": [
                     {
                         "access": "RW",

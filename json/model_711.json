@@ -9,7 +9,7 @@
                 "count": "NCtl",
                 "desc": "Stored control sets.",
                 "label": "Stored Controls",
-                "name": "Ctl",
+                "name": "Control",
                 "points": [
                     {
                         "access": "RW",
