@@ -355,7 +355,7 @@
                         "type": "bitfield32"
                     },
                     {
-                        "desc": "Alarms, warnings and status values.  Bit flags.",
+                        "desc": "Alarms, warnings and status values.",
                         "label": "String Event 1",
                         "mandatory": "M",
                         "name": "StrEvt1",
@@ -485,7 +485,7 @@
                         "type": "bitfield32"
                     },
                     {
-                        "desc": "Alarms, warnings and status values.  Bit flags.",
+                        "desc": "Alarms, warnings and status values.",
                         "label": "String Event 2",
                         "name": "StrEvt2",
                         "size": 2,
@@ -565,7 +565,7 @@
         "name": "lithium_ion_bank",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -575,7 +575,7 @@
                 "value": 803
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",

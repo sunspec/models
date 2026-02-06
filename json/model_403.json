@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "A basic string combiner model",
+        "desc": "A basic string combiner model.",
         "label": "String Combiner (Current)",
         "name": "string_combiner_current_input",
         "groups": [
@@ -9,7 +9,7 @@
                 "name": "string",
                 "points": [
                     {
-                        "desc": "Uniquely identifies this input set",
+                        "desc": "Uniquely identifies this input set.",
                         "label": "ID",
                         "mandatory": "M",
                         "name": "InID",
@@ -17,7 +17,7 @@
                         "type": "uint16"
                     },
                     {
-                        "desc": "String Input Event Flags",
+                        "desc": "String Input Event Flags.",
                         "label": "Input Event",
                         "mandatory": "M",
                         "name": "InEvt",
@@ -103,14 +103,14 @@
                         "type": "bitfield32"
                     },
                     {
-                        "desc": "String Input Vendor Event Flags",
+                        "desc": "String Input Vendor Event Flags.",
                         "label": "Input Event Vendor",
                         "name": "InEvtVnd",
                         "size": 2,
                         "type": "bitfield32"
                     },
                     {
-                        "desc": "String Input Current",
+                        "desc": "String Input Current.",
                         "label": "Amps",
                         "mandatory": "M",
                         "name": "InDCA",
@@ -120,7 +120,7 @@
                         "units": "A"
                     },
                     {
-                        "desc": "String Input Amp-Hours",
+                        "desc": "String Input Amp-Hours.",
                         "label": "Amp-hours",
                         "name": "InDCAhr",
                         "sf": "InDCAhr_SF",
@@ -134,7 +134,7 @@
         ],
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -144,7 +144,7 @@
                 "value": 403
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -153,26 +153,26 @@
                 "type": "uint16"
             },
             {
-                "desc": "Current scale factor",
+                "desc": "Current scale factor.",
                 "mandatory": "M",
                 "name": "DCA_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Amp-hour scale factor",
+                "desc": "Amp-hour scale factor.",
                 "name": "DCAhr_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Voltage scale factor",
+                "desc": "Voltage scale factor.",
                 "name": "DCV_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Maximum DC Current Rating",
+                "desc": "Maximum DC Current Rating.",
                 "label": "Rating",
                 "mandatory": "M",
                 "name": "DCAMax",
@@ -182,7 +182,7 @@
                 "units": "A"
             },
             {
-                "desc": "Number of Inputs",
+                "desc": "Number of Inputs.",
                 "label": "N",
                 "mandatory": "M",
                 "name": "N",
@@ -190,7 +190,7 @@
                 "type": "count"
             },
             {
-                "desc": "Bitmask value.  Events",
+                "desc": "Events.",
                 "label": "Event",
                 "mandatory": "M",
                 "name": "Evt",
@@ -276,14 +276,14 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Bitmask value.  Vendor defined events",
+                "desc": "Vendor defined events.",
                 "label": "Vendor Event",
                 "name": "EvtVnd",
                 "size": 2,
                 "type": "bitfield32"
             },
             {
-                "desc": "Total measured current",
+                "desc": "Total measured current.",
                 "label": "Amps",
                 "mandatory": "M",
                 "name": "DCA",
@@ -293,7 +293,7 @@
                 "units": "A"
             },
             {
-                "desc": "Total metered Amp-hours",
+                "desc": "Total metered Amp-hours.",
                 "label": "Amp-hours",
                 "name": "DCAhr",
                 "sf": "DCAhr_SF",
@@ -302,7 +302,7 @@
                 "units": "Ah"
             },
             {
-                "desc": "Output Voltage",
+                "desc": "Output Voltage.",
                 "label": "Voltage",
                 "name": "DCV",
                 "sf": "DCV_SF",
@@ -311,7 +311,7 @@
                 "units": "V"
             },
             {
-                "desc": "Internal operating temperature",
+                "desc": "Internal operating temperature.",
                 "label": "Temp",
                 "name": "Tmp",
                 "size": 1,
@@ -319,13 +319,13 @@
                 "units": "C"
             },
             {
-                "desc": "Current scale factor for inputs",
+                "desc": "Current scale factor for inputs.",
                 "name": "InDCA_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "Amp-hour scale factor for inputs",
+                "desc": "Amp-hour scale factor for inputs.",
                 "name": "InDCAhr_SF",
                 "size": 1,
                 "type": "sunssf"

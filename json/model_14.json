@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Include this block to allow for a proxy server",
+        "desc": "Include this block to allow for a proxy server.",
         "label": "Proxy Server",
         "name": "model_14",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 14
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -25,7 +25,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Interface name (8 chars)",
+                "desc": "Interface name (8 chars).",
                 "label": "name",
                 "name": "Nam",
                 "size": 4,
@@ -33,7 +33,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Bitmask value.  Proxy configuration capabilities",
+                "desc": "Proxy configuration capabilities.",
                 "label": "Capabilities",
                 "mandatory": "M",
                 "name": "Cap",
@@ -56,7 +56,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Enumerated value.  Set proxy address type",
+                "desc": "Set proxy address type.",
                 "label": "Config",
                 "mandatory": "M",
                 "name": "Cfg",
@@ -65,7 +65,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Enumerate value.  Proxy server type",
+                "desc": "Enumerate value. Proxy server type.",
                 "label": "Type",
                 "mandatory": "M",
                 "name": "Typ",
@@ -74,7 +74,7 @@
             },
             {
                 "access": "RW",
-                "desc": "IPv4 or IPv6 proxy hostname or dotted address (40 chars)",
+                "desc": "IPv4 or IPv6 proxy hostname or dotted address (40 chars).",
                 "label": "Address",
                 "mandatory": "M",
                 "name": "Addr",
@@ -83,7 +83,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Proxy port number",
+                "desc": "Proxy port number.",
                 "label": "Port",
                 "mandatory": "M",
                 "name": "Port",
@@ -92,7 +92,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Proxy user name",
+                "desc": "Proxy user name.",
                 "label": "Username",
                 "name": "User",
                 "size": 12,
@@ -100,7 +100,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Proxy password",
+                "desc": "Proxy password.",
                 "label": "Password",
                 "name": "Pw",
                 "size": 12,

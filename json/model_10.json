@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "To be included first for a complete interface description",
+        "desc": "To be included first for a complete interface description.",
         "label": "Communication Interface Header",
         "name": "model_10",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 10
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -24,7 +24,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Overall interface status",
+                "desc": "Overall interface status.",
                 "label": "Interface Status",
                 "mandatory": "M",
                 "name": "St",
@@ -47,14 +47,14 @@
             },
             {
                 "access": "RW",
-                "desc": "Overall interface control (TBD)",
+                "desc": "Overall interface control (TBD).",
                 "label": "Interface Control",
                 "name": "Ctl",
                 "size": 1,
                 "type": "uint16"
             },
             {
-                "desc": "Enumerated value.  Type of physical media",
+                "desc": "Type of physical media.",
                 "label": "Physical Access Type",
                 "name": "Typ",
                 "size": 1,

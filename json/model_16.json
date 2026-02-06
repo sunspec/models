@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Include this model for a simple IPv4 network stack",
+        "desc": "Include this model for a simple IPv4 network stack.",
         "label": "Simple IP Network",
         "name": "model_16",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 16
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -25,14 +25,14 @@
             },
             {
                 "access": "RW",
-                "desc": "Interface name.  (8 chars)",
+                "desc": "Interface name. (8 chars).",
                 "label": "Name",
                 "name": "Nam",
                 "size": 4,
                 "type": "string"
             },
             {
-                "desc": "Enumerated value.  Force IPv4 configuration method",
+                "desc": "Force IPv4 configuration method.",
                 "label": "Config",
                 "mandatory": "M",
                 "name": "Cfg",
@@ -51,7 +51,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Bitmask value Configure use of services",
+                "desc": "Configure use of services.",
                 "label": "Control",
                 "mandatory": "M",
                 "name": "Ctl",
@@ -70,7 +70,7 @@
             },
             {
                 "access": "RW",
-                "desc": "IP address",
+                "desc": "IP address.",
                 "label": "Address",
                 "mandatory": "M",
                 "name": "Addr",
@@ -79,7 +79,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Netmask",
+                "desc": "Netmask.",
                 "label": "Netmask",
                 "mandatory": "M",
                 "name": "Msk",
@@ -88,7 +88,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Gateway IP address",
+                "desc": "Gateway IP address.",
                 "label": "Gateway",
                 "name": "Gw",
                 "size": 8,
@@ -96,7 +96,7 @@
             },
             {
                 "access": "RW",
-                "desc": "32 bit IP address of DNS server",
+                "desc": "32 bit IP address of DNS server.",
                 "label": "DNS1",
                 "name": "DNS1",
                 "size": 8,
@@ -104,14 +104,14 @@
             },
             {
                 "access": "RW",
-                "desc": "32 bit IP address of DNS server",
+                "desc": "32 bit IP address of DNS server.",
                 "label": "DNS2",
                 "name": "DNS2",
                 "size": 8,
                 "type": "string"
             },
             {
-                "desc": "IEEE MAC address of this interface",
+                "desc": "IEEE MAC address of this interface.",
                 "label": "MAC",
                 "name": "MAC",
                 "size": 4,
@@ -119,7 +119,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Bitmask value.  Link control flags",
+                "desc": "Link control flags.",
                 "label": "Link Control",
                 "name": "LnkCtl",
                 "size": 1,

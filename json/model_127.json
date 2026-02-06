@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Parameterized Frequency-Watt ",
+        "desc": "Parameterized Frequency-Watt.",
         "label": "Freq-Watt Param",
         "name": "freq_watt_param",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 127
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -58,7 +58,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Enable hysteresis",
+                "desc": "Enable hysteresis.",
                 "label": "HysEna",
                 "mandatory": "M",
                 "name": "HysEna",

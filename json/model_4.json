@@ -1,13 +1,13 @@
 {
     "group": {
-        "desc": "Compute a digital signature over a specified set of data registers",
+        "desc": "Compute a digital signature over a specified set of data registers.",
         "groups": [
             {
                 "count": 0,
                 "name": "repeating",
                 "points": [
                     {
-                        "desc": "Digital Signature",
+                        "desc": "Digital Signature.",
                         "label": "DS",
                         "mandatory": "M",
                         "name": "DS",
@@ -22,7 +22,7 @@
         "name": "model_4",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -32,7 +32,7 @@
                 "value": 4
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -41,7 +41,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Sequence number from the request",
+                "desc": "Sequence number from the request.",
                 "label": "Request Sequence",
                 "mandatory": "M",
                 "name": "RqSeq",
@@ -49,7 +49,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Status of last read operation",
+                "desc": "Status of last read operation.",
                 "label": "Status",
                 "mandatory": "M",
                 "name": "Sts",
@@ -77,7 +77,7 @@
                 "type": "enum16"
             },
             {
-                "desc": "Number of values from the request",
+                "desc": "Number of values from the request.",
                 "label": "X",
                 "mandatory": "M",
                 "name": "X",
@@ -389,7 +389,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Timestamp value is the number of seconds since January 1, 2000",
+                "desc": "Timestamp value is the number of seconds since January 1, 2000.",
                 "label": "Timestamp",
                 "mandatory": "M",
                 "name": "Ts",
@@ -397,7 +397,7 @@
                 "type": "uint32"
             },
             {
-                "desc": "Millisecond counter 0-999",
+                "desc": "Millisecond counter 0-999.",
                 "label": "Milliseconds",
                 "mandatory": "M",
                 "name": "Ms",
@@ -405,7 +405,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Sequence number of response",
+                "desc": "Sequence number of response.",
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
@@ -414,7 +414,7 @@
                 "detail": "Shall be advanced for each response"
             },
             {
-                "desc": "Bitmask alarm code",
+                "desc": "Bitmask alarm code.",
                 "label": "Alarm",
                 "mandatory": "M",
                 "name": "Alm",
@@ -433,7 +433,7 @@
                 "type": "enum16"
             },
             {
-                "desc": "Algorithm used to compute the digital signature",
+                "desc": "Algorithm used to compute the digital signature.",
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",

@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "Include a digital signature over the response",
+        "desc": "Include a digital signature over the response.",
         "groups": [
             {
                 "count": 0,
@@ -8,7 +8,7 @@
                 "points": [
                     {
                         "access": "RW",
-                        "desc": "Digital Signature",
+                        "desc": "Digital Signature.",
                         "label": "DS",
                         "mandatory": "M",
                         "name": "DS",
@@ -23,7 +23,7 @@
         "name": "model_7",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -33,7 +33,7 @@
                 "value": 7
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -42,7 +42,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Sequence number from the request",
+                "desc": "Sequence number from the request.",
                 "label": "Request Sequence",
                 "mandatory": "M",
                 "name": "RqSeq",
@@ -50,7 +50,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Status of last write operation",
+                "desc": "Status of last write operation.",
                 "label": "Status",
                 "mandatory": "M",
                 "name": "Sts",
@@ -84,7 +84,7 @@
                 "type": "enum16"
             },
             {
-                "desc": "Timestamp value is the number of seconds since January 1, 2000",
+                "desc": "Timestamp value is the number of seconds since January 1, 2000.",
                 "label": "Timestamp",
                 "mandatory": "M",
                 "name": "Ts",
@@ -92,7 +92,7 @@
                 "type": "uint32"
             },
             {
-                "desc": "Millisecond counter 0-999",
+                "desc": "Millisecond counter 0-999.",
                 "label": "Milliseconds",
                 "mandatory": "M",
                 "name": "Ms",
@@ -100,7 +100,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Sequence number of response",
+                "desc": "Sequence number of response.",
                 "label": "Sequence",
                 "mandatory": "M",
                 "name": "Seq",
@@ -109,7 +109,7 @@
                 "detail": "Shall be advanced for each response"
             },
             {
-                "desc": "Bitmask alarm code",
+                "desc": "Bitmask alarm code.",
                 "label": "Alarm",
                 "mandatory": "M",
                 "name": "Alm",
@@ -134,7 +134,7 @@
                 "type": "pad"
             },
             {
-                "desc": "Algorithm used to compute the digital signature",
+                "desc": "Algorithm used to compute the digital signature.",
                 "label": "Algorithm",
                 "mandatory": "M",
                 "name": "Alg",

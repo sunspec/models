@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Inverter Controls Extended Measurements and Status ",
+        "desc": "Inverter Controls Extended Measurements and Status.",
         "label": "Measurements_Status",
         "name": "status",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 122
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -24,7 +24,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "PV inverter present/available status. Enumerated value.",
+                "desc": "PV inverter present/available status.",
                 "label": "PVConn",
                 "mandatory": "M",
                 "name": "PVConn",
@@ -50,7 +50,7 @@
                 "type": "bitfield16"
             },
             {
-                "desc": "Storage inverter present/available status. Enumerated value.",
+                "desc": "Storage inverter present/available status.",
                 "label": "StorConn",
                 "mandatory": "M",
                 "name": "StorConn",
@@ -76,8 +76,8 @@
                 "type": "bitfield16"
             },
             {
-                "desc": "ECP connection status: disconnected=0  connected=1.",
                 "label": "ECPConn",
+                "desc": "ECP connection status: disconnected=0 connected=1.",
                 "mandatory": "M",
                 "name": "ECPConn",
                 "size": 1,
@@ -126,7 +126,7 @@
                 "units": "varh"
             },
             {
-                "desc": "AC lifetime negative energy output  in quadrant 3.",
+                "desc": "AC lifetime negative energy output in quadrant 3.",
                 "label": "ActVArhQ3",
                 "name": "ActVArhQ3",
                 "size": 4,
@@ -134,7 +134,7 @@
                 "units": "varh"
             },
             {
-                "desc": "AC lifetime reactive energy output  in quadrant 4.",
+                "desc": "AC lifetime reactive energy output in quadrant 4.",
                 "label": "ActVArhQ4",
                 "name": "ActVArhQ4",
                 "size": 4,
@@ -174,7 +174,7 @@
                 "type": "sunssf"
             },
             {
-                "desc": "Bit Mask indicating setpoint limit(s) reached.",
+                "desc": "Setpoint limit(s) reached.",
                 "label": "StSetLimMsk",
                 "name": "StSetLimMsk",
                 "size": 2,
@@ -228,8 +228,8 @@
                 "detail": "Bits shall be automatically cleared on read."
             },
             {
-                "desc": "Bit Mask indicating which inverter controls are currently active.",
                 "label": "StActCtl",
+                "desc": "Which inverter controls are currently active.",
                 "name": "StActCtl",
                 "size": 2,
                 "symbols": [
@@ -300,7 +300,7 @@
                 "type": "string"
             },
             {
-                "desc": "Seconds since 01-01-2000 00:00 UTC",
+                "desc": "Seconds since 01-01-2000 00:00 UTC.",
                 "label": "Tms",
                 "name": "Tms",
                 "size": 2,
@@ -308,7 +308,7 @@
                 "units": "Secs"
             },
             {
-                "desc": "Bit Mask indicating active ride-through status.",
+                "desc": "Active ride-through status.",
                 "label": "RtSt",
                 "name": "RtSt",
                 "size": 1,

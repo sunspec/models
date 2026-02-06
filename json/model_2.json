@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Aggregates a collection of models for a given model id",
+        "desc": "Aggregates a collection of models for a given model id.",
         "label": "Basic Aggregator",
         "name": "aggregator",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 2
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -24,7 +24,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Aggregated model id",
+                "desc": "Aggregated model id.",
                 "label": "AID",
                 "mandatory": "M",
                 "name": "AID",
@@ -32,7 +32,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Number of aggregated models",
+                "desc": "Number of aggregated models.",
                 "label": "N",
                 "mandatory": "M",
                 "name": "N",
@@ -40,7 +40,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Update Number.  Incrementing number each time the mapping is changed.  If the number is not changed from the last reading the direct access to a specific offset will result in reading the same logical model as before.  Otherwise the entire model must be read to refresh the changes",
+                "desc": "Update Number. Incrementing number each time the mapping is changed. If the number is not changed from the last reading the direct access to a specific offset will result in reading the same logical model as before. Otherwise the entire model must be read to refresh the changes.",
                 "label": "UN",
                 "mandatory": "M",
                 "name": "UN",
@@ -48,7 +48,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Enumerated status code",
+                "desc": "Enumerated status code.",
                 "label": "Status",
                 "mandatory": "M",
                 "name": "St",
@@ -74,14 +74,14 @@
                 "type": "enum16"
             },
             {
-                "desc": "Vendor specific status code",
+                "desc": "Vendor specific status code.",
                 "label": "Vendor Status",
                 "name": "StVnd",
                 "size": 1,
                 "type": "enum16"
             },
             {
-                "desc": "Bitmask event code",
+                "desc": "Bitmask event code.",
                 "label": "Event Code",
                 "mandatory": "M",
                 "name": "Evt",
@@ -175,14 +175,14 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Vendor specific event code",
+                "desc": "Vendor specific event code.",
                 "label": "Vendor Event Code",
                 "name": "EvtVnd",
                 "size": 2,
                 "type": "bitfield32"
             },
             {
-                "desc": "Control register for all aggregated devices",
+                "desc": "Control register for all aggregated devices.",
                 "label": "Control",
                 "name": "Ctl",
                 "size": 1,
@@ -211,14 +211,14 @@
                 "type": "enum16"
             },
             {
-                "desc": "Vendor control register for all aggregated devices",
+                "desc": "Vendor control register for all aggregated devices.",
                 "label": "Vendor Control",
                 "name": "CtlVnd",
                 "size": 2,
                 "type": "enum32"
             },
             {
-                "desc": "Numerical value used as a parameter to the control",
+                "desc": "Numerical value used as a parameter to the control.",
                 "label": "Control Value",
                 "name": "CtlVl",
                 "size": 2,

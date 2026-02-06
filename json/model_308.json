@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Include to support a few basic measurements",
+        "desc": "Include to support a few basic measurements.",
         "label": "Mini Met Model",
         "name": "mini_met",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 308
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -24,7 +24,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Global Horizontal Irradiance",
+                "desc": "Global Horizontal Irradiance.",
                 "label": "GHI",
                 "name": "GHI",
                 "size": 1,
@@ -32,7 +32,7 @@
                 "units": "W/m2"
             },
             {
-                "desc": "Back of module temperature measurement",
+                "desc": "Back of module temperature measurement.",
                 "label": "Temp",
                 "name": "TmpBOM",
                 "sf": -1,

@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "Static Volt-VAR Arrays ",
+        "desc": "Static Volt-VAR Arrays.",
         "groups": [
             {
                 "count": 0,
@@ -422,7 +422,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "Optional description for curve. (Max 16 chars)",
+                        "desc": "Optional description for curve. (Max 16 chars).",
                         "label": "CrvNam",
                         "name": "CrvNam",
                         "size": 8,
@@ -483,7 +483,7 @@
         "name": "volt_var",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -493,7 +493,7 @@
                 "value": 126
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -577,7 +577,7 @@
                 "type": "sunssf"
             },
             {
-                "desc": "scale factor for dependent variable.",
+                "desc": "Scale factor for dependent variable.",
                 "label": "DeptRef_SF",
                 "mandatory": "M",
                 "name": "DeptRef_SF",

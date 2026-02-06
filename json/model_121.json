@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Inverter Controls Basic Settings ",
+        "desc": "Inverter Controls Basic Settings.",
         "label": "Basic Settings",
         "name": "settings",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 121
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -47,7 +47,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Offset  from PCC to inverter.",
+                "desc": "Offset from PCC to inverter.",
                 "label": "VRefOfs",
                 "mandatory": "M",
                 "name": "VRefOfs",

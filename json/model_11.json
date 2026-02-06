@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Include to support a wired ethernet port",
+        "desc": "Include to support a wired ethernet port.",
         "label": "Ethernet Link Layer",
         "name": "model_11",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 11
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -24,7 +24,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Interface speed in Mb/s",
+                "desc": "Interface speed in Mb/s.",
                 "label": "Ethernet Link Speed",
                 "mandatory": "M",
                 "name": "Spd",
@@ -33,7 +33,7 @@
                 "units": "Mbps"
             },
             {
-                "desc": "Bitmask values Interface flags.",
+                "desc": "Interface flags.",
                 "label": "Interface Status Flags",
                 "mandatory": "M",
                 "name": "CfgSt",
@@ -71,7 +71,7 @@
                 "type": "bitfield16"
             },
             {
-                "desc": "Enumerated value. State information for this interface",
+                "desc": "State information for this interface.",
                 "label": "Link State",
                 "mandatory": "M",
                 "name": "St",
@@ -97,7 +97,7 @@
                 "type": "enum16"
             },
             {
-                "desc": "IEEE MAC address of this interface",
+                "desc": "IEEE MAC address of this interface.",
                 "label": "MAC",
                 "name": "MAC",
                 "size": 4,
@@ -105,7 +105,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Interface name (8 chars)",
+                "desc": "Interface name (8 chars).",
                 "label": "Name",
                 "name": "Nam",
                 "size": 4,
@@ -113,7 +113,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Control flags",
+                "desc": "Control flags.",
                 "label": "Control",
                 "name": "Ctl",
                 "size": 1,
@@ -131,7 +131,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Forced interface speed in Mb/s when AUTO is disabled",
+                "desc": "Forced interface speed in Mb/s when AUTO is disabled.",
                 "label": "Forced Speed",
                 "name": "FrcSpd",
                 "size": 1,

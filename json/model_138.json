@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "HVRT must remain connected",
+        "desc": "HVRT must remain connected.",
         "groups": [
             {
                 "count": 0,
@@ -426,7 +426,7 @@
                         "type": "string"
                     },
                     {
-                        "desc": "Enumerated value indicates if curve is read-only or can be modified.",
+                        "desc": "Curve is read-only or can be modified.",
                         "label": "ReadOnly",
                         "mandatory": "M",
                         "name": "ReadOnly",
@@ -451,7 +451,7 @@
         "name": "hvrtc",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -461,7 +461,7 @@
                 "value": 138
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -480,7 +480,7 @@
             },
             {
                 "access": "RW",
-                "desc": "HVRT control mode. Enable active curve.  Bitfield value.",
+                "desc": "HVRT control mode. Enable active curve.",
                 "label": "ModEna",
                 "mandatory": "M",
                 "name": "ModEna",

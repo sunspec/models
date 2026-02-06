@@ -1,11 +1,11 @@
 {
     "group": {
-        "desc": "Inverter Controls Nameplate Ratings ",
+        "desc": "Inverter Controls Nameplate Ratings.",
         "label": "Nameplate",
         "name": "nameplate",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -15,7 +15,7 @@
                 "value": 120
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -52,7 +52,7 @@
                 "units": "W"
             },
             {
-                "desc": "Scale factor",
+                "desc": "Scale factor.",
                 "label": "WRtg_SF",
                 "mandatory": "M",
                 "name": "WRtg_SF",
@@ -70,7 +70,7 @@
                 "units": "VA"
             },
             {
-                "desc": "Scale factor",
+                "desc": "Scale factor.",
                 "label": "VARtg_SF",
                 "mandatory": "M",
                 "name": "VARtg_SF",
@@ -118,7 +118,7 @@
                 "units": "var"
             },
             {
-                "desc": "Scale factor",
+                "desc": "Scale factor.",
                 "label": "VArRtg_SF",
                 "mandatory": "M",
                 "name": "VArRtg_SF",
@@ -137,7 +137,7 @@
                 "detail": "Sum of all connected phases.  Current rating under nominal voltage under nominal power factor."
             },
             {
-                "desc": "Scale factor",
+                "desc": "Scale factor.",
                 "label": "ARtg_SF",
                 "mandatory": "M",
                 "name": "ARtg_SF",
@@ -189,7 +189,7 @@
                 "detail": "EEI sign convention."
             },
             {
-                "desc": "Scale factor",
+                "desc": "Scale factor.",
                 "label": "PFRtg_SF",
                 "mandatory": "M",
                 "name": "PFRtg_SF",
@@ -206,14 +206,14 @@
                 "units": "Wh"
             },
             {
-                "desc": "Scale factor",
+                "desc": "Scale factor.",
                 "label": "WHRtg_SF",
                 "name": "WHRtg_SF",
                 "size": 1,
                 "type": "sunssf"
             },
             {
-                "desc": "The usable capacity of the battery.  Maximum charge minus minimum charge from a technology capability perspective (Amp-hour capacity rating).",
+                "desc": "The usable capacity of the battery. Maximum charge minus minimum charge from a technology capability perspective (Amp-hour capacity rating).",
                 "label": "AhrRtg",
                 "name": "AhrRtg",
                 "sf": "AhrRtg_SF",
@@ -238,7 +238,7 @@
                 "units": "W"
             },
             {
-                "desc": "Scale factor",
+                "desc": "Scale factor.",
                 "label": "MaxChaRte_SF",
                 "name": "MaxChaRte_SF",
                 "size": 1,
@@ -254,7 +254,7 @@
                 "units": "W"
             },
             {
-                "desc": "Scale factor",
+                "desc": "Scale factor.",
                 "label": "MaxDisChaRte_SF",
                 "name": "MaxDisChaRte_SF",
                 "size": 1,

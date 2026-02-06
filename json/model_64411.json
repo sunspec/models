@@ -5,7 +5,7 @@
         "desc": "A generic AC simulator/power supply control interface for DER electrical testing.",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -25,7 +25,7 @@
             },
             {
                 "label": "Active Phases",
-                "desc": "Set the number of active phases for the power supply",
+                "desc": "Set the number of active phases for the power supply.",
                 "name": "Phases",
                 "type": "uint16",
                 "size": 1,
@@ -41,7 +41,7 @@
             },
             {
                 "label": "Nominal Voltage",
-                "desc": "Nominal L-N Voltage",
+                "desc": "Nominal L-N Voltage.",
                 "name": "VNom",
                 "type": "uint16",
                 "size": 1,
@@ -51,7 +51,7 @@
             },
             {
                 "label": "Maximum Voltage",
-                "desc": "Maximum Voltage Protection Level",
+                "desc": "Maximum Voltage Protection Level.",
                 "name": "VMax",
                 "type": "uint16",
                 "size": 1,
@@ -61,7 +61,7 @@
             },
             {
                 "label": "Maximum Current",
-                "desc": "Maximum Current Protection Level",
+                "desc": "Maximum Current Protection Level.",
                 "name": "IMax",
                 "type": "uint16",
                 "size": 1,
@@ -71,7 +71,7 @@
             },
             {
                 "label": "Frequency",
-                "desc": "Frequency Setpoint",
+                "desc": "Frequency Setpoint.",
                 "name": "Freq",
                 "type": "uint16",
                 "size": 1,
@@ -81,7 +81,7 @@
             },
             {
                 "label": "Output State",
-                "desc": "AC Output State",
+                "desc": "AC Output State.",
                 "name": "Output",
                 "type": "enum16",
                 "size": 1,
@@ -93,7 +93,7 @@
             },
             {
                 "label": "Relay State",
-                "desc": "AC Relay State",
+                "desc": "AC Relay State.",
                 "name": "Relay",
                 "type": "enum16",
                 "size": 1,
@@ -105,7 +105,7 @@
             },
             {
                 "label": "Regeneration State",
-                "desc": "Regeneration State",
+                "desc": "Regeneration State.",
                 "name": "Regen",
                 "type": "enum16",
                 "size": 1,
@@ -117,7 +117,7 @@
             },
             {
                 "label": "Voltage Setpoint",
-                "desc": "Voltage Setpoint (all phases)",
+                "desc": "Voltage Setpoint (all phases).",
                 "name": "VSet",
                 "type": "uint16",
                 "size": 1,
@@ -127,7 +127,7 @@
             },
             {
                 "label": "Voltage Setpoint Phase A",
-                "desc": "Voltage Setpoint Phase A",
+                "desc": "Voltage Setpoint Phase A.",
                 "name": "VSetA",
                 "type": "uint16",
                 "size": 1,
@@ -137,7 +137,7 @@
             },
             {
                 "label": "Voltage Setpoint Phase B",
-                "desc": "Voltage Setpoint Phase B",
+                "desc": "Voltage Setpoint Phase B.",
                 "name": "VSetB",
                 "type": "uint16",
                 "size": 1,
@@ -147,7 +147,7 @@
             },
             {
                 "label": "Voltage Setpoint Phase C",
-                "desc": "Voltage Setpoint Phase C",
+                "desc": "Voltage Setpoint Phase C.",
                 "name": "VSetC",
                 "type": "uint16",
                 "size": 1,
@@ -157,7 +157,7 @@
             },
             {
                 "label": "Frequency Slew Rate",
-                "desc": "Frequency Slew Rate",
+                "desc": "Frequency Slew Rate.",
                 "name": "FreqSlew",
                 "type": "uint16",
                 "size": 1,
@@ -167,7 +167,7 @@
             },
             {
                 "label": "Voltage Slew Rate",
-                "desc": "Voltage Slew Rate",
+                "desc": "Voltage Slew Rate.",
                 "name": "VSlew",
                 "type": "uint16",
                 "size": 1,
@@ -177,7 +177,7 @@
             },
             {
                 "label": "Measured Voltage Phase A",
-                "desc": "Measured Voltage Phase A",
+                "desc": "Measured Voltage Phase A.",
                 "name": "VA",
                 "type": "int32",
                 "size": 2,
@@ -186,7 +186,7 @@
             },
             {
                 "label": "Measured Voltage Phase B",
-                "desc": "Measured Voltage Phase B",
+                "desc": "Measured Voltage Phase B.",
                 "name": "VB",
                 "type": "int32",
                 "size": 2,
@@ -195,7 +195,7 @@
             },
             {
                 "label": "Measured Voltage Phase C",
-                "desc": "Measured Voltage Phase C",
+                "desc": "Measured Voltage Phase C.",
                 "name": "VC",
                 "type": "int32",
                 "size": 2,
@@ -204,7 +204,7 @@
             },
             {
                 "label": "Measured Frequency",
-                "desc": "Measured Frequency",
+                "desc": "Measured Frequency.",
                 "name": "Hz",
                 "type": "int32",
                 "size": 2,
@@ -213,7 +213,7 @@
             },
             {
                 "label": "Measured Current Phase A",
-                "desc": "Measured Current Phase A",
+                "desc": "Measured Current Phase A.",
                 "name": "IA",
                 "type": "int32",
                 "size": 2,
@@ -222,7 +222,7 @@
             },
             {
                 "label": "Measured Current Phase B",
-                "desc": "Measured Current Phase B",
+                "desc": "Measured Current Phase B.",
                 "name": "IB",
                 "type": "int32",
                 "size": 2,
@@ -231,7 +231,7 @@
             },
             {
                 "label": "Measured Current Phase C",
-                "desc": "Measured Current Phase C",
+                "desc": "Measured Current Phase C.",
                 "name": "IC",
                 "type": "int32",
                 "size": 2,
@@ -240,7 +240,7 @@
             },
             {
                 "label": "Voltage Harmonics Phase A",
-                "desc": "Voltage Harmonics Pct, Phase A (comma seperated string for harmonics 1-50)",
+                "desc": "Voltage Harmonics Pct, Phase A (comma seperated string for harmonics 1-50).",
                 "name": "VHarA",
                 "type": "string",
                 "size": 150,
@@ -249,7 +249,7 @@
             },
             {
                 "label": "Voltage Harmonics Phase B",
-                "desc": "Voltage Harmonics Pct, Phase B (comma seperated string for harmonics 1-50)",
+                "desc": "Voltage Harmonics Pct, Phase B (comma seperated string for harmonics 1-50).",
                 "name": "VHarB",
                 "type": "string",
                 "size": 150,
@@ -258,7 +258,7 @@
             },
             {
                 "label": "Voltage Harmonics Phase C",
-                "desc": "Voltage Harmonics Pct, Phase C (comma seperated string for harmonics 1-50)",
+                "desc": "Voltage Harmonics Pct, Phase C (comma seperated string for harmonics 1-50).",
                 "name": "VHarC",
                 "type": "string",
                 "size": 150,
@@ -267,7 +267,7 @@
             },
             {
                 "label": "Current Harmonics Phase A",
-                "desc": "Current Harmonics Pct, Phase A (comma seperated string for harmonics 1-50)",
+                "desc": "Current Harmonics Pct, Phase A (comma seperated string for harmonics 1-50).",
                 "name": "IHarA",
                 "type": "string",
                 "size": 150,
@@ -276,7 +276,7 @@
             },
             {
                 "label": "Current Harmonics Phase B",
-                "desc": "Current Harmonics Pct, Phase B (comma seperated string for harmonics 1-50)",
+                "desc": "Current Harmonics Pct, Phase B (comma seperated string for harmonics 1-50).",
                 "name": "IHarB",
                 "type": "string",
                 "size": 150,
@@ -285,7 +285,7 @@
             },
             {
                 "label": "Current Harmonics Phase C",
-                "desc": "Current Harmonics Pct, Phase C (comma seperated string for harmonics 1-50)",
+                "desc": "Current Harmonics Pct, Phase C (comma seperated string for harmonics 1-50).",
                 "name": "IHarC",
                 "type": "string",
                 "size": 150,
@@ -294,7 +294,7 @@
             },
             {
                 "label": "Current Interharmonics Phase A",
-                "desc": "Current Interharmonics Pct, Phase A (comma seperated string for interharmonics 1-50)",
+                "desc": "Current Interharmonics Pct, Phase A (comma seperated string for interharmonics 1-50).",
                 "name": "IIntHarA",
                 "type": "string",
                 "size": 150,
@@ -303,7 +303,7 @@
             },
             {
                 "label": "Current Interharmonics Phase B",
-                "desc": "Current Interharmonics Pct, Phase B (comma seperated string for interharmonics 1-50)",
+                "desc": "Current Interharmonics Pct, Phase B (comma seperated string for interharmonics 1-50).",
                 "name": "IIntHarB",
                 "type": "string",
                 "size": 150,
@@ -312,7 +312,7 @@
             },
             {
                 "label": "Current Interharmonics Phase C",
-                "desc": "Current Interharmonics Pct, Phase C (comma seperated string for interharmonics 1-50)",
+                "desc": "Current Interharmonics Pct, Phase C (comma seperated string for interharmonics 1-50).",
                 "name": "IIntHarC",
                 "type": "string",
                 "size": 150,
@@ -321,7 +321,7 @@
             },
             {
                 "label": "Voltage THD Phase A",
-                "desc": "Voltage THD Phase A",
+                "desc": "Voltage THD Phase A.",
                 "name": "VThdA",
                 "type": "uint16",
                 "size": 1,
@@ -331,7 +331,7 @@
             },
             {
                 "label": "Voltage THD Phase B",
-                "desc": "Voltage THD Phase B",
+                "desc": "Voltage THD Phase B.",
                 "name": "VThdB",
                 "type": "uint16",
                 "size": 1,
@@ -341,7 +341,7 @@
             },
             {
                 "label": "Voltage THD Phase C",
-                "desc": "Voltage THD Phase C",
+                "desc": "Voltage THD Phase C.",
                 "name": "VThdC",
                 "type": "uint16",
                 "size": 1,
@@ -351,7 +351,7 @@
             },
             {
                 "label": "Current THD Phase A",
-                "desc": "Current THD Phase A",
+                "desc": "Current THD Phase A.",
                 "name": "IThdA",
                 "type": "uint16",
                 "size": 1,
@@ -361,7 +361,7 @@
             },
             {
                 "label": "Current THD Phase B",
-                "desc": "Current THD Phase B",
+                "desc": "Current THD Phase B.",
                 "name": "IThdB",
                 "type": "uint16",
                 "size": 1,
@@ -371,7 +371,7 @@
             },
             {
                 "label": "Current THD Phase C",
-                "desc": "Current THD Phase C",
+                "desc": "Current THD Phase C.",
                 "name": "IThdC",
                 "type": "uint16",
                 "size": 1,
@@ -381,7 +381,7 @@
             },
             {
                 "label": "Enable Profile",
-                "desc": "Start/Stop the AC Profile",
+                "desc": "Start/Stop the AC Profile.",
                 "name": "EnaProf",
                 "type": "enum16",
                 "size": 1,

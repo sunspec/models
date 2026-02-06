@@ -41,7 +41,7 @@
                 "standards": []
             },
             {
-                "desc": "Energy available of the DER storage (WHAvail = WHRtg * SoC * SoH)",
+                "desc": "Energy available of the DER storage (WHAvail = WHRtg * SoC * SoH).",
                 "label": "Energy Available",
                 "name": "WHAvail",
                 "sf": "WH_SF",

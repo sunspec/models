@@ -1,6 +1,6 @@
 {
     "group": {
-        "desc": "Basic Scheduling ",
+        "desc": "Basic Scheduling.",
         "groups": [
             {
                 "count": 0,
@@ -27,7 +27,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "The repetition count for time-based schedules (0=repeat forever)",
+                        "desc": "The repetition count for time-based schedules (0=repeat forever).",
                         "label": "RepPer",
                         "mandatory": "M",
                         "name": "RepPer",
@@ -36,7 +36,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "The repetition frequency for time-based schedules: no repeat=0",
+                        "desc": "The repetition frequency for time-based schedules: no repeat=0.",
                         "label": "SchdTyp",
                         "mandatory": "M",
                         "name": "IntvTyp",
@@ -79,7 +79,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "The meaning of the X-values in the array. ",
+                        "desc": "The meaning of the X-values in the array.",
                         "label": "XTyp",
                         "mandatory": "M",
                         "name": "XTyp",
@@ -417,7 +417,7 @@
         "name": "schedule",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -427,7 +427,7 @@
                 "value": 133
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -437,7 +437,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Bitfield of active schedules",
+                "desc": "Bitfield of active schedules.",
                 "label": "ActSchd",
                 "mandatory": "M",
                 "name": "ActSchd",
@@ -586,7 +586,7 @@
                 "type": "bitfield16"
             },
             {
-                "desc": "Number of schedules supported (recommend min. 4, max 32)",
+                "desc": "Number of schedules supported (recommend min. 4, max 32).",
                 "label": "NSchd",
                 "mandatory": "M",
                 "name": "NSchd",

@@ -151,7 +151,7 @@
         "name": "lithium_ion_string",
         "points": [
             {
-                "desc": "Model identifier",
+                "desc": "Model identifier.",
                 "label": "Model ID",
                 "mandatory": "M",
                 "name": "ID",
@@ -161,7 +161,7 @@
                 "value": 804
             },
             {
-                "desc": "Model length",
+                "desc": "Model length.",
                 "label": "Model Length",
                 "mandatory": "M",
                 "name": "L",
@@ -554,7 +554,7 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Alarms, warnings and status values.  Bit flags.",
+                "desc": "Alarms, warnings and status values.",
                 "label": "String Event 1",
                 "mandatory": "M",
                 "name": "Evt1",
@@ -692,7 +692,7 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Alarms, warnings and status values.  Bit flags.",
+                "desc": "Alarms, warnings and status values.",
                 "label": "String Event 2",
                 "name": "Evt2",
                 "size": 2,
@@ -715,7 +715,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Enables and disables the string.  Should reset to 0 upon completion.",
+                "desc": "Enables and disables the string. Should reset to 0 upon completion.",
                 "label": "Enable/Disable String",
                 "name": "SetEna",
                 "size": 1,
