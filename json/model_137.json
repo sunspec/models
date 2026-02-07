@@ -3,7 +3,7 @@
         "desc": "LVRT must remain connected",
         "groups": [
             {
-                "count": 0,
+                "count": "NCrv",
                 "name": "curve",
                 "points": [
                     {

@@ -5,7 +5,7 @@
         "name": "string_combiner_current",
         "groups": [
             {
-                "count": 0,
+                "count": "N",
                 "name": "string",
                 "points": [
                     {
@@ -187,7 +187,7 @@
                 "mandatory": "M",
                 "name": "N",
                 "size": 1,
-                "type": "count"
+                "type": "uint16"
             },
             {
                 "desc": "Bitmask value.  Events",
