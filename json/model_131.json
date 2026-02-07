@@ -3,7 +3,7 @@
         "desc": "Watt-Power Factor ",
         "groups": [
             {
-                "count": 0,
+                "count": "NCrv",
                 "name": "curve",
                 "points": [
                     {
