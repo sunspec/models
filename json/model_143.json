@@ -3,7 +3,7 @@
         "desc": "LFRT extended curve",
         "groups": [
             {
-                "count": 0,
+                "count": "NCrv",
                 "name": "curve",
                 "points": [
                     {

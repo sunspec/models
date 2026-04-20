@@ -3,7 +3,7 @@
         "desc": "Monitors and controls multiple trackers",
         "groups": [
             {
-                "count": 0,
+                "count": "N",
                 "name": "tracker",
                 "points": [
                     {

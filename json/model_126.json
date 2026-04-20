@@ -3,7 +3,7 @@
         "desc": "Static Volt-VAR Arrays ",
         "groups": [
             {
-                "count": 0,
+                "count": "NPt",
                 "name": "curve",
                 "points": [
                     {

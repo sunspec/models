@@ -3,7 +3,7 @@
         "desc": "Basic Scheduling ",
         "groups": [
             {
-                "count": 0,
+                "count": "NSchd",
                 "name": "repeating",
                 "points": [
                     {
