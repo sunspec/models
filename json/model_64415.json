@@ -125,6 +125,36 @@
                         "value": 7
                     }
                 ]
+            },
+            {
+                "label": "Subscribed Resource URL",
+                "desc": "The URL of the resource to subscribe to",
+                "name": "SubscribedResource",
+                "type": "string",
+                "size": 64,
+                "access": "RW"
+            },
+            {
+                "label": "Subscribtion Enable",
+                "desc": "Enable or disable the Subscription mode",
+                "name": "SubscriptionEna",
+                "type": "enum16",
+                "size": 1,
+                "access": "RW",
+                "symbols": [
+                    {
+                        "desc": "Subscription Mode Disabled",
+                        "label": "Disabled",
+                        "name": "DISABLED",
+                        "value": 0
+                    },
+                    {
+                        "desc": "Subscription Mode Enabled",
+                        "label": "Enabled",
+                        "name": "ENABLED",
+                        "value": 1
+                    }
+                ]
             }
         ],
         "type": "group"
