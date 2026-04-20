@@ -213,7 +213,7 @@
                 "type": "sunssf"
             },
             {
-                "desc": "The usable capacity of the battery.  Maximum charge minus minimum charge from a technology capability perspective (Amp-hour capacity rating).",
+                "desc": "The usable capacity of the battery. Maximum charge minus minimum charge from a technology capability perspective (Amp-hour capacity rating).",
                 "label": "AhrRtg",
                 "name": "AhrRtg",
                 "sf": "AhrRtg_SF",

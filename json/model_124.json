@@ -58,7 +58,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Activate hold/discharge/charge storage control mode. Bitfield value.",
+                "desc": "Activate hold/discharge/charge storage control mode.",
                 "label": "StorCtl_Mod",
                 "mandatory": "M",
                 "name": "StorCtl_Mod",
@@ -123,7 +123,7 @@
                 "units": "V"
             },
             {
-                "desc": "Charge status of storage device. Enumerated value.",
+                "desc": "Charge status of storage device.",
                 "label": "ChaSt",
                 "name": "ChaSt",
                 "size": 1,

@@ -48,7 +48,7 @@
                 "type": "sunssf"
             },
             {
-                "desc": "Enumerated value.  Module Status Code",
+                "desc": "Module Status Code",
                 "label": "Status",
                 "mandatory": "M",
                 "name": "Stat",
@@ -105,7 +105,7 @@
                 "type": "enum16"
             },
             {
-                "desc": "Bitmask value.  Module Event Flags",
+                "desc": "Module Event Flags",
                 "label": "Events",
                 "mandatory": "M",
                 "name": "Evt",

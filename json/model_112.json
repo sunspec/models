@@ -219,7 +219,7 @@
                 "units": "C"
             },
             {
-                "desc": "Enumerated value.  Operating state",
+                "desc": "Operating state",
                 "label": "Operating State",
                 "mandatory": "M",
                 "name": "St",
@@ -268,7 +268,7 @@
                 "type": "enum16"
             },
             {
-                "desc": "Bitmask value. Event fields",
+                "desc": "Event fields",
                 "label": "Event1",
                 "mandatory": "M",
                 "name": "Evt1",

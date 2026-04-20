@@ -33,7 +33,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Bitmask value.  Proxy configuration capabilities",
+                "desc": "Proxy configuration capabilities",
                 "label": "Capabilities",
                 "mandatory": "M",
                 "name": "Cap",
@@ -56,7 +56,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Enumerated value.  Set proxy address type",
+                "desc": "Set proxy address type",
                 "label": "Config",
                 "mandatory": "M",
                 "name": "Cfg",
@@ -65,7 +65,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Enumerate value.  Proxy server type",
+                "desc": "Enumerate value. Proxy server type",
                 "label": "Type",
                 "mandatory": "M",
                 "name": "Typ",

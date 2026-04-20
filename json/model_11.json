@@ -33,7 +33,7 @@
                 "units": "Mbps"
             },
             {
-                "desc": "Bitmask values Interface flags.",
+                "desc": "Interface flags.",
                 "label": "Interface Status Flags",
                 "mandatory": "M",
                 "name": "CfgSt",
@@ -71,7 +71,7 @@
                 "type": "bitfield16"
             },
             {
-                "desc": "Enumerated value. State information for this interface",
+                "desc": "State information for this interface",
                 "label": "Link State",
                 "mandatory": "M",
                 "name": "St",

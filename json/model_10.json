@@ -54,7 +54,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Enumerated value.  Type of physical media",
+                "desc": "Type of physical media",
                 "label": "Physical Access Type",
                 "name": "Typ",
                 "size": 1,

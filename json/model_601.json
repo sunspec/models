@@ -14,7 +14,7 @@
                         "type": "string"
                     },
                     {
-                        "desc": "Auto target elevation in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
+                        "desc": "Auto target elevation in degrees from horizontal. Unimplemented for single axis azimuth tracker type",
                         "label": "Target Elevation",
                         "name": "ElTrgt",
                         "sf": "Dgr_SF",
@@ -23,7 +23,7 @@
                         "units": "Degrees"
                     },
                     {
-                        "desc": "Auto target azimuth  in degrees from true north towards east.  Unimplemented for single axis horizontal tracker type",
+                        "desc": "Auto target azimuth in degrees from true north towards east. Unimplemented for single axis horizontal tracker type",
                         "label": "Target Azimuth",
                         "name": "AzTrgt",
                         "sf": "Dgr_SF",
@@ -32,7 +32,7 @@
                         "units": "Degrees"
                     },
                     {
-                        "desc": "Actual elevation position  in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
+                        "desc": "Actual elevation position in degrees from horizontal. Unimplemented for single axis azimuth tracker type",
                         "label": "Elevation",
                         "name": "ElPos",
                         "sf": "Dgr_SF",
@@ -41,7 +41,7 @@
                         "units": "Degrees"
                     },
                     {
-                        "desc": "Actual azimuth position  in degrees from true north towards east.  Unimplemented for single axis horizontal tracker type",
+                        "desc": "Actual azimuth position in degrees from true north towards east. Unimplemented for single axis horizontal tracker type",
                         "label": "Azimuth",
                         "name": "AzPos",
                         "sf": "Dgr_SF",
@@ -51,7 +51,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "Manual override target position of elevation in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
+                        "desc": "Manual override target position of elevation in degrees from horizontal. Unimplemented for single axis azimuth tracker type",
                         "label": "Manual Elevation",
                         "name": "ElCtl",
                         "sf": "Dgr_SF",
@@ -61,7 +61,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "Manual override target position of azimuth in degrees from true north towards east.  Unimplemented for single axis azimuth tracker type",
+                        "desc": "Manual override target position of azimuth in degrees from true north towards east. Unimplemented for single axis azimuth tracker type",
                         "label": "Manual Azimuth",
                         "name": "AzCtl",
                         "sf": "Dgr_SF",
@@ -71,7 +71,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "Control register. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.",
+                        "desc": "Control register. Normal operation is automatic. Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.",
                         "label": "Mode",
                         "name": "Ctl",
                         "size": 1,
@@ -208,7 +208,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Global manual override target position of elevation in degrees from horizontal.  Unimplemented for single axis azimuth tracker type",
+                "desc": "Global manual override target position of elevation in degrees from horizontal. Unimplemented for single axis azimuth tracker type",
                 "label": "Manual Elevation",
                 "name": "GlblElCtl",
                 "sf": "Dgr_SF",
@@ -218,7 +218,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Global manual override target position of azimuth in degrees from true north towards east.  Unimplemented for single axis azimuth tracker type",
+                "desc": "Global manual override target position of azimuth in degrees from true north towards east. Unimplemented for single axis azimuth tracker type",
                 "label": "Manual Azimuth",
                 "name": "GlblAzCtl",
                 "sf": "Dgr_SF",
@@ -228,7 +228,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Global Control register operates on all trackers. Normal operation is automatic.  Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.",
+                "desc": "Global Control register operates on all trackers. Normal operation is automatic. Operator can override the position by setting the ElCtl, AzCtl and enabling Manual operation. Entering calibration mode will revert to automatic operation after calibration is complete.",
                 "label": "Global Mode",
                 "name": "GlblCtl",
                 "size": 1,
@@ -280,7 +280,7 @@
                 "type": "sunssf"
             },
             {
-                "desc": "Number of trackers being controlled.  Size of repeating block.",
+                "desc": "Number of trackers being controlled. Size of repeating block.",
                 "label": "Trackers",
                 "mandatory": "M",
                 "name": "N",

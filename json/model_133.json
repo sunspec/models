@@ -79,7 +79,7 @@
                     },
                     {
                         "access": "RW",
-                        "desc": "The meaning of the X-values in the array. ",
+                        "desc": "The meaning of the X-values in the array.",
                         "label": "XTyp",
                         "mandatory": "M",
                         "name": "XTyp",

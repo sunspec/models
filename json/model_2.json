@@ -40,7 +40,7 @@
                 "type": "uint16"
             },
             {
-                "desc": "Update Number.  Incrementing number each time the mapping is changed.  If the number is not changed from the last reading the direct access to a specific offset will result in reading the same logical model as before.  Otherwise the entire model must be read to refresh the changes",
+                "desc": "Update Number. Incrementing number each time the mapping is changed. If the number is not changed from the last reading the direct access to a specific offset will result in reading the same logical model as before. Otherwise the entire model must be read to refresh the changes",
                 "label": "UN",
                 "mandatory": "M",
                 "name": "UN",

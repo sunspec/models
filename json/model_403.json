@@ -190,7 +190,7 @@
                 "type": "count"
             },
             {
-                "desc": "Bitmask value.  Events",
+                "desc": "Events",
                 "label": "Event",
                 "mandatory": "M",
                 "name": "Evt",
@@ -276,7 +276,7 @@
                 "type": "bitfield32"
             },
             {
-                "desc": "Bitmask value.  Vendor defined events",
+                "desc": "Vendor defined events",
                 "label": "Vendor Event",
                 "name": "EvtVnd",
                 "size": 2,

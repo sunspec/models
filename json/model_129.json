@@ -426,7 +426,7 @@
                         "type": "string"
                     },
                     {
-                        "desc": "Enumerated value indicates if curve is read-only or can be modified.",
+                        "desc": "Curve is read-only or can be modified.",
                         "label": "ReadOnly",
                         "mandatory": "M",
                         "name": "ReadOnly",
@@ -480,7 +480,7 @@
             },
             {
                 "access": "RW",
-                "desc": "LVRT control mode. Enable active curve.  Bitfield value.",
+                "desc": "LVRT control mode. Enable active curve.",
                 "label": "ModEna",
                 "mandatory": "M",
                 "name": "ModEna",

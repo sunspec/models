@@ -55,7 +55,7 @@
             },
             {
                 "access": "RW",
-                "desc": "The gradient used to increase inductive dynamic current.  A value of 0 indicates no additional reactive current support.",
+                "desc": "The gradient used to increase inductive dynamic current. A value of 0 indicates no additional reactive current support.",
                 "label": "ArGraSwell",
                 "mandatory": "M",
                 "name": "ArGraSwell",

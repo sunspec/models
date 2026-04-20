@@ -40,7 +40,7 @@
                 "units": "W/m2"
             },
             {
-                "desc": "Voltage  measurement at reference point",
+                "desc": "Voltage measurement at reference point",
                 "label": "Voltage",
                 "name": "V",
                 "size": 1,

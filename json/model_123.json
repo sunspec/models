@@ -43,7 +43,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Enumerated valued.  Connection control.",
+                "desc": "Connection control.",
                 "label": "Conn",
                 "mandatory": "M",
                 "name": "Conn",
@@ -100,7 +100,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Enumerated valued.  Throttle enable/disable control.",
+                "desc": "Throttle enable/disable control.",
                 "label": "WMaxLim_Ena",
                 "mandatory": "M",
                 "name": "WMaxLim_Ena",
@@ -157,7 +157,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Enumerated valued.  Fixed power factor enable/disable control.",
+                "desc": "Fixed power factor enable/disable control.",
                 "label": "OutPFSet_Ena",
                 "mandatory": "M",
                 "name": "OutPFSet_Ena",
@@ -233,7 +233,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Enumerated value. VAR percent limit mode.",
+                "desc": "VAR percent limit mode.",
                 "label": "VArPct_Mod",
                 "name": "VArPct_Mod",
                 "size": 1,
@@ -259,7 +259,7 @@
             },
             {
                 "access": "RW",
-                "desc": "Enumerated valued.  Percent limit VAr enable/disable control.",
+                "desc": "Percent limit VAr enable/disable control.",
                 "label": "VArPct_Ena",
                 "mandatory": "M",
                 "name": "VArPct_Ena",
