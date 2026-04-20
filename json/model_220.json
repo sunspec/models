@@ -3,7 +3,7 @@
         "desc": "Include this model for secure metering",
         "groups": [
             {
-                "count": "N",
+                "count": 0,
                 "name": "repeating",
                 "points": [
                     {

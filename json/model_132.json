@@ -3,7 +3,7 @@
         "desc": "Volt-Watt ",
         "groups": [
             {
-                "count": "NCrv",
+                "count": 0,
                 "name": "curve",
                 "points": [
                     {

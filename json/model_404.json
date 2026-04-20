@@ -5,7 +5,7 @@
         "name": "string_combiner_advanced_inputs",
         "groups": [
             {
-                "count": "N",
+                "count": 0,
                 "name": "string",
                 "points": [
                     {
@@ -241,7 +241,7 @@
                 "mandatory": "M",
                 "name": "N",
                 "size": 1,
-                "type": "uint16"
+                "type": "count"
             },
             {
                 "desc": "Events",

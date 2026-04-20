@@ -3,7 +3,7 @@
         "desc": "Security model for PKI",
         "groups": [
             {
-                "count": "N",
+                "count": 0,
                 "name": "repeating",
                 "points": [
                     {

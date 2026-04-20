@@ -3,7 +3,7 @@
         "desc": "LVRT Must Disconnect",
         "groups": [
             {
-                "count": "NCrv",
+                "count": 0,
                 "name": "curve",
                 "points": [
                     {

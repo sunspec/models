@@ -2,7 +2,7 @@
     "group": {
         "groups": [
             {
-                "count": "NCell",
+                "count": 0,
                 "name": "lithium-ion-module-cell",
                 "points": [
                     {

@@ -3,7 +3,7 @@
         "desc": "Include a digital signature along with the control data",
         "groups": [
             {
-                "count": "N",
+                "count": 0,
                 "name": "repeating",
                 "points": [
                     {

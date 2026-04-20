@@ -3,7 +3,7 @@
         "desc": "Curve-Based Frequency-Watt ",
         "groups": [
             {
-                "count": "NCrv",
+                "count": 0,
                 "name": "curve",
                 "points": [
                     {

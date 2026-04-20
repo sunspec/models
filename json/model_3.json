@@ -3,7 +3,7 @@
         "desc": "Request a digital signature over a specified set of data registers",
         "groups": [
             {
-                "count": "N",
+                "count": 0,
                 "name": "repeating",
                 "points": [
                     {

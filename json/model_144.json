@@ -3,7 +3,7 @@
         "desc": "HFRT extended curve",
         "groups": [
             {
-                "count": "NCrv",
+                "count": 0,
                 "name": "curve",
                 "points": [
                     {

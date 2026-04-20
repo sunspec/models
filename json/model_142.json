@@ -3,7 +3,7 @@
         "desc": "HFRT must remain connected",
         "groups": [
             {
-                "count": "NCrv",
+                "count": 0,
                 "name": "curve",
                 "points": [
                     {

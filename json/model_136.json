@@ -3,7 +3,7 @@
         "desc": "High Frequency Ride-through",
         "groups": [
             {
-                "count": "NCrv",
+                "count": 0,
                 "name": "curve",
                 "points": [
                     {

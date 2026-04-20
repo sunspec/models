@@ -3,7 +3,7 @@
         "desc": "HVRT Must Disconnect",
         "groups": [
             {
-                "count": "NCrv",
+                "count": 0,
                 "name": "curve",
                 "points": [
                     {

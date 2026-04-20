@@ -2,7 +2,7 @@
     "group": {
         "groups": [
             {
-                "count": "N",
+                "count": 0,
                 "name": "module",
                 "points": [
                     {
@@ -365,7 +365,7 @@
                 "label": "Number of Modules",
                 "name": "N",
                 "size": 1,
-                "type": "uint16"
+                "type": "count"
             },
             {
                 "label": "Timestamp Period",
