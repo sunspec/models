@@ -164,7 +164,7 @@
                 "sf": "WAval_SF",
                 "size": 1,
                 "type": "uint16",
-                "units": "var"
+                "units": "W"
             },
             {
                 "desc": "Scale factor for available Watts.",
