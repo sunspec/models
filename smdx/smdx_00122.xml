@@ -25,7 +25,7 @@
       <point id="ActVArhQ4" offset="23" type="acc64" len="4" units="varh" />
       <point id="VArAval" offset="27" type="int16" len="1" sf="VArAval_SF" units="var" />
       <point id="VArAval_SF" offset="28" type="sunssf" len="1" />
-      <point id="WAval" offset="29" type="uint16" len="1" sf="WAval_SF" units="var" />
+      <point id="WAval" offset="29" type="uint16" len="1" sf="WAval_SF" units="W" />
       <point id="WAval_SF" offset="30" type="sunssf" len="1" />
       <point id="StSetLimMsk" offset="31" type="bitfield32" len="2" >
         <symbol id="WMax">0</symbol>
