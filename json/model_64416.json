@@ -1,0 +1,651 @@
+{
+    "group": {
+        "name": "DERGridForming",
+        "label": "DER Grid-Forming Control Model",
+        "desc": "Grid-forming (GFM) control-law parameters, current-limiting behavior, observability points, black-start sequencing, multi-unit coordination, and synchronization controls in grid-forming inverter products",
+        "points": [
+            {
+                "desc": "Model identifier",
+                "label": "Model ID",
+                "mandatory": "M",
+                "name": "ID",
+                "size": 1,
+                "static": "S",
+                "type": "uint16",
+                "value": 64416,
+                "access": "RW"
+            },
+            {
+                "desc": "Model length.",
+                "label": "Model Length",
+                "mandatory": "M",
+                "name": "L",
+                "size": 1,
+                "static": "S",
+                "type": "uint16",
+                "access": "RW"
+            },
+
+            {
+                "desc": "Current Grid Operation Mode — commanded mode the inverter is operating in.",
+                "label": "Grid Operation Mode",
+                "mandatory": "M",
+                "name": "GridMd",
+                "size": 1,
+                "type": "enum16",
+                "access": "RW",
+                "symbols": [
+                    {"name": "INITIAL",        "value": 0, "label": "Communication Pending"},
+                    {"name": "GRID_CONNECTED", "value": 1, "label": "Grid-Following Mode"},
+                    {"name": "OFF_GRID",       "value": 2, "label": "Grid-Forming Mode"},
+                    {"name": "RESERVED",       "value": 3, "label": "NA"}
+                ]
+            },
+            {
+                "desc": "Runtime state machine reflecting where the inverter is in its mode-transition / start-up sequence.",
+                "label": "Grid Operation State",
+                "mandatory": "M",
+                "name": "GridSt",
+                "size": 1,
+                "type": "enum16",
+                "access": "R",
+                "symbols": [
+                    {"name": "STOPPED",            "value": 0,  "label": "Units Stopped"},
+                    {"name": "STARTING_CONNECTED", "value": 1,  "label": "Starting Ongrid"},
+                    {"name": "STARTING_OFFGRID",   "value": 2,  "label": "Starting offgrid"},
+                    {"name": "STARTING_LEADER",    "value": 3,  "label": "Starting Leader"},
+                    {"name": "VOLT_CHECK",         "value": 4,  "label": "Check Voltage"},
+                    {"name": "VOLT_DONE",          "value": 5,  "label": "Voltage Done"},
+                    {"name": "STARTING_FOLLOWERS", "value": 6,  "label": "Starting Followers"},
+                    {"name": "OFFGRID_ENABLED",    "value": 7,  "label": "Grid-Forming Enabled"},
+                    {"name": "OFFGRID_FAULT",      "value": 8,  "label": "Grid-Forming Fault"},
+                    {"name": "ONGRID_ENABLED",     "value": 9,  "label": "Grid-Following Enabled"},
+                    {"name": "ONGRID_FAULT",       "value": 10, "label": "Grid-Following Fault"}
+                ]
+            },
+
+            {
+                "desc": "Selected GFM control algorithm. Products typically support a subset of these strategies; the full enum is exposed so any strategy can be represented without a model change.",
+                "label": "Control Algorithm",
+                "name": "CtrlAlg",
+                "size": 1,
+                "type": "enum16",
+                "access": "RW",
+                "symbols": [
+                    {"name": "DROOP",    "value": 0, "label": "P-f / Q-V Droop"},
+                    {"name": "VSM",      "value": 1, "label": "Virtual Synchronous Machine"},
+                    {"name": "VOC",      "value": 2, "label": "Virtual Oscillator Control"},
+                    {"name": "DVOC",     "value": 3, "label": "Dispatchable VOC"},
+                    {"name": "MATCHING", "value": 4, "label": "Matching Control"}
+                ]
+            },
+            {
+                "desc": "P-f droop coefficient. Per-unit frequency change per per-unit power change (e.g. 0.05 = 5% droop). Convert to Hz/W as m_p = DroopP * Hz_nom / S_rated.",
+                "detail": "Reference tuning: 0.05 pu/pu (5% droop) per UNIFI Consortium Specifications v2.",
+                "label": "P-f Droop Coefficient",
+                "name": "DroopP",
+                "size": 2,
+                "type": "float32",
+                "units": "pu/pu",
+                "access": "RW"
+            },
+            {
+                "desc": "Q-V droop coefficient. Per-unit voltage change per per-unit reactive-power change.",
+                "label": "Q-V Droop Coefficient",
+                "name": "DroopQ",
+                "size": 2,
+                "type": "float32",
+                "units": "pu/pu",
+                "access": "RW"
+            },
+            {
+                "desc": "Virtual inertia constant H (swing equation). 0 = pure droop, no inertia. Typical range 1-10 s.",
+                "detail": "Reference tuning: 2.5 s, the minimum inertia constant for grid-forming energy storage under ERCOT AGS-ESR.",
+                "label": "Virtual Inertia H",
+                "name": "InertiaH",
+                "size": 2,
+                "type": "float32",
+                "units": "Sec",
+                "access": "RW"
+            },
+            {
+                "desc": "Swing-equation damping, expressed as a damping ratio (1.0 = critical, below 1 underdamped, above 1 overdamped). Applied to the transient frequency component only, so it does not bias the steady-state droop response.",
+                "detail": "Reference tuning: 1.0 (critical damping).",
+                "label": "Damping Ratio",
+                "name": "Damping",
+                "size": 2,
+                "type": "float32",
+                "units": "pu",
+                "access": "RW"
+            },
+            {
+                "desc": "Damper time constant that decouples the fast transient damper response from the slow governor / droop response. Damping acts on frequency excursions faster than this constant.",
+                "detail": "Reference tuning: 0.30 s.",
+                "label": "Damper Decoupler Time Constant",
+                "name": "DampTms",
+                "size": 1,
+                "type": "uint16",
+                "units": "mSec",
+                "access": "RW"
+            },
+            {
+                "desc": "Virtual reactance applied by the GFM voltage-source emulator. Shapes output impedance for stability and current sharing. Real GFM control parameter — not the physical LCL filter.",
+                "detail": "Reference tuning: 0.30 pu emulated stator reactance; total plant impedance target at or below 0.5 pu including transformer and step-up.",
+                "label": "Virtual Reactance",
+                "name": "VirtualX",
+                "size": 2,
+                "type": "float32",
+                "units": "pu",
+                "access": "RW"
+            },
+            {
+                "desc": "Virtual resistance applied by the GFM voltage-source emulator. Often 0 or small; used for damping / current limiting on some products.",
+                "detail": "Reference tuning: 0.05 pu (about one fundamental cycle time constant).",
+                "label": "Virtual Resistance",
+                "name": "VirtualR",
+                "size": 2,
+                "type": "float32",
+                "units": "pu",
+                "access": "RW"
+            },
+            {
+                "desc": "Low-pass filter time constant applied to P/Q feedback in the droop loop. Real GFM products expose this for stability tuning. ms.",
+                "detail": "Reference tuning: about 20 ms (RMS estimation window).",
+                "label": "Power Measurement Filter Time Constant",
+                "name": "FilterTms",
+                "size": 1,
+                "type": "uint16",
+                "units": "mSec",
+                "access": "RW"
+            },
+
+            {
+                "desc": "Active-power dispatch setpoint.",
+                "label": "P Setpoint",
+                "name": "WSet",
+                "size": 2,
+                "type": "int32",
+                "sf": "W_SF",
+                "units": "W",
+                "access": "RW"
+            },
+            {
+                "desc": "Reactive-power dispatch setpoint.",
+                "label": "Q Setpoint",
+                "name": "VarSet",
+                "size": 2,
+                "type": "int32",
+                "sf": "Var_SF",
+                "units": "var",
+                "access": "RW"
+            },
+            {
+                "desc": "Voltage reference for the GFM voltage-source emulator (line-neutral).",
+                "label": "Voltage Reference",
+                "name": "VRef",
+                "size": 1,
+                "type": "uint16",
+                "sf": "V_SF",
+                "units": "V",
+                "access": "RW"
+            },
+            {
+                "desc": "Frequency reference for the GFM oscillator.",
+                "label": "Frequency Reference",
+                "name": "HzRef",
+                "size": 1,
+                "type": "uint16",
+                "sf": "Hz_SF",
+                "units": "Hz",
+                "access": "RW"
+            },
+            {
+                "desc": "Maximum upward P slew rate applied to setpoint changes.",
+                "label": "P Ramp Up Rate",
+                "name": "PRmpUp",
+                "size": 1,
+                "type": "uint16",
+                "sf": "WRmp_SF",
+                "units": "W/s",
+                "access": "RW"
+            },
+            {
+                "desc": "Maximum downward P slew rate applied to setpoint changes.",
+                "label": "P Ramp Down Rate",
+                "name": "PRmpDn",
+                "size": 1,
+                "type": "uint16",
+                "sf": "WRmp_SF",
+                "units": "W/s",
+                "access": "RW"
+            },
+            {
+                "desc": "Maximum V slew rate during normal operation.",
+                "label": "V Ramp Rate",
+                "name": "VRmp",
+                "size": 1,
+                "type": "uint16",
+                "sf": "VRmp_SF",
+                "units": "V/s",
+                "access": "RW"
+            },
+            {
+                "desc": "Maximum Hz slew rate during normal operation.",
+                "label": "Hz Ramp Rate",
+                "name": "HzRmp",
+                "size": 1,
+                "type": "uint16",
+                "sf": "HzRmp_SF",
+                "units": "Hz/s",
+                "access": "RW"
+            },
+
+            {
+                "desc": "Continuous current limit, per phase.",
+                "label": "Continuous Current Limit",
+                "name": "IMaxCont",
+                "size": 1,
+                "type": "uint16",
+                "sf": "A_SF",
+                "units": "A",
+                "access": "RW"
+            },
+            {
+                "desc": "Transient (short-duration) current limit during faults.",
+                "detail": "Reference overload envelope: 2.0 pu for 1-2 fundamental cycles (fault response), then 1.6 pu for about 0.5 s (inertial recovery).",
+                "label": "Transient Current Limit",
+                "name": "IMaxTrans",
+                "size": 1,
+                "type": "uint16",
+                "sf": "A_SF",
+                "units": "A",
+                "access": "RW"
+            },
+            {
+                "desc": "Duration the transient limit is permitted before falling back to continuous limit. ms.",
+                "label": "Transient Limit Duration",
+                "name": "IMaxDur",
+                "size": 1,
+                "type": "uint16",
+                "units": "mSec",
+                "access": "RW"
+            },
+            {
+                "desc": "Current-limit strategy. The single most contested area of real GFM products — different vendors pick different behaviors under fault.",
+                "label": "Current Limit Strategy",
+                "name": "LimMode",
+                "size": 1,
+                "type": "enum16",
+                "access": "RW",
+                "symbols": [
+                    {"name": "V_CLAMP",     "value": 0, "label": "Voltage Clamp"},
+                    {"name": "VIRT_R_RISE", "value": 1, "label": "Increase Virtual R"},
+                    {"name": "PQ_REDUCE",   "value": 2, "label": "Reduce P/Q Setpoint"},
+                    {"name": "MODE_SWITCH", "value": 3, "label": "Switch to Grid-Following"}
+                ]
+            },
+            {
+                "desc": "Maximum instantaneous overcurrent before a hard trip.",
+                "label": "Instantaneous Overcurrent Trip",
+                "name": "IInst",
+                "size": 1,
+                "type": "uint16",
+                "sf": "A_SF",
+                "units": "A",
+                "access": "RW"
+            },
+            {
+                "desc": "Maximum permitted rate-of-change of frequency before protection acts.",
+                "detail": "Reference capability: ride through 5 Hz/s (IEEE 2800); withstand 1 Hz/s for 0.5 s (ERCOT AGS-ESR).",
+                "label": "ROCOF Limit",
+                "name": "ROCOFLim",
+                "size": 2,
+                "type": "float32",
+                "units": "Hz/s",
+                "access": "RW"
+            },
+            {
+                "desc": "Maximum power angle stroke before pole-slip trip.",
+                "detail": "Reference capability: ride through phase jumps up to 25 degrees without tripping (IEEE 2800).",
+                "label": "Maximum Angle Stroke",
+                "name": "MaxAng",
+                "size": 1,
+                "type": "uint16",
+                "units": "Degrees",
+                "access": "RW"
+            },
+
+            {
+                "desc": "Internal voltage angle of the GFM oscillator at the inverter terminal, relative to the bulk-grid reference. Read-only observability point.",
+                "label": "Internal Voltage Angle",
+                "name": "ThetaInv",
+                "size": 2,
+                "type": "float32",
+                "units": "Degrees",
+                "access": "R"
+            },
+            {
+                "desc": "Internal voltage magnitude of the GFM oscillator.",
+                "label": "Internal Voltage Magnitude",
+                "name": "EInv",
+                "size": 1,
+                "type": "uint16",
+                "sf": "V_SF",
+                "units": "V",
+                "access": "R"
+            },
+            {
+                "desc": "Measured rate-of-change of frequency at the inverter terminal.",
+                "label": "Measured ROCOF",
+                "name": "ROCOF",
+                "size": 2,
+                "type": "float32",
+                "units": "Hz/s",
+                "access": "R"
+            },
+            {
+                "desc": "Portion of delivered active power attributable to the inertial response term (M * d-omega/dt).",
+                "label": "Inertial Power Contribution",
+                "name": "PInert",
+                "size": 2,
+                "type": "int32",
+                "sf": "W_SF",
+                "units": "W",
+                "access": "R"
+            },
+            {
+                "desc": "Portion of delivered active power attributable to the droop response term.",
+                "label": "Droop Power Contribution",
+                "name": "PDroop",
+                "size": 2,
+                "type": "int32",
+                "sf": "W_SF",
+                "units": "W",
+                "access": "R"
+            },
+            {
+                "desc": "Portion of delivered active power attributable to the dispatch reference.",
+                "label": "Reference Power Contribution",
+                "name": "PRef",
+                "size": 2,
+                "type": "int32",
+                "sf": "W_SF",
+                "units": "W",
+                "access": "R"
+            },
+            {
+                "desc": "Portion of delivered active power attributable to the synchronizing-torque term (internal angle tracking against the grid).",
+                "label": "Synchronizing Power Contribution",
+                "name": "PSync",
+                "size": 2,
+                "type": "int32",
+                "sf": "W_SF",
+                "units": "W",
+                "access": "R"
+            },
+            {
+                "desc": "Portion of delivered active power attributable to the damper term (transient frequency component).",
+                "label": "Damper Power Contribution",
+                "name": "PDamper",
+                "size": 2,
+                "type": "int32",
+                "sf": "W_SF",
+                "units": "W",
+                "access": "R"
+            },
+            {
+                "desc": "Current angle stroke utilization as a fraction of MaxAng.",
+                "label": "Angle Stroke Utilization",
+                "name": "AngStroke",
+                "size": 1,
+                "type": "int16",
+                "sf": "Pct_SF",
+                "units": "Pct",
+                "access": "R"
+            },
+            {
+                "desc": "Synchronization tracking status — distinct from GridSt, which is the commanded-mode state machine.",
+                "label": "Synchronization Status",
+                "name": "SyncStat",
+                "size": 1,
+                "type": "enum16",
+                "access": "R",
+                "symbols": [
+                    {"name": "NOT_TRACKING", "value": 0, "label": "Not Tracking"},
+                    {"name": "SLIDING",      "value": 1, "label": "Sliding"},
+                    {"name": "LOCKED",       "value": 2, "label": "Locked"}
+                ]
+            },
+            {
+                "desc": "Flag set when the inverter has demoted itself from commanded GFM to fall-back GFL (e.g. under current saturation when LimMode = MODE_SWITCH).",
+                "label": "Mode Demoted",
+                "name": "ModeDemoted",
+                "size": 1,
+                "type": "enum16",
+                "access": "R",
+                "symbols": [
+                    {"name": "NO",  "value": 0, "label": "Running Commanded Mode"},
+                    {"name": "YES", "value": 1, "label": "Demoted to GFL"}
+                ]
+            },
+
+            {
+                "desc": "Black-start enable. When set, on a dead-bus condition the inverter ramps its terminal V/Hz from zero up to nominal over BSDwell + ramp envelope.",
+                "label": "Black-Start Enable",
+                "name": "BSEna",
+                "size": 1,
+                "type": "enum16",
+                "access": "RW",
+                "symbols": [
+                    {"name": "OFF", "value": 0, "label": "Disabled"},
+                    {"name": "ON",  "value": 1, "label": "Enabled"}
+                ]
+            },
+            {
+                "desc": "Voltage ramp rate during a black-start sequence.",
+                "label": "Black-Start V Ramp",
+                "name": "BSVRamp",
+                "size": 1,
+                "type": "uint16",
+                "sf": "VRmp_SF",
+                "units": "V/s",
+                "access": "RW"
+            },
+            {
+                "desc": "Frequency ramp rate during a black-start sequence.",
+                "label": "Black-Start Hz Ramp",
+                "name": "BSHzRamp",
+                "size": 1,
+                "type": "uint16",
+                "sf": "HzRmp_SF",
+                "units": "Hz/s",
+                "access": "RW"
+            },
+            {
+                "desc": "Dwell time at zero V/Hz before starting the black-start ramp.",
+                "label": "Black-Start Dwell",
+                "name": "BSDwell",
+                "size": 1,
+                "type": "uint16",
+                "units": "Sec",
+                "access": "RW"
+            },
+            {
+                "desc": "Anti-islanding override. In GFM mode the inverter is intentionally the island; this point gates whether the inverter's own AI logic will trip it.",
+                "label": "Anti-Islanding Override",
+                "name": "AIOvr",
+                "size": 1,
+                "type": "enum16",
+                "access": "RW",
+                "symbols": [
+                    {"name": "ENABLE_AI",  "value": 0, "label": "AI Active"},
+                    {"name": "DISABLE_AI", "value": 1, "label": "AI Disabled in GFM"}
+                ]
+            },
+
+            {
+                "desc": "Synchronization logic enable for closing into a live grid from off-grid operation.",
+                "label": "Sync Enable",
+                "name": "SyncEna",
+                "size": 1,
+                "type": "enum16",
+                "access": "RW",
+                "symbols": [
+                    {"name": "OFF", "value": 0, "label": "Disabled"},
+                    {"name": "ON",  "value": 1, "label": "Enabled"}
+                ]
+            },
+            {
+                "desc": "Voltage-magnitude tolerance window for synchronization, per-unit.",
+                "label": "Sync Voltage Tolerance",
+                "name": "SyncVTol",
+                "size": 2,
+                "type": "float32",
+                "units": "pu",
+                "access": "RW"
+            },
+            {
+                "desc": "Frequency tolerance window for synchronization.",
+                "label": "Sync Frequency Tolerance",
+                "name": "SyncHzTol",
+                "size": 2,
+                "type": "float32",
+                "units": "Hz",
+                "access": "RW"
+            },
+            {
+                "desc": "Angle tolerance window for synchronization.",
+                "label": "Sync Angle Tolerance",
+                "name": "SyncAngTol",
+                "size": 1,
+                "type": "uint16",
+                "units": "Degrees",
+                "access": "RW"
+            },
+
+            {
+                "desc": "Role of this unit within a multi-inverter site.",
+                "label": "Unit Role",
+                "name": "UnitRole",
+                "size": 1,
+                "type": "enum16",
+                "access": "RW",
+                "symbols": [
+                    {"name": "AUTO",     "value": 0, "label": "Auto-Negotiate"},
+                    {"name": "LEADER",   "value": 1, "label": "Leader"},
+                    {"name": "FOLLOWER", "value": 2, "label": "Follower"}
+                ]
+            },
+            {
+                "desc": "Unit identifier within the local cluster (1 = leader by default).",
+                "label": "Unit ID",
+                "name": "UnitID",
+                "size": 1,
+                "type": "uint16",
+                "access": "RW"
+            },
+            {
+                "desc": "Leader-mode frequency authority gain (applies only when UnitRole = LEADER).",
+                "label": "Leader Hz Authority Gain",
+                "name": "LeaderHzGain",
+                "size": 2,
+                "type": "float32",
+                "units": "pu",
+                "access": "RW"
+            },
+
+            {
+                "desc": "Scale factor for voltage points.",
+                "label": "Voltage Scale Factor",
+                "mandatory": "M",
+                "name": "V_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for current points.",
+                "label": "Current Scale Factor",
+                "mandatory": "M",
+                "name": "A_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for frequency points.",
+                "label": "Frequency Scale Factor",
+                "mandatory": "M",
+                "name": "Hz_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for active-power points.",
+                "label": "Active Power Scale Factor",
+                "mandatory": "M",
+                "name": "W_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for reactive-power points.",
+                "label": "Reactive Power Scale Factor",
+                "mandatory": "M",
+                "name": "Var_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for percent points.",
+                "label": "Percent Scale Factor",
+                "mandatory": "M",
+                "name": "Pct_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for active-power ramp rates.",
+                "label": "Active Power Ramp Scale Factor",
+                "mandatory": "M",
+                "name": "WRmp_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for voltage ramp rates.",
+                "label": "Voltage Ramp Scale Factor",
+                "mandatory": "M",
+                "name": "VRmp_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            },
+            {
+                "desc": "Scale factor for frequency ramp rates.",
+                "label": "Frequency Ramp Scale Factor",
+                "mandatory": "M",
+                "name": "HzRmp_SF",
+                "size": 1,
+                "static": "S",
+                "type": "sunssf",
+                "access": "R"
+            }
+        ],
+        "type": "group"
+    },
+    "id": 64416
+}
